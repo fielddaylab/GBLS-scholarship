@@ -21,6 +21,8 @@ Lee, Clarke, Cho, and Windleharth (2017) provide a foundation for game advisory 
 ## Cataloging, Metadata, and Discovery
 Lee, Schmalz, Keating, and Ha (2020) show why game cataloging and metadata must account for more than finished games. Their interviews with 29 stakeholders found that game development artifacts are difficult to organize and discover because of weak documentation incentives in industry, agile and tool-fragmented production environments, inconsistent terminology, local controlled vocabularies, and disconnected library, archive, museum, and special-collections systems; for GBLS, this makes relationship metadata and cross-collection discovery central to treating games as cultural heritage.
 
+McDonald et al. (2021) extend this metadata argument by examining six game development artifact collections and interviewing 29 creators, information professionals, and game researchers. Their 123-term taxonomy and best-practice recommendations show that game metadata work must address development, organization-related, and marketing materials; mixed physical and digital formats; vague terms such as "design document" and "prototype"; creator knowledge; rights restrictions; and the need for participatory archival processing between game companies and cultural heritage institutions.
+
 ## Instruction, Orientation, and Information Literacy
 ## Community, Belonging, and the Public Commons
 ## Games as Cultural Media and Library Collections
