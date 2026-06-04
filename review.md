@@ -97,6 +97,8 @@ Copeland et al. (2013) provide a concrete school-library account of why tabletop
 
 Scholars in game studies and library science draw a clear conceptual distinction between games and gamification, a distinction that has important implications for learning-oriented institutions such as libraries. [(Seay, 2018b)](https://www.zotero.org/google-docs/?9zAdzt) argues that gamification involves the application of discrete game elements such as points, badges, leaderboards, and progress tracking to non-game activities in order to motivate participation, whereas games are complete, rule-governed systems that create meaning through sustained play and internal coherence. This position aligns with Ralph Koster’s influential definition of games as systems that make learning enjoyable by enabling players to recognize and master patterns within a bounded rule set [(Koster, 2003\)](https://www.zotero.org/google-docs/?SGLXcr), and with James Paul Gee’s account of games as sites of situated, embodied learning in which players adopt identities, test hypotheses, and learn through failure and feedback within meaningful contexts [(Gee, 2007\)](https://www.zotero.org/google-docs/?o1VOud). Gee explicitly cautions that extrinsic reward structures alone do not produce deep learning, arguing instead that games teach because they embed knowledge in action and social practice. Similarly, scholars of gamification such as Sebastian Deterding et al. [(Deterding et al., 2011\)](https://www.zotero.org/google-docs/?9TLSr5) note that gamification abstracts game mechanics from games themselves, often prioritizing behavioral compliance over experiential meaning. Taken together, these authors suggest that while gamification can be effective for short-term engagement or task completion, it risks instrumentalizing play if divorced from the epistemic and social qualities that define games proper. For libraries, institutions historically oriented toward inquiry, intrinsic motivation, and the public good, this literature implies that game-based experiences grounded in play, identity, and collaboration may be more congruent with library values than gamified systems primarily designed to communicate metrics for participation.
 
+Khademi Zare et al. (2024) illustrate the service-management side of this debate by treating gamification as a public-library audience-attraction strategy, mapping possible uses such as reading challenges, event promotion, book searching, borrowing incentives, volunteer participation, user feedback, and library marketing.
+
 ### Narratology vs. Ludology Debate
 
 ## Game Cataloging and Discovery
@@ -134,6 +136,8 @@ Reasons existing cataloging systems are insufficient (as identified by Lee et al
 
 This leads to games being incorrectly grouped with fiction and criticism texts about games, and different types of games being grouped together (tabletop roleplaying with RPG video games for example). 
 
+Langan (2021) provides a useful theoretical lens for this problem by describing cataloging and information literacy as a “library language game,” in which labels, subject headings, call numbers, and search terms do not simply represent materials but shape the meanings users can make from them.
+
 ### Discoverability
 
 Discovery of materials is a core mission of the library, yet several researchers find the existing library information system insufficient [(Lee et al., 2012, 2013, 2016; Robson et al., 2019\)](https://www.zotero.org/google-docs/?vhxH6D).
@@ -145,6 +149,8 @@ In 2015, Lee et al. [(Lee et al., 2015\)](https://www.zotero.org/google-docs/?4E
 Clarke et al. (2014) extend this UW metadata research agenda by focusing specifically on relationships among video games. They argue that existing conceptual models such as FRBR are poorly suited to the complex ways games relate to one another across editions, platforms, series, distribution methods, expansions, downloadable content, adaptations, and influence. This is not a marginal problem. Games are often released across multiple platforms, reissued in special editions, expanded through downloadable content, connected to larger franchises, and surrounded by related media such as soundtracks, strategy guides, art books, anime, films, and spin-offs. As a result, the descriptive unit of a “game” is often unstable. A PlayStation release, an arcade release, a digital release, and a later expanded edition may share a title while differing in source code, interface, content, visual presentation, or gameplay experience. Clarke et al. therefore show that game cataloging requires conceptual models capable of representing relationships, not only isolated items.
 
 Robson et al. (2019) [(Robson et al., 2019\)](https://www.zotero.org/google-docs/?hEbRXW) extend the video-game metadata and discoverability agenda associated with Lee and colleagues by applying it to tabletop games in an academic library context, showing how board games require domain-specific access points that traditional catalogs do not readily support. Working at the University of North Texas Libraries, they demonstrate that libraries can pragmatically develop local genre vocabularies and structured fields for key decision criteria (e.g., number of players, play time, recommended age) while national standards and controlled vocabularies remain incomplete. They argue that cataloging improvements alone do not solve discoverability. In contrast, effective access depends on a socio-technical approach that couples rich metadata with end-user facing tools (in their case, search and filtering systems based on Apache Solr and Blacklight facets interfaces) and cross-unit collaboration so that the interface actually exposes game-relevant filters to users.
+
+From Langan’s (2021) perspective, poor game metadata is not only a retrieval inconvenience; it is an epistemic failure in which users are asked to play a library language game whose rules do not match the vocabularies, genres, platforms, mechanics, and communities through which games are actually understood.
 
 ### Current Cataloging and Metadata Projects
 
@@ -195,6 +201,8 @@ Beyond orientation and spatial literacy, games have also been widely used to tea
 This finding is consistent with earlier and parallel work examining the relationship between library use and information literacy development. Studies by Brown and Kasper [(2013)](https://www.zotero.org/google-docs/?OW1GVr), Capdarest-Arest et al. [(2019)](https://www.zotero.org/google-docs/?Jobfzq), Burgess and Wallace [(Burgess & Wallace, 2021\)](https://www.zotero.org/google-docs/?kABdv2), Abrams and Van Eck [(Abrams & Van Eck, 2021\)](https://www.zotero.org/google-docs/?deMRIJ), and Adams [(Adams, 2009\)](https://www.zotero.org/google-docs/?8Ry3nm) collectively demonstrate that students’ familiarity with library services and spaces is strongly associated with improved confidence and competence in information-seeking behaviors. Game-based interventions are a mechanism through which libraries can accelerate library familiarity by creating playful, low-risk opportunities for exploration and practice.
 
 Cho et al. [(2023)](https://www.zotero.org/google-docs/?WwWpMa) extend the literature on game-based information literacy by showing how library games can cultivate epistemic resilience, not merely source-evaluation skills. Their public-library escape room placed participants inside a fictional misinformation scenario involving misleading headlines, manipulated charts, deepfakes, bots, and social media sharing. The most important design feature was not simply the puzzle structure, but the combination of immersive play, collaborative problem-solving, and a librarian-led debrief that helped participants reflect on vulnerability, confirmation bias, and the consequences of sharing misinformation. In this sense, the program reframes information literacy as a civic and social practice: patrons do not simply learn how to identify misinformation, but rehearse how to think, pause, revise, and recover in an unstable information environment.
+
+Wedlake et al. (2024) extend this work through a larger public-library study of *The Euphorigen Investigation*, arguing that misinformation games are best understood through a sociocultural model of media and information literacy in which platform infrastructures, emotions, everyday social-media practices, narrative, collaboration, and librarian-led debriefing all shape learning.
 
 ### Games Supporting Libraries as a Public Commons
 
@@ -295,9 +303,13 @@ While tabletop gaming can support community formation, participation in the broa
 
 * Digital Breakouts, Breakout Boxes and Escape Rooms  
   * [(Lewallen, 2019\)](https://www.zotero.org/google-docs/?CtH39P) describes breakout boxes as library-adapted escape-room kits using locks, puzzles, and timed challenges as a scalable form of K–12 school library programming that can be deployed for orientations, curriculum-linked instruction, and extended camps. The project goal is to use collaborative puzzle play to advance library learning priorities—especially inquiry, teamwork, communication, and perseverance—while positioning the library as a hub for experiential, student-centered learning. Based on practitioner implementation, Lewallen reports that breakout boxes reliably produce high student engagement and observable growth in collaborative problem-solving and persistence, with debriefing serving as a key mechanism for reflection and transfer of learning.  
+  * Kroski (2020) extends this format to digital breakouts, arguing that online lock-and-puzzle games can support information literacy, curriculum partnerships, staff training, STEM learning, outreach, and bibliographic instruction while reducing the space and equipment demands of physical escape rooms.  
+* Virtual Reality and Immersive Technology  
+  * Dahya et al. (2019) show that VR programs can generate strong patron enjoyment and curiosity, but their Washington public-library study also cautions that VR should not be justified through broad claims about learning or equity unless programs include clear learning goals, intentional outreach, accessibility planning, and staff-supported participation.  
 * Roleplaying and Live Action Roleplaying  
   * [(Nelson & Matthews, 2025\)](https://www.zotero.org/google-docs/?XvPOlp) facilitated adult, teen and all ages events for the popular Dungeness and Dragons Games. They scheduled times, supplied or facilitated the dungeonmasters and connected to collections programs for materials (guides and character sheets), and to their makerspace for fabricating miniatures.   
   * Anderson (2022) offers a practical public-library framework for teen Dungeons & Dragons programming, showing how a TTRPG program can be scoped around small groups, recurring sessions, staff Dungeon Master facilitation, character creation, table etiquette, collection tie-ins, publicity, and informal debriefing.  
+  * Šiptar’s (2023) review of Pavey’s school-library games manual reinforces that school-library game design spans game-based learning and gamification, from simple presentation games to digital, physical, mixed-media, live, and active-learning formats, and should be evaluated through goals, accessibility, rules, interaction, challenge, outcomes, and feedback.  
 * Competitions and Esports  
   * [(Vanden Elzen & Roush, 2013\)](https://www.zotero.org/google-docs/?pSK8C5) reported success with using gaming competitions with games such as Super Smash Bros. to bring new audiences into the library and develop community.   
   * [(Werner, 2013\)](https://www.zotero.org/google-docs/?QTujue) describe a variety of game genres used in compeitions to engage different audiences   
@@ -468,6 +480,8 @@ Institutional capacity also matters. Ambitious game designs may align well with 
 
 Abrams and Van Eck (2021) further clarify why staff preparation and institutional capacity are central to videogame programming. In their national survey of U.S. librarians, they distinguish between first-order barriers, such as funding, equipment, space, training, and administrative support, and second-order barriers, such as librarian confidence, beliefs about videogames, and assumptions about teen behavior. This distinction is useful because different barriers require different interventions. A library may need money for consoles and screens, but it may also need professional development that helps staff understand videogame play as a legitimate literacy practice. Likewise, concerns about noise, supervision, or adolescent behavior may reflect real management challenges, but they may also reveal deeper uncertainty about whether teen gaming belongs in the library at all. For this reason, sustainable GBLS requires both material support and professional culture change.
 
+Elkins and Hollister (2020) show that this capacity problem begins in LIS education: many LIS educators reported little exposure to games in their own coursework or professional practice, and those who did not include games in teaching often wanted course modules, best-practices guides, assignments, conference sessions, or other professional-development materials.
+
 ## Design for Accessibility, Adaptation, and Sustainability
 
 Game-based library services should be designed for adaptation, not only for ideal implementation. Libraries differ widely in staffing, budgets, spaces, technology, patron demographics, language needs, and community priorities. A program that works in a large urban academic library may not transfer directly to a small rural public library, a school library, or a branch with limited staffing.
@@ -478,11 +492,21 @@ This is a useful model for sustainable GBLS design. Programs are more likely to 
 
 Anderson’s (2022) program framework illustrates this kind of adaptable design by offering one-shot and campaign options, in-person and virtual variants, starter-set cost reductions, collection displays, community publicity, and informal evaluation through regular player check-ins and debriefs.
 
+Dahya et al. (2019) further show that emerging-technology programs require planning around physical space, safety, age restrictions, waivers, staff practice time, technology updates, privacy, visibility, and wraparound activities for patrons who are waiting or cannot participate.
+
+Khademi Zare et al. (2024) caution that gamified elements should be localized to community context rather than copied as generic points, badges, or rankings; public libraries must adapt mechanics to local cultures, languages, user groups, and service goals.
+
+Šiptar (2023) similarly highlights transferability limits in practitioner guidance: examples built around English-language tools, Dewey classification, Amazon purchasing, or U.K. school assumptions may need substantial localization before they work in other school-library contexts.
+
+Kroski’s (2020) digital-breakout model adds a low-cost sustainability pathway because games can be built from common web tools, distributed online, reused across classes or programs, and revised through testing and assessment.
+
 ## Evaluate Outcomes Beyond Attendance and Enjoyment
 
 Many game-based library programs are evaluated primarily through attendance, satisfaction, and anecdotal engagement. These measures are useful, but they are not sufficient when games are being used to support learning, inclusion, civic reasoning, or community development. Evaluation should match the purpose of the program.
 
 Cho et al. (2023) provide a stronger model by examining participant reflection, awareness of misinformation techniques, possible shifts in attitudes, social media behaviors, librarian observations, and design implications. The study remains exploratory, but it demonstrates how evaluation can move beyond whether patrons liked the activity. If the goal is epistemic resilience, then evaluation should ask whether participants practiced recognizing uncertainty, reflected on their own vulnerability, discussed strategies with others, or reconsidered their future information behavior.
+
+Wedlake et al. (2024) show why assessment should examine what happens during and after facilitated reflection: players may become more aware of misinformation tactics, but they may also move toward cynicism or conclude that the problem does not apply to their own online behavior unless the debrief helps connect the game to everyday information practice.
 
 For GBLS research more broadly, this is an important area for further development. Libraries need practical, low-burden ways to assess not only participation, but also learning, belonging, access, reflection, and longer-term impact. Future studies could compare facilitated and self-guided game experiences, online and in-person formats, one-time and recurring programs, or different approaches to debriefing. Such work would help move the field from program description toward transferable knowledge about what kinds of game-based library services work, for whom, under what conditions, and why.
 
@@ -521,6 +545,8 @@ Future GBLS research should examine how library game programs connect with the i
 How do tabletop game clubs support belonging among students who do not participate in traditional extracurricular activities?
 
 What facilitation practices help students learn to negotiate rules, manage conflict, and teach games to peers?
+
+How should LIS programs and continuing-education providers prepare librarians to select, facilitate, assess, and advocate for game-based services across public, school, academic, and special-library contexts?
 
 How can school libraries evaluate the curricular impact of tabletop games without reducing them to worksheets or content-delivery tools?
 
