@@ -31,6 +31,8 @@ Noorda and Inman Berens (2021) provide audience-level evidence for treating game
 ## Tournaments and Esports
 ## Escape Rooms and Breakout Boxes
 ## TTRPG and LARP Programs
+Watson et al. (2024) show how a TTRPG program can be designed as library outreach and library-skills instruction at the same time. Their proof-of-concept one-shot turns an academic library floor into a fantasy adventure space, translating service points into themed rooms and common library tasks into quests such as finding books, using microfilm, scanning and printing, and making a 3D print. Because the module was not playtested before publication, its value is primarily as a design case and implementation model rather than outcome evidence.
+
 ## VR, AR, and Immersive Technology
 ## Game Design Workshops and Jams
 ## Programs Inside Game Worlds and Virtual Platforms
