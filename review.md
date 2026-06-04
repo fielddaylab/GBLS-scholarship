@@ -30,6 +30,8 @@ Noorda and Inman Berens (2021) provide audience-level evidence for treating game
 ## Clubs and Recurring Play Groups
 ## Tournaments and Esports
 ## Escape Rooms and Breakout Boxes
+Cho et al. (2023) provide one of the strongest empirical examples of an escape-room format in public-library information literacy. In 17 sessions across five Washington public-library systems, *The Euphorigen Investigation* used collaborative play, a fictional misinformation scenario, a designed deepfake failure, and librarian-led debriefing to increase awareness of misinformation tactics, prompt reflection on confirmation bias and vulnerability, and encourage more cautious attitudes toward sharing information online.
+
 ## TTRPG and LARP Programs
 Watson et al. (2024) show how a TTRPG program can be designed as library outreach and library-skills instruction at the same time. Their proof-of-concept one-shot turns an academic library floor into a fantasy adventure space, translating service points into themed rooms and common library tasks into quests such as finding books, using microfilm, scanning and printing, and making a 3D print. Because the module was not playtested before publication, its value is primarily as a design case and implementation model rather than outcome evidence.
 
