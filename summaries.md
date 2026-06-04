@@ -333,3 +333,19 @@ The study has limitations. It relies on survey responses and self-reported perce
 Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation, and Information Literacy`, immediately after the heading.
 
 Suggested text: Abrams and Van Eck (2021) frame videogame programming as a site of videogame literacies: multimodal, social, participatory meaning-making involving games, players, spectators, spaces, rules, and digital and nondigital resources. Their national survey of 1,016 U.S. librarians found that fewer than half reported videogame programming, most existing programs were recent, and adoption was shaped by first-order barriers such as funding, training, hardware, and space as well as second-order barriers such as confidence, beliefs about games, and assumptions about teen behavior.
+
+# **Baker, C. J. (2014). *Video games: Their effect on society and how we must modernize our pedagogy for students of the digital age* [Master's thesis, Virginia Commonwealth University]. VCU Scholars Compass.**
+
+Unique identifier: Zotero item key `2QU6TCDA`; Better BibTeX citation key `bakerVideoGamesTheir2014`; attachment key `AHX2N6VF`.
+
+Baker's thesis is a broad argument for recognizing video games as culturally significant, socially prevalent, and pedagogically useful. The thesis is organized around four main areas: the prevalence of video games in U.S. society, the role and benefits of games across fields such as medicine, rehabilitation, psychology, economics, art, social-change games, and theatre, the need for a modern pedagogy suited to students of the digital age, and controversies around violent games and gaming addiction. The author draws heavily on popular and scholarly discussions of games, including industry demographic data, flow theory, game-based learning principles, and debates about whether games cause violence or addiction.
+
+The most relevant chapter for the GBLS project is Chapter 3, where Baker argues that traditional education often leaves students passive and disengaged, while good games model interest-driven learning through clear goals, accessible rules, immediate feedback, exploration, unconventional thinking, linear and nonlinear paths, peer guidance, and goal sharing. The thesis connects these design features to the idea that students who have grown up with games may already be accustomed to learning through systems, challenge, feedback, and iterative problem solving. It also treats video games as participatory media that differ from film and television because they require active player decision-making.
+
+Despite those overlaps with game-based learning theory, the source is not a strong fit for direct inclusion in the GBLS literature review. It is not about library services, library collections, library programming, library instruction, or library staff practice. It also does not present original empirical data about libraries or game-based services. Much of its discussion is a general synthesis of game culture, pedagogy, medical uses, theatre, and public controversies, and stronger GBLS sources already cover adjacent points with direct library relevance. For example, Abrams and Van Eck (2021) address videogame literacies in U.S. libraries, Lee et al. (2017) address game advisory and recommendation, and Lee et al. (2020, 2021) address library metadata and preservation infrastructure.
+
+For the larger GBLS project, Baker may remain useful as broad background on game-based pedagogy and the cultural normalization of games, especially if the introduction needs a non-library example of arguments circulating around games and education in the 2010s. However, it should not be added to `review.md` at this stage because it would dilute the library-service focus of the review and duplicate stronger sources.
+
+## **Suggested additions to `review.md`**
+
+No suggested review placement. Recommended Zotero filing: `Explicitly Excluded Literature`.
