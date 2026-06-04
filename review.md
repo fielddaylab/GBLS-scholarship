@@ -10,6 +10,8 @@
 
 # Conceptual Terrain: Games, Play, and Library Service
 ## Game Modalities in Library Contexts
+Hill (2016) offers a synthetic professional map of library gaming modalities, grouping digital games, video games, role-playing games, tabletop games, gamification, and game creation across public, school, and academic libraries. Because it is a literature review rather than original assessment, its main value is definitional: it shows how mid-2010s library discourse connected games to access, new literacies, community building, collections, programming, partnerships, orientation, information literacy, and advocacy.
+
 ## Games, Gamification, and Play
 ## Analog, Digital, and Hybrid Forms
 ## Key Game Studies Debates Relevant to Libraries
