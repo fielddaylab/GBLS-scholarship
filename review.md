@@ -24,6 +24,8 @@ Noorda and Inman Berens (2021) provide audience-level evidence for treating game
 
 ## Research, Scholarship, and Creative Production
 ## Emerging Area: Wellness, Mental Health, and Care
+Lee et al. (2024) make wellness and care a concrete GBLS service area through a multi-site public-library project in which teens co-designed VR spaces for mental health and well-being. Interviews with eight librarians and library staff show that staff moved from anxiety about "mental health" as crisis response toward a broader view of everyday wellness, stigma reduction, safe conversation, and belonging, while still needing clear boundaries around clinical expertise.
+
 
 # Programming Formats and Service Models
 ## Circulating and In-Library Collections
@@ -44,6 +46,8 @@ Torres-Roman and Snow (2014) provide the practitioner handbook behind much teen-
 Sanders (1982) provides an early public-library precedent for Dungeons & Dragons programming. His account of a Michigan City Public Library club describes peer-led tables, long Sunday sessions, a tournament, strong teen attendance, parent questions, and local controversy; it is not an assessment study, but it shows that libraries have long used TTRPGs as teen outreach, community service, and collaborative story-making spaces.
 
 ## VR, AR, and Immersive Technology
+Lee et al. (2024) also complicate the role of VR in library programming: VR attracted some teens, supported technology literacy, and enabled immersive design of supportive spaces, but it also introduced motion sickness, hardware logistics, privacy/account barriers, uneven teen interest, and inclusion concerns. Their recipe-based co-design model is useful for GBLS because it separates core program ingredients, such as youth partnership and design sprints, from adaptable substitutes, local strengths, and optional tools.
+
 ## Game Design Workshops and Jams
 ## Programs Inside Game Worlds and Virtual Platforms
 
