@@ -16,6 +16,8 @@
 
 # Major Areas of Game-Based Library Service
 ## Collections, Circulation, and Access
+Lee, Clarke, Cho, and Windleharth (2017) provide a foundation for game advisory by identifying 16 video game appeals from 1,257 survey responses: narrative, challenge, sensation, fellowship, nostalgia, fantasy, exploration, mood, depth, creativity/innovation, expression, accomplishment, competition, submission, mastery, and learning. Their findings show that appeals can supplement genre and platform metadata, helping libraries recommend games across genre boundaries and fold games into whole-collection readers' advisory rather than treating them as a separate hobby format.
+
 ## Cataloging, Metadata, and Discovery
 Lee, Schmalz, Keating, and Ha (2020) show why game cataloging and metadata must account for more than finished games. Their interviews with 29 stakeholders found that game development artifacts are difficult to organize and discover because of weak documentation incentives in industry, agile and tool-fragmented production environments, inconsistent terminology, local controlled vocabularies, and disconnected library, archive, museum, and special-collections systems; for GBLS, this makes relationship metadata and cross-collection discovery central to treating games as cultural heritage.
 
