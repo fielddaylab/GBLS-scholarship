@@ -17,6 +17,8 @@
 # Major Areas of Game-Based Library Service
 ## Collections, Circulation, and Access
 ## Cataloging, Metadata, and Discovery
+Lee, Schmalz, Keating, and Ha (2020) show why game cataloging and metadata must account for more than finished games. Their interviews with 29 stakeholders found that game development artifacts are difficult to organize and discover because of weak documentation incentives in industry, agile and tool-fragmented production environments, inconsistent terminology, local controlled vocabularies, and disconnected library, archive, museum, and special-collections systems; for GBLS, this makes relationship metadata and cross-collection discovery central to treating games as cultural heritage.
+
 ## Instruction, Orientation, and Information Literacy
 ## Community, Belonging, and the Public Commons
 ## Games as Cultural Media and Library Collections
