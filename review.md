@@ -79,6 +79,8 @@ Lee, King, Dahya, and Lee (2020) provide a practical baseline for VR programming
 ## Evidence Gaps
 ## Equity and Access Gaps
 ## Professional Practice and Training Gaps
+Elkins and Hollister (2020) identify a professional-preparation gap behind GBLS implementation: in a survey of 24 U.S. LIS educators, 41.7% neither used nor discussed gaming in their courses, and many gaming-exclusive respondents cited uncertainty about relevance, integration, knowledge, course-change constraints, or lack of student interest. Their findings suggest that reusable course modules, assignments, best-practices guides, conference workshops, and administrative support are part of the infrastructure needed to make game-based library services teachable in LIS programs.
+
 ## Infrastructure and Metadata Gaps
 ## Assessment Gaps
 ## Survey Agenda
