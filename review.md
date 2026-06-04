@@ -66,6 +66,8 @@ Lee et al. (2024) also complicate the role of VR in library programming: VR attr
 
 Lee, King, Dahya, and Lee (2020) provide a practical baseline for VR programming through 36 interviews with librarians involved in seven Washington State public-library VR sites. Their findings show that VR can support informal learning, social engagement, and equitable access to expensive technology, but only when libraries attend to targeted outreach, public/private setup, accessibility, waiver and account barriers, content quality, and wraparound programming that connects VR to local interests rather than relying on novelty alone.
 
+Ponto et al. (2023) are not studying a library program, but *Waddle* offers adjacent evidence for how immersive, game-like VR can support informal learning and empathy when embodiment, narrative, gesture congruence, and assessment are designed together. In a 43-student science-festival study, the penguin embodiment experience produced learning gains, a significant increase in empathy, and a correlation between embodiment and post-experience empathy, making it a useful design reference for libraries considering VR beyond novelty demonstrations.
+
 ## Game Design Workshops and Jams
 ## Programs Inside Game Worlds and Virtual Platforms
 
