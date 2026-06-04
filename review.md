@@ -48,6 +48,8 @@ Sanders (1982) provides an early public-library precedent for Dungeons & Dragons
 ## VR, AR, and Immersive Technology
 Lee et al. (2024) also complicate the role of VR in library programming: VR attracted some teens, supported technology literacy, and enabled immersive design of supportive spaces, but it also introduced motion sickness, hardware logistics, privacy/account barriers, uneven teen interest, and inclusion concerns. Their recipe-based co-design model is useful for GBLS because it separates core program ingredients, such as youth partnership and design sprints, from adaptable substitutes, local strengths, and optional tools.
 
+Lee, King, Dahya, and Lee (2020) provide a practical baseline for VR programming through 36 interviews with librarians involved in seven Washington State public-library VR sites. Their findings show that VR can support informal learning, social engagement, and equitable access to expensive technology, but only when libraries attend to targeted outreach, public/private setup, accessibility, waiver and account barriers, content quality, and wraparound programming that connects VR to local interests rather than relying on novelty alone.
+
 ## Game Design Workshops and Jams
 ## Programs Inside Game Worlds and Virtual Platforms
 
