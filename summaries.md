@@ -3487,3 +3487,21 @@ This source should remain outside the main literature review. It is a primary re
 ## **Suggested addition to `review.md`**
 
 No direct addition recommended. This is a short primary game/advisory artifact rather than library literature; file in `Explicitly Excluded Literature` after summary completion.
+
+# **Chang, C. (2024). *LSHM: TTRPG Halo 'n' Horns*. Google Docs.**
+
+Unique identifier: Zotero parent item key `4ICXCNCB`; Better BibTeX citation key `LSHMTTRPGHalo2024`; attachment key `M7VXCZG6`.
+
+This short Low Stress High Mayhem handout supports a streamed GameRT session of Connie Chang's micro-RPG *Halo 'n' Horns*. The document describes the game as a comedy micro-RPG for two game masters, an angel and a devil, and one mortal player whom they are trying to win over. It links to the Twitch VOD, identifies Chang and creator pages, and gathers play-alikes, read/watch-alikes, an actual-play example, safety resources, GameRT links, Twitch policy, and a brief stream outline.
+
+The advisory structure is the most useful part of the item. The play-alikes cluster around angels, devils, deals, afterlives, and moral persuasion, while the read/watch-alikes include *Good Omens*, *The Devil Is a Part-Timer*, *The Good Place*, *The City We Became*, *American Gods*, comics, manga, anime, and television. The result is a small player-advisory record that translates a micro-RPG's tone and premise into related games and media.
+
+The facilitation layer is also visible. The handout points to *Script Change*, *The Door Is Open*, and the TTRPG Safety Toolkit, then includes the GameRT Twitch policy emphasizing respectful conduct, no hate speech, moderator intervention, harassment reporting, and private contact. The stream outline is minimal but programmatically recognizable: tech check, introduction and rules, actual play, and discussion.
+
+For the larger GBLS project, this item is useful as a primary example of library-adjacent online tabletop programming and advisory metadata. It shows how a short streamed RPG can be framed through creator attribution, media pathways, actual-play culture, safety tools, moderation norms, and a post-play discussion structure. These pieces could inform practical templates for low-preparation TTRPG programs or reader/player advisory records.
+
+This source should remain outside the main literature review. It is not scholarship, not a program evaluation, and not a detailed library case report. It may be retained for a practical appendix on game advisory, streamed tabletop sessions, or safety-resource bundling, but it should not be cited as evidence for GBLS outcomes.
+
+## **Suggested addition to `review.md`**
+
+No direct addition recommended. This is a short primary game/advisory artifact rather than library literature; file in `Explicitly Excluded Literature` after summary completion.
