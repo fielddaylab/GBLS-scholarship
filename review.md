@@ -132,6 +132,8 @@ Intawong, Puritat, Leenaraj, and Arayaphan (2023) provide stronger comparative e
 
 Jedlicka and Eaton (2024) add a low-budget community-college AR orientation case: Kingsborough librarians built a browser-based scavenger-hunt-style tour with AR.js, A-Frame, JavaScript, and LibGuides rather than a commercial app. Students scanned markers around the library to reveal virtual shapes and check off service locations; informal feedback was positive, but the activity worked better when embedded in library instruction sessions than as a standalone drop-in game.
 
+Sureephong et al. (2024) extend immersive orientation evidence into a gamified metaverse at Chiang Mai University, comparing 40 first-year students in a Unity/Meta Quest 2 virtual-library program with 40 students in a traditional librarian-led program. Both groups completed the same orientation, research-support, book-service, and technology-service tasks and both improved substantially on library knowledge, but the metaverse group did not significantly outperform the traditional group, making the study a useful reminder that immersive novelty should be assessed against ordinary instruction.
+
 
 Giles, Shuyler, Evans, and Reed (2019) add a low-cost transfer-student orientation model through a JMU Libraries card game based on *Apples to Apples*. Designed for short sessions, uncertain attendance, limited staff, and no computers, the game embedded correct answers on the back of question cards, let groups play at different speeds, and used humor and familiar rules to introduce spaces, services, policies, subject librarians, and remote database access.
 
@@ -241,6 +243,8 @@ Ponto et al. (2023) are not studying a library program, but *Waddle* offers adja
 
 Jedlicka and Eaton (2024) show that immersive GBLS can be small, browser-based, and locally built. Their Web AR tour avoided app downloads, minimized Wi-Fi dependence after initial load, used existing LibGuides infrastructure, and published code openly, but it also required JavaScript skill, marker testing, device backup, accessibility workarounds, and ongoing attention to open-source maintainability.
 
+Sureephong et al. (2024) also clarify what a library metaverse can and cannot do as a service model. Their digital twin of an academic library used photogrammetry, Unity, Meta Quest 2 headsets, waypoints, NPC-style virtual librarians, quests, points, levels, badges, and leaderboards; students found the platform engaging and motivating, but the authors caution that development expertise, headset cost, accessibility, nausea, dizziness, and lack of real librarian interaction make it better suited as a supplementary tool for specific audiences than as a replacement for in-person service.
+
 ## Game Design Workshops and Jams
 ## Programs Inside Game Worlds and Virtual Platforms
 
@@ -304,6 +308,8 @@ Broussard (2014) also reframes assessment itself as a design problem: games shou
 Miller's (2019) evidence summary of Kaneko et al.'s mobile *Library Adventure* study reinforces this assessment lesson. The reviewed experiment found similar declarative-knowledge gains for game and tutorial users, mixed behavioral performance after one month, and stronger game-group motivation on attention, relevance, and satisfaction; for GBLS, the value lies in separating motivation, retention, task performance, confidence, and transfer instead of treating game enjoyment as an outcome by itself.
 
 Intawong et al. (2023) show why GBLS assessment should separate immediate learning, delayed retention, motivation, and user feedback. CMU Journey's strongest evidence appeared one month later and in the Interest subscale, while qualitative comments surfaced design, content, device, GPS, battery, charging, and library-space issues that a post-event headcount would miss.
+Sureephong et al. (2024) further demonstrate why GBLS assessment should separate knowledge, motivation, spatial comfort, help-seeking, and human connection. Their gamified metaverse produced knowledge gains comparable to traditional orientation and positive perceptions of quests, points, levels, and leaderboards, but it reduced fewer dimensions of library anxiety than the traditional program because an NPC librarian could not provide the personal touch, empathy, or responsive help associated with real staff.
+
 Stark et al. (2021) make this assessment problem field-wide for scavenger hunts: only four of 13 included cases reported assessment population counts, only one reported a clear timeframe, no study combined a stated sample size with a stated study length, and no included article used a validated measure. Their recommendations give GBLS a basic reporting agenda: collect demographics, participant counts, stable measures, intervention-specific data, aligned outcomes, and short- and long-term evidence rather than relying on local enthusiasm, fun, or familiarity claims alone.
 
 
