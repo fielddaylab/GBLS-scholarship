@@ -137,6 +137,8 @@ Monnier and Winters (2022) extend belonging from orientation events to everyday 
 
 Maranchak and Maranchak (2023) extend library gamification into Web 2.0 marketing and user-generated content, arguing that comments, reviews, photos, videos, Reels, TikToks, podcasts, ratings, creative designs, hashtags, tags, and other patron-created content can function as social proof for library trust and visibility. Their article is practical and conceptual rather than evaluative, but it usefully identifies lightweight GBLS mechanics outside formal programs: social-media challenges, polls, quizzes, AR filters, stickers, status rewards, creative prompts, reposts, collaborative posts, photo zones, art installations, and platform-specific calls to action that invite patrons to create content about library spaces, books, services, and events.
 
+Khademi Zare, Varnaseri, and Bayati (2024) extend public-library gamification from individual activities to audience attraction as a whole-library strategy. Through interviews with 13 gamification experts, they identify applications for events, reading habits, interactive spaces, lending, visits, program awareness, user experience, education, brand loyalty, volunteering, skill development, book searching, timely returns, marketing, and knowledge-production activities, showing how gameful design can be imagined across the public-library service ecology.
+
 ## Games as Cultural Media and Library Collections
 Noorda and Inman Berens (2021) provide audience-level evidence for treating games as part of a broader library media ecosystem. Their survey of book, game, and TV/movie engagement shows that patrons discover stories and formats across channels: substantial shares of respondents discover games through books, books through TV/movies, and other media through games, with cross-media discovery especially pronounced among millennials. For GBLS, this supports collection development, readers' advisory, displays, and programming that connect games to books, fandoms, genres, authors, and other cultural media rather than treating games as a separate recreational category.
 
@@ -217,6 +219,8 @@ Guo and Lan (2023) provide a more empirical virtual-platform example through two
 
 # Cross-Cutting Lessons for Game-Based Library Services
 ## Start with Purpose, Audience, and Local Need
+Khademi Zare et al. (2024) make local audience fit a design requirement: even though play may be broadly recognizable, game elements in public libraries should be adapted to local cultures, languages, values, service goals, and target participants rather than imported as generic points, badges, and leaderboards.
+
 ## Match Game Form to Service Goal
 ## Treat Facilitation as Core Infrastructure
 Capdarest-Arest et al. (2019) also show that facilitation capacity can be taught through the same playful methods GBLS uses with patrons. Their low-tech workshop positioned librarians as designers and testers, giving them practice with empathizing, defining instructional problems, ideating, prototyping, testing, and adapting games with accessible materials.
@@ -254,6 +258,8 @@ Miller's (2019) evidence summary of Kaneko et al.'s mobile *Library Adventure* s
 # Gaps in the Literature and Future Research Agenda
 ## Evidence Gaps
 Adetayo et al. (2023) illustrate a common evidence gap in GBLS-adjacent literature: a detailed gameful model may be theoretically plausible and locally relevant, but still lack classroom testing, learning-outcome data, cost analysis, and implementation evidence. Their cataloguing and classification proposal is therefore useful as a design agenda, not yet as proof of effectiveness.
+
+Khademi Zare et al. (2024) add a public-library version of the same evidence gap: expert interviews can generate a rich map of possible gamification applications, but the field still needs implemented prototypes, comparison groups, age- or audience-specific testing, and measures of lending, attendance, reading, satisfaction, learning, volunteering, and retention.
 
 ## Equity and Access Gaps
 ## Professional Practice and Training Gaps
