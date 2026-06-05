@@ -4,6 +4,8 @@
 # Introduction: Why Game-Based Library Services Matter
 ## Importance
 ### Games have demonstrated value in education, health, culture, entertainment
+
+Barz et al. (2024) provide broad educational evidence for taking game-based learning seriously, while also showing why GBLS cannot borrow that evidence uncritically. In a meta-analysis of 35 school-based digital game-based learning studies published from 2015 to 2020, representing 7,139 pupils, DGBL produced a significant medium overall learning effect (g = .54), a significant medium cognitive effect (g = .67), a significant small affective-motivational effect (g = .32), and no significant metacognitive effect. Because the review excluded analog games, gamification, VR/AR, university/adult learners, and non-school settings, it is best used as background support for the educational promise of well-designed games, not as direct evidence for library programs.
 ### Games are a mainstream cultural practice. 
 Entertainment Software Association data (2016)
 The average gamer age is 35.
