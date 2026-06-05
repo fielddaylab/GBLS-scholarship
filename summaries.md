@@ -3527,3 +3527,21 @@ For the GBLS project, this source should be used as adjacent context. It support
 Section and exact location: `Scope, Definition, and Review Approach > Source Base`, after the Mattson (2021) paragraph.
 
 Suggested text: Blummer and Kenton (2019) provide adjacent source-base context by reviewing 174 papers on academic-library outreach from 2008 to January 2019. Gaming appears as one small specialized-program subtheme, alongside instruction, roaming services, orientations, exhibits, makerspaces, and collections; the review is too broad to evidence GBLS outcomes, but it shows that video-game events, information-literacy games, and library-orientation games were being treated as academic-library outreach tools within wider patterns of relevance, collaboration, cultural artifacts, flexibility, marketing, management, and uneven assessment.
+
+# **Asercion, C. (2023). *LSHM: Street Magic & Names*. Google Docs.**
+
+Unique identifier: Zotero parent item key `5Z6P5ADC`; Better BibTeX citation key `LSHMStreetMagic2023`; attachment key `F36HCJBR`.
+
+This short Low Stress High Mayhem handout supports a GameRT session around Caro Asercion's *i'm sorry did you say street magic* and *there are names here more powerful than our own*. The document describes *street magic* as a GMless city-building story game for two to six players in which players discover and imagine a city of neighborhoods, landmarks, residents, names, relationships, and changing events. It describes *there are names here more powerful than our own* as a related worldbuilding tool that can be used with *street magic* or as a standalone activity.
+
+The handout functions primarily as advisory metadata and session support. It points to an actual-play video, an interview with Asercion, and "city vibes" media such as *The Unsleeping City* and lofi/chillhop city soundscapes. The play-alikes connect the games to other collaborative worldbuilding, memory, place-making, and map/story games such as *Beak, Feather, & Bone*, *Companions' Tale*, *Epitaph*, *A Mending*, *Microscope*, and *The Quiet Year*, as well as quieter digital place-making games such as *Cozy Grove* and *Dorfromantik*. The read-alikes extend the advisory frame through speculative city and naming literature, including N. K. Jemisin, Neil Gaiman, Susanna Clarke, Patrick Rothfuss, and Becky Chambers.
+
+The facilitation layer is visible through safety and moderation resources. The document lists *Script Change*, lines and veils, *The Door Is Open*, and the TTRPG Safety Toolkit. It also includes the GameRT Twitch policy emphasizing kindness, respect, no hate speech, moderator action, harassment reporting, and private contact. The GameRT links section points viewers toward the blog, Facebook groups, public resources, website, Zotero library, and email contact.
+
+For the larger GBLS project, this source is useful as a practitioner artifact showing how library-adjacent game programming can support discovery around place-making, collaborative storytelling, worldbuilding, names, and community imagination. It demonstrates a strong advisory pattern: summarize the games' forms, connect them to actual play, gather thematic ambience, offer play/read-alikes across media, and pair the program with safety tools and conduct norms.
+
+This source should remain outside the main literature review. It is not scholarship, not a program evaluation, and not a detailed library-service case report. It may later support practical appendices on TTRPG advisory, worldbuilding games, safety resources, and online session scaffolding, but it should not be cited as evidence for GBLS outcomes or implementation effectiveness.
+
+## **Suggested addition to `review.md`**
+
+No direct addition recommended. This is a short primary game/advisory artifact rather than library literature; file in `Explicitly Excluded Literature` after summary completion.
