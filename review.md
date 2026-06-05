@@ -22,6 +22,8 @@ Seay (2018) offers a practitioner argument for analog, co-present game forms as 
 
 Seay's later "Space Guardians" column adds a complementary practitioner rationale for analog game services: board games, books, makerspaces, and physical library spaces can answer a longing for tactile, face-to-face, slower social interaction amid digital overload. The essay is speculative rather than evidentiary, but it helps explain why analog GBLS formats may be valuable precisely because they gather bodies, materials, attention, and conversation in shared public space.
 
+Seay's tabletop-resurgence column similarly frames board and card games as "high touch" responses to high-tech life. As a practitioner essay, it is not outcome evidence, but it helps name the service affordances of tabletop GBLS: face-to-face communication, nonverbal cues, tactile pieces, shared tables, low-tech access, and social community, with escape rooms, LARP, and megagames appearing as extensions of the same analog/immersive impulse.
+
 ## Key Game Studies Debates Relevant to Libraries
 
 # Major Areas of Game-Based Library Service
