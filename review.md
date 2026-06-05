@@ -87,6 +87,9 @@ McDonald et al. (2021) extend this metadata argument by examining six game devel
 
 Post et al. (2023) extend the metadata discussion from game artifacts to catalog records for digitally distributed indie narrative games. Their action-research project created or enhanced MARC records for 18 Choice of Games titles and added 33 LC name authority records, showing that catalogers need to describe platforms, access conditions, version stability, interactivity, narrative subject matter, gameplay mechanics, community terminology such as "interactive fiction," and the individual creators whose work is often invisible in mainstream game cataloging.
 
+Bianchini and Munini (2025) extend game description from metadata records to shelf classification and player-facing selection through ClaG, a classification system for plays and games developed for the Italian Games Archive. Built through play/game theory, Ranganathanian classification principles, expert testing, and iterative classification of more than 200 mostly tabletop games, ClaG organizes games by space, materials, setting, game outcome, genre, and age so toy libraries and libraries with game collections can arrange, identify, research, and deliver games according to how patrons actually choose and use them.
+
+
 ## Instruction, Orientation, and Information Literacy
 Abrams and Van Eck (2021) frame videogame programming as a site of videogame literacies: multimodal, social, participatory meaning-making involving games, players, spectators, spaces, rules, and digital and nondigital resources. Their national survey of 1,016 U.S. librarians found that fewer than half reported videogame programming, most existing programs were recent, and adoption was shaped by first-order barriers such as funding, training, hardware, and space as well as second-order barriers such as confidence, beliefs about games, and assumptions about teen behavior.
 
@@ -209,6 +212,8 @@ Guo and Lan (2023) provide a more empirical virtual-platform example through two
 ## Curate for Inclusion, Access, and Advisory
 Cross et al. (2023) provide adjacent audience data for tabletop GBLS through a survey and open dataset of 1,603 board gamers' demographics, preferences, and motivations. The sample was mostly men, white, highly educated, and active in the hobby, but it also included substantial variation and more than one-quarter of respondents reporting a mental health or neurodevelopmental condition; respondents generally preferred in-person 3-4 player games lasting 30-60 minutes, cards and boards, competitive all-vs-all or cooperative styles, Euro/hybrid designs, and were motivated most by social interaction and strategising rather than competition. Because the study samples hobby board gamers rather than library patrons, it should not define library demand, but it can help libraries choose tabletop formats with attention to inclusion, accessibility, group size, session length, social goals, and population-specific preferences.
 
+Bayeck and Bayeck (2024) add a culturally situated game-design caution for GBLS selection and facilitation. Their textual analysis of Songo and Owela argues that classic African board games should not be flattened into generic "Mancala" labels; local names, materials, spaces, directions of play, seeds, holes, cattle metaphors, forest and semiarid landscapes, and community philosophies all shape what the games mean and how players connect them to ancestry, memory, and place. The article is adjacent rather than library evidence, but it supports culturally relevant game advisory: libraries should describe, select, teach, and facilitate culturally specific tabletop games with attention to community knowledge and learner context rather than treating them as interchangeable mechanics.
+
 ## Build Partnerships and Community Pipelines
 Monnier and Winters (2022) show that GBLS partnerships can be spatial as well as organizational. Their library-writing center collaboration used small, portable, low-rule activities in threshold spaces to connect patrons with writing support, International Games Week, student organizations, conversation partners, D&D groups, and coffee-shop-adjacent gathering areas; the practical lesson is to start simple, observe where patrons move activities, and let play reveal where service boundaries feel inviting or uncertain.
 
@@ -238,6 +243,8 @@ Elkins and Hollister (2020) identify a professional-preparation gap behind GBLS 
 
 ## Infrastructure and Metadata Gaps
 de Groat (2015) also clarifies why metadata gaps persist: platform information is often trapped in notes or improvised fields, game genre headings are inconsistent or topical rather than true genre/form access points, "computer games" and "video games" are not cleanly distinguished, franchise and title authority work lacks clear guidance, and the Library of Congress no longer catalogs games within the workflow that generates the policies most U.S. libraries follow. These gaps limit discovery, advisory, preservation, and scholarly use of game collections.
+
+Bianchini and Munini (2025) show that infrastructure gaps also include the absence of practical classification systems for analog game collections. ClaG is promising because its facets map to use questions, but it still needs fuller treatment of traditional children's games, sports, mimicry and role-playing games, video games, large-scale field testing, and cross-institutional implementation.
 
 ## Assessment Gaps
 ## Survey Agenda
