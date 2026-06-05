@@ -4011,3 +4011,19 @@ The source overlaps substantially with the existing Lee, Cho, Fox, and Perti (20
 ## **Suggested addition to `review.md`**
 
 No direct addition recommended. The existing metadata-schema paragraph already covers the SIMM/GAMER user-centered schema work; file this companion article in `Cataloging, Metadata, and Discovery`.
+
+# **Games/play & childhood development resource list. (2023). Google Docs.**
+
+Unique identifier: Zotero parent item key `FE73J8WI`; Better BibTeX citation key `GamesPlayChildhood2023`; attachment key `MBGFGG5G`.
+
+This item is a short Google Docs resource list rather than an article, report, or evaluated program description. The Zotero record captures a webpage titled *Games/Play & Childhood Development Resource List*, and the PDF attachment is a one-page export of that list. Its extracted text is sparse and compressed, but it is organized around links to articles, analog games, TTRPGs and children, books, lists and LibGuides, and video resources.
+
+The main content is a set of pointers to public-facing and practitioner-facing resources. The analog-games and TTRPG section lists items such as articles on the benefits of tabletop role-playing games during and after COVID-19, social-emotional skill building through games, inclusive gaming culture, Dungeons & Dragons' popularization, role-playing games and youth mental health, a foundry10 white paper on Game to Grow's youth TTRPG programming, library interviews about running TTRPGs, RPGs as therapy, social rewards in tabletop roleplaying games, child- and teen-oriented TTRPG lists, and a GameRT resource on why libraries have games.
+
+The list also points to two books: *Playing Games in the School Library: Developing Game-Based Lessons and Using Gamification Concepts* and *Libraries Got Game: Aligned Learning Through Modern Board Games*. It includes broad resource-list headings for meaningful play with children and teens, gaming in libraries, annotated bibliography resources, and video resources. Because the item is a list of sources, its GBLS value is indirect: it maps a small practitioner bibliography around childhood development, tabletop play, social-emotional learning, school-library lessons, and library gaming resources.
+
+For the larger GBLS project, this item may be useful as a signpost for locating more substantive sources, especially around TTRPGs with children, social-emotional learning, child development, library gaming rationales, and school-library game lessons. It does not itself provide evidence, definitions, methods, case findings, circulation data, program outcomes, or a sustained conceptual argument. It should therefore be retained as a processed resource but not cited in the main literature review.
+
+## **Suggested addition to `review.md`**
+
+No direct addition recommended. This is a bibliography/resource-list artifact rather than GBLS literature; file it in `Explicitly Excluded Literature` after summary completion.
