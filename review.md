@@ -171,6 +171,8 @@ Cross, Mould, and Smith (2015) broaden the academic-library collection model thr
 
 ## Clubs and Recurring Play Groups
 Copeland et al. (2013) show that tabletop gaming in school libraries can follow multiple service paths: curriculum-integrated role-play, after-school board game clubs, shared standards-aligned game collections, life-skills programming, and tabletop game design workshops. Their practitioner cases emphasize affordability, portability, rule reading, social interaction, cross-age friendship, curricular alignment, flexible facilitation, and post-game reflection, making tabletop games a practical bridge between recreation and instruction.
+Maluck (2013) provides a public-library youth counterpart through Richland Library Northeast's Play It Loud program, a recurring Wii and tabletop gaming series that averaged twenty-one participants and became a weekend fixture. The case shows how recurring play groups depend on local demand signals, multiplayer-friendly game selection, room acoustics, regular scheduling, staff facilitation, teen volunteers, age boundaries, and links to adjacent programs such as Go instruction, anime club, volunteering, and Teen Advisory Board participation.
+
 
 ## Tournaments and Esports
 ## Escape Rooms and Breakout Boxes
@@ -249,6 +251,8 @@ Giles (2015) reinforces this design principle from a low-resource angle: keep th
 
 ## Evaluate Outcomes Beyond Attendance
 Brown and Kasper (2013) make the assessment problem explicit through ninety hours of participant observation in a public-library video game club. Their case shows that attendance and enjoyment miss much of what game clubs may do: staff modeled information seeking, enforced rules, mentored youth, and connected play to reading, technology, local history, behavior, academic standing, library cards, book checkouts, and social belonging. They recommend richer measures of reading motivation, library anxiety, information literacy, behavior, skill development, and reward-based progress so libraries can evaluate whether gaming programs advance learning and community goals rather than merely drawing participants.
+Maluck (2013) similarly argues that public-library gaming outcomes can be read through youth-development assets rather than attendance alone. His observations of Play It Loud and Go Your Own Way connect gaming to family communication, supportive nonparent adults, fair play, youth service, safety, responsibility, cultural competence, cross-gender participation, and pathways into other library relationships, while also showing the limits of anecdotal assessment and the need to separate entertainment value from educational extension.
+
 
 Broussard (2014) also reframes assessment itself as a design problem: games should connect learning objectives to activities early, provide specific and immediate feedback, and use wraparound reflection such as clicker review or discussion to help students transfer game experience into later research behavior. This supports GBLS assessment approaches that look for formative evidence during play, not only post-program satisfaction.
 
