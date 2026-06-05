@@ -99,6 +99,8 @@ Wood and Carter (2018) make research and creative production a concrete GBLS ser
 ## Emerging Area: Wellness, Mental Health, and Care
 Lee et al. (2024) make wellness and care a concrete GBLS service area through a multi-site public-library project in which teens co-designed VR spaces for mental health and well-being. Interviews with eight librarians and library staff show that staff moved from anxiety about "mental health" as crisis response toward a broader view of everyday wellness, stigma reduction, safe conversation, and belonging, while still needing clear boundaries around clinical expertise.
 
+Brennan (2023) offers a small school-library practitioner example of games as part of a wellbeing ecology rather than a standalone program. In redeveloping Stonyhurst College's library from a primarily silent study space into a more welcoming third place, Brennan introduced break-time activities including chess, computer games, and film screenings alongside environmental changes, Mental Health First Aid training, and a Reading Well collection. The article is illustrative rather than evaluative, but it shows how low-barrier play can support friendship, conversation, relaxation, and belonging within a broader student-centered mental-health service model.
+
 
 # Programming Formats and Service Models
 ## Circulating and In-Library Collections
