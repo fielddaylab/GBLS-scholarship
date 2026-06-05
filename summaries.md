@@ -3649,3 +3649,21 @@ This source should remain outside the main literature review. It is not scholars
 ## **Suggested addition to `review.md`**
 
 No direct addition recommended. This is a primary game/advisory/program resource rather than library literature; file in `Explicitly Excluded Literature` after summary completion.
+
+# ***LAG: Stardew Valley Resources*. (2024). Google Docs.**
+
+Unique identifier: Zotero parent item key `YLD9EAM6`; Better BibTeX citation key `LAGStardewValley2024`; attachment key `2X9B2PJA`.
+
+This very short GameRT/LAG resource document is an advisory handout for *Stardew Valley*. It points users to *Stardew Valley* social media, ConcernedApe's Twitter account, and the *Stardew Valley* wiki, then gathers play-alikes across board games, video games, and tabletop role-playing games.
+
+The play-alike structure is the main useful feature. The board-game recommendations include *Stardew Valley: The Board Game*, *Viticulture*, *Agricola*, and *Fields of Arle*. The video-game recommendations include *Harvest Moon*, *Strange Horticulture*, *Graveyard Keeper*, *My Time at Portia*, *Slime Rancher*, *Forager*, and *Animal Crossing*. The TTRPG recommendations include *Take Root*, *The Farmstead*, *Wishing Well*, and *Cozy Town*. Together, these recommendations frame *Stardew Valley* through farming, cozy play, management, rural life, crafting, and gentle social-world building.
+
+The document also includes the standard GameRT Twitch policy, asking participants to be kind and respectful, prohibiting hate speech, reserving moderator removal rights, and giving viewers options for harassment reporting or private contact. It closes with links to the GameRT blog, Facebook spaces, public resources, website, and email contact.
+
+For the larger GBLS project, this source is useful only as a small practitioner artifact of player advisory. It shows how a library-adjacent game community can translate one popular digital game into cross-format recommendations and community moderation norms. That may be useful for a practical appendix on read-alikes/play-alikes or cozy-game advisory, but it does not provide evidence about library programming, outcomes, instruction, collections, or patron learning.
+
+This source should remain outside the main literature review. It is not scholarship, not a case study, and not an evaluative report. It should be filed as excluded after summary completion.
+
+## **Suggested addition to `review.md`**
+
+No direct addition recommended. This is a short primary game/advisory artifact rather than library literature; file in `Explicitly Excluded Literature` after summary completion.
