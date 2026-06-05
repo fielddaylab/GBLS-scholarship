@@ -190,6 +190,8 @@ Casucci et al. (2020) add an employee-facing wellness case from a health science
 # Programming Formats and Service Models
 ## Fandom Festivals and Pop-Culture Events
 Virello (2019) shows how a public library can scale a fandom event from a passive Free Comic Book Day program into a full library comic con. Southington Library ComiCon combined comic giveaways, cosplay, storytimes, crafts, scavenger hunts, video game tournaments, tabletop gaming, themed displays, performers, community partners, traffic planning, costume and prop rules, food logistics, and rotating activities; attendance grew from about thirty people in the initial FCBD program to nearly nine hundred at the first full ComiCon, making the case useful for GBLS as an access-oriented pop-culture festival model rather than a stand-alone game night.
+Varsa (2022) offers a smaller local-talent version of the same fandom-festival model. Oconee County Library's free all-ages FanFest used a partner civic-center venue, Friends support, local authors, artists, musicians, vendors, food trucks, cosplay, acting workshops, a library-system podcast tie-in, high-school volunteers, and a University of Georgia Student Board Game Club gaming table to draw more than 350 participants, showing how gaming can be one activity within a broader community creativity festival.
+
 
 ## Circulating and In-Library Collections
 Forsythe (2021) gives a practical academic-library model for board games as a non-traditional collection and recurring program. Her community-college case links needs assessment, language-independent selection for international students, BoardGameGeek-informed criteria, box and component preservation, in-library tracking, student feedback, partnerships, and pandemic-era virtual options, showing that tabletop collections require the same policy, maintenance, marketing, and facilitation infrastructure as other library services.
@@ -251,6 +253,8 @@ Jedlicka and Eaton (2024) show that immersive GBLS can be small, browser-based, 
 
 Sureephong et al. (2024) also clarify what a library metaverse can and cannot do as a service model. Their digital twin of an academic library used photogrammetry, Unity, Meta Quest 2 headsets, waypoints, NPC-style virtual librarians, quests, points, levels, badges, and leaderboards; students found the platform engaging and motivating, but the authors caution that development expertise, headset cost, accessibility, nausea, dizziness, and lack of real librarian interaction make it better suited as a supplementary tool for specific audiences than as a replacement for in-person service.
 
+Chen and Yang (2024) extend AR service models from orientation to makerspace user education through a game-based augmented reality navigation system built on Octalysis gamification and scaffolding theory. In a small experiment with 24 grade 11 students, GARNS produced significant learning effectiveness, performed comparably to a librarian-guided tour, and outperformed a web navigation system on learning effectiveness and value/expectation dimensions of motivation, suggesting that AR is most useful when guidance is tied to physical equipment, spaces, and procedural tasks.
+
 ## Game Design Workshops and Jams
 ## Programs Inside Game Worlds and Virtual Platforms
 
@@ -276,6 +280,8 @@ Bishoff, Farrell, and Neeser (2015) turn local fit into a cautionary academic-li
 
 ## Match Game Form to Service Goal
 Jedlicka and Eaton (2024) offer a concrete form-fit lesson: an AR scavenger hunt can orient students to physical locations, but participation depends on the surrounding service workflow. Their game was technically playable as a self-guided drop-in activity, yet completion and engagement improved when it became part of scheduled library instruction.
+
+Chen and Yang (2024) add a makerspace version of the form-fit lesson: AR navigation is well matched to user education when learners need situated prompts, task sequencing, and object-specific guidance in a physical production space. The system is less a replacement for librarians than a scalable way to standardize introductory instruction and reduce repetitive staff burden where equipment complexity would otherwise limit access.
 
 ## Treat Facilitation as Core Infrastructure
 Capdarest-Arest et al. (2019) also show that facilitation capacity can be taught through the same playful methods GBLS uses with patrons. Their low-tech workshop positioned librarians as designers and testers, giving them practice with empathizing, defining instructional problems, ideating, prototyping, testing, and adapting games with accessible materials.
