@@ -3220,6 +3220,28 @@ Section and exact location: `Major Areas of Game-Based Library Service > Instruc
 
 Suggested text: Elkins (2015) translates game-literacy scholarship into school-library practice by arguing that gameplay can develop critical thinking, problem solving, collaboration, information literacy, and media literacy, especially when students also create mods, tools, strategies, videos, wiki pages, mathematical models, creative writing, and strategy guides around games. The article is advocacy rather than assessment evidence, but it helps connect school-library gaming to equitable access and informal literacy learning.
 
+# **Mattson, J. L. (2021). Review of the book *Games and gamification in academic libraries*, edited by S. Crowe and E. Sclippa. *Communications in Information Literacy, 15*(1), 158-163.**
+
+Unique identifier: Zotero parent item key `XRRW28N5`; Better BibTeX citation key `mattsonGamesGamificationAcademic2021`; attachment key `XANPMQBZ`.
+
+Mattson reviews Stephanie Crowe and Eva Sclippa's edited ACRL volume *Games and Gamification in Academic Libraries*. The review is not an original research study, but it provides a useful map of how a contemporary professional book organized academic-library gaming practice across collection development, information literacy instruction, programming, and outreach. Mattson frames the book as responding to the tabletop gaming renaissance and to higher education's interest in active and experiential learning.
+
+The reviewed book is organized into four sections. The first section, "An Overview of Games and Gamification," includes case studies of game nights, campus partnerships, game-based student-worker training, reward systems such as "library flair," team-building escape rooms, accessibility, ADA compliance, and diversity, equity, and inclusion considerations. Mattson singles out the accessibility chapter as essential for anyone planning gaming in instruction or outreach.
+
+The second section focuses on adding and maintaining circulating game collections. Mattson notes chapters on growing electronic and tabletop collections through strategic planning, accessibility questions, circulation policies, maintenance procedures, custom arcades for game-based curricula, staff training for game recommendations, BoardGameGeek-informed collection development, and collection assessment through surveys and circulation data. For GBLS, this portion reinforces that game collections require policy, accessibility, maintenance, recommendation knowledge, and assessment infrastructure.
+
+The third section covers games and gamification in information literacy instruction. Mattson describes chapters on information games for high-volume first-year one-shots, gaming and digital badging in business first-year experience programming, semester-long gamification using *Pandemic Legacy* to teach disinformation, and escape rooms as experiential approaches to hands-on information literacy lessons. She notes that stronger chapters connect game design to the ACRL Framework for Information Literacy for Higher Education.
+
+The fourth section covers programming and outreach. Examples include transforming a library services fair into a mystery game, tabletop programs for casual gamers and international students, a Center for Games & Learning supported by an IMLS grant, game jams, smaller campus gaming events, gaming as a way to reduce library anxiety and foster student-faculty relationships, escape rooms built from scratch, and a special-collections orientation modeled on *Clue*. Mattson's evaluation is positive but not uncritical: she notes repetition around escape rooms and resources such as BreakoutEDU and BoardGameGeek, inconsistent chapter structure, and the absence of a concluding chapter.
+
+For the larger GBLS project, Mattson's review is most useful as a source-base marker. It indicates that by 2021, academic-library gaming literature had consolidated into a professional development volume spanning collections, instruction, outreach, accessibility, staff training, game nights, escape rooms, game jams, badging, and partnerships. Because the item is a review of an edited book, it should not be used as evidence for any single program's outcomes unless the underlying chapter is consulted. Its value is synthetic and bibliographic: it helps identify the scope of professional discourse and points to specific implementation areas worth tracking.
+
+## **Suggested addition to `review.md`**
+
+Section and exact location: `Scope, Definition, and Review Approach > Source Base`, after the heading.
+
+Suggested text: Mattson's (2021) review of Crowe and Sclippa's edited volume *Games and Gamification in Academic Libraries* helps characterize the professional source base for academic-library GBLS. The reviewed volume spans game nights, collection development, circulating electronic and tabletop games, information-literacy games, badging, escape rooms, outreach fairs, game jams, accessibility, staff training, student-faculty relationship building, and special-collections orientations; because Mattson is reviewing an edited book rather than reporting a new study, it is best used as a map of professional discourse and as a pointer to underlying chapters rather than as outcome evidence.
+
 # **Banihashem, S. K., Dehghanzadeh, H., Clark, D., Noroozi, O., & Biemans, H. J. A. (2024). Learning analytics for online game-based learning: A systematic literature review. *Behaviour & Information Technology, 43*(12), 2689-2716. https://doi.org/10.1080/0144929X.2023.2255301**
 
 Unique identifier: Zotero item key `WNZ7L4A2`; Better BibTeX citation key `banihashemLearningAnalyticsOnline2024`; attachment key `U9RCHYA2`.
@@ -3243,3 +3265,29 @@ However, the article should remain excluded from the main review. Its evidence b
 ## **Suggested addition to `review.md`**
 
 No direct addition recommended. This is a higher-education online game-based-learning analytics review rather than library literature, so it should remain in `Explicitly Excluded Literature` after summary completion.
+
+# **Bremer, P. (2017). Games people play. *The Reference Librarian, 58*(3), 202-205. https://doi.org/10.1080/02763877.2017.1320699**
+
+Unique identifier: Zotero parent item key `NHFEUHCI`; Better BibTeX citation key `bremerGamesPeoplePlay2017`; attachment key `KE2LT7BN`.
+
+Bremer describes a tabletop Game Day created through collaboration between Rodney A. Briggs Library at the University of Minnesota Morris and the Morris Public Library. The academic library already hosted monthly game nights for students, but this event deliberately moved beyond campus to reach the wider community. The public library director wanted to attract underserved segments of the population, while the academic library wanted to use partnership to expand audience, bridge the town/gown divide, and foster future collaboration.
+
+The event design centered inclusion. Bremer and the public library director wanted families, young adults, children, college students, and adults to feel comfortable, while recognizing that teenagers would be the hardest group to attract. They focused on board and card games because they lacked video-game resources and because tabletop games were experiencing a renaissance. The game list mixed familiar titles and hobby games, including *Risk*, *Monopoly*, checkers, chess, *Clue*, *Cranium*, *Forbidden Island*, *Dominion*, *Exploding Kittens*, *Apples to Apples*, *Bananagrams*, and *Welcome to the Dungeon*. Adult-oriented games such as *Cards Against Humanity* were deliberately excluded to keep the event family friendly.
+
+Several operational choices are useful for GBLS. The organizers chose the public library rather than the university library because it had a large meeting room, a central location, and less perceived separation from community members. They advertised the partnership prominently, mentioned free pizza, designed colorful posters, checked the community calendar, and promoted the event through local newspaper, social media, both library websites, radio, campus channels, and town postings. The Friends of the Morris Public Library and Briggs Library Associates funded pizza, snacks, soda, cups, plates, and napkins because neither library had a gaming budget.
+
+The event was successful enough to fill the community room. Bremer reports that college students, university and community adults, and younger children attended, while teenagers remained underrepresented. The facilitation work was active: organizers helped participants choose games, explained rules, connected people with suitable games, joined tables when a game needed another player, and stayed flexible when games ran past closing. The event also revealed collection and planning gaps. More games for younger elementary children were needed, because the academic library's collection leaned toward teen/adult play. The organizers also planned to rethink teen publicity and consider a teen-focused event.
+
+For the larger GBLS project, Bremer is a practical community-partnership case. It shows that tabletop programming can bridge academic and public library missions, use existing academic-library game collections for community outreach, and make the library feel welcoming through food, simple games, visible partnership, and staff facilitation. It also reinforces several recurring implementation lessons: choose the venue that reduces access barriers, keep games short and approachable, match games to actual attendees, plan for noise and closing time, budget for refreshments, and evaluate who did not show up as carefully as who did.
+
+The article is not an assessment study and offers no formal survey or outcome data. Its evidence is narrative and reflective. Even so, it is valuable because it describes a complete small-scale GBLS service model from idea to planning, delivery, and revision. It belongs in the review as a practitioner example of tabletop games as community outreach and inter-library collaboration.
+
+## **Suggested additions to `review.md`**
+
+Section and exact location: `Major Areas of Game-Based Library Service > Community, Belonging, and the Public Commons`, after the Vanden Elzen and Roush (2013) paragraph.
+
+Suggested text: Bremer (2017) gives a small academic-public library partnership example of tabletop games as community bridge. By moving a University of Minnesota Morris game program to the Morris Public Library, the partners used a more accessible civic venue, shared game collections and staff expertise, food, broad publicity, and simple family-friendly board and card games to bring together college students, adults, families, and children, while also identifying teens as a still-unreached audience.
+
+Section and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Build Partnerships and Community Pipelines`, after the Vanden Elzen and Roush (2013) paragraph.
+
+Suggested text: Bremer (2017) also shows that GBLS partnerships can reduce place-based barriers. The academic library had games and staff experience, while the public library had a central community location and local audience; together they could host a tabletop Game Day neither library could have delivered as effectively alone, using Friends-group support, shared publicity, rule facilitation, and post-event reflection to plan the next iteration.
