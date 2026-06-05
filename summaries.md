@@ -4487,3 +4487,21 @@ For the larger GBLS project, this article is only tangential. It shows that libr
 ## **Suggested addition to `review.md`**
 
 No suggested addition. This is a library workflow and ergonomics article about gaming peripherals, not a game-based library service study, and should remain in `Explicitly Excluded Literature` after summary completion.
+
+# **Creating a TTRPG Resources. (2023, August 15). *Google Docs*. https://docs.google.com/document/d/1RxxSUrfIN9GB3jE94GzgwfUztm09xZCpUtVWltKm3_c/edit**
+
+Unique identifier: Zotero parent item key `849MR2XQ`; Better BibTeX citation key `CreatingTTRPGResources2023`; attachment key `9S9GL8YI`.
+
+This short Google Docs handout, saved in Zotero as *Creating a TTRPG Resources*, is a two-page resource list for people learning to create tabletop role-playing games. It does not identify an individual author in the Zotero record or extracted PDF text. The document points readers toward vocabulary, examples, technical tools, safety tools, awards, and GameRT resources rather than developing a sustained argument or reporting a program evaluation.
+
+The handout opens with terms to explore, including roleplaying game, RPG, TTRPG, micro RPG, solo RPG, game jam, hack, Open Game System, Creative Commons license, TTRPG zine, and game design diary. It then lists external resources such as an Open Game Systems wiki page, a Dicebreaker article on making a roleplaying game, an Avery Alder design thread, Itch.io, #RPGSEA, and a Miscast video about creating a tabletop role-playing game. It also notes image sources such as the Biodiversity Heritage Library Flickr account and the Library of Congress Free to Use and Reuse collections.
+
+The document names several TTRPGs or creators for reference, including *Microscope* by Ben Robbins, *A Mending* by Shing Yin Khor, *Space Rock Opera* by Andrew J. Young, and games by Sealed Library. It identifies Google Jamboard as a technical tool and lists common tabletop safety tools, including Script Change, The Door Is Open, the TTRPG Safety Toolkit, Building the Palette, and Lines and Veils. It also points to awards and inspiration sources such as the Ennies, Origins Award, Dicebreaker tabletop awards, the Diana Jones Award, and Nebula-nominated TTRPGs.
+
+The most program-relevant portion is the brief discussion prompt at the end. It acknowledges that participants may not know what they are doing, may not have researched in depth, and may be in the same position as many patrons: limited experience but a willingness to create. It frames TTRPG design as a space for experimentation, creation without rigid rules or preconceived notions, and learning through the process of play and design. That language aligns with game design workshop practice, but the document does not describe an actual library event, audience, outcomes, facilitation structure, or assessment.
+
+For the larger GBLS project, this handout is useful as implementation ephemera rather than literature-review evidence. It could help a librarian assemble a TTRPG design workshop, game jam, zine-making session, or role-playing-game creation program by pointing to licensing, safety, inspiration, and design resources. It also reflects a GameRT-adjacent service ethos: librarians can learn alongside patrons and normalize experimentation. However, because it is a sparse resource list without evidence, analysis, or a documented library service model, it should not be added to the main review text.
+
+## **Suggested addition to `review.md`**
+
+No suggested addition. This is a short TTRPG resource handout rather than research or a documented library program, and should remain in `Explicitly Excluded Literature` after summary completion.
