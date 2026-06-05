@@ -164,6 +164,9 @@ Nance (2022) extends the wellness thread to academic libraries by framing play a
 
 
 # Programming Formats and Service Models
+## Fandom Festivals and Pop-Culture Events
+Virello (2019) shows how a public library can scale a fandom event from a passive Free Comic Book Day program into a full library comic con. Southington Library ComiCon combined comic giveaways, cosplay, storytimes, crafts, scavenger hunts, video game tournaments, tabletop gaming, themed displays, performers, community partners, traffic planning, costume and prop rules, food logistics, and rotating activities; attendance grew from about thirty people in the initial FCBD program to nearly nine hundred at the first full ComiCon, making the case useful for GBLS as an access-oriented pop-culture festival model rather than a stand-alone game night.
+
 ## Circulating and In-Library Collections
 Forsythe (2021) gives a practical academic-library model for board games as a non-traditional collection and recurring program. Her community-college case links needs assessment, language-independent selection for international students, BoardGameGeek-informed criteria, box and component preservation, in-library tracking, student feedback, partnerships, and pandemic-era virtual options, showing that tabletop collections require the same policy, maintenance, marketing, and facilitation infrastructure as other library services.
 
