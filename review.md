@@ -31,6 +31,8 @@ We are experiencing an emergency of epistemology (CITE) and Libraries remain one
 ## Source Base
 Mattson's (2021) review of Crowe and Sclippa's edited volume *Games and Gamification in Academic Libraries* helps characterize the professional source base for academic-library GBLS. The reviewed volume spans game nights, collection development, circulating electronic and tabletop games, information-literacy games, badging, escape rooms, outreach fairs, game jams, accessibility, staff training, student-faculty relationship building, and special-collections orientations; because Mattson is reviewing an edited book rather than reporting a new study, it is best used as a map of professional discourse and as a pointer to underlying chapters rather than as outcome evidence.
 
+Blummer and Kenton (2019) provide adjacent source-base context by reviewing 174 papers on academic-library outreach from 2008 to January 2019. Gaming appears as one small specialized-program subtheme, alongside instruction, roaming services, orientations, exhibits, makerspaces, and collections; the review is too broad to evidence GBLS outcomes, but it shows that video-game events, information-literacy games, and library-orientation games were being treated as academic-library outreach tools within wider patterns of relevance, collaboration, cultural artifacts, flexibility, marketing, management, and uneven assessment.
+
 
 # Conceptual Terrain: Games, Play, and Library Service
 ## Game Modalities in Library Contexts
