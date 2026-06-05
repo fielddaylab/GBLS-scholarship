@@ -211,6 +211,8 @@ Guo and Lan (2023) provide a more empirical virtual-platform example through two
 ## Start with Purpose, Audience, and Local Need
 ## Match Game Form to Service Goal
 ## Treat Facilitation as Core Infrastructure
+Capdarest-Arest et al. (2019) also show that facilitation capacity can be taught through the same playful methods GBLS uses with patrons. Their low-tech workshop positioned librarians as designers and testers, giving them practice with empathizing, defining instructional problems, ideating, prototyping, testing, and adapting games with accessible materials.
+
 ## Curate for Inclusion, Access, and Advisory
 Cross et al. (2023) provide adjacent audience data for tabletop GBLS through a survey and open dataset of 1,603 board gamers' demographics, preferences, and motivations. The sample was mostly men, white, highly educated, and active in the hobby, but it also included substantial variation and more than one-quarter of respondents reporting a mental health or neurodevelopmental condition; respondents generally preferred in-person 3-4 player games lasting 30-60 minutes, cards and boards, competitive all-vs-all or cooperative styles, Euro/hybrid designs, and were motivated most by social interaction and strategising rather than competition. Because the study samples hobby board gamers rather than library patrons, it should not define library demand, but it can help libraries choose tabletop formats with attention to inclusion, accessibility, group size, session length, social goals, and population-specific preferences.
 
@@ -242,6 +244,8 @@ Miller's (2019) evidence summary of Kaneko et al.'s mobile *Library Adventure* s
 ## Equity and Access Gaps
 ## Professional Practice and Training Gaps
 Elkins and Hollister (2020) identify a professional-preparation gap behind GBLS implementation: in a survey of 24 U.S. LIS educators, 41.7% neither used nor discussed gaming in their courses, and many gaming-exclusive respondents cited uncertainty about relevance, integration, knowledge, course-change constraints, or lack of student interest. Their findings suggest that reusable course modules, assignments, best-practices guides, conference workshops, and administrative support are part of the infrastructure needed to make game-based library services teachable in LIS programs.
+Capdarest-Arest, Opuda, and Stark (2019) make professional preparation more concrete through a ninety-minute MLA workshop that taught health sciences librarians low-tech game design and design-thinking methods. Participants used ordinary materials to prototype database-instruction games, and self-reported confidence using gamification rose from 28% before the session to 83% after it; the study is short-term and self-reported, but it shows that GBLS training can focus on rapid prototyping, rule testing, shared repositories, and low-cost instructional design rather than only on finished game examples.
+
 
 ## Infrastructure and Metadata Gaps
 de Groat (2015) also clarifies why metadata gaps persist: platform information is often trapped in notes or improvised fields, game genre headings are inconsistent or topical rather than true genre/form access points, "computer games" and "video games" are not cleanly distinguished, franchise and title authority work lacks clear guidance, and the Library of Congress no longer catalogs games within the workflow that generates the policies most U.S. libraries follow. These gaps limit discovery, advisory, preservation, and scholarly use of game collections.
