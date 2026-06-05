@@ -99,6 +99,8 @@ Post et al. (2023) extend the metadata discussion from game artifacts to catalog
 
 Bianchini and Munini (2025) extend game description from metadata records to shelf classification and player-facing selection through ClaG, a classification system for plays and games developed for the Italian Games Archive. Built through play/game theory, Ranganathanian classification principles, expert testing, and iterative classification of more than 200 mostly tabletop games, ClaG organizes games by space, materials, setting, game outcome, genre, and age so toy libraries and libraries with game collections can arrange, identify, research, and deliver games according to how patrons actually choose and use them.
 
+Hobart (2024) brings special-collections practice into the game-metadata discussion through Penn State's item-level cataloging of 64 toys and games. Combining RDA, OLAC object best practices, and DCRM guidance, the records used visual-materials coding, component inventories, summary notes, citations, provenance and imperfection notes, subject headings, genre/form terms, publisher and printer access points, and a local `Games/Toys` discovery facet so games could be identified as artifacts and found as research materials.
+
 Adetayo, Oladipo, Adeleke, and Odunewu (2023) move cataloging and classification from collection description into LIS education by proposing a gamified model for teaching Nigerian students cataloguing tools, descriptive work, subject access, class marks, and shelving logic. Their model uses cloud delivery, short-term tasks, rewards, scaffolded task design, and teamwork to make technical metadata labor more practice-based and motivating, though it remains a conceptual framework rather than a tested intervention.
 
 
@@ -314,6 +316,8 @@ Adetayo et al. (2023) broaden the training gap from practicing librarians to LIS
 de Groat (2015) also clarifies why metadata gaps persist: platform information is often trapped in notes or improvised fields, game genre headings are inconsistent or topical rather than true genre/form access points, "computer games" and "video games" are not cleanly distinguished, franchise and title authority work lacks clear guidance, and the Library of Congress no longer catalogs games within the workflow that generates the policies most U.S. libraries follow. These gaps limit discovery, advisory, preservation, and scholarly use of game collections.
 
 Bianchini and Munini (2025) show that infrastructure gaps also include the absence of practical classification systems for analog game collections. ClaG is promising because its facets map to use questions, but it still needs fuller treatment of traditional children's games, sports, mimicry and role-playing games, video games, large-scale field testing, and cross-institutional implementation.
+
+Hobart (2024) adds a special-collections metadata gap: existing standards help but do not fully cover rare or unique games. RDA disperses three-dimensional-object guidance, OLAC focuses on object best practices rather than rare-materials needs, DCRM guidance is strongest for books and two-dimensional graphics, game genre/form vocabularies remain limited, and detailed bibliographic reference works for games are scarce, forcing local policy decisions for description, facets, provenance, components, and copy-specific notes.
 
 ## Assessment Gaps
 ## Survey Agenda
