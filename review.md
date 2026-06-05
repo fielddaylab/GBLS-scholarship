@@ -15,6 +15,8 @@ Board and Card games at an $8.3B + $2.75B  market internationally, with the US a
 Libraries are developing Game Based Library Programming (GBLP) and could benefit from prior lessons learned from colleagues, inspiration.
 ### The role of Libraries is everchanging
 Today’s game-based or multimedia library programs are not new. Instead, they continue a long-standing struggle to balance imagination and instruction, play and professionalism in library service. (Burek Pierce, 2016) explores a particular era, between 1876 and 1925, where influence from progressive thinking in education led to the development of child centric spaces and materials being offered by public libraries, focusing on puzzles, toys and games. He argues that by the early 20th century, as librarianship professionalized, many leaders grew uneasy with what they saw as the “experimental temptation” of playful youth services. Critics like Montrose J. Moses and Clara Whitehill Hunt insisted that children’s rooms should mirror the seriousness of adult departments and a new push for efficiency, uniformity, and respectability led to a retreat from games and visual displays.
+Nicholson (2013) broadens this historical frame by showing that games, toys, puzzles, and play have appeared in North American library collections and services for more than 150 years, from nineteenth-century chess rooms and rational recreation to Depression-era toy lending and puzzle contests, school-library games, summer reading challenges, academic game collections, videogame circulation, Wii bowling, National Gaming Day, and game creation. This history reframes GBLS as a recurring library response to culture, recreation, learning, and community need rather than as a recent digital novelty.
+
 Academic libraries are evolving from quiet study halls to multi-functional “third spaces” offering both intellectual and recreational engagement (McMullen, 2008; Gayton, 2008)
 We are experiencing an emergency of epistemology (CITE) and Libraries remain one of the remaining connection points between rigorous knowledge production communities and the public at large (CITE CITE)
 
@@ -26,6 +28,8 @@ We are experiencing an emergency of epistemology (CITE) and Libraries remain one
 
 # Conceptual Terrain: Games, Play, and Library Service
 ## Game Modalities in Library Contexts
+Nicholson (2013) also helps define the GBLS service field by distinguishing game collections from gaming programs and by treating games broadly as structured forms of play across board, card, computer, role-playing, console, puzzle, toy, and hybrid formats. His historical survey shows that games can function as materials, programs, research objects, social infrastructure, digital-literacy tools, outreach mechanisms, and collection-development challenges.
+
 Hill (2016) offers a synthetic professional map of library gaming modalities, grouping digital games, video games, role-playing games, tabletop games, gamification, and game creation across public, school, and academic libraries. Because it is a literature review rather than original assessment, its main value is definitional: it shows how mid-2010s library discourse connected games to access, new literacies, community building, collections, programming, partnerships, orientation, information literacy, and advocacy.
 
 ## Games, Gamification, and Play
