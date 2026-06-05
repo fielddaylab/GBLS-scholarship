@@ -14,6 +14,8 @@ Hill (2016) offers a synthetic professional map of library gaming modalities, gr
 
 ## Games, Gamification, and Play
 ## Analog, Digital, and Hybrid Forms
+Seay (2018) offers a practitioner argument for analog, co-present game forms as distinct from many screen-based educational games. Although not an empirical study, the column usefully frames escape rooms, Edu-LARPs, and megagames as collaborative, multiplayer, immersive activities whose value lies in real-time social interaction, role assumption, communication, and problem solving, reinforcing the GBLS principle that libraries should match game form to learning and community goals rather than treating digital novelty as inherently superior.
+
 ## Key Game Studies Debates Relevant to Libraries
 
 # Major Areas of Game-Based Library Service
