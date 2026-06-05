@@ -199,6 +199,8 @@ Brown and Kasper (2013) make the assessment problem explicit through ninety hour
 
 Broussard (2014) also reframes assessment itself as a design problem: games should connect learning objectives to activities early, provide specific and immediate feedback, and use wraparound reflection such as clicker review or discussion to help students transfer game experience into later research behavior. This supports GBLS assessment approaches that look for formative evidence during play, not only post-program satisfaction.
 
+Miller's (2019) evidence summary of Kaneko et al.'s mobile *Library Adventure* study reinforces this assessment lesson. The reviewed experiment found similar declarative-knowledge gains for game and tutorial users, mixed behavioral performance after one month, and stronger game-group motivation on attention, relevance, and satisfaction; for GBLS, the value lies in separating motivation, retention, task performance, confidence, and transfer instead of treating game enjoyment as an outcome by itself.
+
 
 # Gaps in the Literature and Future Research Agenda
 ## Evidence Gaps
