@@ -3291,3 +3291,23 @@ Suggested text: Bremer (2017) gives a small academic-public library partnership 
 Section and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Build Partnerships and Community Pipelines`, after the Vanden Elzen and Roush (2013) paragraph.
 
 Suggested text: Bremer (2017) also shows that GBLS partnerships can reduce place-based barriers. The academic library had games and staff experience, while the public library had a central community location and local audience; together they could host a tabletop Game Day neither library could have delivered as effectively alone, using Friends-group support, shared publicity, rule facilitation, and post-event reflection to plan the next iteration.
+
+# **Beth and Angel Make Games. (2024). *LSHM: Were You Paying Attention?!* Google Docs.**
+
+Unique identifier: Zotero item key `NCPXFTAT`; Better BibTeX citation key `LSHMWereYou2024`; attachment key `9GU3XWS2`.
+
+This short LSHM entry is a resource/advisory document for *Were You Paying Attention?!*, a compact game by Beth and Angel Make Games. It describes the game as being about attention, focus, and the cost of overwhelming listeners with too much information. The game premise is competitive and intentionally paradoxical: players learn about attention by trying to overwhelm opponents with information. The document also links to a Twitch VOD of a related session.
+
+The entry notes that *Were You Paying Attention?!* was included in the TTRPGs for Trans Rights in Florida bundle on itch.io, a fundraising bundle supporting Zebra Youth and Transinclusive Group. This gives the item a useful cultural and community context: it is part of independent tabletop role-playing game culture, charity bundles, and queer/trans mutual-aid-oriented game publishing rather than a library program or research study.
+
+Most of the document is advisory rather than rules text. It lists play-alikes across TTRPGs and board games, including *Fiasco*, *Epitaph*, *Stealing Stories*, *Cameleon*, *Codenames*, *Decrypto*, *A Fake Artist Goes to New York*, *Hanabi*, *The Moth Presents: A Game of Storytelling*, *Sounds Fishy*, *Telestrations*, *Wavelength*, and *Word Slam*. It also points to BoardGameGeek mechanism terms such as communication limits, memory, and storytelling. The read-alikes include storytelling craft books such as *How to Tell a Story*, *Long Story Short*, *Out on the Wire*, and *The Science of Storytelling*.
+
+The entry also gathers website articles and safety tools. The article links include improvisation and storytelling resources and a piece on cognitive load theory in roleplaying games. The safety-tool list includes *Script Change*, *The Door Is Open*, and the TTRPG Safety Toolkit. The final section reproduces a GameRT Twitch policy emphasizing kindness, respect, no hate speech, moderator removal rights, harassment reporting, and private contact options.
+
+For the larger GBLS project, the item is useful only as an example of game advisory metadata and community-contextual description. It shows how a library-adjacent game resource can connect one game to play-alikes, read-alikes, mechanisms, storytelling resources, safety tools, streaming policies, and social justice bundle context. These are all relevant to reader/player advisory and inclusive facilitation, but the item itself is not scholarship and does not report a library service.
+
+This source should therefore remain outside the main review. It may be useful as a collection-development or advisory example if the project later builds a practical appendix of tabletop game records, read-alike/play-alike language, or safety-tool references. It should not be cited as evidence for GBLS outcomes, implementation, or patron learning.
+
+## **Suggested addition to `review.md`**
+
+No direct addition recommended. This is a short primary game/advisory artifact rather than library literature; file in `Explicitly Excluded Literature` after summary completion.
