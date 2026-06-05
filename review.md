@@ -136,6 +136,8 @@ Ponto et al. (2023) are not studying a library program, but *Waddle* offers adja
 ## Curate for Inclusion, Access, and Advisory
 ## Build Partnerships and Community Pipelines
 ## Plan for Operations and Sustainability
+Swiatek and Gorsse (2016) make operations and sustainability central to academic-library gaming. Their French overview shows that murder parties, alternate reality games, curriculum-linked rallies, weekly document puzzles, object-identification challenges, motion-recognition games, and research-training scenarios can attract users and teach documentary research, but only become durable services when libraries formalize strategy, budgets, communication plans, staff training, knowledge management, job descriptions, and public gaming policies. Their distinction between a strategic game manager and an operational game designer is especially useful for GBLS staffing: libraries need advocates and coordinators as well as people with game-design and facilitation expertise.
+
 ## Design for Reflection and Transfer
 ## Evaluate Outcomes Beyond Attendance
 
