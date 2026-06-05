@@ -11,6 +11,8 @@ Entertainment Software Association data (2016)
 The average gamer age is 35.
 41% of gamers are women.
 Nearly two-thirds of U.S. households include at least one regular gamer
+Statista's video-gaming market report adds a current global scale marker: it estimates worldwide video game market revenue at $475.04 billion in 2024, forecasts growth to $691.31 billion by 2029, and reports that 84.1% of global internet users surveyed in Q2 2024 played video games on some device, with smartphones as the leading device for play. For GBLS, these figures are background context rather than service evidence, but they support treating video games as ordinary cultural media that patrons encounter across phones, consoles, PCs, streaming platforms, and esports ecosystems.
+
 24% of US adults claim board and card games to be one of their hobbies in 2024
 Board and Card games at an $8.3B + $2.75B  market internationally, with the US as the largest consumer ($2.61B + $0.36B) projected to continue growing
 ### Work is underway, would benefit from intelligence sharing
@@ -128,6 +130,8 @@ Adetayo, Oladipo, Adeleke, and Odunewu (2023) move cataloging and classification
 
 ## Instruction, Orientation, and Information Literacy
 Abrams and Van Eck (2021) frame videogame programming as a site of videogame literacies: multimodal, social, participatory meaning-making involving games, players, spectators, spaces, rules, and digital and nondigital resources. Their national survey of 1,016 U.S. librarians found that fewer than half reported videogame programming, most existing programs were recent, and adoption was shaped by first-order barriers such as funding, training, hardware, and space as well as second-order barriers such as confidence, beliefs about games, and assumptions about teen behavior.
+
+Coonan (2019) offers a brief editorial bridge from library videogame programming to broader information-literacy theory. Introducing work on videogaming and transmedia literacy, she frames players' informal practices as information-literacy practices involving problem-solving, identity performance, navigating, networking, and negotiating outside formal institutions; for GBLS, the piece is not program evidence, but it supports treating play as an everyday learning context rather than only as a delivery mechanism for predetermined library lessons.
 
 Seay (2019) offers an illustrative, fictionalized design vignette for gamified database instruction: students race in teams to prevent a nuclear-core meltdown by solving Web of Science search problems, interpreting article clues, opening a locked box, and combining codes through a visible progress system. The column is not assessment evidence, but it usefully shows how library instruction can be designed as a scenario with stakes, props, feedback, collaboration, and information tasks embedded in play.
 
