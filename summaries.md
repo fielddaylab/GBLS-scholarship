@@ -3152,6 +3152,26 @@ Section and exact location: `Programming Formats and Service Models > TTRPG and 
 
 Suggested text: Anderson (2022) turns public-library D&D into a replicable teen program framework: a one-staff, three- to five-player model for ages 15-18 with an introductory character-creation session, recurring four- to five-hour play sessions, physical and remote tool lists, publicity channels, budget ranges, and informal debriefing. Its developmental-assets rationale links TTRPG play to adult relationships, safety, peer influence, creative activity, reading for pleasure, planning, interpersonal competence, conflict resolution, personal power, and self-esteem, making the format legible as youth-development programming as well as recreation.
 
+# **Simpson, K., & Midgley, K. (2023). Learning through fun: Board games cafes for undergraduate nursing students. *British Journal of Nursing, 32*(8), 384-389.**
+
+Unique identifier: Zotero parent item key `RTWHJ98M`; Better BibTeX citation key `simpsonLearningFunBoard2023`; attachment key `GT5EN7ZJ`.
+
+Simpson and Midgley describe the development, implementation, and evaluation of clinical board-game cafes for first-year undergraduate nursing students at the University of Nottingham. The article is not about libraries, but it is relevant background for game-based learning, tabletop play, and low-tech social learning environments. The authors begin from the popularity of contemporary board-game cafes and from educational literature suggesting that games can support motivation, participation, experimentation, critical thinking, creativity, collaboration, communication, decision making, and safe practice.
+
+The model was developed after curriculum changes increased Year 1 students' simulated clinical learning. The authors wanted a low-cost, cafe-style classroom environment where students could rehearse clinical concepts in a more relaxed and engaging way. The initiative was piloted with final-year volunteer students so that games could be adjusted for first-year difficulty. Three cafes took place before COVID-19 closures, and the model later resumed with the same delivery format and some added games.
+
+Each two-hour cafe served 24 students across adult, child, mental health, and learning disability nursing fields. At least three staff were present to serve drinks, answer questions, and join games. The cafe atmosphere included hot drinks, biscuits, background music, and tables arranged for groups of no more than eight students. Games were aligned with topics already covered in the curriculum, including hydration, the drug round, infection control, anatomy, and physiology. Textbooks and the British National Formulary were available so students could look up uncertain answers, and staff used the sessions to ask questions and facilitate discussion.
+
+Student feedback produced several themes. Students valued the cafe as a different and safe way to learn, especially because it offered repetition, hands-on engagement, and a relaxed environment away from lecture halls or seminars. Some students connected the activities to placement confidence, medication calculations, and clinical knowledge. Students also valued the social opportunity: the cafe helped them meet peers across nursing fields, participate in a timetabled social event despite caring responsibilities or commuting pressures, and build belonging. Staff observed peer support, encouragement of quieter students, and a light-hearted atmosphere with laughter and conversation.
+
+The discussion connects the cafes to Kolb's experiential learning theory and Bandura's social cognitive theory. Students were responsible for their own learning while observing and sharing knowledge with peers. The authors argue that board-game cafes can support teamworking, communication, interpersonal skills, social integration, staff-student relationships, and psychologically safe learning. They also acknowledge practical cautions: games require space and cost, competition may feel threatening for some learners, and noisy environments may challenge neurodiverse students.
+
+For GBLS, the article is useful as adjacent evidence for why low-tech tabletop play can make professional learning more social, safe, and memorable. It also names a possible library connection: future plans included storing games in the library so students could borrow them for self-directed learning. However, the intervention itself was designed and delivered by nursing faculty in a university teaching context, not by a library. It should therefore not be inserted into the main GBLS review as library evidence. It may be useful later as background if the project develops an appendix on health education, academic-library partnerships, or board-game cafes as a transferable format.
+
+## **Suggested addition to `review.md`**
+
+No direct addition recommended. Because this is a nursing education intervention rather than a library service, collection, or program, it should be filed in `Explicitly Excluded Literature` after summary completion.
+
 # **Huber, S. E., Kiili, K., Nebel, S., Ryan, R. M., Sailer, M., & Ninaus, M. (2024). Leveraging the potential of large language models in education through playful and game-based learning. *Educational Psychology Review, 36*(1), Article 25. https://doi.org/10.1007/s10648-024-09868-z**
 
 Unique identifier: Zotero item key `KY2K8TWH`; Better BibTeX citation key `huberLeveragingPotentialLarge2024`; attachment key `Y72FNTPV`.
@@ -3173,3 +3193,29 @@ This source should therefore remain excluded from the main review text. It can b
 ## **Suggested addition to `review.md`**
 
 No direct addition recommended. This is an education/AI/game-based-learning perspective article with no library setting, library staff, patrons, collections, programming, or service evaluation. File in `Explicitly Excluded Literature` after summary completion.
+
+# **Elkins, A. J. (2015). Lets play! Why school librarians should embrace gaming in the library. *Knowledge Quest, 43*(5), 58-63.**
+
+Unique identifier: Zotero parent item key `PQJ96YIY`; Better BibTeX citation key `elkinsLetsPlayWhy2015`; attachment key `276NTI2N`.
+
+Elkins makes a practitioner-facing case that school librarians should play, collect, recommend, and program around games because games can support 21st-century literacies and deepen relationships with students. The article begins by pushing against the stereotype that games are only for young males, noting that mobile and social games have widened participation and that even relatively casual games may influence behavior. The central argument is that games are not only entertainment; they can be information-rich informal learning environments where students practice critical thinking, problem solving, collaboration, media literacy, and information literacy.
+
+The article situates games within a long library history of games, puzzles, and toys, citing Nicholson's history of play in North American libraries. Elkins emphasizes that learners develop skills in both formal and informal environments, and that digital games provide engaging spaces where players interact with information objects and learning supports. Because failure in games is usually low-cost, students can take risks, experiment, and build understanding through active participation rather than passive reception.
+
+Elkins gives particular attention to online and multiplayer gaming as literacy work. Players collaborate in-game, but they also extend collaboration outside the game by creating modifications, tools, strategies, gameplay videos, wiki pages, mathematical models, strategy guides, creative writing, and storytelling. This framing is useful for GBLS because it treats gaming literacy as production, analysis, communication, and information work around games, not merely consumption of games. It also connects directly to school librarians' existing concerns with reading, learning, and equitable access.
+
+The access argument is one of the article's strongest GBLS contributions. Elkins argues that if school libraries provide print materials to foster traditional literacy, they should also provide access to digital media and mentoring so students can fully engage with 21st-century literacies. This is especially important for socioeconomically disadvantaged students who may not otherwise have access to games, platforms, or knowledgeable adults who can help them engage productively with gaming cultures.
+
+The article also gives a modest starter list for librarians who are new to gaming. Elkins recommends accessible, relatively inexpensive games such as *The Cave*, *Cogs*, *Monster Loves You!*, *Spaceteam*, and *World of Goo*, tying them to critical thinking, problem solving, spatial reasoning, collaboration, moral choice, replay, and accessibility. The recommendations are dated in platform terms, but the selection logic remains useful: begin with games that do not require expensive consoles, are approachable for novice staff, and can be connected to particular literacy or thinking goals.
+
+Finally, Elkins turns from rationale to implementation questions. School libraries considering games need to decide what materials to collect, including games, consoles, controllers, and strategy guides; how to circulate these materials, including loan periods, transportation, parent pickup, liability, damage, and loss; and what programming they can support, from meeting space to discussion groups and tournaments. He points readers to Gallaway, Neiburger, and Nicholson for further practical guidance. For the larger GBLS review, this source is best used as professional advocacy and early-stage implementation guidance rather than as outcome evidence.
+
+## **Suggested additions to `review.md`**
+
+Section and exact location: `Major Areas of Game-Based Library Service > Collections, Circulation, and Access`, after the Boyle (2018) paragraph.
+
+Suggested text: Elkins (2015) adds a school-library access argument for digital games: if libraries provide print materials to foster traditional literacy, they can also provide games, platforms, strategy guides, and mentoring so students develop 21st-century literacies through media-rich informal learning. His practitioner guidance names early collection questions around consoles, controllers, games, strategy guides, loan periods, transportation, parent pickup, liability, damage, and loss.
+
+Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation, and Information Literacy`, after the Pervolaraki et al. (2015) paragraph.
+
+Suggested text: Elkins (2015) translates game-literacy scholarship into school-library practice by arguing that gameplay can develop critical thinking, problem solving, collaboration, information literacy, and media literacy, especially when students also create mods, tools, strategies, videos, wiki pages, mathematical models, creative writing, and strategy guides around games. The article is advocacy rather than assessment evidence, but it helps connect school-library gaming to equitable access and informal literacy learning.
