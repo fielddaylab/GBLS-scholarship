@@ -715,3 +715,27 @@ The limitations are substantial. The column does not include assessment data, sa
 Section and exact location: `Programming Formats and Service Models > Escape Rooms and Breakout Boxes`, after the Wedlake et al. (2024) paragraph.
 
 Suggested text: Seay (2019) adds practitioner design reflection to the escape-room literature by asking how a game can actually teach something rather than merely decorate instruction. His Mars survival game is not a library assessment study, but it usefully distinguishes content from experience: participants may learn science, cooperation, and problem solving because those tasks are embedded in role-play, puzzles, pressure, and narrative stakes, suggesting that library escape rooms need designed transfer rather than theme alone.
+
+# **Seay, J. A. (2019). Considering games in libraries and such: A liminal response to watching paint dry. *Against the Grain, 31*(2), 37.**
+
+Unique identifier: Zotero item key `LHF32QZC`; Better BibTeX citation key `seayConsideringGamesLibraries2019a`; attachment key `CKAFVP7D`.
+
+Seay's "A Liminal Response to Watching Paint Dry" is a short practitioner essay about library instruction, student disengagement, anxiety, and the potential of immersive game environments. The column begins with a familiar library instruction problem: students arrive expecting a dry database or library-resources session, and the librarian faces blank expressions, low energy, and little visible feedback. Seay describes this not as student incapacity but as a problem of engagement, perceived relevance, and anxiety.
+
+The article's most useful move is to connect library instruction to Mark Carnes's work on Reacting to the Past role-immersion games. Seay summarizes Carnes's reflection on a failed seminar and the discovery that students' "sophisticated disinterest" could mask fear of appearing ignorant in front of an instructor or peers. This is directly relevant to library instruction because students may enter a one-shot session with similar insecurity: they need the knowledge, but they may also feel exposed by not knowing how to search databases, navigate resources, or ask questions.
+
+Seay uses Carnes's response to frame game-based learning as more than entertainment. If students are anxious about displaying ignorance under ordinary classroom rules, role-immersion games can move them into an alternative identity and a different social space. Instead of simply being told knowledge, students are put into a world where they need to use the subject matter in a meaningful context. This is the familiar idea of learning by doing, but Seay emphasizes that it is engaged doing within a designed environment.
+
+The key term is "liminal." Seay describes Carnes's game environments as threshold spaces where ordinary rules are suspended or subverted, status and social hierarchies can be inverted, uncertainty and emotional intensity rise, and imaginative expression becomes possible. For GBLS, this is a useful conceptual frame for why role-play, escape rooms, and scenario-based instruction can feel different from ordinary library teaching. The game creates a boundary-crossing space where students can act, test, collaborate, make mistakes, and engage with difficult material under new rules.
+
+Seay then applies this logic back to library instruction. If Reacting to the Past can transform students' relationship to history texts and seminar participation, escape-room-like or role-immersive library instruction might transform students' relationship to databases, catalogs, sources, and research processes. The column ends with a playful imagined "Get out of Library Hell" escape room, but the underlying point is serious: even a one-shot instruction class can be redesigned as a more engaging learning environment.
+
+For the GBLS review, this source supports a theoretical and practitioner bridge between TTRPG/LARP programming, escape rooms, and information literacy instruction. It helps explain why games may be useful not only because they are fun, but because they change the social and emotional conditions of learning. Students can engage under a role, within a scenario, and around a shared challenge rather than as isolated novices being evaluated by experts.
+
+The limitations are again clear. The article does not present a library implementation or assessment data, and its claims rely on Carnes's role-immersion work plus Seay's practitioner reflection. It should not be used as proof of learning outcomes. Its contribution is a design concept: game-based library instruction can create liminal learning spaces that reduce the stiffness of ordinary instruction and make research tasks part of purposeful action.
+
+## **Suggested additions to `review.md`**
+
+Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation, and Information Literacy`, after the Seay (2019) nuclear-core vignette paragraph.
+
+Suggested text: Seay's "A Liminal Response to Watching Paint Dry" gives a related explanation for why game-based instruction may help with disengagement: role-immersion and escape-room formats can create liminal spaces where ordinary classroom hierarchies and anxieties are temporarily suspended. Drawing on Mark Carnes's Reacting to the Past work, Seay argues that learners may participate more fully when they enter a scenario, assume roles, and use knowledge inside a meaningful problem space rather than being asked to display competence in a conventional lecture setting.
