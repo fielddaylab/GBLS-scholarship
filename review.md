@@ -1,6 +1,22 @@
 # Abstract
 
+
 # Introduction: Why Game-Based Library Services Matter
+## Importance
+### Games have demonstrated value in education, health, culture, entertainment
+### Games are a mainstream cultural practice. 
+Entertainment Software Association data (2016)
+The average gamer age is 35.
+41% of gamers are women.
+Nearly two-thirds of U.S. households include at least one regular gamer
+24% of US adults claim board and card games to be one of their hobbies in 2024
+Board and Card games at an $8.3B + $2.75B  market internationally, with the US as the largest consumer ($2.61B + $0.36B) projected to continue growing
+### Work is underway, would benefit from intelligence sharing
+Libraries are developing Game Based Library Programming (GBLP) and could benefit from prior lessons learned from colleagues, inspiration.
+### The role of Libraries is everchanging
+Today’s game-based or multimedia library programs are not new. Instead, they continue a long-standing struggle to balance imagination and instruction, play and professionalism in library service. (Burek Pierce, 2016) explores a particular era, between 1876 and 1925, where influence from progressive thinking in education led to the development of child centric spaces and materials being offered by public libraries, focusing on puzzles, toys and games. He argues that by the early 20th century, as librarianship professionalized, many leaders grew uneasy with what they saw as the “experimental temptation” of playful youth services. Critics like Montrose J. Moses and Clara Whitehill Hunt insisted that children’s rooms should mirror the seriousness of adult departments and a new push for efficiency, uniformity, and respectability led to a retreat from games and visual displays.
+Academic libraries are evolving from quiet study halls to multi-functional “third spaces” offering both intellectual and recreational engagement (McMullen, 2008; Gayton, 2008)
+We are experiencing an emergency of epistemology (CITE) and Libraries remain one of the remaining connection points between rigorous knowledge production communities and the public at large (CITE CITE)
 
 # Scope, Definition, and Review Approach
 ## Defining Game-Based Library Services
@@ -25,6 +41,14 @@ Seay's later "Space Guardians" column adds a complementary practitioner rational
 Seay's tabletop-resurgence column similarly frames board and card games as "high touch" responses to high-tech life. As a practitioner essay, it is not outcome evidence, but it helps name the service affordances of tabletop GBLS: face-to-face communication, nonverbal cues, tactile pieces, shared tables, low-tech access, and social community, with escape rooms, LARP, and megagames appearing as extensions of the same analog/immersive impulse.
 
 ## Key Game Studies Debates Relevant to Libraries
+### Digital vs Analog Game Debate
+Some authors explicitly push back against a default emphasis on digital games, arguing that libraries are structurally better equipped to support analog, co-present, collaborative play that leverages the library’s strengths as a non-commercial, socially inclusive public space. (Seay, 2018a), for example, contends that immersive analog formats (e.g., escape rooms, educational LARPs, megagames) better align with how people learn and remember (through embodied, synchronous group problem-solving) and position libraries less as sites for screen-based activities and more as hosts of shared, participatory experiences.
+Copeland et al. (2013) provide a concrete school-library account of why tabletop games remain especially useful in library settings. Because tabletop games are relatively inexpensive, portable, durable, and adaptable, they can be used across a wider range of classroom and informal contexts than many digital games. The authors also note that tabletop games require players to operate the mechanics manually rather than relying on a computer to administer the system. This can make the structure of the game more visible to learners, allowing students to adapt rules, collaborate in teams, adjust pacing, and better understand how the game works. In this sense, tabletop games are not simply lower-tech substitutes for digital games; they offer distinct affordances for social, curricular, and reflective learning.
+
+### Games vs. Gamification Debate
+Scholars in game studies and library science draw a clear conceptual distinction between games and gamification, a distinction that has important implications for learning-oriented institutions such as libraries. (Seay, 2018b) argues that gamification involves the application of discrete game elements such as points, badges, leaderboards, and progress tracking to non-game activities in order to motivate participation, whereas games are complete, rule-governed systems that create meaning through sustained play and internal coherence. This position aligns with Ralph Koster’s influential definition of games as systems that make learning enjoyable by enabling players to recognize and master patterns within a bounded rule set (Koster, 2003), and with James Paul Gee’s account of games as sites of situated, embodied learning in which players adopt identities, test hypotheses, and learn through failure and feedback within meaningful contexts (Gee, 2007). Gee explicitly cautions that extrinsic reward structures alone do not produce deep learning, arguing instead that games teach because they embed knowledge in action and social practice. Similarly, scholars of gamification such as Sebastian Deterding et al. (Deterding et al., 2011) note that gamification abstracts game mechanics from games themselves, often prioritizing behavioral compliance over experiential meaning. Taken together, these authors suggest that while gamification can be effective for short-term engagement or task completion, it risks instrumentalizing play if divorced from the epistemic and social qualities that define games proper. For libraries, institutions historically oriented toward inquiry, intrinsic motivation, and the public good, this literature implies that game-based experiences grounded in play, identity, and collaboration may be more congruent with library values than gamified systems primarily designed to communicate metrics for participation.
+### Narratology vs. Ludology Debate
+
 
 # Major Areas of Game-Based Library Service
 ## Collections, Circulation, and Access
@@ -43,6 +67,8 @@ Post et al. (2023) extend the metadata discussion from game artifacts to catalog
 Abrams and Van Eck (2021) frame videogame programming as a site of videogame literacies: multimodal, social, participatory meaning-making involving games, players, spectators, spaces, rules, and digital and nondigital resources. Their national survey of 1,016 U.S. librarians found that fewer than half reported videogame programming, most existing programs were recent, and adoption was shaped by first-order barriers such as funding, training, hardware, and space as well as second-order barriers such as confidence, beliefs about games, and assumptions about teen behavior.
 
 Seay (2019) offers an illustrative, fictionalized design vignette for gamified database instruction: students race in teams to prevent a nuclear-core meltdown by solving Web of Science search problems, interpreting article clues, opening a locked box, and combining codes through a visible progress system. The column is not assessment evidence, but it usefully shows how library instruction can be designed as a scenario with stakes, props, feedback, collaboration, and information tasks embedded in play.
+
+Seay's "A Liminal Response to Watching Paint Dry" gives a related explanation for why game-based instruction may help with disengagement: role-immersion and escape-room formats can create liminal spaces where ordinary classroom hierarchies and anxieties are temporarily suspended. Drawing on Mark Carnes's Reacting to the Past work, Seay argues that learners may participate more fully when they enter a scenario, assume roles, and use knowledge inside a meaningful problem space rather than being asked to display competence in a conventional lecture setting.
 
 ## Community, Belonging, and the Public Commons
 ## Games as Cultural Media and Library Collections
