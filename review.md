@@ -148,6 +148,8 @@ Swiatek and Gorsse (2016) make operations and sustainability central to academic
 
 ## Design for Reflection and Transfer
 ## Evaluate Outcomes Beyond Attendance
+Brown and Kasper (2013) make the assessment problem explicit through ninety hours of participant observation in a public-library video game club. Their case shows that attendance and enjoyment miss much of what game clubs may do: staff modeled information seeking, enforced rules, mentored youth, and connected play to reading, technology, local history, behavior, academic standing, library cards, book checkouts, and social belonging. They recommend richer measures of reading motivation, library anxiety, information literacy, behavior, skill development, and reward-based progress so libraries can evaluate whether gaming programs advance learning and community goals rather than merely drawing participants.
+
 
 # Gaps in the Literature and Future Research Agenda
 ## Evidence Gaps
