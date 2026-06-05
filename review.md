@@ -146,6 +146,8 @@ Ponto et al. (2023) are not studying a library program, but *Waddle* offers adja
 ## Game Design Workshops and Jams
 ## Programs Inside Game Worlds and Virtual Platforms
 
+Bell and Trueman's edited volume (2008), represented here through its table of contents and a contemporary book review, marks an early library moment in Second Life and other multi-user virtual environments. The volume maps virtual branch libraries, avatar-based reference, in-world collections, Teen Second Life, HealthInfo Island, historical simulations, speculative-fiction and mystery programming, distance-learning support, and MLIS instruction, showing that game-like virtual worlds were treated as service sites rather than only promotional novelties. Its limits are also instructive for later GBLS: virtual platforms required staff learning, institutional support, etiquette management, hardware capacity, and arguments against the perception that work inside a virtual world was "only a game."
+
 # Cross-Cutting Lessons for Game-Based Library Services
 ## Start with Purpose, Audience, and Local Need
 ## Match Game Form to Service Goal
