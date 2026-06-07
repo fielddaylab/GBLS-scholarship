@@ -30,8 +30,7 @@ SOURCE_AUTHOR_YEAR: <author-year label used in reports and commit messages>
 SOURCE_SUMMARY_FILENAME: <resolved standalone Markdown filename>
 SOURCE_SUMMARY_FILE: ${SUMMARY_FOLDER}/${SOURCE_SUMMARY_FILENAME}
 
-SUMMARY_FILENAME_TEMPLATE: ${SOURCE_CITATION_KEY}.md
-SUMMARY_FILENAME_FALLBACK_TEMPLATE: ${SOURCE_AUTHOR_LASTNAME}-${SOURCE_YEAR}-${SOURCE_ZOTERO_ITEM_KEY}.md
+SUMMARY_FILENAME_TEMPLATE: ${SOURCE_AUTHOR_LASTNAME}${SOURCE_YEAR}(${SOURCE_ZOTERO_ITEM_KEY}).md
 
 Treat every value above as a variable. Use the variable names throughout the workflow rather than repeating or assuming literal collection names, paths, filenames, or run settings. Resolve variables before performing file or Zotero operations.
 
@@ -49,12 +48,13 @@ Treat `${METADATA_SCHEMA_FILE}`, `${OUTLINE_FILE}`, and `${VALUES_FILE}` as prov
 
 Resolve `${SOURCE_SUMMARY_FILENAME}` as follows:
 
-1. Use `${SUMMARY_FILENAME_TEMPLATE}` when a Better BibTeX citation key exists.
-2. Otherwise use `${SUMMARY_FILENAME_FALLBACK_TEMPLATE}`.
-3. Replace filesystem-unsafe characters with hyphens.
-4. Preserve a final `.md` extension.
-5. Do not overwrite an existing file.
-6. If the resolved filename already exists but represents a different source, append `${SOURCE_ZOTERO_ITEM_KEY}` before `.md`.
+1. Always use `${SUMMARY_FILENAME_TEMPLATE}`.
+2. Normalize `${SOURCE_AUTHOR_LASTNAME}` to lowercase ASCII and remove spaces, punctuation, apostrophes, and hyphens. For multiple authors, use only the first author's last name. For an organizational author, use a concise filesystem-safe organization name.
+3. Use the source's publication year for `${SOURCE_YEAR}`. Use `nd` when no defensible publication year is available.
+4. Preserve the parentheses around `${SOURCE_ZOTERO_ITEM_KEY}` and the final `.md` extension.
+5. The required pattern is `{author}{year}({zotero item key}).md`, for example `baker2024(R55LL85J).md`.
+6. Do not overwrite an existing file.
+7. If the resolved filename already exists but represents a different source, stop and investigate the collision rather than changing the naming convention.
 
 SOURCE SELECTION
 
