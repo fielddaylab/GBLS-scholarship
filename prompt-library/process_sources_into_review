@@ -12,6 +12,7 @@ METADATA_SCHEMA_FILE: ${PROJECT_ROOT}/0-human-sources/metadata-schema-and-lexico
 OUTLINE_FILE: ${PROJECT_ROOT}/0-human-sources/outline_structure.md
 VALUES_FILE: ${PROJECT_ROOT}/0-human-sources/explicit_values.md
 PROCESS_FILE: ${PROJECT_ROOT}/0-human-sources/process.md
+RUBRIC_FILE: ${PROJECT_ROOT}/0-human-sources/publishability_rubric
 OUTPUTS_FOLDER: ${PROJECT_ROOT}/2-outputs
 TARGET_LENGTH: 40 pages
 
@@ -237,7 +238,7 @@ After all sections have been written, add transitions paragraphs to create narra
 Output to SECOND_DRAFT.md in the OUTPUTS folder.
 
 THIRD PASS
-Utilize the full_review_rubric.md file to act as a rburic of an ALA reviewer considering this paper for publiction. 
+Utilize the RUBRIC_FILE file to act as a rburic of an ALA reviewer considering this paper for publiction. 
 Take on the role of the reviewer. Reread the entire paper and critiue it using the rubric.
 Output the reviewer notes and score into a reviewer_notes.md file
 Use those notes to write a new draft. Output and score.
