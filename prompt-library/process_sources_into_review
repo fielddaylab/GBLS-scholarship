@@ -11,6 +11,7 @@ SUMMARY_FOLDER: ${PROJECT_ROOT}/1-coded-summaries
 METADATA_SCHEMA_FILE: ${PROJECT_ROOT}/0-human-sources/metadata-schema-and-lexicon.md
 OUTLINE_FILE: ${PROJECT_ROOT}/0-human-sources/outline_structure.md
 VALUES_FILE: ${PROJECT_ROOT}/0-human-sources/explicit_values.md
+PROCESS_FILE: ${PROJECT_ROOT}/0-human-sources/process.md
 OUTPUTS_FOLDER: ${PROJECT_ROOT}/2-outputs
 TARGET_LENGTH: 40 pages
 
@@ -23,6 +24,7 @@ All files are available in the PROJECT_ROOT or a subfolder
 Summaries, metadata, and suggested contributions for each article to be included are in SUMMARY_FOLDER
 The OUTLINE_FILE defines the structure for the complete document
 The VALUES_FILE defines the bias of the authors, principles to highlight. These should never be assumed as 100% objective, but as statments to steer the paper's vision. 
+The PROCESS_FILE contains the research team's approved account of the literature review development process and scope.
 
 Task and Goal:
 Your task is to synthesize the literature into a single cohesive scholarly prose of TARGET_LENGTH.
@@ -31,6 +33,10 @@ The outcome goal is to produce a polished literature review section that could a
 
 Process:
 You will be writing the document section by section, as defined by the Header1s in OUTLINE_FILE.
+
+Before completing FIRST_DRAFT.md, replace the entire `## Review and Synthesis Approach` subsection with the methodological narrative imported directly and verbatim from PROCESS_FILE. Import the text beginning after `# Literature Review Development Process` and ending immediately before `## Scope of the Review`. Do not summarize, paraphrase, correct, or silently edit this imported text. Preserve the separate `## Scope and Boundaries of the Review` and `## Characteristics and Limitations of the Source Base` subsections from the manuscript structure.
+
+The SECOND PASS and THIRD PASS must begin from this revised FIRST_DRAFT.md and preserve the directly imported `## Review and Synthesis Approach` text unless the research team explicitly requests edits to process.md itself.
 
 The reader should finish each section understanding:
 
