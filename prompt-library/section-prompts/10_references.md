@@ -6,9 +6,12 @@ coded-summary corpus.
 
 Write `2-outputs/sections/09_references.md`.
 
-## Required Structure
+## Runtime Structure
 
-# References
+Reread `0-human-sources/outline_structure.md` at runtime. Use its final H1
+section and any H2 headings nested beneath that H1. Do not rely on headings
+from a previous run. The verification heading described below may be added
+only when unresolved cited records exist.
 
 ## Section Task
 

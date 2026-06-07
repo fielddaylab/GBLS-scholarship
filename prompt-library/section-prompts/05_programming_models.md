@@ -4,22 +4,12 @@ Read `00_shared_section_contract.md`, all preceding section artifacts, and all p
 
 Write `2-outputs/sections/05_programming_models.md`.
 
-## Required Structure
+## Runtime Structure and Target
 
-# Programming Formats and Service Models
-## Fandom Festivals and Pop-Culture Events
-## Circulating and In-Library Game Collections
-## Clubs and Recurring Play Groups
-## Tournaments and Esports
-## Escape Rooms and Breakout Games
-## Tabletop Role-Playing and Live-Action Role-Playing Programs
-## Virtual Reality, Augmented Reality, and Immersive Technologies
-## Game Design Workshops, Jams, and Participatory Creation
-## Library Services Inside Games and Virtual Worlds
-
-## Target
-
-Approximately 2,250 words.
+Reread `0-human-sources/outline_structure.md` at runtime. Use its sixth H1
+section and all H2 headings nested beneath that H1. Use the word target in that
+H1's parenthetical annotation. Do not rely on headings or targets from a
+previous run.
 
 ## Section Task
 

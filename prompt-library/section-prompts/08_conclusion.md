@@ -4,13 +4,12 @@ Read `00_shared_section_contract.md`, every completed body-section artifact, and
 
 Write `2-outputs/sections/08_conclusion.md`.
 
-## Required Structure
+## Runtime Structure and Target
 
-# Conclusion
-
-## Target
-
-Approximately 500 words.
+Reread `0-human-sources/outline_structure.md` at runtime. Use its ninth H1
+section and any H2 headings nested beneath that H1. Use the word target in that
+H1's parenthetical annotation. Do not rely on headings or targets from a
+previous run.
 
 ## Section Task
 

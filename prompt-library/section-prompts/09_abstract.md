@@ -4,13 +4,12 @@ Read `00_shared_section_contract.md` and every completed body-section artifact, 
 
 Write `2-outputs/sections/00_abstract.md`.
 
-## Required Structure
+## Runtime Structure and Target
 
-# Abstract
-
-## Target
-
-Exactly 225-275 words, aiming for 250.
+Reread `0-human-sources/outline_structure.md` at runtime. Use its first H1
+section and any H2 headings nested beneath that H1. Use the word target in that
+H1's parenthetical annotation and remain within 10 percent of it. Do not rely
+on headings or targets from a previous run.
 
 ## Section Task
 

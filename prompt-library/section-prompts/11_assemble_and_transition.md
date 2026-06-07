@@ -2,6 +2,10 @@
 
 Read `00_shared_section_contract.md`, the outline, and all files in `2-outputs/sections`.
 
+Immediately before assembly, reread `0-human-sources/outline_structure.md`
+from disk and extract its current H1/H2 sequence. Do not use a heading list
+remembered from section generation.
+
 ## First Assembly
 
 Assemble the section artifacts in this order:
@@ -18,6 +22,11 @@ Assemble the section artifacts in this order:
 10. `09_references.md`
 
 Remove duplicate headings or accidental repeated transition text, but do not rewrite the imported `## Review and Synthesis Approach` passage. Save the result as `2-outputs/FIRST_DRAFT.md`.
+
+After assembly, compare the manuscript H1/H2 sequence against the freshly read
+outline after stripping only trailing parenthetical annotations. Revise or
+stop with an explicit structural error if any heading is missing, added,
+renamed, duplicated, or reordered.
 
 ## Integration Pass
 

@@ -4,21 +4,18 @@ Read `00_shared_section_contract.md` and all project inputs it names.
 
 Write `2-outputs/sections/01_introduction.md`.
 
-## Required Structure
+## Runtime Structure and Target
 
-# Introduction: Why Games-Based Library Services Matter
-## Games as Mainstream Cultural Media
-## Libraries, Public Knowledge, and the Contemporary Information Environment
-## Historical Continuities and the Evolving Library Mission
-## The Need for a Field-Level Synthesis
-
-## Target
-
-Approximately 1,000 words.
+Reread `0-human-sources/outline_structure.md` at runtime. Use its second H1
+section and all H2 headings nested beneath that H1. Use the word target in that
+H1's parenthetical annotation. Do not rely on headings or targets from a
+previous run.
 
 ## Section Task
 
 Establish the review's central question: how libraries can engage games as cultural media and forms of social action in ways that advance public access, learning, belonging, stewardship, inquiry, and participation. Frame games as mainstream cultural media without treating market size or educational-game research as direct evidence of library outcomes.
+
+Make sure to include a paragraph that explicitly defines GBLS.
 
 Synthesize:
 

@@ -4,20 +4,12 @@ Read `00_shared_section_contract.md`, all preceding section artifacts, and all p
 
 Write `2-outputs/sections/07_gaps_research_agenda.md`.
 
-## Required Structure
+## Runtime Structure and Target
 
-# Gaps in the Literature and Future Research Agenda
-## Evidence Quality and Outcome Gaps
-## Equity, Accessibility, and Participation Gaps
-## Library Context, Community Demographics, and Rural Representation
-## Professional Practice, Education, and Training Gaps
-## Infrastructure, Metadata, Licensing, and Preservation Gaps
-## Comparative, Longitudinal, and Implementation Research
-## National Survey and Needs-Assessment Agenda
-
-## Target
-
-Approximately 1,250 words.
+Reread `0-human-sources/outline_structure.md` at runtime. Use its eighth H1
+section and all H2 headings nested beneath that H1. Use the word target in that
+H1's parenthetical annotation. Do not rely on headings or targets from a
+previous run.
 
 ## Section Task
 

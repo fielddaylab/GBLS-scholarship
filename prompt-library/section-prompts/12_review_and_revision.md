@@ -12,6 +12,13 @@ All scores produced by this process are internal rubric-based editorial
 assessments. Label them that way. Do not describe them as independent peer
 review, publication acceptance, or external validation.
 
+At the start of each review round and again after each revision, reread
+`0-human-sources/outline_structure.md` from disk. Compare the manuscript H1/H2
+sequence with the current outline after removing only trailing parenthetical
+annotations. Treat any missing, added, renamed, duplicated, or reordered
+heading as a blocking structural defect. Never restore headings from memory or
+from an earlier draft when the current outline differs.
+
 ## Reviewer Round One
 
 Adopt the standards and expectations of an ALA-affiliated journal reviewer.

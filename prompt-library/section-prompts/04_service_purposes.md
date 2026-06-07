@@ -4,20 +4,12 @@ Read `00_shared_section_contract.md`, all preceding section artifacts, and all p
 
 Write `2-outputs/sections/04_service_purposes.md`.
 
-## Required Structure
+## Runtime Structure and Target
 
-# Service Purposes and Library Functions
-## Collections, Circulation, and Equitable Access
-## Description, Discovery, and Games Advisory
-## Instruction, Orientation, and Information Literacy
-## Community, Belonging, Wellness, and the Public Commons
-## Games as Cultural Media and Heritage
-## Research, Scholarship, and Creative Production
-## Outreach, Participation, and New Audiences
-
-## Target
-
-Approximately 2,000 words.
+Reread `0-human-sources/outline_structure.md` at runtime. Use its fifth H1
+section and all H2 headings nested beneath that H1. Use the word target in that
+H1's parenthetical annotation. Do not rely on headings or targets from a
+previous run.
 
 ## Section Task
 

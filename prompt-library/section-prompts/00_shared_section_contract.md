@@ -21,6 +21,24 @@ Treat Games-Based Library Services (GBLS) as a service ecology connecting collec
 
 Use `explicit_values.md` as an interpretive orientation, not as evidence. Clearly distinguish established findings, recurring practitioner knowledge, and the authors' aspirational propositions.
 
+## Runtime Heading Protocol
+
+At the start of every section task, read
+`0-human-sources/outline_structure.md` directly from disk. The current outline,
+not headings embedded in a section prompt or remembered from a prior task, is
+the sole authority for manuscript structure.
+
+Use the section prompt's assigned H1 position to locate the target section.
+Copy that H1 and every consecutive H2 beneath it, stopping at the next H1.
+Preserve the headings' wording and order exactly, except remove trailing
+parenthetical annotations that specify word counts or drafting instructions.
+Do not add, omit, rename, merge, split, or reorder H2 headings.
+
+Immediately before writing the artifact, reread the outline and extract the
+headings again. Immediately after writing, reread it once more and compare the
+artifact headings with the fresh extraction. Revise before returning if they
+differ.
+
 ## Evidence Rules
 
 Give the greatest weight to experiments, meta-analyses, systematic reviews, surveys, interviews, observations, mixed-methods studies, and well-reported empirical research. Use case studies for contextual and implementation knowledge. Use practitioner reflections, columns, guides, book reviews, and proposals cautiously. Use historical sources to establish precedent and recurring professional tensions, not contemporary outcomes.
@@ -61,7 +79,12 @@ outliers.
 
 ## Style and Length
 
-Write analytical, comparative, concise scholarly prose accessible to library professionals. Preserve the exact H1 and H2 headings from the outline, without parenthetical word counts. Target the assigned word count within approximately 5 percent unless a prompt identifies a fixed imported passage. Word targets exclude the reference ledger.
+Write analytical, comparative, concise scholarly prose accessible to library
+professionals. Use the H1, H2, and word target extracted from the current
+outline at runtime. Omit parenthetical outline annotations from manuscript
+headings. Target the extracted word count within approximately 5 percent
+unless a prompt identifies a fixed imported passage. Word targets exclude the
+reference ledger.
 
 Return the completed section artifact and its source ledger unless the section
 prompt requests additional files.

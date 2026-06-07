@@ -4,23 +4,12 @@ Read `00_shared_section_contract.md`, all preceding section artifacts, and all p
 
 Write `2-outputs/sections/06_cross_cutting_conditions.md`.
 
-## Required Structure
+## Runtime Structure and Target
 
-# Cross-Cutting Conditions for Effective Games-Based Library Services
-## Begin with Purpose, Audience, and Local Need
-## Match Game Form to Service Goal
-## Treat Facilitation as Core Infrastructure
-## Curate for Inclusion, Accessibility, and Cultural Relevance
-## Connect Discovery, Advisory, and Cross-Media Engagement
-## Build Partnerships and Community Leadership Pathways
-## Develop Staff Expertise and Professional Preparation
-## Plan for Operations, Licensing, Preservation, and Sustainability
-## Design for Reflection, Learning Transfer, and Participant Agency
-## Evaluate Outcomes Beyond Attendance and Enjoyment
-
-## Target
-
-Approximately 2,250 words.
+Reread `0-human-sources/outline_structure.md` at runtime. Use its seventh H1
+section and all H2 headings nested beneath that H1. Use the word target in that
+H1's parenthetical annotation. Do not rely on headings or targets from a
+previous run.
 
 ## Section Task
 

@@ -4,18 +4,12 @@ Read `00_shared_section_contract.md`, the completed introduction and scope artif
 
 Write `2-outputs/sections/03_conceptual_terrain.md`.
 
-## Required Structure
+## Runtime Structure and Target
 
-# Conceptual Terrain: Games, Play, and Library Service
-## Game Modalities in Library Contexts
-## Games, Gamification, and Play
-## Analog, Digital, and Hybrid Affordances
-## Game Studies Debates Relevant to Libraries
-## Libraries as Playful Spaces and Service Environments
-
-## Target
-
-Approximately 1,500 words.
+Reread `0-human-sources/outline_structure.md` at runtime. Use its fourth H1
+section and all H2 headings nested beneath that H1. Use the word target in that
+H1's parenthetical annotation. Do not rely on headings or targets from a
+previous run.
 
 ## Section Task
 

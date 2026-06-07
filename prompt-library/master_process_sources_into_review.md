@@ -25,13 +25,19 @@ Produce a cohesive, publishable literature review of Games-Based Library Service
 
 1. Treat files in `0-human-sources` and `1-coded-summaries` as authoritative inputs.
 2. Read `prompt-library/section-prompts/00_shared_section_contract.md` before every section prompt.
-3. Execute each prompt as a fresh section-writing task with access to project files and completed neighboring section artifacts.
-4. Do not allow one section writer to rewrite another section's artifact.
-5. Preserve the exact outline headings, omitting parenthetical word-count annotations in manuscript output.
-6. Preserve the `process.md` methodology passage verbatim through every pass.
-7. Never invent evidence or bibliography data.
-8. Overwrite generated files from earlier runs. Do not alter human-source files or coded summaries.
-9. Treat rubric scores as internal editorial diagnostics, not independent peer
+3. Immediately before executing each section prompt, reread
+   `0-human-sources/outline_structure.md` from disk. Do not reuse headings
+   remembered from an earlier task or run.
+4. Execute each prompt as a fresh section-writing task with access to project files and completed neighboring section artifacts.
+5. Do not allow one section writer to rewrite another section's artifact.
+6. Treat the current outline file as the sole authority for manuscript H1 and
+   H2 headings. Extract headings at runtime and preserve their current order.
+   Remove only trailing parenthetical annotations used as word-count or
+   drafting instructions.
+7. Preserve the `process.md` methodology passage verbatim through every pass.
+8. Never invent evidence or bibliography data.
+9. Overwrite generated files from earlier runs. Do not alter human-source files or coded summaries.
+10. Treat rubric scores as internal editorial diagnostics, not independent peer
    review or evidence of publication acceptance.
 
 ## Preflight
@@ -67,7 +73,10 @@ Execute these prompts in order:
 
 After each section:
 
-- Verify its required headings.
+- Reread the outline from disk and verify the artifact against the target H1
+  and every H2 currently nested beneath it.
+- Fail the section check if an H2 is missing, added, renamed, duplicated, or
+  reordered.
 - Count narrative words against its target.
 - Confirm that its opening is synthesis-driven.
 - Confirm that every H2 opens with a field-level synthesis claim rather than an
@@ -95,10 +104,13 @@ material imbalance.
 
 Before finishing:
 
-- Compare all H1 and H2 headings in `FINAL_DRAFT.md` with the outline.
+- Reread `outline_structure.md` from disk and compare all H1 and H2 headings in
+  `FINAL_DRAFT.md` with it after removing only trailing parenthetical
+  annotations.
 - Verify that narrative word count is close to 12,000, with references excluded.
 - Confirm the imported process passage is an exact textual match.
-- Check that the abstract is 225-275 words.
+- Check the abstract against the word target currently attached to the
+  outline's first H1, using the tolerance defined by the abstract prompt.
 - Confirm that reviewer notes include two scored rounds and a final score.
 - Label every score as an internal rubric-based editorial assessment.
 - Search for placeholders, duplicated headings, accidental repeated phrases, and unresolved citation markers.
