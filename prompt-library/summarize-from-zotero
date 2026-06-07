@@ -1,15 +1,28 @@
 summarize-from-zotero
 
-Continue the Games-Based Library Services (GBLS) Zotero-to-literature-review workflow.
+This is a self-contained, reusable prompt for continuing the Games-Based Library
+Services (GBLS) Zotero-to-literature-review workflow in a new Codex thread. Do
+not rely on prior conversation context. Change only the values under RUN
+CONFIGURATION when a different batch behavior is desired.
 
 RUN CONFIGURATION
-BATCH_SIZE: <NUMBER_OF_SOURCES>
-SELECTION_ORDER: <BOTTOM_UP or TOP_DOWN>
-COMMIT_AFTER_EACH_SOURCE: <YES or NO>
+BATCH_SIZE: 5
+SELECTION_ORDER: TOP_DOWN
+UNFILED_SORT_FIELD: dateAdded
+UNFILED_SORT_DIRECTION: ascending
+COMMIT_AFTER_EACH_SOURCE: YES
 
 ZOTERO_LIBRARY: "IMLS Games and Libraries"
-COLLECTION_COMPLETE: "Summary Complete"
-COLLECTION_EXCLUDE: "Explicitly Excluded"
+ZOTERO_GROUP_ID: 5899078
+ZOTERO_LOCAL_LIBRARY_ID: 4
+ZOTERO_LOCAL_API_BASE: http://127.0.0.1:23119/api
+ZOTERO_DATABASE: /Users/djgagnon/Zotero/zotero.sqlite
+ZOTERO_STORAGE_ROOT: /Users/djgagnon/Zotero/storage
+
+COLLECTION_COMPLETE: "GPT Summary Complete"
+COLLECTION_COMPLETE_KEY: XDJU2DNT
+COLLECTION_EXCLUDE: "Explicitly Excluded Literature"
+COLLECTION_EXCLUDE_KEY: 4YRAP7AJ
 
 PROJECT_ROOT: /Users/djgagnon/Library/CloudStorage/GoogleDrive-djgagnon@wisc.edu/.shortcut-targets-by-id/1P-yeNAX497qAu3txZnKjZZ1ztx8V2nSJ/Phase I - Research, Needs Assessment, and Lit Review Resources/GBLS Lit Review Working Docs
 SUMMARY_FOLDER: ${PROJECT_ROOT}/1-coded-summaries
@@ -22,7 +35,7 @@ For each selected source, determine and retain:
 
 SOURCE_APA_CITATION: <complete APA-style citation>
 SOURCE_AUTHOR_LASTNAME: <first author's filesystem-safe last name or responsible organization>
-SOURCE_YEAR: <four-digit publication year or n.d.>
+SOURCE_YEAR: <four-digit publication year or nd>
 SOURCE_ZOTERO_ITEM_KEY: <Zotero parent item key>
 SOURCE_CITATION_KEY: <Better BibTeX citation key or other stable citation key>
 SOURCE_ATTACHMENT_KEY: <PDF attachment key>
@@ -35,6 +48,10 @@ SUMMARY_FILENAME_TEMPLATE: ${SOURCE_AUTHOR_LASTNAME}${SOURCE_YEAR}(${SOURCE_ZOTE
 Treat every value above as a variable. Use the variable names throughout the workflow rather than repeating or assuming literal collection names, paths, filenames, or run settings. Resolve variables before performing file or Zotero operations.
 
 The project at `${PROJECT_ROOT}` is git-managed.
+
+The configured values are complete defaults, so begin without asking setup
+questions. Ask only if a required path, library, or collection cannot be found
+after the discovery and fallback steps below.
 
 OBJECTIVE
 
@@ -56,26 +73,125 @@ Resolve `${SOURCE_SUMMARY_FILENAME}` as follows:
 6. Do not overwrite an existing file.
 7. If the resolved filename already exists but represents a different source, stop and investigate the collision rather than changing the naming convention.
 
+PROGRAMMATIC ZOTERO ACCESS
+
+Use programmatic access throughout this workflow. Avoid desktop clicking,
+typing, scrolling, and per-source Zotero open/close cycles.
+
+1. Start with the installed Zotero skill/helper's `status --json` command.
+2. Prefer `${ZOTERO_LOCAL_API_BASE}` for current library data, collection
+   discovery, parent items, children, attachment metadata, and indexed full
+   text. The principal read routes are:
+   - `${ZOTERO_LOCAL_API_BASE}/groups/${ZOTERO_GROUP_ID}/collections`;
+   - `${ZOTERO_LOCAL_API_BASE}/groups/${ZOTERO_GROUP_ID}/items/top`;
+   - `${ZOTERO_LOCAL_API_BASE}/groups/${ZOTERO_GROUP_ID}/items/${SOURCE_ZOTERO_ITEM_KEY}/children`;
+   - `${ZOTERO_LOCAL_API_BASE}/groups/${ZOTERO_GROUP_ID}/items/${SOURCE_ATTACHMENT_KEY}/fulltext`.
+3. Keep Zotero in its current state whenever possible. If Zotero must be
+   started to expose the local API, start it once for the batch and leave it
+   open. Never restart it after every source.
+4. Treat connection refusal, a closed port, a locked database, or an API
+   response interrupted by another agent as temporary at first. Retry up to
+   five times with short increasing delays, then use the read-only fallback.
+5. The read-only fallback is a fresh snapshot of `${ZOTERO_DATABASE}` queried
+   with SQLite. Include active WAL state through a proper SQLite backup when
+   possible. Never write to a copied snapshot, and do not assume a stale
+   snapshot reflects another agent's most recent filing.
+6. Verify `${ZOTERO_GROUP_ID}`, `${ZOTERO_LOCAL_LIBRARY_ID}`,
+   `${COLLECTION_COMPLETE_KEY}`, and `${COLLECTION_EXCLUDE_KEY}` against the
+   live collection names at startup. If a key is stale, rediscover the key by
+   exact collection name and use the discovered key. Do not create duplicate
+   collections.
+7. Paginate all Zotero API list requests until every page has been retrieved;
+   do not mistake a 25- or 100-item response limit for the complete library.
+8. Prefer indexed Zotero full text. Otherwise resolve the attachment file
+   programmatically under `${ZOTERO_STORAGE_ROOT}` and extract it with
+   `pdftotext` or a PDF parser. Use OCR only when the PDF is image-only and an
+   OCR tool is available. Do not open PDFs in a desktop viewer merely to read
+   them.
+9. For Zotero writes, prefer a supported API or an existing trusted project
+   script. Merge collection keys into the item's current collection list;
+   never replace unrelated collection memberships. Use version-aware writes
+   and refetch/retry after a version conflict.
+10. If no supported write API is available, accumulate filing operations and
+    perform at most one controlled database maintenance window for the whole
+    batch: wait until source files are written, close Zotero once, create a
+    timestamped backup, apply all collection changes in one transaction with
+    an established script, run `PRAGMA quick_check`, reopen Zotero once, and
+    verify through the API. Never edit the live SQLite database while Zotero
+    is running.
+11. Another agent may be working in the same library. Do not force-close
+    Zotero while another process is actively using it. If a safe write window
+    cannot be obtained, complete and commit the summary, record the pending
+    filing operation, and report that exact blocker instead of risking library
+    corruption.
+
 SOURCE SELECTION
 
-1. Identify parent items in `${ZOTERO_LIBRARY}` that:
-   - have at least one readable PDF attachment;
-   - are not in `${COLLECTION_COMPLETE}`;
-   - have not already been summarized in any Markdown file under `${SUMMARY_FOLDER}`;
+Define an eligible source as a non-deleted, top-level parent item in
+`${ZOTERO_LIBRARY}` that:
 
-2. Select items according to `${SELECTION_ORDER}`.
+- is unfiled, meaning its parent item's Zotero `collections` list is empty;
+- has at least one child attachment whose content type is `application/pdf`
+  and whose file or indexed full text is readable;
+- is not in `${COLLECTION_COMPLETE}`;
+- has no existing source summary anywhere under `${SUMMARY_FOLDER}`.
 
-3. Before processing and again immediately before writing:
-   - verify that the item remains eligible;
-   - search all Markdown files under `${SUMMARY_FOLDER}` for the source's Zotero item key, citation key, title, DOI, and authors;
-   - verify that `${SOURCE_SUMMARY_FILE}` does not already contain or represent the source;
-   - avoid duplicating work performed by another agent.
+Build and order the eligible list programmatically:
 
-4. Use the Zotero local API when possible.
+1. Fetch all top-level parent items and all necessary children from
+   `${ZOTERO_GROUP_ID}`.
+2. Sort parent items by `${UNFILED_SORT_FIELD}` in
+   `${UNFILED_SORT_DIRECTION}` order, then by Zotero parent item key as a
+   deterministic tie-breaker.
+3. For `${SELECTION_ORDER}` = `TOP_DOWN`, select from the start of that ordered
+   list. For `${SELECTION_ORDER}` = `BOTTOM_UP`, select from the end and work
+   backward.
+4. Rebuild or refresh eligibility after every source rather than relying on a
+   list captured before another agent's changes.
 
-5. Avoid unnecessary Zotero restarts. Another process may be opening or closing Zotero, so retry temporary connection failures after a short delay.
+Before processing and again immediately before writing each source:
 
-6. Do not rely on any singular cumulative summary file for output or duplicate detection. Search the full `${SUMMARY_FOLDER}` corpus instead.
+1. Verify that the item remains eligible.
+2. Search every Markdown file under `${SUMMARY_FOLDER}` for the source's
+   Zotero item key, citation key, normalized title, DOI, and author-year
+   combination.
+3. Verify that `${SOURCE_SUMMARY_FILE}` does not already contain or represent
+   the source.
+4. If another agent has created a matching summary or filed the item, skip it
+   without counting it toward `${BATCH_SIZE}` and select the next eligible
+   item from the same end of the refreshed list.
+5. If a matching summary already exists but the item is still unfiled, do not
+   generate a second summary. Verify the existing file, reconcile the Zotero
+   filing when safe, and report the repair separately from the batch count.
+
+Immediately before filing, verify that the parent is still unfiled and absent
+from `${COLLECTION_COMPLETE}`, and that `${SOURCE_SUMMARY_FILE}` is now the
+single matching summary for the source. If another agent has filed it in the
+meantime, preserve that agent's memberships and add only any still-missing
+required collection keys.
+
+Do not rely on any cumulative summaries file or on memory from a prior run for
+selection or duplicate detection. The Zotero item key is the primary duplicate
+identifier.
+
+SOURCE AND IDENTIFIER RESOLUTION
+
+For each selected item:
+
+1. Treat the top-level Zotero key as `${SOURCE_ZOTERO_ITEM_KEY}` and the
+   readable PDF child's key as `${SOURCE_ATTACHMENT_KEY}`.
+2. Prefer the best available complete PDF when several PDF children exist.
+   Favor the published version over a supplement, excerpt, or duplicate.
+3. Resolve `${SOURCE_CITATION_KEY}` from Better BibTeX metadata, the Zotero
+   `Extra` field, or a single-item BibTeX export. If none exists, create a
+   stable local citation key and clearly identify it as locally derived.
+4. Resolve `${SOURCE_APA_CITATION}` from Zotero metadata and confirm uncertain
+   fields against the PDF title page or publication record. Do not invent
+   volume, issue, page, publisher, DOI, or date data.
+5. Use `nd` only in `${SOURCE_YEAR}` and the filename. Use APA's `n.d.` form
+   where required inside `${SOURCE_APA_CITATION}` and `${SOURCE_AUTHOR_YEAR}`.
+6. Record source text or extraction notes only in temporary working files
+   outside `${SUMMARY_FOLDER}`; do not commit them.
 
 PREPARATION
 
@@ -84,7 +200,9 @@ Before summarizing sources:
 1. Read `${METADATA_SCHEMA_FILE}`.
 2. Read `${OUTLINE_FILE}`.
 3. Read `${VALUES_FILE}`.
-4. Inspect recent standalone Markdown files in `${SUMMARY_FOLDER}` and follow their current formatting where it remains compatible with this prompt.
+4. Inspect `${SUMMARY_FOLDER}/template.md`, when present, plus a small sample
+   of recent standalone summaries. Follow the template and current formatting
+   where they remain compatible with this prompt.
 5. Check git status in `${PROJECT_ROOT}` and preserve unrelated changes.
 6. Confirm that `${SUMMARY_FOLDER}` exists.
 7. Derive all per-source variables and confirm that `${SOURCE_SUMMARY_FILE}` is unique before reading or writing output.
@@ -311,13 +429,29 @@ ZOTERO FILING
 
 After successfully writing and verifying `${SOURCE_SUMMARY_FILE}`:
 
-1. Add the parent item to `${COLLECTION_COMPLETE}`.
-2. Add it to collections corresponding to its proposed review placement when appropriate.
-3. If no review contribution is recommended, add it to `${COLLECTION_EXCLUDE}`.
-4. Do not classify a source as excluded solely because it challenges `${METADATA_SCHEMA_FILE}`, `${OUTLINE_FILE}`, or `${VALUES_FILE}`.
-5. Move only the parent item unless attachment handling requires otherwise.
-6. Verify that the item is no longer eligible or unprocessed.
-7. Do not file an item as complete until `${SOURCE_SUMMARY_FILE}` has been written and verified.
+1. Add the parent item to `${COLLECTION_COMPLETE}` using
+   `${COLLECTION_COMPLETE_KEY}` after runtime verification.
+2. Resolve review-placement collection keys from the live Zotero collection
+   tree by exact or clearly equivalent section name. Add the parent item to
+   each defensible placement collection. Do not invent or create collections
+   during this workflow.
+3. If no review contribution is recommended, add the parent item to
+   `${COLLECTION_EXCLUDE}` using `${COLLECTION_EXCLUDE_KEY}` after runtime
+   verification.
+4. Preserve all existing collection memberships by taking the union of
+   current and required collection keys.
+5. Do not classify a source as excluded solely because it challenges
+   `${METADATA_SCHEMA_FILE}`, `${OUTLINE_FILE}`, or `${VALUES_FILE}`.
+6. File only the parent item. Leave PDF attachment collection state unchanged.
+7. Do not file an item as complete until `${SOURCE_SUMMARY_FILE}` has been
+   written and verified.
+8. After the write, refetch the parent item from Zotero and verify the required
+   collection keys are present. Confirm it no longer appears in the unfiled
+   eligible list.
+9. If Zotero filing is deferred to the single batch maintenance window, track
+   the exact parent key and destination collection keys, then perform and
+   verify all pending writes before the final report whenever a safe window is
+   available.
 
 GIT AND CONCURRENCY
 
@@ -326,17 +460,21 @@ For every source:
 1. Check git status in `${PROJECT_ROOT}` before editing.
 2. Preserve unrelated changes and untracked files.
 3. Re-read live files immediately before applying an update.
-4. Stage only `${SOURCE_SUMMARY_FILE}`.
-5. Never stage another source's summary file as part of the current source's commit.
-6. Never stage or commit `review.md`, `${OUTLINE_FILE}`, `${METADATA_SCHEMA_FILE}`, or `${VALUES_FILE}` as part of this workflow.
-7. Review the staged diff for:
+4. Write `${SOURCE_SUMMARY_FILE}` atomically when practical, then confirm its
+   final path exactly matches `${SUMMARY_FILENAME_TEMPLATE}`.
+5. Stage only `${SOURCE_SUMMARY_FILE}` using its exact path.
+6. Never stage another source's summary file as part of the current source's commit.
+7. Never stage or commit `review.md`, `${OUTLINE_FILE}`, `${METADATA_SCHEMA_FILE}`, or `${VALUES_FILE}` as part of this workflow.
+8. Review the staged diff for:
    - duplicate summaries;
    - malformed metadata;
    - accidental deletions;
    - unsupported claims;
    - edits belonging to another agent.
-8. If `${COMMIT_AFTER_EACH_SOURCE}` is `YES`, commit after each source.
-9. If `${COMMIT_AFTER_EACH_SOURCE}` is `NO`, do not create commits.
+9. If `${COMMIT_AFTER_EACH_SOURCE}` is `YES`, commit after each source and
+   record the resulting hash.
+10. If `${COMMIT_AFTER_EACH_SOURCE}` is `NO`, leave the new summary
+    uncommitted and do not stage unrelated files.
 
 Use a simple `${SOURCE_AUTHOR_YEAR}` commit message:
 
@@ -370,6 +508,8 @@ Before marking each source complete, verify:
 - limitations and evidentiary boundaries are clear;
 - the Zotero parent is in `${COLLECTION_COMPLETE}`;
 - exclusions are in `${COLLECTION_EXCLUDE}`;
+- the parent no longer appears in the programmatically generated unfiled
+  eligible list;
 - no unrelated repository changes were committed.
 
 FINAL REPORT
@@ -389,4 +529,7 @@ Report:
 - confirmation that no cumulative summaries file was created or modified;
 - skipped or blocked sources and the reasons.
 
-Before starting, interactively ask me to clarify any of the undefined variables at the top. 
+Begin immediately with the configured defaults. Do not ask for information that
+can be discovered from Zotero, the PDF, the project files, or git. If no
+eligible source remains, make no repository changes and report that the unfiled
+queue is exhausted.
