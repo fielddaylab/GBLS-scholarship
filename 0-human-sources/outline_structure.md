@@ -9,7 +9,7 @@
 # Scope, Definition, and Review Approach
 ## Defining Games-Based Library Services
 ## Scope and Boundaries of the Review
-## Review and Synthesis Approach
+## Review and Synthesis Approach (pull directly from process.md)
 ## Characteristics and Limitations of the Source Base
 
 # Conceptual Terrain: Games, Play, and Library Service
