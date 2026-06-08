@@ -42,7 +42,6 @@ Theme:
 - facilitation
 
 Contribution_Type:
-- exclusion_record
 - literature_mapping
 - methodological_caution
 - background_context
@@ -66,7 +65,7 @@ The discussion is considerably more confident than the underlying evidence suppo
 
 The article nevertheless establishes an important historical point in game-based-learning research: early positive claims were already accompanied by serious problems in study design and reporting. Learner control emerged as a plausible moderator, but the small evidence base prevented strong conclusions. Visual fidelity was not necessary for positive effects, suggesting that investment in realism should not substitute for attention to learning design. The source also shows why later reviews moved from broad media comparisons toward more rigorous assessments of specific design features and comparison conditions.
 
-For the larger GBLS project, the article is best used as excluded methodological background. It reinforces that libraries should not infer learning from the use of an interactive medium alone, and that evaluation requires a clear comparison, defined outcomes, demographic reporting, and sufficient description of the service design. Its learner-control finding may be relevant when libraries select or facilitate digital learning experiences, but the article offers no evidence about libraries, librarians, patrons, collections, public programs, or community contexts. Its broad instructional findings therefore should not be cited as evidence that a library game program will produce learning or positive attitudes.
+For the larger GBLS project, the article is best used as introductory methodological background. It reinforces that libraries should not infer learning from the use of an interactive medium alone, and that evaluation requires a clear comparison, defined outcomes, demographic reporting, and sufficient description of the service design. Its learner-control finding may be relevant when libraries select or facilitate digital learning experiences, but the article offers no evidence about libraries, librarians, patrons, collections, public programs, or community contexts. Its broad instructional findings should therefore establish the historical background and limits of the evidence in the introduction, not be cited as proof that a library game program will produce learning or positive attitudes.
 
 ## Productive Incongruences and Challenges
 
@@ -77,13 +76,17 @@ For the larger GBLS project, the article is best used as excluded methodological
 ## Suggested Review Contributions
 
 Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
+- Target_Section: "The Need for a Field-Level Synthesis"
+  Target_Section_Raw: "The Need for a Field-Level Synthesis"
+  Placement: "At the beginning of the subsection's discussion of prior cross-context evidence, before Sitzmann (2011), Wouters et al. (2013), and Clark et al. (2016)."
   Contribution_Text: >
-    No suggested addition. This is a broad non-library educational-technology meta-analysis and
-    should be filed in `Explicitly Excluded Literature`. Its historical value lies in documenting
-    early positive findings alongside pervasive primary-study reporting and design weaknesses.
+    An early meta-analysis by Vogel et al. (2006) reported stronger cognitive and attitudinal
+    outcomes for computer games and interactive simulations than for traditional teaching, while
+    also documenting pervasive weaknesses in the underlying literature, including missing control
+    groups, inadequate statistical reporting, sparse demographic data, and poor descriptions of
+    interventions. The combination of encouraging results and limited study quality helped motivate
+    later, more design-sensitive syntheses and illustrates why broad educational-game findings
+    cannot substitute for a field-level review of library services.
 
 ## Evidence Cautions and Limitations
 
