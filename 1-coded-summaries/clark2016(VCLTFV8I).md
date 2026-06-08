@@ -47,7 +47,6 @@ Theme:
 - gamification
 
 Contribution_Type:
-- exclusion_record
 - literature_mapping
 - methodological_caution
 - theoretical_argument
@@ -73,7 +72,7 @@ Moderator analyses suggest that design matters, though many variables are interr
 
 The article's caveats are especially important. Meta-analysis assumes commensurability across heterogeneous interventions, contexts, and comparison groups. Eligibility criteria privilege experimental designs and outcomes that can be represented through standardized effect sizes, while excluding sociocultural research that may capture participation, identity, community, and longer-term development. Most studies measured immediate, lower-order cognitive outcomes; higher-order, interpersonal, intrapersonal, and longitudinal outcomes remain difficult to assess. Only a few studies met all quality filters, and pooled estimates among those small subsets were uncertain.
 
-For the larger GBLS project, Clark and colleagues provide a valuable methodological orientation but not library evidence. Their argument supports evaluating the design and service ecology around a game rather than asking whether games are generically effective. Applied cautiously, this suggests that GBLS assessment should identify player goals, facilitation, scaffolding, social organization, service objectives, comparison conditions, and the outcomes actually measured. The article also supports the project's insistence that immediate engagement is not equivalent to learning, belonging, or transfer. However, all included evidence concerns formal K-16 educational settings. The study does not examine libraries, librarians, collections, public programs, access, or community-based library purposes and therefore falls outside the review's defined corpus.
+For the larger GBLS project, Clark and colleagues provide a valuable methodological orientation but not library evidence. Their argument supports evaluating the design and service ecology around a game rather than asking whether games are generically effective. Applied cautiously, this suggests that GBLS assessment should identify player goals, facilitation, scaffolding, social organization, service objectives, comparison conditions, and the outcomes actually measured. The article also supports the project's insistence that immediate engagement is not equivalent to learning, belonging, or transfer. Because all included evidence concerns formal K-16 educational settings, the source should culminate the introduction's discussion of broader game-based-learning research and explicitly motivate the shift to library contexts rather than being used as direct GBLS outcome evidence.
 
 ## Productive Incongruences and Challenges
 
@@ -84,14 +83,18 @@ For the larger GBLS project, Clark and colleagues provide a valuable methodologi
 ## Suggested Review Contributions
 
 Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
+- Target_Section: "The Need for a Field-Level Synthesis"
+  Target_Section_Raw: "The Need for a Field-Level Synthesis"
+  Placement: "At the end of the subsection's discussion of Vogel et al. (2006), Sitzmann (2011), and Wouters et al. (2013), immediately before the transition to the GBLS review's scope."
   Contribution_Text: >
-    No suggested addition. Although methodologically relevant, this review synthesizes formal K-16
-    digital-game learning rather than libraries or library-connected services. File it in `Explicitly
-    Excluded Literature`; retain the summary as background on value-added research, design beyond
-    medium, comparison quality, and the limits of immediate standardized outcomes.
+    Clark et al. (2016) synthesize this broader literature by arguing that the useful question is not
+    whether games work in the abstract but how particular designs align player goals, game
+    affordances, pedagogy, content, social organization, and assessment. Their meta-analysis found
+    positive average effects for both game-versus-nongame and value-added design comparisons, yet
+    emphasized heterogeneous interventions, uneven comparison quality, and the dominance of
+    immediate lower-order outcomes. This design-beyond-medium conclusion provides a methodological
+    bridge to GBLS: libraries require a field-specific synthesis because their purposes, service
+    ecologies, audiences, and evidence needs differ from formal K-16 instruction.
 
 ## Evidence Cautions and Limitations
 
