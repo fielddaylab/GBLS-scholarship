@@ -74,6 +74,7 @@ define the authors' structure, values, terminology, and evaluation criteria.
 │   └── README.md
 ├── prompt-library/
 │   ├── master_process_sources_into_review.md
+│   ├── discover-gbls-literature.md
 │   ├── summarize-from-zotero
 │   ├── calculate_summary_metrics.md
 │   └── section-prompts/
@@ -191,6 +192,33 @@ session without relying on conversation history.
 No static list of manuscript sections is encoded in these prompts. Changes to
 the baseline hierarchy are picked up during the next run.
 
+#### `discover-gbls-literature.md`
+
+A self-contained discovery and acquisition workflow for finding credible GBLS
+publications that are not already in the configured Zotero group library. It:
+
+- derives scope and search priorities from the live human-source files;
+- searches Google Scholar with complementary GBLS query families;
+- checks the complete Zotero inventory and coded-summary corpus for duplicates;
+- screens candidates at title-and-abstract level;
+- obtains lawful full text through open-access sources or authorized
+  UW-Madison Libraries access;
+- imports verified parent records and PDF attachments into Zotero;
+- files new parent items in the `Incoming` collection; and
+- writes a discovery report to
+  `2-outputs/audits_and_synthetic_reviews/google_scholar_discovery_report.md`.
+
+The configured run limits screening to 40 candidates and imports at most 15
+new items per run. The workflow does not create coded summaries, modify the
+manuscript, or place items in `GPT Summary Complete`.
+
+Run the prompt in an agent session with the Browser and Zotero capabilities
+available. Keep Zotero open and be prepared to complete Google Scholar CAPTCHA
+checks or UW-Madison authentication in the visible browser. The agent must
+pause for these human-only steps and must not request, read, or store
+credentials. Review the prompt's `Run Configuration` before using it with
+another Zotero library, institution, or filesystem layout.
+
 #### `summarize-from-zotero`
 
 A batch workflow for adding new sources from the local Zotero group library.
@@ -225,9 +253,28 @@ Then open `http://localhost:8765/metrics-explorer/`.
 
 ## Typical Workflow
 
-### 1. Add and code sources
+### 1. Discover and acquire sources
 
-Add publications to the configured Zotero library, then run:
+Run:
+
+```text
+prompt-library/discover-gbls-literature.md
+```
+
+The workflow reads the live project scope, searches Google Scholar, removes
+known duplicates, screens candidates, and attempts lawful full-text
+acquisition. It imports successful items into the configured Zotero group
+library and files their parent records in `Incoming`.
+
+Review the generated discovery report and inspect each imported Zotero record
+for relevance, metadata quality, attachment readability, possible version
+conflicts, and unresolved `Maybe`, `Possible duplicate`, or `PDF pending`
+decisions. Discovery is preliminary screening, not final inclusion in the
+review.
+
+### 2. Add and code sources
+
+After reviewing the items in `Incoming`, run:
 
 ```text
 prompt-library/summarize-from-zotero
@@ -236,7 +283,7 @@ prompt-library/summarize-from-zotero
 Review each generated record in `1-coded-summaries` for citation accuracy,
 coding consistency, evidentiary limits, and fidelity to the source.
 
-### 2. Revise the human framework
+### 3. Revise the human framework
 
 Update the files in `0-human-sources` as the research team's understanding
 develops. In particular:
@@ -249,7 +296,7 @@ develops. In particular:
   and
 - revise the rubric when target venues or editorial priorities change.
 
-### 3. Rebuild corpus metrics
+### 4. Rebuild corpus metrics
 
 Run:
 
@@ -260,7 +307,7 @@ prompt-library/calculate_summary_metrics.md
 Inspect the generated validation artifacts before interpreting aggregate
 patterns.
 
-### 4. Generate the literature review
+### 5. Generate the literature review
 
 Run:
 
@@ -271,7 +318,7 @@ prompt-library/master_process_sources_into_review.md
 The workflow will inventory the live inputs and ask for approval before
 clearing `2-outputs`. It then generates the staged manuscripts and audits.
 
-### 5. Conduct human review
+### 6. Conduct human review
 
 The final generated draft is a research-team working document, not a
 publication-ready authority. Before submission:
