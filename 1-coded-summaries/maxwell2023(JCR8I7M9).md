@@ -7,97 +7,18 @@ Zotero_Item_Key: JCR8I7M9
 Better_BibTeX_Citation_Key: maxwellLetsRollGuide2023
 Attachment_Key: UR2GZ8HG
 
-Source_Type: 
-- practitioner_guide
-- empirical_study
-- primary_artifact
-
-Evidence_Type: 
-- survey
-- practitioner_reflection
-
-Methodology: 
-- survey
-- proposal
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: public_library
+Game_Format: tabletop_roleplaying_game
 
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- roleplaying_game
+Service_Area: programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- advisory
-- access
-- space_design
-- mental_health
-- youth_services
-- teen_services
-- literacy
-- makerspace
-- advocacy
-- collection_development
-- facilitation
-
-Audience: 
-- teens
-- youth
-- students
-- librarians
-- public_librarians
-- teachers
-- older_adults
-- patrons
-- players
-
-Outcome: 
-- literacy
-- reading_interest
-- social_connection
-- belonging
-- access
-- advisory_quality
-- staff_confidence
-- implementation_capacity
-- mental_health_awareness
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- advisory
-- literacy
-- teen_engagement
-- youth_voice
-- mental_health
-- space
-- local_adaptation
-- play
-- social_connection
-- safety
-- professional_identity
-- makerspace
-
-Contribution_Type: 
-- empirical_evidence
-- practitioner_guidance
-- collection_development
-- advisory_framework
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: high
+Intended_Outcome: not_applicable
+Coding_Confidence: medium
 
 Contributions:
 - Target_Section: unspecified

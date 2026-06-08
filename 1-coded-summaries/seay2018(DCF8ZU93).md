@@ -7,86 +7,20 @@ Zotero_Item_Key: DCF8ZU93
 Better_BibTeX_Citation_Key: seayConsideringGamesGamification2018d
 Attachment_Key: YFYTYZ5Z
 
-Source_Type: 
-- professional_column
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
-
-Evidence_Type: 
-- case_study
-- practitioner_reflection
-
-Methodology: 
-- case_study
-- historical_analysis
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: gamification
 
-Game_Format: 
-- digital_game
-- board_game
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- escape_room
-- virtual_reality
-- gamification
-- puzzle
-- megagame
-- pervasive_game
-- roleplaying_game
+Service_Area:
+- learning_and_literacy
+- cultural_heritage_and_research
+Audience: not_applicable
 
-Service_Area: 
-- instruction
-- outreach
-- community_building
-- research_support
-- facilitation
-
-Audience: 
-- students
-- families
-- players
-
-Outcome: 
-- engagement
-- learning
-- cognitive_learning
-- affective_motivation
-- social_connection
-- community_building
-- problem_solving
-- research_support
-
-Theme: 
-- collaboration
-- facilitation
-- debriefing
-- technology_access
-- community
-- outreach
-- play
-- gamification
-- social_connection
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- implementation_model
-- practitioner_guidance
-- theoretical_argument
-- methodological_caution
-
-Design_Principles: 
-- debriefing_supports_transfer
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

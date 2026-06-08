@@ -7,65 +7,22 @@ Zotero_Item_Key: EYN2H24R
 Better_BibTeX_Citation_Key: bullerLendingVideoGame2017
 Attachment_Key: K922BR7Z
 
-Source_Type: 
-- case_study
-- empirical_study
-
-Evidence_Type: 
-- survey
-- case_study
-
-Methodology: 
-- survey
-- case_study
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: academic_library
+Game_Format: digital_game
 
-Game_Format: 
-- video_game
-- tabletop_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- outreach
-- access
-- space_design
-- research_support
-- assessment
-
-Audience: 
+Service_Area: collections_and_access
+Audience:
 - students
-- faculty
-- library_staff
 - families
-- gamers
-- patrons
-- players
 
-Outcome: 
-- learning
-- access
-- research_support
-
-Theme: 
-- access
-- implementation_barriers
-- space
-- outreach
-- play
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- collection_development
-- methodological_caution
-
-Design_Principles: access_requires_infrastructure
-
+Intended_Outcome:
+- equitable_access
+- creativity_and_production
+- institutional_capacity
 Coding_Confidence: high
 
 Contributions:

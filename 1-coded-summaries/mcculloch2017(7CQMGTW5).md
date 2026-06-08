@@ -7,57 +7,18 @@ Zotero_Item_Key: 7CQMGTW5
 Better_BibTeX_Citation_Key: mccullochCataloguingClassifyingBoard2017
 Attachment_Key: I6HTQQKX
 
-Source_Type: 
-- historical_analysis
-- primary_artifact
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
 Evidence_Type: practitioner_reflection
-
-Methodology: historical_analysis
-
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: tabletop_game
 
-Game_Format: 
-- video_game
-- board_game
-- card_game
-- tabletop_game
-- puzzle
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Service_Area: 
-- collections
-- circulation
-- cataloging_metadata
-- discovery
-- access
-
-Audience: patrons
-
-Outcome: 
-- access
-- discovery
-- catalog_discovery
-
-Theme: 
-- access
-- metadata
-- cataloging
-- local_adaptation
-- play
-
-Contribution_Type: 
-- historical_precedent
-- infrastructure_metadata
-- collection_development
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

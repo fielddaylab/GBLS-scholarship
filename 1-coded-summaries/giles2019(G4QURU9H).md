@@ -7,84 +7,24 @@ Zotero_Item_Key: G4QURU9H
 Better_BibTeX_Citation_Key: gilesCreatingLibraryOrientation2019
 Attachment_Key: BQBCJAUX
 
-Source_Type: 
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type:
 - empirical_study
-- primary_artifact
-
-Evidence_Type: survey
-
-Methodology: survey
-
+- implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: unspecified_library_context
+Game_Format: tabletop_game
 
-Game_Format: 
-- video_game
-- card_game
-- tabletop_game
+Service_Area:
+- learning_and_literacy
+- professional_capacity
+Audience: students
 
-Service_Area: 
-- circulation
-- discovery
-- instruction
-- information_literacy
-- orientation
-- staff_training
-- community_building
-- access
-- space_design
-- literacy
-- research_support
-- assessment
-- facilitation
-
-Audience: 
-- students
-- faculty
-- librarians
-- families
-- patrons
-
-Outcome: 
-- attendance
-- literacy
-- information_literacy
-- learning
-- social_connection
-- belonging
-- community_building
-- access
-- implementation_capacity
-- research_support
-- orientation_skills
-
-Theme: 
-- facilitation
-- access
-- literacy
-- staff_training
-- space
-- community
-- orientation
-- local_adaptation
-- play
-- social_connection
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome:
+- learning_and_literacy
+- institutional_capacity
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

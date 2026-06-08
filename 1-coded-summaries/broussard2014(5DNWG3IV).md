@@ -7,79 +7,18 @@ Zotero_Item_Key: 5DNWG3IV
 Better_BibTeX_Citation_Key: broussardUsingGamesMake2014
 Attachment_Key: EY7TZQJI
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: experiment
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: academic_library
-
 Game_Format: unspecified_game_format
 
-Service_Area: 
-- programming
-- instruction
-- information_literacy
-- orientation
-- outreach
-- access
-- space_design
-- literacy
-- research_support
-- assessment
-- facilitation
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Audience: 
-- students
-- faculty
-- librarians
-- academic_librarians
-- families
-- players
-
-Outcome: 
-- engagement
-- attendance
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- affective_motivation
-- social_connection
-- access
-- critical_thinking
-- research_support
-- orientation_skills
-
-Theme: 
-- facilitation
-- debriefing
-- access
-- literacy
-- space
-- outreach
-- orientation
-- local_adaptation
-- play
-- social_connection
-- assessment
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-
-Design_Principles: 
-- debriefing_supports_transfer
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,75 +7,22 @@ Zotero_Item_Key: PFP4LUWL
 Better_BibTeX_Citation_Key: keatingOrganizingVideogameMetadata2016
 Attachment_Key: PPI57EKM
 
-Source_Type: 
-- case_study
-- empirical_study
-- theoretical_work
+Source_Type: conference_paper
+Peer_Review: editorial_reviewed
+Evidence_Type:
+- implementation_case
+- instrument_or_framework_development
+Primary_Methodology: case_or_design_study
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- case_study
-- theoretical
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Methodology: 
-- case_study
-- theoretical_analysis
-
-Library_Context: 
-- museum_archive
-- cultural_heritage_institution
-
-Game_Format: video_game
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- discovery
-- preservation
-- access
-- research_support
-- cultural_heritage
-
-Audience: 
-- gamers
-- researchers
-- patrons
-- players
-
-Outcome: 
-- access
-- discovery
-- catalog_discovery
-- preservation_access
-- implementation_capacity
-- research_support
-
-Theme: 
-- access
-- metadata
-- cataloging
-- preservation
-- cultural_heritage
-- implementation_barriers
-- local_adaptation
-- play
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
+Intended_Outcome:
+- discovery_and_advisory
+- cultural_stewardship_and_preservation
+- creativity_and_production
 Coding_Confidence: high
 
 Contributions:

@@ -7,69 +7,18 @@ Zotero_Item_Key: MR2KV4NF
 Better_BibTeX_Citation_Key: farkasTeachingTipTeaching2022
 Attachment_Key: D7WITCAN
 
-Source_Type: literature_review
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
+Library_Context: multiple_library_types
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- survey
-- literature_synthesis
+Service_Area: learning_and_literacy
+Audience: students
 
-Methodology: 
-- survey
-- literature_review
-- observation
-
-Library_Context: 
-- public_library
-- academic_library
-- school_library
-- cultural_heritage_institution
-- multiple_library_types
-
-Game_Format: 
-- tabletop_roleplaying_game
-- escape_room
-- virtual_reality
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- instruction
-- information_literacy
-- literacy
-- cultural_heritage
-
-Audience: 
-- students
-- families
-- older_adults
-
-Outcome: 
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- collaboration
-
-Theme: 
-- collaboration
-- metadata
-- cultural_heritage
-- literacy
-- play
-- reflection
-
-Contribution_Type: 
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-
-Design_Principles: 
-- collaboration_supports_reflection
-- description_shapes_discovery
-
-Coding_Confidence: medium
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

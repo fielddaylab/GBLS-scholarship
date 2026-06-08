@@ -1,58 +1,26 @@
 # Sitzmann, T. (2011). A meta-analytic examination of the instructional effectiveness of computer-based simulation games. *Personnel Psychology, 64*(2), 489-528. https://doi.org/10.1111/j.1744-6570.2011.01190.x
 
 ## Metadata
-
 Citation_Key: sitzmannMetaAnalyticExaminationInstructional2011
 Year: 2011
 Zotero_Item_Key: EX23SNC4
 Better_BibTeX_Citation_Key: sitzmannMetaAnalyticExaminationInstructional2011
 Attachment_Key: ZT5GX5NC
 
-Source_Type: literature_review
-
-Evidence_Type:
-- meta_analysis
-- literature_synthesis
-
-Methodology: meta_analysis
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
 Library_Context: non_library_context
+Game_Format: digital_game
 
-Game_Format:
-- serious_game
-- digital_game
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area:
-- instruction
-- professional_development
-
-Audience:
-- adults
-- students
-
-Outcome:
-- cognitive_learning
-- learning
-- affective_motivation
-
-Theme:
-- facilitation
-- debriefing
-- reflection
-- assessment
-- implementation_barriers
-
-Contribution_Type:
-- literature_mapping
-- methodological_caution
-- background_context
-
-Design_Principles:
-- debriefing_supports_transfer
-- facilitation_is_core_infrastructure
-- avoid_overclaiming_evidence
-- technology_should_serve_service_goals
-
+Intended_Outcome:
+- learning_and_literacy
+- creativity_and_production
+- equitable_access
 Coding_Confidence: high
 
 ## Summary

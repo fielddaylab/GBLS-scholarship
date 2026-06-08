@@ -7,83 +7,19 @@ Zotero_Item_Key: HUVU4YGP
 Better_BibTeX_Citation_Key: wedlakeHowGamesCan2024
 Attachment_Key: KYACJU4W
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: 
-- survey
-- focus_group
-- theoretical
-
-Methodology: 
-- survey
-- focus_group
-- theoretical_analysis
-- observation
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- escape_room
-- breakout_box
-- game_creation
-- puzzle
+Service_Area:
+- learning_and_literacy
+- programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- information_literacy
-- staff_training
-- literacy
-- assessment
-- facilitation
-
-Audience: 
-- librarians
-- players
-
-Outcome: 
-- attendance
-- literacy
-- information_literacy
-- misinformation_awareness
-- critical_reflection
-- learning
-- social_connection
-- staff_confidence
-- implementation_capacity
-- collaboration
-- resilience
-
-Theme: 
-- misinformation
-- collaboration
-- facilitation
-- debriefing
-- literacy
-- staff_training
-- technology_access
-- local_adaptation
-- play
-- social_connection
-- assessment
-- narrative
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- debriefing_supports_transfer
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- avoid_overclaiming_evidence
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

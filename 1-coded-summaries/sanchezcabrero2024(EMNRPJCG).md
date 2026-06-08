@@ -7,72 +7,18 @@ Zotero_Item_Key: EMNRPJCG
 Better_BibTeX_Citation_Key: sanchez-cabreroConexionesNuevasMetodologias2024
 Attachment_Key: P3QCB65V
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: cultural_heritage_institution
+Game_Format: multiple_game_formats
 
-Evidence_Type: theoretical
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Methodology: 
-- historical_analysis
-- theoretical_analysis
-
-Library_Context: 
-- museum_archive
-- non_library_context
-
-Game_Format: 
-- video_game
-- digital_game
-- tabletop_roleplaying_game
-- gamification
-- game_creation
-- serious_game
-
-Service_Area: 
-- programming
-- collections
-- information_literacy
-- teen_services
-- literacy
-
-Audience: 
-- teens
-- students
-- librarians
-- teachers
-- patrons
-- players
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- affective_motivation
-- social_connection
-
-Theme: 
-- literacy
-- teen_engagement
-- local_adaptation
-- play
-- gamification
-- social_connection
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- exclusion_record
-- background_context
-
-Design_Principles: local_context_shapes_program_fit
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

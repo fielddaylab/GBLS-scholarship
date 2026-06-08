@@ -7,116 +7,22 @@ Zotero_Item_Key: AHBICLVT
 Better_BibTeX_Citation_Key: keatingStyleTetrisPossibly2017
 Attachment_Key: 22HWDXT9
 
-Source_Type: 
+Source_Type: conference_paper
+Peer_Review: editorial_reviewed
+Evidence_Type:
 - empirical_study
-- theoretical_work
+- instrument_or_framework_development
+Primary_Methodology: qualitative_study
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- survey
-- interview
-- experiment
-- archival_analysis
-- theoretical
+Service_Area:
+- collections_and_access
+- discovery_and_advisory
+- cultural_heritage_and_research
+Audience: students
 
-Methodology: 
-- survey
-- interviews
-- theoretical_analysis
-
-Library_Context: 
-- public_library
-- academic_library
-- museum_archive
-- multiple_library_types
-
-Game_Format: 
-- video_game
-- card_game
-- tabletop_roleplaying_game
-- escape_room
-- game_creation
-- puzzle
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- discovery
-- preservation
-- instruction
-- orientation
-- community_building
-- access
-- space_design
-- research_support
-- partnerships
-- archival_stewardship
-- facilitation
-
-Audience: 
-- adults
-- students
-- undergraduate_students
-- graduate_students
-- families
-- gamers
-- researchers
-- patrons
-- players
-
-Outcome: 
-- engagement
-- learning
-- cognitive_learning
-- social_connection
-- belonging
-- community_building
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- preservation_access
-- collaboration
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- metadata
-- cataloging
-- preservation
-- advisory
-- space
-- technology_access
-- community
-- orientation
-- local_adaptation
-- play
-- social_connection
-- safety
-- controlled_vocabulary
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
+Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
 Contributions:

@@ -7,92 +7,18 @@ Zotero_Item_Key: 5RC5BETF
 Better_BibTeX_Citation_Key: buchananFadWhyVideo2012
 Attachment_Key: CHFVAEF7
 
-Source_Type: empirical_study
-
-Evidence_Type: practitioner_reflection
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Game_Format: 
-- video_game
-- game_creation
-- serious_game
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- discovery
-- orientation
-- outreach
-- community_building
-- access
-- teen_services
-- literacy
-- media_literacy
-- assessment
-- collection_development
-
-Audience: 
-- children
-- teens
-- adults
-- librarians
-- families
-- gamers
-- patrons
-- players
-
-Outcome: 
-- engagement
-- literacy
-- media_literacy
-- learning
-- affective_motivation
-- social_connection
-- community_building
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- staff_confidence
-- orientation_skills
-
-Theme: 
-- access
-- cataloging
-- advisory
-- cross_media
-- literacy
-- teen_engagement
-- technology_access
-- community
-- outreach
-- orientation
-- local_adaptation
-- play
-- social_connection
-- assessment
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

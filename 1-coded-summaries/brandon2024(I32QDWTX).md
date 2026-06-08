@@ -7,64 +7,21 @@ Zotero_Item_Key: I32QDWTX
 Better_BibTeX_Citation_Key: RTRTZinesResource2024
 Attachment_Key: CWBFNP95
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- primary_artifact
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: cultural_heritage_institution
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
+Service_Area:
+- collections_and_access
+- programming_and_facilitation
+- community_and_inclusion
+Audience: not_applicable
 
-Methodology: literature_review
-
-Library_Context: museum_archive
-
-Game_Format: 
-- board_game
-- tabletop_game
-- tabletop_roleplaying_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- preservation
-- instruction
-- equity_inclusion
-- youth_services
-- collection_development
-
-Audience: 
-- youth
-- librarians
-- gamers
-
-Outcome: preservation_access
-
-Theme: 
-- inclusion
-- preservation
-- youth_voice
-- local_adaptation
-- safety
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- equity_analysis
-
-Design_Principles: 
-- local_context_shapes_program_fit
-- preservation_requires_relationship_metadata
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,79 +7,22 @@ Zotero_Item_Key: NWIEBHQE
 Better_BibTeX_Citation_Key: noordaGenMillennialsHow
 Attachment_Key: 2NG9VTFR
 
-Source_Type: empirical_study
-
-Evidence_Type: survey
-
-Methodology: 
-- survey
-- ethnography
-- observation
-
+Source_Type: dataset_or_archive
+Peer_Review: not_applicable
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: public_library
+Game_Format: digital_game
 
-Game_Format: video_game
+Service_Area:
+- collections_and_access
+- community_and_inclusion
+Audience: teens
 
-Service_Area: 
-- programming
-- collections
-- advisory
-- discovery
-- community_building
-- access
-- equity_inclusion
-- space_design
-- youth_services
-- teen_services
-- research_support
-- makerspace
-
-Audience: 
-- teens
-- youth
-- adults
-- librarians
-- families
-- gamers
-- researchers
-- older_adults
-- patrons
-
-Outcome: 
-- learning
-- social_connection
-- community_building
-- access
-- advisory_quality
-- equity_access
-- research_support
-
-Theme: 
-- access
-- equity
-- advisory
-- cross_media
-- teen_engagement
-- youth_voice
-- space
-- community
-- play
-- social_connection
-- makerspace
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- advisory_framework
-- methodological_caution
-- equity_analysis
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
+Intended_Outcome:
+- equitable_access
+- belonging_and_community
+- discovery_and_advisory
 Coding_Confidence: high
 
 Contributions:

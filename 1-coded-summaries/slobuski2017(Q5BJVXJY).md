@@ -7,92 +7,20 @@ Zotero_Item_Key: Q5BJVXJY
 Better_BibTeX_Citation_Key: slobuskiArrangingPiecesSurvey2017
 Attachment_Key: 8GIATGC3
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: survey
+Library_Context: multiple_library_types
+Game_Format: tabletop_game
 
-Evidence_Type: survey
+Service_Area: collections_and_access
+Audience: teens
 
-Methodology: survey
-
-Library_Context: 
-- public_library
-- academic_library
-- school_library
-- multiple_library_types
-
-Game_Format: 
-- video_game
-- board_game
-- card_game
-- tabletop_game
-- game_creation
-- toy
-- roleplaying_game
-- multiple_game_formats
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- discovery
-- preservation
-- community_building
-- access
-- teen_services
-- research_support
-- partnerships
-
-Audience: 
-- teens
-- adults
-- faculty
-- librarians
-- school_librarians
-- families
-- gamers
-- researchers
-- patrons
-
-Outcome: 
-- social_connection
-- community_building
-- access
-- discovery
-- catalog_discovery
-- patron_interest
-- research_support
-
-Theme: 
-- access
-- metadata
-- cataloging
-- preservation
-- teen_engagement
-- implementation_barriers
-- community
-- local_adaptation
-- play
-- social_connection
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-
+Intended_Outcome:
+- belonging_and_community
+- discovery_and_advisory
+- equitable_access
 Coding_Confidence: high
 
 Contributions:

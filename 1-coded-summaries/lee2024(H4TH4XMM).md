@@ -7,106 +7,23 @@ Zotero_Item_Key: H4TH4XMM
 Better_BibTeX_Citation_Key: leeSupportingYouthMental2024
 Attachment_Key: 3TFUU59R
 
-Source_Type: empirical_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: participatory_design
+Library_Context: multiple_library_types
+Game_Format: virtual_or_augmented_reality
 
-Evidence_Type: 
-- interview
-- archival_analysis
-
-Methodology: 
-- interviews
-- participatory_design
-
-Library_Context: 
-- public_library
-- museum_archive
-
-Game_Format: virtual_reality
-
-Service_Area: 
-- programming
-- preservation
-- staff_training
-- community_building
-- access
-- equity_inclusion
-- space_design
-- wellness
-- mental_health
-- youth_services
-- teen_services
-- literacy
-- partnerships
-- archival_stewardship
-- facilitation
-
-Audience: 
+Service_Area: community_and_inclusion
+Audience:
 - teens
-- youth
-- undergraduate_students
-- graduate_students
-- librarians
-- library_staff
-- developers
-- marginalized_communities
-- patrons
+- students
+- underserved_or_special_population
 
-Outcome: 
-- engagement
-- literacy
-- critical_reflection
-- learning
-- social_connection
-- belonging
-- community_building
-- access
-- staff_confidence
-- wellness
-- mental_health_awareness
-- technology_literacy
-- collaboration
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- inclusion
-- preservation
-- literacy
-- teen_engagement
-- youth_voice
-- co_design
-- wellness
-- mental_health
-- staff_training
-- implementation_barriers
-- space
-- technology_access
-- community
-- local_adaptation
-- social_connection
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- methodological_caution
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- preservation_requires_relationship_metadata
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-- co_design_supports_local_relevance
-- technology_should_serve_service_goals
-
+Intended_Outcome:
+- belonging_and_community
+- wellness_and_resilience
+- learning_and_literacy
 Coding_Confidence: high
 
 Contributions:

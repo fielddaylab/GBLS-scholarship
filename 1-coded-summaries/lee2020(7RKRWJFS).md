@@ -7,85 +7,20 @@ Zotero_Item_Key: 7RKRWJFS
 Better_BibTeX_Citation_Key: leeChallengesOrganizingAccessing2020
 Attachment_Key: CMDA4JPR
 
-Source_Type: 
-- edited_volume
-- literature_review
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: book_chapter
+Peer_Review: editorial_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- interview
-- literature_synthesis
-- archival_analysis
+Service_Area: cultural_heritage_and_research
+Audience: not_applicable
 
-Methodology: 
-- interviews
-- literature_review
-
-Library_Context: 
-- museum_archive
-- cultural_heritage_institution
-
-Game_Format: 
-- video_game
-- digital_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- discovery
-- preservation
-- access
-- research_support
-- marketing
-- partnerships
-- cultural_heritage
-- archival_stewardship
-
-Audience: 
-- students
-- librarians
-- researchers
-- developers
-- older_adults
-
-Outcome: 
-- learning
-- access
-- discovery
-- catalog_discovery
-- preservation_access
-- research_support
-
-Theme: 
-- access
-- metadata
-- cataloging
-- preservation
-- cultural_heritage
-- implementation_barriers
-- local_adaptation
-- controlled_vocabulary
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-
+Intended_Outcome:
+- cultural_stewardship_and_preservation
+- creativity_and_production
+- discovery_and_advisory
 Coding_Confidence: high
 
 Contributions:

@@ -7,67 +7,19 @@ Zotero_Item_Key: 8GEHLKNA
 Better_BibTeX_Citation_Key: brackenburySeriousGamesGamification2022
 Attachment_Key: 5NBVBA4K
 
-Source_Type: 
-- practitioner_guide
-- literature_review
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: non_library_context
+Game_Format: multiple_game_formats
 
-Evidence_Type: literature_synthesis
+Service_Area:
+- learning_and_literacy
+- discovery_and_advisory
+Audience: not_applicable
 
-Methodology: literature_review
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- tabletop_roleplaying_game
-- gamification
-- serious_game
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- instruction
-- space_design
-- research_support
-- assessment
-
-Audience: 
-- librarians
-- patrons
-
-Outcome: 
-- engagement
-- learning
-- cognitive_learning
-- affective_motivation
-- implementation_capacity
-- collaboration
-- research_support
-
-Theme: 
-- collaboration
-- metadata
-- space
-- gamification
-- competition
-- assessment
-- narrative
-
-Contribution_Type: 
-- practitioner_guidance
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
+Intended_Outcome: not_applicable
 Coding_Confidence: low
 
 Contributions:

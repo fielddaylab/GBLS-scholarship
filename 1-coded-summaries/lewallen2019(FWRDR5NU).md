@@ -7,73 +7,21 @@ Zotero_Item_Key: FWRDR5NU
 Better_BibTeX_Citation_Key: lewallenCuratingBreakoutBoxes2019
 Attachment_Key: 86Q52IZJ
 
-Source_Type: 
-- empirical_study
-- primary_artifact
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
 Evidence_Type: practitioner_reflection
-
-Methodology: unspecified
-
+Primary_Methodology: none
 Library_Context: school_library
+Game_Format: escape_room_or_breakout_box
 
-Game_Format: 
-- digital_game
-- escape_room
-- breakout_box
-- puzzle
+Service_Area:
+- learning_and_literacy
+- programming_and_facilitation
+- collections_and_access
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- instruction
-- orientation
-- community_building
-- research_support
-- assessment
-- collection_development
-
-Audience: 
-- students
-- librarians
-- school_librarians
-- teachers
-- older_adults
-
-Outcome: 
-- critical_reflection
-- learning
-- community_building
-- implementation_capacity
-- collaboration
-- problem_solving
-- critical_thinking
-- research_support
-- orientation_skills
-- resilience
-
-Theme: 
-- collaboration
-- facilitation
-- community
-- orientation
-- play
-- assessment
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

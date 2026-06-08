@@ -7,72 +7,18 @@ Zotero_Item_Key: DHPKUSIA
 Better_BibTeX_Citation_Key: LSHMTTRPGVenture2024
 Attachment_Key: 5XZS8HKH
 
-Source_Type: 
-- literature_review
-- primary_artifact
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: non_library_context
+Game_Format: tabletop_roleplaying_game
 
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
+Service_Area: discovery_and_advisory
+Audience: not_applicable
 
-Methodology: literature_review
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- community_building
-- youth_services
-- research_support
-- facilitation
-
-Audience: 
-- children
-- youth
-- gamers
-- patrons
-- players
-
-Outcome: 
-- learning
-- affective_motivation
-- social_connection
-- community_building
-- advisory_quality
-- implementation_capacity
-- research_support
-
-Theme: 
-- facilitation
-- advisory
-- youth_voice
-- community
-- play
-- social_connection
-- safety
-
-Contribution_Type: 
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

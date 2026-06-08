@@ -7,85 +7,23 @@ Zotero_Item_Key: 53X4P8WS
 Better_BibTeX_Citation_Key: webberSustainingLearningLIS2011
 Attachment_Key: 3AQSCDGC
 
-Source_Type: 
-- empirical_study
-- historical_analysis
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
+Library_Context: library_school
+Game_Format: virtual_or_augmented_reality
 
-Evidence_Type: 
-- interview
-- archival_analysis
-
-Methodology: 
-- interviews
-- historical_analysis
-
-Library_Context: museum_archive
-
-Game_Format: virtual_reality
-
-Service_Area: 
-- programming
-- collections
-- information_literacy
-- outreach
-- professional_development
-- staff_training
-- community_building
-- access
-- space_design
-- literacy
-- research_support
-- marketing
-- archival_stewardship
-
-Audience: 
+Service_Area:
+- learning_and_literacy
+- professional_capacity
+- programming_and_facilitation
+Audience:
 - students
-- undergraduate_students
-- graduate_students
-- librarians
-- older_adults
-- patrons
+- educators
 
-Outcome: 
-- attendance
-- literacy
-- information_literacy
-- learning
-- social_connection
-- community_building
-- access
-- collaboration
-- research_support
-
-Theme: 
-- collaboration
-- access
-- literacy
-- staff_training
-- implementation_barriers
-- space
-- community
-- outreach
-- play
-- social_connection
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- training_model
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

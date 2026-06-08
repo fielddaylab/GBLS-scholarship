@@ -7,93 +7,18 @@ Zotero_Item_Key: Q44D8QIG
 Better_BibTeX_Citation_Key: brownFusionLiteracyGames2013
 Attachment_Key: XBE8KRJC
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
-- primary_artifact
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
+Library_Context: public_library
+Game_Format: digital_game
 
-Evidence_Type: 
-- survey
-- case_study
-- experiment
+Service_Area: programming_and_facilitation
+Audience: general_public
 
-Methodology: 
-- survey
-- case_study
-- observation
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- video_game
-- board_game
-- roleplaying_game
-- multiple_game_formats
-
-Service_Area: 
-- programming
-- information_literacy
-- community_building
-- access
-- space_design
-- youth_services
-- literacy
-- research_support
-- assessment
-- facilitation
-
-Audience: 
-- youth
-- adults
-- families
-- researchers
-
-Outcome: 
-- attendance
-- literacy
-- information_literacy
-- learning
-- affective_motivation
-- social_connection
-- belonging
-- community_building
-- access
-- staff_confidence
-- technology_literacy
-- critical_thinking
-- research_support
-
-Theme: 
-- facilitation
-- access
-- literacy
-- youth_voice
-- space
-- technology_access
-- community
-- local_adaptation
-- play
-- competition
-- social_connection
-- assessment
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- implementation_model
-- theoretical_argument
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

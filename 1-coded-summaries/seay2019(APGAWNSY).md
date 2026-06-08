@@ -7,70 +7,20 @@ Zotero_Item_Key: APGAWNSY
 Better_BibTeX_Citation_Key: seayConsideringGamesLibraries2021a
 Attachment_Key: CB5N9ENZ
 
-Source_Type: 
-- professional_column
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
-
-Evidence_Type: 
-- survey
-- practitioner_reflection
-
-Methodology: survey
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: tabletop_game
 
-Game_Format: 
-- board_game
-- tabletop_game
+Service_Area:
+- collections_and_access
+- programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- community_building
-- access
-- space_design
-- research_support
-- makerspace
-
-Audience: 
-- librarians
-- patrons
-
-Outcome: 
-- engagement
-- social_connection
-- community_building
-- access
-- research_support
-
-Theme: 
-- access
-- metadata
-- space
-- community
-- play
-- social_connection
-- makerspace
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- practitioner_guidance
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

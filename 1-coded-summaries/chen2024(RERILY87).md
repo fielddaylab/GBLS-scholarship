@@ -7,62 +7,18 @@ Zotero_Item_Key: RERILY87
 Better_BibTeX_Citation_Key: chenKnowledgeCheckbasedConcept2024
 Attachment_Key: F32ZWKJP
 
-Source_Type: 
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
+Library_Context: non_library_context
+Game_Format: digital_game
 
-Evidence_Type: 
-- interview
-- experiment
+Service_Area: learning_and_literacy
+Audience: students
 
-Methodology: interviews
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- digital_game
-- escape_room
-
-Service_Area: 
-- programming
-- collections
-- instruction
-- outreach
-- literacy
-- research_support
-- assessment
-
-Audience: 
-- students
-- teachers
-- researchers
-- patrons
-
-Outcome: 
-- engagement
-- literacy
-- learning
-- cognitive_learning
-- critical_thinking
-- research_support
-
-Theme: 
-- literacy
-- technology_access
-- outreach
-- play
-- assessment
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- exclusion_record
-
-Design_Principles: advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

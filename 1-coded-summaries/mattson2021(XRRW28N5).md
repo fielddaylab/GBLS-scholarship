@@ -7,86 +7,19 @@ Zotero_Item_Key: XRRW28N5
 Better_BibTeX_Citation_Key: mattsonGamesGamificationAcademic2021
 Attachment_Key: XANPMQBZ
 
-Source_Type: 
-- book_review
-- edited_volume
-- empirical_study
-- theoretical_work
-- primary_artifact
-
-Evidence_Type: 
-- survey
-- secondary_source
-
-Methodology: survey
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: academic_library
+Game_Format: gamification
 
-Game_Format: 
-- tabletop_game
-- escape_room
-- gamification
-- game_creation
+Service_Area:
+- collections_and_access
+- learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- instruction
-- information_literacy
-- orientation
-- outreach
-- professional_development
-- staff_training
-- access
-- equity_inclusion
-- literacy
-- research_support
-- assessment
-- partnerships
-- collection_development
-
-Audience: 
-- students
-- faculty
-- gamers
-
-Outcome: 
-- literacy
-- information_literacy
-- learning
-- access
-- implementation_capacity
-- equity_access
-- research_support
-- orientation_skills
-
-Theme: 
-- access
-- equity
-- inclusion
-- literacy
-- staff_training
-- outreach
-- orientation
-- gamification
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- exclusion_record
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- staff_confidence_shapes_adoption
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

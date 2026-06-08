@@ -1,65 +1,31 @@
 # Fisher, K. E., Saxton, M. L., Edwards, P. M., & Mai, J.-E. (2007). Seattle Public Library as place: Reconceptualizing space, community, and information at the Central Library. In J. E. Buschman & G. J. Leckie (Eds.), *The library as place: History, community, and culture* (pp. 135-160). Libraries Unlimited.
 
 ## Metadata
-
 Citation_Key: SeattlePublicLibrary
 Year: 2007
 Zotero_Item_Key: DG2AN7WP
 Better_BibTeX_Citation_Key: SeattlePublicLibrary
 Attachment_Key: 7P7ZVRRJ
 
-Source_Type:
-- empirical_study
-- case_study
-
-Evidence_Type:
-- interview
-- content_analysis
-- case_study
-
-Methodology:
-- interviews
-- content_analysis
-
+Source_Type: book_chapter
+Peer_Review: editorial_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
 Library_Context: public_library
-
-Game_Format:
-- unspecified_game_format
+Game_Format: unspecified_game_format
 
 Service_Area:
-- space_design
-- community_building
-- access
-- discovery
-
+- collections_and_access
+- community_and_inclusion
+- space_and_infrastructure
 Audience:
-- patrons
-- general_public
-- public_librarians
+- students
+- families
 
-Outcome:
-- community_building
-- social_connection
-- belonging
-- access
-- discovery
-
-Theme:
-- space
-- community
-- social_connection
-- access
-- equity
-
-Contribution_Type:
-- empirical_evidence
-- theoretical_argument
-- background_context
-
-Design_Principles:
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-
+Intended_Outcome:
+- belonging_and_community
+- equitable_access
+- learning_and_literacy
 Coding_Confidence: high
 
 ## Summary

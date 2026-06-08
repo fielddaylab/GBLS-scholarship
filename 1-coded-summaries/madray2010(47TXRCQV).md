@@ -7,131 +7,19 @@ Zotero_Item_Key: 47TXRCQV
 Better_BibTeX_Citation_Key: madrayCurriculumMaterialCenters2010
 Attachment_Key: CEXPNSXI
 
-Source_Type: 
-- practitioner_guide
-- literature_review
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: academic_library
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- experiment
-- literature_synthesis
-- practitioner_reflection
+Service_Area:
+- learning_and_literacy
+- collections_and_access
+Audience: not_applicable
 
-Methodology: 
-- literature_review
-- historical_analysis
-
-Library_Context: 
-- academic_library
-- school_library
-- multiple_library_types
-
-Game_Format: 
-- digital_game
-- board_game
-- card_game
-- gamification
-- game_creation
-- toy
-- puzzle
-- multiple_game_formats
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- discovery
-- instruction
-- information_literacy
-- orientation
-- community_building
-- access
-- equity_inclusion
-- space_design
-- youth_services
-- literacy
-- assessment
-- partnerships
-- collection_development
-
-Audience: 
-- children
-- youth
-- students
-- faculty
-- librarians
-- school_librarians
-- academic_librarians
-- preservice_teachers
-- teachers
-- patrons
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- social_connection
-- community_building
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- staff_confidence
-- implementation_capacity
-- collaboration
-- creativity
-- problem_solving
-- orientation_skills
-
-Theme: 
-- collaboration
-- access
-- inclusion
-- cataloging
-- advisory
-- literacy
-- youth_voice
-- implementation_barriers
-- space
-- community
-- orientation
-- local_adaptation
-- play
-- gamification
-- social_connection
-- assessment
-- professional_identity
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- practitioner_guidance
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- literature_mapping
-- methodological_caution
-- equity_analysis
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- novelty_is_not_enough
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

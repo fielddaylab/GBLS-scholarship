@@ -7,88 +7,20 @@ Zotero_Item_Key: 55JCV6N4
 Better_BibTeX_Citation_Key: martin-martinVideojuegoComoHerramienta2022
 Attachment_Key: 9CDXCXF6
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: experiment
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
 Library_Context: academic_library
+Game_Format: digital_game
 
-Game_Format: 
-- video_game
-- gamification
-- serious_game
-
-Service_Area: 
-- programming
-- cataloging_metadata
-- instruction
-- information_literacy
-- orientation
-- staff_training
-- access
-- space_design
-- teen_services
-- literacy
-- research_support
-- assessment
-- marketing
-
-Audience: 
+Service_Area: learning_and_literacy
+Audience:
 - teens
 - students
-- undergraduate_students
-- graduate_students
-- faculty
-- librarians
-- library_staff
-- families
-- patrons
 
-Outcome: 
-- literacy
-- information_literacy
-- learning
-- access
-- catalog_discovery
-- staff_confidence
-- research_support
-- orientation_skills
-
-Theme: 
-- access
-- cataloging
-- literacy
-- teen_engagement
-- staff_training
-- space
-- orientation
-- local_adaptation
-- play
-- gamification
-- assessment
-- professional_identity
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- novelty_is_not_enough
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

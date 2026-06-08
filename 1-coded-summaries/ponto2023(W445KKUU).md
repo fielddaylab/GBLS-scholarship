@@ -7,57 +7,23 @@ Zotero_Item_Key: W445KKUU
 Better_BibTeX_Citation_Key: pontoWaddleUsingVirtual2023
 Attachment_Key: CU8SVMS4
 
-Source_Type: empirical_study
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
+Source_Type: conference_paper
+Peer_Review: editorial_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: survey
 Library_Context: unspecified_library_context
+Game_Format: virtual_or_augmented_reality
 
-Game_Format: 
-- virtual_reality
-- game_creation
+Service_Area:
+- programming_and_facilitation
+- cultural_heritage_and_research
+- learning_and_literacy
+Audience: students
 
-Service_Area: 
-- programming
-- collections
-- access
-- research_support
-- assessment
-
-Audience: 
-- students
-- researchers
-- patrons
-
-Outcome: 
-- learning
-- access
-- implementation_capacity
-- research_support
-
-Theme: 
-- collaboration
-- access
-- technology_access
-- play
-- assessment
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- novelty_is_not_enough
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: low
+Intended_Outcome:
+- learning_and_literacy
+- creativity_and_production
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

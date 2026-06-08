@@ -7,67 +7,21 @@ Zotero_Item_Key: KY2K8TWH
 Better_BibTeX_Citation_Key: huberLeveragingPotentialLarge2024
 Attachment_Key: Y72FNTPV
 
-Source_Type: 
-- literature_review
-- theoretical_work
-
-Evidence_Type: 
-- experiment
-- literature_synthesis
-
-Methodology: literature_review
-
-Library_Context: academic_library
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: non_library_context
 Game_Format: game_creation
 
-Service_Area: 
-- programming
-- collections
-- instruction
-- access
-- youth_services
-- literacy
-- assessment
+Service_Area:
+- learning_and_literacy
+- collections_and_access
+- creation_and_making
+Audience: not_applicable
 
-Audience: 
-- youth
-- students
-- library_staff
-- teachers
-- patrons
-
-Outcome: 
-- engagement
-- literacy
-- critical_reflection
-- learning
-- cognitive_learning
-- affective_motivation
-- access
-
-Theme: 
-- access
-- literacy
-- youth_voice
-- implementation_barriers
-- technology_access
-- play
-- assessment
-- reflection
-
-Contribution_Type: 
-- theoretical_argument
-- collection_development
-- literature_mapping
-- exclusion_record
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

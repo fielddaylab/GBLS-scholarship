@@ -7,69 +7,18 @@ Zotero_Item_Key: YLD9EAM6
 Better_BibTeX_Citation_Key: LAGStardewValley2024
 Attachment_Key: 2X9B2PJA
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- primary_artifact
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: non_library_context
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- case_study
-- literature_synthesis
-- practitioner_reflection
+Service_Area: discovery_and_advisory
+Audience: not_applicable
 
-Methodology: 
-- case_study
-- literature_review
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- video_game
-- digital_game
-- board_game
-- tabletop_game
-- tabletop_roleplaying_game
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- instruction
-- community_building
-- space_design
-
-Audience: 
-- gamers
-- patrons
-
-Outcome: 
-- learning
-- social_connection
-- community_building
-- advisory_quality
-
-Theme: 
-- advisory
-- space
-- community
-- play
-- social_connection
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- collection_development
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- local_context_shapes_program_fit
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

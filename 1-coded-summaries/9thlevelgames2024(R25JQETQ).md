@@ -7,63 +7,18 @@ Zotero_Item_Key: R25JQETQ
 Better_BibTeX_Citation_Key: LSHMTTRPGKobolds2024
 Attachment_Key: K6CXHGLP
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- primary_artifact
-
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
-
-Methodology: literature_review
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: tabletop_roleplaying_game
 
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
+Service_Area: discovery_and_advisory
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- advisory
-- cataloging_metadata
-- discovery
-- community_building
-- assessment
-- facilitation
-
-Audience: gamers
-
-Outcome: 
-- community_building
-- discovery
-- advisory_quality
-
-Theme: 
-- facilitation
-- metadata
-- advisory
-- community
-- play
-- safety
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

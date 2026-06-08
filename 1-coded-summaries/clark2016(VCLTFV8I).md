@@ -1,63 +1,23 @@
 # Clark, D. B., Tanner-Smith, E. E., & Killingsworth, S. S. (2016). Digital games, design, and learning: A systematic review and meta-analysis. *Review of Educational Research, 86*(1), 79-122. https://doi.org/10.3102/0034654315582065
 
 ## Metadata
-
 Citation_Key: clarkDigitalGamesDesign2016a
 Year: 2016
 Zotero_Item_Key: VCLTFV8I
 Better_BibTeX_Citation_Key: clarkDigitalGamesDesign2016a
 Attachment_Key: LT28LTHB
 
-Source_Type: literature_review
-
-Evidence_Type:
-- meta_analysis
-- literature_synthesis
-
-Methodology: meta_analysis
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
 Library_Context: non_library_context
+Game_Format: digital_game
 
-Game_Format:
-- digital_game
-- serious_game
-- gamification
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: instruction
-
-Audience:
-- students
-- youth
-- players
-- teachers
-
-Outcome:
-- cognitive_learning
-- learning
-- collaboration
-- critical_thinking
-
-Theme:
-- assessment
-- facilitation
-- narrative
-- competition
-- collaboration
-- reflection
-- gamification
-
-Contribution_Type:
-- literature_mapping
-- methodological_caution
-- theoretical_argument
-- background_context
-
-Design_Principles:
-- avoid_overclaiming_evidence
-- technology_should_serve_service_goals
-- collaboration_supports_reflection
-- debriefing_supports_transfer
-
+Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
 ## Summary

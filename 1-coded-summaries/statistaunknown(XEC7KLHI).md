@@ -7,70 +7,22 @@ Zotero_Item_Key: XEC7KLHI
 Better_BibTeX_Citation_Key: statistaIndustriesMarketsVideo
 Attachment_Key: I6DIIEGM
 
-Source_Type: empirical_study
+Source_Type: dataset_or_archive
+Peer_Review: not_applicable
+Evidence_Type: empirical_study
+Primary_Methodology: survey
+Library_Context: non_library_context
+Game_Format: digital_game
 
-Evidence_Type: survey
+Service_Area:
+- collections_and_access
+- learning_and_literacy
+Audience: not_applicable
 
-Methodology: survey
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- video_game
-- card_game
-- virtual_reality
-- puzzle
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- instruction
-- access
-- equity_inclusion
-- teen_services
-- literacy
-- media_literacy
-- research_support
-- collection_development
-
-Audience: 
-- teens
-- families
-- gamers
-- older_adults
-- patrons
-- players
-
-Outcome: 
-- engagement
-- literacy
-- media_literacy
-- social_connection
-- access
-- equity_access
-- research_support
-
-Theme: 
-- access
-- equity
-- literacy
-- teen_engagement
-- play
-- social_connection
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- methodological_caution
-- equity_analysis
-
-Design_Principles: 
-- access_requires_infrastructure
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: low
+Intended_Outcome:
+- engagement_and_participation
+- equitable_access
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

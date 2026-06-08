@@ -7,84 +7,20 @@ Zotero_Item_Key: NT3EMT7Q
 Better_BibTeX_Citation_Key: helbingInpersonOnlineEscape
 Attachment_Key: H6FLIHEI
 
-Source_Type: 
-- research_proposal
-- empirical_study
-
-Evidence_Type: 
-- survey
-- proposed_instrument
-
-Methodology: 
-- survey
-- proposal
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: unspecified_library_context
+Game_Format: escape_room_or_breakout_box
 
-Game_Format: 
-- escape_room
-- breakout_box
-- puzzle
-
-Service_Area: 
-- programming
-- instruction
-- information_literacy
-- orientation
-- access
-- space_design
-- literacy
-- research_support
-- assessment
-
-Audience: 
+Service_Area: learning_and_literacy
+Audience:
 - children
 - students
-- faculty
-- librarians
-- families
 
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- access
-- implementation_capacity
-- collaboration
-- problem_solving
-- critical_thinking
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- facilitation
-- debriefing
-- access
-- literacy
-- implementation_barriers
-- space
-- orientation
-- assessment
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- assessment_framework
-- methodological_caution
-
-Design_Principles: 
-- debriefing_supports_transfer
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- novelty_is_not_enough
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

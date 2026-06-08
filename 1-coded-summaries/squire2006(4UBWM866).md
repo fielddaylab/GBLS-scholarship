@@ -1,61 +1,25 @@
 # Squire, K. (2006). From content to context: Videogames as designed experience. *Educational Researcher, 35*(8), 19-29. https://doi.org/10.3102/0013189X035008019
 
 ## Metadata
-
 Citation_Key: squireContentContextVideogames2006
 Year: 2006
 Zotero_Item_Key: 4UBWM866
 Better_BibTeX_Citation_Key: squireContentContextVideogames2006
 Attachment_Key: NPD3KGP4
 
-Source_Type:
-- theoretical_work
-
-Evidence_Type:
-- theoretical
-- literature_synthesis
-- secondary_source
-
-Methodology:
-- theoretical_analysis
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: non_library_context
-
-Game_Format:
-- video_game
-- serious_game
+Game_Format: digital_game
 
 Service_Area:
-- instruction
-- media_literacy
+- learning_and_literacy
+- collections_and_access
+Audience: not_applicable
 
-Audience:
-- researchers
-- teachers
-- students
-
-Outcome:
-- learning
-- critical_reflection
-- problem_solving
-- media_literacy
-
-Theme:
-- play
-- reflection
-- literacy
-- equity
-
-Contribution_Type:
-- theoretical_argument
-- background_context
-- methodological_caution
-
-Design_Principles:
-- technology_should_serve_service_goals
-- debriefing_supports_transfer
-- avoid_overclaiming_evidence
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 ## Summary

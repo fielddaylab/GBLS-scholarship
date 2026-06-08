@@ -7,94 +7,20 @@ Zotero_Item_Key: CWH727S6
 Better_BibTeX_Citation_Key: hedreenExploringVirtualLibrarianship2008
 Attachment_Key: U7FWSVIZ
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: cultural_heritage_institution
+Game_Format: virtual_or_augmented_reality
 
-Evidence_Type: 
-- experiment
-- archival_analysis
-- practitioner_reflection
+Service_Area:
+- learning_and_literacy
+- collections_and_access
+- community_and_inclusion
+Audience: not_applicable
 
-Methodology: historical_analysis
-
-Library_Context: museum_archive
-
-Game_Format: virtual_reality
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- instruction
-- information_literacy
-- outreach
-- staff_training
-- community_building
-- space_design
-- youth_services
-- teen_services
-- literacy
-- partnerships
-- archival_stewardship
-- facilitation
-
-Audience: 
-- teens
-- youth
-- adults
-- librarians
-- patrons
-
-Outcome: 
-- attendance
-- literacy
-- information_literacy
-- learning
-- social_connection
-- community_building
-- advisory_quality
-- catalog_discovery
-- collaboration
-
-Theme: 
-- collaboration
-- facilitation
-- cataloging
-- advisory
-- literacy
-- teen_engagement
-- youth_voice
-- staff_training
-- space
-- community
-- outreach
-- local_adaptation
-- play
-- social_connection
-- safety
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- novelty_is_not_enough
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

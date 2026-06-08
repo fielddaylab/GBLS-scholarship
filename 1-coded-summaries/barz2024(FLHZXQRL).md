@@ -7,123 +7,17 @@ Zotero_Item_Key: FLHZXQRL
 Better_BibTeX_Citation_Key: barzEffectDigitalGameBased2024
 Attachment_Key: TEZZ9AE2
 
-Source_Type: 
-- research_proposal
-- book_review
-- literature_review
-- thesis
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
+Library_Context: non_library_context
+Game_Format: digital_game
 
-Evidence_Type: 
-- survey
-- experiment
-- meta_analysis
-- theoretical
-- secondary_source
-- proposed_instrument
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Methodology: 
-- survey
-- meta_analysis
-- theoretical_analysis
-- proposal
-
-Library_Context: library_school
-
-Game_Format: 
-- digital_game
-- card_game
-- tabletop_game
-- virtual_reality
-- augmented_reality
-- gamification
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- discovery
-- instruction
-- information_literacy
-- orientation
-- staff_training
-- access
-- equity_inclusion
-- teen_services
-- literacy
-- research_support
-- assessment
-
-Audience: 
-- teens
-- adults
-- students
-- faculty
-- librarians
-- teachers
-- older_adults
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- affective_motivation
-- social_connection
-- access
-- discovery
-- catalog_discovery
-- implementation_capacity
-- equity_access
-- collaboration
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- access
-- equity
-- inclusion
-- metadata
-- cataloging
-- literacy
-- teen_engagement
-- staff_training
-- technology_access
-- orientation
-- local_adaptation
-- play
-- gamification
-- competition
-- social_connection
-- assessment
-- professional_identity
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- assessment_framework
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-- methodological_caution
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-
+Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
 Contributions:

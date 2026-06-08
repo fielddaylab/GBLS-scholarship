@@ -7,78 +7,18 @@ Zotero_Item_Key: LHF32QZC
 Better_BibTeX_Citation_Key: seayConsideringGamesLibraries2019a
 Attachment_Key: CKAFVP7D
 
-Source_Type: 
-- professional_column
-- historical_analysis
-- theoretical_work
-- primary_artifact
-
-Evidence_Type: 
-- practitioner_reflection
-- theoretical
-
-Methodology: theoretical_analysis
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- escape_room
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- cataloging_metadata
-- discovery
-- instruction
-- information_literacy
-- orientation
-- space_design
-- literacy
-- research_support
-- assessment
-
-Audience: 
-- students
-- librarians
-- families
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- social_connection
-- discovery
-- catalog_discovery
-- implementation_capacity
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- cataloging
-- literacy
-- space
-- orientation
-- play
-- social_connection
-- assessment
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- practitioner_guidance
-- theoretical_argument
-- infrastructure_metadata
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- description_shapes_discovery
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,77 +7,18 @@ Zotero_Item_Key: D6N5Q9E4
 Better_BibTeX_Citation_Key: zhengInterweavingSelfregulatedLearning2024
 Attachment_Key: 65BDVNMF
 
-Source_Type: 
-- book_review
-- literature_review
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
+Library_Context: non_library_context
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- theoretical
-- secondary_source
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Methodology: theoretical_analysis
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- digital_game
-- escape_room
-- gamification
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- instruction
-- information_literacy
-- orientation
-- literacy
-- research_support
-- assessment
-
-Audience: 
-- students
-- patrons
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- social_connection
-- staff_confidence
-- collaboration
-- critical_thinking
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- literacy
-- technology_access
-- orientation
-- play
-- gamification
-- social_connection
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- literature_mapping
-- exclusion_record
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- staff_confidence_shapes_adoption
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

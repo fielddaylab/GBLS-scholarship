@@ -7,71 +7,22 @@ Zotero_Item_Key: AB6TZT7M
 Better_BibTeX_Citation_Key: bangEfficacyAdaptiveGameBased2023
 Attachment_Key: 7YMNID6Q
 
-Source_Type: empirical_study
-
-Evidence_Type: 
-- survey
-- interview
-- experiment
-
-Methodology: 
-- survey
-- interviews
-- experimental_study
-- observation
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
 Library_Context: non_library_context
-
 Game_Format: digital_game
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- instruction
-- information_literacy
-- community_building
-- youth_services
-- literacy
-- research_support
-- assessment
-
-Audience: 
+Service_Area:
+- learning_and_literacy
+- professional_capacity
+Audience:
 - children
-- youth
 - students
-- librarians
-- teachers
-- researchers
 
-Outcome: 
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- community_building
-- usage
-- research_support
-
-Theme: 
-- literacy
-- youth_voice
-- technology_access
-- community
-- play
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- exclusion_record
-- background_context
-
-Design_Principles: 
-- local_context_shapes_program_fit
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

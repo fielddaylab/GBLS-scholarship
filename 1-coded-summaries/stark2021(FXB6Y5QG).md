@@ -7,83 +7,17 @@ Zotero_Item_Key: FXB6Y5QG
 Better_BibTeX_Citation_Key: starkScavengingEvidenceSystematic2021
 Attachment_Key: HUC2C6JB
 
-Source_Type: 
-- book_review
-- literature_review
-- empirical_study
-
-Evidence_Type: 
-- survey
-- secondary_source
-
-Methodology: survey
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
 Library_Context: academic_library
-
 Game_Format: gamification
 
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- instruction
-- information_literacy
-- orientation
-- outreach
-- equity_inclusion
-- space_design
-- teen_services
-- literacy
-- research_support
-- assessment
-- partnerships
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Audience: 
-- teens
-- students
-- librarians
-- academic_librarians
-- families
-
-Outcome: 
-- engagement
-- attendance
-- literacy
-- information_literacy
-- learning
-- staff_confidence
-- implementation_capacity
-- research_support
-- orientation_skills
-
-Theme: 
-- inclusion
-- literacy
-- teen_engagement
-- implementation_barriers
-- space
-- technology_access
-- outreach
-- orientation
-- local_adaptation
-- play
-- gamification
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-- equity_analysis
-
-Design_Principles: 
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
+Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
 Contributions:

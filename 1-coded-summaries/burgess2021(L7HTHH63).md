@@ -7,87 +7,18 @@ Zotero_Item_Key: L7HTHH63
 Better_BibTeX_Citation_Key: burgessUsingInvestigativeVideo2021
 Attachment_Key: QDQ5QKMZ
 
-Source_Type: 
-- thesis
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
+Library_Context: library_school
+Game_Format: digital_game
 
-Evidence_Type: 
-- survey
-- interview
-- experiment
-- practitioner_reflection
+Service_Area: learning_and_literacy
+Audience: students
 
-Methodology: 
-- survey
-- interviews
-
-Library_Context: unspecified_library_context
-
-Game_Format: video_game
-
-Service_Area: 
-- collections
-- cataloging_metadata
-- discovery
-- instruction
-- information_literacy
-- orientation
-- professional_development
-- staff_training
-- equity_inclusion
-- literacy
-- assessment
-
-Audience: 
-- students
-- undergraduate_students
-- graduate_students
-- patrons
-- players
-
-Outcome: 
-- attendance
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- cognitive_learning
-- affective_motivation
-- social_connection
-- staff_confidence
-- implementation_capacity
-- orientation_skills
-
-Theme: 
-- inclusion
-- metadata
-- literacy
-- staff_training
-- orientation
-- local_adaptation
-- play
-- social_connection
-- assessment
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- methodological_caution
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

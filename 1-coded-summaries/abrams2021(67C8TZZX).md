@@ -7,92 +7,21 @@ Zotero_Item_Key: 67C8TZZX
 Better_BibTeX_Citation_Key: abramsCheckedOutVideogame2021
 Attachment_Key: HB5XLDSI
 
-Source_Type: 
-- case_study
-- empirical_study
-
-Evidence_Type: 
-- survey
-- mixed_methods
-
-Methodology: 
-- survey
-- mixed_methods
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Game_Format: video_game
+Service_Area:
+- learning_and_literacy
+- professional_capacity
+- programming_and_facilitation
+Audience: teens
 
-Service_Area: 
-- programming
-- instruction
-- information_literacy
-- orientation
-- professional_development
-- staff_training
-- access
-- space_design
-- youth_services
-- teen_services
-- literacy
-- research_support
-- assessment
-
-Audience: 
-- teens
-- youth
-- adolescents
-- adults
-- graduate_students
-- librarians
-- teachers
-- families
-- patrons
-- players
-
-Outcome: 
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- social_connection
-- access
-- staff_confidence
-- problem_solving
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- access
-- literacy
-- teen_engagement
-- youth_voice
-- staff_training
-- implementation_barriers
-- funding
-- space
-- orientation
-- local_adaptation
-- play
-- social_connection
-- assessment
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

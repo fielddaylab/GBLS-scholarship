@@ -7,81 +7,18 @@ Zotero_Item_Key: RTW4QTRW
 Better_BibTeX_Citation_Key: FrameworkInformationLiteracy
 Attachment_Key: PQGKIACC
 
-Source_Type: 
-- case_study
-- empirical_study
-- theoretical_work
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: unspecified_game_format
 
-Game_Format: 
-- escape_room
-- gamification
-- game_creation
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- discovery
-- instruction
-- information_literacy
-- orientation
-- outreach
-- community_building
-- access
-- literacy
-- research_support
-- assessment
-
-Audience: 
-- students
-- faculty
-- librarians
-
-Outcome: 
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- social_connection
-- community_building
-- access
-- discovery
-- implementation_capacity
-- collaboration
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- debriefing
-- access
-- literacy
-- community
-- outreach
-- orientation
-- local_adaptation
-- social_connection
-- controlled_vocabulary
-- assessment
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- methodological_caution
-
-Design_Principles: 
-- debriefing_supports_transfer
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

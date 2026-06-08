@@ -7,127 +7,21 @@ Zotero_Item_Key: LIJC52AS
 Better_BibTeX_Citation_Key: jaegerIntersectionPublicPolicy2012
 Attachment_Key: 5XWB5QR3
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- literature_synthesis
-- archival_analysis
-- practitioner_reflection
+Service_Area:
+- learning_and_literacy
+- collections_and_access
+- community_and_inclusion
+Audience: not_applicable
 
-Methodology: 
-- literature_review
-- proposal
-
-Library_Context: 
-- public_library
-- museum_archive
-
-Game_Format: 
-- video_game
-- board_game
-- card_game
-- tabletop_game
-- virtual_reality
-- gamification
-- toy
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- discovery
-- preservation
-- instruction
-- outreach
-- staff_training
-- community_building
-- access
-- equity_inclusion
-- space_design
-- literacy
-- research_support
-- partnerships
-- archival_stewardship
-
-Audience: 
-- children
-- librarians
-- library_staff
-- researchers
-- patrons
-- players
-
-Outcome: 
-- literacy
-- digital_literacy
-- learning
-- social_connection
-- community_building
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- preservation_access
-- implementation_capacity
-- equity_access
-- research_support
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- equity
-- inclusion
-- metadata
-- cataloging
-- preservation
-- advisory
-- literacy
-- staff_training
-- funding
-- space
-- technology_access
-- community
-- outreach
-- local_adaptation
-- play
-- gamification
-- social_connection
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- literature_mapping
-- exclusion_record
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- novelty_is_not_enough
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

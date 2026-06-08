@@ -7,86 +7,23 @@ Zotero_Item_Key: W8ZIDSLW
 Better_BibTeX_Citation_Key: publiclibraryassociationPublicLibraryServices2022
 Attachment_Key: 4UQ8I3MQ
 
-Source_Type: empirical_study
-
-Evidence_Type: 
-- survey
-- practitioner_reflection
-
-Methodology: survey
-
+Source_Type: government_or_foundation_report
+Peer_Review: unknown
+Evidence_Type: empirical_study
+Primary_Methodology: survey
 Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- tabletop_game
-- tabletop_roleplaying_game
-- virtual_reality
-- multiple_game_formats
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- staff_training
-- community_building
-- access
-- space_design
-- wellness
-- youth_services
-- teen_services
-- literacy
-- makerspace
-- partnerships
-
-Audience: 
+Service_Area:
+- space_and_infrastructure
+- programming_and_facilitation
+- community_and_inclusion
+Audience:
 - children
 - teens
-- youth
-- adults
-- patrons
+- underserved_or_special_population
 
-Outcome: 
-- attendance
-- literacy
-- learning
-- belonging
-- community_building
-- access
-- advisory_quality
-- implementation_capacity
-- wellness
-
-Theme: 
-- access
-- advisory
-- literacy
-- teen_engagement
-- youth_voice
-- wellness
-- staff_training
-- funding
-- space
-- technology_access
-- community
-- local_adaptation
-- professional_identity
-- makerspace
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- advisory_should_use_experience_language
-
+Intended_Outcome: institutional_capacity
 Coding_Confidence: high
 
 Contributions:

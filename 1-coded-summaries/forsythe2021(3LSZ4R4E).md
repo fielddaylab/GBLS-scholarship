@@ -7,104 +7,20 @@ Zotero_Item_Key: 3LSZ4R4E
 Better_BibTeX_Citation_Key: forsytheGameRecreationalPlay2021
 Attachment_Key: NRGIQN3X
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-- primary_artifact
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
+Library_Context: academic_library
+Game_Format: tabletop_game
 
-Evidence_Type: 
-- survey
-- practitioner_reflection
+Service_Area: collections_and_access
+Audience: students
 
-Methodology: survey
-
-Library_Context: 
-- academic_library
-- non_library_context
-
-Game_Format: 
-- video_game
-- board_game
-- tabletop_game
-- tabletop_roleplaying_game
-- escape_room
-- puzzle
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- preservation
-- community_building
-- access
-- equity_inclusion
-- space_design
-- research_support
-- assessment
-- needs_assessment
-- marketing
-- partnerships
-- collection_development
-- facilitation
-
-Audience: 
-- students
-- librarians
-- gamers
-- patrons
-- players
-
-Outcome: 
-- engagement
-- attendance
-- critical_reflection
-- learning
-- social_connection
-- belonging
-- community_building
-- access
-- preservation_access
-- implementation_capacity
-- equity_access
-- problem_solving
-- critical_thinking
-- research_support
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- equity
-- preservation
-- implementation_barriers
-- space
-- technology_access
-- community
-- local_adaptation
-- play
-- social_connection
-- assessment
-- needs_assessment
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- background_context
-- equity_analysis
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- preservation_requires_relationship_metadata
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
+Intended_Outcome:
+- learning_and_literacy
+- belonging_and_community
+- equitable_access
 Coding_Confidence: high
 
 Contributions:

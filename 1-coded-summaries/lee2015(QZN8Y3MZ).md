@@ -7,72 +7,21 @@ Zotero_Item_Key: QZN8Y3MZ
 Better_BibTeX_Citation_Key: leeEmpiricalEvaluationMetadata2015
 Attachment_Key: SEK9M4BK
 
-Source_Type: empirical_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type:
+- empirical_study
+- instrument_or_framework_development
+Primary_Methodology: mixed_methods
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- survey
-- interview
-- archival_analysis
+Service_Area:
+- collections_and_access
+- discovery_and_advisory
+Audience: not_applicable
 
-Methodology: 
-- survey
-- interviews
-
-Library_Context: museum_archive
-
-Game_Format: video_game
-
-Service_Area: 
-- collections
-- advisory
-- cataloging_metadata
-- discovery
-- preservation
-- access
-- collection_development
-- archival_stewardship
-
-Audience: 
-- librarians
-- gamers
-- developers
-- players
-
-Outcome: 
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- preservation_access
-
-Theme: 
-- collaboration
-- access
-- metadata
-- cataloging
-- preservation
-- advisory
-- technology_access
-- local_adaptation
-- play
-- controlled_vocabulary
-- professional_identity
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
+Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
 Contributions:

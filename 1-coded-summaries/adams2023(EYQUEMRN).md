@@ -7,69 +7,18 @@ Zotero_Item_Key: EYQUEMRN
 Better_BibTeX_Citation_Key: adamsMoreGameScenario2023
 Attachment_Key: 8NP9N39W
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-- theoretical_work
-
-Evidence_Type: not_empirical
-
-Methodology: participatory_design
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: participatory_design
 Library_Context: public_library
+Game_Format: unspecified_game_format
 
-Game_Format: gamification
+Service_Area: professional_capacity
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- community_building
-- access
-- space_design
-- teen_services
-- makerspace
-- partnerships
-
-Audience: 
-- teens
-- library_staff
-- older_adults
-- patrons
-
-Outcome: 
-- critical_reflection
-- community_building
-- access
-
-Theme: 
-- access
-- teen_engagement
-- co_design
-- space
-- community
-- local_adaptation
-- play
-- gamification
-- makerspace
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- exclusion_record
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-- co_design_supports_local_relevance
-
-Coding_Confidence: low
+Intended_Outcome: institutional_capacity
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

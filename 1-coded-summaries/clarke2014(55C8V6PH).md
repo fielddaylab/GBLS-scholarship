@@ -7,64 +7,20 @@ Zotero_Item_Key: 55C8V6PH
 Better_BibTeX_Citation_Key: clarkeExploringRelationshipsVideo2014
 Attachment_Key: NIKLCCJW
 
-Source_Type: 
-- historical_analysis
-- theoretical_work
+Source_Type: conference_paper
+Peer_Review: editorial_reviewed
+Evidence_Type: instrument_or_framework_development
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: not_empirical
+Service_Area:
+- collections_and_access
+- discovery_and_advisory
+Audience: not_applicable
 
-Methodology: unspecified
-
-Library_Context: museum_archive
-
-Game_Format: video_game
-
-Service_Area: 
-- collections
-- cataloging_metadata
-- discovery
-- preservation
-- access
-- research_support
-
-Audience: 
-- gamers
-- researchers
-- patrons
-- players
-
-Outcome: 
-- access
-- discovery
-- catalog_discovery
-- preservation_access
-- research_support
-
-Theme: 
-- access
-- metadata
-- cataloging
-- preservation
-- local_adaptation
-- play
-- controlled_vocabulary
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- exclusion_record
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: discovery_and_advisory
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

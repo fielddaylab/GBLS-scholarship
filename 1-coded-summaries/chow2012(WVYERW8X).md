@@ -7,109 +7,24 @@ Zotero_Item_Key: WVYERW8X
 Better_BibTeX_Citation_Key: chowInformationNeedsVirtual2012
 Attachment_Key: 5RMF8YWS
 
-Source_Type: 
-- literature_review
-- theoretical_work
-
-Evidence_Type: 
-- survey
-- interview
-- focus_group
-- mixed_methods
-- experiment
-- literature_synthesis
-
-Methodology: 
-- survey
-- interviews
-- focus_group
-- mixed_methods
-- literature_review
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- card_game
-- gamification
-- game_creation
+Service_Area:
+- professional_capacity
+- community_and_inclusion
+- programming_and_facilitation
+Audience: general_public
 
-Service_Area: 
-- programming
-- discovery
-- instruction
-- orientation
-- professional_development
-- staff_training
-- community_building
-- access
-- equity_inclusion
-- space_design
-- research_support
-- assessment
-- needs_assessment
-- facilitation
-
-Audience: 
-- students
-- librarians
-- families
-- older_adults
-- patrons
-
-Outcome: 
-- engagement
-- attendance
-- learning
-- social_connection
-- community_building
-- access
-- staff_confidence
-- implementation_capacity
-- equity_access
-- collaboration
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- facilitation
-- debriefing
-- access
-- equity
-- staff_training
-- implementation_barriers
-- funding
-- space
-- community
-- orientation
-- local_adaptation
-- play
-- gamification
-- social_connection
-- assessment
-- needs_assessment
-- professional_identity
-
-Contribution_Type: 
-- theoretical_argument
-- literature_mapping
-- methodological_caution
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- debriefing_supports_transfer
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- novelty_is_not_enough
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: medium
+Intended_Outcome:
+- belonging_and_community
+- creativity_and_production
+- institutional_capacity
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

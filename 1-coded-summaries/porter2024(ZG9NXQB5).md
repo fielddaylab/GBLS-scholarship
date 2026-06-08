@@ -7,70 +7,20 @@ Zotero_Item_Key: ZG9NXQB5
 Better_BibTeX_Citation_Key: RTRTInternationalGames2024
 Attachment_Key: 5P5GQ55S
 
-Source_Type: 
-- professional_column
-- literature_review
-- case_study
-- empirical_study
-- historical_analysis
-- primary_artifact
-
-Evidence_Type: 
-- case_study
-- literature_synthesis
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type:
+- implementation_case
 - practitioner_reflection
-
-Methodology: 
-- case_study
-- literature_review
-
+Primary_Methodology: case_or_design_study
 Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- multiple_game_formats
+Service_Area: programming_and_facilitation
+Audience: general_public
 
-Service_Area: 
-- programming
-- collections
-- community_building
-- access
-- space_design
-- assessment
-
-Audience: 
-- librarians
-- gamers
-
-Outcome: 
-- community_building
-- access
-
-Theme: 
-- access
-- implementation_barriers
-- space
-- community
-- local_adaptation
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- implementation_model
-- practitioner_guidance
-- collection_development
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

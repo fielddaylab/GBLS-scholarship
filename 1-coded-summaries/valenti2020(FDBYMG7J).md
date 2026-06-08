@@ -7,66 +7,18 @@ Zotero_Item_Key: FDBYMG7J
 Better_BibTeX_Citation_Key: valentiVirtualRealityTool2020
 Attachment_Key: 6WKCIG8Z
 
-Source_Type: 
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
+Library_Context: library_school
+Game_Format: virtual_or_augmented_reality
 
-Evidence_Type: 
-- survey
-- experiment
+Service_Area: learning_and_literacy
+Audience: students
 
-Methodology: survey
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- card_game
-- virtual_reality
-
-Service_Area: 
-- programming
-- instruction
-- information_literacy
-- orientation
-- access
-- space_design
-- literacy
-- research_support
-
-Audience: 
-- adults
-- students
-- faculty
-- librarians
-- families
-- researchers
-- patrons
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- access
-- research_support
-- orientation_skills
-
-Theme: 
-- access
-- literacy
-- space
-- technology_access
-- orientation
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- methodological_caution
-
-Design_Principles: access_requires_infrastructure
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

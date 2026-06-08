@@ -7,83 +7,17 @@ Zotero_Item_Key: 78GDIC6Y
 Better_BibTeX_Citation_Key: pervolarakiHowCanVideo2015
 Attachment_Key: TYK4FGGF
 
-Source_Type: 
-- edited_volume
-- literature_review
-- thesis
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
-
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
-
-Methodology: literature_review
-
+Source_Type: book_chapter
+Peer_Review: editorial_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: public_library
+Game_Format: digital_game
 
-Game_Format: 
-- video_game
-- escape_room
-- game_creation
-- roleplaying_game
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- instruction
-- information_literacy
-- orientation
-- staff_training
-- literacy
-- research_support
-
-Audience: 
-- adolescents
-- adults
-- librarians
-- families
-- players
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- affective_motivation
-- social_connection
-- collaboration
-- problem_solving
-- critical_thinking
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- facilitation
-- literacy
-- staff_training
-- orientation
-- play
-- social_connection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- literature_mapping
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- staff_confidence_shapes_adoption
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

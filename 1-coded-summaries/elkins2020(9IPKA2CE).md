@@ -7,89 +7,22 @@ Zotero_Item_Key: 9IPKA2CE
 Better_BibTeX_Citation_Key: elkinsPowerGamesGaming2020
 Attachment_Key: IZ4VQZWN
 
-Source_Type: literature_review
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
+Library_Context: academic_library
+Game_Format: escape_room_or_breakout_box
 
-Evidence_Type: 
-- survey
-- interview
-- literature_synthesis
-
-Methodology: 
-- survey
-- interviews
-- literature_review
-
-Library_Context: 
-- academic_library
-- multiple_library_types
-
-Game_Format: puzzle
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- information_literacy
-- professional_development
-- staff_training
-- access
-- equity_inclusion
-- space_design
-- literacy
-- media_literacy
-- research_support
-
-Audience: 
-- adults
+Service_Area:
+- learning_and_literacy
+- collections_and_access
+Audience:
 - students
-- graduate_students
-- librarians
-- gamers
-- players
+- educators
 
-Outcome: 
-- literacy
-- information_literacy
-- digital_literacy
-- media_literacy
-- learning
-- social_connection
-- access
-- catalog_discovery
-- implementation_capacity
-- problem_solving
-- critical_thinking
-- research_support
-
-Theme: 
-- facilitation
-- access
-- inclusion
-- cataloging
-- literacy
-- staff_training
-- implementation_barriers
-- space
-- play
-- social_connection
-- professional_identity
-
-Contribution_Type: 
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: medium
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

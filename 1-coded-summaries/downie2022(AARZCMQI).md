@@ -7,79 +7,20 @@ Zotero_Item_Key: AARZCMQI
 Better_BibTeX_Citation_Key: downieInvestigatingRoleGamification2022
 Attachment_Key: EMV6ERFX
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: 
-- survey
-- experiment
-- theoretical
-
-Methodology: 
-- survey
-- interviews
-- theoretical_analysis
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: content_or_artifact_analysis
+Primary_Methodology: content_analysis
 Library_Context: public_library
+Game_Format: gamification
 
-Game_Format: 
-- video_game
-- tabletop_roleplaying_game
-- escape_room
-- gamification
+Service_Area:
+- space_and_infrastructure
+- learning_and_literacy
+- programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- outreach
-- community_building
-- space_design
-- youth_services
-- literacy
-- assessment
-- facilitation
-
-Audience: 
-- children
-- youth
-- librarians
-- patrons
-
-Outcome: 
-- engagement
-- literacy
-- critical_reflection
-- learning
-- affective_motivation
-- social_connection
-- belonging
-- community_building
-
-Theme: 
-- facilitation
-- literacy
-- youth_voice
-- space
-- technology_access
-- community
-- outreach
-- play
-- gamification
-- social_connection
-- assessment
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- local_context_shapes_program_fit
-- advisory_should_use_experience_language
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

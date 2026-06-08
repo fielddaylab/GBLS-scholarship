@@ -7,49 +7,20 @@ Zotero_Item_Key: 4ICXCNCB
 Better_BibTeX_Citation_Key: LSHMTTRPGHalo2024
 Attachment_Key: M7VXCZG6
 
-Source_Type: 
-- literature_review
-- primary_artifact
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: non_library_context
+Game_Format: tabletop_roleplaying_game
 
-Evidence_Type: literature_synthesis
+Service_Area:
+- discovery_and_advisory
+- programming_and_facilitation
+Audience: not_applicable
 
-Methodology: literature_review
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-
-Service_Area: 
-- programming
-- advisory
-- cataloging_metadata
-- facilitation
-
-Audience: gamers
-
-Outcome: advisory_quality
-
-Theme: 
-- facilitation
-- metadata
-- advisory
-- play
-- safety
-
-Contribution_Type: 
-- infrastructure_metadata
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

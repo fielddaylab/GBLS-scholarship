@@ -7,73 +7,22 @@ Zotero_Item_Key: MPX3T4U5
 Better_BibTeX_Citation_Key: sandersDungeonsDragonsPublic
 Attachment_Key: H73CBZ75
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
-
-Evidence_Type: 
-- experiment
-- practitioner_reflection
-
-Methodology: historical_analysis
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: public_library
+Game_Format: tabletop_roleplaying_game
 
-Game_Format: 
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- roleplaying_game
-
-Service_Area: 
-- programming
-- outreach
-- community_building
-- space_design
-- youth_services
-- teen_services
-- assessment
-- advocacy
-- facilitation
-
-Audience: 
+Service_Area: programming_and_facilitation
+Audience:
 - teens
-- youth
-- adults
-- librarians
-- players
+- young_adults
 
-Outcome: 
-- attendance
-- learning
-- social_connection
-- community_building
-
-Theme: 
-- collaboration
-- facilitation
-- teen_engagement
-- youth_voice
-- space
-- community
-- outreach
-- local_adaptation
-- play
-- social_connection
-- assessment
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-
+Intended_Outcome:
+- belonging_and_community
+- creativity_and_production
+- engagement_and_participation
 Coding_Confidence: high
 
 Contributions:

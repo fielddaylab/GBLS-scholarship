@@ -7,77 +7,17 @@ Zotero_Item_Key: 6ETYG8AH
 Better_BibTeX_Citation_Key: smithGettingClueCreating2011
 Attachment_Key: 5RE7XB87
 
-Source_Type: 
-- case_study
-- empirical_study
-- primary_artifact
-
-Evidence_Type: 
-- survey
-- focus_group
-- case_study
-- experiment
-- practitioner_reflection
-
-Methodology: 
-- survey
-- focus_group
-- case_study
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: academic_library
-
 Game_Format: gamification
 
-Service_Area: 
-- collections
-- circulation
-- cataloging_metadata
-- instruction
-- information_literacy
-- orientation
-- space_design
-- literacy
-- research_support
-- assessment
-- facilitation
+Service_Area: learning_and_literacy
+Audience: students
 
-Audience: 
-- students
-- faculty
-- families
-
-Outcome: 
-- literacy
-- information_literacy
-- learning
-- catalog_discovery
-- implementation_capacity
-- research_support
-- orientation_skills
-
-Theme: 
-- facilitation
-- cataloging
-- literacy
-- space
-- technology_access
-- orientation
-- play
-- gamification
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- infrastructure_metadata
-- collection_development
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
+Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
 Contributions:

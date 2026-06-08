@@ -7,70 +7,17 @@ Zotero_Item_Key: JPG7LU78
 Better_BibTeX_Citation_Key: nyitrayGameGameSources2019
 Attachment_Key: VRMSBYLM
 
-Source_Type: 
-- professional_column
-- empirical_study
-- historical_analysis
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: archival_analysis
+Service_Area: cultural_heritage_and_research
+Audience: not_applicable
 
-Methodology: historical_analysis
-
-Library_Context: museum_archive
-
-Game_Format: 
-- video_game
-- virtual_reality
-
-Service_Area: 
-- programming
-- collections
-- discovery
-- preservation
-- instruction
-- access
-- space_design
-- research_support
-- partnerships
-- archival_stewardship
-
-Audience: 
-- students
-- librarians
-- researchers
-- developers
-- patrons
-
-Outcome: 
-- learning
-- social_connection
-- access
-- discovery
-- preservation_access
-- research_support
-
-Theme: 
-- access
-- preservation
-- space
-- play
-- social_connection
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- practitioner_guidance
-- infrastructure_metadata
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-- avoid_overclaiming_evidence
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

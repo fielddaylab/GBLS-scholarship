@@ -7,92 +7,18 @@ Zotero_Item_Key: MMIYTC9Q
 Better_BibTeX_Citation_Key: torres-romanDragonsStacksTeen
 Attachment_Key: EBAIKMB6
 
-Source_Type: 
-- practitioner_guide
-- empirical_study
-- historical_analysis
-- theoretical_work
-- primary_artifact
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
 Evidence_Type: practitioner_reflection
-
-Methodology: none
-
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: tabletop_roleplaying_game
 
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- roleplaying_game
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- discovery
-- community_building
-- access
-- equity_inclusion
-- space_design
-- teen_services
-- literacy
-- collection_development
-- facilitation
-
-Audience: 
-- teens
-- adults
-- librarians
-- players
-
-Outcome: 
-- engagement
-- literacy
-- social_connection
-- community_building
-- access
-- advisory_quality
-- catalog_discovery
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- inclusion
-- cataloging
-- advisory
-- literacy
-- teen_engagement
-- space
-- community
-- local_adaptation
-- play
-- social_connection
-- professional_identity
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- practitioner_guidance
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- equity_analysis
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: medium
 
 Contributions:
 - Target_Section: unspecified

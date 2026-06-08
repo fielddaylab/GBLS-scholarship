@@ -7,120 +7,21 @@ Zotero_Item_Key: 58K7Q6BM
 Better_BibTeX_Citation_Key: chapmanTrialsMetadataEmerging2021
 Attachment_Key: AAMWMYVE
 
-Source_Type: 
-- literature_review
-- thesis
-- empirical_study
-- historical_analysis
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type:
+- content_or_artifact_analysis
+- instrument_or_framework_development
+Primary_Methodology: content_analysis
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- literature_synthesis
-- archival_analysis
+Service_Area:
+- collections_and_access
+- discovery_and_advisory
+Audience: not_applicable
 
-Methodology: 
-- literature_review
-- historical_analysis
-
-Library_Context: 
-- academic_library
-- museum_archive
-
-Game_Format: 
-- video_game
-- digital_game
-- board_game
-- escape_room
-- toy
-- puzzle
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- discovery
-- preservation
-- instruction
-- community_building
-- access
-- space_design
-- wellness
-- mental_health
-- research_support
-- makerspace
-- assessment
-- marketing
-- archival_stewardship
-
-Audience: 
-- adults
-- students
-- faculty
-- gamers
-- developers
-- older_adults
-- patrons
-- players
-
-Outcome: 
-- engagement
-- attendance
-- critical_reflection
-- cognitive_learning
-- social_connection
-- belonging
-- community_building
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- preservation_access
-- wellness
-- mental_health_awareness
-- collaboration
-- creativity
-- research_support
-
-Theme: 
-- collaboration
-- access
-- metadata
-- cataloging
-- preservation
-- advisory
-- wellness
-- mental_health
-- implementation_barriers
-- space
-- community
-- play
-- social_connection
-- assessment
-- professional_identity
-- makerspace
-- narrative
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- literature_mapping
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
+Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
 Contributions:

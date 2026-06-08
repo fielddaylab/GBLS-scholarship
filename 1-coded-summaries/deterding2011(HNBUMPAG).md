@@ -7,81 +7,18 @@ Zotero_Item_Key: HNBUMPAG
 Better_BibTeX_Citation_Key: deterdingGameDesignElements2011
 Attachment_Key: ZJBASCL3
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-- theoretical_work
-- primary_artifact
+Source_Type: conference_paper
+Peer_Review: editorial_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: non_library_context
+Game_Format: gamification
 
-Evidence_Type: not_empirical
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Methodology: historical_analysis
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- video_game
-- board_game
-- tabletop_roleplaying_game
-- escape_room
-- gamification
-- game_creation
-- serious_game
-- pervasive_game
-
-Service_Area: 
-- programming
-- circulation
-- advisory
-- orientation
-- staff_training
-- community_building
-- access
-- space_design
-- marketing
-
-Audience: 
-- children
-- patrons
-
-Outcome: 
-- engagement
-- learning
-- affective_motivation
-- social_connection
-- community_building
-- access
-- advisory_quality
-- implementation_capacity
-- orientation_skills
-
-Theme: 
-- access
-- advisory
-- staff_training
-- space
-- community
-- orientation
-- local_adaptation
-- play
-- gamification
-- social_connection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- advisory_framework
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

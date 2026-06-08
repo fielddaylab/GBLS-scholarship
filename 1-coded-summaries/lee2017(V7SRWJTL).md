@@ -7,74 +7,21 @@ Zotero_Item_Key: V7SRWJTL
 Better_BibTeX_Citation_Key: leeUnderstandingAppealsVideo2017
 Attachment_Key: UU2LM4N8
 
-Source_Type: empirical_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- survey
-- experiment
+Service_Area:
+- discovery_and_advisory
+- collections_and_access
+Audience: not_applicable
 
-Methodology: 
-- survey
-- interviews
-
-Library_Context: museum_archive
-
-Game_Format: 
-- video_game
-- puzzle
-- roleplaying_game
-
-Service_Area: 
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- discovery
-- access
-
-Audience: 
-- librarians
-- families
-- patrons
-- players
-
-Outcome: 
-- engagement
-- learning
-- affective_motivation
-- social_connection
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- staff_confidence
-- creativity
-
-Theme: 
-- access
-- metadata
-- cataloging
-- advisory
-- cross_media
-- local_adaptation
-- play
-- competition
-- social_connection
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
+Intended_Outcome:
+- discovery_and_advisory
+- creativity_and_production
 Coding_Confidence: high
 
 Contributions:

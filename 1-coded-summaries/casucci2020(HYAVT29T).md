@@ -7,52 +7,20 @@ Zotero_Item_Key: HYAVT29T
 Better_BibTeX_Citation_Key: casucciWorkplaceWellbeingGame2020
 Attachment_Key: TWUV8VD7
 
-Source_Type: empirical_study
-
-Evidence_Type: survey
-
-Methodology: survey
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: survey
 Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Game_Format: 
-- game_creation
-- serious_game
+Service_Area: professional_capacity
+Audience: students
 
-Service_Area: 
-- wellness
-- mental_health
-- assessment
-
-Audience: 
-- students
-- faculty
-- librarians
-- patrons
-
-Outcome: 
-- engagement
-- attendance
-- affective_motivation
-- social_connection
-- wellness
-- mental_health_awareness
-- resilience
-
-Theme: 
-- wellness
-- mental_health
-- play
-- social_connection
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- methodological_caution
-
-Design_Principles: no_clear_design_principle_extracted
-
-Coding_Confidence: low
+Intended_Outcome:
+- engagement_and_participation
+- wellness_and_resilience
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

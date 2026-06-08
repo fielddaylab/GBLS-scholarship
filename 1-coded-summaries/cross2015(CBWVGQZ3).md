@@ -7,73 +7,21 @@ Zotero_Item_Key: CBWVGQZ3
 Better_BibTeX_Citation_Key: crossProteanChallengeGame2015
 Attachment_Key: ANBVMHM3
 
-Source_Type: 
-- book_review
-- empirical_study
-- historical_analysis
-
-Evidence_Type: 
-- experiment
-- practitioner_reflection
-- secondary_source
-
-Methodology: none
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: academic_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- board_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- preservation
-- access
-- research_support
-- assessment
-- collection_development
-
-Audience: 
+Service_Area: collections_and_access
+Audience:
 - students
-- faculty
-- librarians
-- library_staff
-- academic_librarians
-- patrons
+- older_adults
 
-Outcome: 
-- critical_reflection
-- access
-- catalog_discovery
-- preservation_access
-- implementation_capacity
-- research_support
-
-Theme: 
-- access
-- cataloging
-- preservation
-- local_adaptation
-- assessment
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- exclusion_record
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-
+Intended_Outcome:
+- institutional_capacity
+- cultural_stewardship_and_preservation
 Coding_Confidence: high
 
 Contributions:

@@ -7,82 +7,20 @@ Zotero_Item_Key: PPQP65Q2
 Better_BibTeX_Citation_Key: littmanWhatRecentlyHoused2024
 Attachment_Key: 2RB84RRJ
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: survey
-
-Methodology: 
-- survey
-- interviews
-- participatory_design
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: unspecified_library_context
+Game_Format: tabletop_game
 
-Game_Format: 
-- board_game
-- virtual_reality
-
-Service_Area: 
-- programming
-- outreach
-- community_building
-- access
-- equity_inclusion
-- space_design
-- youth_services
-- teen_services
-- research_support
-- makerspace
-- facilitation
-
-Audience: 
+Service_Area: community_and_inclusion
+Audience:
 - teens
-- youth
-- adults
-- researchers
-- patrons
-- players
+- young_adults
 
-Outcome: 
-- social_connection
-- belonging
-- community_building
-- access
-- research_support
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- inclusion
-- teen_engagement
-- youth_voice
-- co_design
-- implementation_barriers
-- space
-- community
-- outreach
-- play
-- social_connection
-- safety
-- makerspace
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- equity_analysis
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- design_for_accessibility_and_inclusion
-- co_design_supports_local_relevance
-
-Coding_Confidence: low
+Intended_Outcome: belonging_and_community
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

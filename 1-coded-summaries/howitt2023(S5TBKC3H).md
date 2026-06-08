@@ -7,56 +7,20 @@ Zotero_Item_Key: S5TBKC3H
 Better_BibTeX_Citation_Key: LSHMTTRPGHoney2023
 Attachment_Key: 6A9MTE4G
 
-Source_Type: 
-- literature_review
-- primary_artifact
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: non_library_context
+Game_Format: tabletop_roleplaying_game
 
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
+Service_Area:
+- programming_and_facilitation
+- discovery_and_advisory
+Audience: not_applicable
 
-Methodology: literature_review
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-
-Service_Area: 
-- programming
-- advisory
-- discovery
-- community_building
-- facilitation
-
-Audience: 
-- gamers
-- patrons
-
-Outcome: 
-- community_building
-- discovery
-- advisory_quality
-
-Theme: 
-- facilitation
-- advisory
-- community
-- play
-- safety
-
-Contribution_Type: 
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- local_context_shapes_program_fit
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

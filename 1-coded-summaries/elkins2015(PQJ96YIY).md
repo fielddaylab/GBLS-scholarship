@@ -7,81 +7,18 @@ Zotero_Item_Key: PQJ96YIY
 Better_BibTeX_Citation_Key: elkinsLetsPlayWhy2015
 Attachment_Key: 276NTI2N
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-
-Evidence_Type: 
-- experiment
-- practitioner_reflection
-
-Methodology: unspecified
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: school_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- digital_game
-- toy
-- puzzle
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- instruction
-- information_literacy
-- orientation
-- access
-- space_design
-- literacy
-- media_literacy
-- assessment
-- advocacy
-
-Audience: 
-- adults
-- students
-- librarians
-- school_librarians
-- players
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- media_literacy
-- learning
-- social_connection
-- access
-- implementation_capacity
-- collaboration
-- problem_solving
-- critical_thinking
-- orientation_skills
-
-Theme: 
-- collaboration
-- access
-- literacy
-- space
-- orientation
-- play
-- social_connection
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- collection_development
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

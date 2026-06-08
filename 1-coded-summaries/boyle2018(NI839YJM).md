@@ -7,79 +7,20 @@ Zotero_Item_Key: NI839YJM
 Better_BibTeX_Citation_Key: boylePlayTimeWhy2018
 Attachment_Key: S5XQ7U9G
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-- theoretical_work
-
-Evidence_Type: 
-- experiment
-- practitioner_reflection
-
-Methodology: historical_analysis
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: academic_library
+Game_Format: digital_game
 
-Game_Format: video_game
+Service_Area:
+- collections_and_access
+- programming_and_facilitation
+- learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- discovery
-- information_literacy
-- community_building
-- access
-- space_design
-- literacy
-- media_literacy
-- research_support
-- assessment
-- advocacy
-
-Audience: 
-- students
-- librarians
-- library_staff
-- gamers
-- patrons
-- players
-
-Outcome: 
-- literacy
-- information_literacy
-- media_literacy
-- social_connection
-- belonging
-- community_building
-- access
-- discovery
-- usage
-- collaboration
-- research_support
-
-Theme: 
-- collaboration
-- access
-- literacy
-- space
-- community
-- local_adaptation
-- play
-- social_connection
-- assessment
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- collection_development
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

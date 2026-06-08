@@ -7,92 +7,18 @@ Zotero_Item_Key: RGMIIFPW
 Better_BibTeX_Citation_Key: jerrettExercisingLibraryInformation2017
 Attachment_Key: 8MDG5JY6
 
-Source_Type: 
-- case_study
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
+Library_Context: academic_library
+Game_Format: pervasive_game
 
-Evidence_Type: 
-- focus_group
-- case_study
-- experiment
-- theoretical
+Service_Area: learning_and_literacy
+Audience: students
 
-Methodology: 
-- focus_group
-- case_study
-- theoretical_analysis
-- action_research
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- game_creation
-- puzzle
-
-Service_Area: 
-- collections
-- cataloging_metadata
-- instruction
-- information_literacy
-- orientation
-- community_building
-- space_design
-- literacy
-- research_support
-- assessment
-
-Audience: 
-- students
-- families
-- older_adults
-- players
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- social_connection
-- community_building
-- catalog_discovery
-- implementation_capacity
-- collaboration
-- problem_solving
-- critical_thinking
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- cataloging
-- literacy
-- space
-- community
-- orientation
-- local_adaptation
-- play
-- social_connection
-- assessment
-- narrative
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,69 +7,20 @@ Zotero_Item_Key: ZAX7YVFU
 Better_BibTeX_Citation_Key: windleharthFullSteamAhead2016
 Attachment_Key: ZPP57PRF
 
-Source_Type: 
-- empirical_study
-- theoretical_work
+Source_Type: dataset_or_archive
+Peer_Review: not_applicable
+Evidence_Type:
+- content_or_artifact_analysis
+- instrument_or_framework_development
+Primary_Methodology: content_analysis
+Library_Context: non_library_context
+Game_Format: digital_game
 
-Evidence_Type: experiment
+Service_Area: discovery_and_advisory
+Audience: not_applicable
 
-Methodology: unspecified
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- video_game
-- puzzle
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- discovery
-- community_building
-- access
-
-Audience: 
-- families
-- gamers
-- patrons
-- players
-
-Outcome: 
-- community_building
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-
-Theme: 
-- access
-- metadata
-- cataloging
-- advisory
-- community
-- local_adaptation
-- play
-- controlled_vocabulary
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: discovery_and_advisory
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

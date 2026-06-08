@@ -7,93 +7,19 @@ Zotero_Item_Key: TTGSZMWW
 Better_BibTeX_Citation_Key: monProfessionalAvatarsLibrarians2012
 Attachment_Key: ERZP5GNB
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
+Library_Context: unspecified_library_context
+Game_Format: virtual_or_augmented_reality
 
-Evidence_Type: 
-- survey
-- interview
-- experiment
+Service_Area:
+- learning_and_literacy
+- collections_and_access
+Audience: not_applicable
 
-Methodology: 
-- survey
-- interviews
-- historical_analysis
-- ethnography
-
-Library_Context: academic_library
-
-Game_Format: 
-- virtual_reality
-- augmented_reality
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- discovery
-- instruction
-- information_literacy
-- orientation
-- outreach
-- community_building
-- access
-- space_design
-- literacy
-- research_support
-- facilitation
-
-Audience: 
-- students
-- faculty
-- librarians
-- library_staff
-- families
-- developers
-- patrons
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- social_connection
-- community_building
-- access
-- implementation_capacity
-- research_support
-- orientation_skills
-
-Theme: 
-- facilitation
-- access
-- literacy
-- implementation_barriers
-- space
-- technology_access
-- community
-- outreach
-- orientation
-- local_adaptation
-- play
-- social_connection
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-
+Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
 Contributions:

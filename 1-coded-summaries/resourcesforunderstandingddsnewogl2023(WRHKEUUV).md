@@ -7,75 +7,20 @@ Zotero_Item_Key: WRHKEUUV
 Better_BibTeX_Citation_Key: ResourcesUnderstandingDDs2023
 Attachment_Key: T6639VHU
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- historical_analysis
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: multiple_library_types
+Game_Format: tabletop_roleplaying_game
 
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
+Service_Area:
+- collections_and_access
+- programming_and_facilitation
+Audience: not_applicable
 
-Methodology: literature_review
-
-Library_Context: 
-- public_library
-- academic_library
-- multiple_library_types
-
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- game_creation
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- community_building
-- teen_services
-- research_support
-- assessment
-- collection_development
-- facilitation
-
-Audience: 
-- teens
-- librarians
-- patrons
-
-Outcome: 
-- community_building
-- catalog_discovery
-- research_support
-
-Theme: 
-- facilitation
-- cataloging
-- teen_engagement
-- community
-- local_adaptation
-- play
-- assessment
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

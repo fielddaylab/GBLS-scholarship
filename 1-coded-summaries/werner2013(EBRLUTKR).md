@@ -7,74 +7,26 @@ Zotero_Item_Key: EBRLUTKR
 Better_BibTeX_Citation_Key: wernerBringingThemDeveloping2013
 Attachment_Key: 9NK563TG
 
-Source_Type: 
-- case_study
-- empirical_study
-
-Evidence_Type: practitioner_reflection
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- board_game
-- card_game
-- tabletop_game
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- community_building
-- access
-- space_design
-- youth_services
-- teen_services
-
-Audience: 
+Service_Area:
+- programming_and_facilitation
+- collections_and_access
+- discovery_and_advisory
+Audience:
 - children
 - teens
-- youth
-- older_adults
-- patrons
-- players
 
-Outcome: 
-- attendance
-- community_building
-- access
-- advisory_quality
-- implementation_capacity
-
-Theme: 
-- facilitation
-- access
-- advisory
-- teen_engagement
-- youth_voice
-- space
-- community
-- local_adaptation
-- play
-- competition
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- advisory_framework
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome:
+- engagement_and_participation
+- institutional_capacity
+- discovery_and_advisory
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

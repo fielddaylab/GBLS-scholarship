@@ -7,82 +7,20 @@ Zotero_Item_Key: B72IBLMX
 Better_BibTeX_Citation_Key: henriksen-bulmerUsingGamebasedLearning2024
 Attachment_Key: ZG7ACUW7
 
-Source_Type: 
-- case_study
-- empirical_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
+Library_Context: non_library_context
+Game_Format: tabletop_game
 
-Evidence_Type: 
-- survey
-- focus_group
-- experiment
-
-Methodology: 
-- survey
-- focus_group
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- digital_game
-- board_game
-
-Service_Area: 
-- programming
-- collections
-- instruction
-- information_literacy
-- orientation
-- access
-- space_design
-- youth_services
-- literacy
-- research_support
-
-Audience: 
-- youth
-- adults
+Service_Area: learning_and_literacy
+Audience:
+- teens
 - students
-- undergraduate_students
-- graduate_students
-- players
 
-Outcome: 
-- literacy
-- information_literacy
-- misinformation_awareness
-- digital_literacy
-- learning
-- social_connection
-- access
-- staff_confidence
-- research_support
-- orientation_skills
-- resilience
-
-Theme: 
-- misinformation
-- access
-- literacy
-- youth_voice
-- implementation_barriers
-- space
-- orientation
-- local_adaptation
-- play
-- social_connection
-- safety
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,72 +7,21 @@ Zotero_Item_Key: UU8SVMJT
 Better_BibTeX_Citation_Key: bellVirtualWorldsReal2008
 Attachment_Key: DK8XX22Y
 
-Source_Type: 
-- edited_volume
-- empirical_study
-- historical_analysis
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: cultural_heritage_institution
+Game_Format: virtual_or_augmented_reality
 
-Evidence_Type: experiment
+Service_Area:
+- learning_and_literacy
+- outreach_and_partnerships
+- collections_and_access
+Audience: not_applicable
 
-Methodology: historical_analysis
-
-Library_Context: museum_archive
-
-Game_Format: virtual_reality
-
-Service_Area: 
-- programming
-- collections
-- instruction
-- outreach
-- community_building
-- space_design
-- youth_services
-- teen_services
-- research_support
-- partnerships
-
-Audience: 
-- children
-- teens
-- youth
-- librarians
-- older_adults
-- patrons
-
-Outcome: 
-- learning
-- social_connection
-- community_building
-- collaboration
-- research_support
-
-Theme: 
-- collaboration
-- teen_engagement
-- youth_voice
-- implementation_barriers
-- funding
-- space
-- community
-- outreach
-- play
-- social_connection
-- safety
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-
-Coding_Confidence: high
+Intended_Outcome: not_applicable
+Coding_Confidence: medium
 
 Contributions:
 - Target_Section: unspecified

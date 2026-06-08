@@ -7,67 +7,25 @@ Zotero_Item_Key: VKFJS5P8
 Better_BibTeX_Citation_Key: hassinger-dasPlayandlearnSpacesLeveraging2020
 Attachment_Key: PYXWDYJK
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: survey
-
-Methodology: 
-- survey
-- observation
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: public_library
+Game_Format: toy_or_open_play
 
-Game_Format: 
-- digital_game
-- board_game
-- gamification
-
-Service_Area: 
-- programming
-- collections
-- discovery
-- community_building
-- space_design
-- literacy
-- research_support
-
-Audience: 
+Service_Area:
+- space_and_infrastructure
+- learning_and_literacy
+- community_and_inclusion
+Audience:
 - children
-- library_staff
 - families
-- caregivers
-- researchers
-- patrons
 
-Outcome: 
-- engagement
-- attendance
-- literacy
-- learning
-- community_building
-- discovery
-- research_support
-
-Theme: 
-- literacy
-- space
-- technology_access
-- community
-- play
-- gamification
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- local_context_shapes_program_fit
-- avoid_overclaiming_evidence
-
+Intended_Outcome:
+- learning_and_literacy
+- belonging_and_community
+- creativity_and_production
 Coding_Confidence: high
 
 Contributions:

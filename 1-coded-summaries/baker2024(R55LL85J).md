@@ -7,88 +7,19 @@ Zotero_Item_Key: R55LL85J
 Better_BibTeX_Citation_Key: bakerResearchProposalGamesbased
 Attachment_Key: PEFLFNYE
 
-Source_Type: 
-- research_proposal
-- case_study
+Source_Type: unpublished_document
+Peer_Review: not_applicable
+Evidence_Type:
 - empirical_study
-- primary_artifact
-
-Evidence_Type: 
-- survey
-- proposed_instrument
-
-Methodology: 
-- survey
-- proposal
-
+- instrument_or_framework_development
+Primary_Methodology: survey
 Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- board_game
-- card_game
-- tabletop_game
-- tabletop_roleplaying_game
-- augmented_reality
-- roleplaying_game
-- multiple_game_formats
+Service_Area: professional_capacity
+Audience: general_public
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- orientation
-- staff_training
-- community_building
-- access
-- research_support
-- assessment
-- needs_assessment
-
-Audience: 
-- librarians
-- patrons
-
-Outcome: 
-- community_building
-- access
-- advisory_quality
-- implementation_capacity
-- patron_interest
-- usage
-- research_support
-- orientation_skills
-
-Theme: 
-- access
-- advisory
-- staff_training
-- implementation_barriers
-- funding
-- technology_access
-- community
-- orientation
-- local_adaptation
-- play
-- assessment
-- needs_assessment
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- assessment_framework
-- collection_development
-- advisory_framework
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
+Intended_Outcome: institutional_capacity
 Coding_Confidence: high
 
 Contributions:

@@ -7,70 +7,18 @@ Zotero_Item_Key: XVMADALR
 Better_BibTeX_Citation_Key: hwangEffectsAdaptiveComputer2024
 Attachment_Key: UEVZ4H5H
 
-Source_Type: empirical_study
-
-Evidence_Type: experiment
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
 Library_Context: non_library_context
-
 Game_Format: digital_game
 
-Service_Area: 
-- programming
-- collections
-- instruction
-- information_literacy
-- community_building
-- access
-- youth_services
-- literacy
-- research_support
-- partnerships
+Service_Area: learning_and_literacy
+Audience: students
 
-Audience: 
-- youth
-- students
-- librarians
-- teachers
-- players
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- affective_motivation
-- social_connection
-- community_building
-- access
-- collaboration
-- research_support
-
-Theme: 
-- collaboration
-- access
-- literacy
-- youth_voice
-- technology_access
-- community
-- play
-- social_connection
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- exclusion_record
-- background_context
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

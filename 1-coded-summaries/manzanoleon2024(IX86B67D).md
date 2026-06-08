@@ -7,85 +7,20 @@ Zotero_Item_Key: IX86B67D
 Better_BibTeX_Citation_Key: manzano-leonDigitalGamebasedLearning2024
 Attachment_Key: RLS94GVN
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-
-Evidence_Type: focus_group
-
-Methodology: focus_group
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
 Library_Context: non_library_context
+Game_Format: digital_game
 
-Game_Format: 
-- video_game
-- digital_game
-- puzzle
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- instruction
-- information_literacy
-- staff_training
-- community_building
-- access
-- literacy
-- research_support
-- partnerships
-
-Audience: 
+Service_Area: learning_and_literacy
+Audience:
 - students
-- undergraduate_students
-- graduate_students
-- librarians
-- families
-- researchers
-- players
+- underserved_or_special_population
 
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- social_connection
-- belonging
-- community_building
-- access
-- critical_thinking
-- research_support
-
-Theme: 
-- facilitation
-- access
-- literacy
-- staff_training
-- technology_access
-- community
-- play
-- social_connection
-- professional_identity
-- narrative
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- collection_development
-- exclusion_record
-- background_context
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

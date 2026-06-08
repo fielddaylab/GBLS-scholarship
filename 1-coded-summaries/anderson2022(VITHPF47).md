@@ -7,76 +7,19 @@ Zotero_Item_Key: VITHPF47
 Better_BibTeX_Citation_Key: kateandersonLibrariesLizardsPlaying2022
 Attachment_Key: 64EICZ9U
 
-Source_Type: 
-- practitioner_guide
-- empirical_study
-- primary_artifact
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
 Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: multiple_library_types
+Game_Format: tabletop_roleplaying_game
 
-Methodology: none
+Service_Area:
+- programming_and_facilitation
+- professional_capacity
+Audience: not_applicable
 
-Library_Context: 
-- public_library
-- school_library
-- multiple_library_types
-
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- roleplaying_game
-
-Service_Area: 
-- programming
-- instruction
-- access
-- space_design
-- youth_services
-- teen_services
-- partnerships
-- facilitation
-
-Audience: 
-- teens
-- youth
-- adolescents
-- adults
-- librarians
-- library_staff
-- school_librarians
-- families
-- players
-
-Outcome: 
-- social_connection
-- access
-
-Theme: 
-- facilitation
-- debriefing
-- access
-- teen_engagement
-- youth_voice
-- space
-- local_adaptation
-- play
-- social_connection
-- safety
-- professional_identity
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- practitioner_guidance
-
-Design_Principles: 
-- debriefing_supports_transfer
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

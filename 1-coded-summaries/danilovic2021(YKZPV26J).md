@@ -7,70 +7,21 @@ Zotero_Item_Key: YKZPV26J
 Better_BibTeX_Citation_Key: danilovicMakingSenseAbstract2021
 Attachment_Key: QR4Q2ENA
 
-Source_Type: 
-- case_study
-- historical_analysis
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: non_library_context
+Game_Format: tabletop_game
 
-Evidence_Type: theoretical
+Service_Area:
+- collections_and_access
+- cultural_heritage_and_research
+- programming_and_facilitation
+Audience: not_applicable
 
-Methodology: 
-- historical_analysis
-- theoretical_analysis
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- board_game
-- tabletop_game
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- preservation
-- instruction
-- community_building
-- access
-- facilitation
-
-Audience: 
-- older_adults
-- patrons
-- players
-
-Outcome: 
-- social_connection
-- community_building
-- access
-- advisory_quality
-
-Theme: 
-- facilitation
-- access
-- preservation
-- advisory
-- community
-- local_adaptation
-- play
-- social_connection
-
-Contribution_Type: 
-- historical_precedent
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

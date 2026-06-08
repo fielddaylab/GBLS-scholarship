@@ -7,85 +7,18 @@ Zotero_Item_Key: A95N9V7K
 Better_BibTeX_Citation_Key: ninausAddedValueGame2023
 Attachment_Key: KTIE5AFQ
 
-Source_Type: 
-- literature_review
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
+Library_Context: unspecified_library_context
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- experiment
-- bibliometric_analysis
+Service_Area: learning_and_literacy
+Audience: adults
 
-Methodology: 
-- experimental_study
-- bibliometric_analysis
-
-Library_Context: non_library_context
-
-Game_Format: 
-- escape_room
-- gamification
-
-Service_Area: 
-- programming
-- collections
-- preservation
-- instruction
-- information_literacy
-- orientation
-- staff_training
-- wellness
-- literacy
-- research_support
-- assessment
-
-Audience: 
-- adults
-- librarians
-- researchers
-- patrons
-
-Outcome: 
-- engagement
-- attendance
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- affective_motivation
-- wellness
-- collaboration
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- preservation
-- literacy
-- wellness
-- staff_training
-- technology_access
-- orientation
-- play
-- gamification
-- assessment
-- narrative
-
-Contribution_Type: 
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- background_context
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- collaboration_supports_reflection
-- staff_confidence_shapes_adoption
-- novelty_is_not_enough
-- preservation_requires_relationship_metadata
-
-Coding_Confidence: medium
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

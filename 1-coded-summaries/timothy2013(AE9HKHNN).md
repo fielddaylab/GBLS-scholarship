@@ -7,67 +7,18 @@ Zotero_Item_Key: AE9HKHNN
 Better_BibTeX_Citation_Key: AddictionVsReflection
 Attachment_Key: 9B9CEXLS
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
-
+Source_Type: blog_or_web_article
+Peer_Review: not_applicable
 Evidence_Type: practitioner_reflection
-
-Methodology: historical_analysis
-
+Primary_Methodology: none
 Library_Context: non_library_context
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- tabletop_roleplaying_game
-- escape_room
-- gamification
-- puzzle
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- discovery
-- instruction
-- information_literacy
-- literacy
-- research_support
-
-Audience: 
-- children
-- librarians
-- patrons
-- players
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- affective_motivation
-- discovery
-- problem_solving
-- research_support
-
-Theme: 
-- literacy
-- play
-- competition
-- narrative
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- collection_development
-- exclusion_record
-- background_context
-- methodological_caution
-
-Design_Principles: advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

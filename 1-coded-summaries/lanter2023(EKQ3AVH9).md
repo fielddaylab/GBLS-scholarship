@@ -7,69 +7,20 @@ Zotero_Item_Key: EKQ3AVH9
 Better_BibTeX_Citation_Key: RTRTAddressingCensorship2023
 Attachment_Key: CP4N5QCW
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- primary_artifact
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: unspecified_library_context
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- case_study
-- literature_synthesis
-- practitioner_reflection
+Service_Area:
+- collections_and_access
+- community_and_inclusion
+Audience: not_applicable
 
-Methodology: 
-- case_study
-- literature_review
-
-Library_Context: academic_library
-
-Game_Format: 
-- video_game
-- tabletop_roleplaying_game
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- outreach
-- community_building
-- space_design
-- teen_services
-- research_support
-- collection_development
-
-Audience: 
-- teens
-- librarians
-- gamers
-- older_adults
-
-Outcome: 
-- community_building
-- implementation_capacity
-- research_support
-
-Theme: 
-- teen_engagement
-- space
-- community
-- outreach
-- local_adaptation
-- play
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- collection_development
-- literature_mapping
-
-Design_Principles: 
-- local_context_shapes_program_fit
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

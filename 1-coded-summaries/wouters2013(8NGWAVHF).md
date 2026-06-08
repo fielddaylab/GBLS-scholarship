@@ -1,58 +1,23 @@
 # Wouters, P., van Nimwegen, C., van Oostendorp, H., & van der Spek, E. D. (2013). A meta-analysis of the cognitive and motivational effects of serious games. *Journal of Educational Psychology, 105*(2), 249-265. https://doi.org/10.1037/a0031311
 
 ## Metadata
-
 Citation_Key: woutersMetaanalysisCognitiveMotivational2013
 Year: 2013
 Zotero_Item_Key: 8NGWAVHF
 Better_BibTeX_Citation_Key: woutersMetaanalysisCognitiveMotivational2013
 Attachment_Key: 8TUJYFUZ
 
-Source_Type: literature_review
-
-Evidence_Type:
-- meta_analysis
-- literature_synthesis
-
-Methodology: meta_analysis
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
 Library_Context: non_library_context
+Game_Format: digital_game
 
-Game_Format:
-- serious_game
-- digital_game
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: instruction
-
-Audience:
-- students
-- players
-- teachers
-
-Outcome:
-- cognitive_learning
-- learning
-- affective_motivation
-
-Theme:
-- facilitation
-- debriefing
-- collaboration
-- reflection
-- assessment
-- play
-
-Contribution_Type:
-- literature_mapping
-- methodological_caution
-- background_context
-
-Design_Principles:
-- debriefing_supports_transfer
-- collaboration_supports_reflection
-- avoid_overclaiming_evidence
-- technology_should_serve_service_goals
-
+Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
 ## Summary

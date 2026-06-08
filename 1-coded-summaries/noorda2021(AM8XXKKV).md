@@ -7,59 +7,19 @@ Zotero_Item_Key: AM8XXKKV
 Better_BibTeX_Citation_Key: noordaImmersiveMediaBooks2021
 Attachment_Key: ZRYIA5Y2
 
-Source_Type: empirical_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: survey
+Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Evidence_Type: survey
+Service_Area: discovery_and_advisory
+Audience: not_applicable
 
-Methodology: survey
-
-Library_Context: public_library
-
-Game_Format: 
-- video_game
-- multiple_game_formats
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- discovery
-- access
-- space_design
-- research_support
-- collection_development
-
-Audience: 
-- families
-- patrons
-
-Outcome: 
-- engagement
-- social_connection
-- access
-- discovery
-- advisory_quality
-- research_support
-
-Theme: 
-- access
-- advisory
-- cross_media
-- space
-- play
-- social_connection
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- advisory_framework
-
-Design_Principles: 
-- access_requires_infrastructure
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
+Intended_Outcome:
+- discovery_and_advisory
+- engagement_and_participation
 Coding_Confidence: high
 
 Contributions:

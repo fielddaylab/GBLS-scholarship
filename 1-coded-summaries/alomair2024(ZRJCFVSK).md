@@ -7,72 +7,18 @@ Zotero_Item_Key: ZRJCFVSK
 Better_BibTeX_Citation_Key: alomairEnhancingAchievementLearning2024
 Attachment_Key: 9SUG4GNK
 
-Source_Type: empirical_study
-
-Evidence_Type: 
-- survey
-- experiment
-
-Methodology: survey
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
 Library_Context: non_library_context
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- card_game
-- gamification
+Service_Area: learning_and_literacy
+Audience: students
 
-Service_Area: 
-- programming
-- collections
-- instruction
-- information_literacy
-- orientation
-- staff_training
-- community_building
-- access
-- literacy
-- assessment
-
-Audience: 
-- students
-- librarians
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- affective_motivation
-- community_building
-- access
-- implementation_capacity
-- orientation_skills
-
-Theme: 
-- access
-- literacy
-- staff_training
-- technology_access
-- community
-- orientation
-- play
-- gamification
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- exclusion_record
-- background_context
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

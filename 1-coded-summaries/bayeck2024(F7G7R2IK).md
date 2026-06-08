@@ -7,84 +7,24 @@ Zotero_Item_Key: F7G7R2IK
 Better_BibTeX_Citation_Key: bayeckIntersectionPlaceGame2024
 Attachment_Key: 87XBIU83
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
+Library_Context: non_library_context
+Game_Format: tabletop_game
 
-Evidence_Type: 
-- interview
-- experiment
-- theoretical
+Service_Area:
+- community_and_inclusion
+- collections_and_access
+- programming_and_facilitation
+Audience: teens
 
-Methodology: 
-- interviews
-- historical_analysis
-- theoretical_analysis
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- digital_game
-- board_game
-- tabletop_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- community_building
-- access
-- equity_inclusion
-- space_design
-- teen_services
-- facilitation
-
-Audience: 
-- teens
-- patrons
-- players
-
-Outcome: 
-- learning
-- social_connection
-- community_building
-- access
-- advisory_quality
-
-Theme: 
-- facilitation
-- access
-- inclusion
-- advisory
-- teen_engagement
-- space
-- community
-- local_adaptation
-- play
-- social_connection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- methodological_caution
-- equity_analysis
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome:
+- belonging_and_community
+- creativity_and_production
+- learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

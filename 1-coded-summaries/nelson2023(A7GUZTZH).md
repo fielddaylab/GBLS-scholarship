@@ -7,77 +7,22 @@ Zotero_Item_Key: A7GUZTZH
 Better_BibTeX_Citation_Key: nelsonMAXWELLLucasLets2023
 Attachment_Key: 3JJRHCXT
 
-Source_Type: 
-- book_review
-- practitioner_guide
-- literature_review
-- case_study
-- empirical_study
-- theoretical_work
-
-Evidence_Type: 
-- case_study
-- literature_synthesis
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type:
+- implementation_case
 - practitioner_reflection
-- theoretical
-- secondary_source
+Primary_Methodology: case_or_design_study
+Library_Context: multiple_library_types
+Game_Format: tabletop_roleplaying_game
 
-Methodology: 
-- case_study
-- literature_review
-- theoretical_analysis
-- proposal
+Service_Area:
+- professional_capacity
+- programming_and_facilitation
+Audience: general_public
 
-Library_Context: 
-- public_library
-- school_library
-- multiple_library_types
-
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- roleplaying_game
-
-Service_Area: 
-- programming
-- staff_training
-- research_support
-- assessment
-- marketing
-- facilitation
-
-Audience: 
-- librarians
-- library_staff
-- school_librarians
-- public_librarians
-- patrons
-
-Outcome: research_support
-
-Theme: 
-- facilitation
-- staff_training
-- implementation_barriers
-- play
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- practitioner_guidance
-- theoretical_argument
-- literature_mapping
-- exclusion_record
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- staff_confidence_shapes_adoption
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

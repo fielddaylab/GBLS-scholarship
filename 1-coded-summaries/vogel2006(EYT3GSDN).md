@@ -1,56 +1,28 @@
 # Vogel, J. J., Vogel, D. S., Cannon-Bowers, J., Bowers, C. A., Muse, K., & Wright, M. (2006). Computer gaming and interactive simulations for learning: A meta-analysis. *Journal of Educational Computing Research, 34*(3), 229-243. https://doi.org/10.2190/FLHV-K4WA-WPVQ-H0YM
 
 ## Metadata
-
 Citation_Key: vogelComputerGamingInteractive2006
 Year: 2006
 Zotero_Item_Key: EYT3GSDN
 Better_BibTeX_Citation_Key: vogelComputerGamingInteractive2006
 Attachment_Key: PB4S8W9G
 
-Source_Type: literature_review
-
-Evidence_Type:
-- meta_analysis
-- literature_synthesis
-
-Methodology: meta_analysis
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
 Library_Context: non_library_context
+Game_Format: digital_game
 
-Game_Format:
-- digital_game
-- serious_game
+Service_Area:
+- learning_and_literacy
+- cultural_heritage_and_research
+- programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: instruction
-
-Audience:
-- students
-- adults
-- children
-- players
-
-Outcome:
-- cognitive_learning
-- learning
-- affective_motivation
-
-Theme:
-- assessment
-- play
-- technology_access
-- facilitation
-
-Contribution_Type:
-- literature_mapping
-- methodological_caution
-- background_context
-
-Design_Principles:
-- avoid_overclaiming_evidence
-- technology_should_serve_service_goals
-- local_context_shapes_program_fit
-
+Intended_Outcome:
+- learning_and_literacy
+- creativity_and_production
 Coding_Confidence: high
 
 ## Summary

@@ -7,60 +7,18 @@ Zotero_Item_Key: U3NM7Z3A
 Better_BibTeX_Citation_Key: leeDevelopingVideoGame2013
 Attachment_Key: PHGBY8MM
 
-Source_Type: empirical_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: not_empirical
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Methodology: unspecified
-
-Library_Context: museum_archive
-
-Game_Format: 
-- video_game
-- digital_game
-
-Service_Area: 
-- collections
-- cataloging_metadata
-- discovery
-- preservation
-- access
-- marketing
-
-Audience: 
-- gamers
-- developers
-- players
-
-Outcome: 
-- access
-- discovery
-- catalog_discovery
-- preservation_access
-
-Theme: 
-- access
-- metadata
-- cataloging
-- preservation
-- local_adaptation
-- play
-- controlled_vocabulary
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- exclusion_record
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

@@ -7,90 +7,19 @@ Zotero_Item_Key: KTM5J3VY
 Better_BibTeX_Citation_Key: mcdonaldDescribingOrganizingMaintaining2021
 Attachment_Key: V4EJ9M5E
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- interview
-- design_case
-- archival_analysis
+Service_Area: cultural_heritage_and_research
+Audience: students
 
-Methodology: 
-- interviews
-- proposal
-
-Library_Context: 
-- public_library
-- academic_library
-- museum_archive
-- cultural_heritage_institution
-- multiple_library_types
-
-Game_Format: 
-- video_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- discovery
-- preservation
-- access
-- research_support
-- marketing
-- cultural_heritage
-- archival_stewardship
-
-Audience: 
-- students
-- graduate_students
-- researchers
-- older_adults
-
-Outcome: 
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- preservation_access
-- collaboration
-- research_support
-
-Theme: 
-- collaboration
-- access
-- metadata
-- cataloging
-- preservation
-- cultural_heritage
-- advisory
-- technology_access
-- play
-- controlled_vocabulary
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- implementation_model
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
+Intended_Outcome:
+- discovery_and_advisory
+- cultural_stewardship_and_preservation
 Coding_Confidence: high
 
 Contributions:

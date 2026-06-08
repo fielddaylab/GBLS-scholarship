@@ -7,114 +7,22 @@ Zotero_Item_Key: SPI4S64W
 Better_BibTeX_Citation_Key: pinedoReasoningLearningBoard2022
 Attachment_Key: E2GMLBUR
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
+Library_Context: non_library_context
+Game_Format: tabletop_game
 
-Evidence_Type: 
-- interview
-- focus_group
-- case_study
-- literature_synthesis
-
-Methodology: 
-- interviews
-- focus_group
-- case_study
-- literature_review
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- board_game
-- tabletop_game
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- instruction
-- outreach
-- staff_training
-- community_building
-- access
-- equity_inclusion
-- space_design
-- youth_services
-- research_support
-- assessment
-- partnerships
-- facilitation
-
-Audience: 
-- youth
-- adults
+Service_Area: community_and_inclusion
+Audience:
 - students
-- librarians
-- teachers
 - families
-- researchers
-- patrons
-- players
 
-Outcome: 
-- critical_reflection
-- learning
-- cognitive_learning
-- affective_motivation
-- social_connection
-- community_building
-- access
-- advisory_quality
-- catalog_discovery
-- staff_confidence
-- collaboration
-- creativity
-- problem_solving
-- research_support
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- inclusion
-- cataloging
-- advisory
-- youth_voice
-- staff_training
-- space
-- community
-- outreach
-- play
-- social_connection
-- assessment
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- literature_mapping
-- exclusion_record
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome:
+- learning_and_literacy
+- belonging_and_community
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,69 +7,18 @@ Zotero_Item_Key: YFLBM9RD
 Better_BibTeX_Citation_Key: seayConsideringGamesLibraries2019
 Attachment_Key: TC7HN4A3
 
-Source_Type: 
-- professional_column
-- literature_review
-
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
-
-Methodology: literature_review
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- escape_room
-- gamification
-- puzzle
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- discovery
-- instruction
-- information_literacy
-- orientation
-- space_design
-- literacy
-- assessment
-- facilitation
-
-Audience: 
-- students
-- librarians
-- families
-
-Outcome: 
-- literacy
-- information_literacy
-- learning
-- implementation_capacity
-- collaboration
-- orientation_skills
-
-Theme: 
-- collaboration
-- facilitation
-- literacy
-- space
-- orientation
-- play
-- gamification
-- competition
-- assessment
-- professional_identity
-- narrative
-
-Contribution_Type: 
-- practitioner_guidance
-- literature_mapping
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

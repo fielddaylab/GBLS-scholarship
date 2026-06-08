@@ -7,73 +7,17 @@ Zotero_Item_Key: WMWT6IVS
 Better_BibTeX_Citation_Key: johanhuizingaHomoLudensStudy1950
 Attachment_Key: FSM44TLH
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: book
+Peer_Review: editorial_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: non_library_context
+Game_Format: unspecified_game_format
 
-Evidence_Type: archival_analysis
+Service_Area: cultural_heritage_and_research
+Audience: not_applicable
 
-Methodology: historical_analysis
-
-Library_Context: museum_archive
-
-Game_Format: 
-- tabletop_roleplaying_game
-- gamification
-- game_creation
-
-Service_Area: 
-- programming
-- staff_training
-- community_building
-- access
-- equity_inclusion
-- space_design
-- marketing
-- archival_stewardship
-
-Audience: children
-
-Outcome: 
-- critical_reflection
-- learning
-- social_connection
-- belonging
-- community_building
-- access
-- equity_access
-
-Theme: 
-- access
-- equity
-- staff_training
-- space
-- community
-- play
-- gamification
-- competition
-- social_connection
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- methodological_caution
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- preservation_requires_relationship_metadata
-- design_for_accessibility_and_inclusion
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

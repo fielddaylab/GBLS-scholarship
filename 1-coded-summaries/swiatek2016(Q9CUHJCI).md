@@ -7,69 +7,21 @@ Zotero_Item_Key: Q9CUHJCI
 Better_BibTeX_Citation_Key: swiatekPlayingGamesLibrary2016
 Attachment_Key: UUVU9JL3
 
-Source_Type: 
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type:
 - empirical_study
-- historical_analysis
+- implementation_case
+Primary_Methodology: case_or_design_study
+Library_Context: multiple_library_types
+Game_Format: multiple_game_formats
 
-Evidence_Type: not_empirical
-
-Methodology: historical_analysis
-
-Library_Context: 
-- public_library
-- academic_library
-- multiple_library_types
-
-Game_Format: 
-- board_game
-- game_creation
-- puzzle
-
-Service_Area: 
-- programming
-- cataloging_metadata
-- discovery
-- staff_training
-- youth_services
-- research_support
-- assessment
-- partnerships
-- facilitation
-
-Audience: 
-- youth
+Service_Area: professional_capacity
+Audience:
 - students
-- librarians
-- gamers
+- educators
 
-Outcome: 
-- engagement
-- discovery
-- research_support
-
-Theme: 
-- collaboration
-- facilitation
-- youth_voice
-- staff_training
-- play
-- competition
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- infrastructure_metadata
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- staff_confidence_shapes_adoption
-- advisory_should_use_experience_language
-
+Intended_Outcome: institutional_capacity
 Coding_Confidence: high
 
 Contributions:

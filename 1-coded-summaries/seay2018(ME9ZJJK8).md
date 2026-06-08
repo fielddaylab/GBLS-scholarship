@@ -7,76 +7,18 @@ Zotero_Item_Key: ME9ZJJK8
 Better_BibTeX_Citation_Key: seayConsideringGamesGamification2018
 Attachment_Key: C4E5W3E6
 
-Source_Type: 
-- professional_column
-- theoretical_work
-- primary_artifact
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
 Evidence_Type: practitioner_reflection
-
-Methodology: unspecified
-
+Primary_Methodology: none
 Library_Context: academic_library
+Game_Format: gamification
 
-Game_Format: 
-- video_game
-- digital_game
-- board_game
-- tabletop_roleplaying_game
-- escape_room
-- gamification
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- instruction
-- information_literacy
-- orientation
-- professional_development
-- literacy
-- research_support
-
-Audience: 
-- librarians
-- patrons
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- affective_motivation
-- social_connection
-- implementation_capacity
-- usage
-- collaboration
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- literacy
-- technology_access
-- orientation
-- play
-- gamification
-- competition
-- social_connection
-- professional_identity
-
-Contribution_Type: 
-- practitioner_guidance
-- theoretical_argument
-- collection_development
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- collaboration_supports_reflection
-- assess_local_demand_before_scaling
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

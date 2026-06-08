@@ -7,72 +7,22 @@ Zotero_Item_Key: 3PBQKCCD
 Better_BibTeX_Citation_Key: dongEnhancingDiscoverabilityTransitioning2025
 Attachment_Key: PDAWDD83
 
-Source_Type: 
-- case_study
-- empirical_study
-- theoretical_work
-- primary_artifact
-
-Evidence_Type: case_study
-
-Methodology: case_study
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type:
+- implementation_case
+- practitioner_reflection
+Primary_Methodology: case_or_design_study
 Library_Context: unspecified_library_context
+Game_Format: tabletop_game
 
-Game_Format: 
-- board_game
-- tabletop_game
+Service_Area:
+- collections_and_access
+- discovery_and_advisory
+Audience: teens
 
-Service_Area: 
-- collections
-- cataloging_metadata
-- discovery
-- instruction
-- community_building
-- access
-- teen_services
-- collection_development
-
-Audience: 
-- teens
-- library_staff
-- families
-- patrons
-- players
-
-Outcome: 
-- engagement
-- community_building
-- access
-- discovery
-- catalog_discovery
-
-Theme: 
-- collaboration
-- access
-- metadata
-- cataloging
-- teen_engagement
-- technology_access
-- community
-- local_adaptation
-- play
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: discovery_and_advisory
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

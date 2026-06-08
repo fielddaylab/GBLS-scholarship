@@ -7,69 +7,20 @@ Zotero_Item_Key: PNVXZLYB
 Better_BibTeX_Citation_Key: robsonDontJustRoll2018
 Attachment_Key: T3MQW6LE
 
-Source_Type: 
-- empirical_study
-- primary_artifact
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: unspecified_library_context
+Game_Format: tabletop_game
 
-Game_Format: 
-- board_game
-- tabletop_game
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- preservation
-- instruction
-- staff_training
-- access
-- research_support
-- assessment
-
-Audience: 
-- librarians
-- patrons
-
-Outcome: 
-- learning
-- belonging
-- access
-- catalog_discovery
-- preservation_access
-- implementation_capacity
-- research_support
-
-Theme: 
-- access
-- cataloging
-- preservation
-- staff_training
-- local_adaptation
-- play
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome:
+- cultural_stewardship_and_preservation
+- institutional_capacity
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

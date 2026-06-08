@@ -7,84 +7,21 @@ Zotero_Item_Key: WVJ69C9H
 Better_BibTeX_Citation_Key: seayConsideringGamesGamification2018c
 Attachment_Key: IUT5BRF7
 
-Source_Type: 
-- professional_column
-- literature_review
-- theoretical_work
-
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
-
-Methodology: literature_review
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: public_library
+Game_Format: gamification
 
-Game_Format: 
-- video_game
-- digital_game
-- board_game
-- card_game
-- tabletop_game
-- live_action_roleplaying_game
-- escape_room
-- virtual_reality
-- gamification
-- megagame
+Service_Area:
+- programming_and_facilitation
+- collections_and_access
+- community_and_inclusion
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- discovery
-- preservation
-- community_building
-- access
-- space_design
-- research_support
-- facilitation
-
-Audience: 
-- students
-- older_adults
-- patrons
-
-Outcome: 
-- engagement
-- learning
-- social_connection
-- community_building
-- access
-- research_support
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- preservation
-- space
-- technology_access
-- community
-- play
-- gamification
-- social_connection
-
-Contribution_Type: 
-- practitioner_guidance
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- preservation_requires_relationship_metadata
-- avoid_overclaiming_evidence
-
-Coding_Confidence: medium
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,83 +7,21 @@ Zotero_Item_Key: DZ5X7TJM
 Better_BibTeX_Citation_Key: dahyaVirtualRealityArt
 Attachment_Key: ESTUU6PX
 
-Source_Type: empirical_study
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: multiple_library_types
+Game_Format: virtual_or_augmented_reality
 
-Evidence_Type: not_empirical
+Service_Area:
+- programming_and_facilitation
+- space_and_infrastructure
+- community_and_inclusion
+Audience: not_applicable
 
-Methodology: unspecified
-
-Library_Context: 
-- public_library
-- school_library
-- multiple_library_types
-
-Game_Format: virtual_reality
-
-Service_Area: 
-- programming
-- collections
-- preservation
-- instruction
-- outreach
-- community_building
-- access
-- equity_inclusion
-- space_design
-- youth_services
-- research_support
-- partnerships
-- facilitation
-
-Audience: 
-- youth
-- students
-- graduate_students
-- researchers
-- marginalized_communities
-
-Outcome: 
-- critical_reflection
-- learning
-- social_connection
-- community_building
-- access
-- implementation_capacity
-- equity_access
-- research_support
-
-Theme: 
-- facilitation
-- access
-- equity
-- preservation
-- youth_voice
-- implementation_barriers
-- space
-- technology_access
-- community
-- outreach
-- local_adaptation
-- play
-- social_connection
-- safety
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- equity_analysis
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-- preservation_requires_relationship_metadata
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,58 +7,18 @@ Zotero_Item_Key: KUH3ZRH3
 Better_BibTeX_Citation_Key: janikIntraactingBioobjectPosthuman2021
 Attachment_Key: NKHUJNMT
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
+Library_Context: non_library_context
+Game_Format: digital_game
 
-Evidence_Type: 
-- literature_synthesis
-- theoretical
+Service_Area: outreach_and_partnerships
+Audience: not_applicable
 
-Methodology: 
-- literature_review
-- theoretical_analysis
-
-Library_Context: unspecified_library_context
-
-Game_Format: video_game
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- outreach
-- access
-- partnerships
-
-Audience: patrons
-
-Outcome: 
-- learning
-- access
-- advisory_quality
-
-Theme: 
-- access
-- advisory
-- outreach
-- play
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- access_requires_infrastructure
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

@@ -7,101 +7,22 @@ Zotero_Item_Key: 4L7M87P4
 Better_BibTeX_Citation_Key: bishoffOutreachCollaborationCollegiality2015
 Attachment_Key: YJZTM36U
 
-Source_Type: 
-- case_study
-- empirical_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: survey
+Library_Context: public_library
+Game_Format: digital_game
 
-Evidence_Type: survey
+Service_Area:
+- programming_and_facilitation
+- collections_and_access
+Audience: students
 
-Methodology: 
-- survey
-- observation
-
-Library_Context: 
-- public_library
-- academic_library
-- multiple_library_types
-
-Game_Format: 
-- video_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- preservation
-- instruction
-- orientation
-- outreach
-- community_building
-- access
-- space_design
-- youth_services
-- research_support
-- makerspace
-- assessment
-- partnerships
-- facilitation
-
-Audience: 
-- youth
-- students
-- undergraduate_students
-- graduate_students
-- faculty
-- librarians
-- families
-- gamers
-- researchers
-- developers
-- players
-
-Outcome: 
-- engagement
-- attendance
-- learning
-- community_building
-- access
-- catalog_discovery
-- preservation_access
-- collaboration
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- cataloging
-- preservation
-- youth_voice
-- space
-- technology_access
-- community
-- outreach
-- orientation
-- local_adaptation
-- play
-- assessment
-- makerspace
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-
+Intended_Outcome:
+- learning_and_literacy
+- belonging_and_community
+- cultural_stewardship_and_preservation
 Coding_Confidence: high
 
 Contributions:

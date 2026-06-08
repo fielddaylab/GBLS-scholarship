@@ -7,69 +7,18 @@ Zotero_Item_Key: EHHM9BJU
 Better_BibTeX_Citation_Key: sanchez-ruizEducationalDigitalEscape2022
 Attachment_Key: U4CGR2GQ
 
-Source_Type: 
-- case_study
-- empirical_study
-
-Evidence_Type: 
-- interview
-- case_study
-- experiment
-
-Methodology: 
-- interviews
-- case_study
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: non_library_context
+Game_Format: escape_room_or_breakout_box
 
-Game_Format: 
-- escape_room
-- puzzle
+Service_Area: learning_and_literacy
+Audience: students
 
-Service_Area: 
-- programming
-- collections
-- instruction
-- information_literacy
-- community_building
-- access
-- space_design
-- literacy
-
-Audience: 
-- students
-- librarians
-
-Outcome: 
-- literacy
-- information_literacy
-- learning
-- affective_motivation
-- community_building
-- access
-- problem_solving
-
-Theme: 
-- access
-- literacy
-- space
-- community
-- play
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- collection_development
-- exclusion_record
-- background_context
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

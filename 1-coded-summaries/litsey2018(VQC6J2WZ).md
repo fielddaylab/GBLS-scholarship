@@ -7,57 +7,18 @@ Zotero_Item_Key: VQC6J2WZ
 Better_BibTeX_Citation_Key: litseyCtrlCCtrlUsing2018
 Attachment_Key: 4USFD48C
 
-Source_Type: empirical_study
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
-Library_Context: unspecified_library_context
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
+Library_Context: academic_library
 Game_Format: unspecified_game_format
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- instruction
-- community_building
-- access
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Audience: 
-- library_staff
-- gamers
-- patrons
-
-Outcome: 
-- engagement
-- social_connection
-- community_building
-- access
-- catalog_discovery
-- implementation_capacity
-
-Theme: 
-- access
-- cataloging
-- technology_access
-- community
-- social_connection
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- exclusion_record
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-
-Coding_Confidence: low
+Intended_Outcome: institutional_capacity
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

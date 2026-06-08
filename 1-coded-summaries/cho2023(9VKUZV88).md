@@ -7,86 +7,18 @@ Zotero_Item_Key: 9VKUZV88
 Better_BibTeX_Citation_Key: choUseEscapeRoom2023
 Attachment_Key: 4Y2Q7E9P
 
-Source_Type: empirical_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
+Library_Context: public_library
+Game_Format: escape_room_or_breakout_box
 
-Evidence_Type: 
-- survey
-- interview
-- focus_group
+Service_Area: learning_and_literacy
+Audience: general_public
 
-Methodology: 
-- survey
-- interviews
-- focus_group
-- observation
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- escape_room
-- breakout_box
-- puzzle
-
-Service_Area: 
-- programming
-- circulation
-- instruction
-- information_literacy
-- staff_training
-- community_building
-- literacy
-- research_support
-- facilitation
-
-Audience: 
-- students
-- librarians
-- researchers
-- developers
-- players
-
-Outcome: 
-- literacy
-- information_literacy
-- misinformation_awareness
-- critical_reflection
-- learning
-- cognitive_learning
-- social_connection
-- community_building
-- implementation_capacity
-- research_support
-- resilience
-
-Theme: 
-- misinformation
-- collaboration
-- facilitation
-- debriefing
-- literacy
-- staff_training
-- community
-- local_adaptation
-- play
-- social_connection
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- debriefing_supports_transfer
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- assess_local_demand_before_scaling
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

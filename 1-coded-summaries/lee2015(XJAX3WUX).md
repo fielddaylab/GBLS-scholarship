@@ -7,64 +7,20 @@ Zotero_Item_Key: XJAX3WUX
 Better_BibTeX_Citation_Key: leeProblemAdditionalContent2015
 Attachment_Key: WY26SE5U
 
-Source_Type: theoretical_work
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
+Source_Type: dataset_or_archive
+Peer_Review: not_applicable
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Game_Format: video_game
+Service_Area:
+- collections_and_access
+- cultural_heritage_and_research
+Audience: not_applicable
 
-Service_Area: 
-- collections
-- cataloging_metadata
-- discovery
-- preservation
-- community_building
-- access
-- research_support
-- cultural_heritage
-
-Audience: 
-- researchers
-- older_adults
-- patrons
-- players
-
-Outcome: 
-- community_building
-- access
-- discovery
-- catalog_discovery
-- preservation_access
-- usage
-- research_support
-
-Theme: 
-- access
-- metadata
-- cataloging
-- preservation
-- cultural_heritage
-- community
-- play
-- controlled_vocabulary
-- narrative
-
-Contribution_Type: 
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

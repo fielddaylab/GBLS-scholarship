@@ -7,80 +7,21 @@ Zotero_Item_Key: EXWIYDKK
 Better_BibTeX_Citation_Key: nelsonRollInitiativeBalancing2025
 Attachment_Key: AEBCGJRR
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
-
-Evidence_Type: 
-- interview
-- experiment
-
-Methodology: 
-- interviews
-- observation
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
 Library_Context: public_library
+Game_Format: tabletop_roleplaying_game
 
-Game_Format: 
-- digital_game
-- tabletop_game
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- community_building
-- access
-- space_design
-- teen_services
-- research_support
-- makerspace
-- facilitation
-
-Audience: 
+Service_Area:
+- programming_and_facilitation
+- community_and_inclusion
+Audience:
 - teens
-- adults
-- librarians
-- library_staff
-- families
-- researchers
-- marginalized_communities
-- patrons
-- players
+- young_adults
 
-Outcome: 
-- affective_motivation
-- belonging
-- community_building
-- access
-- research_support
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- teen_engagement
-- space
-- community
-- play
-- makerspace
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- design_for_accessibility_and_inclusion
-
+Intended_Outcome: belonging_and_community
 Coding_Confidence: high
 
 Contributions:

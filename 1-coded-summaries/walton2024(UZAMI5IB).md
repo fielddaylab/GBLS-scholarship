@@ -7,86 +7,20 @@ Zotero_Item_Key: UZAMI5IB
 Better_BibTeX_Citation_Key: waltonUtopiaTabletop2024
 Attachment_Key: MF5ELQ3U
 
-Source_Type: 
-- edited_volume
-- literature_review
-- empirical_study
-- theoretical_work
+Source_Type: blog_or_web_article
+Peer_Review: not_applicable
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: non_library_context
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- literature_synthesis
-- archival_analysis
-- theoretical
+Service_Area:
+- collections_and_access
+- community_and_inclusion
+Audience: not_applicable
 
-Methodology: 
-- literature_review
-- theoretical_analysis
-
-Library_Context: 
-- public_library
-- academic_library
-- school_library
-- museum_archive
-- multiple_library_types
-
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- community_building
-- access
-- equity_inclusion
-- archival_stewardship
-- facilitation
-
-Audience: 
-- librarians
-- players
-
-Outcome: 
-- critical_reflection
-- social_connection
-- community_building
-- access
-- catalog_discovery
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- inclusion
-- cataloging
-- community
-- play
-- social_connection
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-- equity_analysis
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

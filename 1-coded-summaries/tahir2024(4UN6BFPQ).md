@@ -7,74 +7,20 @@ Zotero_Item_Key: 4UN6BFPQ
 Better_BibTeX_Citation_Key: tahirEvaluatingEffectivenessGamebased2024
 Attachment_Key: 723VV433
 
-Source_Type: 
-- literature_review
-- theoretical_work
-
-Evidence_Type: 
-- interview
-- mixed_methods
-- experiment
-- literature_synthesis
-
-Methodology: 
-- interviews
-- mixed_methods
-- literature_review
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: non_library_context
+Game_Format: digital_game
 
-Game_Format: 
-- digital_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- instruction
-- information_literacy
-- community_building
-- access
-- space_design
-- literacy
-- assessment
-
-Audience: 
+Service_Area: learning_and_literacy
+Audience:
 - children
-- librarians
-- older_adults
+- underserved_or_special_population
 
-Outcome: 
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- community_building
-- access
-
-Theme: 
-- access
-- literacy
-- space
-- technology_access
-- community
-- play
-- assessment
-
-Contribution_Type: 
-- theoretical_argument
-- collection_development
-- literature_mapping
-- exclusion_record
-- background_context
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

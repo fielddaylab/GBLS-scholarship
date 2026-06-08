@@ -7,58 +7,18 @@ Zotero_Item_Key: AAVP3UL7
 Better_BibTeX_Citation_Key: wangExploringInfluenceCompetition2023
 Attachment_Key: S8V9BXLX
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
 Library_Context: non_library_context
+Game_Format: digital_game
 
-Game_Format: 
-- digital_game
-- escape_room
-- gamification
-- game_creation
-- multiple_game_formats
-
-Service_Area: 
-- programming
-- orientation
-- research_support
-- assessment
-
+Service_Area: learning_and_literacy
 Audience: students
 
-Outcome: 
-- engagement
-- learning
-- affective_motivation
-- social_connection
-- collaboration
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- technology_access
-- orientation
-- play
-- competition
-- social_connection
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- background_context
-- methodological_caution
-
-Design_Principles: collaboration_supports_reflection
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

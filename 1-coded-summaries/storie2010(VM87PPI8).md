@@ -7,73 +7,20 @@ Zotero_Item_Key: VM87PPI8
 Better_BibTeX_Citation_Key: nicholsonEveryonePlaysLibrary2010
 Attachment_Key: NBZ5EDE5
 
-Source_Type: 
-- book_review
-- theoretical_work
-
-Evidence_Type: 
-- practitioner_reflection
-- secondary_source
-
-Methodology: none
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- board_game
-- card_game
-- roleplaying_game
-- multiple_game_formats
+Service_Area:
+- discovery_and_advisory
+- programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- advisory
-- cataloging_metadata
-- community_building
-- equity_inclusion
-- assessment
-- marketing
-- facilitation
-
-Audience: 
-- librarians
-- patrons
-- players
-
-Outcome: 
-- social_connection
-- community_building
-- advisory_quality
-
-Theme: 
-- facilitation
-- inclusion
-- metadata
-- advisory
-- technology_access
-- community
-- play
-- social_connection
-- assessment
-- narrative
-
-Contribution_Type: 
-- theoretical_argument
-- infrastructure_metadata
-- advisory_framework
-- exclusion_record
-- equity_analysis
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: medium
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,78 +7,21 @@ Zotero_Item_Key: 2PINRDBM
 Better_BibTeX_Citation_Key: kroskiWhyCreateDigital2020
 Attachment_Key: PV66LSEE
 
-Source_Type: 
-- empirical_study
-- primary_artifact
-
-Evidence_Type: practitioner_reflection
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: unspecified_library_context
+Game_Format: escape_room_or_breakout_box
 
-Game_Format: 
-- escape_room
-- breakout_box
-- gamification
-- puzzle
+Service_Area:
+- learning_and_literacy
+- outreach_and_partnerships
+- professional_capacity
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- cataloging_metadata
-- instruction
-- information_literacy
-- outreach
-- staff_training
-- space_design
-- youth_services
-- literacy
-- research_support
-- assessment
-- marketing
-- partnerships
-
-Audience: 
-- youth
-- faculty
-- librarians
-- patrons
-- players
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- catalog_discovery
-- implementation_capacity
-- problem_solving
-- critical_thinking
-- research_support
-
-Theme: 
-- cataloging
-- literacy
-- youth_voice
-- staff_training
-- space
-- technology_access
-- outreach
-- play
-- assessment
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

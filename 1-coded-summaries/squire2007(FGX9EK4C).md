@@ -1,60 +1,26 @@
 # Squire, K. D. (2007). Games, learning, and society: Building a field. *Educational Technology, 47*(5), 51-55.
 
 ## Metadata
-
 Citation_Key: squireGamesLearningSociety2007
 Year: 2007
 Zotero_Item_Key: FGX9EK4C
 Better_BibTeX_Citation_Key: squireGamesLearningSociety2007
 Attachment_Key: 4LC3MG2E
 
-Source_Type:
-- theoretical_work
-- professional_column
-
-Evidence_Type:
-- theoretical
-- secondary_source
-
-Methodology:
-- theoretical_analysis
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: non_library_context
-
-Game_Format:
-- video_game
-- serious_game
+Game_Format: digital_game
 
 Service_Area:
-- instruction
-- assessment
-- research_support
+- learning_and_literacy
+- cultural_heritage_and_research
+- professional_capacity
+Audience: not_applicable
 
-Audience:
-- researchers
-- teachers
-- developers
-
-Outcome:
-- learning
-- critical_reflection
-
-Theme:
-- assessment
-- reflection
-- facilitation
-- professional_identity
-
-Contribution_Type:
-- methodological_caution
-- theoretical_argument
-- literature_mapping
-
-Design_Principles:
-- avoid_overclaiming_evidence
-- technology_should_serve_service_goals
-- local_context_shapes_program_fit
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 ## Summary

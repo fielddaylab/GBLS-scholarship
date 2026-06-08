@@ -7,72 +7,18 @@ Zotero_Item_Key: 53WHCDML
 Better_BibTeX_Citation_Key: robsonEnhancingDiscoveryTabletop2019
 Attachment_Key: CPAW4VPK
 
-Source_Type: 
-- theoretical_work
-- primary_artifact
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: unspecified_library_context
+Game_Format: tabletop_game
 
-Game_Format: 
-- board_game
-- card_game
-- tabletop_game
-- roleplaying_game
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- discovery
-- access
-- research_support
-
-Audience: 
-- librarians
-- families
-- gamers
-- developers
-- patrons
-- players
-
-Outcome: 
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- implementation_capacity
-- research_support
-
-Theme: 
-- access
-- metadata
-- cataloging
-- advisory
-- local_adaptation
-- play
-- controlled_vocabulary
-
-Contribution_Type: 
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: discovery_and_advisory
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

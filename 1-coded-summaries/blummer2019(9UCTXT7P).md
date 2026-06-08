@@ -7,72 +7,20 @@ Zotero_Item_Key: 9UCTXT7P
 Better_BibTeX_Citation_Key: blummerAcademicLibrariesOutreach2019
 Attachment_Key: TIY68CVZ
 
-Source_Type: 
-- literature_review
-- primary_artifact
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
+Library_Context: multiple_library_types
+Game_Format: digital_game
 
-Evidence_Type: not_empirical
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Methodology: unspecified
-
-Library_Context: 
-- public_library
-- academic_library
-- multiple_library_types
-
-Game_Format: video_game
-
-Service_Area: 
-- programming
-- collections
-- instruction
-- orientation
-- outreach
-- community_building
-- space_design
-- literacy
-- makerspace
-- assessment
-- marketing
-
-Audience: 
-- adults
-- students
-- faculty
-
-Outcome: 
-- attendance
-- literacy
-- learning
-- social_connection
-- community_building
-- usage
-- collaboration
-- orientation_skills
-
-Theme: 
-- collaboration
-- literacy
-- space
-- community
-- outreach
-- orientation
-- local_adaptation
-- social_connection
-- assessment
-- makerspace
-
-Contribution_Type: 
-- collection_development
-- literature_mapping
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-
-Coding_Confidence: low
+Intended_Outcome:
+- belonging_and_community
+- learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

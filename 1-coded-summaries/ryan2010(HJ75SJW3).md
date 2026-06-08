@@ -7,74 +7,20 @@ Zotero_Item_Key: HJ75SJW3
 Better_BibTeX_Citation_Key: ryanAcademicLibraryServices2010
 Attachment_Key: Z9VLJU38
 
-Source_Type: 
-- literature_review
-- historical_analysis
-
-Evidence_Type: 
-- experiment
-- literature_synthesis
-
-Methodology: 
-- literature_review
-- historical_analysis
-
-Library_Context: academic_library
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: multiple_library_types
 Game_Format: unspecified_game_format
 
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- instruction
-- outreach
-- professional_development
-- access
-- space_design
-- literacy
+Service_Area:
+- collections_and_access
+- learning_and_literacy
+Audience: not_applicable
 
-Audience: 
-- adults
-- students
-- librarians
-- academic_librarians
-- patrons
-
-Outcome: 
-- literacy
-- learning
-- social_connection
-- access
-- catalog_discovery
-
-Theme: 
-- access
-- cataloging
-- literacy
-- implementation_barriers
-- space
-- technology_access
-- outreach
-- social_connection
-- safety
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- novelty_is_not_enough
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

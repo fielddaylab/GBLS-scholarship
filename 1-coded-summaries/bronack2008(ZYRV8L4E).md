@@ -7,104 +7,23 @@ Zotero_Item_Key: ZYRV8L4E
 Better_BibTeX_Citation_Key: bronackPresencePedagogyTeaching
 Attachment_Key: NQX8NNL3
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: survey
+Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- survey
-- case_study
-- archival_analysis
+Service_Area:
+- learning_and_literacy
+- space_and_infrastructure
+- collections_and_access
+Audience: students
 
-Methodology: 
-- survey
-- case_study
-
-Library_Context: 
-- public_library
-- museum_archive
-- cultural_heritage_institution
-
-Game_Format: 
-- board_game
-- card_game
-- virtual_reality
-- toy
-- puzzle
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- discovery
-- instruction
-- staff_training
-- community_building
-- access
-- space_design
-- teen_services
-- research_support
-- collection_development
-- cultural_heritage
-- archival_stewardship
-
-Audience: 
-- teens
-- students
-- graduate_students
-- faculty
-- librarians
-- families
-- researchers
-- older_adults
-- patrons
-
-Outcome: 
-- learning
-- social_connection
-- community_building
-- access
-- discovery
-- catalog_discovery
-- research_support
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- metadata
-- cataloging
-- cultural_heritage
-- teen_engagement
-- staff_training
-- space
-- technology_access
-- community
-- local_adaptation
-- play
-- social_connection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- implementation_model
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-
+Intended_Outcome:
+- belonging_and_community
+- discovery_and_advisory
+- learning_and_literacy
 Coding_Confidence: high
 
 Contributions:

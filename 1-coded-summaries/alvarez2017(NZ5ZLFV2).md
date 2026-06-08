@@ -7,76 +7,20 @@ Zotero_Item_Key: NZ5ZLFV2
 Better_BibTeX_Citation_Key: alvarezEngagingStudentsLibrary2017
 Attachment_Key: LH9P8MRB
 
-Source_Type: 
-- case_study
-- empirical_study
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
 Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: multiple_library_types
+Game_Format: multiple_game_formats
 
-Methodology: unspecified
+Service_Area:
+- programming_and_facilitation
+- professional_capacity
+Audience: not_applicable
 
-Library_Context: school_library
-
-Game_Format: 
-- digital_game
-- tabletop_game
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- youth_services
-- teen_services
-- assessment
-- advocacy
-- collection_development
-- facilitation
-
-Audience: 
-- teens
-- youth
-- students
-- families
-- older_adults
-- players
-
-Outcome: 
-- engagement
-- critical_reflection
-- learning
-- social_connection
-- advisory_quality
-- staff_confidence
-- collaboration
-- problem_solving
-- critical_thinking
-- resilience
-
-Theme: 
-- collaboration
-- facilitation
-- advisory
-- teen_engagement
-- youth_voice
-- local_adaptation
-- play
-- social_connection
-- assessment
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- advisory_framework
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

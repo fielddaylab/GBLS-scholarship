@@ -7,73 +7,21 @@ Zotero_Item_Key: NCPXFTAT
 Better_BibTeX_Citation_Key: LSHMWereYou2024
 Attachment_Key: 9GU3XWS2
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-- primary_artifact
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- board_game
-- tabletop_game
-- tabletop_roleplaying_game
-- roleplaying_game
+Service_Area:
+- discovery_and_advisory
+- community_and_inclusion
+- programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- community_building
-- youth_services
-- research_support
-- facilitation
-
-Audience: 
-- youth
-- gamers
-- patrons
-- players
-
-Outcome: 
-- learning
-- cognitive_learning
-- social_connection
-- community_building
-- advisory_quality
-- implementation_capacity
-- research_support
-
-Theme: 
-- facilitation
-- metadata
-- advisory
-- youth_voice
-- community
-- play
-- social_connection
-- safety
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

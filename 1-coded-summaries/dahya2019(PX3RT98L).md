@@ -7,85 +7,22 @@ Zotero_Item_Key: PX3RT98L
 Better_BibTeX_Citation_Key: negindahyaVirtualRealityPublic
 Attachment_Key: NHCXCGQC
 
-Source_Type: empirical_study
-
-Evidence_Type: 
-- survey
-- interview
-
-Methodology: 
-- survey
-- interviews
-- observation
-
+Source_Type: government_or_foundation_report
+Peer_Review: unknown
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: public_library
+Game_Format: virtual_or_augmented_reality
 
-Game_Format: 
-- video_game
-- virtual_reality
+Service_Area:
+- programming_and_facilitation
+- space_and_infrastructure
+Audience: underserved_or_special_population
 
-Service_Area: 
-- programming
-- orientation
-- outreach
-- staff_training
-- community_building
-- access
-- equity_inclusion
-- space_design
-- youth_services
-- research_support
-- facilitation
-
-Audience: 
-- youth
-- librarians
-- gamers
-- patrons
-
-Outcome: 
-- engagement
-- learning
-- social_connection
-- community_building
-- access
-- implementation_capacity
-- equity_access
-- research_support
-- orientation_skills
-
-Theme: 
-- facilitation
-- access
-- equity
-- youth_voice
-- staff_training
-- space
-- technology_access
-- community
-- outreach
-- orientation
-- local_adaptation
-- play
-- social_connection
-- safety
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- methodological_caution
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- novelty_is_not_enough
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
+Intended_Outcome:
+- equitable_access
+- learning_and_literacy
+- engagement_and_participation
 Coding_Confidence: high
 
 Contributions:

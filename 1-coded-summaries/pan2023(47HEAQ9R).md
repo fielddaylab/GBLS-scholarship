@@ -7,69 +7,20 @@ Zotero_Item_Key: 47HEAQ9R
 Better_BibTeX_Citation_Key: panEffectsGamebasedLearning2023
 Attachment_Key: G2AB8FIB
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: experiment
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
 Library_Context: non_library_context
-
 Game_Format: game_creation
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- instruction
-- information_literacy
-- staff_training
-- community_building
-- space_design
-- literacy
-- research_support
+Service_Area:
+- learning_and_literacy
+- creation_and_making
+Audience: students
 
-Audience: 
-- students
-- librarians
-- researchers
-- players
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- community_building
-- problem_solving
-- research_support
-
-Theme: 
-- literacy
-- staff_training
-- space
-- technology_access
-- community
-- play
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- exclusion_record
-- background_context
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- assess_local_demand_before_scaling
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

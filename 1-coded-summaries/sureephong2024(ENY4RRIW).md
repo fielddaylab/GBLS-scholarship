@@ -7,88 +7,18 @@ Zotero_Item_Key: ENY4RRIW
 Better_BibTeX_Citation_Key: sureephongExploringImpactGamified2024
 Attachment_Key: UDSR6P99
 
-Source_Type: 
-- literature_review
-- primary_artifact
-
-Evidence_Type: 
-- mixed_methods
-- experiment
-- literature_synthesis
-
-Methodology: 
-- mixed_methods
-- experimental_study
-- literature_review
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: academic_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- virtual_reality
-- augmented_reality
-- gamification
+Service_Area: learning_and_literacy
+Audience: students
 
-Service_Area: 
-- programming
-- preservation
-- instruction
-- information_literacy
-- orientation
-- access
-- space_design
-- literacy
-- research_support
-- assessment
-- facilitation
-
-Audience: 
-- students
-- faculty
-- librarians
-- library_staff
-
-Outcome: 
-- engagement
-- attendance
-- literacy
-- information_literacy
-- learning
-- affective_motivation
-- social_connection
-- access
-- research_support
-- orientation_skills
-
-Theme: 
-- facilitation
-- access
-- preservation
-- literacy
-- implementation_barriers
-- space
-- technology_access
-- orientation
-- local_adaptation
-- gamification
-- competition
-- social_connection
-- assessment
-
-Contribution_Type: 
-- infrastructure_metadata
-- literature_mapping
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: medium
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

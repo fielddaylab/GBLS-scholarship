@@ -7,66 +7,24 @@ Zotero_Item_Key: FE73J8WI
 Better_BibTeX_Citation_Key: GamesPlayChildhood2023
 Attachment_Key: MBGFGG5G
 
-Source_Type: 
-- literature_review
-- theoretical_work
-- primary_artifact
-
-Evidence_Type: 
-- interview
-- literature_synthesis
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type:
+- empirical_study
 - practitioner_reflection
-
-Methodology: 
-- interviews
-- literature_review
-
+Primary_Methodology: qualitative_study
 Library_Context: school_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- board_game
-- tabletop_game
-- tabletop_roleplaying_game
-- gamification
-- roleplaying_game
-
-Service_Area: 
-- programming
-- circulation
-- cataloging_metadata
-- mental_health
-- youth_services
-- teen_services
-
-Audience: 
+Service_Area:
+- community_and_inclusion
+- programming_and_facilitation
+Audience:
 - children
 - teens
-- youth
-- gamers
 
-Outcome: 
-- learning
-- social_connection
-- mental_health_awareness
-
-Theme: 
-- teen_engagement
-- youth_voice
-- mental_health
-- play
-- gamification
-- social_connection
-
-Contribution_Type: 
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-
-Design_Principles: advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

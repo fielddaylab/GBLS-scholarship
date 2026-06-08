@@ -7,59 +7,20 @@ Zotero_Item_Key: AJ7WNY5I
 Better_BibTeX_Citation_Key: 3RTSuperheroMedia2024
 Attachment_Key: ETA7BAVF
 
-Source_Type: 
-- theoretical_work
-- primary_artifact
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: non_library_context
+Game_Format: multiple_game_formats
 
-Evidence_Type: not_empirical
+Service_Area:
+- discovery_and_advisory
+- programming_and_facilitation
+Audience: not_applicable
 
-Methodology: unspecified
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- video_game
-- card_game
-- tabletop_roleplaying_game
-- virtual_reality
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- teen_services
-- literacy
-- research_support
-- assessment
-
-Audience: 
-- teens
-- librarians
-- gamers
-
-Outcome: 
-- literacy
-- advisory_quality
-- research_support
-
-Theme: 
-- advisory
-- literacy
-- teen_engagement
-- play
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- theoretical_argument
-- collection_development
-- advisory_framework
-- exclusion_record
-
-Design_Principles: advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

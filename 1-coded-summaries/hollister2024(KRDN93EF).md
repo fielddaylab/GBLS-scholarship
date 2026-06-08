@@ -7,78 +7,22 @@ Zotero_Item_Key: KRDN93EF
 Better_BibTeX_Citation_Key: hollisterVirtualLibrariesNew2024
 Attachment_Key: 7GIFL7EU
 
-Source_Type: 
-- case_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type:
 - empirical_study
-- historical_analysis
+- implementation_case
+Primary_Methodology: case_or_design_study
+Library_Context: multiple_library_types
+Game_Format: virtual_or_augmented_reality
 
-Evidence_Type: 
-- case_study
-- experiment
-- content_analysis
+Service_Area: collections_and_access
+Audience: general_public
 
-Methodology: 
-- case_study
-- content_analysis
-
-Library_Context: public_library
-
-Game_Format: 
-- virtual_reality
-- puzzle
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- staff_training
-- community_building
-- access
-- space_design
-- research_support
-- assessment
-- partnerships
-
-Audience: 
-- librarians
-- older_adults
-- patrons
-
-Outcome: 
-- social_connection
-- community_building
-- access
-- research_support
-
-Theme: 
-- access
-- staff_training
-- implementation_barriers
-- space
-- technology_access
-- community
-- play
-- social_connection
-- assessment
-- professional_identity
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- implementation_model
-- infrastructure_metadata
-- collection_development
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
+Intended_Outcome:
+- belonging_and_community
+- equitable_access
+- creativity_and_production
 Coding_Confidence: high
 
 Contributions:

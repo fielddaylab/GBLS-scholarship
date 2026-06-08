@@ -7,112 +7,29 @@ Zotero_Item_Key: LXYNXFMH
 Better_BibTeX_Citation_Key: goddardPublicLibrariesRespond2020
 Attachment_Key: YQXNSV2P
 
-Source_Type: 
-- case_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type:
 - empirical_study
-- historical_analysis
-- theoretical_work
-- primary_artifact
-
-Evidence_Type: 
-- survey
-- interview
-
-Methodology: 
-- survey
-- interviews
-- historical_analysis
-- observation
-
+- implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- board_game
-- tabletop_game
-- virtual_reality
-- gamification
-- toy
-- puzzle
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- preservation
-- community_building
-- access
-- equity_inclusion
-- space_design
-- youth_services
-- teen_services
-- literacy
-- makerspace
-- advocacy
-- partnerships
-- facilitation
-
-Audience: 
+Service_Area:
+- community_and_inclusion
+- programming_and_facilitation
+- collections_and_access
+Audience:
 - children
-- teens
-- youth
-- adults
-- librarians
-- library_staff
+- young_adults
 - families
-- older_adults
-- patrons
 
-Outcome: 
-- engagement
-- attendance
-- literacy
-- digital_literacy
-- learning
-- social_connection
-- belonging
-- community_building
-- access
-- usage
-- equity_access
-- creativity
-
-Theme: 
-- facilitation
-- access
-- equity
-- preservation
-- literacy
-- teen_engagement
-- youth_voice
-- funding
-- space
-- technology_access
-- community
-- play
-- gamification
-- social_connection
-- safety
-- makerspace
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- exclusion_record
-- equity_analysis
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- preservation_requires_relationship_metadata
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome:
+- belonging_and_community
+- engagement_and_participation
+- equitable_access
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

@@ -7,68 +7,19 @@ Zotero_Item_Key: PHUZSJZD
 Better_BibTeX_Citation_Key: smithDiceySituationStudy2024
 Attachment_Key: 9JTM8XZY
 
-Source_Type: 
-- practitioner_guide
-- empirical_study
-- historical_analysis
-
-Evidence_Type: not_empirical
-
-Methodology: none
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: content_or_artifact_analysis
+Primary_Methodology: content_analysis
 Library_Context: academic_library
+Game_Format: tabletop_roleplaying_game
 
-Game_Format: 
-- video_game
-- board_game
-- card_game
-- tabletop_game
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- roleplaying_game
+Service_Area:
+- collections_and_access
+- discovery_and_advisory
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- discovery
-- staff_training
-- research_support
-
-Audience: 
-- patrons
-- players
-
-Outcome: 
-- discovery
-- catalog_discovery
-- research_support
-
-Theme: 
-- collaboration
-- metadata
-- cataloging
-- staff_training
-- local_adaptation
-- play
-- controlled_vocabulary
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- practitioner_guidance
-- infrastructure_metadata
-- collection_development
-- training_model
-
-Design_Principles: 
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

@@ -7,69 +7,20 @@ Zotero_Item_Key: LZXZ98KR
 Better_BibTeX_Citation_Key: langinLibraryLanguageGame2021
 Attachment_Key: ZCH5JX2B
 
-Source_Type: 
-- literature_review
-- theoretical_work
-
-Evidence_Type: 
-- literature_synthesis
-- theoretical
-
-Methodology: 
-- literature_review
-- theoretical_analysis
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: unspecified_library_context
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- tabletop_game
-- gamification
+Service_Area:
+- collections_and_access
+- learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- instruction
-- information_literacy
-- access
-- literacy
-
-Audience: 
-- students
-- librarians
-
-Outcome: 
-- literacy
-- information_literacy
-- learning
-- social_connection
-- access
-- catalog_discovery
-
-Theme: 
-- access
-- metadata
-- cataloging
-- literacy
-- play
-- gamification
-- social_connection
-- controlled_vocabulary
-
-Contribution_Type: 
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- access_requires_infrastructure
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

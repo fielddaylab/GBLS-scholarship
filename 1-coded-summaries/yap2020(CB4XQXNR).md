@@ -7,82 +7,17 @@ Zotero_Item_Key: CB4XQXNR
 Better_BibTeX_Citation_Key: yapAmazingLibraryRace2020
 Attachment_Key: J4FKIFWH
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-
-Evidence_Type: literature_synthesis
-
-Methodology: 
-- literature_review
-- observation
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: academic_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- gamification
-- serious_game
-- multiple_game_formats
+Service_Area: learning_and_literacy
+Audience: students
 
-Service_Area: 
-- programming
-- collections
-- discovery
-- instruction
-- information_literacy
-- orientation
-- staff_training
-- access
-- space_design
-- literacy
-- research_support
-- assessment
-- facilitation
-
-Audience: 
-- students
-- families
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- misinformation_awareness
-- learning
-- access
-- discovery
-- implementation_capacity
-- research_support
-- orientation_skills
-
-Theme: 
-- misinformation
-- collaboration
-- facilitation
-- access
-- literacy
-- staff_training
-- space
-- orientation
-- local_adaptation
-- play
-- gamification
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- literature_mapping
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-
+Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
 Contributions:

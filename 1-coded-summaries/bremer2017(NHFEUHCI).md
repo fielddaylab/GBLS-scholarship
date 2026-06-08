@@ -7,84 +7,22 @@ Zotero_Item_Key: NHFEUHCI
 Better_BibTeX_Citation_Key: bremerGamesPeoplePlay2017
 Attachment_Key: KE2LT7BN
 
-Source_Type: 
-- case_study
-- empirical_study
-- primary_artifact
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
+Library_Context: multiple_library_types
+Game_Format: tabletop_game
 
-Evidence_Type: 
-- survey
-- practitioner_reflection
-
-Methodology: survey
-
-Library_Context: 
-- public_library
-- academic_library
-- multiple_library_types
-
-Game_Format: 
-- card_game
-- tabletop_game
-
-Service_Area: 
-- programming
-- collections
-- outreach
-- community_building
-- access
-- equity_inclusion
-- teen_services
-- assessment
-- partnerships
-- facilitation
-
-Audience: 
+Service_Area:
+- community_and_inclusion
+- programming_and_facilitation
+Audience:
 - children
 - teens
-- adults
 - students
-- librarians
-- families
 
-Outcome: 
-- critical_reflection
-- social_connection
-- belonging
-- community_building
-- access
-- implementation_capacity
-- collaboration
-
-Theme: 
-- collaboration
-- facilitation
-- access
-- inclusion
-- teen_engagement
-- implementation_barriers
-- community
-- outreach
-- local_adaptation
-- play
-- social_connection
-- assessment
-- narrative
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- equity_analysis
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-
+Intended_Outcome: belonging_and_community
 Coding_Confidence: high
 
 Contributions:

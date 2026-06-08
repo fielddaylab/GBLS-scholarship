@@ -7,57 +7,18 @@ Zotero_Item_Key: 849MR2XQ
 Better_BibTeX_Citation_Key: CreatingTTRPGResources2023
 Attachment_Key: 9S9GL8YI
 
-Source_Type: 
-- empirical_study
-- primary_artifact
-
-Evidence_Type: experiment
-
-Methodology: unspecified
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: tabletop_roleplaying_game
 
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- game_creation
-- roleplaying_game
+Service_Area: programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- space_design
-- research_support
-- assessment
-- facilitation
-
-Audience: 
-- librarians
-- gamers
-- patrons
-
-Outcome: 
-- learning
-- implementation_capacity
-- research_support
-
-Theme: 
-- facilitation
-- space
-- play
-- safety
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- assess_local_demand_before_scaling
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,68 +7,22 @@ Zotero_Item_Key: 7VH8M8XR
 Better_BibTeX_Citation_Key: LSHMShadowdarkRPG2024
 Attachment_Key: YNYXX8TS
 
-Source_Type: 
-- literature_review
-- case_study
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type:
 - empirical_study
-- primary_artifact
-
-Evidence_Type: 
-- interview
-- case_study
-- literature_synthesis
 - practitioner_reflection
-
-Methodology: 
-- interviews
-- case_study
-- literature_review
-
+Primary_Methodology: qualitative_study
 Library_Context: unspecified_library_context
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- tabletop_game
-- tabletop_roleplaying_game
-- puzzle
+Service_Area:
+- discovery_and_advisory
+- programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- advisory
-- discovery
-- facilitation
-
-Audience: 
-- families
-- gamers
-- players
-
-Outcome: 
-- discovery
-- advisory_quality
-- implementation_capacity
-
-Theme: 
-- facilitation
-- advisory
-- cross_media
-- play
-- safety
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- collection_development
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: discovery_and_advisory
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

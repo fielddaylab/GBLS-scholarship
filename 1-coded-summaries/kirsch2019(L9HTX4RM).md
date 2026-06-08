@@ -7,70 +7,21 @@ Zotero_Item_Key: L9HTX4RM
 Better_BibTeX_Citation_Key: kirschVirtualRealityNext2019
 Attachment_Key: X43TQ6IU
 
-Source_Type: empirical_study
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
 Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: unspecified_library_context
+Game_Format: virtual_or_augmented_reality
 
-Methodology: unspecified
+Service_Area:
+- space_and_infrastructure
+- collections_and_access
+- learning_and_literacy
+Audience: not_applicable
 
-Library_Context: academic_library
-
-Game_Format: virtual_reality
-
-Service_Area: 
-- programming
-- circulation
-- information_literacy
-- orientation
-- staff_training
-- access
-- space_design
-- literacy
-- makerspace
-- assessment
-
-Audience: 
-- students
-- patrons
-
-Outcome: 
-- literacy
-- information_literacy
-- critical_reflection
-- social_connection
-- access
-- implementation_capacity
-- usage
-- orientation_skills
-
-Theme: 
-- access
-- literacy
-- staff_training
-- implementation_barriers
-- space
-- technology_access
-- orientation
-- local_adaptation
-- social_connection
-- safety
-- assessment
-- makerspace
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- novelty_is_not_enough
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

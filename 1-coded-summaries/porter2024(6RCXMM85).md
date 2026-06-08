@@ -7,82 +7,21 @@ Zotero_Item_Key: 6RCXMM85
 Better_BibTeX_Citation_Key: RTRTGrantsGames2024
 Attachment_Key: V3L5RKEN
 
-Source_Type: 
-- professional_column
-- literature_review
-- case_study
-- empirical_study
-
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
-
-Methodology: 
-- literature_review
-- proposal
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: school_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- tabletop_game
-- virtual_reality
+Service_Area:
+- programming_and_facilitation
+- collections_and_access
+- cultural_heritage_and_research
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- discovery
-- preservation
-- instruction
-- staff_training
-- community_building
-- access
-- space_design
-- research_support
-- assessment
-
-Audience: 
-- librarians
-- gamers
-- patrons
-
-Outcome: 
-- community_building
-- access
-- discovery
-- preservation_access
-- implementation_capacity
-- research_support
-
-Theme: 
-- access
-- metadata
-- preservation
-- staff_training
-- funding
-- space
-- community
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- practitioner_guidance
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

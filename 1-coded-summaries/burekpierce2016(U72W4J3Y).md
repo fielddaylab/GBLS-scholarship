@@ -7,105 +7,17 @@ Zotero_Item_Key: U72W4J3Y
 Better_BibTeX_Citation_Key: burekpierceReignChildrenRole2016
 Attachment_Key: RZ6X9FPA
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: content_or_artifact_analysis
+Primary_Methodology: historical_analysis
+Library_Context: public_library
+Game_Format: toy_or_open_play
 
-Evidence_Type: 
-- survey
-- experiment
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Methodology: 
-- survey
-- historical_analysis
-
-Library_Context: 
-- public_library
-- academic_library
-- multiple_library_types
-
-Game_Format: 
-- toy
-- puzzle
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- instruction
-- information_literacy
-- orientation
-- community_building
-- access
-- space_design
-- youth_services
-- teen_services
-- literacy
-- assessment
-
-Audience: 
-- children
-- teens
-- youth
-- adults
-- students
-- librarians
-- academic_librarians
-- families
-- older_adults
-- players
-
-Outcome: 
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- social_connection
-- belonging
-- community_building
-- access
-- catalog_discovery
-- implementation_capacity
-- creativity
-- orientation_skills
-
-Theme: 
-- access
-- cataloging
-- literacy
-- teen_engagement
-- youth_voice
-- implementation_barriers
-- space
-- technology_access
-- community
-- orientation
-- local_adaptation
-- play
-- social_connection
-- assessment
-- professional_identity
-- narrative
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

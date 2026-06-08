@@ -1,8 +1,6 @@
 todos
 
-break editing into different peices
-
-develop some summary graphs
+the topics codebook needs to be made more explicit, articles are being assigned more codes in topic areas than they should
 
 develop a process to regulalry search google scholor using an inteligent keyword search
 - begin search using search_keywords in 0-human-resources
@@ -12,7 +10,6 @@ develop a process to regulalry search google scholor using an inteligent keyword
 - add to 'incoming' folder in zotero
 - pre-review the paper using a prereview rubric
 - if score > X add to 'pre-review-complete', else 'pre-review-failed'
-
 
 develop a full RAG
 

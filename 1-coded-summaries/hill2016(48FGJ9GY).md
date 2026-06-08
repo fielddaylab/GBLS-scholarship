@@ -7,108 +7,19 @@ Zotero_Item_Key: 48FGJ9GY
 Better_BibTeX_Citation_Key: hillPlayUseGames2016
 Attachment_Key: Y3FGY9X9
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
-- primary_artifact
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: multiple_library_types
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- survey
-- case_study
-- literature_synthesis
+Service_Area:
+- learning_and_literacy
+- collections_and_access
+Audience: not_applicable
 
-Methodology: 
-- survey
-- case_study
-- literature_review
-- historical_analysis
-
-Library_Context: 
-- public_library
-- academic_library
-- school_library
-- multiple_library_types
-
-Game_Format: 
-- video_game
-- digital_game
-- board_game
-- tabletop_game
-- gamification
-- game_creation
-- toy
-- puzzle
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- information_literacy
-- orientation
-- community_building
-- access
-- space_design
-- teen_services
-- literacy
-- media_literacy
-- assessment
-- advocacy
-- partnerships
-
-Audience: 
-- children
-- teens
-- librarians
-- patrons
-- players
-
-Outcome: 
-- literacy
-- information_literacy
-- media_literacy
-- learning
-- affective_motivation
-- social_connection
-- community_building
-- access
-- implementation_capacity
-- collaboration
-- problem_solving
-- critical_thinking
-- orientation_skills
-
-Theme: 
-- collaboration
-- access
-- literacy
-- teen_engagement
-- space
-- community
-- orientation
-- local_adaptation
-- play
-- gamification
-- social_connection
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- implementation_model
-- theoretical_argument
-- collection_development
-- literature_mapping
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

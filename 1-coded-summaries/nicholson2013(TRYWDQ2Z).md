@@ -7,106 +7,21 @@ Zotero_Item_Key: TRYWDQ2Z
 Better_BibTeX_Citation_Key: nicholsonPlayingHistoryGames2013
 Attachment_Key: MDH7RASX
 
-Source_Type: 
-- thesis
-- empirical_study
-- historical_analysis
-- theoretical_work
-
-Evidence_Type: 
-- survey
-- archival_analysis
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type:
+- content_or_artifact_analysis
 - practitioner_reflection
+Primary_Methodology: historical_analysis
+Library_Context: multiple_library_types
+Game_Format: toy_or_open_play
 
-Methodology: 
-- survey
-- historical_analysis
+Service_Area:
+- programming_and_facilitation
+- collections_and_access
+Audience: not_applicable
 
-Library_Context: 
-- public_library
-- academic_library
-- school_library
-- museum_archive
-- multiple_library_types
-
-Game_Format: 
-- video_game
-- board_game
-- card_game
-- tabletop_game
-- tabletop_roleplaying_game
-- virtual_reality
-- gamification
-- game_creation
-- toy
-- puzzle
-- roleplaying_game
-- multiple_game_formats
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- instruction
-- outreach
-- community_building
-- access
-- space_design
-- teen_services
-- literacy
-- research_support
-- archival_stewardship
-
-Audience: 
-- children
-- teens
-- adults
-- undergraduate_students
-- graduate_students
-- older_adults
-- patrons
-- players
-
-Outcome: 
-- engagement
-- literacy
-- digital_literacy
-- learning
-- affective_motivation
-- social_connection
-- community_building
-- access
-- research_support
-
-Theme: 
-- facilitation
-- access
-- literacy
-- teen_engagement
-- space
-- community
-- outreach
-- play
-- gamification
-- social_connection
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

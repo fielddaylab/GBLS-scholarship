@@ -7,68 +7,18 @@ Zotero_Item_Key: ZR7WBBYF
 Better_BibTeX_Citation_Key: lanGuestEditorialTechnology2018
 Attachment_Key: WR73956X
 
-Source_Type: literature_review
-
-Evidence_Type: literature_synthesis
-
-Methodology: literature_review
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: cultural_heritage_institution
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- digital_game
-- augmented_reality
-- gamification
+Service_Area: learning_and_literacy
+Audience: students
 
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- instruction
-- information_literacy
-- access
-- literacy
-- research_support
-- cultural_heritage
-
-Audience: 
-- students
-- librarians
-
-Outcome: 
-- literacy
-- information_literacy
-- learning
-- affective_motivation
-- social_connection
-- access
-- advisory_quality
-- research_support
-
-Theme: 
-- access
-- metadata
-- cultural_heritage
-- advisory
-- literacy
-- technology_access
-- play
-- social_connection
-
-Contribution_Type: 
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- access_requires_infrastructure
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

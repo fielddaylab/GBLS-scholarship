@@ -7,63 +7,20 @@ Zotero_Item_Key: 5Z6P5ADC
 Better_BibTeX_Citation_Key: LSHMStreetMagic2023
 Attachment_Key: F36HCJBR
 
-Source_Type: 
-- literature_review
-- primary_artifact
-
-Evidence_Type: 
-- literature_synthesis
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type:
+- empirical_study
 - practitioner_reflection
-
-Methodology: 
-- interviews
-- literature_review
-
+Primary_Methodology: qualitative_study
 Library_Context: unspecified_library_context
-
 Game_Format: tabletop_roleplaying_game
 
-Service_Area: 
-- programming
-- advisory
-- cataloging_metadata
-- discovery
-- community_building
-- facilitation
+Service_Area: discovery_and_advisory
+Audience: not_applicable
 
-Audience: 
-- gamers
-- players
-
-Outcome: 
-- community_building
-- discovery
-- advisory_quality
-- implementation_capacity
-
-Theme: 
-- collaboration
-- facilitation
-- metadata
-- advisory
-- community
-- play
-- safety
-
-Contribution_Type: 
-- infrastructure_metadata
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: discovery_and_advisory
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

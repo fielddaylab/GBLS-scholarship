@@ -7,68 +7,17 @@ Zotero_Item_Key: 87E2V4JF
 Better_BibTeX_Citation_Key: degroatHistoryVideoGame2015
 Attachment_Key: YDPD2AYT
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-- primary_artifact
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: content_or_artifact_analysis
+Primary_Methodology: historical_analysis
+Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Evidence_Type: archival_analysis
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Methodology: historical_analysis
-
-Library_Context: museum_archive
-
-Game_Format: video_game
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- discovery
-- preservation
-- access
-- research_support
-- collection_development
-- archival_stewardship
-
-Audience: patrons
-
-Outcome: 
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- preservation_access
-- research_support
-
-Theme: 
-- access
-- metadata
-- cataloging
-- preservation
-- advisory
-- cross_media
-- technology_access
-- local_adaptation
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

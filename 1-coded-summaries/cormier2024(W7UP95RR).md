@@ -7,63 +7,18 @@ Zotero_Item_Key: W7UP95RR
 Better_BibTeX_Citation_Key: LSHMDesignYour2024
 Attachment_Key: E2D2R2Y4
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
-- primary_artifact
-
-Evidence_Type: 
-- case_study
-- literature_synthesis
-
-Methodology: 
-- case_study
-- literature_review
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- game_creation
+Service_Area: programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- advisory
-- facilitation
-
-Audience: 
-- librarians
-- teachers
-- gamers
-- players
-
-Outcome: advisory_quality
-
-Theme: 
-- facilitation
-- advisory
-- play
-- safety
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- implementation_model
-- theoretical_argument
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

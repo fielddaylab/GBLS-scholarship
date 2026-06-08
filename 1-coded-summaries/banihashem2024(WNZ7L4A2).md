@@ -7,77 +7,21 @@ Zotero_Item_Key: WNZ7L4A2
 Better_BibTeX_Citation_Key: banihashemLearningAnalyticsOnline2024
 Attachment_Key: U9RCHYA2
 
-Source_Type: 
-- literature_review
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
+Library_Context: non_library_context
+Game_Format: escape_room_or_breakout_box
 
-Evidence_Type: 
-- survey
-- interview
-- literature_synthesis
+Service_Area:
+- learning_and_literacy
+- discovery_and_advisory
+- professional_capacity
+Audience: not_applicable
 
-Methodology: 
-- survey
-- interviews
-- literature_review
-
-Library_Context: academic_library
-
-Game_Format: escape_room
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- orientation
-- equity_inclusion
-- research_support
-- assessment
-
-Audience: 
-- librarians
-- older_adults
-- patrons
-
-Outcome: 
-- engagement
-- attendance
-- critical_reflection
-- learning
-- cognitive_learning
-- affective_motivation
-- social_connection
-- implementation_capacity
-- problem_solving
-- research_support
-- orientation_skills
-
-Theme: 
-- inclusion
-- metadata
-- implementation_barriers
-- technology_access
-- orientation
-- play
-- social_connection
-- assessment
-- reflection
-
-Contribution_Type: 
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-- methodological_caution
-- equity_analysis
-
-Design_Principles: 
-- description_shapes_discovery
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

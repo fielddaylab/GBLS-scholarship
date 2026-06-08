@@ -7,73 +7,20 @@ Zotero_Item_Key: M983BURB
 Better_BibTeX_Citation_Key: taylorDepictionLibraryUse2024
 Attachment_Key: JVANTQZF
 
-Source_Type: 
-- case_study
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: content_or_artifact_analysis
+Primary_Methodology: content_analysis
+Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Evidence_Type: 
-- content_analysis
-- archival_analysis
+Service_Area:
+- collections_and_access
+- community_and_inclusion
+- cultural_heritage_and_research
+Audience: not_applicable
 
-Methodology: content_analysis
-
-Library_Context: museum_archive
-
-Game_Format: video_game
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- community_building
-- access
-- space_design
-- research_support
-- archival_stewardship
-
-Audience: 
-- librarians
-- families
-- researchers
-- patrons
-- players
-
-Outcome: 
-- learning
-- social_connection
-- belonging
-- community_building
-- access
-- advisory_quality
-- research_support
-
-Theme: 
-- access
-- advisory
-- implementation_barriers
-- space
-- community
-- local_adaptation
-- play
-- social_connection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

@@ -7,72 +7,23 @@ Zotero_Item_Key: RTWHJ98M
 Better_BibTeX_Citation_Key: simpsonLearningFunBoard2023
 Attachment_Key: GT5EN7ZJ
 
-Source_Type: 
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
+Library_Context: non_library_context
+Game_Format: tabletop_game
 
-Evidence_Type: experiment
+Service_Area:
+- learning_and_literacy
+- professional_capacity
+- programming_and_facilitation
+Audience: students
 
-Methodology: unspecified
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- board_game
-- tabletop_game
-
-Service_Area: 
-- programming
-- collections
-- space_design
-- mental_health
-- partnerships
-
-Audience: 
-- adults
-- students
-- undergraduate_students
-- graduate_students
-- faculty
-
-Outcome: 
-- engagement
-- learning
-- cognitive_learning
-- affective_motivation
-- social_connection
-- belonging
-- staff_confidence
-- implementation_capacity
-- mental_health_awareness
-- collaboration
-- creativity
-- critical_thinking
-
-Theme: 
-- collaboration
-- facilitation
-- mental_health
-- space
-- play
-- competition
-- social_connection
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- exclusion_record
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- staff_confidence_shapes_adoption
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome:
+- learning_and_literacy
+- institutional_capacity
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

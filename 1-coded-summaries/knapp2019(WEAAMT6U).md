@@ -7,62 +7,18 @@ Zotero_Item_Key: WEAAMT6U
 Better_BibTeX_Citation_Key: knappUsingTechnologyFoster2019
 Attachment_Key: CDJGR2MW
 
-Source_Type: 
-- empirical_study
-- primary_artifact
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
 Evidence_Type: practitioner_reflection
-
-Methodology: unspecified
-
+Primary_Methodology: none
 Library_Context: school_library
+Game_Format: digital_game
 
-Game_Format: video_game
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- instruction
-- information_literacy
-- orientation
-- access
-- space_design
-- teen_services
-- literacy
-
-Audience: 
-- teens
-- students
-- librarians
-- school_librarians
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- affective_motivation
-- social_connection
-- access
-- orientation_skills
-
-Theme: 
-- access
-- literacy
-- teen_engagement
-- space
-- technology_access
-- orientation
-- play
-- social_connection
-
-Contribution_Type: 
-- empirical_evidence
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

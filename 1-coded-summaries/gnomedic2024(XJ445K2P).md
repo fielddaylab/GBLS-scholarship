@@ -7,64 +7,20 @@ Zotero_Item_Key: XJ445K2P
 Better_BibTeX_Citation_Key: LSHMTTRPGSummer2024
 Attachment_Key: YA3ETSBQ
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- primary_artifact
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: non_library_context
+Game_Format: tabletop_roleplaying_game
 
-Evidence_Type: 
-- case_study
-- literature_synthesis
-- practitioner_reflection
+Service_Area:
+- discovery_and_advisory
+- programming_and_facilitation
+Audience: not_applicable
 
-Methodology: 
-- case_study
-- literature_review
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-
-Service_Area: 
-- programming
-- advisory
-- discovery
-- facilitation
-
-Audience: 
-- librarians
-- gamers
-
-Outcome: 
-- critical_reflection
-- social_connection
-- discovery
-- advisory_quality
-
-Theme: 
-- facilitation
-- advisory
-- play
-- social_connection
-- safety
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

@@ -7,64 +7,17 @@ Zotero_Item_Key: JQNUI7FL
 Better_BibTeX_Citation_Key: coonanBestWayLearn2019
 Attachment_Key: F5MPZAME
 
-Source_Type: 
-- case_study
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
+Library_Context: multiple_library_types
+Game_Format: multiple_game_formats
 
-Evidence_Type: case_study
+Service_Area: learning_and_literacy
+Audience: general_public
 
-Methodology: 
-- interviews
-- case_study
-
-Library_Context: 
-- public_library
-- school_library
-- multiple_library_types
-
-Game_Format: 
-- video_game
-- game_creation
-
-Service_Area: 
-- programming
-- instruction
-- information_literacy
-- orientation
-- literacy
-- media_literacy
-- assessment
-
-Audience: 
-- gamers
-- patrons
-- players
-
-Outcome: 
-- literacy
-- information_literacy
-- media_literacy
-- learning
-- collaboration
-- problem_solving
-- orientation_skills
-
-Theme: 
-- collaboration
-- literacy
-- orientation
-- play
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- implementation_model
-- theoretical_argument
-
-Design_Principles: collaboration_supports_reflection
-
+Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
 Contributions:

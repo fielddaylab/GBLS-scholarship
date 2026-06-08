@@ -7,88 +7,26 @@ Zotero_Item_Key: UATCSTL5
 Better_BibTeX_Citation_Key: leeLibrarianPerspectivesRole2020
 Attachment_Key: 6EEUF56X
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-- primary_artifact
-
-Evidence_Type: 
-- survey
-- interview
-- experiment
-
-Methodology: 
-- survey
-- interviews
-- historical_analysis
-- observation
-- participatory_design
-
+Source_Type: conference_paper
+Peer_Review: editorial_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: mixed_methods
 Library_Context: public_library
+Game_Format: virtual_or_augmented_reality
 
-Game_Format: virtual_reality
-
-Service_Area: 
-- programming
-- instruction
-- outreach
-- community_building
-- access
-- equity_inclusion
-- space_design
-- wellness
-
-Audience: 
+Service_Area:
+- community_and_inclusion
+- space_and_infrastructure
+- learning_and_literacy
+Audience:
 - children
-- adults
-- librarians
+- young_adults
 - families
-- marginalized_communities
-- older_adults
-- patrons
 
-Outcome: 
-- engagement
-- learning
-- cognitive_learning
-- social_connection
-- community_building
-- access
-- implementation_capacity
-- wellness
-- equity_access
-
-Theme: 
-- access
-- equity
-- inclusion
-- co_design
-- wellness
-- implementation_barriers
-- space
-- technology_access
-- community
-- outreach
-- local_adaptation
-- play
-- social_connection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- methodological_caution
-- equity_analysis
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-- co_design_supports_local_relevance
-- avoid_overclaiming_evidence
-
+Intended_Outcome:
+- equitable_access
+- engagement_and_participation
+- institutional_capacity
 Coding_Confidence: high
 
 Contributions:

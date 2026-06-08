@@ -7,70 +7,21 @@ Zotero_Item_Key: 2QU6TCDA
 Better_BibTeX_Citation_Key: bakerVideoGamesTheir2014
 Attachment_Key: AHX2N6VF
 
-Source_Type: 
-- literature_review
-- thesis
-- theoretical_work
-
-Evidence_Type: literature_synthesis
-
-Methodology: literature_review
-
+Source_Type: dissertation_or_thesis
+Peer_Review: unknown
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: non_library_context
+Game_Format: digital_game
 
-Game_Format: video_game
+Service_Area:
+- collections_and_access
+- discovery_and_advisory
+- learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- preservation
-- instruction
-- access
-- equity_inclusion
-
-Audience: 
-- students
-- library_staff
-
-Outcome: 
-- engagement
-- learning
-- social_connection
-- access
-- advisory_quality
-- preservation_access
-- problem_solving
-
-Theme: 
-- access
-- inclusion
-- metadata
-- preservation
-- advisory
-- play
-- social_connection
-
-Contribution_Type: 
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- literature_mapping
-- exclusion_record
-- background_context
-- equity_analysis
-
-Design_Principles: 
-- access_requires_infrastructure
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

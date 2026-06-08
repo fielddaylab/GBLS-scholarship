@@ -7,71 +7,22 @@ Zotero_Item_Key: XARJBCLY
 Better_BibTeX_Citation_Key: leeQualitativeInvestigationUsers2016
 Attachment_Key: 4LQ2ZEB8
 
-Source_Type: empirical_study
-
-Evidence_Type: interview
-
-Methodology: interviews
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
 Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Game_Format: 
-- video_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- discovery
-- instruction
-- access
-- research_support
-- collection_development
-
-Audience: 
+Service_Area:
+- discovery_and_advisory
+- collections_and_access
+Audience:
 - children
 - students
-- librarians
-- gamers
-- developers
-- patrons
-- players
 
-Outcome: 
-- learning
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- creativity
-- research_support
-
-Theme: 
-- access
-- metadata
-- cataloging
-- advisory
-- play
-- competition
-- professional_identity
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-
-Design_Principles: 
-- access_requires_infrastructure
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: discovery_and_advisory
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

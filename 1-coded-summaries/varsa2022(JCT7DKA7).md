@@ -7,55 +7,18 @@ Zotero_Item_Key: JCT7DKA7
 Better_BibTeX_Citation_Key: varsaOconeeCountyLibrary2022
 Attachment_Key: MP63LALM
 
-Source_Type: empirical_study
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
 Evidence_Type: practitioner_reflection
-
-Methodology: unspecified
-
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: tabletop_game
 
-Game_Format: 
-- video_game
-- board_game
+Service_Area: programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- community_building
-- access
-- marketing
-- partnerships
-- facilitation
-
-Audience: unspecified_audience
-
-Outcome: 
-- attendance
-- learning
-- belonging
-- community_building
-- access
-- creativity
-
-Theme: 
-- facilitation
-- access
-- community
-- local_adaptation
-- play
-- safety
-
-Contribution_Type: 
-- empirical_evidence
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

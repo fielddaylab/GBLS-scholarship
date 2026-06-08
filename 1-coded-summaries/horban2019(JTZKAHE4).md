@@ -7,69 +7,17 @@ Zotero_Item_Key: JTZKAHE4
 Better_BibTeX_Citation_Key: horbanLibraryGameTeaching2019
 Attachment_Key: UBJHVFGK
 
-Source_Type: 
-- thesis
-- case_study
-- empirical_study
-- theoretical_work
-- primary_artifact
-
-Evidence_Type: 
-- survey
-- content_analysis
-
-Methodology: 
-- survey
-- content_analysis
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: survey
 Library_Context: academic_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- digital_game
-- gamification
+Service_Area: learning_and_literacy
+Audience: students
 
-Service_Area: 
-- circulation
-- cataloging_metadata
-- instruction
-- information_literacy
-- orientation
-- literacy
-- research_support
-- assessment
-
-Audience: 
-- students
-- librarians
-- academic_librarians
-- families
-- patrons
-
-Outcome: 
-- literacy
-- information_literacy
-- learning
-- implementation_capacity
-- research_support
-- orientation_skills
-
-Theme: 
-- literacy
-- orientation
-- local_adaptation
-- gamification
-- competition
-- assessment
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-
-Design_Principles: local_context_shapes_program_fit
-
+Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
 Contributions:

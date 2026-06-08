@@ -1,63 +1,23 @@
 # Squire, K. D. (2008). Video-game literacy: A literacy of expertise. In J. Coiro, M. Knobel, C. Lankshear, & D. J. Leu (Eds.), *Handbook of research on new literacies* (pp. 639-673). Lawrence Erlbaum Associates.
 
 ## Metadata
-
 Citation_Key: squireRUNNINGHEADVideogames2007
 Year: 2008
 Zotero_Item_Key: VGGW8GCF
 Better_BibTeX_Citation_Key: squireRUNNINGHEADVideogames2007
 Attachment_Key: 8FJWZQJD
 
-Source_Type:
-- literature_review
-- theoretical_work
-
-Evidence_Type:
-- literature_synthesis
-- theoretical
-- secondary_source
-
-Methodology:
-- literature_review
-- theoretical_analysis
-
+Source_Type: book_chapter
+Peer_Review: editorial_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: non_library_context
+Game_Format: digital_game
 
-Game_Format:
-- video_game
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area:
-- literacy
-- media_literacy
-- instruction
-
-Audience:
-- researchers
-- teachers
-- students
-- players
-
-Outcome:
-- literacy
-- media_literacy
-- learning
-- critical_reflection
-
-Theme:
-- literacy
-- play
-- narrative
-- community
-
-Contribution_Type:
-- literature_mapping
-- theoretical_argument
-- methodological_caution
-
-Design_Principles:
-- collaboration_supports_reflection
-- technology_should_serve_service_goals
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 ## Summary

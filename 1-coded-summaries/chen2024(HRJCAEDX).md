@@ -7,69 +7,22 @@ Zotero_Item_Key: HRJCAEDX
 Better_BibTeX_Citation_Key: chenGamebasedAugmentedReality2024
 Attachment_Key: E3HU594P
 
-Source_Type: 
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
+Library_Context: academic_library
+Game_Format: virtual_or_augmented_reality
 
-Evidence_Type: experiment
+Service_Area:
+- space_and_infrastructure
+- learning_and_literacy
+- creation_and_making
+Audience: students
 
-Methodology: unspecified
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- virtual_reality
-- augmented_reality
-- gamification
-
-Service_Area: 
-- programming
-- cataloging_metadata
-- instruction
-- orientation
-- access
-- space_design
-- research_support
-- makerspace
-
-Audience: 
-- students
-- librarians
-- families
-
-Outcome: 
-- learning
-- affective_motivation
-- access
-- collaboration
-- creativity
-- research_support
-- orientation_skills
-
-Theme: 
-- collaboration
-- access
-- metadata
-- space
-- technology_access
-- orientation
-- local_adaptation
-- gamification
-- makerspace
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-
+Intended_Outcome:
+- learning_and_literacy
+- creativity_and_production
 Coding_Confidence: low
 
 Contributions:

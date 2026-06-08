@@ -1,67 +1,30 @@
 # Squire, K. (2008). Open-ended video games: A model for developing learning for the interactive age. In K. Salen (Ed.), *The ecology of games: Connecting youth, games, and learning* (pp. 167-198). MIT Press. https://doi.org/10.1162/dmal.9780262693646.167
 
 ## Metadata
-
 Citation_Key: squireOpenEndedVideo2007
 Year: 2008
 Zotero_Item_Key: UVMZ8PHU
 Better_BibTeX_Citation_Key: squireOpenEndedVideo2007
 Attachment_Key: DRLIV5IV
 
-Source_Type:
-- theoretical_work
-- case_study
-
+Source_Type: book_chapter
+Peer_Review: editorial_reviewed
 Evidence_Type:
-- design_case
-- case_study
-- literature_synthesis
-
-Methodology:
-- design_case
-- theoretical_analysis
-
+- empirical_study
+- instrument_or_framework_development
+Primary_Methodology: qualitative_study
 Library_Context: non_library_context
-
-Game_Format:
-- video_game
+Game_Format: digital_game
 
 Service_Area:
-- instruction
-- literacy
-- media_literacy
-- programming
+- learning_and_literacy
+- programming_and_facilitation
+Audience: students
 
-Audience:
-- adolescents
-- students
-- teachers
-- players
-
-Outcome:
-- learning
-- creativity
-- problem_solving
-- literacy
-- engagement
-
-Theme:
-- play
-- community
-- facilitation
-- reflection
-
-Contribution_Type:
-- theoretical_argument
-- implementation_model
-- methodological_caution
-
-Design_Principles:
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- debriefing_supports_transfer
-
-Coding_Confidence: medium
+Intended_Outcome:
+- learning_and_literacy
+- creativity_and_production
+Coding_Confidence: high
 
 ## Summary
 

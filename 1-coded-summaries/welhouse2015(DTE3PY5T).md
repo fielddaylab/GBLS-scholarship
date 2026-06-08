@@ -7,79 +7,19 @@ Zotero_Item_Key: DTE3PY5T
 Better_BibTeX_Citation_Key: welhouseWhatAmFighting2015
 Attachment_Key: XBQB9RQU
 
-Source_Type: empirical_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type:
+- empirical_study
+- instrument_or_framework_development
+Primary_Methodology: mixed_methods
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- survey
-- interview
+Service_Area: discovery_and_advisory
+Audience: not_applicable
 
-Methodology: 
-- survey
-- interviews
-
-Library_Context: museum_archive
-
-Game_Format: video_game
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- cataloging_metadata
-- discovery
-- preservation
-- instruction
-- access
-- research_support
-
-Audience: 
-- librarians
-- teachers
-- gamers
-- researchers
-- developers
-- patrons
-- players
-
-Outcome: 
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- preservation_access
-- patron_interest
-- collaboration
-- research_support
-
-Theme: 
-- collaboration
-- access
-- metadata
-- cataloging
-- preservation
-- advisory
-- local_adaptation
-- play
-- controlled_vocabulary
-- professional_identity
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
+Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
 Contributions:

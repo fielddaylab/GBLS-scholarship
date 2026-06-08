@@ -7,69 +7,21 @@ Zotero_Item_Key: FDZ94PLN
 Better_BibTeX_Citation_Key: maranchakGamificationMechanicsUsage2023
 Attachment_Key: TLENEZCZ
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: content_or_artifact_analysis
+Primary_Methodology: content_analysis
 Library_Context: unspecified_library_context
+Game_Format: gamification
 
-Game_Format: 
-- escape_room
-- augmented_reality
-- gamification
+Service_Area:
+- collections_and_access
+- learning_and_literacy
+- outreach_and_partnerships
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- circulation
-- instruction
-- orientation
-- community_building
-- access
-- space_design
-- assessment
-- marketing
-
-Audience: patrons
-
-Outcome: 
-- engagement
-- social_connection
-- belonging
-- community_building
-- access
-- usage
-- collaboration
-- orientation_skills
-
-Theme: 
-- collaboration
-- access
-- space
-- community
-- orientation
-- gamification
-- social_connection
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

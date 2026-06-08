@@ -7,67 +7,22 @@ Zotero_Item_Key: 3TH7L7D9
 Better_BibTeX_Citation_Key: rossiMoodMetadataVideo2014
 Attachment_Key: HCJ7QQNH
 
-Source_Type: empirical_study
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
+Source_Type: conference_paper
+Peer_Review: editorial_reviewed
+Evidence_Type:
+- empirical_study
+- instrument_or_framework_development
+Primary_Methodology: qualitative_study
 Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Game_Format: video_game
+Service_Area:
+- discovery_and_advisory
+- collections_and_access
+Audience: not_applicable
 
-Service_Area: 
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- discovery
-- preservation
-- wellness
-- research_support
-
-Audience: 
-- students
-- teachers
-- families
-- gamers
-- researchers
-- patrons
-- players
-
-Outcome: 
-- learning
-- discovery
-- advisory_quality
-- catalog_discovery
-- preservation_access
-- wellness
-- research_support
-
-Theme: 
-- metadata
-- cataloging
-- preservation
-- advisory
-- wellness
-- play
-- controlled_vocabulary
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: discovery_and_advisory
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

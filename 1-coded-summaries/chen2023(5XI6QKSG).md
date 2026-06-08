@@ -7,75 +7,18 @@ Zotero_Item_Key: 5XI6QKSG
 Better_BibTeX_Citation_Key: chenAdaptiveScaffoldingEngagement2023
 Attachment_Key: XUVB9DQL
 
-Source_Type: 
-- empirical_study
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
+Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Evidence_Type: experiment
+Service_Area: learning_and_literacy
+Audience: students
 
-Methodology: unspecified
-
-Library_Context: non_library_context
-
-Game_Format: 
-- digital_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- information_literacy
-- orientation
-- outreach
-- community_building
-- access
-- space_design
-- youth_services
-- literacy
-- research_support
-
-Audience: 
-- youth
-- students
-- librarians
-- patrons
-- players
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- community_building
-- access
-- research_support
-- orientation_skills
-
-Theme: 
-- access
-- literacy
-- youth_voice
-- space
-- technology_access
-- community
-- outreach
-- orientation
-- play
-- competition
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- exclusion_record
-- background_context
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

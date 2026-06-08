@@ -7,83 +7,21 @@ Zotero_Item_Key: M5ISNVTX
 Better_BibTeX_Citation_Key: BookListHow
 Attachment_Key: NMIGGKZN
 
-Source_Type: 
-- empirical_study
-- primary_artifact
-
-Evidence_Type: experiment
-
-Methodology: unspecified
-
+Source_Type: blog_or_web_article
+Peer_Review: not_applicable
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: unspecified_library_context
-
 Game_Format: tabletop_roleplaying_game
 
-Service_Area: 
-- programming
-- collections
-- advisory
-- discovery
-- instruction
-- access
-- space_design
-- mental_health
-- youth_services
-- teen_services
-- literacy
-- research_support
-- assessment
-- collection_development
-- facilitation
+Service_Area:
+- discovery_and_advisory
+- learning_and_literacy
+- programming_and_facilitation
+Audience: not_applicable
 
-Audience: 
-- children
-- teens
-- youth
-- librarians
-- library_staff
-- teachers
-- patrons
-- players
-
-Outcome: 
-- literacy
-- learning
-- social_connection
-- belonging
-- access
-- discovery
-- advisory_quality
-- mental_health_awareness
-- research_support
-
-Theme: 
-- facilitation
-- access
-- advisory
-- literacy
-- teen_engagement
-- youth_voice
-- mental_health
-- implementation_barriers
-- space
-- play
-- social_connection
-- safety
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- advisory_framework
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

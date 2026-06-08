@@ -7,84 +7,21 @@ Zotero_Item_Key: 5N2HI87D
 Better_BibTeX_Citation_Key: farmerAreGirlsGame2011
 Attachment_Key: CSDD4ZPJ
 
-Source_Type: 
-- historical_analysis
-- theoretical_work
-- primary_artifact
-
-Evidence_Type: not_empirical
-
-Methodology: historical_analysis
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: school_library
+Game_Format: digital_game
 
-Game_Format: unspecified_game_format
+Service_Area:
+- learning_and_literacy
+- collections_and_access
+- community_and_inclusion
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- advisory
-- instruction
-- professional_development
-- access
-- equity_inclusion
-- youth_services
-- teen_services
-- literacy
-- research_support
-
-Audience: 
-- teens
-- youth
-- students
-- librarians
-- school_librarians
-
-Outcome: 
-- engagement
-- literacy
-- learning
-- cognitive_learning
-- social_connection
-- access
-- advisory_quality
-- staff_confidence
-- equity_access
-- collaboration
-- problem_solving
-- research_support
-
-Theme: 
-- collaboration
-- access
-- equity
-- inclusion
-- advisory
-- literacy
-- teen_engagement
-- youth_voice
-- technology_access
-- play
-- social_connection
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- theoretical_argument
-- collection_development
-- advisory_framework
-- methodological_caution
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- staff_confidence_shapes_adoption
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

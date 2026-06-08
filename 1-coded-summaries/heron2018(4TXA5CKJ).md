@@ -7,86 +7,18 @@ Zotero_Item_Key: 4TXA5CKJ
 Better_BibTeX_Citation_Key: heronMeepleCentredDesign2018
 Attachment_Key: AZDCWGJR
 
-Source_Type: empirical_study
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
 Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Methodology: unspecified
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- video_game
-- board_game
-- card_game
-- tabletop_game
-- multiple_game_formats
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- orientation
-- staff_training
-- community_building
-- access
-- equity_inclusion
-- space_design
-- collection_development
-- facilitation
-
-Audience: 
-- families
-- patrons
-- players
-
-Outcome: 
-- critical_reflection
-- cognitive_learning
-- social_connection
-- community_building
-- access
-- advisory_quality
-- catalog_discovery
-- orientation_skills
-
-Theme: 
-- facilitation
-- access
-- inclusion
-- cataloging
-- advisory
-- staff_training
-- implementation_barriers
-- space
-- community
-- orientation
-- play
-- social_connection
-- safety
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

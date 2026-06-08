@@ -7,71 +7,22 @@ Zotero_Item_Key: 8XX2IH2G
 Better_BibTeX_Citation_Key: farrellAcademicUsesVideo2017
 Attachment_Key: ZY8L8XKX
 
-Source_Type: empirical_study
-
-Evidence_Type: 
-- interview
-- experiment
-
-Methodology: interviews
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: qualitative_study
 Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Game_Format: 
-- video_game
-- game_creation
+Service_Area:
+- collections_and_access
+- professional_capacity
+Audience: students
 
-Service_Area: 
-- programming
-- collections
-- access
-- equity_inclusion
-- space_design
-- research_support
-- assessment
-- needs_assessment
-- collection_development
-
-Audience: 
-- students
-- graduate_students
-- faculty
-- researchers
-
-Outcome: 
-- social_connection
-- access
-- equity_access
-- research_support
-
-Theme: 
-- collaboration
-- access
-- equity
-- implementation_barriers
-- funding
-- space
-- technology_access
-- local_adaptation
-- play
-- social_connection
-- assessment
-- needs_assessment
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- methodological_caution
-- equity_analysis
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome:
+- equitable_access
+- creativity_and_production
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

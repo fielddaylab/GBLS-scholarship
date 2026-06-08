@@ -7,86 +7,23 @@ Zotero_Item_Key: 4FELUX62
 Better_BibTeX_Citation_Key: watsonDungeonsDeweyDecimals2024
 Attachment_Key: BB2MPNIG
 
-Source_Type: 
-- case_study
-- theoretical_work
-
-Evidence_Type: design_case
-
-Methodology: design_case
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type:
+- empirical_study
+- implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: academic_library
+Game_Format: tabletop_roleplaying_game
 
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- gamification
-- roleplaying_game
-
-Service_Area: 
-- programming
-- circulation
-- cataloging_metadata
-- instruction
-- orientation
-- outreach
-- community_building
-- space_design
-- teen_services
-- research_support
-- makerspace
-
-Audience: 
+Service_Area: learning_and_literacy
+Audience:
 - teens
 - students
-- undergraduate_students
-- graduate_students
-- librarians
-- families
-- patrons
-- players
 
-Outcome: 
-- engagement
-- learning
-- social_connection
-- community_building
-- catalog_discovery
-- implementation_capacity
-- problem_solving
-- research_support
-- orientation_skills
-
-Theme: 
-- facilitation
-- cataloging
-- teen_engagement
-- implementation_barriers
-- space
-- community
-- outreach
-- orientation
-- local_adaptation
-- play
-- gamification
-- social_connection
-- controlled_vocabulary
-- professional_identity
-- makerspace
-
-Contribution_Type: 
-- implementation_model
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- advisory_should_use_experience_language
-
+Intended_Outcome:
+- learning_and_literacy
+- creativity_and_production
 Coding_Confidence: high
 
 Contributions:

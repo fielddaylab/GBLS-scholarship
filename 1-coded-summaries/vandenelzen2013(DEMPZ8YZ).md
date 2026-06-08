@@ -7,88 +7,19 @@ Zotero_Item_Key: DEMPZ8YZ
 Better_BibTeX_Citation_Key: elzenBrawlingLibraryGaming2013
 Attachment_Key: YW7Y6A6P
 
-Source_Type: 
-- case_study
-- empirical_study
-- primary_artifact
-
-Evidence_Type: 
-- survey
-- practitioner_reflection
-
-Methodology: survey
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: survey
 Library_Context: academic_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- board_game
-- puzzle
+Service_Area:
+- outreach_and_partnerships
+- programming_and_facilitation
+Audience: students
 
-Service_Area: 
-- programming
-- collections
-- advisory
-- instruction
-- orientation
-- outreach
-- community_building
-- space_design
-- literacy
-- assessment
-- marketing
-- partnerships
-- collection_development
-- facilitation
-
-Audience: 
-- students
-- undergraduate_students
-- graduate_students
-- librarians
-- library_staff
-- families
-- gamers
-- older_adults
-- players
-
-Outcome: 
-- literacy
-- learning
-- social_connection
-- belonging
-- community_building
-- advisory_quality
-- collaboration
-- orientation_skills
-
-Theme: 
-- collaboration
-- facilitation
-- advisory
-- literacy
-- space
-- community
-- outreach
-- orientation
-- local_adaptation
-- play
-- social_connection
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
+Intended_Outcome: belonging_and_community
 Coding_Confidence: high
 
 Contributions:

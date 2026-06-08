@@ -7,73 +7,19 @@ Zotero_Item_Key: XF4MXTVF
 Better_BibTeX_Citation_Key: virelloPuttingExtraExtraordinary2019
 Attachment_Key: KTACWW96
 
-Source_Type: 
-- case_study
-- empirical_study
-
-Evidence_Type: 
-- survey
-- practitioner_reflection
-
-Methodology: survey
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: public_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- tabletop_game
+Service_Area:
+- collections_and_access
+- professional_capacity
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- discovery
-- staff_training
-- community_building
-- access
-- space_design
-- assessment
-- partnerships
-
-Audience: 
-- children
-- families
-- patrons
-- players
-
-Outcome: 
-- attendance
-- learning
-- social_connection
-- community_building
-- access
-- discovery
-- implementation_capacity
-- patron_interest
-- creativity
-
-Theme: 
-- access
-- staff_training
-- space
-- community
-- local_adaptation
-- play
-- social_connection
-- safety
-- assessment
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- assess_local_demand_before_scaling
-
+Intended_Outcome: not_applicable
 Coding_Confidence: high
 
 Contributions:

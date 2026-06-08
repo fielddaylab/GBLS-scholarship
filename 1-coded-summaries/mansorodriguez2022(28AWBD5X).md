@@ -7,98 +7,18 @@ Zotero_Item_Key: 28AWBD5X
 Better_BibTeX_Citation_Key: ramonalbertomansorodriguezGAMIFICATIONLIBRARIESMEDIA2022
 Attachment_Key: GF6S36WS
 
-Source_Type: 
-- literature_review
-- theoretical_work
-- primary_artifact
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
+Library_Context: multiple_library_types
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- experiment
-- literature_synthesis
-- practitioner_reflection
-- theoretical
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Methodology: 
-- literature_review
-- theoretical_analysis
-
-Library_Context: 
-- public_library
-- academic_library
-- school_library
-- multiple_library_types
-
-Game_Format: 
-- video_game
-- escape_room
-- gamification
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- instruction
-- information_literacy
-- orientation
-- staff_training
-- access
-- equity_inclusion
-- space_design
-- literacy
-- assessment
-
-Audience: librarians
-
-Outcome: 
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- social_connection
-- access
-- catalog_discovery
-- implementation_capacity
-- problem_solving
-- critical_thinking
-- orientation_skills
-
-Theme: 
-- collaboration
-- access
-- inclusion
-- cataloging
-- literacy
-- staff_training
-- space
-- orientation
-- play
-- gamification
-- competition
-- social_connection
-- assessment
-- narrative
-- reflection
-
-Contribution_Type: 
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- methodological_caution
-- equity_analysis
-- training_model
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: medium
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

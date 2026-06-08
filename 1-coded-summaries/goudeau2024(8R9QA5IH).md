@@ -7,68 +7,20 @@ Zotero_Item_Key: 8R9QA5IH
 Better_BibTeX_Citation_Key: LSHMMagikarpMakeover2024
 Attachment_Key: Y4KZTMI7
 
-Source_Type: 
-- literature_review
-- case_study
-- primary_artifact
-
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
-
-Methodology: literature_review
-
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- card_game
-- tabletop_game
-- tabletop_roleplaying_game
-- game_creation
+Service_Area:
+- discovery_and_advisory
+- programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- advisory
-- cataloging_metadata
-- discovery
-- youth_services
-- literacy
-- facilitation
-
-Audience: 
-- youth
-- librarians
-- families
-- gamers
-- players
-
-Outcome: 
-- literacy
-- discovery
-- advisory_quality
-
-Theme: 
-- facilitation
-- advisory
-- cross_media
-- literacy
-- youth_voice
-- play
-- safety
-- narrative
-
-Contribution_Type: 
-- infrastructure_metadata
-- advisory_framework
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

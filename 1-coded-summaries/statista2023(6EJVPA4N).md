@@ -7,65 +7,20 @@ Zotero_Item_Key: 6EJVPA4N
 Better_BibTeX_Citation_Key: statistaIndustriesMarketsBoard
 Attachment_Key: W3RCQ7WY
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: survey
-
-Methodology: survey
-
+Source_Type: dataset_or_archive
+Peer_Review: not_applicable
+Evidence_Type: empirical_study
+Primary_Methodology: survey
 Library_Context: unspecified_library_context
+Game_Format: tabletop_game
 
-Game_Format: 
-- board_game
-- card_game
-- tabletop_game
+Service_Area:
+- collections_and_access
+- community_and_inclusion
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- community_building
-- access
-- space_design
-- youth_services
-- facilitation
-
-Audience: 
-- youth
-- adults
-- families
-- older_adults
-- players
-
-Outcome: 
-- learning
-- community_building
-- access
-
-Theme: 
-- facilitation
-- access
-- youth_voice
-- funding
-- space
-- community
-- play
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

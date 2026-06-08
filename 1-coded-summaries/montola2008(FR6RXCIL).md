@@ -7,94 +7,21 @@ Zotero_Item_Key: FR6RXCIL
 Better_BibTeX_Citation_Key: montolaPlaygroundWorldsCreating2008
 Attachment_Key: 7E34TTR6
 
-Source_Type: 
-- edited_volume
-- case_study
-- historical_analysis
-- theoretical_work
-
-Evidence_Type: not_empirical
-
-Methodology: unspecified
-
+Source_Type: book
+Peer_Review: editorial_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: unspecified_library_context
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- live_action_roleplaying_game
-- game_creation
-- pervasive_game
-- roleplaying_game
+Service_Area:
+- collections_and_access
+- community_and_inclusion
+- programming_and_facilitation
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- information_literacy
-- outreach
-- staff_training
-- community_building
-- access
-- youth_services
-- literacy
-- research_support
-- facilitation
-
-Audience: 
-- children
-- youth
-- adults
-- librarians
-- teachers
-- families
-- patrons
-- players
-
-Outcome: 
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- social_connection
-- community_building
-- access
-- catalog_discovery
-- research_support
-
-Theme: 
-- facilitation
-- debriefing
-- access
-- cataloging
-- literacy
-- youth_voice
-- staff_training
-- community
-- outreach
-- play
-- social_connection
-- narrative
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- exclusion_record
-- training_model
-
-Design_Principles: 
-- debriefing_supports_transfer
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

@@ -7,112 +7,21 @@ Zotero_Item_Key: XSJKWBVW
 Better_BibTeX_Citation_Key: leeUsercenteredApproachCreating2013
 Attachment_Key: ZX5BQVDA
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: conference_paper
+Peer_Review: editorial_reviewed
+Evidence_Type:
+- content_or_artifact_analysis
+- instrument_or_framework_development
+Primary_Methodology: content_analysis
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- interview
-- theoretical
+Service_Area:
+- discovery_and_advisory
+- collections_and_access
+Audience: not_applicable
 
-Methodology: 
-- interviews
-- historical_analysis
-- theoretical_analysis
-- observation
-
-Library_Context: 
-- academic_library
-- museum_archive
-- cultural_heritage_institution
-
-Game_Format: 
-- video_game
-- digital_game
-- game_creation
-
-Service_Area: 
-- collections
-- circulation
-- advisory
-- cataloging_metadata
-- discovery
-- preservation
-- instruction
-- information_literacy
-- orientation
-- community_building
-- access
-- literacy
-- assessment
-- collection_development
-- cultural_heritage
-
-Audience: 
-- students
-- librarians
-- families
-- gamers
-- developers
-- older_adults
-- patrons
-- players
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- social_connection
-- community_building
-- access
-- discovery
-- advisory_quality
-- catalog_discovery
-- preservation_access
-- implementation_capacity
-- collaboration
-- problem_solving
-- orientation_skills
-
-Theme: 
-- collaboration
-- access
-- metadata
-- cataloging
-- preservation
-- cultural_heritage
-- advisory
-- literacy
-- community
-- orientation
-- play
-- social_connection
-- controlled_vocabulary
-- assessment
-- narrative
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
+Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
 Contributions:

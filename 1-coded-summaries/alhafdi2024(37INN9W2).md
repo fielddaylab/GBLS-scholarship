@@ -7,103 +7,20 @@ Zotero_Item_Key: 37INN9W2
 Better_BibTeX_Citation_Key: al-hafdiTenYearsGamificationBased2024
 Attachment_Key: EK8L4RL3
 
-Source_Type: 
-- literature_review
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: evidence_synthesis
+Primary_Methodology: evidence_synthesis
+Library_Context: non_library_context
+Game_Format: gamification
 
-Evidence_Type: 
-- interview
-- experiment
-- bibliometric_analysis
-- literature_synthesis
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Methodology: 
-- interviews
-- bibliometric_analysis
-- literature_review
-
-Library_Context: public_library
-
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- virtual_reality
-- gamification
-- game_creation
-- serious_game
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- discovery
-- instruction
-- information_literacy
-- outreach
-- community_building
-- access
-- space_design
-- teen_services
-- literacy
-- research_support
-- assessment
-- marketing
-
-Audience: 
-- teens
-- students
-- librarians
-- families
-- patrons
-
-Outcome: 
-- engagement
-- attendance
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- affective_motivation
-- social_connection
-- belonging
-- community_building
-- access
-- discovery
-- research_support
-
-Theme: 
-- access
-- metadata
-- literacy
-- teen_engagement
-- space
-- technology_access
-- community
-- outreach
-- local_adaptation
-- play
-- gamification
-- competition
-- social_connection
-- assessment
-- narrative
-
-Contribution_Type: 
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- methodological_caution
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
-Coding_Confidence: medium
+Intended_Outcome:
+- engagement_and_participation
+- learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

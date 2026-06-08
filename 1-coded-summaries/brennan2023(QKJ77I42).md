@@ -7,71 +7,21 @@ Zotero_Item_Key: QKJ77I42
 Better_BibTeX_Citation_Key: brennanWellbeingSchoolLibrary2023
 Attachment_Key: Q7RFJJHM
 
-Source_Type: 
-- case_study
-- empirical_study
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
 Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: multiple_library_types
+Game_Format: digital_game
 
-Methodology: unspecified
+Service_Area:
+- collections_and_access
+- community_and_inclusion
+- space_and_infrastructure
+Audience: not_applicable
 
-Library_Context: school_library
-
-Game_Format: unspecified_game_format
-
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- staff_training
-- community_building
-- access
-- space_design
-- wellness
-- mental_health
-- research_support
-
-Audience: 
-- students
-- librarians
-- school_librarians
-
-Outcome: 
-- affective_motivation
-- social_connection
-- belonging
-- community_building
-- access
-- wellness
-- mental_health_awareness
-- research_support
-
-Theme: 
-- access
-- metadata
-- wellness
-- mental_health
-- staff_training
-- implementation_barriers
-- space
-- technology_access
-- community
-- play
-- social_connection
-
-Contribution_Type: 
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- training_model
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-- description_shapes_discovery
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

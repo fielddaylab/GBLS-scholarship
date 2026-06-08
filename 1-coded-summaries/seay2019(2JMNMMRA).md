@@ -7,64 +7,18 @@ Zotero_Item_Key: 2JMNMMRA
 Better_BibTeX_Citation_Key: seayConsideringGamesLibraries2021
 Attachment_Key: 43AWQDDF
 
-Source_Type: 
-- professional_column
-- case_study
-- empirical_study
-- theoretical_work
-
+Source_Type: professional_publication
+Peer_Review: editorial_reviewed
 Evidence_Type: practitioner_reflection
-
-Methodology: unspecified
-
+Primary_Methodology: none
 Library_Context: unspecified_library_context
+Game_Format: escape_room_or_breakout_box
 
-Game_Format: 
-- escape_room
-- breakout_box
-- puzzle
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- cataloging_metadata
-- instruction
-- space_design
-- assessment
-
-Audience: unspecified_audience
-
-Outcome: 
-- engagement
-- critical_reflection
-- learning
-- catalog_discovery
-- implementation_capacity
-- collaboration
-- problem_solving
-
-Theme: 
-- collaboration
-- metadata
-- cataloging
-- space
-- play
-- assessment
-- professional_identity
-- narrative
-- reflection
-
-Contribution_Type: 
-- empirical_evidence
-- practitioner_guidance
-- theoretical_argument
-- infrastructure_metadata
-- methodological_caution
-
-Design_Principles: 
-- collaboration_supports_reflection
-- description_shapes_discovery
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

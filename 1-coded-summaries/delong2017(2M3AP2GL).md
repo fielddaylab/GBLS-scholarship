@@ -7,63 +7,21 @@ Zotero_Item_Key: 2M3AP2GL
 Better_BibTeX_Citation_Key: longAllPublicServices2017
 Attachment_Key: DCF7HISC
 
-Source_Type: literature_review
-
-Evidence_Type: literature_synthesis
-
-Methodology: literature_review
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: academic_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- tabletop_roleplaying_game
-- escape_room
-- gamification
+Service_Area:
+- collections_and_access
+- learning_and_literacy
+- space_and_infrastructure
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- preservation
-- instruction
-- outreach
-- access
-- space_design
-- assessment
-- partnerships
-
-Audience: faculty
-
-Outcome: 
-- engagement
-- learning
-- access
-- catalog_discovery
-- preservation_access
-
-Theme: 
-- access
-- cataloging
-- preservation
-- space
-- technology_access
-- outreach
-- gamification
-- assessment
-
-Contribution_Type: 
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- access_requires_infrastructure
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

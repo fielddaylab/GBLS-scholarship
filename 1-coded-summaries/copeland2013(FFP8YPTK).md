@@ -7,98 +7,23 @@ Zotero_Item_Key: FFP8YPTK
 Better_BibTeX_Citation_Key: copelandThreeDifferentPaths2013
 Attachment_Key: PIXJWQWM
 
-Source_Type: 
-- literature_review
-- case_study
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type:
 - empirical_study
-- historical_analysis
-- primary_artifact
-
-Evidence_Type: 
-- literature_synthesis
-- practitioner_reflection
-
-Methodology: 
-- literature_review
-- historical_analysis
-
+- implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: school_library
+Game_Format: multiple_game_formats
 
-Game_Format: 
-- video_game
-- digital_game
-- board_game
-- card_game
-- tabletop_game
-- tabletop_roleplaying_game
-- game_creation
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- instruction
-- information_literacy
-- professional_development
-- access
-- space_design
-- literacy
-- research_support
-- assessment
-- partnerships
-- facilitation
-
-Audience: 
-- adults
+Service_Area:
+- programming_and_facilitation
+- learning_and_literacy
+Audience:
 - students
-- librarians
-- teachers
-- older_adults
-- players
+- underserved_or_special_population
 
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- critical_reflection
-- learning
-- social_connection
-- access
-- implementation_capacity
-- collaboration
-- problem_solving
-- research_support
-
-Theme: 
-- collaboration
-- facilitation
-- debriefing
-- access
-- literacy
-- implementation_barriers
-- space
-- local_adaptation
-- play
-- social_connection
-- safety
-- assessment
-- professional_identity
-- reflection
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- collection_development
-- literature_mapping
-- training_model
-
-Design_Principles: 
-- debriefing_supports_transfer
-- facilitation_is_core_infrastructure
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-
+Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
 Contributions:

@@ -7,71 +7,20 @@ Zotero_Item_Key: WB2GDKPF
 Better_BibTeX_Citation_Key: postColossalCatalogAdventure2023
 Attachment_Key: BDSYUC55
 
-Source_Type: 
-- empirical_study
-- historical_analysis
-- primary_artifact
-
-Evidence_Type: not_empirical
-
-Methodology: action_research
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: action_research
 Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Game_Format: 
-- video_game
-- digital_game
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- cataloging_metadata
-- discovery
-- preservation
-- community_building
-- access
-- equity_inclusion
-- research_support
-
-Audience: 
-- marginalized_communities
-- patrons
-
-Outcome: 
-- community_building
-- access
-- discovery
-- catalog_discovery
-- preservation_access
-- equity_access
-- research_support
-
-Theme: 
-- access
-- equity
-- metadata
-- cataloging
-- preservation
-- community
-- play
-- controlled_vocabulary
-- narrative
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- infrastructure_metadata
-- collection_development
-- equity_analysis
-
-Design_Principles: 
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- design_for_accessibility_and_inclusion
-
-Coding_Confidence: low
+Intended_Outcome:
+- discovery_and_advisory
+- equitable_access
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

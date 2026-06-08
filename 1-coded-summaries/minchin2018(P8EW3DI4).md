@@ -7,72 +7,18 @@ Zotero_Item_Key: P8EW3DI4
 Better_BibTeX_Citation_Key: minchinPraiseTabletopGames2018
 Attachment_Key: 8CKIPZK9
 
-Source_Type: 
-- empirical_study
-- theoretical_work
-
-Evidence_Type: experiment
-
-Methodology: unspecified
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
 Library_Context: school_library
+Game_Format: tabletop_game
 
-Game_Format: 
-- tabletop_game
-- gamification
+Service_Area: learning_and_literacy
+Audience: not_applicable
 
-Service_Area: 
-- programming
-- collections
-- staff_training
-- community_building
-- access
-- literacy
-- research_support
-- assessment
-- advocacy
-
-Audience: 
-- families
-- older_adults
-- players
-
-Outcome: 
-- literacy
-- learning
-- social_connection
-- community_building
-- access
-- implementation_capacity
-- research_support
-- resilience
-
-Theme: 
-- facilitation
-- access
-- literacy
-- staff_training
-- community
-- play
-- gamification
-- social_connection
-- assessment
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- collection_development
-- methodological_caution
-- training_model
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- staff_confidence_shapes_adoption
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

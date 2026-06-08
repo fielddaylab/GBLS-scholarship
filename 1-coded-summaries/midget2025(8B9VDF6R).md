@@ -7,74 +7,20 @@ Zotero_Item_Key: 8B9VDF6R
 Better_BibTeX_Citation_Key: midgetIntellectualPropertyModern2025
 Attachment_Key: X5LY525Z
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- historical_analysis
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: implementation_case
+Primary_Methodology: case_or_design_study
+Library_Context: non_library_context
+Game_Format: multiple_game_formats
 
-Evidence_Type: 
-- case_study
-- literature_synthesis
+Service_Area: collections_and_access
+Audience: not_applicable
 
-Methodology: 
-- case_study
-- literature_review
-- proposal
-
-Library_Context: unspecified_library_context
-
-Game_Format: 
-- tabletop_game
-- tabletop_roleplaying_game
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- cataloging_metadata
-- instruction
-- community_building
-- access
-- assessment
-- facilitation
-
-Audience: 
-- patrons
-- players
-
-Outcome: 
-- community_building
-- access
-
-Theme: 
-- facilitation
-- access
-- metadata
-- community
-- local_adaptation
-- play
-- assessment
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- implementation_model
-- infrastructure_metadata
-- collection_development
-- literature_mapping
-- exclusion_record
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome:
+- equitable_access
+- belonging_and_community
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

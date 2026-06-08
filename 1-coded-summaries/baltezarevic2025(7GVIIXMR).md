@@ -7,73 +7,20 @@ Zotero_Item_Key: 7GVIIXMR
 Better_BibTeX_Citation_Key: baltezarevicDigitalGameBasedLearnings2025
 Attachment_Key: CU7E7997
 
-Source_Type: literature_review
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: survey
+Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Evidence_Type: 
-- experiment
-- literature_synthesis
-
-Methodology: literature_review
-
-Library_Context: non_library_context
-
-Game_Format: 
-- digital_game
-- virtual_reality
-- augmented_reality
-
-Service_Area: 
-- programming
-- collections
-- information_literacy
-- community_building
-- access
-- literacy
-- research_support
-- partnerships
-
-Audience: 
+Service_Area: learning_and_literacy
+Audience:
+- children
 - students
-- faculty
-- librarians
 
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- cognitive_learning
-- affective_motivation
-- social_connection
-- belonging
-- community_building
-- access
-- collaboration
-- problem_solving
-- research_support
-
-Theme: 
-- collaboration
-- access
-- literacy
-- technology_access
-- community
-- play
-- competition
-- social_connection
-
-Contribution_Type: 
-- collection_development
-- literature_mapping
-- exclusion_record
-- background_context
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

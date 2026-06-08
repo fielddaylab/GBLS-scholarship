@@ -7,70 +7,21 @@ Zotero_Item_Key: 4UDVWW6X
 Better_BibTeX_Citation_Key: QueertacularResourceList2024
 Attachment_Key: B45P2R39
 
-Source_Type: 
-- literature_review
-- case_study
-- empirical_study
-- theoretical_work
-- primary_artifact
+Source_Type: toolkit_or_guidance_document
+Peer_Review: unknown
+Evidence_Type: practitioner_reflection
+Primary_Methodology: none
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- survey
-- literature_synthesis
-- archival_analysis
-- practitioner_reflection
+Service_Area:
+- programming_and_facilitation
+- discovery_and_advisory
+- collections_and_access
+Audience: not_applicable
 
-Methodology: 
-- survey
-- literature_review
-
-Library_Context: museum_archive
-
-Game_Format: 
-- video_game
-- tabletop_game
-- roleplaying_game
-
-Service_Area: 
-- programming
-- collections
-- advisory
-- space_design
-- collection_development
-- archival_stewardship
-
-Audience: 
-- gamers
-- marginalized_communities
-- patrons
-
-Outcome: 
-- advisory_quality
-- collaboration
-
-Theme: 
-- collaboration
-- advisory
-- space
-- play
-- professional_identity
-
-Contribution_Type: 
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- literature_mapping
-
-Design_Principles: 
-- collaboration_supports_reflection
-- preservation_requires_relationship_metadata
-- assess_local_demand_before_scaling
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

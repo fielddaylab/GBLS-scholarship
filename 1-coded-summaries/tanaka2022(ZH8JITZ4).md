@@ -7,84 +7,20 @@ Zotero_Item_Key: ZH8JITZ4
 Better_BibTeX_Citation_Key: tanakaIndigenousVideoGames2022
 Attachment_Key: AQ5YZH2W
 
-Source_Type: 
-- historical_analysis
-- theoretical_work
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: unspecified_library_context
+Game_Format: digital_game
 
-Evidence_Type: archival_analysis
+Service_Area:
+- collections_and_access
+- learning_and_literacy
+Audience: not_applicable
 
-Methodology: historical_analysis
-
-Library_Context: museum_archive
-
-Game_Format: 
-- video_game
-- game_creation
-
-Service_Area: 
-- programming
-- collections
-- circulation
-- advisory
-- preservation
-- instruction
-- community_building
-- access
-- equity_inclusion
-- space_design
-- literacy
-- partnerships
-- collection_development
-- archival_stewardship
-
-Audience: 
-- students
-- teachers
-- patrons
-- players
-
-Outcome: 
-- literacy
-- digital_literacy
-- learning
-- community_building
-- access
-- advisory_quality
-- creativity
-
-Theme: 
-- collaboration
-- access
-- inclusion
-- preservation
-- advisory
-- literacy
-- funding
-- space
-- technology_access
-- community
-- local_adaptation
-- play
-- professional_identity
-
-Contribution_Type: 
-- historical_precedent
-- theoretical_argument
-- infrastructure_metadata
-- collection_development
-- advisory_framework
-- equity_analysis
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- novelty_is_not_enough
-- preservation_requires_relationship_metadata
-- design_for_accessibility_and_inclusion
-- advisory_should_use_experience_language
-
-Coding_Confidence: medium
+Intended_Outcome: not_applicable
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: unspecified

@@ -7,68 +7,20 @@ Zotero_Item_Key: Q3CLR63Q
 Better_BibTeX_Citation_Key: leeDomainAnalysisVideo2012
 Attachment_Key: 4HQ4XUHY
 
-Source_Type: 
-- edited_volume
-- empirical_study
-- historical_analysis
-- theoretical_work
+Source_Type: book_chapter
+Peer_Review: editorial_reviewed
+Evidence_Type: instrument_or_framework_development
+Primary_Methodology: theoretical_or_conceptual
+Library_Context: cultural_heritage_institution
+Game_Format: digital_game
 
-Evidence_Type: 
-- interview
-- archival_analysis
+Service_Area:
+- collections_and_access
+- discovery_and_advisory
+Audience: not_applicable
 
-Methodology: 
-- interviews
-- historical_analysis
-
-Library_Context: museum_archive
-
-Game_Format: video_game
-
-Service_Area: 
-- cataloging_metadata
-- discovery
-- instruction
-- access
-- marketing
-- archival_stewardship
-
-Audience: 
-- students
-- gamers
-- developers
-- players
-
-Outcome: 
-- access
-- discovery
-- catalog_discovery
-
-Theme: 
-- collaboration
-- access
-- metadata
-- cataloging
-- local_adaptation
-- play
-- controlled_vocabulary
-
-Contribution_Type: 
-- historical_precedent
-- empirical_evidence
-- theoretical_argument
-- infrastructure_metadata
-- exclusion_record
-
-Design_Principles: 
-- collaboration_supports_reflection
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- description_shapes_discovery
-- preservation_requires_relationship_metadata
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: discovery_and_advisory
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

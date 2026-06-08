@@ -7,104 +7,27 @@ Zotero_Item_Key: RT9RP42S
 Better_BibTeX_Citation_Key: maluckTalesPlayIt2013
 Attachment_Key: 9S23S8BU
 
-Source_Type: empirical_study
-
-Evidence_Type: 
-- mixed_methods
-- experiment
-- practitioner_reflection
-
-Methodology: 
-- mixed_methods
-- observation
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type:
+- empirical_study
+- implementation_case
+Primary_Methodology: case_or_design_study
 Library_Context: unspecified_library_context
+Game_Format: tabletop_game
 
-Game_Format: 
-- digital_game
-- board_game
-- tabletop_game
-- gamification
-- game_creation
-
-Service_Area: 
-- programming
-- circulation
-- advisory
-- instruction
-- information_literacy
-- orientation
-- community_building
-- access
-- space_design
-- youth_services
-- teen_services
-- literacy
-- research_support
-- assessment
-- facilitation
-
-Audience: 
+Service_Area:
+- learning_and_literacy
+- programming_and_facilitation
+Audience:
 - children
 - teens
-- youth
-- adolescents
-- adults
-- students
-- librarians
-- library_staff
-- families
-- researchers
-- older_adults
-- patrons
-- players
+- young_adults
 
-Outcome: 
-- attendance
-- literacy
-- information_literacy
-- learning
-- affective_motivation
-- social_connection
-- community_building
-- access
-- advisory_quality
-- implementation_capacity
-- research_support
-- orientation_skills
-
-Theme: 
-- facilitation
-- access
-- advisory
-- literacy
-- teen_engagement
-- youth_voice
-- space
-- community
-- orientation
-- local_adaptation
-- play
-- gamification
-- social_connection
-- safety
-- assessment
-- narrative
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- advisory_framework
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- access_requires_infrastructure
-- local_context_shapes_program_fit
-- assess_local_demand_before_scaling
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome:
+- learning_and_literacy
+- engagement_and_participation
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none

@@ -4,30 +4,26 @@
   const data = window.GBLS_METRICS;
   const groupLabels = {
     service_area: "Topic area / service area",
-    theme: "Theme",
-    outcome: "Outcome",
+    intended_outcome: "Intended outcome",
     audience: "Audience",
     game_format: "Game format",
-    methodology: "Methodology",
+    primary_methodology: "Primary methodology",
     evidence_type: "Evidence type",
     source_type: "Source type",
+    peer_review: "Peer review",
     library_context: "Library context",
-    contribution_type: "Contribution type",
-    design_principles: "Design principle",
     coding_confidence: "Coding confidence",
   };
   const articleColumns = {
     service_area: "service_area",
-    theme: "theme",
-    outcome: "outcome",
+    intended_outcome: "intended_outcome",
     audience: "audience",
     game_format: "game_format",
-    methodology: "methodology",
+    primary_methodology: "primary_methodology",
     evidence_type: "evidence_type",
     source_type: "source_type",
+    peer_review: "peer_review",
     library_context: "library_context",
-    contribution_type: "contribution_type",
-    design_principles: "design_principles",
     coding_confidence: "coding_confidence",
   };
   const state = {
@@ -49,6 +45,8 @@
   };
 
   function renderSummary() {
+    $("datasetSubtitle").textContent =
+      `Explore ${data.summary.total_articles.toLocaleString()} coded source summaries by service area, intended outcome, evidence, format, audience, and year.`;
     const metrics = [
       ["Articles", data.summary.total_articles.toLocaleString()],
       ["Coded labels", data.summary.unique_feature_labels.toLocaleString()],
@@ -118,6 +116,7 @@
 
   function articlesInRange() {
     return data.articles.filter((article) => {
+      if (article.year === null || article.year === undefined || article.year === "") return true;
       const year = Number(article.year);
       return !Number.isFinite(year) || (year >= state.yearStart && year <= state.yearEnd);
     });
@@ -273,7 +272,7 @@
         <td>${renderTags(article.library_context, 3)}</td>
         <td>${renderTags(article.game_format, 4)}</td>
         <td>${renderTags(article.service_area, 5)}</td>
-        <td>${renderTags(article.theme, 5)}</td>
+        <td>${renderTags(article.intended_outcome, 5)}</td>
       </tr>
     `).join("");
   }

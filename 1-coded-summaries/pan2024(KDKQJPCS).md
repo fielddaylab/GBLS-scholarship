@@ -7,68 +7,21 @@ Zotero_Item_Key: KDKQJPCS
 Better_BibTeX_Citation_Key: panEnhancingMiddleSchool2024
 Attachment_Key: RN2CJPYF
 
-Source_Type: empirical_study
-
-Evidence_Type: survey
-
-Methodology: survey
-
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: experimental_study
 Library_Context: non_library_context
-
 Game_Format: game_creation
 
-Service_Area: 
-- programming
-- collections
-- instruction
-- information_literacy
-- outreach
-- community_building
-- space_design
-- literacy
-- research_support
-- makerspace
-- assessment
+Service_Area:
+- learning_and_literacy
+- programming_and_facilitation
+- creation_and_making
+Audience: students
 
-Audience: 
-- students
-- librarians
-- teachers
-- researchers
-
-Outcome: 
-- engagement
-- literacy
-- information_literacy
-- learning
-- community_building
-- problem_solving
-- research_support
-
-Theme: 
-- facilitation
-- literacy
-- space
-- technology_access
-- community
-- outreach
-- play
-- assessment
-- makerspace
-
-Contribution_Type: 
-- empirical_evidence
-- collection_development
-- exclusion_record
-- background_context
-- methodological_caution
-
-Design_Principles: 
-- facilitation_is_core_infrastructure
-- local_context_shapes_program_fit
-- advisory_should_use_experience_language
-
-Coding_Confidence: low
+Intended_Outcome: learning_and_literacy
+Coding_Confidence: high
 
 Contributions:
 - Target_Section: none
