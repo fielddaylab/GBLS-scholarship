@@ -43,7 +43,6 @@ Theme:
 - implementation_barriers
 
 Contribution_Type:
-- exclusion_record
 - literature_mapping
 - methodological_caution
 - background_context
@@ -68,7 +67,7 @@ The review also finds strong publication bias. Published studies produced a larg
 
 Sitzmann's practical argument is therefore not that games cause learning by themselves. Simulation games work as instructional tools when their design actively engages learners, when participants have sufficient opportunities to practice, and when play is embedded in a larger program that includes prior instruction and debriefing. She emphasizes that experience alone does not guarantee learning and that reflection is needed to connect simulation events to work-related knowledge and transfer. She also notes substantial development costs and unresolved questions about return on investment.
 
-For the larger GBLS project, these findings are useful as a warning against medium-level claims. Libraries considering simulation games for staff training, instruction, or public learning should define the learning purpose, provide facilitation and debriefing, and compare the intervention with credible active alternatives. Unlimited access and repeat practice may matter, but they create infrastructure and staffing implications that must be considered. Still, the evidence concerns workplace and university training, not library services. The article does not study librarians as service providers, patrons, library programs, collections, access, or community outcomes and should remain outside the principal GBLS corpus.
+For the larger GBLS project, these findings are useful as a warning against medium-level claims. Libraries considering simulation games for staff training, instruction, or public learning should define the learning purpose, provide facilitation and debriefing, and compare the intervention with credible active alternatives. Unlimited access and repeat practice may matter, but they create infrastructure and staffing implications that must be considered. Because the evidence concerns workplace and university training rather than library services, the article should frame the introduction's account of the broader evidence landscape and the rationale for a library-specific synthesis, not function as direct evidence about patrons or GBLS outcomes.
 
 ## Productive Incongruences and Challenges
 
@@ -79,14 +78,17 @@ For the larger GBLS project, these findings are useful as a warning against medi
 ## Suggested Review Contributions
 
 Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
+- Target_Section: "The Need for a Field-Level Synthesis"
+  Target_Section_Raw: "The Need for a Field-Level Synthesis"
+  Placement: "Immediately after Vogel et al. (2006), as a more focused adult-training synthesis that qualifies early medium-comparison findings."
   Contribution_Text: >
-    No suggested addition. This is a workplace and university training meta-analysis rather than
-    research on libraries or library-connected services. File it in `Explicitly Excluded Literature`;
-    retain the summary as design background on active learning, repeat access, debriefing, publication
-    bias, and the limitations of stand-alone simulation games.
+    Sitzmann's (2011) meta-analysis of computer-based simulation games found gains in self-efficacy,
+    declarative knowledge, procedural knowledge, and retention, but those advantages depended
+    heavily on instructional design. Games performed best when they actively conveyed content,
+    allowed repeat access, and supplemented rather than replaced other instruction; strong
+    publication bias and the performance of active comparison conditions further caution against
+    treating games as inherently effective. The non-library evidence helps define the broader
+    research context from which a distinct GBLS evidence base must be synthesized.
 
 ## Evidence Cautions and Limitations
 
