@@ -43,7 +43,6 @@ Theme:
 - play
 
 Contribution_Type:
-- exclusion_record
 - literature_mapping
 - methodological_caution
 - background_context
@@ -66,7 +65,7 @@ Serious games produced a statistically significant but modest learning advantage
 
 The moderator findings make the article more useful than its overall medium comparison. Serious games were more effective when combined with other instructional methods, distributed across multiple sessions, and played in groups. The authors interpret supplemental instruction and collaboration as opportunities to articulate intuitive knowledge, connect experience to prior knowledge, and reflect on play. They explicitly identify debriefing as a critical bridge between game experience and learning. Photorealism did not confer an advantage, and schematic designs sometimes performed better. Narrative also did not reliably improve outcomes. More rigorous randomized studies produced smaller effects, and the authors caution that restricting the synthesis to randomized pretest-posttest designs could eliminate the overall positive effect.
 
-For the larger GBLS project, the study offers design-adjacent cautions rather than evidence about library services. It supports treating games as components of facilitated learning arrangements rather than self-sufficient interventions. A library instruction game, workshop, or recurring learning program should connect play to discussion, reflection, repeated participation, and a defined service objective. The nonsignificant motivation result also warns against treating enjoyment, attendance, or the presence of a game as evidence of learning. Yet the reviewed studies concern classrooms, training environments, and educational interventions, not libraries, librarians, collections, public programming, or community access. The source therefore belongs outside the review's library-specific evidence base.
+For the larger GBLS project, the study offers design-adjacent cautions rather than evidence about library services. It supports treating games as components of facilitated learning arrangements rather than self-sufficient interventions. A library instruction game, workshop, or recurring learning program should connect play to discussion, reflection, repeated participation, and a defined service objective. The nonsignificant motivation result also warns against treating enjoyment, attendance, or the presence of a game as evidence of learning. Because the reviewed studies concern classrooms, training environments, and educational interventions rather than libraries, this evidence should be used in the introduction to establish the broader research context and the need for a library-specific synthesis, not as direct evidence of GBLS outcomes.
 
 ## Productive Incongruences and Challenges
 
@@ -77,14 +76,17 @@ For the larger GBLS project, the study offers design-adjacent cautions rather th
 ## Suggested Review Contributions
 
 Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
+- Target_Section: "The Need for a Field-Level Synthesis"
+  Target_Section_Raw: "The Need for a Field-Level Synthesis"
+  Placement: "After the discussion of Sitzmann (2011) and before Clark et al. (2016), as the most recent of the three precursor meta-analyses summarized by Clark et al."
   Contribution_Text: >
-    No suggested addition. This meta-analysis examines serious games in educational and training
-    settings rather than libraries or library-connected services. File it in `Explicitly Excluded
-    Literature` while retaining the summary as background on debriefing, repeated sessions,
-    collaboration, and the difference between learning and motivation.
+    Wouters et al. (2013) found modest advantages for serious games in learning and retention but
+    no statistically significant motivational advantage over conventional instruction. Effects
+    were stronger when games were supplemented with other instruction, used across multiple
+    sessions, and embedded in collaborative activity, reinforcing that outcomes depend on design
+    and instructional context rather than on the game medium alone. Because the review did not
+    examine libraries, it establishes broader context while underscoring the need for a
+    library-specific synthesis.
 
 ## Evidence Cautions and Limitations
 
