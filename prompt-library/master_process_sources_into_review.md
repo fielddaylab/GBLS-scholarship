@@ -21,11 +21,15 @@ Required paths:
 - `prompt-library/section-prompts/00_shared_section_contract.md`
 - `prompt-library/section-prompts/01_runtime_section_writer.md`
 - `prompt-library/section-prompts/02_assemble_and_transition.md`
-- `prompt-library/section-prompts/03_review_and_revision.md`
+- `prompt-library/section-prompts/03_heading_framing_review.md`
+- `prompt-library/section-prompts/04_terminology_introduction_review.md`
+- `prompt-library/section-prompts/05_topical_cohesion_review.md`
+- `prompt-library/section-prompts/06_review_and_revision.md`
 
 Canonical outputs:
 
 - Manuscripts: `2-outputs/FIRST_DRAFT.md`, `SECOND_DRAFT.md`,
+  `FRAMED_DRAFT.md`, `TERMINOLOGY_DRAFT.md`, `COHESION_DRAFT.md`,
   `THIRD_DRAFT.md`, and `FINAL_DRAFT.md`
 - Audits: `2-outputs/audits_and_synthetic_reviews/`
 
@@ -64,7 +68,7 @@ an external permission prevents writing.
 After approval:
 
 1. Confirm every required path exists and is readable.
-2. Read all four prompt files before synthesis.
+2. Read all seven prompt files before synthesis.
 3. Empty generated files and directories under `2-outputs`.
 4. Recreate only `2-outputs/audits_and_synthetic_reviews`.
 5. Do not create `2-outputs/sections`, `2-outputs/section-ledgers`, or any
@@ -170,6 +174,11 @@ Requirements:
   defensible reason. Do not infer citation status from filename text alone.
 - The citation audit checks every in-text citation against references and every
   reference against the manuscript. List unmatched and ambiguous records.
+- `reviewer_notes.md` must contain a separate simulated reviewer report for
+  every publication profile in `publishability_rubric.md`, including hard
+  constraint fit, exact delta, 1–5 venue score, likely recommendation,
+  strengths, major concerns, and required revisions. It must not be primarily
+  an internal process audit or use a single global score.
 - Audit counts must be calculated from current files, never copied from an
   earlier run.
 
@@ -179,15 +188,25 @@ Requirements:
 2. Save the literal first assembly as `FIRST_DRAFT.md`.
 3. Perform a whole-manuscript integration pass and save a materially reviewed
    `SECOND_DRAFT.md`.
-4. Execute `03_review_and_revision.md`.
-5. Conduct review round one, revise, and save `THIRD_DRAFT.md`.
-6. Conduct an independent review round two, revise, and save
+4. Execute `03_heading_framing_review.md`. Ensure every substantive narrative
+   heading begins with a framing paragraph that defines the heading's scope,
+   central question, and topics developed beneath it; save `FRAMED_DRAFT.md`.
+5. Execute `04_terminology_introduction_review.md`. Define specialized terms,
+   named concepts, frameworks, and acronyms before or at first use; save
+   `TERMINOLOGY_DRAFT.md`.
+6. Execute `05_topical_cohesion_review.md`. Critique every section for
+   author-centered or paper-by-paper narration, revise toward topic-led
+   synthesis, and save `COHESION_DRAFT.md`.
+7. Execute `06_review_and_revision.md`.
+8. Conduct publishability review round one, revise, and save `THIRD_DRAFT.md`.
+9. Conduct an independent publishability review round two, revise, and save
    `FINAL_DRAFT.md`.
-7. If a review finds no textual change is warranted, document that explicitly
-   in `reviewer_notes.md`; do not falsely claim a revision occurred.
+10. If a revision round finds no textual change is warranted, document that in
+   the disposable run-state ledger; do not falsely claim a revision occurred.
 
-Rubric scores are internal editorial diagnostics, not peer review or
-publication decisions.
+Venue reviews are synthetic pre-submission simulations, not actual peer review
+or publication decisions. They must nevertheless use the target profiles and
+hard constraints literally.
 
 ## Final Verification
 
@@ -198,7 +217,7 @@ Before reporting completion:
    removing only trailing drafting annotations from baseline headings.
 3. Fail verification for any missing, added, renamed, level-changed,
    duplicated, or reordered heading.
-4. Calculate narrative and total word counts for all four drafts.
+4. Calculate narrative and total word counts for all seven drafts.
 5. Evaluate every baseline word target and report deviations.
 6. Confirm every baseline passage and eligible coded summary appears exactly
    once in its audit.
@@ -214,5 +233,7 @@ Report the output paths, summary count, heading count by level, manuscript word
 counts, unresolved bibliography count, target deviations, and verification
 result.
 
-The task is complete only when the four manuscripts, five audits, and two
-documented review rounds are installed and verified against the current files.
+The task is complete only when the seven manuscripts, five audits, heading
+framing pass, terminology-introduction pass, topical-cohesion pass, and two
+documented publishability review rounds are installed and verified against the
+current files.

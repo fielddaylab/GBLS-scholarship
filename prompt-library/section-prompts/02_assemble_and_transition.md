@@ -30,6 +30,9 @@ Revise the whole manuscript to:
 - remove unnecessary repetition without erasing meaningful differences;
 - harmonize terminology, citation style, evidentiary language, and voice;
 - ensure each substantive heading opens with synthesis;
+- combine adjacent source-led sentences into topical claims supported by
+  multiple sources;
+- remove paragraph structures that merely reproduce the order of studies;
 - preserve null findings, outliers, context differences, and limitations;
 - connect findings to library practice without overstating evidence;
 - support, qualify, or label baseline propositions;

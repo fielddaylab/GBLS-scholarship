@@ -16,17 +16,41 @@ When `RUNTIME_SECTION_ROLE` is `narrative` or `front matter`:
    metadata, not from its position alone.
 4. Search the complete eligible coded-summary corpus for relevant evidence,
    counterevidence, null findings, context differences, and evidence limits.
-5. Develop baseline prose into thematic, cross-source synthesis.
-6. Preserve exact heading wording, level, and order after removing only
+5. Cluster relevant findings by claim, pattern, tension, outcome, context, or
+   design principle before drafting. Do not draft in source-discovery order.
+6. Develop baseline prose into thematic, cross-source synthesis whose
+   paragraph subjects are topics rather than authors or articles.
+7. Preserve exact heading wording, level, and order after removing only
    trailing drafting annotations.
-7. Give practical GBLS implications where appropriate to the section's role.
-8. Create narrative movement toward the next section without prewriting it.
-9. Meet or explicitly account for the runtime word target.
-10. Return the completed section and structured working ledger.
+8. Begin every substantive narrative heading with an orienting paragraph that
+   defines its scope and previews the topics and distinctions that follow.
+9. Introduce specialized terms, organizations, frameworks, and acronyms at
+   first use before relying on them.
+10. Give practical GBLS implications where appropriate to the section's role.
+11. Create narrative movement toward the next section without prewriting it.
+12. Meet or explicitly account for the runtime word target.
+13. Run the author-centric prose check below, revise, and return the completed
+   section and structured working ledger.
 
 The opening paragraph should frame the section's collective question and
 principal patterns. Paragraphs should be organized around ideas, not papers.
 Where the evidence base is mainly descriptive, say so.
+
+## Author-Centric Prose Check
+
+For every paragraph:
+
+1. identify its topic sentence and collective message;
+2. flag sentences that begin with an author name, study name, or citation;
+3. flag sequences that summarize one source per sentence;
+4. flag paragraphs supported by only one source but written as general claims;
+5. rewrite flagged prose around a topical claim, grouped evidence,
+   comparison, and interpretation.
+
+Retain author-led sentences only for a necessary attribution, direct
+disagreement, methodological contrast, distinctive concept, historical
+intervention, or outlier. The final paragraph should remain coherent if
+author names are removed and only the substantive claims remain.
 
 ## Reference Mode
 
