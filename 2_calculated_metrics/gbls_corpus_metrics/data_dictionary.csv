@@ -1,0 +1,31 @@
+file,grain,purpose,primary_key
+articles.csv,one row per article,Full parsed article data including summary text,article_id
+articles_core.csv,one row per article,Article data without summary text,article_id
+article_features_long.csv,one row per article-feature assignment,Long-form controlled metadata,article_id + feature_group + feature_value
+article_feature_matrix.csv,one row per article,Binary matrix of every coded feature,article_id
+contributions.csv,one row per proposed contribution,Suggested review contributions,article_id + contribution_number
+feature_counts.csv,one row per feature label,Corpus prevalence by feature,feature_group + feature_value
+publication_year_counts.csv,one row per year,Publication volume,year_label
+feature_year_counts.csv,one row per year-feature combination,Feature prevalence over time,year + feature_group + feature_value
+feature_cooccurrence.csv,one row per feature pair,Feature co-occurrence in at least two articles,feature pair
+dataset_summary.csv,one row per metric,Headline corpus metrics,metric
+source_type_counts.csv,one row per feature label,Counts for Source Type,feature_value
+source_type_matrix.csv,one row per article,Binary matrix for Source Type,article_id
+peer_review_counts.csv,one row per feature label,Counts for Peer Review,feature_value
+peer_review_matrix.csv,one row per article,Binary matrix for Peer Review,article_id
+evidence_type_counts.csv,one row per feature label,Counts for Evidence Type,feature_value
+evidence_type_matrix.csv,one row per article,Binary matrix for Evidence Type,article_id
+primary_methodology_counts.csv,one row per feature label,Counts for Primary Methodology,feature_value
+primary_methodology_matrix.csv,one row per article,Binary matrix for Primary Methodology,article_id
+library_context_counts.csv,one row per feature label,Counts for Library Context,feature_value
+library_context_matrix.csv,one row per article,Binary matrix for Library Context,article_id
+game_format_counts.csv,one row per feature label,Counts for Game Format,feature_value
+game_format_matrix.csv,one row per article,Binary matrix for Game Format,article_id
+service_area_counts.csv,one row per feature label,Counts for Service Area,feature_value
+service_area_matrix.csv,one row per article,Binary matrix for Service Area,article_id
+audience_counts.csv,one row per feature label,Counts for Audience,feature_value
+audience_matrix.csv,one row per article,Binary matrix for Audience,article_id
+intended_outcome_counts.csv,one row per feature label,Counts for Intended Outcome,feature_value
+intended_outcome_matrix.csv,one row per article,Binary matrix for Intended Outcome,article_id
+coding_confidence_counts.csv,one row per feature label,Counts for Coding Confidence,feature_value
+coding_confidence_matrix.csv,one row per article,Binary matrix for Coding Confidence,article_id

@@ -1,0 +1,12 @@
+feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
+source_type,peer_reviewed_journal_article,116,200,58.0,1
+source_type,toolkit_or_guidance_document,31,200,15.5,2
+source_type,professional_publication,22,200,11.0,3
+source_type,conference_paper,9,200,4.5,4
+source_type,book_chapter,6,200,3.0,5
+source_type,dataset_or_archive,6,200,3.0,5
+source_type,blog_or_web_article,3,200,1.5,6
+source_type,book,2,200,1.0,7
+source_type,dissertation_or_thesis,2,200,1.0,7
+source_type,government_or_foundation_report,2,200,1.0,7
+source_type,unpublished_document,1,200,0.5,8

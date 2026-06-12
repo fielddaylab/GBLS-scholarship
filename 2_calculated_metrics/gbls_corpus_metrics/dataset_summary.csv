@@ -1,0 +1,10 @@
+metric,value
+total_articles,200
+earliest_year,1950
+latest_year,2025
+unique_feature_labels,87
+total_article_feature_assignments,2277
+mean_features_per_article,11.385
+median_summary_word_count,651.5
+articles_with_contributions,191
+not_dated_articles,1

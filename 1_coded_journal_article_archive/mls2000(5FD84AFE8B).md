@@ -1,0 +1,32 @@
+## John J. Riemer BA and MLS (2000). CONSER's Aggregator Survey and the Work of the PCC Task Group. *Cataloging & Classification Quarterly*. https://doi.org/10.1300/J104v28n04_03
+
+### Metadata
+Citation_Key: 101300J104v28n0403
+Year: 2000
+Zotero_Item_Key:
+Better_BibTeX_Citation_Key: 101300J104v28n0403
+Attachment_Key:
+
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: empirical_study
+Primary_Methodology: survey
+Library_Context: unspecified_library_context
+Game_Format: unspecified_game_format
+
+Service_Area: collections_and_access
+Audience: not_applicable
+
+Intended_Outcome: equitable_access
+Coding_Confidence: medium
+
+Coding_Basis: abstract_only
+
+Contributions: none
+
+### Summary
+# **John J. Riemer BA and MLS (2000). CONSER's Aggregator Survey and the Work of the PCC Task Group. *Cataloging & Classification Quarterly*. https://doi.org/10.1300/J104v28n04_03**
+
+The author presents the results of the December 1998 CONSER “Survey on Providing Access to Serial Titles within Aggregator Databases.” Major findings include 71% of respondents desiring to see full...
+
+*Abstract-only coding note: Coding is based only on the archived title and abstract. Fields marked low or medium confidence should be checked against the full article before substantive synthesis.*

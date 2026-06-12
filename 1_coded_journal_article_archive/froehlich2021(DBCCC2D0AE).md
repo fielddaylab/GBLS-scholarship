@@ -1,0 +1,32 @@
+## Thomas J. Froehlich (2021). Amy Affelt. All that's not fit to print: Fake news and the call to action for librarians and information professionals. London, UK: Emerald, 2019, 176 pp. £39.99 (paperback) (ISBN 9781789733648).. *Journal of the Association for Information Science and Technology (JASIST)*, Vol. 72, No. 2. https://doi.org/10.1002/asi.24356
+
+### Metadata
+Citation_Key: 101002asi24356
+Year: 2021
+Zotero_Item_Key:
+Better_BibTeX_Citation_Key: 101002asi24356
+Attachment_Key:
+
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: unspecified
+Library_Context: unspecified_library_context
+Game_Format: unspecified_game_format
+
+Service_Area: discovery_and_advisory
+Audience: educators
+
+Intended_Outcome: not_applicable
+Coding_Confidence: low
+
+Coding_Basis: abstract_only
+
+Contributions: none
+
+### Summary
+# **Thomas J. Froehlich (2021). Amy Affelt. All that's not fit to print: Fake news and the call to action for librarians and information professionals. London, UK: Emerald, 2019, 176 pp. £39.99 (paperback) (ISBN 9781789733648).. *Journal of the Association for Information Science and Technology (JASIST)*, Vol. 72, No. 2. https://doi.org/10.1002/asi.24356**
+
+Click on the article title to read more.
+
+*Abstract-only coding note: Coding is based only on the archived title and abstract. Fields marked low or medium confidence should be checked against the full article before substantive synthesis.*

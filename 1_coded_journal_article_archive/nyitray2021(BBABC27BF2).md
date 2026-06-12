@@ -1,0 +1,32 @@
+## Kristen J. Nyitray, Dana Reijerkerk (2021). Searching for Paumanok: A Study of Library of Congress Authorities and Classifications for Indigenous Long Island, New York. *Cataloging & Classification Quarterly*. https://doi.org/10.1080/01639374.2021.1929627
+
+### Metadata
+Citation_Key: 1010800163937420211929627
+Year: 2021
+Zotero_Item_Key:
+Better_BibTeX_Citation_Key: 1010800163937420211929627
+Attachment_Key:
+
+Source_Type: peer_reviewed_journal_article
+Peer_Review: peer_reviewed
+Evidence_Type: theoretical_or_conceptual
+Primary_Methodology: unspecified
+Library_Context: unspecified_library_context
+Game_Format: unspecified_game_format
+
+Service_Area: collections_and_access
+Audience: not_applicable
+
+Intended_Outcome: not_applicable
+Coding_Confidence: low
+
+Coding_Basis: abstract_only
+
+Contributions: none
+
+### Summary
+# **Kristen J. Nyitray, Dana Reijerkerk (2021). Searching for Paumanok: A Study of Library of Congress Authorities and Classifications for Indigenous Long Island, New York. *Cataloging & Classification Quarterly*. https://doi.org/10.1080/01639374.2021.1929627**
+
+“Starting from fish-shape Paumanok where I was born” … Walt Whitman referencing Long Island, New York in Leaves of Grass, 1867.1Long Island, New York is a case in point in the United States settler...
+
+*Abstract-only coding note: Coding is based only on the archived title and abstract. Fields marked low or medium confidence should be checked against the full article before substantive synthesis.*
