@@ -22,12 +22,9 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Chang, C. (2024). *LSHM: TTRPG Halo 'n' Horns*. Google Docs.**
 

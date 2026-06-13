@@ -20,25 +20,21 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Smith and Baker (2011) paragraph. Suggested text: Broussard
-    (2014) links academic-library instruction games directly to formative assessment. Using *Secret
-    Agents in the Library* and *Goblin Threat* as examples, she argues that games can make one-shot
-    information literacy instruction more responsive by embedding feedback, scaffolding, safe failure,
-    social learning, self-assessment, and debriefing into play, so evidence of learning appears while
-    librarians can still correct misconceptions. Section and exact location: `Cross-Cutting Lessons for
-    Game-Based Library Services > Evaluate Outcomes Beyond Attendance`, after the Brown and Kasper
-    (2013) paragraph. Suggested text: Broussard (2014) also reframes assessment itself as a design
-    problem: games should connect learning objectives to activities early, provide specific and
-    immediate feedback, and use wraparound reflection such as clicker review or discussion to help
-    students transfer game experience into later research behavior. This supports GBLS assessment
-    approaches that look for formative evidence during play, not only post-program satisfaction.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Broussard (2014) links academic-library instruction games directly to formative
+    assessment. Using *Secret Agents in the Library* and *Goblin Threat* as examples, she argues
+    that games can make one-shot information literacy instruction more responsive by embedding
+    feedback, scaffolding, safe failure, social learning, self-assessment, and debriefing into play,
+    so evidence of learning appears while librarians can still correct misconceptions.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Evaluate Outcomes Beyond
+    Attendance
+  Contribution_Text: Broussard (2014) also reframes assessment itself as a design problem: games
+    should connect learning objectives to activities early, provide specific and immediate feedback,
+    and use wraparound reflection such as clicker review or discussion to help students transfer
+    game experience into later research behavior. This supports GBLS assessment approaches that look
+    for formative evidence during play, not only post-program satisfaction.
 ### Summary
 # **Broussard, M. J. S. (2014). Using games to make formative assessment fun in the academic library. *The Journal of Academic Librarianship, 40*(1), 35-42. https://doi.org/10.1016/j.acalib.2012.12.001**
 

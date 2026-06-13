@@ -20,14 +20,11 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a non-library aerospace-engineering mathematics digital escape-room
-    study and should remain in `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a non-library aerospace-engineering mathematics
+    digital escape-room study and should remain in `Explicitly Excluded Literature` after summary
+    completion.
 ### Summary
 # **Sánchez-Ruiz, L. M., López-Alfonso, S., Moll-López, S., Moraño-Fernández, J. A., & Vega-Fleitas, E. (2022). Educational digital escape rooms footprint on students' feelings: A case study within aerospace engineering. *Information, 13*(10), 478. https://doi.org/10.3390/info13100478**
 

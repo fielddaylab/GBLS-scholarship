@@ -22,21 +22,15 @@ Intended_Outcome:
 - institutional_capacity
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Circulating and In-Library
-    Collections`, after the Forsythe (2021) paragraph. Suggested text: Robson, Phillips, and Guerrero
-    (2018) provide the strongest operational evidence for circulating tabletop collections. In a
-    University of North Texas study of differently preserved and processed copies of *Ticket to Ride*
-    and *Betrayal at House on the Hill*, they found that fully preserved copies reduced loss and damage
-    but usually did not justify the labor cost; their resulting practice favors card sleeves for
-    vulnerable or high-use games, cloth-reinforced box corners, bagged components, catalog records, a
-    single barcode/item record, and minimal processing that keeps games circulating without overwhelming
-    staff.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Circulating and In-Library Collections
+  Contribution_Text: Robson, Phillips, and Guerrero (2018) provide the strongest operational
+    evidence for circulating tabletop collections. In a University of North Texas study of
+    differently preserved and processed copies of *Ticket to Ride* and *Betrayal at House on the
+    Hill*, they found that fully preserved copies reduced loss and damage but usually did not
+    justify the labor cost; their resulting practice favors card sleeves for vulnerable or high-use
+    games, cloth-reinforced box corners, bagged components, catalog records, a single barcode/item
+    record, and minimal processing that keeps games circulating without overwhelming staff.
 ### Summary
 # **Robson, D., Phillips, J., & Guerrero, S. (2018). Don't just roll the dice: Simple solutions for circulating tabletop game collections effectively in your library. *Library Resources & Technical Services, 62*(2), 80-90. https://doi.org/10.5860/lrts.62n2.80**
 

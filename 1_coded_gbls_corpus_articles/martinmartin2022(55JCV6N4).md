@@ -22,25 +22,20 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Instruction, Orientation, and Information Literacy`, after Manso
-    Rodriguez (2022) and before Pervolaraki et al. (2015). Suggested text: Martín-Martín, Manero, and
-    Romero-Hernández (2022) provide a Spanish academic-library pilot in which *El último examen*, a
-    Unity-based serious video game developed from 1,639 Complutense University Library user queries,
-    teaches catalog searching, call-number use, bibliographic database searching, Boolean strategy, and
-    reference-manager awareness. In a 14-student one-group pre/post study, average information-literacy
-    scores rose from 53.57% to 85.71%, participants rated the activity positively, and self-rated
-    confidence in finding information fell after play, suggesting the game helped students recognize
-    gaps in their own skills. For GBLS, the study shows both the promise and limits of locally built
-    library games: they can align play with real patron questions and library workflows, but development
-    cost, low voluntary participation, and the need for integration into broader instruction make them
-    better as introduction, reinforcement, or assessment than as standalone replacements for librarian-
-    led teaching.
-
+### Contributions
+- Target_Section: Instruction, Orientation, and Information Literacy
+  Contribution_Text: Martín-Martín, Manero, and Romero-Hernández (2022) provide a Spanish
+    academic-library pilot in which *El último examen*, a Unity-based serious video game developed
+    from 1,639 Complutense University Library user queries, teaches catalog searching, call-number
+    use, bibliographic database searching, Boolean strategy, and reference-manager awareness. In a
+    14-student one-group pre/post study, average information-literacy scores rose from 53.57% to
+    85.71%, participants rated the activity positively, and self-rated confidence in finding
+    information fell after play, suggesting the game helped students recognize gaps in their own
+    skills. For GBLS, the study shows both the promise and limits of locally built library games:
+    they can align play with real patron questions and library workflows, but development cost, low
+    voluntary participation, and the need for integration into broader instruction make them better
+    as introduction, reinforcement, or assessment than as standalone replacements for librarian- led
+    teaching.
 ### Summary
 # **Martín-Martín, Ó., Manero, B., & Romero-Hernández, A. (2022). El videojuego como herramienta de alfabetización informacional en estudiantes universitarios [The video game as an information literacy tool for university students]. *Profesional de la información, 31*(4), e310402. https://doi.org/10.3145/epi.2022.jul.02**
 

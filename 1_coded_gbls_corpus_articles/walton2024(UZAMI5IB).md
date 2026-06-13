@@ -22,14 +22,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. Retain this item in `Explicitly Excluded Literature` because it is a broad
-    TTRPG/utopian studies volume rather than evidence about game-based library services.
-
+  Contribution_Text: No suggested addition. Retain this item in `Explicitly Excluded Literature`
+    because it is a broad TTRPG/utopian studies volume rather than evidence about game-based library
+    services.
 ### Summary
 # **Walton, J. L. (Ed.). (2024). *Utopia on the tabletop*. Ping Press. https://drive.google.com/file/d/142T45GkcP4KAKxF_6s91klH2ulWDwSKd/view**
 

@@ -22,12 +22,9 @@ Audience: not_applicable
 Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Lee, J. H., Tennis, J. T., & Clarke, R. I. (2012). Domain analysis for a video game metadata schema: Issues and challenges. In P. Zaphiris et al. (Eds.), *Theory and practice of digital libraries* (pp. 280-285). Springer.**
 

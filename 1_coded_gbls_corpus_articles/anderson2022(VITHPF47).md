@@ -22,20 +22,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > TTRPG and LARP Programs`,
-    after the Maxwell (2023) paragraph. Suggested text: Anderson (2022) turns public-library D&D into a
-    replicable teen program framework: a one-staff, three- to five-player model for ages 15-18 with an
-    introductory character-creation session, recurring four- to five-hour play sessions, physical and
-    remote tool lists, publicity channels, budget ranges, and informal debriefing. Its developmental-
-    assets rationale links TTRPG play to adult relationships, safety, peer influence, creative activity,
-    reading for pleasure, planning, interpersonal competence, conflict resolution, personal power, and
-    self-esteem, making the format legible as youth-development programming as well as recreation.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > TTRPG and LARP Programs
+  Contribution_Text: Anderson (2022) turns public-library D&D into a replicable teen program
+    framework: a one-staff, three- to five-player model for ages 15-18 with an introductory
+    character-creation session, recurring four- to five-hour play sessions, physical and remote tool
+    lists, publicity channels, budget ranges, and informal debriefing. Its developmental- assets
+    rationale links TTRPG play to adult relationships, safety, peer influence, creative activity,
+    reading for pleasure, planning, interpersonal competence, conflict resolution, personal power,
+    and self-esteem, making the format legible as youth-development programming as well as
+    recreation.
 ### Summary
 # **Anderson, K. (2022). Libraries & lizards: Playing D&D at public libraries program framework. *YA Hotline*, (116).**
 

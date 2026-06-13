@@ -28,21 +28,16 @@ Intended_Outcome:
 - discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Clubs and Recurring Play
-    Groups`, after the Alvarez (2017) paragraph. Suggested text: Werner (2013) gives a public-library
-    youth-services implementation guide rooted in Benton Harbor Public Library's gaming afternoons,
-    which grew from a patron request for *Yu-Gi-Oh!* space into separate children's and teen programs
-    with card games, board games, RPGs, video games, tournaments, Teen Advisory Board links, book-group
-    links, volunteering, and summer-reading participation. The article is descriptive rather than
-    evaluative, but it makes recurring gaming visible as a flexible service pipeline: start with local
-    demand, involve teens in selection, consult local game expertise, plan for noise and theft, create
-    game-selection policies, and let the program change with its participants.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Clubs and Recurring Play Groups
+  Contribution_Text: Werner (2013) gives a public-library youth-services implementation guide rooted
+    in Benton Harbor Public Library's gaming afternoons, which grew from a patron request for
+    *Yu-Gi-Oh!* space into separate children's and teen programs with card games, board games, RPGs,
+    video games, tournaments, Teen Advisory Board links, book-group links, volunteering, and
+    summer-reading participation. The article is descriptive rather than evaluative, but it makes
+    recurring gaming visible as a flexible service pipeline: start with local demand, involve teens
+    in selection, consult local game expertise, plan for noise and theft, create game-selection
+    policies, and let the program change with its participants.
 ### Summary
 # **Werner, K. (2013). Bringing them in: Developing a gaming program for the library. *Library Trends, 61*(4), 790-801.**
 

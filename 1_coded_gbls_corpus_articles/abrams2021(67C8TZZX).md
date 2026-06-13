@@ -23,20 +23,16 @@ Audience: teens
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, immediately after the heading. Suggested text: Abrams and Van Eck (2021)
-    frame videogame programming as a site of videogame literacies: multimodal, social, participatory
-    meaning-making involving games, players, spectators, spaces, rules, and digital and nondigital
-    resources. Their national survey of 1,016 U.S. librarians found that fewer than half reported
-    videogame programming, most existing programs were recent, and adoption was shaped by first-order
-    barriers such as funding, training, hardware, and space as well as second-order barriers such as
-    confidence, beliefs about games, and assumptions about teen behavior.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Abrams and Van Eck (2021) frame videogame programming as a site of videogame
+    literacies: multimodal, social, participatory meaning-making involving games, players,
+    spectators, spaces, rules, and digital and nondigital resources. Their national survey of 1,016
+    U.S. librarians found that fewer than half reported videogame programming, most existing
+    programs were recent, and adoption was shaped by first-order barriers such as funding, training,
+    hardware, and space as well as second-order barriers such as confidence, beliefs about games,
+    and assumptions about teen behavior.
 ### Summary
 # **Abrams, S. S., & Van Eck, R. N. (2021). Checked out? Videogame programming in U.S. libraries and implications for videogame literacies. *Journal of Adolescent & Adult Literacy, 65*(3), 227-236. https://doi.org/10.1002/jaal.1197**
 

@@ -22,23 +22,19 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, immediately after the Horban and Skachenko (2019) paragraph. Suggested
-    text: Henriksen-Bulmer et al. (2024) are not studying libraries, but their privacy board-game case
-    is adjacent evidence for library digital-literacy programs. The team created a physical *Snakes and
-    Ladders*/*Trivial Pursuit*-style game for 16-25-year-olds on managing information, self-identity and
-    well-being, cyberbullying and trolling, relationships and reputation, and privacy and security. In
-    focus groups with 27 young adults, players reported improved confidence across all five categories,
-    with significant pre/post self-rated gains especially in managing information and
-    relationships/reputation. For GBLS, the study suggests that low-tech board games can make online-
-    safety instruction conversational and non-threatening, though transfer to libraries requires caution
-    because the sample was small, university-based, and measured immediate self-report.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Henriksen-Bulmer et al. (2024) are not studying libraries, but their privacy
+    board-game case is adjacent evidence for library digital-literacy programs. The team created a
+    physical *Snakes and Ladders*/*Trivial Pursuit*-style game for 16-25-year-olds on managing
+    information, self-identity and well-being, cyberbullying and trolling, relationships and
+    reputation, and privacy and security. In focus groups with 27 young adults, players reported
+    improved confidence across all five categories, with significant pre/post self-rated gains
+    especially in managing information and relationships/reputation. For GBLS, the study suggests
+    that low-tech board games can make online- safety instruction conversational and
+    non-threatening, though transfer to libraries requires caution because the sample was small,
+    university-based, and measured immediate self-report.
 ### Summary
 # **Henriksen-Bulmer, J., Rosenorn-Lanng, E., Corbin-Clarke, S., Ware, S., Melacca, D., & Fenge, L.-A. (2024). Using game-based learning to teach young people about privacy and online safety. *Interactive Learning Environments, 32*(10), 6430-6450. https://doi.org/10.1080/10494820.2023.2265424**
 

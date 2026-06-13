@@ -22,23 +22,19 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Suggested placement: `Programming Formats and Service Models > Programs Inside Game Worlds and
-    Virtual Platforms`, immediately after Bell and Trueman (2008). Suggested text: Ryan, Porter, and
-    Miller (2010) add an early academic-library critique of the Second Life boom by evaluating Second
-    Life, Openlife Grid, and Active Worlds against reference, collection access, exhibits/outreach, and
-    instruction goals. They find that ordinary reference, catalog/database access, and real-time
-    instruction often lose value inside virtual worlds because of empty spaces, onboarding time,
-    hardware/software demands, chat limitations, bandwidth, licensing, content-creation labor,
-    commercial platform risks, and safety concerns; immersive exhibits and topical sims are more
-    promising when they do something a website or classroom cannot. For GBLS, the article offers a
-    durable service-design rule: build inside game-like worlds only when the platform's spatial, social,
-    or experiential affordances match a real library purpose.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Programs Inside Game Worlds and Virtual
+    Platforms
+  Contribution_Text: Ryan, Porter, and Miller (2010) add an early academic-library critique of the
+    Second Life boom by evaluating Second Life, Openlife Grid, and Active Worlds against reference,
+    collection access, exhibits/outreach, and instruction goals. They find that ordinary reference,
+    catalog/database access, and real-time instruction often lose value inside virtual worlds
+    because of empty spaces, onboarding time, hardware/software demands, chat limitations,
+    bandwidth, licensing, content-creation labor, commercial platform risks, and safety concerns;
+    immersive exhibits and topical sims are more promising when they do something a website or
+    classroom cannot. For GBLS, the article offers a durable service-design rule: build inside
+    game-like worlds only when the platform's spatial, social, or experiential affordances match a
+    real library purpose.
 ### Summary
 # **Ryan, J., Porter, M., & Miller, R. (2010). Academic library services in virtual worlds: An examination of the potential for library services in immersive environments. *Journal of Information Technology Education: Innovations in Practice, 9*, 253-273.**
 

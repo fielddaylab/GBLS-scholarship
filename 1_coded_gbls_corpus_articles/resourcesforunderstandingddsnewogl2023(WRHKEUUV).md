@@ -22,15 +22,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No addition recommended. Exclude from the GBLS literature review because this is a brief D&D Open
-    Gaming License resource roundup, not a library-focused study, program report, collection analysis,
-    or service model.
-
+  Contribution_Text: No addition recommended. Exclude from the GBLS literature review because this
+    is a brief D&D Open Gaming License resource roundup, not a library-focused study, program
+    report, collection analysis, or service model.
 ### Summary
 # **Resources for understanding D&D's new OGL. (2023). *Google Docs*. https://docs.google.com/document/u/1/d/1afPW1kl9ygogfvnqDrfEC3LoTdVhr2vu5GdIsrH9yhU/edit?usp=drive_web&ouid=104872546336741826329&usp=embed_facebook**
 

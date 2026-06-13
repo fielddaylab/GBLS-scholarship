@@ -23,12 +23,9 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Pan, Y., Adams, E. L., Ketterlin-Geller, L. R., Larson, E. C., & Clark, C. (2024). Enhancing middle school students' computational thinking competency through game-based learning. *Educational Technology Research and Development, 72*(6), 3391-3419. https://doi.org/10.1007/s11423-024-10400-x**
 

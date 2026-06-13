@@ -23,20 +23,15 @@ Intended_Outcome:
 - discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Cataloging, Metadata, and
-    Discovery`, immediately after the heading. Suggested text: Lee, Schmalz, Keating, and Ha (2020) show
-    why game cataloging and metadata must account for more than finished games. Their interviews with 29
-    stakeholders found that game development artifacts are difficult to organize and discover because of
-    weak documentation incentives in industry, agile and tool-fragmented production environments,
-    inconsistent terminology, local controlled vocabularies, and disconnected library, archive, museum,
-    and special-collections systems; for GBLS, this makes relationship metadata and cross-collection
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Cataloging, Metadata, and Discovery
+  Contribution_Text: Lee, Schmalz, Keating, and Ha (2020) show why game cataloging and metadata must
+    account for more than finished games. Their interviews with 29 stakeholders found that game
+    development artifacts are difficult to organize and discover because of weak documentation
+    incentives in industry, agile and tool-fragmented production environments, inconsistent
+    terminology, local controlled vocabularies, and disconnected library, archive, museum, and
+    special-collections systems; for GBLS, this makes relationship metadata and cross-collection
     discovery central to treating games as cultural heritage.
-
 ### Summary
 # **Lee, J. H., Schmalz, M., Keating, S., & Ha, J. (2020). Challenges in organizing and accessing video game development artifacts. In A. Sundqvist, G. Berget, J. Nolin, & K. I. Skjerdingstad (Eds.), *Sustainable digital communities: iConference 2020* (pp. 630-637). Springer. https://doi.org/10.1007/978-3-030-43687-2_53**
 

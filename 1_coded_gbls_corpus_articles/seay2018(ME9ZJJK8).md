@@ -20,20 +20,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Games,
-    Gamification, and Play`, after the Seay (2018) practitioner-vocabulary paragraph. Suggested text:
-    Seay's companion column on "The G Word" sharpens this distinction by defining games as bounded rule
-    systems and gamification as applying game thinking and game dynamics to non-game contexts. For GBLS,
-    this distinction matters because gamified orientations, badge systems, resource-use competitions,
-    summer reading rewards, or professional-development quests operate through motivation, feedback,
-    progress, and status rather than through the fuller play structures of board games, videogames,
-    TTRPGs, or escape rooms.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Games, Gamification, and
+    Play
+  Contribution_Text: Seay's companion column on "The G Word" sharpens this distinction by defining
+    games as bounded rule systems and gamification as applying game thinking and game dynamics to
+    non-game contexts. For GBLS, this distinction matters because gamified orientations, badge
+    systems, resource-use competitions, summer reading rewards, or professional-development quests
+    operate through motivation, feedback, progress, and status rather than through the fuller play
+    structures of board games, videogames, TTRPGs, or escape rooms.
 ### Summary
 # **Seay, J. A. (2018). Considering games and gamification in libraries & associated entities: The "G" word. *Against the Grain, 30*(4), 68-69. https://doi.org/10.7771/2380-176X.8311**
 

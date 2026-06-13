@@ -20,19 +20,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Games,
-    Gamification, and Play`, immediately after the heading. Suggested text: Seay (2018) captures the
-    practitioner-facing vocabulary that often bundles games, serious games, escape rooms, and
-    gamification together in library discourse. The column is anecdotal rather than evaluative, but it
-    is useful for distinguishing related service logics: escape rooms as information-seeking and
-    problem-solving instruction, serious games as purposeful simulation, gamification as user-engagement
-    design, and game nights or board game collections as expressions of the library as community space.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Games, Gamification, and
+    Play
+  Contribution_Text: Seay (2018) captures the practitioner-facing vocabulary that often bundles
+    games, serious games, escape rooms, and gamification together in library discourse. The column
+    is anecdotal rather than evaluative, but it is useful for distinguishing related service logics:
+    escape rooms as information-seeking and problem-solving instruction, serious games as purposeful
+    simulation, gamification as user-engagement design, and game nights or board game collections as
+    expressions of the library as community space.
 ### Summary
 # **Seay, J. A. (2018). Considering games and gamification in libraries & associated entities: Surely, you can't be serious: When library folk go game. *Against the Grain, 30*(2), 58-59. https://doi.org/10.7771/2380-176X.8063**
 

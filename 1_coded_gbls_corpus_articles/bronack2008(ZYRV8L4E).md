@@ -26,12 +26,9 @@ Intended_Outcome:
 - learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Bronack, S., Sanders, R., Cheney, A., Riedl, R., Tashner, J., & Matzen, N. (2008). Presence pedagogy: Teaching and learning in a 3D virtual immersive world. *International Journal of Teaching and Learning in Higher Education, 20*(1), 59-69.**
 

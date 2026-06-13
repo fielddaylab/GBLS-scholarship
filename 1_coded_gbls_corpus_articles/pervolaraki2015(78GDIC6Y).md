@@ -20,27 +20,23 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Manso Rodriguez (2022) paragraph. Suggested text: Pervolaraki
-    et al. (2015) provide an earlier systematic review of video games, literacy, information literacy,
-    education, and public libraries, organizing the literature around video game literacy, educational
-    uses, game-design benefits, reading and writing, and public-library adoption. Their synthesis
-    broadens IL beyond formal lessons: game-related information work can include in-game and out-of-game
-    reading, forums, wikis, strategy sites, collaborative information seeking, paratext creation,
-    problem solving, and game making. Section and exact location: `Gaps in the Literature and Future
-    Research Agenda > Evidence Gaps`, after the Khademi Zare et al. (2024) paragraph. Suggested text:
-    Pervolaraki et al. (2015) identify durable video-game evidence gaps that remain relevant for GBLS:
-    comparatively little library research on adolescents and gaming, limited evidence on adults and
-    gaming in libraries, uneven public-library adoption between the United States and Europe, and a
-    tendency to study game use more than young people's creation of games. Their review also shows why
-    staff training matters, since unfamiliarity and fear of negative effects can prevent educators and
-    librarians from evaluating game-based literacy work on its actual learning design.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Pervolaraki et al. (2015) provide an earlier systematic review of video games,
+    literacy, information literacy, education, and public libraries, organizing the literature
+    around video game literacy, educational uses, game-design benefits, reading and writing, and
+    public-library adoption. Their synthesis broadens IL beyond formal lessons: game-related
+    information work can include in-game and out-of-game reading, forums, wikis, strategy sites,
+    collaborative information seeking, paratext creation, problem solving, and game making.
+- Target_Section: Gaps in the Literature and Future Research Agenda > Evidence Gaps
+  Contribution_Text: Pervolaraki et al. (2015) identify durable video-game evidence gaps that remain
+    relevant for GBLS: comparatively little library research on adolescents and gaming, limited
+    evidence on adults and gaming in libraries, uneven public-library adoption between the United
+    States and Europe, and a tendency to study game use more than young people's creation of games.
+    Their review also shows why staff training matters, since unfamiliarity and fear of negative
+    effects can prevent educators and librarians from evaluating game-based literacy work on its
+    actual learning design.
 ### Summary
 # **Pervolaraki, I.-E., Garoufallou, E., Siatri, R., Zafeiriou, G., & Virkus, S. (2015). How can video games facilitate information literacy? In S. Kurbanoğlu, J. Boustany, S. Špiranec, E. Grassian, D. Mizrachi, & L. Roy (Eds.), *Information literacy: Moving toward sustainability* (pp. 339-349). Springer. https://doi.org/10.1007/978-3-319-28197-1_35**
 

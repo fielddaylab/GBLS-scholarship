@@ -22,24 +22,18 @@ Audience: not_applicable
 Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Cataloging, Metadata, and
-    Discovery`, immediately after the section heading and before the Lee, Schmalz, Keating, and Ha
-    (2020) paragraph. Suggested text: Welhouse, Lee, and Bancroft (2015) offer an earlier game-metadata
-    foundation by treating video game plot/narrative as a user-warranted access point rather than a
-    decorative summary. Building from personas, interviews with 56 users, a 1,257-participant survey,
-    domain analysis, and card sorting, they argue that existing catalogs, genre labels, commercial
-    descriptions, and fan summaries do not reliably describe what games are really about. Their VERB-
-    OBJECT controlled vocabulary supports collocation across plot elements and can complement genre,
-    theme, setting, mood, and visual style; for GBLS, this matters for game advisory, thematic displays,
-    curricular matching, and culturally serious discovery, while also surfacing practical metadata
-    problems around granularity, spoilers, cataloger expertise, free-text summaries, and crowdsourced
-    description.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Cataloging, Metadata, and Discovery
+  Contribution_Text: Welhouse, Lee, and Bancroft (2015) offer an earlier game-metadata foundation by
+    treating video game plot/narrative as a user-warranted access point rather than a decorative
+    summary. Building from personas, interviews with 56 users, a 1,257-participant survey, domain
+    analysis, and card sorting, they argue that existing catalogs, genre labels, commercial
+    descriptions, and fan summaries do not reliably describe what games are really about. Their
+    VERB- OBJECT controlled vocabulary supports collocation across plot elements and can complement
+    genre, theme, setting, mood, and visual style; for GBLS, this matters for game advisory,
+    thematic displays, curricular matching, and culturally serious discovery, while also surfacing
+    practical metadata problems around granularity, spoilers, cataloger expertise, free-text
+    summaries, and crowdsourced description.
 ### Summary
 # **Welhouse, Z., Lee, J. H., & Bancroft, J. (2015). "What am I fighting for?": Creating a controlled vocabulary for video game plot metadata. *Cataloging & Classification Quarterly, 53*(2), 157-189. https://doi.org/10.1080/01639374.2014.963776**
 

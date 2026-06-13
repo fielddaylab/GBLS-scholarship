@@ -23,20 +23,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Escape Rooms and Breakout
-    Boxes`, immediately after the heading. Suggested text: Lewallen (2019) gives the school-library
-    breakout-box service model in practitioner form: reusable kits with reprogrammable locks can be lent
-    to teachers, adapted across subjects and grade levels, used for library orientation, offered during
-    lunch or after school, extended into breakout clubs, or used in summer camps where students design
-    their own games. The article is not assessment evidence, but it connects breakout boxes to AASL
-    inquiry and collaboration goals and shows how librarians facilitate by offering hints, curating
-    games, supporting reflection, and letting students control the play.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Escape Rooms and Breakout Boxes
+  Contribution_Text: Lewallen (2019) gives the school-library breakout-box service model in
+    practitioner form: reusable kits with reprogrammable locks can be lent to teachers, adapted
+    across subjects and grade levels, used for library orientation, offered during lunch or after
+    school, extended into breakout clubs, or used in summer camps where students design their own
+    games. The article is not assessment evidence, but it connects breakout boxes to AASL inquiry
+    and collaboration goals and shows how librarians facilitate by offering hints, curating games,
+    supporting reflection, and letting students control the play.
 ### Summary
 # **Lewallen, K. (2019). Curating breakout boxes. *Knowledge Quest, 48*(2), 42-46.**
 

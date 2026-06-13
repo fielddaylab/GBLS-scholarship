@@ -20,20 +20,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Games, Gamification, and Play`, immediately after Huizinga (1950) and
-    before Seay (2018). Suggested text: Deterding, Dixon, Khaled, and Nacke (2011) provide the canonical
-    definition of gamification as the use of game design elements in non-game contexts. Their framework
-    distinguishes gamefulness from playfulness, game elements from full serious games, and game design
-    from game technologies or broader game practices; for GBLS, this keeps gamified library services
-    conceptually separate from full game programs and helps evaluate whether badges, leaderboards,
-    quests, reading challenges, orientation tasks, or progress systems are being used as design elements
-    aligned with library goals rather than treated as games in themselves.
-
+### Contributions
+- Target_Section: Games, Gamification, and Play
+  Contribution_Text: Deterding, Dixon, Khaled, and Nacke (2011) provide the canonical definition of
+    gamification as the use of game design elements in non-game contexts. Their framework
+    distinguishes gamefulness from playfulness, game elements from full serious games, and game
+    design from game technologies or broader game practices; for GBLS, this keeps gamified library
+    services conceptually separate from full game programs and helps evaluate whether badges,
+    leaderboards, quests, reading challenges, orientation tasks, or progress systems are being used
+    as design elements aligned with library goals rather than treated as games in themselves.
 ### Summary
 # **Deterding, S., Dixon, D., Khaled, R., & Nacke, L. (2011). From game design elements to gamefulness: Defining "gamification." In *Proceedings of the 15th International Academic MindTrek Conference: Envisioning Future Media Environments* (pp. 9-15). ACM. https://doi.org/10.1145/2181037.2181040**
 

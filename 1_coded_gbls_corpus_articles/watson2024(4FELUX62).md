@@ -26,20 +26,14 @@ Intended_Outcome:
 - creativity_and_production
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > TTRPG and LARP Programs`,
-    immediately after the `## TTRPG and LARP Programs` heading. Suggested text: Watson et al. (2024)
-    show how a TTRPG program can be designed as library outreach and library-skills instruction at the
-    same time. Their proof-of-concept one-shot turns an academic library floor into a fantasy adventure
-    space, translating service points into themed rooms and common library tasks into quests such as
-    finding books, using microfilm, scanning and printing, and making a 3D print. Because the module was
-    not playtested before publication, its value is primarily as a design case and implementation model
-    rather than outcome evidence.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > TTRPG and LARP Programs
+  Contribution_Text: Watson et al. (2024) show how a TTRPG program can be designed as library
+    outreach and library-skills instruction at the same time. Their proof-of-concept one-shot turns
+    an academic library floor into a fantasy adventure space, translating service points into themed
+    rooms and common library tasks into quests such as finding books, using microfilm, scanning and
+    printing, and making a 3D print. Because the module was not playtested before publication, its
+    value is primarily as a design case and implementation model rather than outcome evidence.
 ### Summary
 # **Watson, A. P., Batte, E., Young, B. W., & Watson, S. A. (2024). Dungeons & Dewey decimals: A D&D-style TTRPG adventure module for outreach and library skills. *College & Undergraduate Libraries, 31*(3-4), 113-129. https://doi.org/10.1080/10691316.2024.2425089**
 

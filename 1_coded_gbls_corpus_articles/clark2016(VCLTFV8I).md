@@ -42,20 +42,16 @@ For the larger GBLS project, Clark and colleagues provide a valuable methodologi
 
 ## Suggested Review Contributions
 
-Contributions:
-- Target_Section: "The Need for a Field-Level Synthesis"
-  Target_Section_Raw: "The Need for a Field-Level Synthesis"
-  Placement: "At the end of the subsection's discussion of Vogel et al. (2006), Sitzmann (2011), and Wouters et al. (2013), immediately before the transition to the GBLS review's scope."
-  Contribution_Text: >
-    Clark et al. (2016) synthesize this broader literature by arguing that the useful question is not
-    whether games work in the abstract but how particular designs align player goals, game
-    affordances, pedagogy, content, social organization, and assessment. Their meta-analysis found
-    positive average effects for both game-versus-nongame and value-added design comparisons, yet
-    emphasized heterogeneous interventions, uneven comparison quality, and the dominance of
-    immediate lower-order outcomes. This design-beyond-medium conclusion provides a methodological
-    bridge to GBLS: libraries require a field-specific synthesis because their purposes, service
-    ecologies, audiences, and evidence needs differ from formal K-16 instruction.
-
+### Contributions
+- Target_Section: The Need for a Field-Level Synthesis
+  Contribution_Text: Clark et al. (2016) synthesize this broader literature by arguing that the
+    useful question is not whether games work in the abstract but how particular designs align
+    player goals, game affordances, pedagogy, content, social organization, and assessment. Their
+    meta-analysis found positive average effects for both game-versus-nongame and value-added design
+    comparisons, yet emphasized heterogeneous interventions, uneven comparison quality, and the
+    dominance of immediate lower-order outcomes. This design-beyond-medium conclusion provides a
+    methodological bridge to GBLS: libraries require a field-specific synthesis because their
+    purposes, service ecologies, audiences, and evidence needs differ from formal K-16 instruction.
 ## Evidence Cautions and Limitations
 
 The corpus includes only peer-reviewed English-language studies from 2000-2012 that supported pretest-posttest effect-size calculation. Outcomes were predominantly immediate and cognitive, and many game and comparison conditions were sparsely described. Moderator variables are correlated, the highest-quality subsets are small, and the average effects apply only to the conditions studied, not to all games or all nongame instruction. No direct inference to library services is warranted.

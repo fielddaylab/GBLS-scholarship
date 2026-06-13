@@ -22,21 +22,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Clubs and Recurring Play
-    Groups`, after the Maluck (2013) paragraph. Suggested text: Alvarez (2017) adds a youth-agency
-    rationale for recurring tabletop play in a public-library media center serving students whose
-    schools lacked libraries. Her practitioner account describes modern tabletop games such as Splendor,
-    Dominion, Star Realms, Zombicide, Descent, Mysterium, Pandemic, Pathfinder, Agricola, and Mansions
-    of Madness as sequenced tools for building rule reading, strategic reassessment, cooperation,
-    leadership, resilience, and student moderation; the evidence is observational, but it shows why game
-    selection and facilitation should scaffold participants from approachable games toward more complex,
+### Contributions
+- Target_Section: Programming Formats and Service Models > Clubs and Recurring Play Groups
+  Contribution_Text: Alvarez (2017) adds a youth-agency rationale for recurring tabletop play in a
+    public-library media center serving students whose schools lacked libraries. Her practitioner
+    account describes modern tabletop games such as Splendor, Dominion, Star Realms, Zombicide,
+    Descent, Mysterium, Pandemic, Pathfinder, Agricola, and Mansions of Madness as sequenced tools
+    for building rule reading, strategic reassessment, cooperation, leadership, resilience, and
+    student moderation; the evidence is observational, but it shows why game selection and
+    facilitation should scaffold participants from approachable games toward more complex,
     skill-based play.
-
 ### Summary
 # **Alvarez, V. G. (2017). Engaging students in the library through tabletop gaming. *Knowledge Quest, 45*(4), 40-48.**
 

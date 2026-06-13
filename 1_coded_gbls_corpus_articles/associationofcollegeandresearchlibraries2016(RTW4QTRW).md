@@ -20,23 +20,17 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Instruction, Orientation, and Information Literacy`, immediately after
-    the section heading and before Abrams and Van Eck (2021). Suggested text: The ACRL Framework
-    (Association of College and Research Libraries, 2016) provides the information-literacy baseline
-    behind many game-based instruction examples. Its six frames - Authority Is Constructed and
-    Contextual, Information Creation as a Process, Information Has Value, Research as Inquiry,
-    Scholarship as Conversation, and Searching as Strategic Exploration - define information literacy as
-    reflective discovery, understanding how information is produced and valued, and participating
-    ethically in communities of learning. For GBLS, the Framework suggests that games and gamified
-    orientations should be designed around inquiry, source authority, information creation, value,
-    scholarly conversation, strategic searching, dispositions, metacognition, and assessment rather than
-    only task completion.
-
+### Contributions
+- Target_Section: Instruction, Orientation, and Information Literacy
+  Contribution_Text: The ACRL Framework (Association of College and Research Libraries, 2016)
+    provides the information-literacy baseline behind many game-based instruction examples. Its six
+    frames - Authority Is Constructed and Contextual, Information Creation as a Process, Information
+    Has Value, Research as Inquiry, Scholarship as Conversation, and Searching as Strategic
+    Exploration - define information literacy as reflective discovery, understanding how information
+    is produced and valued, and participating ethically in communities of learning. For GBLS, the
+    Framework suggests that games and gamified orientations should be designed around inquiry,
+    source authority, information creation, value, scholarly conversation, strategic searching,
+    dispositions, metacognition, and assessment rather than only task completion.
 ### Summary
 # **Association of College and Research Libraries. (2016). *Framework for information literacy for higher education*. American Library Association.**
 

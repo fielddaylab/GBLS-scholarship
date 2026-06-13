@@ -23,23 +23,18 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Programs Inside Game Worlds
-    and Virtual Platforms`, after the Bronack et al. (2008) paragraph. Suggested text: Hedreen et al.
-    (2008) give the detailed practitioner account behind Second Life Library 2.0, showing how a game-
-    adjacent virtual world became a multi-branch library service ecology rather than a single virtual
-    room. Info Island and related spaces combined avatar reference, linked information objects, in-world
-    books and note cards, information-literacy instruction, anime and manga collections, Mystery Manor
-    reader's advisory, health-information outreach, Caledon special collections for a steampunk role-
-    play community, Teen Grid services, partner islands, tours, events, and volunteer coordination; for
-    GBLS, the case shows that virtual-platform services require translation of library values into
-    platform-specific forms of presence, trust, collections, facilitation, youth safety, and community
-    identity.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Programs Inside Game Worlds and Virtual
+    Platforms
+  Contribution_Text: Hedreen et al. (2008) give the detailed practitioner account behind Second Life
+    Library 2.0, showing how a game- adjacent virtual world became a multi-branch library service
+    ecology rather than a single virtual room. Info Island and related spaces combined avatar
+    reference, linked information objects, in-world books and note cards, information-literacy
+    instruction, anime and manga collections, Mystery Manor reader's advisory, health-information
+    outreach, Caledon special collections for a steampunk role- play community, Teen Grid services,
+    partner islands, tours, events, and volunteer coordination; for GBLS, the case shows that
+    virtual-platform services require translation of library values into platform-specific forms of
+    presence, trust, collections, facilitation, youth safety, and community identity.
 ### Summary
 # **Hedreen, R. C., Johnson, J. L., Lundy, M. A., Burnette, P., Perryman, C., Van Den Brekel, G., Jacobson, J. J., Gullett, M., & Czarnecki, K. (2008). Exploring virtual librarianship: Second Life Library 2.0. *Internet Reference Services Quarterly, 13*(2-3), 167-195. https://doi.org/10.1080/10875300802103833**
 

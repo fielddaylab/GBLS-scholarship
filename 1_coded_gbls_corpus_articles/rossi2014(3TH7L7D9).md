@@ -24,20 +24,14 @@ Audience: not_applicable
 Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Cataloging, Metadata, and
-    Discovery`, immediately after the Lee, Cho, Fox, and Perti (2013) paragraph. Suggested text: Rossi,
-    Lee, and Clarke (2014) make the mood/affect element of game metadata concrete through a 17-term
-    controlled vocabulary and an annotation test on 617 video game titles. Terms such as Adventurous,
-    Aggressive, Cute, Dark, Horror, Imaginative, Intense, Peaceful, Quirky, and Solitary show how
-    discovery can describe the felt atmosphere of play, but the authors also caution that mood is
-    subjective and may require multiple annotations or crowdsourced ranking to support advisory,
-    browsing, and collocation responsibly.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Cataloging, Metadata, and Discovery
+  Contribution_Text: Rossi, Lee, and Clarke (2014) make the mood/affect element of game metadata
+    concrete through a 17-term controlled vocabulary and an annotation test on 617 video game
+    titles. Terms such as Adventurous, Aggressive, Cute, Dark, Horror, Imaginative, Intense,
+    Peaceful, Quirky, and Solitary show how discovery can describe the felt atmosphere of play, but
+    the authors also caution that mood is subjective and may require multiple annotations or
+    crowdsourced ranking to support advisory, browsing, and collocation responsibly.
 ### Summary
 # **Rossi, S., Lee, J. H., & Clarke, R. I. (2014). Mood metadata for video games and interactive media. In *2014 IEEE/ACM Joint Conference on Digital Libraries* (pp. 475-476). IEEE. https://doi.org/10.1109/JCDL.2014.6970232**
 

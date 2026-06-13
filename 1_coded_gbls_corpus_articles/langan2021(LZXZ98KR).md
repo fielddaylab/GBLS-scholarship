@@ -22,15 +22,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No addition recommended. Exclude from the GBLS literature review because the article is about
-    Wittgensteinian language games, labeling, and critical information literacy rather than game-based
-    library services.
-
+  Contribution_Text: No addition recommended. Exclude from the GBLS literature review because the
+    article is about Wittgensteinian language games, labeling, and critical information literacy
+    rather than game-based library services.
 ### Summary
 # **Langan, K. A. (2021). The library language game: Information literacy through the lens of Wittgenstein's language games. *Communications in Information Literacy, 15*(1), 104-118. https://doi.org/10.15760/comminfolit.2021.15.1.6**
 

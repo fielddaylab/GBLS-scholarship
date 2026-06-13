@@ -22,12 +22,9 @@ Audience: not_applicable
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Mon, L. M. (2012). Professional avatars: Librarians and educators in virtual worlds. *Journal of Documentation, 68*(3), 318-329. https://doi.org/10.1108/00220411211225566**
 

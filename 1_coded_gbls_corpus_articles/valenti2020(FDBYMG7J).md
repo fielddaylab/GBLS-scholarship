@@ -20,22 +20,17 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, immediately after the Broussard (2014) paragraph. Suggested text:
-    Valenti, Lund, and Wang (2020) extend orientation games into immersive distance education through an
-    experiment with 29 new LIS students. Compared with students who received the same orientation
-    content as static links, the VR group spent substantial time in a 360-degree orientation, reported
-    somewhat more favorable engagement and connection, showed larger but non-significant knowledge
-    gains, and reported a small anxiety decrease. The study is limited by sample size and technical
-    access issues, but it suggests that VR orientation can emulate some forms of physical presence for
-    remote students when designers avoid information overload and connect immersion to clear orientation
-    goals.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Valenti, Lund, and Wang (2020) extend orientation games into immersive distance
+    education through an experiment with 29 new LIS students. Compared with students who received
+    the same orientation content as static links, the VR group spent substantial time in a
+    360-degree orientation, reported somewhat more favorable engagement and connection, showed
+    larger but non-significant knowledge gains, and reported a small anxiety decrease. The study is
+    limited by sample size and technical access issues, but it suggests that VR orientation can
+    emulate some forms of physical presence for remote students when designers avoid information
+    overload and connect immersion to clear orientation goals.
 ### Summary
 # **Valenti, S., Lund, B., & Wang, T. (2020). Virtual reality as a tool for student orientation in distance education programs: A study of new library and information science students. *Information Technology and Libraries, 39*(2), 1-12. https://doi.org/10.6017/ital.v39i2.11937**
 

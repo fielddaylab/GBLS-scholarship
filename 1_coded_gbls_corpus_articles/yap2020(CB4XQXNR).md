@@ -20,23 +20,18 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, immediately after the Jerrett, Bothma, and de Beer (2017) paragraph.
-    Suggested text: Yap and Peñaflor (2020) add a two-country academic-library example of race-style,
-    problem-based MIL instruction. Their cases at Nazarbayev University Library and De La Salle
-    University Libraries mapped pit-stop challenges to UNESCO media and information literacy components,
-    asking students to arrange books by classification, search library portals, use chat/reference
-    services, evaluate fake news, identify source types, practice APA/MLA citation, avoid plagiarism,
-    and communicate information ethically. The article is descriptive rather than evaluative, but it
-    shows how a familiar Amazing Race/scavenger-hunt format can integrate orientation, information
-    literacy, misinformation evaluation, citation ethics, teamwork, and staff validation into one
-    reusable GBLS structure.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Yap and Peñaflor (2020) add a two-country academic-library example of
+    race-style, problem-based MIL instruction. Their cases at Nazarbayev University Library and De
+    La Salle University Libraries mapped pit-stop challenges to UNESCO media and information
+    literacy components, asking students to arrange books by classification, search library portals,
+    use chat/reference services, evaluate fake news, identify source types, practice APA/MLA
+    citation, avoid plagiarism, and communicate information ethically. The article is descriptive
+    rather than evaluative, but it shows how a familiar Amazing Race/scavenger-hunt format can
+    integrate orientation, information literacy, misinformation evaluation, citation ethics,
+    teamwork, and staff validation into one reusable GBLS structure.
 ### Summary
 # **Yap, J. M., & Peñaflor, J. (2020). The amazing library race: Developing students' media and information literacy skills through games. *Journal of Information Literacy, 14*(1), 66-82. https://doi.org/10.11645/14.1.2708**
 

@@ -24,22 +24,18 @@ Intended_Outcome:
 - creativity_and_production
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Research, Scholarship, and
-    Creative Production`, after the Wood and Carter (2018) paragraph. Suggested text: Farrell, Neeser,
-    and Bishoff (2017) add a needs-assessment layer to academic game services through 30 semistructured
-    interviews with University of Minnesota faculty, staff, and graduate students who used video games
-    in research or teaching. Their findings show that games supported development, instrumentation,
-    textual/cultural analysis, social-impact research, educational technology, course materials, game
-    design, and classroom discussion across arts and humanities, social sciences, STEM, and health
-    sciences; they also caution that collections should reflect local disciplinary needs, including PC
-    games, peripherals, software, game manuals, trade magazines, collaborative networks, and graduate-
-    student funding barriers rather than defaulting to console collections alone.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Research, Scholarship, and Creative
+    Production
+  Contribution_Text: Farrell, Neeser, and Bishoff (2017) add a needs-assessment layer to academic
+    game services through 30 semistructured interviews with University of Minnesota faculty, staff,
+    and graduate students who used video games in research or teaching. Their findings show that
+    games supported development, instrumentation, textual/cultural analysis, social-impact research,
+    educational technology, course materials, game design, and classroom discussion across arts and
+    humanities, social sciences, STEM, and health sciences; they also caution that collections
+    should reflect local disciplinary needs, including PC games, peripherals, software, game
+    manuals, trade magazines, collaborative networks, and graduate- student funding barriers rather
+    than defaulting to console collections alone.
 ### Summary
 # **Farrell, S. L., Neeser, A. E., & Bishoff, C. (2017). Academic uses of video games: A qualitative assessment of research and teaching needs at a large research university. *College & Research Libraries, 78*(5), 675-700. https://doi.org/10.5860/crl.78.5.675**
 

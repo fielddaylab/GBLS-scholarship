@@ -20,27 +20,23 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Cataloging, Metadata, and
-    Discovery`, immediately after the heading. Suggested text: de Groat (2015) provides the historical
-    foundation for game cataloging as a GBLS infrastructure problem. Her account shows that U.S. video
-    game cataloging moved through shifting AACR2, MARC, and RDA treatments of machine-readable data
-    files, computer files, electronic resources, moving images, carriers, system requirements, and
-    platform notes, while subject, genre, and preferred-title practices remained tied to book-centered
-    Library of Congress policies that never fully accounted for games as complex interactive works.
-    Section and exact location: `Gaps in the Literature and Future Research Agenda > Infrastructure and
-    Metadata Gaps`, immediately after the heading. Suggested text: de Groat (2015) also clarifies why
-    metadata gaps persist: platform information is often trapped in notes or improvised fields, game
-    genre headings are inconsistent or topical rather than true genre/form access points, "computer
-    games" and "video games" are not cleanly distinguished, franchise and title authority work lacks
-    clear guidance, and the Library of Congress no longer catalogs games within the workflow that
-    generates the policies most U.S. libraries follow. These gaps limit discovery, advisory,
-    preservation, and scholarly use of game collections.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Cataloging, Metadata, and Discovery
+  Contribution_Text: de Groat (2015) provides the historical foundation for game cataloging as a
+    GBLS infrastructure problem. Her account shows that U.S. video game cataloging moved through
+    shifting AACR2, MARC, and RDA treatments of machine-readable data files, computer files,
+    electronic resources, moving images, carriers, system requirements, and platform notes, while
+    subject, genre, and preferred-title practices remained tied to book-centered Library of Congress
+    policies that never fully accounted for games as complex interactive works.
+- Target_Section: Gaps in the Literature and Future Research Agenda > Infrastructure and Metadata
+    Gaps
+  Contribution_Text: de Groat (2015) also clarifies why metadata gaps persist: platform information
+    is often trapped in notes or improvised fields, game genre headings are inconsistent or topical
+    rather than true genre/form access points, "computer games" and "video games" are not cleanly
+    distinguished, franchise and title authority work lacks clear guidance, and the Library of
+    Congress no longer catalogs games within the workflow that generates the policies most U.S.
+    libraries follow. These gaps limit discovery, advisory, preservation, and scholarly use of game
+    collections.
 ### Summary
 # **de Groat, G. (2015). A history of video game cataloging in U.S. libraries. *Cataloging & Classification Quarterly, 53*(2), 135-156. https://doi.org/10.1080/01639374.2014.954297**
 

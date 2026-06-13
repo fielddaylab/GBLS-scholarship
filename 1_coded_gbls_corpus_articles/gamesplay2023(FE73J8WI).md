@@ -26,12 +26,9 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Games/play & childhood development resource list. (2023). Google Docs.**
 

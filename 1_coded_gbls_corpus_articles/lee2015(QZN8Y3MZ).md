@@ -24,24 +24,18 @@ Audience: not_applicable
 Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Suggested placement: `Cataloging, Metadata, and Discovery`, immediately after Lee, Cho, Fox, and
-    Perti (2013), before Lee, Clarke, and Rossi (2016). Suggested text: Lee, Clarke, and Perti (2015)
-    empirically evaluate and revise the GAMER Group video game metadata schema through collaborative
-    expert review, double cataloging of 65 sample games, 32 additional interviews, and a 1,257-response
-    survey. Their results show that users value platform, price, genre, series, style, gameplay videos,
-    plot/narrative, franchise, theme, mood/affect, system requirements, developer, visual information,
-    online capabilities, and other game-specific access points, while catalogers struggle with
-    work/manifestation boundaries, source authority, subjective description, digital distribution,
-    region, DRM, networked features, DLC, mods, patches, characters, credits, and unstable or
-    overgranular fields. For GBLS, the article turns game metadata from a proposed schema into an
-    evaluated service infrastructure for discovery, advisory, collection development, access, and
-    preservation.
-
+### Contributions
+- Target_Section: Cataloging, Metadata, and Discovery
+  Contribution_Text: Lee, Clarke, and Perti (2015) empirically evaluate and revise the GAMER Group
+    video game metadata schema through collaborative expert review, double cataloging of 65 sample
+    games, 32 additional interviews, and a 1,257-response survey. Their results show that users
+    value platform, price, genre, series, style, gameplay videos, plot/narrative, franchise, theme,
+    mood/affect, system requirements, developer, visual information, online capabilities, and other
+    game-specific access points, while catalogers struggle with work/manifestation boundaries,
+    source authority, subjective description, digital distribution, region, DRM, networked features,
+    DLC, mods, patches, characters, credits, and unstable or overgranular fields. For GBLS, the
+    article turns game metadata from a proposed schema into an evaluated service infrastructure for
+    discovery, advisory, collection development, access, and preservation.
 ### Summary
 # **Lee, J. H., Clarke, R. I., & Perti, A. (2015). Empirical evaluation of metadata for video games and interactive media. *Journal of the Association for Information Science and Technology, 66*(12), 2609-2625. https://doi.org/10.1002/asi.23357**
 

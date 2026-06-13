@@ -29,12 +29,9 @@ Intended_Outcome:
 - engagement_and_participation
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Maluck, T. (2013). Tales from Play It Loud. *Library Trends, 61*(4), 779-789. https://doi.org/10.1353/lib.2013.0014**
 

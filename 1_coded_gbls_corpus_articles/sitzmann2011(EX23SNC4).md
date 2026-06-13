@@ -45,19 +45,15 @@ For the larger GBLS project, these findings are useful as a warning against medi
 
 ## Suggested Review Contributions
 
-Contributions:
-- Target_Section: "The Need for a Field-Level Synthesis"
-  Target_Section_Raw: "The Need for a Field-Level Synthesis"
-  Placement: "Immediately after Vogel et al. (2006), as a more focused adult-training synthesis that qualifies early medium-comparison findings."
-  Contribution_Text: >
-    Sitzmann's (2011) meta-analysis of computer-based simulation games found gains in self-efficacy,
-    declarative knowledge, procedural knowledge, and retention, but those advantages depended
-    heavily on instructional design. Games performed best when they actively conveyed content,
-    allowed repeat access, and supplemented rather than replaced other instruction; strong
-    publication bias and the performance of active comparison conditions further caution against
-    treating games as inherently effective. The non-library evidence helps define the broader
-    research context from which a distinct GBLS evidence base must be synthesized.
-
+### Contributions
+- Target_Section: The Need for a Field-Level Synthesis
+  Contribution_Text: Sitzmann's (2011) meta-analysis of computer-based simulation games found gains
+    in self-efficacy, declarative knowledge, procedural knowledge, and retention, but those
+    advantages depended heavily on instructional design. Games performed best when they actively
+    conveyed content, allowed repeat access, and supplemented rather than replaced other
+    instruction; strong publication bias and the performance of active comparison conditions further
+    caution against treating games as inherently effective. The non-library evidence helps define
+    the broader research context from which a distinct GBLS evidence base must be synthesized.
 ## Evidence Cautions and Limitations
 
 The review combines heterogeneous interventions and comparison groups, and the design moderators frequently co-occur. Publication status sharply changes the result, while evidence for motivation and transfer is sparse. Percentage descriptions summarize standardized effects and should not be read as universal gains. The findings cannot establish that simulation games will produce similar outcomes in public, school, or academic library services.

@@ -25,20 +25,14 @@ Intended_Outcome:
 - creativity_and_production
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > VR, AR, and Immersive
-    Technology`, after the Lee, King, Dahya, and Lee (2020) paragraph. Suggested text: Ponto et al.
-    (2023) are not studying a library program, but *Waddle* offers adjacent evidence for how immersive,
-    game-like VR can support informal learning and empathy when embodiment, narrative, gesture
-    congruence, and assessment are designed together. In a 43-student science-festival study, the
-    penguin embodiment experience produced learning gains, a significant increase in empathy, and a
-    correlation between embodiment and post-experience empathy, making it a useful design reference for
-    libraries considering VR beyond novelty demonstrations.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > VR, AR, and Immersive Technology
+  Contribution_Text: Ponto et al. (2023) are not studying a library program, but *Waddle* offers
+    adjacent evidence for how immersive, game-like VR can support informal learning and empathy when
+    embodiment, narrative, gesture congruence, and assessment are designed together. In a 43-student
+    science-festival study, the penguin embodiment experience produced learning gains, a significant
+    increase in empathy, and a correlation between embodiment and post-experience empathy, making it
+    a useful design reference for libraries considering VR beyond novelty demonstrations.
 ### Summary
 # **Ponto, K., Tredinnick, R., Verbeke, M., Kopp, K., Swanson, L., & Gagnon, D. (2023). Waddle: Using virtual penguin embodiment as a vehicle for empathy and informal learning. In *Proceedings of the 29th ACM Symposium on Virtual Reality Software and Technology (VRST 2023)*. ACM. https://doi.org/10.1145/3611659.3617211**
 

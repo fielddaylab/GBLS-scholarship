@@ -20,20 +20,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Abrams and Van Eck (2021) paragraph. Suggested text: Seay
-    (2019) offers an illustrative, fictionalized design vignette for gamified database instruction:
-    students race in teams to prevent a nuclear-core meltdown by solving Web of Science search problems,
-    interpreting article clues, opening a locked box, and combining codes through a visible progress
-    system. The column is not assessment evidence, but it usefully shows how library instruction can be
-    designed as a scenario with stakes, props, feedback, collaboration, and information tasks embedded
-    in play.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Seay (2019) offers an illustrative, fictionalized design vignette for gamified
+    database instruction: students race in teams to prevent a nuclear-core meltdown by solving Web
+    of Science search problems, interpreting article clues, opening a locked box, and combining
+    codes through a visible progress system. The column is not assessment evidence, but it usefully
+    shows how library instruction can be designed as a scenario with stakes, props, feedback,
+    collaboration, and information tasks embedded in play.
 ### Summary
 # **Seay, J. A. (2019). Considering games in libraries and such: The ultimate library instruction. *Against the Grain, 31*(6), 65.**
 

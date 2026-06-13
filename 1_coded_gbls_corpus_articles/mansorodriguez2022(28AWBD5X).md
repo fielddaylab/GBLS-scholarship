@@ -20,29 +20,26 @@ Audience: not_applicable
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Horban and Skachenko (2019) paragraph. Suggested text: Manso
-    Rodriguez (2022) synthesizes 49 studies on gamification for library-based media and information
-    literacy from 2011-2021, finding a literature dominated by academic libraries and organized around
-    two main service forms: orientation to catalogs, electronic resources, spaces, and services, and MIL
-    instruction in information access, evaluation, production, communication, citation, database
-    searching, and critical information skills. The review is not a new assessment study, but it
-    usefully gathers common mechanics such as role play, cooperation, narrative, collection, feedback,
-    points, levels, exploration, time pressure, competition, strategy, and resource management. Section
-    and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Design for Reflection
-    and Transfer`, after the Guo and Goh (2016) paragraph. Suggested text: Manso Rodriguez (2022)
-    translates gamified MIL literature into a practical design sequence: define the audience and its
-    training needs, build a competency tree, review comparable library projects, select an MIL model,
-    set learning objectives, map game mechanics to learning mechanics, create instructional materials,
-    prototype and test with users, implement, and evaluate iteratively. For GBLS, this reinforces that
-    gamification should be designed around competencies, problem solving, feedback, trial and error, and
-    transfer rather than around points or rewards alone.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Manso Rodriguez (2022) synthesizes 49 studies on gamification for library-based
+    media and information literacy from 2011-2021, finding a literature dominated by academic
+    libraries and organized around two main service forms: orientation to catalogs, electronic
+    resources, spaces, and services, and MIL instruction in information access, evaluation,
+    production, communication, citation, database searching, and critical information skills. The
+    review is not a new assessment study, but it usefully gathers common mechanics such as role
+    play, cooperation, narrative, collection, feedback, points, levels, exploration, time pressure,
+    competition, strategy, and resource management.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Design for Reflection and
+    Transfer
+  Contribution_Text: Manso Rodriguez (2022) translates gamified MIL literature into a practical
+    design sequence: define the audience and its training needs, build a competency tree, review
+    comparable library projects, select an MIL model, set learning objectives, map game mechanics to
+    learning mechanics, create instructional materials, prototype and test with users, implement,
+    and evaluate iteratively. For GBLS, this reinforces that gamification should be designed around
+    competencies, problem solving, feedback, trial and error, and transfer rather than around points
+    or rewards alone.
 ### Summary
 # **Manso Rodriguez, R. A. (2022). Gamificacion en bibliotecas para la alfabetizacion mediatica e informacional, tendencias, buenas practicas y recomendaciones. *Bibliotecas. Anales de Investigacion, 18*(3), 1-15.**
 

@@ -25,12 +25,9 @@ Intended_Outcome:
 - institutional_capacity
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Simpson, K., & Midgley, K. (2023). Learning through fun: Board games cafes for undergraduate nursing students. *British Journal of Nursing, 32*(8), 384-389.**
 

@@ -25,27 +25,22 @@ Intended_Outcome:
 - creativity_and_production
 Coding_Confidence: low
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > VR, AR, and Immersive
-    Technology`, after the Sureephong et al. (2024) paragraph. Suggested text: Chen and Yang (2024)
-    extend AR service models from orientation to makerspace user education through a game-based
-    augmented reality navigation system built on Octalysis gamification and scaffolding theory. In a
-    small experiment with 24 grade 11 students, GARNS produced significant learning effectiveness,
-    performed comparably to a librarian-guided tour, and outperformed a web navigation system on
-    learning effectiveness and value/expectation dimensions of motivation, suggesting that AR is most
-    useful when guidance is tied to physical equipment, spaces, and procedural tasks. Section and exact
-    location: `Cross-Cutting Lessons for Game-Based Library Services > Match Game Form to Service Goal`,
-    after the Jedlicka and Eaton (2024) paragraph. Suggested text: Chen and Yang (2024) add a makerspace
-    version of the form-fit lesson: AR navigation is well matched to user education when learners need
-    situated prompts, task sequencing, and object-specific guidance in a physical production space. The
-    system is less a replacement for librarians than a scalable way to standardize introductory
-    instruction and reduce repetitive staff burden where equipment complexity would otherwise limit
-    access.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > VR, AR, and Immersive Technology
+  Contribution_Text: Chen and Yang (2024) extend AR service models from orientation to makerspace
+    user education through a game-based augmented reality navigation system built on Octalysis
+    gamification and scaffolding theory. In a small experiment with 24 grade 11 students, GARNS
+    produced significant learning effectiveness, performed comparably to a librarian-guided tour,
+    and outperformed a web navigation system on learning effectiveness and value/expectation
+    dimensions of motivation, suggesting that AR is most useful when guidance is tied to physical
+    equipment, spaces, and procedural tasks.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Match Game Form to Service
+    Goal
+  Contribution_Text: Chen and Yang (2024) add a makerspace version of the form-fit lesson: AR
+    navigation is well matched to user education when learners need situated prompts, task
+    sequencing, and object-specific guidance in a physical production space. The system is less a
+    replacement for librarians than a scalable way to standardize introductory instruction and
+    reduce repetitive staff burden where equipment complexity would otherwise limit access.
 ### Summary
 # **Chen, C.-M., & Yang, Y.-C. (2024). A game-based augmented reality navigation system to support makerspace user education in a university library. *The Electronic Library, 42*(1), 78-101. https://doi.org/10.1108/EL-05-2023-0107**
 

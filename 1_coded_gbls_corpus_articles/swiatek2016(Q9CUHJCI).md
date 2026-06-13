@@ -24,22 +24,18 @@ Audience:
 Intended_Outcome: institutional_capacity
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Plan for
-    Operations and Sustainability`, immediately after the heading. Suggested text: Swiatek and Gorsse
-    (2016) make operations and sustainability central to academic-library gaming. Their French overview
-    shows that murder parties, alternate reality games, curriculum-linked rallies, weekly document
-    puzzles, object-identification challenges, motion-recognition games, and research-training scenarios
-    can attract users and teach documentary research, but only become durable services when libraries
-    formalize strategy, budgets, communication plans, staff training, knowledge management, job
-    descriptions, and public gaming policies. Their distinction between a strategic game manager and an
-    operational game designer is especially useful for GBLS staffing: libraries need advocates and
-    coordinators as well as people with game-design and facilitation expertise.
-
+### Contributions
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Plan for Operations and
+    Sustainability
+  Contribution_Text: Swiatek and Gorsse (2016) make operations and sustainability central to
+    academic-library gaming. Their French overview shows that murder parties, alternate reality
+    games, curriculum-linked rallies, weekly document puzzles, object-identification challenges,
+    motion-recognition games, and research-training scenarios can attract users and teach
+    documentary research, but only become durable services when libraries formalize strategy,
+    budgets, communication plans, staff training, knowledge management, job descriptions, and public
+    gaming policies. Their distinction between a strategic game manager and an operational game
+    designer is especially useful for GBLS staffing: libraries need advocates and coordinators as
+    well as people with game-design and facilitation expertise.
 ### Summary
 # **Swiatek, C., & Gorsse, M. (2016). Playing games at the library: Seriously? *LIBER Quarterly, 26*(2), 83-101. https://doi.org/10.18352/lq.10161**
 

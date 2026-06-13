@@ -20,12 +20,9 @@ Audience: not_applicable
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Zheng, X.-L., Tu, Y.-F., Hwang, G.-J., Yu, J., & Huang, Y.-B. (2024). Interweaving of self-regulated learning and game-based learning in higher education: A review of academic publications from 2009 to 2020. *Educational Technology Research and Development, 72*(6), 3185-3216. https://doi.org/10.1007/s11423-024-10393-7**
 

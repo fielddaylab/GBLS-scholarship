@@ -22,15 +22,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a short ALA roundtable media recommendation/event resource rather
-    than research or a documented library program, and should remain in `Explicitly Excluded Literature`
-    after summary completion.
-
+  Contribution_Text: No suggested addition. This is a short ALA roundtable media
+    recommendation/event resource rather than research or a documented library program, and should
+    remain in `Explicitly Excluded Literature` after summary completion.
 ### Summary
 # **3RT Superhero media recommendations 2023. (2024, March 14). *Google Docs*. https://docs.google.com/document/d/1DNKOyCU1ooV0C2ciFa0AlJE4wy18BVeD0MX-8Pcsr4U/edit**
 

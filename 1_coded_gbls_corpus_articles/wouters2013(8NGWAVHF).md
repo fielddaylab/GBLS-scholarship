@@ -40,19 +40,15 @@ For the larger GBLS project, the study offers design-adjacent cautions rather th
 
 ## Suggested Review Contributions
 
-Contributions:
-- Target_Section: "The Need for a Field-Level Synthesis"
-  Target_Section_Raw: "The Need for a Field-Level Synthesis"
-  Placement: "After the discussion of Sitzmann (2011) and before Clark et al. (2016), as the most recent of the three precursor meta-analyses summarized by Clark et al."
-  Contribution_Text: >
-    Wouters et al. (2013) found modest advantages for serious games in learning and retention but
-    no statistically significant motivational advantage over conventional instruction. Effects
-    were stronger when games were supplemented with other instruction, used across multiple
-    sessions, and embedded in collaborative activity, reinforcing that outcomes depend on design
-    and instructional context rather than on the game medium alone. Because the review did not
-    examine libraries, it establishes broader context while underscoring the need for a
-    library-specific synthesis.
-
+### Contributions
+- Target_Section: The Need for a Field-Level Synthesis
+  Contribution_Text: Wouters et al. (2013) found modest advantages for serious games in learning and
+    retention but no statistically significant motivational advantage over conventional instruction.
+    Effects were stronger when games were supplemented with other instruction, used across multiple
+    sessions, and embedded in collaborative activity, reinforcing that outcomes depend on design and
+    instructional context rather than on the game medium alone. Because the review did not examine
+    libraries, it establishes broader context while underscoring the need for a library-specific
+    synthesis.
 ## Evidence Cautions and Limitations
 
 The synthesis aggregates diverse games, domains, age groups, measures, and comparison conditions. Moderator variables are confounded, motivation is defined broadly and usually measured after play, and delayed retention rests on fewer comparisons than immediate learning. The favorable average effect is smaller in randomized studies and should not be generalized to library contexts or interpreted as proof that serious games are inherently motivating.

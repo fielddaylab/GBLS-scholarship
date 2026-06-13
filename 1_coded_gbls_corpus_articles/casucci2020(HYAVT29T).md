@@ -22,26 +22,23 @@ Intended_Outcome:
 - wellness_and_resilience
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Emerging Area: Wellness,
-    Mental Health, and Care`, after the Nance (2022) paragraph. Suggested text: Casucci et al. (2020)
-    add an employee-facing wellness case from a health sciences library, where a three-month team-based
-    "Wellness Game" used physical, mental, social, and appreciation points to address burnout and
-    workplace well-being. The game did not significantly reduce burnout or improve job satisfaction, but
-    70% of post-game respondents said it encouraged socializing, making the study a useful caution:
-    playful wellness interventions can strengthen collegiality and recognition without resolving
-    workload, leadership, turnover, and organizational-culture causes of burnout. Section and exact
-    location: `Cross-Cutting Lessons for Game-Based Library Services > Evaluate Outcomes Beyond
-    Attendance`, after the Maluck (2013) paragraph. Suggested text: Casucci et al. (2020) similarly show
-    why GBLS assessment must align outcomes with the problem being addressed. Their workplace well-being
-    game produced valued social effects, including collegiality, appreciation, and willingness to play
-    again, but it did not significantly change burnout or job satisfaction; for GBLS, that distinction
-    helps separate participation, enjoyment, social connection, and structural impact.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Emerging Area: Wellness, Mental
+    Health, and Care
+  Contribution_Text: Casucci et al. (2020) add an employee-facing wellness case from a health
+    sciences library, where a three-month team-based "Wellness Game" used physical, mental, social,
+    and appreciation points to address burnout and workplace well-being. The game did not
+    significantly reduce burnout or improve job satisfaction, but 70% of post-game respondents said
+    it encouraged socializing, making the study a useful caution: playful wellness interventions can
+    strengthen collegiality and recognition without resolving workload, leadership, turnover, and
+    organizational-culture causes of burnout.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Evaluate Outcomes Beyond
+    Attendance
+  Contribution_Text: Casucci et al. (2020) similarly show why GBLS assessment must align outcomes
+    with the problem being addressed. Their workplace well-being game produced valued social
+    effects, including collegiality, appreciation, and willingness to play again, but it did not
+    significantly change burnout or job satisfaction; for GBLS, that distinction helps separate
+    participation, enjoyment, social connection, and structural impact.
 ### Summary
 # **Casucci, T., Locke, A. B., Henson, A., & Qeadan, F. (2020). A workplace well-being game intervention for health sciences librarians to address burnout. *Journal of the Medical Library Association, 108*(4), 605-617. https://doi.org/10.5195/jmla.2020.742**
 

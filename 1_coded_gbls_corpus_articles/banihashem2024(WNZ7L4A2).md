@@ -23,12 +23,9 @@ Audience: not_applicable
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Banihashem, S. K., Dehghanzadeh, H., Clark, D., Noroozi, O., & Biemans, H. J. A. (2024). Learning analytics for online game-based learning: A systematic literature review. *Behaviour & Information Technology, 43*(12), 2689-2716. https://doi.org/10.1080/0144929X.2023.2255301**
 

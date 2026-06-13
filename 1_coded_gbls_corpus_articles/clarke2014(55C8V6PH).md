@@ -22,12 +22,9 @@ Audience: not_applicable
 Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Clarke, R. I., Lee, J. H., Jett, J., & Sacchi, S. (2014). Exploring relationships among video games. In *2014 IEEE/ACM Joint Conference on Digital Libraries* (pp. 481-482). IEEE. https://doi.org/10.1109/JCDL.2014.6970235**
 

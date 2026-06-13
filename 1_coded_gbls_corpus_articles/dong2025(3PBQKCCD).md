@@ -24,22 +24,18 @@ Audience: teens
 Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Suggested placement: `Cataloging, Metadata, and Discovery`, after Hobart (2024) and before Adetayo
-    et al. (2023). Suggested text: Dong, Moreno, Rodrigues, and Stone (2025) translate game metadata
-    from schema design into a live academic-library board-game discovery layer. Their University of
-    Idaho case moved a roughly 110-game LibGuide into a CollectionBuilder site by scraping unstructured
-    LibGuide pages with OpenRefine, converting them to a structured Google Sheet, renaming book-oriented
-    fields such as author to designer, adding game-specific fields for awards, player count, age, play
-    time, mechanics, themes, images, and thumbnails, and exposing browsing through cards, word clouds,
-    category pages, and multi-field search. For GBLS, the case shows that collection access depends on
-    maintainable metadata workflows, local photography and copyright decisions, file-naming conventions,
-    data dictionaries, link audits, and interfaces that match how patrons select games.
-
+### Contributions
+- Target_Section: Cataloging, Metadata, and Discovery
+  Contribution_Text: Dong, Moreno, Rodrigues, and Stone (2025) translate game metadata from schema
+    design into a live academic-library board-game discovery layer. Their University of Idaho case
+    moved a roughly 110-game LibGuide into a CollectionBuilder site by scraping unstructured
+    LibGuide pages with OpenRefine, converting them to a structured Google Sheet, renaming
+    book-oriented fields such as author to designer, adding game-specific fields for awards, player
+    count, age, play time, mechanics, themes, images, and thumbnails, and exposing browsing through
+    cards, word clouds, category pages, and multi-field search. For GBLS, the case shows that
+    collection access depends on maintainable metadata workflows, local photography and copyright
+    decisions, file-naming conventions, data dictionaries, link audits, and interfaces that match
+    how patrons select games.
 ### Summary
 # **Dong, H., Moreno, P., Rodrigues, T., & Stone, J. (2025). Enhancing discoverability: Transitioning a board game collection from a LibGuide to a CollectionBuilder site. *Information Technology and Libraries, 44*(1). https://doi.org/10.5860/ital.v44i1.17075**
 

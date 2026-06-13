@@ -20,15 +20,11 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. Explicitly exclude from the GBLS literature review because the editorial
-    concerns technology-enhanced contextual game-based language learning, not library services or
-    library-adjacent information/cultural work.
-
+  Contribution_Text: No suggested addition. Explicitly exclude from the GBLS literature review
+    because the editorial concerns technology-enhanced contextual game-based language learning, not
+    library services or library-adjacent information/cultural work.
 ### Summary
 # **Lan, Y.-J., Botha, A., Shang, J., & Jong, M. S.-Y. (2018). Guest editorial: Technology enhanced contextual game-based language learning. *Educational Technology & Society, 21*(3), 86-89.**
 

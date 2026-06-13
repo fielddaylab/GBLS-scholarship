@@ -25,22 +25,17 @@ Intended_Outcome:
 - creativity_and_production
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Programs Inside Game Worlds
-    and Virtual Platforms`, immediately after the Bell and Trueman (2008) paragraph. Suggested text:
-    Hollister (2024) updates this virtual-world strand for Meta Horizon Worlds. Through unobtrusive VR-
-    based observation of 44 public worlds with "library" in the title or description, he found art and
-    asset libraries, community libraries, personal libraries, and library-themed game and social spaces;
-    only two appeared connected to real-world libraries, and few provided full digital resources or
-    virtual reference. For GBLS, the study treats virtual libraries as possible service sites and
-    worldbuilding artifacts while flagging platform instability, world-development labor, accessibility,
-    cost, motion-sickness barriers, limited interactive content, and the need for stakeholder
-    partnerships and ongoing assessment.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Programs Inside Game Worlds and Virtual
+    Platforms
+  Contribution_Text: Hollister (2024) updates this virtual-world strand for Meta Horizon Worlds.
+    Through unobtrusive VR- based observation of 44 public worlds with "library" in the title or
+    description, he found art and asset libraries, community libraries, personal libraries, and
+    library-themed game and social spaces; only two appeared connected to real-world libraries, and
+    few provided full digital resources or virtual reference. For GBLS, the study treats virtual
+    libraries as possible service sites and worldbuilding artifacts while flagging platform
+    instability, world-development labor, accessibility, cost, motion-sickness barriers, limited
+    interactive content, and the need for stakeholder partnerships and ongoing assessment.
 ### Summary
 # **Hollister, J. M. (2024). Virtual libraries in the new metaverse: An exploratory study on community libraries in Meta Horizon Worlds. *International Journal of Knowledge Content Development & Technology, 14*(4), 113-133. https://doi.org/10.5865/IJKCT.2024.14.4.113**
 

@@ -23,22 +23,17 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Games,
-    Gamification, and Play`, after the Seay (2018) "G Word" gamification paragraph. Suggested text:
-    Downie and Proulx (2022) provide a stronger empirical and analytic grounding for gamification in
-    youth library services by examining public-facing websites and social media from 16 prominent U.S.
-    public libraries. They find that summer reading clubs, storytimes, and children's spaces often use
-    points, badges, progress tracking, authentic rewards, dialogic play, movement, sensory and
-    imaginative activity, mascots, learning spots, and exploratory environments to support autonomy,
-    competence, and social relatedness; because the study analyzes public messaging rather than patron
-    outcomes, it is best read as evidence of design patterns and professional framing rather than proof
-    of literacy gains.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Games, Gamification, and
+    Play
+  Contribution_Text: Downie and Proulx (2022) provide a stronger empirical and analytic grounding
+    for gamification in youth library services by examining public-facing websites and social media
+    from 16 prominent U.S. public libraries. They find that summer reading clubs, storytimes, and
+    children's spaces often use points, badges, progress tracking, authentic rewards, dialogic play,
+    movement, sensory and imaginative activity, mascots, learning spots, and exploratory
+    environments to support autonomy, competence, and social relatedness; because the study analyzes
+    public messaging rather than patron outcomes, it is best read as evidence of design patterns and
+    professional framing rather than proof of literacy gains.
 ### Summary
 # **Downie, S., & Proulx, S. (2022). Investigating the role of gamification in public libraries' literacy-centered youth programming. *International Journal of Play, 11*(4), 382-404. https://doi.org/10.1080/21594937.2022.2136637**
 

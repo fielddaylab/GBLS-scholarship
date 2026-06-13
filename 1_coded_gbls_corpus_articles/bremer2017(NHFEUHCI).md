@@ -25,26 +25,22 @@ Audience:
 Intended_Outcome: belonging_and_community
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Community, Belonging, and
-    the Public Commons`, after the Vanden Elzen and Roush (2013) paragraph. Suggested text: Bremer
-    (2017) gives a small academic-public library partnership example of tabletop games as community
-    bridge. By moving a University of Minnesota Morris game program to the Morris Public Library, the
-    partners used a more accessible civic venue, shared game collections and staff expertise, food,
-    broad publicity, and simple family-friendly board and card games to bring together college students,
-    adults, families, and children, while also identifying teens as a still-unreached audience. Section
-    and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Build Partnerships and
-    Community Pipelines`, after the Vanden Elzen and Roush (2013) paragraph. Suggested text: Bremer
-    (2017) also shows that GBLS partnerships can reduce place-based barriers. The academic library had
-    games and staff experience, while the public library had a central community location and local
-    audience; together they could host a tabletop Game Day neither library could have delivered as
-    effectively alone, using Friends-group support, shared publicity, rule facilitation, and post-event
-    reflection to plan the next iteration.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Community, Belonging, and the Public
+    Commons
+  Contribution_Text: Bremer (2017) gives a small academic-public library partnership example of
+    tabletop games as community bridge. By moving a University of Minnesota Morris game program to
+    the Morris Public Library, the partners used a more accessible civic venue, shared game
+    collections and staff expertise, food, broad publicity, and simple family-friendly board and
+    card games to bring together college students, adults, families, and children, while also
+    identifying teens as a still-unreached audience.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Build Partnerships and
+    Community Pipelines
+  Contribution_Text: Bremer (2017) also shows that GBLS partnerships can reduce place-based
+    barriers. The academic library had games and staff experience, while the public library had a
+    central community location and local audience; together they could host a tabletop Game Day
+    neither library could have delivered as effectively alone, using Friends-group support, shared
+    publicity, rule facilitation, and post-event reflection to plan the next iteration.
 ### Summary
 # **Bremer, P. (2017). Games people play. *The Reference Librarian, 58*(3), 202-205. https://doi.org/10.1080/02763877.2017.1320699**
 

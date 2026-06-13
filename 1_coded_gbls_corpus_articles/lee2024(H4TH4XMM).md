@@ -26,26 +26,22 @@ Intended_Outcome:
 - learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Emerging Area: Wellness,
-    Mental Health, and Care`, immediately after the heading. Suggested text: Lee et al. (2024) make
-    wellness and care a concrete GBLS service area through a multi-site public-library project in which
-    teens co-designed VR spaces for mental health and well-being. Interviews with eight librarians and
-    library staff show that staff moved from anxiety about "mental health" as crisis response toward a
-    broader view of everyday wellness, stigma reduction, safe conversation, and belonging, while still
-    needing clear boundaries around clinical expertise. Section and exact location: `Programming Formats
-    and Service Models > VR, AR, and Immersive Technology`, immediately after the heading. Suggested
-    text: Lee et al. (2024) also complicate the role of VR in library programming: VR attracted some
-    teens, supported technology literacy, and enabled immersive design of supportive spaces, but it also
-    introduced motion sickness, hardware logistics, privacy/account barriers, uneven teen interest, and
-    inclusion concerns. Their recipe-based co-design model is useful for GBLS because it separates core
-    program ingredients, such as youth partnership and design sprints, from adaptable substitutes, local
-    strengths, and optional tools.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Emerging Area: Wellness, Mental
+    Health, and Care
+  Contribution_Text: Lee et al. (2024) make wellness and care a concrete GBLS service area through a
+    multi-site public-library project in which teens co-designed VR spaces for mental health and
+    well-being. Interviews with eight librarians and library staff show that staff moved from
+    anxiety about "mental health" as crisis response toward a broader view of everyday wellness,
+    stigma reduction, safe conversation, and belonging, while still needing clear boundaries around
+    clinical expertise.
+- Target_Section: Programming Formats and Service Models > VR, AR, and Immersive Technology
+  Contribution_Text: Lee et al. (2024) also complicate the role of VR in library programming: VR
+    attracted some teens, supported technology literacy, and enabled immersive design of supportive
+    spaces, but it also introduced motion sickness, hardware logistics, privacy/account barriers,
+    uneven teen interest, and inclusion concerns. Their recipe-based co-design model is useful for
+    GBLS because it separates core program ingredients, such as youth partnership and design
+    sprints, from adaptable substitutes, local strengths, and optional tools.
 ### Summary
 # **Lee, J. H., Björling, E., McLean, R., Moreno, A., & Lee, K. J. (2024). Supporting youth mental health through co-designing a virtual reality experience: A recipe-based co-design model. *The Library Quarterly: Information, Community, Policy, 94*(2), 134-158. https://doi.org/10.1086/729230**
 

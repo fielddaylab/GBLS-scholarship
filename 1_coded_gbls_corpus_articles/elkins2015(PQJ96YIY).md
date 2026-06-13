@@ -20,26 +20,22 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Collections, Circulation,
-    and Access`, after the Boyle (2018) paragraph. Suggested text: Elkins (2015) adds a school-library
-    access argument for digital games: if libraries provide print materials to foster traditional
-    literacy, they can also provide games, platforms, strategy guides, and mentoring so students develop
-    21st-century literacies through media-rich informal learning. His practitioner guidance names early
-    collection questions around consoles, controllers, games, strategy guides, loan periods,
-    transportation, parent pickup, liability, damage, and loss. Section and exact location: `Major Areas
-    of Game-Based Library Service > Instruction, Orientation, and Information Literacy`, after the
-    Pervolaraki et al. (2015) paragraph. Suggested text: Elkins (2015) translates game-literacy
-    scholarship into school-library practice by arguing that gameplay can develop critical thinking,
-    problem solving, collaboration, information literacy, and media literacy, especially when students
-    also create mods, tools, strategies, videos, wiki pages, mathematical models, creative writing, and
-    strategy guides around games. The article is advocacy rather than assessment evidence, but it helps
-    connect school-library gaming to equitable access and informal literacy learning.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Collections, Circulation, and Access
+  Contribution_Text: Elkins (2015) adds a school-library access argument for digital games: if
+    libraries provide print materials to foster traditional literacy, they can also provide games,
+    platforms, strategy guides, and mentoring so students develop 21st-century literacies through
+    media-rich informal learning. His practitioner guidance names early collection questions around
+    consoles, controllers, games, strategy guides, loan periods, transportation, parent pickup,
+    liability, damage, and loss.
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Elkins (2015) translates game-literacy scholarship into school-library practice
+    by arguing that gameplay can develop critical thinking, problem solving, collaboration,
+    information literacy, and media literacy, especially when students also create mods, tools,
+    strategies, videos, wiki pages, mathematical models, creative writing, and strategy guides
+    around games. The article is advocacy rather than assessment evidence, but it helps connect
+    school-library gaming to equitable access and informal literacy learning.
 ### Summary
 # **Elkins, A. J. (2015). Lets play! Why school librarians should embrace gaming in the library. *Knowledge Quest, 43*(5), 58-63.**
 

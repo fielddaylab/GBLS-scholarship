@@ -22,14 +22,10 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a non-library middle-school mathematics game study and should remain
-    in `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a non-library middle-school mathematics game
+    study and should remain in `Explicitly Excluded Literature` after summary completion.
 ### Summary
 # **Pan, Y., & Ke, F. (2023). Effects of game-based learning supports on students' math performance and perceived game flow. *Educational Technology Research and Development, 71*(2), 459-479. https://doi.org/10.1007/s11423-022-10183-z**
 

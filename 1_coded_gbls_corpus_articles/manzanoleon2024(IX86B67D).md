@@ -22,14 +22,10 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a non-library social-education classroom study and should remain in
-    `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a non-library social-education classroom study
+    and should remain in `Explicitly Excluded Literature` after summary completion.
 ### Summary
 # **Manzano-León, A., Rodríguez-Rivera, P., Raposo-Rivas, M., & Rodríguez-Ferrer, J. M. (2024). Digital game-based learning for transgender identity awareness: A qualitative study in Spanish social education degree. *Current Psychology, 43*(20), 18065-18073. https://doi.org/10.1007/s12144-023-05556-3**
 

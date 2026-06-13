@@ -20,12 +20,9 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **9th Level Games. (2024). *LSHM: TTRPG Kobolds Ate My Baby*. Google Docs.**
 

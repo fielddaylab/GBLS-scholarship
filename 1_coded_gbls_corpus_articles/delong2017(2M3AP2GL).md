@@ -23,15 +23,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. Explicitly exclude from the GBLS literature review because this editorial is
-    a broad academic-library public-services framing piece rather than a study or substantive discussion
-    of game-based library services.
-
+  Contribution_Text: No suggested addition. Explicitly exclude from the GBLS literature review
+    because this editorial is a broad academic-library public-services framing piece rather than a
+    study or substantive discussion of game-based library services.
 ### Summary
 # **De Long, K., Garrison, J., & Ryan, M. (2017). All in: A public services philosophy for the twenty-first century academic library. *portal: Libraries and the Academy, 17*(2), 201-204.**
 

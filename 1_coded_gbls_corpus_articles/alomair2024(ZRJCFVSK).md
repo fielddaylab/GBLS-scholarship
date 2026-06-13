@@ -20,12 +20,9 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Alomair, Y., & Hammami, S. (2024). Enhancing the achievement of learning outcomes for foreign language learners based on gamification and card games. *International Journal of Computer Games Technology, 2024*(1), Article 8084687. https://doi.org/10.1155/2024/8084687**
 

@@ -22,21 +22,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Scope, Definition, and Review Approach > Source Base`, after the
-    heading. Suggested text: Mattson's (2021) review of Crowe and Sclippa's edited volume *Games and
-    Gamification in Academic Libraries* helps characterize the professional source base for academic-
-    library GBLS. The reviewed volume spans game nights, collection development, circulating electronic
-    and tabletop games, information-literacy games, badging, escape rooms, outreach fairs, game jams,
-    accessibility, staff training, student-faculty relationship building, and special-collections
-    orientations; because Mattson is reviewing an edited book rather than reporting a new study, it is
-    best used as a map of professional discourse and as a pointer to underlying chapters rather than as
-    outcome evidence.
-
+### Contributions
+- Target_Section: Scope, Definition, and Review Approach > Source Base
+  Contribution_Text: Mattson's (2021) review of Crowe and Sclippa's edited volume *Games and
+    Gamification in Academic Libraries* helps characterize the professional source base for
+    academic- library GBLS. The reviewed volume spans game nights, collection development,
+    circulating electronic and tabletop games, information-literacy games, badging, escape rooms,
+    outreach fairs, game jams, accessibility, staff training, student-faculty relationship building,
+    and special-collections orientations; because Mattson is reviewing an edited book rather than
+    reporting a new study, it is best used as a map of professional discourse and as a pointer to
+    underlying chapters rather than as outcome evidence.
 ### Summary
 # **Mattson, J. L. (2021). Review of the book *Games and gamification in academic libraries*, edited by S. Crowe and E. Sclippa. *Communications in Information Literacy, 15*(1), 158-163.**
 

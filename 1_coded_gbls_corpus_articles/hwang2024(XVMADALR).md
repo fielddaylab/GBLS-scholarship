@@ -20,14 +20,10 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a non-library EFL classroom digital-game study and should remain in
-    `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a non-library EFL classroom digital-game study
+    and should remain in `Explicitly Excluded Literature` after summary completion.
 ### Summary
 # **Hwang, G.-J., & Zhang, D. (2024). Effects of an adaptive computer agent-based digital game on EFL students' English learning outcomes. *Educational Technology Research and Development, 72*(6), 3271-3294. https://doi.org/10.1007/s11423-024-10396-4**
 

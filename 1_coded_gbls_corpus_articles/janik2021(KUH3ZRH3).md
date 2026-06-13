@@ -20,12 +20,9 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Janik, J. (2021). Intra-acting bio-object: A posthuman approach to the player-game relation. *Journal of Gaming & Virtual Worlds, 13*(1), 21-39. https://doi.org/10.1386/jgvw_00026_1**
 

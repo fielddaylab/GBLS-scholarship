@@ -25,18 +25,13 @@ Intended_Outcome:
 - engagement_and_participation
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > TTRPG and LARP Programs`,
-    after the Torres-Roman and Snow (2014) paragraph. Suggested text: Sanders (1982) provides an early
-    public-library precedent for Dungeons & Dragons programming. His account of a Michigan City Public
-    Library club describes peer-led tables, long Sunday sessions, a tournament, strong teen attendance,
-    parent questions, and local controversy; it is not an assessment study, but it shows that libraries
-    have long used TTRPGs as teen outreach, community service, and collaborative story-making spaces.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > TTRPG and LARP Programs
+  Contribution_Text: Sanders (1982) provides an early public-library precedent for Dungeons &
+    Dragons programming. His account of a Michigan City Public Library club describes peer-led
+    tables, long Sunday sessions, a tournament, strong teen attendance, parent questions, and local
+    controversy; it is not an assessment study, but it shows that libraries have long used TTRPGs as
+    teen outreach, community service, and collaborative story-making spaces.
 ### Summary
 # **Sanders, E. R. (1982). Dungeons and Dragons in a public library. *Indiana Libraries, 2*(3), 93-98.**
 

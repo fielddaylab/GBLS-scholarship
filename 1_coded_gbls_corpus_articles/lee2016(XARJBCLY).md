@@ -24,22 +24,18 @@ Audience:
 Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Suggested placement: `Cataloging, Metadata, and Discovery`, immediately after Lee, Cho, Fox, and
-    Perti (2013). Suggested text: Lee, Clarke, and Rossi (2016) add empirical user-needs evidence to the
-    GAMER Group metadata work through 56 interviews with gamers, parents, collectors, industry
-    professionals, librarians, educators, and scholars. Their findings show that game discovery systems
-    must support fluid user roles and proxy users, including parents, librarians, and educators; genre
-    is important but insufficient and often confusing; users need technical, corporate-body,
-    relationship, visual, review/rating/recommendation, content/theme, and appeal metadata; and digital
-    collections require multiple organization modes across platforms, series, region, use status, and
-    personal priority. For GBLS, the article grounds game advisory and catalog design in actual
-    discovery, access, and organization behavior rather than in schema logic alone.
-
+### Contributions
+- Target_Section: Cataloging, Metadata, and Discovery
+  Contribution_Text: Lee, Clarke, and Rossi (2016) add empirical user-needs evidence to the GAMER
+    Group metadata work through 56 interviews with gamers, parents, collectors, industry
+    professionals, librarians, educators, and scholars. Their findings show that game discovery
+    systems must support fluid user roles and proxy users, including parents, librarians, and
+    educators; genre is important but insufficient and often confusing; users need technical,
+    corporate-body, relationship, visual, review/rating/recommendation, content/theme, and appeal
+    metadata; and digital collections require multiple organization modes across platforms, series,
+    region, use status, and personal priority. For GBLS, the article grounds game advisory and
+    catalog design in actual discovery, access, and organization behavior rather than in schema
+    logic alone.
 ### Summary
 # **Lee, J. H., Clarke, R. I., & Rossi, S. (2016). A qualitative investigation of users' discovery, access, and organization of video games as information objects. *Journal of Information Science, 42*(6), 833-850. https://doi.org/10.1177/0165551515618594**
 

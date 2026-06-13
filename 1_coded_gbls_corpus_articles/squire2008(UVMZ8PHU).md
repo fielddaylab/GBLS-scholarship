@@ -50,18 +50,20 @@ For the larger GBLS project, this model is especially useful for recurring clubs
 
 ## Suggested Review Contributions
 
-Contributions:
-- Target_Section: "## Match Game Form to Service Goal"
-  Target_Section_Raw: "## Match Game Form to Service Goal"
-  Placement: "After the general comparison of game formats and their affordances."
-  Contribution_Text: >
-    Squire (2008) argues that targeted games, role-playing games, persistent worlds, and open-ended simulations support different forms of participation and learning. Sandbox games are distinguished by long time scales, replayability, multiple solution paths, system experimentation, and creative expression. GBLS planning should therefore match interaction structure to purpose rather than treating video games as a uniform format.
-- Target_Section: "## Design for Reflection, Learning Transfer, and Participant Agency"
-  Target_Section_Raw: "## Design for Reflection, Learning Transfer, and Participant Agency"
-  Placement: "In the discussion of pathways from play into further learning and leadership."
-  Contribution_Text: >
-    Open-ended game environments can support divergent trajectories from play toward history, design, politics, teaching, and other practices, but these pathways do not emerge automatically. Squire (2008) identifies induction into a community and propulsion toward new communities as facilitation tasks. Libraries can make expert roles visible, connect play to collections and tools, support peer mentoring, and assess the artifacts and participation pathways that follow.
-
+### Contributions
+- Target_Section: Match Game Form to Service Goal
+  Contribution_Text: Squire (2008) argues that targeted games, role-playing games, persistent
+    worlds, and open-ended simulations support different forms of participation and learning.
+    Sandbox games are distinguished by long time scales, replayability, multiple solution paths,
+    system experimentation, and creative expression. GBLS planning should therefore match
+    interaction structure to purpose rather than treating video games as a uniform format.
+- Target_Section: Design for Reflection, Learning Transfer, and Participant Agency
+  Contribution_Text: Open-ended game environments can support divergent trajectories from play
+    toward history, design, politics, teaching, and other practices, but these pathways do not
+    emerge automatically. Squire (2008) identifies induction into a community and propulsion toward
+    new communities as facilitation tasks. Libraries can make expert roles visible, connect play to
+    collections and tools, support peer mentoring, and assess the artifacts and participation
+    pathways that follow.
 ## Evidence Cautions and Limitations
 
 The chapter combines theory, prior studies, and illustrative cases rather than presenting a single fully specified empirical design. Sample sizes, recruitment, and analytic procedures for the focal participants are not reported in enough detail here to support broad causal claims. The author marks several conclusions as hypotheses or early-stage design propositions, and the examples are tied to particular games and early-2000s educational contexts. The attached file is a 2007 manuscript under consideration; the citation above reflects the published 2008 chapter, while the stable Zotero citation key retains 2007.

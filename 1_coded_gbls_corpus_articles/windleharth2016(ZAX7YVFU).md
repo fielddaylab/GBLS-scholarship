@@ -22,21 +22,17 @@ Audience: not_applicable
 Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Suggested placement: `Cataloging, Metadata, and Discovery`, immediately after Chapman (2021).
-    Suggested text: Windleharth, Jett, Schmalz, and Lee (2016) show how player folksonomies can inform
-    game metadata without replacing controlled description. Their conceptual analysis of 294 Steam user
-    tags applied to 4,495 games sorted tags into 29 categories and found that players frequently
-    describe gameplay genre, narrative genre, mechanics, user interaction, theme, setting, mood, visual
-    style, pacing, relationships, platform, price, production, and evaluative appeal. For GBLS, the
-    article supports using player language to enrich discovery and advisory while also cautioning that
-    tags such as Abstract, America, Anime, Open World, and e-sports are ambiguous, emergent, and
-    context-dependent enough to require curation, facets, and linked-data-style disambiguation.
-
+### Contributions
+- Target_Section: Cataloging, Metadata, and Discovery
+  Contribution_Text: Windleharth, Jett, Schmalz, and Lee (2016) show how player folksonomies can
+    inform game metadata without replacing controlled description. Their conceptual analysis of 294
+    Steam user tags applied to 4,495 games sorted tags into 29 categories and found that players
+    frequently describe gameplay genre, narrative genre, mechanics, user interaction, theme,
+    setting, mood, visual style, pacing, relationships, platform, price, production, and evaluative
+    appeal. For GBLS, the article supports using player language to enrich discovery and advisory
+    while also cautioning that tags such as Abstract, America, Anime, Open World, and e-sports are
+    ambiguous, emergent, and context-dependent enough to require curation, facets, and
+    linked-data-style disambiguation.
 ### Summary
 # **Windleharth, T. W., Jett, J., Schmalz, M., & Lee, J. H. (2016). Full Steam ahead: A conceptual analysis of user-supplied tags on Steam. *Cataloging & Classification Quarterly, 54*(7), 418-441. https://doi.org/10.1080/01639374.2016.1190951**
 

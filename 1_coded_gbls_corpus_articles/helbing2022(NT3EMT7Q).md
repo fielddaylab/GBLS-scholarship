@@ -22,21 +22,16 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Escape Rooms and Breakout
-    Boxes`, after the Seay (2019) Mars survival/design-reflection paragraph. Suggested text: Helbing et
-    al. (2022) add a concrete health sciences library implementation model, describing optometry,
-    pharmacy, and medicine escape rooms delivered in in-person team, hybrid individual, fully online
-    individual, and later online optometry formats. Their case report ties puzzles to PubMed, PICO,
-    MeSH, full-text access, resource guides, ILLiad, journal impact factors, and help-seeking, and its
-    main contribution is practical design guidance: begin with learning objectives, work backward into
-    clues, test for ambiguity, plan for early finishers, consider team versus individual formats, keep
-    costs low with common tools, and decide carefully whether grading will support or distort learning.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Escape Rooms and Breakout Boxes
+  Contribution_Text: Helbing et al. (2022) add a concrete health sciences library implementation
+    model, describing optometry, pharmacy, and medicine escape rooms delivered in in-person team,
+    hybrid individual, fully online individual, and later online optometry formats. Their case
+    report ties puzzles to PubMed, PICO, MeSH, full-text access, resource guides, ILLiad, journal
+    impact factors, and help-seeking, and its main contribution is practical design guidance: begin
+    with learning objectives, work backward into clues, test for ambiguity, plan for early
+    finishers, consider team versus individual formats, keep costs low with common tools, and decide
+    carefully whether grading will support or distort learning.
 ### Summary
 # **Helbing, R. R., Lapka, S., Richdale, K., & Hatfield, C. L. (2022). In-person and online escape rooms for individual and team-based learning in health professions library instruction. *Journal of the Medical Library Association, 110*(4), 507-512. https://doi.org/10.5195/jmla.2022.1463**
 

@@ -31,12 +31,9 @@ Intended_Outcome:
 - equitable_access
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Goddard, J. (2020). Public libraries respond to the COVID-19 pandemic, creating a new service model. *Information Technology and Libraries, 39*(4), 1-4. https://doi.org/10.6017/ital.v39i4.12847**
 

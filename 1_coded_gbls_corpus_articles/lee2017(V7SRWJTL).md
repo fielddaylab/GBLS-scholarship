@@ -24,20 +24,15 @@ Intended_Outcome:
 - creativity_and_production
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Collections, Circulation,
-    and Access`, immediately after the heading. Suggested text: Lee, Clarke, Cho, and Windleharth (2017)
-    provide a foundation for game advisory by identifying 16 video game appeals from 1,257 survey
-    responses: narrative, challenge, sensation, fellowship, nostalgia, fantasy, exploration, mood,
-    depth, creativity/innovation, expression, accomplishment, competition, submission, mastery, and
-    learning. Their findings show that appeals can supplement genre and platform metadata, helping
-    libraries recommend games across genre boundaries and fold games into whole-collection readers'
-    advisory rather than treating them as a separate hobby format.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Collections, Circulation, and Access
+  Contribution_Text: Lee, Clarke, Cho, and Windleharth (2017) provide a foundation for game advisory
+    by identifying 16 video game appeals from 1,257 survey responses: narrative, challenge,
+    sensation, fellowship, nostalgia, fantasy, exploration, mood, depth, creativity/innovation,
+    expression, accomplishment, competition, submission, mastery, and learning. Their findings show
+    that appeals can supplement genre and platform metadata, helping libraries recommend games
+    across genre boundaries and fold games into whole-collection readers' advisory rather than
+    treating them as a separate hobby format.
 ### Summary
 # **Lee, J. H., Clarke, R. I., Cho, H., & Windleharth, T. (2017). Understanding appeals of video games for readers' advisory and recommendation. *Reference & User Services Quarterly, 57*(2), 127-139.**
 

@@ -22,12 +22,9 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Tahir, R., & Wang, A. I. (2024). Evaluating the effectiveness of game-based learning for teaching refugee children Arabic using the integrated LEAGUE-GQM approach. *Behaviour & Information Technology, 43*(1), 110-138. https://doi.org/10.1080/0144929X.2022.2156386**
 

@@ -22,22 +22,17 @@ Intended_Outcome:
 - engagement_and_participation
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Games as Cultural Media and
-    Library Collections`, immediately after the `## Games as Cultural Media and Library Collections`
-    heading. Suggested text: Noorda and Inman Berens (2021) provide audience-level evidence for treating
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Games as Cultural Media and Library
+    Collections
+  Contribution_Text: Noorda and Inman Berens (2021) provide audience-level evidence for treating
     games as part of a broader library media ecosystem. Their survey of book, game, and TV/movie
-    engagement shows that patrons discover stories and formats across channels: substantial shares of
-    respondents discover games through books, books through TV/movies, and other media through games,
-    with cross-media discovery especially pronounced among millennials. For GBLS, this supports
-    collection development, readers' advisory, displays, and programming that connect games to books,
-    fandoms, genres, authors, and other cultural media rather than treating games as a separate
-    recreational category.
-
+    engagement shows that patrons discover stories and formats across channels: substantial shares
+    of respondents discover games through books, books through TV/movies, and other media through
+    games, with cross-media discovery especially pronounced among millennials. For GBLS, this
+    supports collection development, readers' advisory, displays, and programming that connect games
+    to books, fandoms, genres, authors, and other cultural media rather than treating games as a
+    separate recreational category.
 ### Summary
 # **Noorda, R., & Inman Berens, K. (2021). Immersive media and books 2020: New insights about book pirates, libraries and discovery, millennials, and cross-media engagement: Before and during COVID. *Publishing Research Quarterly, 37*, 227-240. https://doi.org/10.1007/s12109-021-09810-z**
 

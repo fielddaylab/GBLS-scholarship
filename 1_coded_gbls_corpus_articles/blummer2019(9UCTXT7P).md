@@ -22,20 +22,15 @@ Intended_Outcome:
 - learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Scope, Definition, and Review Approach > Source Base`, after the
-    Mattson (2021) paragraph. Suggested text: Blummer and Kenton (2019) provide adjacent source-base
-    context by reviewing 174 papers on academic-library outreach from 2008 to January 2019. Gaming
-    appears as one small specialized-program subtheme, alongside instruction, roaming services,
-    orientations, exhibits, makerspaces, and collections; the review is too broad to evidence GBLS
-    outcomes, but it shows that video-game events, information-literacy games, and library-orientation
-    games were being treated as academic-library outreach tools within wider patterns of relevance,
-    collaboration, cultural artifacts, flexibility, marketing, management, and uneven assessment.
-
+### Contributions
+- Target_Section: Scope, Definition, and Review Approach > Source Base
+  Contribution_Text: Blummer and Kenton (2019) provide adjacent source-base context by reviewing 174
+    papers on academic-library outreach from 2008 to January 2019. Gaming appears as one small
+    specialized-program subtheme, alongside instruction, roaming services, orientations, exhibits,
+    makerspaces, and collections; the review is too broad to evidence GBLS outcomes, but it shows
+    that video-game events, information-literacy games, and library-orientation games were being
+    treated as academic-library outreach tools within wider patterns of relevance, collaboration,
+    cultural artifacts, flexibility, marketing, management, and uneven assessment.
 ### Summary
 # **Blummer, B., & Kenton, J. M. (2019). Academic libraries' outreach efforts: Identifying themes in the literature. *Public Services Quarterly, 15*(3), 179-204. https://doi.org/10.1080/15228959.2019.1592058**
 

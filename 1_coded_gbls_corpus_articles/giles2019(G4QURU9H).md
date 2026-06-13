@@ -26,25 +26,22 @@ Intended_Outcome:
 - institutional_capacity
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Broussard (2014) paragraph. Suggested text: Giles, Shuyler,
-    Evans, and Reed (2019) add a low-cost transfer-student orientation model through a JMU Libraries
-    card game based on *Apples to Apples*. Designed for short sessions, uncertain attendance, limited
-    staff, and no computers, the game embedded correct answers on the back of question cards, let groups
-    play at different speeds, and used humor and familiar rules to introduce spaces, services, policies,
-    subject librarians, and remote database access. Section and exact location: `Major Areas of Game-
-    Based Library Service > Community, Belonging, and the Public Commons`, after the Littman et al.
-    (2024) paragraph. Suggested text: Giles et al. (2019) also show how orientation games can address
-    belonging, not only information transfer. For transfer students who may arrive with uneven library
-    preparation and weak social ties at the new institution, the card game created structured
-    conversation, laughter, peer contact, and a less anxious first encounter with the library; 86% of
-    survey respondents said it helped them feel more comfortable in the library.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Giles, Shuyler, Evans, and Reed (2019) add a low-cost transfer-student
+    orientation model through a JMU Libraries card game based on *Apples to Apples*. Designed for
+    short sessions, uncertain attendance, limited staff, and no computers, the game embedded correct
+    answers on the back of question cards, let groups play at different speeds, and used humor and
+    familiar rules to introduce spaces, services, policies, subject librarians, and remote database
+    access.
+- Target_Section: Major Areas of Game- Based Library Service > Community, Belonging, and the Public
+    Commons
+  Contribution_Text: Giles et al. (2019) also show how orientation games can address belonging, not
+    only information transfer. For transfer students who may arrive with uneven library preparation
+    and weak social ties at the new institution, the card game created structured conversation,
+    laughter, peer contact, and a less anxious first encounter with the library; 86% of survey
+    respondents said it helped them feel more comfortable in the library.
 ### Summary
 # **Giles, K., Shuyler, K. S., Evans, A., & Reed, J. (2019). Creating a library orientation card game to reach new transfer students. *Public Services Quarterly, 15*(3), 236-245. https://doi.org/10.1080/15228959.2018.1488643**
 

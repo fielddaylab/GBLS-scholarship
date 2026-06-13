@@ -20,22 +20,17 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Seay (2019) liminal instruction paragraph. Suggested text:
-    Knapp (2019) adds a school-library literacy perspective to this instructional thread. Although her
-    article is broader than GBLS, she notes that game-based reading programs can make basic vocabulary,
-    decoding, and word-recognition practice more engaging as supplemental tools, and that librarians can
-    use students' interest in videogames, movies, fan fiction, online worlds, reviews, book trailers,
-    and social reading platforms as pathways into "real reading." The source should be used cautiously,
-    but it reinforces the idea that games and game-adjacent media can support literacy when librarians
-    connect them to access, scaffolding, reader choice, and social sharing rather than treating them as
-    replacements for reading instruction.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Knapp (2019) adds a school-library literacy perspective to this instructional
+    thread. Although her article is broader than GBLS, she notes that game-based reading programs
+    can make basic vocabulary, decoding, and word-recognition practice more engaging as supplemental
+    tools, and that librarians can use students' interest in videogames, movies, fan fiction, online
+    worlds, reviews, book trailers, and social reading platforms as pathways into "real reading."
+    The source should be used cautiously, but it reinforces the idea that games and game-adjacent
+    media can support literacy when librarians connect them to access, scaffolding, reader choice,
+    and social sharing rather than treating them as replacements for reading instruction.
 ### Summary
 # **Knapp, N. F. (2019). Using technology to foster "real reading" in the school library and beyond. *Knowledge Quest, 48*(1), 54-59.**
 

@@ -22,28 +22,24 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Games as Cultural Media and
-    Library Collections`, after the Noorda and Inman Berens (2021) paragraph. Suggested text: Tanaka
-    (2022) gives the cultural-media argument a decolonial and Indigenous Futurisms focus, arguing that
-    Indigenous-created and collaboratively developed video games such as *When Rivers Were Trails*,
-    *Never Alone*, and *Terra Nova* should be represented in library collections and spaces. The article
-    treats Indigenous video games as media for sovereignty, language, relationality, storytelling,
-    education, and creative production, while warning that digital-only indie distribution may require
-    installed access stations, programming, partnerships, and active promotion rather than ordinary
-    circulation alone. Section and exact location: `Cross-Cutting Lessons for Game-Based Library
-    Services > Curate for Inclusion, Access, and Advisory`, after the Bayeck and Bayeck (2024)
-    paragraph. Suggested text: Tanaka (2022) further shows that inclusive game curation includes whose
-    games are acquired, how they are made playable, and who contextualizes them. Her recommendations for
-    Indigenous video games include access stations, partnerships with gaming companies and Indigenous
-    communities, cultural teachings by Elders, cooperative play discussions, creator talks, game-making
-    workshops, space for Indigenous creators, and staff learning so that decolonizing collection work
-    extends into programming, advisory, and infrastructure.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Games as Cultural Media and Library
+    Collections
+  Contribution_Text: Tanaka (2022) gives the cultural-media argument a decolonial and Indigenous
+    Futurisms focus, arguing that Indigenous-created and collaboratively developed video games such
+    as *When Rivers Were Trails*, *Never Alone*, and *Terra Nova* should be represented in library
+    collections and spaces. The article treats Indigenous video games as media for sovereignty,
+    language, relationality, storytelling, education, and creative production, while warning that
+    digital-only indie distribution may require installed access stations, programming,
+    partnerships, and active promotion rather than ordinary circulation alone.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Curate for Inclusion,
+    Access, and Advisory
+  Contribution_Text: Tanaka (2022) further shows that inclusive game curation includes whose games
+    are acquired, how they are made playable, and who contextualizes them. Her recommendations for
+    Indigenous video games include access stations, partnerships with gaming companies and
+    Indigenous communities, cultural teachings by Elders, cooperative play discussions, creator
+    talks, game-making workshops, space for Indigenous creators, and staff learning so that
+    decolonizing collection work extends into programming, advisory, and infrastructure.
 ### Summary
 # **Tanaka, C. (2022). Indigenous video games in libraries. *Pathfinder: A Canadian Journal for Information Science Students and Early Career Professionals, 3*(1), 14-29. https://doi.org/10.29173/pathfinder57**
 

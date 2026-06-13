@@ -24,27 +24,24 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Introduction: Why Game-Based Library Services Matter > The role of
-    Libraries is everchanging`, after the Burek Pierce (2016) paragraph. Suggested text: Nicholson
-    (2013) broadens this historical frame by showing that games, toys, puzzles, and play have appeared
-    in North American library collections and services for more than 150 years, from nineteenth-century
-    chess rooms and rational recreation to Depression-era toy lending and puzzle contests, school-
-    library games, summer reading challenges, academic game collections, videogame circulation, Wii
-    bowling, National Gaming Day, and game creation. This history reframes GBLS as a recurring library
-    response to culture, recreation, learning, and community need rather than as a recent digital
-    novelty. Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Game
-    Modalities in Library Contexts`, immediately after the heading. Suggested text: Nicholson (2013)
-    also helps define the GBLS service field by distinguishing game collections from gaming programs and
-    by treating games broadly as structured forms of play across board, card, computer, role-playing,
-    console, puzzle, toy, and hybrid formats. His historical survey shows that games can function as
-    materials, programs, research objects, social infrastructure, digital-literacy tools, outreach
-    mechanisms, and collection-development challenges.
-
+### Contributions
+- Target_Section: Introduction: Why Game-Based Library Services Matter > The role of Libraries is
+    everchanging
+  Contribution_Text: Nicholson (2013) broadens this historical frame by showing that games, toys,
+    puzzles, and play have appeared in North American library collections and services for more than
+    150 years, from nineteenth-century chess rooms and rational recreation to Depression-era toy
+    lending and puzzle contests, school- library games, summer reading challenges, academic game
+    collections, videogame circulation, Wii bowling, National Gaming Day, and game creation. This
+    history reframes GBLS as a recurring library response to culture, recreation, learning, and
+    community need rather than as a recent digital novelty.
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Game Modalities in Library
+    Contexts
+  Contribution_Text: Nicholson (2013) also helps define the GBLS service field by distinguishing
+    game collections from gaming programs and by treating games broadly as structured forms of play
+    across board, card, computer, role-playing, console, puzzle, toy, and hybrid formats. His
+    historical survey shows that games can function as materials, programs, research objects, social
+    infrastructure, digital-literacy tools, outreach mechanisms, and collection-development
+    challenges.
 ### Summary
 # **Nicholson, S. (2013). Playing in the past: A history of games, toys, and puzzles in North American libraries. *The Library Quarterly, 83*(4), 341-361. https://doi.org/10.1086/671913**
 

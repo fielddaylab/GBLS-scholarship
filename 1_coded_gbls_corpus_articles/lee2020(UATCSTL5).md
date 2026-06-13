@@ -29,20 +29,15 @@ Intended_Outcome:
 - institutional_capacity
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > VR, AR, and Immersive
-    Technology`, after the Lee et al. (2024) paragraph. Suggested text: Lee, King, Dahya, and Lee (2020)
-    provide a practical baseline for VR programming through 36 interviews with librarians involved in
-    seven Washington State public-library VR sites. Their findings show that VR can support informal
-    learning, social engagement, and equitable access to expensive technology, but only when libraries
-    attend to targeted outreach, public/private setup, accessibility, waiver and account barriers,
-    content quality, and wraparound programming that connects VR to local interests rather than relying
-    on novelty alone.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > VR, AR, and Immersive Technology
+  Contribution_Text: Lee, King, Dahya, and Lee (2020) provide a practical baseline for VR
+    programming through 36 interviews with librarians involved in seven Washington State
+    public-library VR sites. Their findings show that VR can support informal learning, social
+    engagement, and equitable access to expensive technology, but only when libraries attend to
+    targeted outreach, public/private setup, accessibility, waiver and account barriers, content
+    quality, and wraparound programming that connects VR to local interests rather than relying on
+    novelty alone.
 ### Summary
 # **Lee, K. J., King, W. E., Dahya, N., & Lee, J. H. (2020). Librarian perspectives on the role of virtual reality in public libraries. *Proceedings of the Association for Information Science and Technology, 57*(1), e254. https://doi.org/10.1002/pra2.254**
 

@@ -22,19 +22,14 @@ Audience: general_public
 Intended_Outcome: institutional_capacity
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Gaps in the Literature and Future Research Agenda > Survey Agenda`,
-    immediately after the `## Survey Agenda` heading. Suggested text: Baker (2024) makes the survey
-    agenda explicit by proposing paired staff and patron instruments for a national needs assessment of
-    games-based library services. Although the proposal does not report findings, it identifies the
-    field-level data still needed: which GBLS formats libraries offer, how they are funded and promoted,
-    what implementation barriers staff face, how prepared staff feel, which patrons use or want these
-    services, and how interest varies by community and demographic context.
-
+### Contributions
+- Target_Section: Gaps in the Literature and Future Research Agenda > Survey Agenda
+  Contribution_Text: Baker (2024) makes the survey agenda explicit by proposing paired staff and
+    patron instruments for a national needs assessment of games-based library services. Although the
+    proposal does not report findings, it identifies the field-level data still needed: which GBLS
+    formats libraries offer, how they are funded and promoted, what implementation barriers staff
+    face, how prepared staff feel, which patrons use or want these services, and how interest varies
+    by community and demographic context.
 ### Summary
 # **Baker, C. J. (2024). *Research proposal: Games-based library services study & needs assessment* [Unpublished research proposal]. School of Information Studies, University of Wisconsin-Milwaukee.**
 

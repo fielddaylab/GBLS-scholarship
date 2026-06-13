@@ -22,21 +22,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Introduction: Why Game-Based Library Services Matter > Games are a
-    mainstream cultural practice`, replace the two rough board/card games bullet lines after the
-    Statista video-games paragraph. Suggested text: Statista's companion board/card games report
-    likewise anchors tabletop games as mainstream hobby media: global board-game revenue reached $8.3
-    billion in 2023 and is forecast at $9.9 billion by 2028, while global card-game revenue was $2.75
-    billion in 2023 and is forecast at $3.27 billion by 2028. The United States led both reported
-    markets in 2023, with $2.61 billion in board-game revenue and $817.7 million in card-game revenue,
-    and Statista Consumer Insights reported that 24% of U.S. adults age 18-64 considered board/card
-    games one of their hobbies in Q1 2024.
-
+### Contributions
+- Target_Section: Introduction: Why Game-Based Library Services Matter > Games are a mainstream
+    cultural practice
+  Contribution_Text: Statista's companion board/card games report likewise anchors tabletop games as
+    mainstream hobby media: global board-game revenue reached $8.3 billion in 2023 and is forecast
+    at $9.9 billion by 2028, while global card-game revenue was $2.75 billion in 2023 and is
+    forecast at $3.27 billion by 2028. The United States led both reported markets in 2023, with
+    $2.61 billion in board-game revenue and $817.7 million in card-game revenue, and Statista
+    Consumer Insights reported that 24% of U.S. adults age 18-64 considered board/card games one of
+    their hobbies in Q1 2024.
 ### Summary
 # **Statista. (n.d.). *Industries & markets: Board games and card games*.**
 

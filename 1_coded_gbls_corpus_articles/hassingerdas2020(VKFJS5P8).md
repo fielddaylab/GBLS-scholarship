@@ -28,12 +28,9 @@ Intended_Outcome:
 - creativity_and_production
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Hassinger-Das, B., Zosh, J. M., Hansen, N., Talarowski, M., Zmich, K., Golinkoff, R. M., & Hirsh-Pasek, K. (2020). Play-and-learn spaces: Leveraging library spaces to promote caregiver and child interaction. *Library & Information Science Research, 42*(1), 101002. https://doi.org/10.1016/j.lisr.2020.101002**
 

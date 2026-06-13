@@ -47,18 +47,20 @@ For the larger GBLS project, the article offers a disciplined research stance. L
 
 ## Suggested Review Contributions
 
-Contributions:
-- Target_Section: "## Review and Synthesis Approach"
-  Target_Section_Raw: "## Review and Synthesis Approach"
-  Placement: "In the explanation of how evidence types are weighted and combined."
-  Contribution_Text: >
-    Squire (2007) cautions against treating media comparisons and standardized tests as the universal model for games-and-learning research. Experiments can answer bounded causal questions, while ethnography, critical analysis, case studies, design-based research, and practitioner collaboration are needed to explain meanings, mechanisms, contexts, and implementation. A GBLS synthesis should therefore weight evidence in relation to the claim being made rather than apply one fixed hierarchy across all questions.
-- Target_Section: "## Evidence Quality and Outcome Gaps"
-  Target_Section_Raw: "## Evidence Quality and Outcome Gaps"
-  Placement: "After the discussion of overclaiming from attendance, enjoyment, or isolated outcomes."
-  Contribution_Text: >
-    The field needs more than blanket findings about whether games "work." Squire (2007) calls for mezzanine-level theories explaining how particular game forms, facilitation arrangements, and learning systems produce specific outcomes in specific contexts. For GBLS, this shifts the research agenda toward linked questions of outcome, mechanism, participant meaning, implementation, and local adaptation.
-
+### Contributions
+- Target_Section: Review and Synthesis Approach
+  Contribution_Text: Squire (2007) cautions against treating media comparisons and standardized
+    tests as the universal model for games-and-learning research. Experiments can answer bounded
+    causal questions, while ethnography, critical analysis, case studies, design-based research, and
+    practitioner collaboration are needed to explain meanings, mechanisms, contexts, and
+    implementation. A GBLS synthesis should therefore weight evidence in relation to the claim being
+    made rather than apply one fixed hierarchy across all questions.
+- Target_Section: Evidence Quality and Outcome Gaps
+  Contribution_Text: The field needs more than blanket findings about whether games "work." Squire
+    (2007) calls for mezzanine-level theories explaining how particular game forms, facilitation
+    arrangements, and learning systems produce specific outcomes in specific contexts. For GBLS,
+    this shifts the research agenda toward linked questions of outcome, mechanism, participant
+    meaning, implementation, and local adaptation.
 ## Evidence Cautions and Limitations
 
 This is a short opinion and theory article written as a response in an active methodological debate. It does not report a new empirical study, systematically review the literature, or demonstrate that the proposed field structure produces better outcomes. Its examples establish a research agenda and methodological caution rather than causal evidence. The claims are nevertheless useful for calibrating the GBLS review's evidence logic and avoiding both uncritical enthusiasm and methodologically narrow dismissal.

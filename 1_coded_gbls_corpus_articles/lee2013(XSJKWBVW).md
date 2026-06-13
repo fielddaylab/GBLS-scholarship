@@ -24,92 +24,35 @@ Audience: not_applicable
 Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Cataloging, Metadata, and
-    Discovery`, immediately after the de Groat (2015) paragraph. Suggested text: Lee, Cho, Fox, and
-    Perti (2013) make the user warrant for game metadata explicit. Working with the Seattle Interactive
-    Media Museum, they combined domain analysis of existing catalog and game-site elements, personas,
-    cataloging tests, facet analysis, and interviews with 24 gamers to propose CORE16 and a 46-element
-    recommended schema. The schema adds game-specific access points such as gameplay/genre, style,
-    plot/narrative, theme, setting, mood/affect, visual style, point of view, online capabilities,
-    special hardware, and distribution data; for GBLS, it shows that discovery must support how players,
-    parents, collectors, educators, scholars, developers, and librarians actually search while managing
-    source-of-information, spoiler, stability, authority, and cataloger-expertise problems. # Guo, Y.
-    R., & Goh, D. H.-L. (2016). Library Escape: User-centered design of an information literacy game.
-    *The Library Quarterly: Information, Community, Policy, 86*(3), 330-355. Unique identifier:
-    `guoLibraryEscapeUserCentered2016`; Zotero item key `M4BHEU53`; attachment key `BWVK8REL`. Guo and
-    Goh (2016) describe the user-centered design of *Library Escape*, a digital game intended to teach
-    university students information literacy (IL). The article begins from a problem familiar to
-    academic libraries: students need to seek, locate, navigate, evaluate, and synthesize information,
-    but many are reluctant to initiate help-seeking with librarians and often prefer search-engine
-    results of uncertain quality. Digital game-based learning is presented as a possible response
-    because games can support engagement, problem solving, feedback, immersion, and active information
-    seeking. The authors also caution that educational games often fail when designers assume learning
-    content can simply be attached to entertaining mechanics without involving the people who will
-    actually use the game. The study's main contribution is methodological. Guo and Goh use two user-
-    centered approaches: a participatory design workshop and a subsequent user evaluation. The design
-    was guided by Kuhlthau's Information Search Process (ISP) Model, whose six stages became the
-    organizing structure for the game: task initiation, topic selection, prefocus exploration, focus
-    formulation, information collection, and search closure. Seven university students participated in
-    the initial workshop after playing existing IL games and discussing what they liked and disliked.
-    They collaboratively developed a low-fidelity prototype through focus-group discussion and
-    storyboarding. Ten university students then participated in individual interviews to evaluate the
-    low-fidelity prototype, producing feedback that the authors used to revise the game into a high-
-    fidelity prototype. The low-fidelity version imagined *Library Escape* as a role-playing adventure.
-    The protagonist, Tom, receives a poor IL grade and is pushed into a deserted library where a
-    librarian, Ms. Senka, helps him complete six missions. Each mission maps to a stage of the ISP Model
-    and takes place in a different library venue, including closed stacks, the reference desk, open
-    shelves, a digital library, a cafe, and an exhibition area. Quests introduce IL definitions, library
-    anxiety, information-seeking models, the ISP Model, applications of the ISP Model, and broad
-    questions about objectivity, information need, and search closure. This version embedded IL content
-    in hidden objects and used mission completion, scores, certificates, leaderboards, status bars, and
-    social sharing as game elements. The user evaluation changed the design substantially. Participants
-    found some elements boring, too obvious, too philosophical, insufficiently practical, or
-    disconnected from what they expected to learn. The revised high-fidelity prototype changed the
-    backstory from a video to comic strips, made the librarian a male ghost guardian named Mr. Senka,
-    added a magic-wand rescue plot, simplified the final certificate, renamed missions after ISP stages,
-    adjusted venues, and reduced the number of quests per mission from four to three so the game could
-    go deeper rather than broader. The revised learning content became more practical: topic selection,
-    types of scientific literature, library anxiety, scholarly publication cycles, Google Scholar, OPAC
-    use, building blocks, pearl growing, successive fractions, evaluation of retrieved articles,
-    reflection on the ISP Model, authorship responsibilities, plagiarism, and citations. The game also
-    added explorer, bonus, and gateway objects to avoid linear clicking and encourage exploration. For
-    the GBLS project, the article is valuable because it makes game-based library instruction look like
-    an iterative service-design problem rather than a finished novelty object. Guo and Goh identify
-    three design tensions that matter across GBLS. First, designers should be accommodating yet
-    pragmatic: user input is necessary, but users may disagree with each other and may not understand IL
-    pedagogy. Second, designers must balance enjoyment and learning: too much content makes a game feel
-    mechanical, while too much entertainment can displace educational purpose. Third, designers should
-    be guided yet flexible: a theoretical framework can sequence learning, but players still need room
-    to explore, choose, and feel control inside missions. The article should not be used as evidence
-    that *Library Escape* improved IL outcomes, because it reports prototype design rather than a
-    playable implementation with learning assessment. The authors explicitly note that future work
-    should include observations, game-activity log analysis, expert inspection by educators and game
-    designers, and further evaluation after implementation. Still, the source gives the review a strong
-    example of participatory, theoretically grounded GBLS design. It supports the argument that library
-    games should be built with users, tested early, revised materially, and connected to recognizable
-    learning models while preserving the agency and suspense that make games worth playing. Suggested
-    review placement: Add to `# Major Areas of Game-Based Library Service` > `## Instruction,
-    Orientation, and Information Literacy`, after the Jerrett, Bothma, and de Beer (2017) paragraph.
-    Proposed text: "Guo and Goh (2016) add a design-process perspective through *Library Escape*, a
-    prototype IL game structured around Kuhlthau's Information Search Process model. Their participatory
-    design workshop and user-evaluation interviews show how an academic-library game can translate task
-    initiation, topic selection, prefocus exploration, focus formulation, information collection, and
-    search closure into missions, quests, venues, characters, hidden objects, rewards, and reflection
-    prompts while remaining open to substantial user-driven redesign." Suggested review placement: Add
-    to `# Cross-Cutting Lessons for Game-Based Library Services` > `## Design for Reflection and
-    Transfer`, after the Jerrett et al. (2017) paragraph. Proposed text: "Guo and Goh (2016) also
-    clarify that reflection and transfer have to be designed through iteration. Their *Library Escape*
-    revisions moved from broad, sometimes abstract IL content toward more practical tasks such as Google
-    Scholar, OPAC use, search strategies, evaluating retrieved articles, authorship responsibilities,
-    plagiarism, and citations, while keeping the ISP model as an underlying scaffold; the lesson for
-    GBLS is to let user feedback reshape story, pacing, difficulty, and task design without losing the
-    learning framework."
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Cataloging, Metadata, and Discovery
+  Contribution_Text: Lee, Cho, Fox, and Perti (2013) make the user warrant for game metadata
+    explicit. Working with the Seattle Interactive Media Museum, they combined domain analysis of
+    existing catalog and game-site elements, personas, cataloging tests, facet analysis, and
+    interviews with 24 gamers to propose CORE16 and a 46-element recommended schema. The schema adds
+    game-specific access points such as gameplay/genre, style, plot/narrative, theme, setting,
+    mood/affect, visual style, point of view, online capabilities, special hardware, and
+    distribution data; for GBLS, it shows that discovery must support how players, parents,
+    collectors, educators, scholars, developers, and librarians actually search while managing
+    source-of-information, spoiler, stability, authority, and cataloger-expertise problems.
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Guo and Goh (2016) add a design-process perspective through *Library Escape*, a
+    prototype IL game structured around Kuhlthau's Information Search Process model. Their
+    participatory design workshop and user-evaluation interviews show how an academic-library game
+    can translate task initiation, topic selection, prefocus exploration, focus formulation,
+    information collection, and search closure into missions, quests, venues, characters, hidden
+    objects, rewards, and reflection prompts while remaining open to substantial user-driven
+    redesign.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Design for Reflection and
+    Transfer
+  Contribution_Text: Guo and Goh (2016) also clarify that reflection and transfer have to be
+    designed through iteration. Their *Library Escape* revisions moved from broad, sometimes
+    abstract IL content toward more practical tasks such as Google Scholar, OPAC use, search
+    strategies, evaluating retrieved articles, authorship responsibilities, plagiarism, and
+    citations, while keeping the ISP model as an underlying scaffold; the lesson for GBLS is to let
+    user feedback reshape story, pacing, difficulty, and task design without losing the learning
+    framework.
 ### Summary
 # **Lee, J. H., Cho, H., Fox, V., & Perti, A. (2013). User-centered approach in creating a metadata schema for video games and interactive media. In *Proceedings of the 13th ACM/IEEE-CS Joint Conference on Digital Libraries* (pp. 229-238). ACM. https://doi.org/10.1145/2467696.2467702**
 

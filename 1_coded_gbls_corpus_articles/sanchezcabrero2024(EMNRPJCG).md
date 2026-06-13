@@ -20,14 +20,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a non-library theoretical review of video-game lore as an educational
-    resource and should remain in `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a non-library theoretical review of video-game
+    lore as an educational resource and should remain in `Explicitly Excluded Literature` after
+    summary completion.
 ### Summary
 # **Sánchez-Cabrero, R. (2024). Conexiones en las nuevas metodologías educativas del Lore como recurso educativo [Connections in the new educational methodologies of Lore as an educational resource]. *Educación y Humanismo, 26*(46), 126-152. https://doi.org/10.17081/eduhum.26.46.6668**
 

@@ -20,12 +20,9 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Chen, K.-F., Hwang, G.-J., & Chen, M.-R. A. (2024). Knowledge check-based concept mapping in digital games: Impacts on students' learning performance and behaviors. *Educational Technology Research and Development, 72*(4), 2297-2324. https://doi.org/10.1007/s11423-024-10378-6**
 

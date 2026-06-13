@@ -24,14 +24,10 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a non-library K-1 classroom math-learning study and should remain in
-    `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a non-library K-1 classroom math-learning study
+    and should remain in `Explicitly Excluded Literature` after summary completion.
 ### Summary
 # **Bang, H. J., Li, L., & Flynn, K. (2023). Efficacy of an adaptive game-based math learning app to support personalized learning and improve early elementary school students' learning. *Early Childhood Education Journal, 51*(4), 717-732. https://doi.org/10.1007/s10643-022-01332-3**
 

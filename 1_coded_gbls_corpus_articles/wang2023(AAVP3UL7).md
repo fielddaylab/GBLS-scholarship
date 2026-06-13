@@ -20,23 +20,18 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Key Game Studies
-    Debates Relevant to Libraries`, immediately after the heading. Suggested text: Adjacent work on
-    competition and collaboration also matters for GBLS design. Wang and Huang (2023) found that, in a
-    digital question-bank game using intergroup competition and intragroup collaboration, perceived
-    competition was more strongly associated with self-reported learning performance than perceived
-    collaboration, and competition also stimulated collaboration by giving teammates a shared goal.
-    Because the study is not library-based and uses self-reported performance, its value is cautionary
-    rather than evidentiary: library tournaments, escape rooms, reading challenges, and gamified
-    orientations should keep competition mechanisms simple, link winning conditions to the service or
-    learning goal, divide team roles fairly, and assess outcomes beyond enjoyment or intention to
-    participate.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Key Game Studies Debates
+    Relevant to Libraries
+  Contribution_Text: Adjacent work on competition and collaboration also matters for GBLS design.
+    Wang and Huang (2023) found that, in a digital question-bank game using intergroup competition
+    and intragroup collaboration, perceived competition was more strongly associated with
+    self-reported learning performance than perceived collaboration, and competition also stimulated
+    collaboration by giving teammates a shared goal. Because the study is not library-based and uses
+    self-reported performance, its value is cautionary rather than evidentiary: library tournaments,
+    escape rooms, reading challenges, and gamified orientations should keep competition mechanisms
+    simple, link winning conditions to the service or learning goal, divide team roles fairly, and
+    assess outcomes beyond enjoyment or intention to participate.
 ### Summary
 # **Wang, D.-C., & Huang, Y.-M. (2023). Exploring the influence of competition and collaboration on learning performance in digital game-based learning. *Educational Technology Research and Development, 71*, 1547-1565. https://doi.org/10.1007/s11423-023-10247-8**
 

@@ -22,15 +22,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No addition recommended. Exclude from the GBLS literature review because this is a censorship-
-    resource link sheet and discussion handout, not a substantive study, program report, or practitioner
-    article about game-based library services.
-
+  Contribution_Text: No addition recommended. Exclude from the GBLS literature review because this
+    is a censorship- resource link sheet and discussion handout, not a substantive study, program
+    report, or practitioner article about game-based library services.
 ### Summary
 # **Lanter, J., Norton, S., Wright, A., Porter, M., & Costello, D. (2023). RTRT: Addressing Censorship. *Google Docs*. https://docs.google.com/document/u/1/d/13OhgA3ODQFRkl6MrG2miUghXfHjRKMqm5NJEgwKZgOc/edit?usp=drive_web&ouid=104872546336741826329&usp=embed_facebook**
 

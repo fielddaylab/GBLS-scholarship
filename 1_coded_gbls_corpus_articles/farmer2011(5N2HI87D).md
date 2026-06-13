@@ -23,20 +23,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Curate for
-    Inclusion, Access, and Advisory`, after Tanaka (2022). Suggested text: Farmer (2011) adds a gender-
-    equity caution for school-library e-gaming. Because girls' participation may be shaped by
-    stereotyped characters, violent or mechanical genre cues, negative first experiences, confidence
-    with complex games, and broader associations between gaming and technology, inclusive GBLS requires
-    more than offering games equally; librarians need gender-sensitive selection, purposeful
-    instructional context, supportive onboarding, and attention to whether gaming builds or undermines
-    technology self-efficacy.
-
+### Contributions
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Curate for Inclusion,
+    Access, and Advisory
+  Contribution_Text: Farmer (2011) adds a gender- equity caution for school-library e-gaming.
+    Because girls' participation may be shaped by stereotyped characters, violent or mechanical
+    genre cues, negative first experiences, confidence with complex games, and broader associations
+    between gaming and technology, inclusive GBLS requires more than offering games equally;
+    librarians need gender-sensitive selection, purposeful instructional context, supportive
+    onboarding, and attention to whether gaming builds or undermines technology self-efficacy.
 ### Summary
 # **Farmer, L. S. J. (2011). Are girls game? *Knowledge Quest, 40*(1), 14-17.**
 

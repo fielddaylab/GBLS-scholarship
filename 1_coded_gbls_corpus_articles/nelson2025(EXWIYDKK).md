@@ -24,12 +24,9 @@ Audience:
 Intended_Outcome: belonging_and_community
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Nelson, S. B., & Matthews, A. (2025). Roll for initiative: Balancing player and party in library D&D games. *Public Library Quarterly*, 1-22. https://doi.org/10.1080/01616846.2025.2522620**
 

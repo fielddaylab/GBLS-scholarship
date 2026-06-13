@@ -22,12 +22,9 @@ Intended_Outcome:
 - belonging_and_community
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Midget, R. (2025). Intellectual property or modern folklore? The problem with open gaming licenses in tabletop gaming. *Seattle University Law Review, 48*, 1129.**
 

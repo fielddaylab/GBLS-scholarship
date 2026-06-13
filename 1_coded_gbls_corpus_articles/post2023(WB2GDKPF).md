@@ -22,20 +22,15 @@ Intended_Outcome:
 - equitable_access
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Cataloging, Metadata, and
-    Discovery`, after the McDonald et al. (2021) paragraph. Suggested text: Post et al. (2023) extend
-    the metadata discussion from game artifacts to catalog records for digitally distributed indie
-    narrative games. Their action-research project created or enhanced MARC records for 18 Choice of
-    Games titles and added 33 LC name authority records, showing that catalogers need to describe
-    platforms, access conditions, version stability, interactivity, narrative subject matter, gameplay
-    mechanics, community terminology such as "interactive fiction," and the individual creators whose
-    work is often invisible in mainstream game cataloging.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Cataloging, Metadata, and Discovery
+  Contribution_Text: Post et al. (2023) extend the metadata discussion from game artifacts to
+    catalog records for digitally distributed indie narrative games. Their action-research project
+    created or enhanced MARC records for 18 Choice of Games titles and added 33 LC name authority
+    records, showing that catalogers need to describe platforms, access conditions, version
+    stability, interactivity, narrative subject matter, gameplay mechanics, community terminology
+    such as "interactive fiction," and the individual creators whose work is often invisible in
+    mainstream game cataloging.
 ### Summary
 # **Post, C., Henry, T., Nunnally, K., & Lanham, C. (2023). A colossal catalog adventure: Representing indie video games and game creators in library catalogs. *Cataloging & Classification Quarterly, 61*(7-8), 792-814. https://doi.org/10.1080/01639374.2023.2280207**
 

@@ -23,22 +23,18 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: medium
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Programs Inside Game Worlds
-    and Virtual Platforms`, immediately after the heading. Suggested text: Bell and Trueman's edited
-    volume (2008), represented here through its table of contents and a contemporary book review, marks
-    an early library moment in Second Life and other multi-user virtual environments. The volume maps
-    virtual branch libraries, avatar-based reference, in-world collections, Teen Second Life, HealthInfo
-    Island, historical simulations, speculative-fiction and mystery programming, distance-learning
-    support, and MLIS instruction, showing that game-like virtual worlds were treated as service sites
-    rather than only promotional novelties. Its limits are also instructive for later GBLS: virtual
-    platforms required staff learning, institutional support, etiquette management, hardware capacity,
-    and arguments against the perception that work inside a virtual world was "only a game."
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Programs Inside Game Worlds and Virtual
+    Platforms
+  Contribution_Text: Bell and Trueman's edited volume (2008), represented here through its table of
+    contents and a contemporary book review, marks an early library moment in Second Life and other
+    multi-user virtual environments. The volume maps virtual branch libraries, avatar-based
+    reference, in-world collections, Teen Second Life, HealthInfo Island, historical simulations,
+    speculative-fiction and mystery programming, distance-learning support, and MLIS instruction,
+    showing that game-like virtual worlds were treated as service sites rather than only promotional
+    novelties. Its limits are also instructive for later GBLS: virtual platforms required staff
+    learning, institutional support, etiquette management, hardware capacity, and arguments against
+    the perception that work inside a virtual world was "only a game."
 ### Summary
 # **Bell, L., & Trueman, R. B. (Eds.). (2008). *Virtual worlds, real libraries: Librarians and educators in Second Life and other multi-user virtual environments*. Information Today.**
 

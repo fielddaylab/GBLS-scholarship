@@ -26,20 +26,14 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Clubs and Recurring Play
-    Groups`, immediately after the heading. Suggested text: Copeland et al. (2013) show that tabletop
-    gaming in school libraries can follow multiple service paths: curriculum-integrated role-play,
-    after-school board game clubs, shared standards-aligned game collections, life-skills programming,
-    and tabletop game design workshops. Their practitioner cases emphasize affordability, portability,
-    rule reading, social interaction, cross-age friendship, curricular alignment, flexible facilitation,
-    and post-game reflection, making tabletop games a practical bridge between recreation and
-    instruction.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Clubs and Recurring Play Groups
+  Contribution_Text: Copeland et al. (2013) show that tabletop gaming in school libraries can follow
+    multiple service paths: curriculum-integrated role-play, after-school board game clubs, shared
+    standards-aligned game collections, life-skills programming, and tabletop game design workshops.
+    Their practitioner cases emphasize affordability, portability, rule reading, social interaction,
+    cross-age friendship, curricular alignment, flexible facilitation, and post-game reflection,
+    making tabletop games a practical bridge between recreation and instruction.
 ### Summary
 # **Copeland, T., Henderson, B., Mayer, B., & Nicholson, S. (2013). Three different paths for tabletop gaming in school libraries. *Library Trends, 61*(4), 825-835. https://doi.org/10.1353/lib.2013.0018**
 

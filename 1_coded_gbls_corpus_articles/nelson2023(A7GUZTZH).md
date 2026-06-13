@@ -24,12 +24,9 @@ Audience: general_public
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Nelson, A. (2023). Review of the book *Let's roll: A guide to setting up tabletop role-playing games in your school or public library*, by L. Maxwell. *School Library Journal, 69*(5), 103.**
 

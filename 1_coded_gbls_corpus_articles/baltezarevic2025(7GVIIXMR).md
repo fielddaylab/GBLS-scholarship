@@ -22,14 +22,10 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a non-library higher-education DGBL perception study and should
-    remain in `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a non-library higher-education DGBL perception
+    study and should remain in `Explicitly Excluded Literature` after summary completion.
 ### Summary
 # **Baltezarević, R., & Baltezarević, I. (2025). Digital game-based learning's (DGBL) effect on students' academic performance. *International Journal of Cognitive Research in Science, Engineering and Education (IJCRSEE), 13*(1), 127-140. https://doi.org/10.23947/2334-8496-2025-13-1-127-140**
 

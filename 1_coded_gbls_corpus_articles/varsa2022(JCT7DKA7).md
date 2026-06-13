@@ -20,19 +20,14 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Fandom Festivals and Pop-
-    Culture Events`, immediately after the Virello (2019) paragraph. Suggested text: Varsa (2022) offers
-    a smaller local-talent version of the same fandom-festival model. Oconee County Library's free all-
-    ages FanFest used a partner civic-center venue, Friends support, local authors, artists, musicians,
-    vendors, food trucks, cosplay, acting workshops, a library-system podcast tie-in, high-school
-    volunteers, and a University of Georgia Student Board Game Club gaming table to draw more than 350
-    participants, showing how gaming can be one activity within a broader community creativity festival.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Fandom Festivals and Pop- Culture Events
+  Contribution_Text: Varsa (2022) offers a smaller local-talent version of the same fandom-festival
+    model. Oconee County Library's free all- ages FanFest used a partner civic-center venue, Friends
+    support, local authors, artists, musicians, vendors, food trucks, cosplay, acting workshops, a
+    library-system podcast tie-in, high-school volunteers, and a University of Georgia Student Board
+    Game Club gaming table to draw more than 350 participants, showing how gaming can be one
+    activity within a broader community creativity festival.
 ### Summary
 # **Varsa, J. (2022). Oconee County Library puts on inaugural FanFest. *Georgia Library Quarterly, 59*(3), 1-2.**
 

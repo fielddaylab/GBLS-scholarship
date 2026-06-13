@@ -22,21 +22,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Suggested placement: `Cataloging, Metadata, and Discovery`, immediately after Dong, Moreno,
-    Rodrigues, and Stone (2025). Suggested text: Smith (2024) adds a TTRPG-specific controlled-
-    vocabulary critique to the metadata section. Comparing LCSH, AAT, Wikidata, Genre Terms for Tabletop
-    Games, and LCGFT, Smith argues that current headings fail across definition, vocabulary structure,
-    and subject-versus-genre/form disambiguation: TTRPGs are collapsed with fantasy games, computer
+### Contributions
+- Target_Section: Cataloging, Metadata, and Discovery
+  Contribution_Text: Smith (2024) adds a TTRPG-specific controlled- vocabulary critique to the
+    metadata section. Comparing LCSH, AAT, Wikidata, Genre Terms for Tabletop Games, and LCGFT,
+    Smith argues that current headings fail across definition, vocabulary structure, and
+    subject-versus-genre/form disambiguation: TTRPGs are collapsed with fantasy games, computer
     RPGs, larps, board games, wargames, individual franchises, or works about TTRPGs, even though a
     TTRPG core book is itself a game rather than a work about games. For GBLS, the article shows why
-    discoverability requires both better shared vocabularies and local facets for age range, number of
-    players, play duration, core books, supplements, and adventures.
-
+    discoverability requires both better shared vocabularies and local facets for age range, number
+    of players, play duration, core books, supplements, and adventures.
 ### Summary
 # **Smith, T. S. (2024). A dicey situation: A study of how controlled vocabularies describe tabletop roleplaying games. *Cataloging & Classification Quarterly*, 1-25. https://doi.org/10.1080/01639374.2024.2308117**
 

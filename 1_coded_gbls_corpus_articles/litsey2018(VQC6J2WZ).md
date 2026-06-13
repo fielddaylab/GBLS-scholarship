@@ -20,15 +20,11 @@ Audience: not_applicable
 Intended_Outcome: institutional_capacity
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a library workflow and ergonomics article about gaming peripherals,
-    not a game-based library service study, and should remain in `Explicitly Excluded Literature` after
-    summary completion.
-
+  Contribution_Text: No suggested addition. This is a library workflow and ergonomics article about
+    gaming peripherals, not a game-based library service study, and should remain in `Explicitly
+    Excluded Literature` after summary completion.
 ### Summary
 # **Litsey, R., Harris, R., & London, J. (2018). Ctrl "C"-Ctrl "V"; using gaming peripherals to improve library workflows and enhance staff efficiency. *Journal of Access Services, 15*(1), 34-43. https://doi.org/10.1080/15367967.2017.1420481**
 

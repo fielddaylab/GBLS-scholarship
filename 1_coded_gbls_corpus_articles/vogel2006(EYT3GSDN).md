@@ -47,19 +47,15 @@ For the larger GBLS project, the article is best used as introductory methodolog
 
 ## Suggested Review Contributions
 
-Contributions:
-- Target_Section: "The Need for a Field-Level Synthesis"
-  Target_Section_Raw: "The Need for a Field-Level Synthesis"
-  Placement: "At the beginning of the subsection's discussion of prior cross-context evidence, before Sitzmann (2011), Wouters et al. (2013), and Clark et al. (2016)."
-  Contribution_Text: >
-    An early meta-analysis by Vogel et al. (2006) reported stronger cognitive and attitudinal
-    outcomes for computer games and interactive simulations than for traditional teaching, while
-    also documenting pervasive weaknesses in the underlying literature, including missing control
-    groups, inadequate statistical reporting, sparse demographic data, and poor descriptions of
-    interventions. The combination of encouraging results and limited study quality helped motivate
-    later, more design-sensitive syntheses and illustrates why broad educational-game findings
-    cannot substitute for a field-level review of library services.
-
+### Contributions
+- Target_Section: The Need for a Field-Level Synthesis
+  Contribution_Text: An early meta-analysis by Vogel et al. (2006) reported stronger cognitive and
+    attitudinal outcomes for computer games and interactive simulations than for traditional
+    teaching, while also documenting pervasive weaknesses in the underlying literature, including
+    missing control groups, inadequate statistical reporting, sparse demographic data, and poor
+    descriptions of interventions. The combination of encouraging results and limited study quality
+    helped motivate later, more design-sensitive syntheses and illustrates why broad
+    educational-game findings cannot substitute for a field-level review of library services.
 ## Evidence Cautions and Limitations
 
 The synthesis combines games with interactive simulations and uses an older effect-size and fail-safe-number approach. Many potentially relevant studies were unusable, subgroup evidence was often sparse, and intervention descriptions were inadequate. Later meta-analyses report more conservative and design-sensitive conclusions. The findings should not be generalized to GBLS outcomes.

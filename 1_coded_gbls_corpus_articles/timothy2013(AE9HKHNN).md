@@ -20,14 +20,10 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a non-library reflective education essay and should remain in
-    `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a non-library reflective education essay and
+    should remain in `Explicitly Excluded Literature` after summary completion.
 ### Summary
 # **Timothy, A. (2013, January 2). Addiction vs. reflection: Unlocking the potential of games. *Edutopia*. https://www.edutopia.org/blog/addiction-vs-reflection-gaming-potential-adam-timothy**
 

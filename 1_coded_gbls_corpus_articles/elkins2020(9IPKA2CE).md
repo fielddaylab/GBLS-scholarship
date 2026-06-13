@@ -24,20 +24,16 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Gaps in the Literature and Future Research Agenda > Professional
-    Practice and Training Gaps`, immediately after the heading. Suggested text: Elkins and Hollister
-    (2020) identify a professional-preparation gap behind GBLS implementation: in a survey of 24 U.S.
-    LIS educators, 41.7% neither used nor discussed gaming in their courses, and many gaming-exclusive
-    respondents cited uncertainty about relevance, integration, knowledge, course-change constraints, or
-    lack of student interest. Their findings suggest that reusable course modules, assignments, best-
-    practices guides, conference workshops, and administrative support are part of the infrastructure
-    needed to make game-based library services teachable in LIS programs.
-
+### Contributions
+- Target_Section: Gaps in the Literature and Future Research Agenda > Professional Practice and
+    Training Gaps
+  Contribution_Text: Elkins and Hollister (2020) identify a professional-preparation gap behind GBLS
+    implementation: in a survey of 24 U.S. LIS educators, 41.7% neither used nor discussed gaming in
+    their courses, and many gaming-exclusive respondents cited uncertainty about relevance,
+    integration, knowledge, course-change constraints, or lack of student interest. Their findings
+    suggest that reusable course modules, assignments, best- practices guides, conference workshops,
+    and administrative support are part of the infrastructure needed to make game-based library
+    services teachable in LIS programs.
 ### Summary
 # **Elkins, A. J., & Hollister, J. M. (2020). Power up: Games and gaming in Library and Information Science curricula in the United States. *Journal of Education for Library and Information Science, 61*(2), 229-252. https://doi.org/10.3138/jelis.2019-0038.r1**
 

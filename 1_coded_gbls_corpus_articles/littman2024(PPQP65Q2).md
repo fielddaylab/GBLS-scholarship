@@ -22,22 +22,19 @@ Audience:
 Intended_Outcome: belonging_and_community
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Community, Belonging, and
-    the Public Commons`, immediately after the heading. Suggested text: Littman et al. (2024) extend the
-    third-place argument through game-based inquiry with recently housed young people who had
-    experienced chronic housing instability. In the *Future of Third Places Game*, participants used
-    worldbuilding cards, community request cards, and craft-based design to imagine spaces that offered
-    agency and individualization, met everyday needs, and were explicitly inclusive. For GBLS, the study
-    shows that library-as-third-place programs cannot rely on nominal openness or neutrality; youth-
-    centered game spaces should actively address privacy and connection, free amenities, food and rest,
-    under-21 social life, portable or adaptable space, supportive adults who are not simply "in charge,"
-    and practices that subvert rather than reproduce hostile or exclusionary public-space norms.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Community, Belonging, and the Public
+    Commons
+  Contribution_Text: Littman et al. (2024) extend the third-place argument through game-based
+    inquiry with recently housed young people who had experienced chronic housing instability. In
+    the *Future of Third Places Game*, participants used worldbuilding cards, community request
+    cards, and craft-based design to imagine spaces that offered agency and individualization, met
+    everyday needs, and were explicitly inclusive. For GBLS, the study shows that
+    library-as-third-place programs cannot rely on nominal openness or neutrality; youth- centered
+    game spaces should actively address privacy and connection, free amenities, food and rest,
+    under-21 social life, portable or adaptable space, supportive adults who are not simply "in
+    charge," and practices that subvert rather than reproduce hostile or exclusionary public-space
+    norms.
 ### Summary
 # **Littman, D. M., Milligan, T., Berry, R., Holloway, B., & Scott, M. L. (2024). What do recently housed young people imagine for the future of third places? Using game-based inquiry to (re)imagine affirming, youth-centered third places. *American Journal of Community Psychology, 74*(1-2), 127-141. https://doi.org/10.1002/ajcp.12750**
 

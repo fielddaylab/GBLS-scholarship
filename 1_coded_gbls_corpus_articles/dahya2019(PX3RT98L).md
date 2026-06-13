@@ -25,23 +25,17 @@ Intended_Outcome:
 - engagement_and_participation
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > VR, AR, and Immersive
-    Technology`, immediately after the Lee, King, Dahya, and Lee (2020) paragraph. Suggested text: Dahya
-    et al. (2019) provide the broader report behind that Washington public-library VR project, adding
-    patron-side and equity evidence from 185 surveys, 39 patron interviews, site observations, and
-    approximately 400 VR users. The report shows that patrons overwhelmingly enjoyed VR and often
-    learned how to use the technology, but it also complicates claims about empathy, content learning,
-    and equity: participation skewed toward gamers, boys, men, and White patrons except where local
-    patron demographics differed, and meaningful learning required clearer outcomes and wraparound
-    pedagogy. Its implementation guidance emphasizes lead time, staff practice, waivers and age
-    restrictions, public versus private setup, safety, themed outreach, adjacent activities, and
-    movement from VR consumption toward creation.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > VR, AR, and Immersive Technology
+  Contribution_Text: Dahya et al. (2019) provide the broader report behind that Washington
+    public-library VR project, adding patron-side and equity evidence from 185 surveys, 39 patron
+    interviews, site observations, and approximately 400 VR users. The report shows that patrons
+    overwhelmingly enjoyed VR and often learned how to use the technology, but it also complicates
+    claims about empathy, content learning, and equity: participation skewed toward gamers, boys,
+    men, and White patrons except where local patron demographics differed, and meaningful learning
+    required clearer outcomes and wraparound pedagogy. Its implementation guidance emphasizes lead
+    time, staff practice, waivers and age restrictions, public versus private setup, safety, themed
+    outreach, adjacent activities, and movement from VR consumption toward creation.
 ### Summary
 # **Dahya, N., Lee, J. H., Lee, K. J., King, W. E., Goel, M., & Yassin, H. (2019). *Virtual reality in public libraries*. University of Washington Information School. https://ischool.uw.edu/vrinlibraries**
 

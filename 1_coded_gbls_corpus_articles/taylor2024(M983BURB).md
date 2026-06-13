@@ -23,22 +23,18 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section: `Major Areas of Game-Based Library Service` -> `Games as Cultural Media and Library
-    Collections`, immediately before `Research, Scholarship, and Creative Production`. Proposed text:
-    Taylor and Liew (2024) add a specifically game-studies account of why video games matter as library
-    cultural media. In a qualitative content analysis of 15 games, they find that fictional library
-    users visit libraries to solve immediate problems, improve themselves, bond with companions, access
-    local histories, and move from outsider status toward fuller immersion in a game world. For GBLS,
-    this supports collecting, interpreting, and programming games as texts that represent library use,
-    information behavior, belonging, anxiety, guidance, and community memory, while also suggesting
-    practical design moves such as onboarding support, conversational library spaces, displays that
-    surface local history, and programming that lets patrons reflect on how games imagine libraries.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Games as Cultural Media and Library
+    Collections
+  Contribution_Text: Taylor and Liew (2024) add a specifically game-studies account of why video
+    games matter as library cultural media. In a qualitative content analysis of 15 games, they find
+    that fictional library users visit libraries to solve immediate problems, improve themselves,
+    bond with companions, access local histories, and move from outsider status toward fuller
+    immersion in a game world. For GBLS, this supports collecting, interpreting, and programming
+    games as texts that represent library use, information behavior, belonging, anxiety, guidance,
+    and community memory, while also suggesting practical design moves such as onboarding support,
+    conversational library spaces, displays that surface local history, and programming that lets
+    patrons reflect on how games imagine libraries.
 ### Summary
 # **Taylor, E., & Liew, C. L. (2024). Depiction of library use in video games: A content analysis. *Journal of Documentation, 80*(1), 158-179. https://doi.org/10.1108/JD-03-2023-0046**
 

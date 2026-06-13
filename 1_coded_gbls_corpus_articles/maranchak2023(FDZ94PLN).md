@@ -23,22 +23,18 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Community, Belonging, and
-    the Public Commons`, immediately after the heading. Suggested text: Maranchak and Maranchak (2023)
-    extend library gamification into Web 2.0 marketing and user-generated content, arguing that
-    comments, reviews, photos, videos, Reels, TikToks, podcasts, ratings, creative designs, hashtags,
-    tags, and other patron-created content can function as social proof for library trust and
-    visibility. Their article is practical and conceptual rather than evaluative, but it usefully
-    identifies lightweight GBLS mechanics outside formal programs: social-media challenges, polls,
-    quizzes, AR filters, stickers, status rewards, creative prompts, reposts, collaborative posts, photo
-    zones, art installations, and platform-specific calls to action that invite patrons to create
-    content about library spaces, books, services, and events.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Community, Belonging, and the Public
+    Commons
+  Contribution_Text: Maranchak and Maranchak (2023) extend library gamification into Web 2.0
+    marketing and user-generated content, arguing that comments, reviews, photos, videos, Reels,
+    TikToks, podcasts, ratings, creative designs, hashtags, tags, and other patron-created content
+    can function as social proof for library trust and visibility. Their article is practical and
+    conceptual rather than evaluative, but it usefully identifies lightweight GBLS mechanics outside
+    formal programs: social-media challenges, polls, quizzes, AR filters, stickers, status rewards,
+    creative prompts, reposts, collaborative posts, photo zones, art installations, and
+    platform-specific calls to action that invite patrons to create content about library spaces,
+    books, services, and events.
 ### Summary
 # **Maranchak, M., & Maranchak, N. (2023). Gamification mechanics usage for UGC promotion in online library marketing. *Ukrainian Journal on Library and Information Science*, (11), 21-33. https://doi.org/10.31866/2616-7654.11.2023.282652**
 

@@ -23,14 +23,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a publisher book-list post rather than research or a documented
-    library program, and should remain in `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a publisher book-list post rather than research
+    or a documented library program, and should remain in `Explicitly Excluded Literature` after
+    summary completion.
 ### Summary
 # **Book list: How Dungeons & Dragons in your library aids social emotional learning. (2023, May 7). *MacKids School & Library*. https://www.mackidsschoolandlibrary.com/book-list-how-dungeons-dragons-in-your-library-aids-social-emotional-learning/**
 

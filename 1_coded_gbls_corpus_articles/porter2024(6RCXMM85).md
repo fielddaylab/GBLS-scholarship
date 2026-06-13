@@ -23,15 +23,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No addition recommended. Exclude from the GBLS literature review because this is a brief grant-
-    resource link sheet, not a substantive study, program report, or practitioner article about game-
-    based library services.
-
+  Contribution_Text: No addition recommended. Exclude from the GBLS literature review because this
+    is a brief grant- resource link sheet, not a substantive study, program report, or practitioner
+    article about game- based library services.
 ### Summary
 # **Porter, M., Strang, R., & Costello, D. (2024). RTRT: Grants & Games Resource List. *Google Docs*. https://docs.google.com/document/d/1-J_cZxnau_hTxUoyxJZyXtCz3W0_OmAbCgRbNwNjWLE/edit?usp=sharing&usp=embed_facebook**
 

@@ -23,19 +23,14 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Analog, Digital,
-    and Hybrid Forms`, after the `Space Guardians` paragraph. Suggested text: Seay's tabletop-resurgence
-    column similarly frames board and card games as "high touch" responses to high-tech life. As a
-    practitioner essay, it is not outcome evidence, but it helps name the service affordances of
-    tabletop GBLS: face-to-face communication, nonverbal cues, tactile pieces, shared tables, low-tech
-    access, and social community, with escape rooms, LARP, and megagames appearing as extensions of the
-    same analog/immersive impulse.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Analog, Digital, and Hybrid
+    Forms
+  Contribution_Text: Seay's tabletop-resurgence column similarly frames board and card games as
+    "high touch" responses to high-tech life. As a practitioner essay, it is not outcome evidence,
+    but it helps name the service affordances of tabletop GBLS: face-to-face communication,
+    nonverbal cues, tactile pieces, shared tables, low-tech access, and social community, with
+    escape rooms, LARP, and megagames appearing as extensions of the same analog/immersive impulse.
 ### Summary
 # **Seay, J. A. (2018). Considering games and gamification in libraries & associated entities: How the longing for tabletops has revitalized games. *Against the Grain, 30*(3), 64-67.**
 

@@ -23,20 +23,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Key Game Studies
-    Debates Relevant to Libraries`, after the Wang and Huang (2023) paragraph and before `### Digital vs
-    Analog Game Debate`. Suggested text: Danilovic and de Voogt (2021) add a useful conceptual caution
-    for abstract tabletop GBLS. Their cross-ludic theory distinguishes the reliable formal systems of
-    abstract board games from the variable local meanings, materials, names, and cultural practices
-    attached to them; for libraries, this means abstract games may be portable and low-material without
-    being culturally blank, so facilitation and advisory should attend both to rules and to community-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Key Game Studies Debates
+    Relevant to Libraries
+  Contribution_Text: Danilovic and de Voogt (2021) add a useful conceptual caution for abstract
+    tabletop GBLS. Their cross-ludic theory distinguishes the reliable formal systems of abstract
+    board games from the variable local meanings, materials, names, and cultural practices attached
+    to them; for libraries, this means abstract games may be portable and low-material without being
+    culturally blank, so facilitation and advisory should attend both to rules and to community-
     specific interpretation.
-
 ### Summary
 # **Danilovic, S., & de Voogt, A. (2021). Making sense of abstract board games: Toward a cross-ludic theory. *Games and Culture, 16*(5), 499-518. https://doi.org/10.1177/1555412020914722**
 

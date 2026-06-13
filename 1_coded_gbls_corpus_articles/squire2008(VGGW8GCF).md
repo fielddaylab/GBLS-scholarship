@@ -42,18 +42,21 @@ For the larger GBLS project, the chapter supports treating games as cultural med
 
 ## Suggested Review Contributions
 
-Contributions:
-- Target_Section: "## Game Studies Debates Relevant to Libraries"
-  Target_Section_Raw: "## Game Studies Debates Relevant to Libraries"
-  Placement: "After the discussion of games as interactive rather than fixed texts."
-  Contribution_Text: >
-    Squire (2008) defines video-game literacy as expertise in creating rewarding experiences within a game's semiotic and rule systems. Because games emerge through interactions among rules, representations, player choices, and social interpretation, neither the software artifact nor a single playthrough is an adequate unit of analysis. Library interpretation and advisory should therefore attend to play practices, communities, and divergent player experiences as well as narrative content.
-- Target_Section: "## Instruction, Orientation, and Information Literacy"
-  Target_Section_Raw: "## Instruction, Orientation, and Information Literacy"
-  Placement: "In the discussion of media literacy and learning through games."
-  Contribution_Text: >
-    Game literacy extends beyond operating software or interpreting representation. Squire (2008) describes players mentoring one another, testing information through action, producing guides and modifications, negotiating expertise, and moving from consumption toward cultural production. GBLS instruction can support this broader literacy by combining play, critical analysis, community participation, and opportunities to create, while avoiding the assumption that access to a game alone reproduces its participatory culture.
-
+### Contributions
+- Target_Section: Game Studies Debates Relevant to Libraries
+  Contribution_Text: Squire (2008) defines video-game literacy as expertise in creating rewarding
+    experiences within a game's semiotic and rule systems. Because games emerge through interactions
+    among rules, representations, player choices, and social interpretation, neither the software
+    artifact nor a single playthrough is an adequate unit of analysis. Library interpretation and
+    advisory should therefore attend to play practices, communities, and divergent player
+    experiences as well as narrative content.
+- Target_Section: Instruction, Orientation, and Information Literacy
+  Contribution_Text: Game literacy extends beyond operating software or interpreting representation.
+    Squire (2008) describes players mentoring one another, testing information through action,
+    producing guides and modifications, negotiating expertise, and moving from consumption toward
+    cultural production. GBLS instruction can support this broader literacy by combining play,
+    critical analysis, community participation, and opportunities to create, while avoiding the
+    assumption that access to a game alone reproduces its participatory culture.
 ## Evidence Cautions and Limitations
 
 This is a broad theoretical literature review, not a systematic review or a new empirical study. Its examples come from an early period of online games and educational game research, and several claims depend on illustrative studies whose methods and populations must be checked in their original publications. The transfer from school-based game-literacy projects to libraries is an interpretation for GBLS, not a finding of this chapter. The attached manuscript and Zotero record are dated 2007 and use a running-head title, while the identifiable published chapter appeared in 2008 under the title cited above.

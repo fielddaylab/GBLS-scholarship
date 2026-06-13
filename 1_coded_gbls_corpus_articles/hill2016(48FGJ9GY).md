@@ -22,20 +22,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Game Modalities
-    in Library Contexts`, immediately after the heading. Suggested text: Hill (2016) offers a synthetic
-    professional map of library gaming modalities, grouping digital games, video games, role-playing
-    games, tabletop games, gamification, and game creation across public, school, and academic
-    libraries. Because it is a literature review rather than original assessment, its main value is
-    definitional: it shows how mid-2010s library discourse connected games to access, new literacies,
-    community building, collections, programming, partnerships, orientation, information literacy, and
-    advocacy.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Game Modalities in Library
+    Contexts
+  Contribution_Text: Hill (2016) offers a synthetic professional map of library gaming modalities,
+    grouping digital games, video games, role-playing games, tabletop games, gamification, and game
+    creation across public, school, and academic libraries. Because it is a literature review rather
+    than original assessment, its main value is definitional: it shows how mid-2010s library
+    discourse connected games to access, new literacies, community building, collections,
+    programming, partnerships, orientation, information literacy, and advocacy.
 ### Summary
 # **Hill, C. (2016). Play on: The use of games in libraries. *The Christian Librarian, 59*(1), 34-42. https://doi.org/10.55221/2572-7478.1157**
 

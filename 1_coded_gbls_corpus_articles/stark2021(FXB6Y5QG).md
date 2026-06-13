@@ -20,12 +20,9 @@ Audience: not_applicable
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Stark, R. K., Opuda, E., McElfresh, J., & Kauffroath, K. (2021). Scavenging for evidence: A systematic review of scavenger hunts in academic libraries. *The Journal of Academic Librarianship, 47*(3), Article 102345. https://doi.org/10.1016/j.acalib.2021.102345**
 

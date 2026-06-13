@@ -20,21 +20,16 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Giles, Shuyler, Evans, and Reed (2019) paragraph. Suggested
-    text: Horban and Skachenko (2019) add an international synthesis of games for information literacy,
-    citation, and plagiarism prevention. Writing for Ukrainian academic librarians, they describe 12
-    digital games and tutorials from university libraries in the United States, Canada, and Portugal,
-    including *Gaming Against Plagiarism*, *Goblin Threat*, *The Cite is Right!*, *Tic-Tac-Toe Citation
-    Game*, *Magnetic Keyword*, and APA/MLA citation games; the article is descriptive rather than
-    evaluative, but it shows that anti-plagiarism game services had become a recognizable international
-    GBLS pattern.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Horban and Skachenko (2019) add an international synthesis of games for
+    information literacy, citation, and plagiarism prevention. Writing for Ukrainian academic
+    librarians, they describe 12 digital games and tutorials from university libraries in the United
+    States, Canada, and Portugal, including *Gaming Against Plagiarism*, *Goblin Threat*, *The Cite
+    is Right!*, *Tic-Tac-Toe Citation Game*, *Magnetic Keyword*, and APA/MLA citation games; the
+    article is descriptive rather than evaluative, but it shows that anti-plagiarism game services
+    had become a recognizable international GBLS pattern.
 ### Summary
 # **Horban, Y., & Skachenko, O. (2019). A library in the game: Teaching information literacy and preventing plagiarism. *Bibliotechnyi Visnyk, 5*(253), 26-33. https://doi.org/10.15407/bv2019.05.026**
 

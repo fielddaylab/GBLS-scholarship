@@ -20,35 +20,32 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Jedlicka and Eaton (2024) paragraph. Suggested text: Sureephong
-    et al. (2024) extend immersive orientation evidence into a gamified metaverse at Chiang Mai
-    University, comparing 40 first-year students in a Unity/Meta Quest 2 virtual-library program with 40
-    students in a traditional librarian-led program. Both groups completed the same orientation,
-    research-support, book-service, and technology-service tasks and both improved substantially on
-    library knowledge, but the metaverse group did not significantly outperform the traditional group,
-    making the study a useful reminder that immersive novelty should be assessed against ordinary
-    instruction. Section and exact location: `Programming Formats and Service Models > VR, AR, and
-    Immersive Technology`, after the Jedlicka and Eaton (2024) paragraph. Suggested text: Sureephong et
-    al. (2024) also clarify what a library metaverse can and cannot do as a service model. Their digital
-    twin of an academic library used photogrammetry, Unity, Meta Quest 2 headsets, waypoints, NPC-style
-    virtual librarians, quests, points, levels, badges, and leaderboards; students found the platform
-    engaging and motivating, but the authors caution that development expertise, headset cost,
-    accessibility, nausea, dizziness, and lack of real librarian interaction make it better suited as a
-    supplementary tool for specific audiences than as a replacement for in-person service. Section and
-    exact location: `Cross-Cutting Lessons for Game-Based Library Services > Evaluate Outcomes Beyond
-    Attendance`, after the Intawong et al. (2023) paragraph. Suggested text: Sureephong et al. (2024)
-    further demonstrate why GBLS assessment should separate knowledge, motivation, spatial comfort,
-    help-seeking, and human connection. Their gamified metaverse produced knowledge gains comparable to
-    traditional orientation and positive perceptions of quests, points, levels, and leaderboards, but it
-    reduced fewer dimensions of library anxiety than the traditional program because an NPC librarian
-    could not provide the personal touch, empathy, or responsive help associated with real staff.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Sureephong et al. (2024) extend immersive orientation evidence into a gamified
+    metaverse at Chiang Mai University, comparing 40 first-year students in a Unity/Meta Quest 2
+    virtual-library program with 40 students in a traditional librarian-led program. Both groups
+    completed the same orientation, research-support, book-service, and technology-service tasks and
+    both improved substantially on library knowledge, but the metaverse group did not significantly
+    outperform the traditional group, making the study a useful reminder that immersive novelty
+    should be assessed against ordinary instruction.
+- Target_Section: Programming Formats and Service Models > VR, AR, and Immersive Technology
+  Contribution_Text: Sureephong et al. (2024) also clarify what a library metaverse can and cannot
+    do as a service model. Their digital twin of an academic library used photogrammetry, Unity,
+    Meta Quest 2 headsets, waypoints, NPC-style virtual librarians, quests, points, levels, badges,
+    and leaderboards; students found the platform engaging and motivating, but the authors caution
+    that development expertise, headset cost, accessibility, nausea, dizziness, and lack of real
+    librarian interaction make it better suited as a supplementary tool for specific audiences than
+    as a replacement for in-person service.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Evaluate Outcomes Beyond
+    Attendance
+  Contribution_Text: Sureephong et al. (2024) further demonstrate why GBLS assessment should
+    separate knowledge, motivation, spatial comfort, help-seeking, and human connection. Their
+    gamified metaverse produced knowledge gains comparable to traditional orientation and positive
+    perceptions of quests, points, levels, and leaderboards, but it reduced fewer dimensions of
+    library anxiety than the traditional program because an NPC librarian could not provide the
+    personal touch, empathy, or responsive help associated with real staff.
 ### Summary
 # **Sureephong, P., Chernbumroong, S., Niemsup, S., Homla, P., Intawong, K., & Puritat, K. (2024). Exploring the impact of the gamified metaverse on knowledge acquisition and library anxiety in academic libraries. *Information Technology and Libraries, 43*(1). https://doi.org/10.5860/ital.v43i1.16651**
 

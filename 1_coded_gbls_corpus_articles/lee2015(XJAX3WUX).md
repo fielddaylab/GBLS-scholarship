@@ -22,24 +22,18 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Cataloging, Metadata, and
-    Discovery`, immediately after the Keating, Lee, Windleharth, and Lee (2017) paragraph. Suggested
-    text: Lee, Jett, and Perti (2015) add DLC and mods to the metadata problem by arguing that
-    additional content challenges the boundary of the video game work itself. They distinguish content-
-    expanding mods and DLC from ordinary patches, then show how additional content complicates
-    acquisition, description, access/use, and preservation because it may have separate creators,
-    titles, costs, platform dependencies, compatibility requirements, version conflicts, time-limited
-    availability, encrypted storage, and unclear relationships to the base game. Their proposed game
-    conceptual model treats Additional Content as a separate entity with attributes such as name/title,
-    type, and version/configuration requirements; for GBLS, this shows that game description must
-    capture evolving relationships and dependencies if libraries want patrons, researchers, and
-    preservationists to understand what can actually be played or reconstructed.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Cataloging, Metadata, and Discovery
+  Contribution_Text: Lee, Jett, and Perti (2015) add DLC and mods to the metadata problem by arguing
+    that additional content challenges the boundary of the video game work itself. They distinguish
+    content- expanding mods and DLC from ordinary patches, then show how additional content
+    complicates acquisition, description, access/use, and preservation because it may have separate
+    creators, titles, costs, platform dependencies, compatibility requirements, version conflicts,
+    time-limited availability, encrypted storage, and unclear relationships to the base game. Their
+    proposed game conceptual model treats Additional Content as a separate entity with attributes
+    such as name/title, type, and version/configuration requirements; for GBLS, this shows that game
+    description must capture evolving relationships and dependencies if libraries want patrons,
+    researchers, and preservationists to understand what can actually be played or reconstructed.
 ### Summary
 # **Lee, J. H., Jett, J., & Perti, A. (2015). The problem of "additional content" in video games. In *Proceedings of the 15th ACM/IEEE-CS Joint Conference on Digital Libraries* (pp. 237-240). ACM. https://doi.org/10.1145/2756406.2756949**
 

@@ -20,27 +20,22 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: medium
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > TTRPG and LARP Programs`,
-    after the Watson et al. (2024) paragraph. Suggested text: Maxwell's (2023) introductory material for
-    *Let's Roll* positions TTRPGs as a practical school- and public-library program format built around
-    fun, collaborative storytelling, student interest, and beginner-friendly facilitation. The attached
-    excerpt is not the full guide, but it foregrounds several operational themes for GBLS: gaining
-    decision-maker support, articulating literacy and well-being benefits, starting with modest
-    resources, using experienced teens as Game Masters when appropriate, adapting to online platforms
-    such as Teams, Roll20, or Zoom, and treating Session Zero as a way to set expectations before play.
-    Section and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Treat
-    Facilitation as Core Infrastructure`, after the Capdarest-Arest et al. (2019) paragraph. Suggested
-    text: Maxwell (2023) also makes facilitation anxiety visible in TTRPG services. His advice to relax,
-    use the "rule of cool," avoid unnecessary world-building, rely on pre-made or low-preparation games,
-    and remember that the Game Master is also a player suggests that sustainable library TTRPG programs
-    depend on staff confidence, shared play norms, teen leadership pathways, and manageable preparation
-    as much as on game materials.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > TTRPG and LARP Programs
+  Contribution_Text: Maxwell's (2023) introductory material for *Let's Roll* positions TTRPGs as a
+    practical school- and public-library program format built around fun, collaborative
+    storytelling, student interest, and beginner-friendly facilitation. The attached excerpt is not
+    the full guide, but it foregrounds several operational themes for GBLS: gaining decision-maker
+    support, articulating literacy and well-being benefits, starting with modest resources, using
+    experienced teens as Game Masters when appropriate, adapting to online platforms such as Teams,
+    Roll20, or Zoom, and treating Session Zero as a way to set expectations before play.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Treat Facilitation as Core
+    Infrastructure
+  Contribution_Text: Maxwell (2023) also makes facilitation anxiety visible in TTRPG services. His
+    advice to relax, use the "rule of cool," avoid unnecessary world-building, rely on pre-made or
+    low-preparation games, and remember that the Game Master is also a player suggests that
+    sustainable library TTRPG programs depend on staff confidence, shared play norms, teen
+    leadership pathways, and manageable preparation as much as on game materials.
 ### Summary
 # **Maxwell, L. (2023). *Let's roll: A guide to setting up tabletop role-playing games in your school or public library*. Facet Publishing.**
 

@@ -22,12 +22,9 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Virello, M. (2019). Putting the "Extra" in Extraordinary: Creating a Library Comic Con. *Children & Libraries: The Journal of the Association for Library Service to Children, 17*(1), 31-34. https://doi.org/10.5860/cal.17.1.31**
 

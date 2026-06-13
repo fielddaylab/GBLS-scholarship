@@ -22,19 +22,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Game Modalities
-    in Library Contexts`, after the Hill (2016) paragraph. Suggested text: Storie's (2010) review of
-    Nicholson's *Everyone Plays at the Library* characterizes Nicholson's practitioner framework as one
-    organized around gaming experiences rather than formats alone: knowledge, strategy, action,
-    narrative, and social gaming. The review is secondary rather than empirical, but it helps show why
-    GBLS modality decisions should consider library goals, audience age, cost, player count, complexity,
-    play time, facilitation, marketing, evaluation, and the skills a game invites.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Game Modalities in Library
+    Contexts
+  Contribution_Text: Storie's (2010) review of Nicholson's *Everyone Plays at the Library*
+    characterizes Nicholson's practitioner framework as one organized around gaming experiences
+    rather than formats alone: knowledge, strategy, action, narrative, and social gaming. The review
+    is secondary rather than empirical, but it helps show why GBLS modality decisions should
+    consider library goals, audience age, cost, player count, complexity, play time, facilitation,
+    marketing, evaluation, and the skills a game invites.
 ### Summary
 # **Storie, D. (2010). [Review of the book *Everyone plays at the library: Creating great gaming experiences for all ages*, by S. Nicholson]. *Journal of the Canadian Health Libraries Association / Journal de l'Association des bibliothèques de la santé du Canada, 31*, 123.**
 

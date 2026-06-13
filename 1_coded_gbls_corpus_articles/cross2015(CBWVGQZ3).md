@@ -24,23 +24,18 @@ Intended_Outcome:
 - cultural_stewardship_and_preservation
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Circulating and In-Library
-    Collections`, immediately after the Buller (2017) paragraph. Suggested text: Cross, Mould, and Smith
-    (2015) broaden the academic-library collection model through Carleton University Library's mix of
-    board games, console games, Steam-based PC games, and a dedicated gaming lab. Their case shows why
-    GBLS collections must account for format-specific access models: board games expose mechanics for
-    design analysis, console games circulate easily but require platform and replacement decisions,
-    PC/indie games may require lab access because DRM and non-transferable licenses break ordinary
-    lending, and mobile games/MMOs may not fit library access at all. The article also makes operations
-    visible, including challenged-materials policies, staff resistance, accessories, DLC, digital
-    subscriptions, preservation, MARC/RDA cataloging, browsable shelving, replacement fees, room
-    booking, acceptable-use rules, computing support, and senior-management backing.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Circulating and In-Library Collections
+  Contribution_Text: Cross, Mould, and Smith (2015) broaden the academic-library collection model
+    through Carleton University Library's mix of board games, console games, Steam-based PC games,
+    and a dedicated gaming lab. Their case shows why GBLS collections must account for
+    format-specific access models: board games expose mechanics for design analysis, console games
+    circulate easily but require platform and replacement decisions, PC/indie games may require lab
+    access because DRM and non-transferable licenses break ordinary lending, and mobile games/MMOs
+    may not fit library access at all. The article also makes operations visible, including
+    challenged-materials policies, staff resistance, accessories, DLC, digital subscriptions,
+    preservation, MARC/RDA cataloging, browsable shelving, replacement fees, room booking,
+    acceptable-use rules, computing support, and senior-management backing.
 ### Summary
 # **Cross, E., Mould, D., & Smith, R. (2015). The protean challenge of game collections at academic libraries. *New Review of Academic Librarianship, 21*(2), 129-145. https://doi.org/10.1080/13614533.2015.1043467**
 

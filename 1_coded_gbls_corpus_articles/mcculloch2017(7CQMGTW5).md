@@ -20,21 +20,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Suggested placement: `Cataloging, Metadata, and Discovery`, immediately after Hobart (2024) and
-    before Robson, Sassen, Thomale, and Yanowski (2019). Suggested text: McCulloch (2017) provides
-    practical MARC guidance for cataloguing and classifying board and tabletop games as realia and
-    visual materials. Using *Settlers of Catan* as an example, she recommends game-specific coding,
-    designer and publisher access points, detailed component inventories, summary and target-audience
-    notes, LCGFT genre/form terms, local shelving when useful, and DDC/LCC options for interfiling;
-    crucially, she notes that player count and duration often fall into uncontrolled 500 notes, limiting
-    faceted discovery. For GBLS, the article shows why tabletop game cataloguing must connect record
-    creation to patron selection questions and local ILS display behavior.
-
+### Contributions
+- Target_Section: Cataloging, Metadata, and Discovery
+  Contribution_Text: McCulloch (2017) provides practical MARC guidance for cataloguing and
+    classifying board and tabletop games as realia and visual materials. Using *Settlers of Catan*
+    as an example, she recommends game-specific coding, designer and publisher access points,
+    detailed component inventories, summary and target-audience notes, LCGFT genre/form terms, local
+    shelving when useful, and DDC/LCC options for interfiling; crucially, she notes that player
+    count and duration often fall into uncontrolled 500 notes, limiting faceted discovery. For GBLS,
+    the article shows why tabletop game cataloguing must connect record creation to patron selection
+    questions and local ILS display behavior.
 ### Summary
 # **McCulloch, A. (2017). Cataloguing and classifying board and tabletop games. *Catalogue and Index, 189*, 20-24.**
 

@@ -23,21 +23,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > VR, AR, and Immersive
-    Technology`, immediately after the Dahya et al. (2019) paragraph. Suggested text: Patino et al.
-    (2021) turn those VR implementation lessons into a curriculum model for a highly constrained
-    library-adjacent setting: incarcerated youth in a juvenile rehabilitation school library created
-    2D/3D art and VR worlds through six modules and then helped shape a public-library exhibit. For
-    GBLS, the curriculum shows how immersive technology can be framed as world-making, art/design,
-    social-emotional learning, and co-curation rather than novelty access; it also foregrounds anti-
-    oppressive planning, trauma-aware spatial setup, consent and safety, choice, spectating, wraparound
-    table activities, and exhibit pathways that preserve youth agency.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > VR, AR, and Immersive Technology
+  Contribution_Text: Patino et al. (2021) turn those VR implementation lessons into a curriculum
+    model for a highly constrained library-adjacent setting: incarcerated youth in a juvenile
+    rehabilitation school library created 2D/3D art and VR worlds through six modules and then
+    helped shape a public-library exhibit. For GBLS, the curriculum shows how immersive technology
+    can be framed as world-making, art/design, social-emotional learning, and co-curation rather
+    than novelty access; it also foregrounds anti- oppressive planning, trauma-aware spatial setup,
+    consent and safety, choice, spectating, wraparound table activities, and exhibit pathways that
+    preserve youth agency.
 ### Summary
 # **Patino, D. M., Summerlin, E., Benn, S., Roldan, W., Joya, A., Dahya, N., Luke, J., Lee, J. H., & Yip, J. (2021). *Virtual Reality Art & Design Curriculum*. University of Washington Information School Digital Youth Lab. https://ischool.uw.edu/echo-glen-curriculum**
 

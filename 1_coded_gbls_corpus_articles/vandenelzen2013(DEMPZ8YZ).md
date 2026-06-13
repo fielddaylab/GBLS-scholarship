@@ -22,32 +22,30 @@ Audience: students
 Intended_Outcome: belonging_and_community
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Tournaments and Esports`,
-    immediately after the heading. Suggested text: Vanden Elzen and Roush (2013) provide a practical
-    academic-library tournament model from Lawrence University's Seeley G. Mudd Library, where *Super
-    Smash Bros. Brawl* tournaments, open gaming, retro systems, board games, and Magic: The Gathering
-    events were planned with student workers and gaming clubs. Their advice foregrounds local game
-    knowledge, standard rulesets, unlocked content, equipment, noise, timing around the academic
-    calendar, casual alternatives for noncompetitive players, and marketing through the channels
-    students actually use. Section and exact location: `Major Areas of Game-Based Library Service >
-    Community, Belonging, and the Public Commons`, after the Boyle (2018) paragraph. Suggested text:
-    Vanden Elzen and Roush (2013) also make the belonging claim concrete for a residential academic
-    campus. In Mudd Library surveys, 50% of first-tournament respondents reported meeting new people
-    with similar interests, and 76.9% of later respondents selected that gaming events added to their
-    sense of belonging in the Lawrence University community; the events also helped catalyze a campus
-    Gaming Club and made the library more visible as a welcoming second place. Section and exact
-    location: `Cross-Cutting Lessons for Game-Based Library Services > Build Partnerships and Community
-    Pipelines`, after the Monnier and Winters (2022) paragraph. Suggested text: Vanden Elzen and Roush
-    (2013) show that GBLS partnerships can begin with student expertise. Student workers and gaming
-    clubs helped choose locally popular games, run tournaments, supply rules knowledge and equipment,
-    organize Magic: The Gathering events, and turn library programs into a broader campus gaming
-    pipeline, while the library offered visibility, space, supervision, and connection to collections.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Tournaments and Esports
+  Contribution_Text: Vanden Elzen and Roush (2013) provide a practical academic-library tournament
+    model from Lawrence University's Seeley G. Mudd Library, where *Super Smash Bros. Brawl*
+    tournaments, open gaming, retro systems, board games, and Magic: The Gathering events were
+    planned with student workers and gaming clubs. Their advice foregrounds local game knowledge,
+    standard rulesets, unlocked content, equipment, noise, timing around the academic calendar,
+    casual alternatives for noncompetitive players, and marketing through the channels students
+    actually use.
+- Target_Section: Major Areas of Game-Based Library Service > Community, Belonging, and the Public
+    Commons
+  Contribution_Text: Vanden Elzen and Roush (2013) also make the belonging claim concrete for a
+    residential academic campus. In Mudd Library surveys, 50% of first-tournament respondents
+    reported meeting new people with similar interests, and 76.9% of later respondents selected that
+    gaming events added to their sense of belonging in the Lawrence University community; the events
+    also helped catalyze a campus Gaming Club and made the library more visible as a welcoming
+    second place.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Build Partnerships and
+    Community Pipelines
+  Contribution_Text: Vanden Elzen and Roush (2013) show that GBLS partnerships can begin with
+    student expertise. Student workers and gaming clubs helped choose locally popular games, run
+    tournaments, supply rules knowledge and equipment, organize Magic: The Gathering events, and
+    turn library programs into a broader campus gaming pipeline, while the library offered
+    visibility, space, supervision, and connection to collections.
 ### Summary
 # **Vanden Elzen, A. M., & Roush, J. (2013). Brawling in the library: Gaming programs for impactful outreach and instruction at an academic library. *Library Trends, 61*(4), 802-813.**
 

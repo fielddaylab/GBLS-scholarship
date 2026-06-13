@@ -22,15 +22,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: low
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No addition recommended. Exclude from the GBLS literature review because the item is a broad CSD
-    education tutorial rather than library literature, and because the attached Zotero PDF does not
-    match the cited parent record.
-
+  Contribution_Text: No addition recommended. Exclude from the GBLS literature review because the
+    item is a broad CSD education tutorial rather than library literature, and because the attached
+    Zotero PDF does not match the cited parent record.
 ### Summary
 # **Brackenbury, T., & Kopf, L. (2022). Serious games and gamification: Game-based learning in communication sciences and disorders. *Perspectives of the ASHA Special Interest Groups, 7*(2), 482-498. https://doi.org/10.1044/2021_PERSP-21-00284**
 

@@ -46,18 +46,19 @@ For the larger GBLS project, this framework supports treating games as consequen
 
 ## Suggested Review Contributions
 
-Contributions:
-- Target_Section: "## Game Studies Debates Relevant to Libraries"
-  Target_Section_Raw: "## Game Studies Debates Relevant to Libraries"
-  Placement: "In the discussion of mechanics, representation, and games as cultural systems."
-  Contribution_Text: >
-    Squire (2006) frames games as designed and ideological worlds whose rules determine which actions, identities, and explanations become available. Meaning arises through the interaction of those constraints with player intentions and social interpretation. Library criticism and media literacy should therefore examine mechanics, incentives, modeled relationships, and omissions alongside narrative and visual representation.
-- Target_Section: "## Design for Reflection, Learning Transfer, and Participant Agency"
-  Target_Section_Raw: "## Design for Reflection, Learning Transfer, and Participant Agency"
-  Placement: "After the distinction between engagement and learning."
-  Contribution_Text: >
-    A game does not produce educational value by containing curricular information. Squire (2006) argues that learning develops through situated cycles of action, feedback, revised performance, identity, and reflection within a broader social system. GBLS should connect play to facilitated interpretation, comparison sources, and further activity, while assessing the specific understanding or practice the designed experience is intended to support.
-
+### Contributions
+- Target_Section: Game Studies Debates Relevant to Libraries
+  Contribution_Text: Squire (2006) frames games as designed and ideological worlds whose rules
+    determine which actions, identities, and explanations become available. Meaning arises through
+    the interaction of those constraints with player intentions and social interpretation. Library
+    criticism and media literacy should therefore examine mechanics, incentives, modeled
+    relationships, and omissions alongside narrative and visual representation.
+- Target_Section: Design for Reflection, Learning Transfer, and Participant Agency
+  Contribution_Text: A game does not produce educational value by containing curricular information.
+    Squire (2006) argues that learning develops through situated cycles of action, feedback, revised
+    performance, identity, and reflection within a broader social system. GBLS should connect play
+    to facilitated interpretation, comparison sources, and further activity, while assessing the
+    specific understanding or practice the designed experience is intended to support.
 ## Evidence Cautions and Limitations
 
 The article is primarily a theoretical synthesis supported by examples from prior studies, not a new test of the designed-experience framework. The reported *Civilization III* and *Supercharged!* findings should be traced to their original studies for sample, method, and effect details. The examples do not establish broad transfer, and the early-2000s games and school settings limit direct generalization to current library services. Claims about GBLS are analytic extensions of the framework rather than findings about libraries.

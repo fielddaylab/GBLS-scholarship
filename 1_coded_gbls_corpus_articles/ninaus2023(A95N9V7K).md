@@ -20,21 +20,16 @@ Audience: adults
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Games,
-    Gamification, and Play`, after the Moid et al. (2023) bibliometric paragraph. Suggested text:
-    Adjacent experimental work also cautions against assuming that game elements automatically produce
-    learning gains. In a randomized five-day fraction-training study, Ninaus et al. (2023) found that
-    intrinsically integrated game elements improved training accuracy and increased response time,
-    suggesting greater cognitive engagement or a shift toward accuracy over speed, but did not produce
-    significantly larger pre-post learning gains than a matched non-game condition. For GBLS, the lesson
-    is methodological: gamified library services should distinguish engagement and in-session
-    performance from transfer, retention, and other longer-term outcomes.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Games, Gamification, and
+    Play
+  Contribution_Text: Adjacent experimental work also cautions against assuming that game elements
+    automatically produce learning gains. In a randomized five-day fraction-training study, Ninaus
+    et al. (2023) found that intrinsically integrated game elements improved training accuracy and
+    increased response time, suggesting greater cognitive engagement or a shift toward accuracy over
+    speed, but did not produce significantly larger pre-post learning gains than a matched non-game
+    condition. For GBLS, the lesson is methodological: gamified library services should distinguish
+    engagement and in-session performance from transfer, retention, and other longer-term outcomes.
 ### Summary
 # **Ninaus, M., Kiili, K., Cortez, R., Hazin, I., Wortha, S. M., Klein, E., Weiss, E. M., & Moeller, K. (2023). The added value of game elements: Better training performance but comparable learning gains. *Educational Technology Research and Development*. https://doi.org/10.1007/s11423-023-10263-8**
 

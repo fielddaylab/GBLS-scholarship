@@ -25,12 +25,9 @@ Audience:
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Webber, S., & Nahl, D. (2011). Sustaining learning for LIS through use of a virtual world. *IFLA Journal, 37*(1), 5-15. https://doi.org/10.1177/0340035210397137**
 

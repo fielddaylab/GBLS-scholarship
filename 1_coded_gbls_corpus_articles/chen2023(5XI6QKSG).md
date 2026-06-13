@@ -20,14 +20,10 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a non-library secondary-school physics DGBL study and should remain
-    in `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a non-library secondary-school physics DGBL
+    study and should remain in `Explicitly Excluded Literature` after summary completion.
 ### Summary
 # **Chen, C.-H., Law, V., & Huang, K. (2023). Adaptive scaffolding and engagement in digital game-based learning. *Educational Technology Research and Development, 71*(4), 1785-1798. https://doi.org/10.1007/s11423-023-10244-x**
 

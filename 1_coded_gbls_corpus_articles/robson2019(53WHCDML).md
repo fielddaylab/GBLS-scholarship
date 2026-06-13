@@ -20,24 +20,17 @@ Audience: not_applicable
 Intended_Outcome: discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Cataloging, Metadata, and Discovery`, immediately before Dong, Moreno,
-    Rodrigues, and Stone (2025), after the tabletop/game-description sources by Bianchini and Munini
-    (2025), Hobart (2024), and Smith (2024). Suggested text: Robson, Sassen, Thomale, and Yanowski
-    (2019) provide a concrete tabletop-game implementation of enhanced cataloging and faceted discovery
-    at the University of North Texas Libraries. Working with a collection of more than 600 board games,
-    dice games, collectible card games, and role-playing games, they combine RDA core records, MARC
-    identifiers and carrier fields, designer and publisher access points, local `Genre Terms for
-    Tabletop Games`, and MARC 590 codes for duration of play, number of players, and recommended age.
-    Their Solr/Blacklight implementation translates those codes into patron-facing facets, showing that
-    GBLS metadata must connect cataloger-entered game characteristics to discovery interfaces that
-    support actual selection questions rather than leaving games findable only by title or broad
-    subject.
-
+### Contributions
+- Target_Section: Cataloging, Metadata, and Discovery
+  Contribution_Text: Robson, Sassen, Thomale, and Yanowski (2019) provide a concrete tabletop-game
+    implementation of enhanced cataloging and faceted discovery at the University of North Texas
+    Libraries. Working with a collection of more than 600 board games, dice games, collectible card
+    games, and role-playing games, they combine RDA core records, MARC identifiers and carrier
+    fields, designer and publisher access points, local `Genre Terms for Tabletop Games`, and MARC
+    590 codes for duration of play, number of players, and recommended age. Their Solr/Blacklight
+    implementation translates those codes into patron-facing facets, showing that GBLS metadata must
+    connect cataloger-entered game characteristics to discovery interfaces that support actual
+    selection questions rather than leaving games findable only by title or broad subject.
 ### Summary
 # **Robson, D., Sassen, C., Thomale, J., & Yanowski, K. (2019). Enhancing the discovery of tabletop games. *Library Resources & Technical Services, 63*(3), 199-215. https://doi.org/10.5860/lrts.63n3.199**
 

@@ -23,21 +23,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > VR, AR, and Immersive
-    Technology`, immediately after the Lee, King, Dahya, and Lee (2020) paragraph. Suggested text:
-    Kirsch (2019) adds a concise practitioner checklist for VR services in academic libraries. Drawing
-    on EDUCAUSE sessions and an Oculus Go circulation example, she distinguishes expensive immersive
-    content creation from lower-barrier 360-degree tours, and identifies operational issues that
-    libraries must settle before offering headsets: motion sickness and seizure warnings, sanitation,
-    app updates, passcodes and purchase controls, social-app privacy, the realism of frightening
-    content, and staff or student-worker training. The piece is anecdotal, but it helps translate VR
-    enthusiasm into service policy and support requirements.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > VR, AR, and Immersive Technology
+  Contribution_Text: Kirsch (2019) adds a concise practitioner checklist for VR services in academic
+    libraries. Drawing on EDUCAUSE sessions and an Oculus Go circulation example, she distinguishes
+    expensive immersive content creation from lower-barrier 360-degree tours, and identifies
+    operational issues that libraries must settle before offering headsets: motion sickness and
+    seizure warnings, sanitation, app updates, passcodes and purchase controls, social-app privacy,
+    the realism of frightening content, and staff or student-worker training. The piece is
+    anecdotal, but it helps translate VR enthusiasm into service policy and support requirements.
 ### Summary
 # **Kirsch, B. (2019). Virtual reality: The next big thing for libraries to consider. *Information Technology and Libraries, 38*(4), 4-5. https://doi.org/10.6017/ital.v38i4.11847**
 

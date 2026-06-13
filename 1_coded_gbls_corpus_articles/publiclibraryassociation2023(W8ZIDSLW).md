@@ -26,12 +26,9 @@ Audience:
 Intended_Outcome: institutional_capacity
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Public Library Association. (2023). *Public Library Services for Strong Communities Report: Results from the 2022 PLA Annual Survey*. Public Library Association.**
 

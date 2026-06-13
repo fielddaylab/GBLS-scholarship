@@ -22,20 +22,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Analog, Digital,
-    and Hybrid Forms`, immediately after the heading. Suggested text: Seay (2018) offers a practitioner
-    argument for analog, co-present game forms as distinct from many screen-based educational games.
-    Although not an empirical study, the column usefully frames escape rooms, Edu-LARPs, and megagames
-    as collaborative, multiplayer, immersive activities whose value lies in real-time social
-    interaction, role assumption, communication, and problem solving, reinforcing the GBLS principle
-    that libraries should match game form to learning and community goals rather than treating digital
-    novelty as inherently superior.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Analog, Digital, and Hybrid
+    Forms
+  Contribution_Text: Seay (2018) offers a practitioner argument for analog, co-present game forms as
+    distinct from many screen-based educational games. Although not an empirical study, the column
+    usefully frames escape rooms, Edu-LARPs, and megagames as collaborative, multiplayer, immersive
+    activities whose value lies in real-time social interaction, role assumption, communication, and
+    problem solving, reinforcing the GBLS principle that libraries should match game form to
+    learning and community goals rather than treating digital novelty as inherently superior.
 ### Summary
 # **Seay, J. A. (2018). Considering games and gamification in libraries & associated entities: In praise of real people. *Against the Grain, 30*(5), 86-87.**
 

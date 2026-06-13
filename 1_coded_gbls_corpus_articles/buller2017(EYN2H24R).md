@@ -25,25 +25,21 @@ Intended_Outcome:
 - institutional_capacity
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Circulating and In-Library
-    Collections`, after the Robson, Phillips, and Guerrero (2018) paragraph. Suggested text: Buller
-    (2017) extends circulating game collections from software and tabletop materials to console
-    hardware. At the University of Denver, console lending supported an interdisciplinary game design
-    curriculum by giving students access to multiple platforms and generations, portable screens,
-    controllers, holds, renewals, component checklists, serial-number verification, profile logout
-    procedures, and privacy protections; the case shows that game collections often require lending the
-    access infrastructure around games, not only the games themselves. Section and exact location:
-    `Major Areas of Game-Based Library Service > Research, Scholarship, and Creative Production`, after
-    the Wood and Carter (2018) paragraph. Suggested text: Buller (2017) also links game hardware lending
-    to academic creative production. Because students in game design courses needed to compare how games
-    used different console affordances, the library treated PlayStation, Xbox, and Nintendo systems as
-    mission-aligned curricular resources analogous to other hardware needed to access specialized media.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Circulating and In-Library Collections
+  Contribution_Text: Buller (2017) extends circulating game collections from software and tabletop
+    materials to console hardware. At the University of Denver, console lending supported an
+    interdisciplinary game design curriculum by giving students access to multiple platforms and
+    generations, portable screens, controllers, holds, renewals, component checklists, serial-number
+    verification, profile logout procedures, and privacy protections; the case shows that game
+    collections often require lending the access infrastructure around games, not only the games
+    themselves.
+- Target_Section: Major Areas of Game-Based Library Service > Research, Scholarship, and Creative
+    Production
+  Contribution_Text: Buller (2017) also links game hardware lending to academic creative production.
+    Because students in game design courses needed to compare how games used different console
+    affordances, the library treated PlayStation, Xbox, and Nintendo systems as mission-aligned
+    curricular resources analogous to other hardware needed to access specialized media.
 ### Summary
 # **Buller, R. (2017). Lending video game consoles in an academic library. *portal: Libraries and the Academy, 17*(2), 337-346. https://doi.org/10.1353/pla.2017.0020**
 

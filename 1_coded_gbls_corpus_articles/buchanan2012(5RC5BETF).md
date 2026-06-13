@@ -20,20 +20,14 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Collections, Circulation,
-    and Access`, after the Lee, Clarke, Cho, and Windleharth (2017) paragraph. Suggested text: Buchanan
-    and Vanden Elzen (2012) offer an early practitioner framework for adding video games to library
-    collections and programs through the familiar service values of access, motivation, and guidance.
-    Their argument treats games as visual, interactive simulations that require critical literacy and
-    can support discovery, advisory, civic discussion, cross-media connections, circulating collections,
-    game labs, kiosks, curriculum collections, and programming for patrons ranging from teens to
-    educators and game scholars.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Collections, Circulation, and Access
+  Contribution_Text: Buchanan and Vanden Elzen (2012) offer an early practitioner framework for
+    adding video games to library collections and programs through the familiar service values of
+    access, motivation, and guidance. Their argument treats games as visual, interactive simulations
+    that require critical literacy and can support discovery, advisory, civic discussion,
+    cross-media connections, circulating collections, game labs, kiosks, curriculum collections, and
+    programming for patrons ranging from teens to educators and game scholars.
 ### Summary
 # **Buchanan, K., & Vanden Elzen, A. M. (2012). Beyond a fad: Why video games should be part of 21st century libraries. *Education Libraries, 35*(1-2), 15-33.**
 

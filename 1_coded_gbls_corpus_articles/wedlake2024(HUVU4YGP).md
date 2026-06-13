@@ -22,20 +22,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Escape Rooms and Breakout
-    Boxes`, after the Cho et al. (2023) paragraph. Suggested text: Wedlake et al. (2024) extend this
-    misinformation escape-room evidence through a larger study of *The Euphorigen Investigation* across
-    10 public libraries, 53 sessions, and 211 players. Framed through a sociocultural perspective on
-    media and information literacy, the study shows that narrative, collaboration, and librarian-led
-    debriefing helped players reflect on platform infrastructures, emotional and psychological
-    vulnerability, social sharing practices, and their own relationship to misinformation; it also
-    reinforces that assessment should look for reflection and transfer, not attendance alone.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Escape Rooms and Breakout Boxes
+  Contribution_Text: Wedlake et al. (2024) extend this misinformation escape-room evidence through a
+    larger study of *The Euphorigen Investigation* across 10 public libraries, 53 sessions, and 211
+    players. Framed through a sociocultural perspective on media and information literacy, the study
+    shows that narrative, collaboration, and librarian-led debriefing helped players reflect on
+    platform infrastructures, emotional and psychological vulnerability, social sharing practices,
+    and their own relationship to misinformation; it also reinforces that assessment should look for
+    reflection and transfer, not attendance alone.
 ### Summary
 # **Wedlake, S., Coward, C., & Lee, J. H. (2024). How games can support misinformation education: A sociocultural perspective. *Journal of the Association for Information Science and Technology, 75*(13), 1480-1497. https://doi.org/10.1002/asi.24954**
 

@@ -20,21 +20,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Research, Scholarship, and
-    Creative Production`, after the Farrell, Neeser, and Bishoff (2017) paragraph. Suggested text:
-    Nyitray (2019) adds a reference and special-collections perspective to game research support. Her
-    curated guide to video game history treats games as complex artifacts made of source code, ROM
-    cartridges, platforms, controllers, circuits, corporate records, developer papers, box art, manuals,
-    trade materials, emulated experiences, and digital collections; for GBLS, the column is not outcome
-    evidence, but it shows why game collections support historical research, platform studies,
-    preservation, media archaeology, art and music studies, industry history, and critical game
-    historiography.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Research, Scholarship, and Creative
+    Production
+  Contribution_Text: Nyitray (2019) adds a reference and special-collections perspective to game
+    research support. Her curated guide to video game history treats games as complex artifacts made
+    of source code, ROM cartridges, platforms, controllers, circuits, corporate records, developer
+    papers, box art, manuals, trade materials, emulated experiences, and digital collections; for
+    GBLS, the column is not outcome evidence, but it shows why game collections support historical
+    research, platform studies, preservation, media archaeology, art and music studies, industry
+    history, and critical game historiography.
 ### Summary
 # **Nyitray, K. J. (2019). Game on to game after: Sources for video game history. *Reference & User Services Quarterly, 59*(1), 7-11.**
 

@@ -23,22 +23,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Escape Rooms and Breakout
-    Boxes`, after the Helbing et al. (2022) paragraph. Suggested text: Kroski (2020) extends the escape-
-    room discussion to digital breakouts, framing them as low-cost online escape-room-like games that
-    libraries can use for information literacy, bibliographic instruction, curriculum support, youth
-    programming, outreach, STEM learning, and staff training. The chapter is a practitioner rationale
-    rather than assessment evidence, but it usefully identifies why the digital format matters:
-    breakouts can be single-player, distributed widely online, built with free web tools, tailored to
-    one subject or skill set, and used to teach catalog searching, database use, fake-news
-    identification, peer-reviewed source recognition, citation, and library services without requiring
-    physical rooms or equipment.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Escape Rooms and Breakout Boxes
+  Contribution_Text: Kroski (2020) extends the escape- room discussion to digital breakouts, framing
+    them as low-cost online escape-room-like games that libraries can use for information literacy,
+    bibliographic instruction, curriculum support, youth programming, outreach, STEM learning, and
+    staff training. The chapter is a practitioner rationale rather than assessment evidence, but it
+    usefully identifies why the digital format matters: breakouts can be single-player, distributed
+    widely online, built with free web tools, tailored to one subject or skill set, and used to
+    teach catalog searching, database use, fake-news identification, peer-reviewed source
+    recognition, citation, and library services without requiring physical rooms or equipment.
 ### Summary
 # **Kroski, E. (2020). Why create digital breakouts? Opportunities for libraries. *Library Technology Reports, 56*(3), 8-9.**
 

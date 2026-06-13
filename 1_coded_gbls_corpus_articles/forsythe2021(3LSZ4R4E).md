@@ -23,20 +23,14 @@ Intended_Outcome:
 - equitable_access
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Circulating and In-Library
-    Collections`, immediately after the heading. Suggested text: Forsythe (2021) gives a practical
-    academic-library model for board games as a non-traditional collection and recurring program. Her
-    community-college case links needs assessment, language-independent selection for international
-    students, BoardGameGeek-informed criteria, box and component preservation, in-library tracking,
-    student feedback, partnerships, and pandemic-era virtual options, showing that tabletop collections
-    require the same policy, maintenance, marketing, and facilitation infrastructure as other library
-    services.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Circulating and In-Library Collections
+  Contribution_Text: Forsythe (2021) gives a practical academic-library model for board games as a
+    non-traditional collection and recurring program. Her community-college case links needs
+    assessment, language-independent selection for international students, BoardGameGeek-informed
+    criteria, box and component preservation, in-library tracking, student feedback, partnerships,
+    and pandemic-era virtual options, showing that tabletop collections require the same policy,
+    maintenance, marketing, and facilitation infrastructure as other library services.
 ### Summary
 # **Forsythe, C. (2021). Game on! Reflections of a board game librarian: An examination and application of non-traditional collections and recreational play in the academic library. *Emerging Library & Information Perspectives, 4*, 143-156. https://doi.org/10.5206/elip.v4i1.13442**
 

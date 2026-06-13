@@ -20,12 +20,9 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Lee, J. H., Tennis, J. T., Clarke, R. I., & Carpenter, M. (2013). Developing a video game metadata schema for the Seattle Interactive Media Museum. *International Journal on Digital Libraries, 13*(2), 105-117. https://doi.org/10.1007/s00799-013-0103-x**
 

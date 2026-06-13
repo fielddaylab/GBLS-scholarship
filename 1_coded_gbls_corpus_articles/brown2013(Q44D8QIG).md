@@ -20,21 +20,17 @@ Audience: general_public
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Evaluate
-    Outcomes Beyond Attendance`, immediately after the heading. Suggested text: Brown and Kasper (2013)
-    make the assessment problem explicit through ninety hours of participant observation in a public-
-    library video game club. Their case shows that attendance and enjoyment miss much of what game clubs
-    may do: staff modeled information seeking, enforced rules, mentored youth, and connected play to
-    reading, technology, local history, behavior, academic standing, library cards, book checkouts, and
-    social belonging. They recommend richer measures of reading motivation, library anxiety, information
-    literacy, behavior, skill development, and reward-based progress so libraries can evaluate whether
-    gaming programs advance learning and community goals rather than merely drawing participants.
-
+### Contributions
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Evaluate Outcomes Beyond
+    Attendance
+  Contribution_Text: Brown and Kasper (2013) make the assessment problem explicit through ninety
+    hours of participant observation in a public- library video game club. Their case shows that
+    attendance and enjoyment miss much of what game clubs may do: staff modeled information seeking,
+    enforced rules, mentored youth, and connected play to reading, technology, local history,
+    behavior, academic standing, library cards, book checkouts, and social belonging. They recommend
+    richer measures of reading motivation, library anxiety, information literacy, behavior, skill
+    development, and reward-based progress so libraries can evaluate whether gaming programs advance
+    learning and community goals rather than merely drawing participants.
 ### Summary
 # **Brown, R. T., & Kasper, T. (2013). The fusion of literacy and games: A case study in assessing the goals of a library video game program. *Library Trends, 61*(4), 755-778.**
 

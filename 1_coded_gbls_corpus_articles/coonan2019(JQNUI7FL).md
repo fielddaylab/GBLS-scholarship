@@ -20,20 +20,15 @@ Audience: general_public
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Suggested placement: `Instruction, Orientation, and Information Literacy`, immediately after the
-    Abrams and Van Eck (2021) paragraph. Suggested text: Coonan (2019) offers a brief editorial bridge
-    from library videogame programming to broader information-literacy theory. Introducing work on
-    videogaming and transmedia literacy, she frames players' informal practices as information-literacy
-    practices involving problem-solving, identity performance, navigating, networking, and negotiating
-    outside formal institutions; for GBLS, the piece is not program evidence, but it supports treating
-    play as an everyday learning context rather than only as a delivery mechanism for predetermined
+### Contributions
+- Target_Section: Instruction, Orientation, and Information Literacy
+  Contribution_Text: Coonan (2019) offers a brief editorial bridge from library videogame
+    programming to broader information-literacy theory. Introducing work on videogaming and
+    transmedia literacy, she frames players' informal practices as information-literacy practices
+    involving problem-solving, identity performance, navigating, networking, and negotiating outside
+    formal institutions; for GBLS, the piece is not program evidence, but it supports treating play
+    as an everyday learning context rather than only as a delivery mechanism for predetermined
     library lessons.
-
 ### Summary
 # **Coonan, E. (2019). 'The best way to learn is just to play'. *Journal of Information Literacy, 13*(1), 1-2. https://doi.org/10.11645/13.1.2648**
 

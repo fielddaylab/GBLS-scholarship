@@ -20,19 +20,14 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Escape Rooms and Breakout
-    Boxes`, after the Wedlake et al. (2024) paragraph. Suggested text: Seay (2019) adds practitioner
-    design reflection to the escape-room literature by asking how a game can actually teach something
-    rather than merely decorate instruction. His Mars survival game is not a library assessment study,
-    but it usefully distinguishes content from experience: participants may learn science, cooperation,
-    and problem solving because those tasks are embedded in role-play, puzzles, pressure, and narrative
-    stakes, suggesting that library escape rooms need designed transfer rather than theme alone.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Escape Rooms and Breakout Boxes
+  Contribution_Text: Seay (2019) adds practitioner design reflection to the escape-room literature
+    by asking how a game can actually teach something rather than merely decorate instruction. His
+    Mars survival game is not a library assessment study, but it usefully distinguishes content from
+    experience: participants may learn science, cooperation, and problem solving because those tasks
+    are embedded in role-play, puzzles, pressure, and narrative stakes, suggesting that library
+    escape rooms need designed transfer rather than theme alone.
 ### Summary
 # **Seay, J. A. (2019). Considering games in libraries and such: On using a game to actually teach something. Part I: The accidental learner. *Against the Grain, 31*(5), 72-80.**
 

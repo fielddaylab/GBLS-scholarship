@@ -23,22 +23,16 @@ Intended_Outcome:
 - equitable_access
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Circulating and In-Library
-    Collections`, immediately before the Robson, Phillips, and Guerrero (2018) paragraph. Suggested
-    text: Slobuski, Robson, and Bentley (2017) provide the baseline survey context for tabletop
-    collections. In responses from 119 libraries, they found that tabletop games were being purchased,
-    donated, cataloged, barcoded, bagged, circulated, used in-house, renewed, placed on hold,
-    inventoried, and programmed in highly varied ways, with many libraries still lacking catalog
-    records, subject/genre standards, processing guidance, and shared circulation practices. Their
-    findings also reduce a common barrier: loss and damage were generally less severe than expected,
-    suggesting that libraries can pilot discoverable and borrowable tabletop collections while
-    professional standards continue to mature.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Circulating and In-Library Collections
+  Contribution_Text: Slobuski, Robson, and Bentley (2017) provide the baseline survey context for
+    tabletop collections. In responses from 119 libraries, they found that tabletop games were being
+    purchased, donated, cataloged, barcoded, bagged, circulated, used in-house, renewed, placed on
+    hold, inventoried, and programmed in highly varied ways, with many libraries still lacking
+    catalog records, subject/genre standards, processing guidance, and shared circulation practices.
+    Their findings also reduce a common barrier: loss and damage were generally less severe than
+    expected, suggesting that libraries can pilot discoverable and borrowable tabletop collections
+    while professional standards continue to mature.
 ### Summary
 # **Slobuski, T., Robson, D., & Bentley, P. J. (2017). Arranging the pieces: A survey of library practices related to a tabletop game collection. *Evidence Based Library and Information Practice, 12*(1), 2-17. https://doi.org/10.18438/B8JG7H**
 

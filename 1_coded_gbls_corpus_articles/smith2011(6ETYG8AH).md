@@ -20,21 +20,16 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Knapp (2019) literacy-technology paragraph. Suggested text:
-    Smith and Baker (2011) provide a more concrete academic-library orientation case through Utah Valley
-    University's *Get a Clue* and *LibraryCraft*. Their self-paced physical mystery tour and online
-    quest helped students learn building navigation, library services, website resources, and basic
-    search tasks with limited staff burden; post-game surveys reported increased comfort navigating the
-    library and self-reported library-skill learning, while the authors' revisions show how complexity,
-    unclear rules, unstable digital clues, advertising, proof of completion, and faculty buy-in shape
-    whether orientation games actually work.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Smith and Baker (2011) provide a more concrete academic-library orientation
+    case through Utah Valley University's *Get a Clue* and *LibraryCraft*. Their self-paced physical
+    mystery tour and online quest helped students learn building navigation, library services,
+    website resources, and basic search tasks with limited staff burden; post-game surveys reported
+    increased comfort navigating the library and self-reported library-skill learning, while the
+    authors' revisions show how complexity, unclear rules, unstable digital clues, advertising,
+    proof of completion, and faculty buy-in shape whether orientation games actually work.
 ### Summary
 # **Smith, A.-L., & Baker, L. (2011). Getting a clue: Creating student detectives and dragon slayers in your library. *Reference Services Review, 39*(4), 628-642. https://doi.org/10.1108/00907321111186659**
 

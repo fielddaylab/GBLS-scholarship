@@ -20,26 +20,23 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Horban and Skachenko (2019) paragraph. Suggested text: Jerrett,
-    Bothma, and de Beer (2017) provide a detailed academic-library ARG case through *Nomad*, a
-    University of Pretoria game that mapped story progress to book finding, library portal use, QR
-    codes, book borrowing, cipher decoding, riddle solving, search query construction, academic database
-    use, and Harvard-style referencing. The case is small and qualitative, but players self-organized in
-    the library, used social and collaborative tools, and reported that the narrative made library and
-    information literacy tasks more engaging. Section and exact location: `Cross-Cutting Lessons for
-    Game-Based Library Services > Design for Reflection and Transfer`, immediately after the heading.
-    Suggested text: Jerrett et al. (2017) also offer design cautions for ARGs and other complex GBLS
-    formats: vary locations and tasks, keep online assets fast and reliable, make timelines and
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Jerrett, Bothma, and de Beer (2017) provide a detailed academic-library ARG
+    case through *Nomad*, a University of Pretoria game that mapped story progress to book finding,
+    library portal use, QR codes, book borrowing, cipher decoding, riddle solving, search query
+    construction, academic database use, and Harvard-style referencing. The case is small and
+    qualitative, but players self-organized in the library, used social and collaborative tools, and
+    reported that the narrative made library and information literacy tasks more engaging.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Design for Reflection and
+    Transfer
+  Contribution_Text: Jerrett et al. (2017) also offer design cautions for ARGs and other complex
+    GBLS formats: vary locations and tasks, keep online assets fast and reliable, make timelines and
     instructions transparent, limit simultaneous puzzles, support but do not require large player
-    communities, and align running time with content. Their unfinished *Nomad* implementation shows that
-    immersion and mystery should not come at the expense of clarity when the service goal is learning.
-
+    communities, and align running time with content. Their unfinished *Nomad* implementation shows
+    that immersion and mystery should not come at the expense of clarity when the service goal is
+    learning.
 ### Summary
 # **Jerrett, A., Bothma, T. J. D., & de Beer, K. (2017). Exercising library and information literacies through alternate reality gaming. *Aslib Journal of Information Management, 69*(2), 230-254. https://doi.org/10.1108/AJIM-11-2016-0185**
 

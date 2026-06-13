@@ -23,13 +23,10 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested review placement. Recommended Zotero filing: `Explicitly Excluded Literature`.
-
+  Contribution_Text: No suggested review placement. Recommended Zotero filing: `Explicitly Excluded
+    Literature`.
 ### Summary
 # **Baker, C. J. (2014). *Video games: Their effect on society and how we must modernize our pedagogy for students of the digital age* [Master's thesis, Virginia Commonwealth University]. VCU Scholars Compass.**
 

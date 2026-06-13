@@ -52,18 +52,21 @@ For the larger GBLS project, this study supplies empirical grounding for treatin
 
 ## Suggested Review Contributions
 
-Contributions:
-- Target_Section: "## Libraries as Playful Spaces and Service Environments"
-  Target_Section_Raw: "## Libraries as Playful Spaces and Service Environments"
-  Placement: "After the section's opening account of libraries as physical and social settings."
-  Contribution_Text: >
-    Fisher et al. (2007) show that library place is simultaneously physical, social, and informational. In interviews with 226 Seattle Central Library users and passers-by, participants linked architecture and civic identity with community interaction, free access, information seeking, staff help, and lifelong learning. The authors therefore add "informational place" to place theory, a useful reminder that playful library environments remain connected to collections, discovery, technology, and human guidance.
-- Target_Section: "## Community, Belonging, Wellness, and the Public Commons"
-  Target_Section_Raw: "## Community, Belonging, Wellness, and the Public Commons"
-  Placement: "In the discussion of libraries as third places and generators of social capital."
-  Contribution_Text: >
-    The Seattle Central Library supported bonding and bridging social capital, but Fisher et al. (2007) found that it met only some of Oldenburg's third-place criteria. It offered neutral, inclusive ground and a home-away-from-home function, while conversation, regulars, newcomer welcome, and a consistently playful mood were less evident. GBLS should therefore treat belonging and third-place effects as designed and assessable outcomes rather than automatic consequences of shared space.
-
+### Contributions
+- Target_Section: Libraries as Playful Spaces and Service Environments
+  Contribution_Text: Fisher et al. (2007) show that library place is simultaneously physical,
+    social, and informational. In interviews with 226 Seattle Central Library users and passers-by,
+    participants linked architecture and civic identity with community interaction, free access,
+    information seeking, staff help, and lifelong learning. The authors therefore add "informational
+    place" to place theory, a useful reminder that playful library environments remain connected to
+    collections, discovery, technology, and human guidance.
+- Target_Section: Community, Belonging, Wellness, and the Public Commons
+  Contribution_Text: The Seattle Central Library supported bonding and bridging social capital, but
+    Fisher et al. (2007) found that it met only some of Oldenburg's third-place criteria. It offered
+    neutral, inclusive ground and a home-away-from-home function, while conversation, regulars,
+    newcomer welcome, and a consistently playful mood were less evident. GBLS should therefore treat
+    belonging and third-place effects as designed and assessable outcomes rather than automatic
+    consequences of shared space.
 ## Evidence Cautions and Limitations
 
 The study concerns one unusually prominent urban central library shortly after its opening. Its nonrandom sample was selected for varied perspectives, not population estimates, and the authors note that the 2004 presidential election and Iraq war may have shaped responses about civic institutions and free speech. Findings report perceptions and uses rather than causal effects. The attached PDF is the 2007 chapter in *The Library as Place*; the Zotero parent currently contains conflicting 2016 book metadata and should not be used as the publication citation without correction.

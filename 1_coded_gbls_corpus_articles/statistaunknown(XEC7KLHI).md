@@ -24,21 +24,16 @@ Intended_Outcome:
 - equitable_access
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Introduction: Why Game-Based Library Services Matter > Games are a
-    mainstream cultural practice`, after the Entertainment Software Association household/gamer bullets
-    and before the board/card games market sentence. Suggested text: Statista's video-gaming market
-    report adds a current global scale marker: it estimates worldwide video game market revenue at
-    $475.04 billion in 2024, forecasts growth to $691.31 billion by 2029, and reports that 84.1% of
-    global internet users surveyed in Q2 2024 played video games on some device, with smartphones as the
-    leading device for play. For GBLS, these figures are background context rather than service
-    evidence, but they support treating video games as ordinary cultural media that patrons encounter
-    across phones, consoles, PCs, streaming platforms, and esports ecosystems.
-
+### Contributions
+- Target_Section: Introduction: Why Game-Based Library Services Matter > Games are a mainstream
+    cultural practice
+  Contribution_Text: Statista's video-gaming market report adds a current global scale marker: it
+    estimates worldwide video game market revenue at $475.04 billion in 2024, forecasts growth to
+    $691.31 billion by 2029, and reports that 84.1% of global internet users surveyed in Q2 2024
+    played video games on some device, with smartphones as the leading device for play. For GBLS,
+    these figures are background context rather than service evidence, but they support treating
+    video games as ordinary cultural media that patrons encounter across phones, consoles, PCs,
+    streaming platforms, and esports ecosystems.
 ### Summary
 # **Statista. (n.d.). *Industries & markets: Video games*.**
 

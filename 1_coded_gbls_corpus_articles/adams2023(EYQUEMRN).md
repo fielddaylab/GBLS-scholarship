@@ -20,12 +20,9 @@ Audience: not_applicable
 Intended_Outcome: institutional_capacity
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_direct_addition_recommended
-
 ### Summary
 # **Adams, M. J., Finch, M., & Gamble, B. (2023). More than a game: Scenario planning, imagination, and the public library's future. *Public Library Quarterly, 42*(6), 665-687. https://doi.org/10.1080/01616846.2022.2154068**
 

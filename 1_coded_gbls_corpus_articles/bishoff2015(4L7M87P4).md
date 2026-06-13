@@ -25,26 +25,23 @@ Intended_Outcome:
 - cultural_stewardship_and_preservation
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Start with
-    Purpose, Audience, and Local Need`, after the Khademi Zare et al. (2024) paragraph. Suggested text:
-    Bishoff, Farrell, and Neeser (2015) turn local fit into a cautionary academic-library case. At the
-    University of Minnesota - Twin Cities, two well-promoted Wii-based finals-week game events drew
-    little sustained participation, and a first-year survey showed only modest interest in gaming events
-    or video game checkout; the authors therefore warn against inferring demand from general gamer
-    demographics or from programs that worked at smaller, residential, or public-library sites. Section
-    and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Build Partnerships and
-    Community Pipelines`, after the Monnier and Winters (2022) paragraph. Suggested text: Bishoff et al.
-    (2015) also show how partnership can become the service model rather than a supplement to a
-    collection or event. After the weak pilot events, the University of Minnesota Libraries worked with
-    student gaming groups, the Society for Physics Students, local community partners, Co-Op Talk, game-
-    development students, and interdisciplinary researchers, using gaming technologies and librarian
-    facilitation to support networking, game creation, education, and community outreach.
-
+### Contributions
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Start with Purpose,
+    Audience, and Local Need
+  Contribution_Text: Bishoff, Farrell, and Neeser (2015) turn local fit into a cautionary
+    academic-library case. At the University of Minnesota - Twin Cities, two well-promoted Wii-based
+    finals-week game events drew little sustained participation, and a first-year survey showed only
+    modest interest in gaming events or video game checkout; the authors therefore warn against
+    inferring demand from general gamer demographics or from programs that worked at smaller,
+    residential, or public-library sites.
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Build Partnerships and
+    Community Pipelines
+  Contribution_Text: Bishoff et al. (2015) also show how partnership can become the service model
+    rather than a supplement to a collection or event. After the weak pilot events, the University
+    of Minnesota Libraries worked with student gaming groups, the Society for Physics Students,
+    local community partners, Co-Op Talk, game- development students, and interdisciplinary
+    researchers, using gaming technologies and librarian facilitation to support networking, game
+    creation, education, and community outreach.
 ### Summary
 # **Bishoff, C., Farrell, S. L., & Neeser, A. E. (2015). Outreach, collaboration, collegiality: Evolving approaches to library video game services. *Journal of Library Innovation, 6*(1), 92-109.**
 

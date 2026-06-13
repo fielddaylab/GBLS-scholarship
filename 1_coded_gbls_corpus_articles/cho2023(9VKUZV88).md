@@ -20,20 +20,14 @@ Audience: general_public
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > Escape Rooms and Breakout
-    Boxes`, immediately after the `## Escape Rooms and Breakout Boxes` heading. Suggested text: Cho et
-    al. (2023) provide one of the strongest empirical examples of an escape-room format in public-
-    library information literacy. In 17 sessions across five Washington public-library systems, *The
-    Euphorigen Investigation* used collaborative play, a fictional misinformation scenario, a designed
-    deepfake failure, and librarian-led debriefing to increase awareness of misinformation tactics,
-    prompt reflection on confirmation bias and vulnerability, and encourage more cautious attitudes
-    toward sharing information online.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > Escape Rooms and Breakout Boxes
+  Contribution_Text: Cho et al. (2023) provide one of the strongest empirical examples of an
+    escape-room format in public- library information literacy. In 17 sessions across five
+    Washington public-library systems, *The Euphorigen Investigation* used collaborative play, a
+    fictional misinformation scenario, a designed deepfake failure, and librarian-led debriefing to
+    increase awareness of misinformation tactics, prompt reflection on confirmation bias and
+    vulnerability, and encourage more cautious attitudes toward sharing information online.
 ### Summary
 # **Cho, Y., Coward, C., Lackner, J., Windleharth, T. W., & Lee, J. H. (2023). The use of an escape room as an immersive learning environment for building resilience to misinformation. *Journal of Librarianship and Information Science, 57*(2), 524-538. https://doi.org/10.1177/09610006231208027**
 

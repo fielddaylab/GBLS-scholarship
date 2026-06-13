@@ -22,15 +22,11 @@ Audience: general_public
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No addition recommended. Exclude from the GBLS literature review because this is a brief
-    GameRT/International Games Month resource link sheet rather than a substantive study, program
-    report, or practitioner article.
-
+  Contribution_Text: No addition recommended. Exclude from the GBLS literature review because this
+    is a brief GameRT/International Games Month resource link sheet rather than a substantive study,
+    program report, or practitioner article.
 ### Summary
 # **Porter, M., Sewell, A., Bergstrom, G., & Costello, D. (2024). RTRT: International Games Month. *Google Docs*. https://docs.google.com/document/d/1cC7xc5nZrYRHbFUBOKRetIaRZBtpVP_fAbv4p6Q1Zjs/edit?usp=sharing&usp=embed_facebook**
 

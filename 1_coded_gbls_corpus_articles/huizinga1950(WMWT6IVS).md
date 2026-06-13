@@ -20,20 +20,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Games,
-    Gamification, and Play`, immediately after the section heading and before Seay (2018). Suggested
-    text: Huizinga (1950) supplies a classic conceptual baseline for treating play as a cultural form
-    rather than mere recreation. His account defines play as voluntary, bounded in time and space, rule-
-    governed, absorbing, and set apart from ordinary life, while also generating order, tension, social
-    groupings, and a durable play-community; for GBLS, the point is not to adopt Huizinga wholesale, but
-    to recognize that library games work by creating temporary civic spaces with accepted rules,
-    meaningful stakes, and communities that may outlast the event.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Games, Gamification, and
+    Play
+  Contribution_Text: Huizinga (1950) supplies a classic conceptual baseline for treating play as a
+    cultural form rather than mere recreation. His account defines play as voluntary, bounded in
+    time and space, rule- governed, absorbing, and set apart from ordinary life, while also
+    generating order, tension, social groupings, and a durable play-community; for GBLS, the point
+    is not to adopt Huizinga wholesale, but to recognize that library games work by creating
+    temporary civic spaces with accepted rules, meaningful stakes, and communities that may outlast
+    the event.
 ### Summary
 # **Huizinga, J. (1950). *Homo Ludens: A study of the play-element in culture*. Roy Publishers.**
 

@@ -20,20 +20,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Games,
-    Gamification, and Play`, after the Seay "G Word" paragraph. Suggested text: Minchin (2018) adds a
-    tabletop-specific learning rationale by arguing that games need not be explicitly didactic to teach.
-    He frames tabletop play as practice in psychological, social, systems, and procedural literacies:
-    reading minds and motives, navigating group dynamics, understanding rule-governed systems, and
-    interpreting procedures from turn-taking to formal protocols. For GBLS, the article is advocacy
-    rather than assessment evidence, but it usefully connects tabletop collections and programs to
-    libraries' commitments to self-directed learning and shared culture.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Games, Gamification, and
+    Play
+  Contribution_Text: Minchin (2018) adds a tabletop-specific learning rationale by arguing that
+    games need not be explicitly didactic to teach. He frames tabletop play as practice in
+    psychological, social, systems, and procedural literacies: reading minds and motives, navigating
+    group dynamics, understanding rule-governed systems, and interpreting procedures from
+    turn-taking to formal protocols. For GBLS, the article is advocacy rather than assessment
+    evidence, but it usefully connects tabletop collections and programs to libraries' commitments
+    to self-directed learning and shared culture.
 ### Summary
 # **Minchin, P. (2018). In praise of tabletop games: Part 1. *Access, 32*(1), 41-45.**
 

@@ -20,19 +20,14 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: medium
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Programming Formats and Service Models > TTRPG and LARP Programs`,
-    after the Kaylor (2017) paragraph. Suggested text: Torres-Roman and Snow (2014) provide the
-    practitioner handbook behind much teen-library TTRPG work, framing tabletop RPGs as low-cost,
-    literacy-rich, social programs that fit library spaces and teen-service missions. Their guide also
-    makes clear that TTRPG services extend beyond events: libraries must select, collect, catalog,
-    describe, facilitate, promote, and defend RPG materials and groups in ways that welcome new players
-    rather than reproducing gatekeeping from hobbyist cultures.
-
+### Contributions
+- Target_Section: Programming Formats and Service Models > TTRPG and LARP Programs
+  Contribution_Text: Torres-Roman and Snow (2014) provide the practitioner handbook behind much
+    teen-library TTRPG work, framing tabletop RPGs as low-cost, literacy-rich, social programs that
+    fit library spaces and teen-service missions. Their guide also makes clear that TTRPG services
+    extend beyond events: libraries must select, collect, catalog, describe, facilitate, promote,
+    and defend RPG materials and groups in ways that welcome new players rather than reproducing
+    gatekeeping from hobbyist cultures.
 ### Summary
 # **Torres-Roman, S. A., & Snow, C. E. (2014). *Dragons in the stacks: A teen librarian's guide to tabletop role-playing*. Libraries Unlimited.**
 

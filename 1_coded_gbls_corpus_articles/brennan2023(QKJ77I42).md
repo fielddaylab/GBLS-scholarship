@@ -23,21 +23,17 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Emerging Area: Wellness,
-    Mental Health, and Care`, immediately after the Lee et al. (2024) paragraph. Suggested text: Brennan
-    (2023) offers a small school-library practitioner example of games as part of a wellbeing ecology
-    rather than a standalone program. In redeveloping Stonyhurst College's library from a primarily
-    silent study space into a more welcoming third place, Brennan introduced break-time activities
-    including chess, computer games, and film screenings alongside environmental changes, Mental Health
-    First Aid training, and a Reading Well collection. The article is illustrative rather than
-    evaluative, but it shows how low-barrier play can support friendship, conversation, relaxation, and
-    belonging within a broader student-centered mental-health service model.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Emerging Area: Wellness, Mental
+    Health, and Care
+  Contribution_Text: Brennan (2023) offers a small school-library practitioner example of games as
+    part of a wellbeing ecology rather than a standalone program. In redeveloping Stonyhurst
+    College's library from a primarily silent study space into a more welcoming third place, Brennan
+    introduced break-time activities including chess, computer games, and film screenings alongside
+    environmental changes, Mental Health First Aid training, and a Reading Well collection. The
+    article is illustrative rather than evaluative, but it shows how low-barrier play can support
+    friendship, conversation, relaxation, and belonging within a broader student-centered
+    mental-health service model.
 ### Summary
 # **Brennan, R. (2023). Wellbeing in the school library. *School Librarian, 71*(2), 10-11.**
 

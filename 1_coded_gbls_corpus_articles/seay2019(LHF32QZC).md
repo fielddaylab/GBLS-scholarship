@@ -20,20 +20,16 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Instruction, Orientation,
-    and Information Literacy`, after the Seay (2019) nuclear-core vignette paragraph. Suggested text:
-    Seay's "A Liminal Response to Watching Paint Dry" gives a related explanation for why game-based
-    instruction may help with disengagement: role-immersion and escape-room formats can create liminal
-    spaces where ordinary classroom hierarchies and anxieties are temporarily suspended. Drawing on Mark
-    Carnes's Reacting to the Past work, Seay argues that learners may participate more fully when they
-    enter a scenario, assume roles, and use knowledge inside a meaningful problem space rather than
-    being asked to display competence in a conventional lecture setting.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Instruction, Orientation, and
+    Information Literacy
+  Contribution_Text: Seay's "A Liminal Response to Watching Paint Dry" gives a related explanation
+    for why game-based instruction may help with disengagement: role-immersion and escape-room
+    formats can create liminal spaces where ordinary classroom hierarchies and anxieties are
+    temporarily suspended. Drawing on Mark Carnes's Reacting to the Past work, Seay argues that
+    learners may participate more fully when they enter a scenario, assume roles, and use knowledge
+    inside a meaningful problem space rather than being asked to display competence in a
+    conventional lecture setting.
 ### Summary
 # **Seay, J. A. (2019). Considering games in libraries and such: A liminal response to watching paint dry. *Against the Grain, 31*(2), 37.**
 

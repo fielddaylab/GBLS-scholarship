@@ -20,22 +20,17 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Curate for
-    Inclusion, Access, and Advisory`, immediately after the Cross et al. (2023) paragraph. Suggested
-    text: Heron et al. (2018) provide an adjacent but practical accessibility lens for tabletop GBLS
-    through the Meeple Centred Design heuristic toolkit. Their framework evaluates visual, cognitive,
-    physical, communicative, emotional, socioeconomic, and intersectional barriers in tabletop games,
-    including color and contrast, component size, board-state complexity, memory demands, hidden
-    information, randomness, take-that mechanics, time limits, drop-in/drop-out capacity, and the need
-    for compensatory regimes; for libraries, the toolkit can inform game selection, advisory,
-    facilitation, catalog notes, and accessibility accommodations before and alongside direct user
-    testing.
-
+### Contributions
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Curate for Inclusion,
+    Access, and Advisory
+  Contribution_Text: Heron et al. (2018) provide an adjacent but practical accessibility lens for
+    tabletop GBLS through the Meeple Centred Design heuristic toolkit. Their framework evaluates
+    visual, cognitive, physical, communicative, emotional, socioeconomic, and intersectional
+    barriers in tabletop games, including color and contrast, component size, board-state
+    complexity, memory demands, hidden information, randomness, take-that mechanics, time limits,
+    drop-in/drop-out capacity, and the need for compensatory regimes; for libraries, the toolkit can
+    inform game selection, advisory, facilitation, catalog notes, and accessibility accommodations
+    before and alongside direct user testing.
 ### Summary
 # **Heron, M. J., Belford, P. H., Reid, H., & Crabb, M. (2018). Meeple centred design: A heuristic toolkit for evaluating the accessibility of tabletop games. *The Computer Games Journal, 7*(2), 97-114. https://doi.org/10.1007/s40869-018-0057-8**
 

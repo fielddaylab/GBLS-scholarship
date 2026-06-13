@@ -20,15 +20,11 @@ Audience: students
 Intended_Outcome: learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. Explicitly exclude from the GBLS literature review because the article
-    studies game-based learning in a business information systems course, not game-based library
-    services or library-adjacent cultural/information work.
-
+  Contribution_Text: No suggested addition. Explicitly exclude from the GBLS literature review
+    because the article studies game-based learning in a business information systems course, not
+    game-based library services or library-adjacent cultural/information work.
 ### Summary
 # **Farkas, B., Shang, Y., & Alhourani, F. (2022). Teaching tip: Teaching business process concepts in an introductory information systems class: A multi-level game-based learning approach. *Journal of Information Systems Education, 33*(4), 306-323.**
 

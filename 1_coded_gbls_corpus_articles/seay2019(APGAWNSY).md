@@ -22,19 +22,15 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Conceptual Terrain: Games, Play, and Library Service > Analog, Digital,
-    and Hybrid Forms`, after the Seay (2018) analog/co-present paragraph. Suggested text: Seay's later
-    "Space Guardians" column adds a complementary practitioner rationale for analog game services: board
-    games, books, makerspaces, and physical library spaces can answer a longing for tactile, face-to-
-    face, slower social interaction amid digital overload. The essay is speculative rather than
-    evidentiary, but it helps explain why analog GBLS formats may be valuable precisely because they
-    gather bodies, materials, attention, and conversation in shared public space.
-
+### Contributions
+- Target_Section: Conceptual Terrain: Games, Play, and Library Service > Analog, Digital, and Hybrid
+    Forms
+  Contribution_Text: Seay's later "Space Guardians" column adds a complementary practitioner
+    rationale for analog game services: board games, books, makerspaces, and physical library spaces
+    can answer a longing for tactile, face-to- face, slower social interaction amid digital
+    overload. The essay is speculative rather than evidentiary, but it helps explain why analog GBLS
+    formats may be valuable precisely because they gather bodies, materials, attention, and
+    conversation in shared public space.
 ### Summary
 # **Seay, J. A. (2019). Considering games in libraries and such: Space guardians: New Year's musings of how libraries of old (including but not necessarily old librarians) have returned just in time to save us from digital anxiety. *Against the Grain, 31*(1), 51.**
 

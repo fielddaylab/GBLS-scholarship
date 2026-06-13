@@ -25,22 +25,17 @@ Intended_Outcome:
 - discovery_and_advisory
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Games as Cultural Media and Library Collections`, immediately after the
-    existing Noorda and Inman Berens (2021) paragraph. Suggested text: Inman Berens and Noorda (2023)
-    update this media-ecosystem argument for Gen Z and millennials in public libraries. In a nationally
-    representative survey and branch observations, they find that 54% of Gen Z and millennials visited a
-    physical library in the prior year, 53% identified as gamers, 52% as fans, and 57% as readers; avid
-    crossmedia discoverers identified even more strongly across reader, fan, gamer, writer,
-    livestreamer, and podcaster categories. For GBLS, the report shows that gaming, fandom, manga and
-    graphic formats, social media, makerspaces, teen lounges, digital collections, and shelf browsing
-    are intertwined rather than competing service domains, and that library game programs can help
-    connect books to the social, identity-based media practices younger patrons already use.
-
+### Contributions
+- Target_Section: Games as Cultural Media and Library Collections
+  Contribution_Text: Inman Berens and Noorda (2023) update this media-ecosystem argument for Gen Z
+    and millennials in public libraries. In a nationally representative survey and branch
+    observations, they find that 54% of Gen Z and millennials visited a physical library in the
+    prior year, 53% identified as gamers, 52% as fans, and 57% as readers; avid crossmedia
+    discoverers identified even more strongly across reader, fan, gamer, writer, livestreamer, and
+    podcaster categories. For GBLS, the report shows that gaming, fandom, manga and graphic formats,
+    social media, makerspaces, teen lounges, digital collections, and shelf browsing are intertwined
+    rather than competing service domains, and that library game programs can help connect books to
+    the social, identity-based media practices younger patrons already use.
 ### Summary
 # **Inman Berens, K., & Noorda, R. (2023). *Gen Z and millennials: How they use public libraries and identify through media use*. American Library Association.**
 

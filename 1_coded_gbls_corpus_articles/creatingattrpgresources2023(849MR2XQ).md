@@ -20,14 +20,11 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No suggested addition. This is a short TTRPG resource handout rather than research or a documented
-    library program, and should remain in `Explicitly Excluded Literature` after summary completion.
-
+  Contribution_Text: No suggested addition. This is a short TTRPG resource handout rather than
+    research or a documented library program, and should remain in `Explicitly Excluded Literature`
+    after summary completion.
 ### Summary
 # **Creating a TTRPG Resources. (2023, August 15). *Google Docs*. https://docs.google.com/document/d/1RxxSUrfIN9GB3jE94GzgwfUztm09xZCpUtVWltKm3_c/edit**
 

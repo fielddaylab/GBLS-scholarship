@@ -22,20 +22,15 @@ Intended_Outcome:
 - cultural_stewardship_and_preservation
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Cataloging, Metadata, and
-    Discovery`, after the Lee, Schmalz, Keating, and Ha (2020) paragraph. Suggested text: McDonald et
-    al. (2021) extend this metadata argument by examining six game development artifact collections and
-    interviewing 29 creators, information professionals, and game researchers. Their 123-term taxonomy
-    and best-practice recommendations show that game metadata work must address development,
-    organization-related, and marketing materials; mixed physical and digital formats; vague terms such
-    as "design document" and "prototype"; creator knowledge; rights restrictions; and the need for
-    participatory archival processing between game companies and cultural heritage institutions.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Cataloging, Metadata, and Discovery
+  Contribution_Text: McDonald et al. (2021) extend this metadata argument by examining six game
+    development artifact collections and interviewing 29 creators, information professionals, and
+    game researchers. Their 123-term taxonomy and best-practice recommendations show that game
+    metadata work must address development, organization-related, and marketing materials; mixed
+    physical and digital formats; vague terms such as "design document" and "prototype"; creator
+    knowledge; rights restrictions; and the need for participatory archival processing between game
+    companies and cultural heritage institutions.
 ### Summary
 # **McDonald, C., Schmalz, M., Monheim, A., Keating, S., Lewin, K., Cifaldi, F., & Lee, J. H. (2021). Describing, organizing, and maintaining video game development artifacts. *Journal of the Association for Information Science and Technology, 72*(5), 540-553. https://doi.org/10.1002/asi.24432**
 

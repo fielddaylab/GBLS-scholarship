@@ -26,23 +26,18 @@ Intended_Outcome:
 - learning_and_literacy
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Cross-Cutting Lessons for Game-Based Library Services > Curate for
-    Inclusion, Access, and Advisory`, immediately after the Cross et al. (2023) paragraph. Suggested
-    text: Bayeck and Bayeck (2024) add a culturally situated game-design caution for GBLS selection and
-    facilitation. Their textual analysis of Songo and Owela argues that classic African board games
-    should not be flattened into generic "Mancala" labels; local names, materials, spaces, directions of
-    play, seeds, holes, cattle metaphors, forest and semiarid landscapes, and community philosophies all
-    shape what the games mean and how players connect them to ancestry, memory, and place. The article
-    is adjacent rather than library evidence, but it supports culturally relevant game advisory:
-    libraries should describe, select, teach, and facilitate culturally specific tabletop games with
-    attention to community knowledge and learner context rather than treating them as interchangeable
-    mechanics.
-
+### Contributions
+- Target_Section: Cross-Cutting Lessons for Game-Based Library Services > Curate for Inclusion,
+    Access, and Advisory
+  Contribution_Text: Bayeck and Bayeck (2024) add a culturally situated game-design caution for GBLS
+    selection and facilitation. Their textual analysis of Songo and Owela argues that classic
+    African board games should not be flattened into generic "Mancala" labels; local names,
+    materials, spaces, directions of play, seeds, holes, cattle metaphors, forest and semiarid
+    landscapes, and community philosophies all shape what the games mean and how players connect
+    them to ancestry, memory, and place. The article is adjacent rather than library evidence, but
+    it supports culturally relevant game advisory: libraries should describe, select, teach, and
+    facilitate culturally specific tabletop games with attention to community knowledge and learner
+    context rather than treating them as interchangeable mechanics.
 ### Summary
 # **Bayeck, R. Y., & Bayeck, J. M. (2024). The intersection of place and game design: The case of two classic African board games. *Design Issues, 40*(4), 5-16. https://doi.org/10.1162/desi_a_00776**
 

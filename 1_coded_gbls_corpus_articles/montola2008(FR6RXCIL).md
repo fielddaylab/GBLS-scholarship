@@ -23,12 +23,9 @@ Audience: not_applicable
 Intended_Outcome: not_applicable
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: none
-  Target_Section_Raw: "none"
-  Placement: none
   Contribution_Text: no_suggested_addition_found
-
 ### Summary
 # **Montola, M., & Stenros, J. (Eds.). (2008). *Playground worlds: Creating and evaluating experiences of role-playing games*. Ropecon ry.**
 

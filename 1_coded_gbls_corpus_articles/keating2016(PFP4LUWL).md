@@ -25,20 +25,15 @@ Intended_Outcome:
 - creativity_and_production
 Coding_Confidence: high
 
-Contributions:
-- Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    Section and exact location: `Major Areas of Game-Based Library Service > Cataloging, Metadata, and
-    Discovery`, immediately after the Lee, Clarke, Sacchi, and Jett (2014) paragraph. Suggested text:
-    Keating (2016) turns the GAMER Group's relationship metadata into an implementation test by
-    attempting to represent VGMS in CollectiveAccess. The case shows that open-source collection systems
-    may support flexible element labels and granular schemas while still failing at game-specific
-    discovery when relationships are fixed, hierarchical, difficult to modify without code, or not
-    linkable to other relationships; for GBLS, that makes platform data models and search reactivity
-    part of collection access, not merely back-end technical detail.
-
+### Contributions
+- Target_Section: Major Areas of Game-Based Library Service > Cataloging, Metadata, and Discovery
+  Contribution_Text: Keating (2016) turns the GAMER Group's relationship metadata into an
+    implementation test by attempting to represent VGMS in CollectiveAccess. The case shows that
+    open-source collection systems may support flexible element labels and granular schemas while
+    still failing at game-specific discovery when relationships are fixed, hierarchical, difficult
+    to modify without code, or not linkable to other relationships; for GBLS, that makes platform
+    data models and search reactivity part of collection access, not merely back-end technical
+    detail.
 ### Summary
 # **Keating, S. A. (2016). Organizing videogame metadata in CollectiveAccess. In *iConference 2016 Proceedings*. iSchools. https://doi.org/10.9776/16479**
 

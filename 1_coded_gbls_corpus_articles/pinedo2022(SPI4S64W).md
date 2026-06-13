@@ -24,14 +24,11 @@ Intended_Outcome:
 - belonging_and_community
 Coding_Confidence: high
 
-Contributions:
+### Contributions
 - Target_Section: unspecified
-  Target_Section_Raw: "unspecified"
-  Placement: unspecified
-  Contribution_Text: >
-    No addition recommended. Exclude from the GBLS literature review because the article is a school-
-    classroom board game-based learning case study, not evidence about game-based library services.
-
+  Contribution_Text: No addition recommended. Exclude from the GBLS literature review because the
+    article is a school- classroom board game-based learning case study, not evidence about
+    game-based library services.
 ### Summary
 # **Pinedo, R., Garcia-Martin, N., Rascon, D., Caballero-San Jose, C., & Canas, M. (2022). Reasoning and learning with board game-based learning: A case study. *Current Psychology, 41*(3), 1603-1617. https://doi.org/10.1007/s12144-021-01744-1**
 
