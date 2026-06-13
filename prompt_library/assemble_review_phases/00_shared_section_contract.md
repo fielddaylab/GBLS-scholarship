@@ -1,165 +1,155 @@
-# Shared Contract for Runtime GBLS Section Writing
+# Shared Contract and Limited-Context Protocol
 
-This contract is self-contained. Resolve `PROJECT_ROOT` as the project
-directory containing `0_human_sources`, `1_coded_gbls_corpus_articles`, and
-`prompt_library`. If it cannot be resolved unambiguously, stop and report the
-candidate paths.
+This contract applies to every review phase. It is designed for a model with a
+128k-token context window running one fresh invocation at a time.
 
-## Authority
+## Persistent Run State
 
-At the time of each task, reread
-`PROJECT_ROOT/0_human_sources/baseline_structure_and_prose.md`.
-It is the sole authority for section count, heading levels and titles, order,
-word targets, drafting annotations, and author-supplied starting prose.
+Never rely on chat history. Persist all cross-invocation state under:
 
-Do not infer structure or content from earlier drafts, outputs, prompt
-filenames, remembered headings, or topic expectations.
+`PROJECT_ROOT/3_article_outputs/run_state/`
 
-## Required Runtime Packet
+Required files:
 
-Each section task must receive:
+- `run_status.md`: current phase, completed jobs, next exact command, blockers.
+- `structure_manifest.md`: live baseline headings, roles, line spans, targets.
+- `source_index.tsv`: one row per summary with citation, key metadata, and
+  concise suggested-contribution routing text.
+- `section_packets/section_NN/packet.md`: one bounded section packet.
+- `section_packets/section_NN/evidence_notes.md`: cumulative batch notes.
+- `section_packets/section_NN/draft.md`: completed section.
+- `section_packets/section_NN/ledger.md`: baseline and source dispositions.
+- `phase_ledgers/phase_NN.md`: changes, checks, and unresolved issues.
+- `claim_packets/`: factual-audit batches and completed results.
 
-- `PROJECT_ROOT`
-- `RUNTIME_SECTION_ID`
-- `RUNTIME_SECTION_POSITION`
-- `RUNTIME_SECTION_ROLE`: `front matter`, `narrative`, or `reference`
-- `RUNTIME_SECTION_BLOCK`: complete freshly extracted H1 block
-- `RUNTIME_SOURCE_LINE_SPAN`
-- `RUNTIME_WORD_TARGET` and directives, if any
-- `PRECEDING_SECTION_CONTEXT`, when available
-- `FOLLOWING_SECTION_METADATA`: only its headings, position, and directives
+Every invocation must:
 
-If the packet is absent, stale, or disagrees with the baseline, rebuild it
-before writing. Never guess a missing section identity.
+1. read `run_status.md` first;
+2. validate that its requested job is the recorded next job or an explicit
+   retry;
+3. read only the files authorized by that phase prompt;
+4. write its artifact and ledger before ending;
+5. update `run_status.md` with `COMPLETE`, `BLOCKED`, or the next bounded job;
+6. stop after that job. Do not continue into the next phase.
 
-## Heading Rules
+## Context Budget
 
-Copy the H1 and every nested H2-H6 exactly and in order. Remove only trailing
-parenthetical drafting annotations. Do not add, omit, rename, merge, split,
-relevel, or reorder headings.
+Treat 80,000 input tokens as the normal ceiling, leaving room for reasoning and
+output. Prefer less.
 
-Text before the first H1 is workflow material unless explicitly labeled as
-manuscript prose.
+- Never load the complete coded corpus into one context.
+- Never load all source texts into one context.
+- Never load more than one complete manuscript plus the small control files
+  needed for the current editorial pass.
+- A source batch may contain at most 12 complete coded summaries or about
+  45,000 tokens, whichever comes first.
+- Keep each source's cumulative evidence note to 120 words or fewer. Preserve
+  claim, method, context, evidence weight, limitation, and citation identity;
+  omit general summary prose.
+- Keep each section packet plus its cumulative evidence notes below about
+  20,000 input tokens. If notes would exceed that ceiling, retain the
+  strongest and most discriminating sources, mark the remainder `defer`, and
+  preserve them for phase 6's underused-corpus pass.
+- A factual-audit batch may contain at most 8 claims and only the source-text
+  excerpts or files needed for those claims.
+- If an input would exceed the budget, split it and record the remaining batch
+  jobs in `run_status.md`.
 
-Every substantive narrative heading must be followed by an orienting paragraph
-before detailed evidence or examples begin. The paragraph should explain what
-the heading means in the GBLS context, identify the collective question or
-claim, and preview the principal topics, distinctions, or evidence categories
-developed below. It should read as scholarly framing, not as a mechanical table
-of contents. Abstract and reference headings are exempt.
+## Authority and Structure
 
-## Baseline Prose
+`0_human_sources/baseline_structure_and_prose.md` is the sole authority for
+manuscript headings, order, annotations, starting prose, and word targets.
 
-Associate each non-heading passage with the nearest preceding heading. Treat
-it as author-supplied starting prose, not immutable wording and not evidence.
+For a section job, reread only:
 
-Preserve each substantive idea unless it is duplicative, an editorial
-instruction, contradicted by stronger evidence, or outside the declared
-scope. Revise, synthesize, qualify, or relocate it when needed. Record every
-passage and disposition in the ledger. Never silently discard baseline prose.
+- the complete baseline once when building `structure_manifest.md`; or
+- the exact baseline line span recorded for that section when writing it.
 
-Search the coded summaries for support, disagreement, limits, and stronger
-formulations. Label unsupported authorial claims as interpretations,
-recommendations, or proposed frameworks.
+Copy H1-H6 headings exactly after removing only trailing drafting
+annotations. Never add, remove, rename, relevel, duplicate, merge, split, or
+reorder headings.
 
-## Evidence And Synthesis
+## Evidence Rules
 
-Use all eligible Markdown summaries in
-`PROJECT_ROOT/1_coded_gbls_corpus_articles`, excluding `template.md` and hidden files.
-Search the complete corpus for each section.
+The coded summaries are the synthesis evidence. The baseline and
+`explicit_values.md` guide interpretation but are not empirical evidence.
 
-Give greatest weight to empirical studies, systematic reviews, meta-analyses,
-surveys, interviews, observations, mixed methods, and experiments. Use case
-studies for implementation knowledge; use practitioner and opinion sources
-cautiously; use historical sources for precedent rather than outcome evidence.
+Use suggested contributions as the primary routing filter. Supplement routing
+with structured metadata fields only when a summary has no usable suggested
+placement or when a later coverage pass reconsiders it.
 
-Organize around field-level themes, patterns, debates, service models, design
-principles, outcomes, tensions, and historical developments. Avoid
-article-by-article paragraphs. Begin substantive sections and subsections with
-synthesis claims rather than author citations. Compare contexts, methods, game
-forms, agreements, disagreements, null findings, and outliers.
+Weight evidence by type:
 
-Use a topic-led paragraph architecture:
+1. empirical studies and evidence syntheses;
+2. evaluated implementation cases;
+3. frameworks and artifact analyses;
+4. practitioner reflections and conceptual arguments;
+5. adjacent non-library evidence, explicitly labeled and narrowly used.
 
-1. state the cross-study claim, pattern, tension, or question;
-2. combine evidence from multiple applicable sources;
-3. compare convergence, divergence, context, and evidence strength;
-4. interpret the collective meaning for GBLS.
-
-Do not use source sequence as paragraph structure. Avoid strings of sentences
-such as “Author (year) argues... Another author found... A third study
-reported....” A paragraph should not usually be recoverable as a list of
-article summaries after removing its citations.
-
-Prefer citations in supporting or concluding positions after the synthesized
-claim. Sentences beginning with an author name and year are permitted only
-when the identity of the source is analytically necessary, such as identifying
-a direct disagreement, contrasting methodologies, attributing a distinctive
-concept or definition, discussing a historically consequential intervention,
-or explaining an outlier. Even then, connect the source immediately to the
-larger cross-study pattern.
-
-Where only one source supports a claim, label the point as a local example,
-single-study finding, practitioner proposition, or unresolved possibility.
-Do not give a single source the grammatical appearance of field consensus.
-
+Never invent findings, quotations, methods, citations, or bibliography.
 Distinguish attendance and enjoyment from learning, transfer, belonging,
-equity, wellness, and other outcomes. Use `explicit_values.md` as declared
-orientation, not evidence.
+equity, wellness, and other outcomes.
 
-Introduce terminology before relying on it. At first use, briefly define
-specialized concepts, named frameworks, field-specific phrases, institutional
-standards, organizations, and acronyms that a general library-science reader
-may not know. Spell out acronyms before using shortened forms, for example
-“Association of College and Research Libraries (ACRL).” Explain concepts such
-as “third place,” “affinity space,” “procedural rhetoric,” “gamification,” or
-“preparation for future learning” before using them analytically. Do not delay
-a definition until paragraphs after the first substantive use.
+## Synthesis Rules
 
-## Citations
+Organize paragraphs around topics, patterns, tensions, mechanisms, contexts,
+or service decisions, not around a sequence of papers.
 
-Use only citations supported by a coded summary or an explicitly approved
-bibliographic record. Match citations to the bibliographic heading stored in
-the summary whenever possible. Do not fabricate missing metadata.
+Use this paragraph pattern:
 
-Record baseline-only, ambiguous, or unmatched citations as unresolved. Do not
-hide them by creating plausible reference entries.
+1. state a collective claim or uncertainty;
+2. combine applicable evidence;
+3. compare context, method, agreement, disagreement, or limitation;
+4. interpret the implication for GBLS.
 
-## Working Ledger
+Label a single source as a local case, practitioner proposition, adjacent
+finding, or unresolved possibility. Do not give it the grammar of consensus.
 
-Maintain a structured ledger in active context or the disposable run-state
-directory. Record:
+## Section Packet Contract
 
-- every baseline passage and disposition;
-- summaries cited;
-- summaries substantively consulted but not cited;
-- candidate sources rejected for this section and why;
-- each author-year citation and matched bibliographic heading;
-- unresolved records;
-- evidence limitations, null findings, and outliers;
-- section word target and actual narrative word count.
+`packet.md` must contain:
 
-Do not write standalone section or ledger files under `3_article_outputs`.
+- project root and run ID;
+- section ID, ordinal, role, baseline line span, and target;
+- complete baseline block;
+- exact nested heading sequence;
+- previous section's final paragraph, if available;
+- next section's headings only;
+- ordered source-batch manifest;
+- compact global terminology and citation notes.
 
-## Style And Completion
+Do not place full summaries in `packet.md`. Each evidence-batch invocation
+loads only the summaries named in its batch manifest and appends compact,
+source-specific notes to `evidence_notes.md`.
 
-Write analytical, comparative, concise scholarly prose accessible to library
-professionals. Use claims followed by evidence and interpretation. Avoid
-excessive quotations and repetitive citation chains.
+## Ledgers
 
-Before returning, scan every paragraph for author-led openings and
-one-paper-at-a-time sequencing. Rewrite any passage whose organizing logic is
-the order of sources rather than the topic, except where source identity is
-analytically necessary under the rules above.
+Record decisions compactly. Do not copy long prose or full summaries into a
+ledger.
 
-Also scan each heading opening and each first use of specialized terminology.
-Confirm that the heading is framed before evidence begins and that readers are
-not expected to infer an acronym or technical concept from context alone.
+For each source record:
 
-Meet the runtime target where feasible. If adequate synthesis requires a
-material deviation, record the amount and reason rather than silently ignoring
-the target.
+- filename and bibliographic heading;
+- batch number;
+- `use`, `consult`, `defer`, or `exclude`;
+- destination heading and claim;
+- evidence type and limitation;
+- citation form.
 
-Before returning, reread the live baseline block, verify every H1-H6 heading,
-check prose traceability and citations, calculate the section word count, and
-return both the completed section and ledger.
+For each baseline passage record:
+
+- line span;
+- retained, revised, relocated, qualified, or omitted;
+- short reason.
+
+## Completion Checks
+
+Before completing any job:
+
+- verify the authorized output exists;
+- verify heading parity for the material touched;
+- verify citations added by the job resolve to coded records;
+- record word counts and checksum;
+- update the phase ledger and `run_status.md`.
+
+Do not perform the next job in the same invocation.

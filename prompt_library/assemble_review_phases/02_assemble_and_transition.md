@@ -1,50 +1,47 @@
-# Assemble And Integrate Runtime Sections
+# Bounded Assembly and Integration
 
-This prompt can run without conversation history. Resolve `PROJECT_ROOT`, read
-the shared contract and live baseline, and load all completed section texts and
-ledgers from the active run-state identified in
-`runtime_structure_manifest.md`. Do not use an older file in `3_article_outputs` as a
-draft seed.
+Run in a fresh context after every section packet is complete. Read the shared
+contract and `run_status.md`.
 
-## First Assembly
+This phase has two jobs. Execute one per invocation.
 
-1. Reparse the baseline from disk into an ordered H1-H6 manifest.
-2. Match each completed section to its runtime ID, ordinal position, source
-   line span, and heading fingerprint.
-3. Stop if a section is missing, duplicated, stale, or structurally mismatched.
-4. Assemble sections strictly by current H1 ordinal position.
-5. Preserve substantive baseline ideas and source-supported distinctions.
-6. Remove only accidental boundary duplication introduced by separate drafting.
-7. Save this literal first complete assembly as
-   `PROJECT_ROOT/3_article_outputs/stage_1_initial_assembly_draft.md`.
-8. Verify complete heading parity with the live baseline.
+## Job 1: `ASSEMBLE_STAGE_1`
 
-## Integration Pass
+Read:
 
-Read the manuscript as a single argument. Infer section functions from the
-live baseline rather than a predefined topic model.
+- `structure_manifest.md`;
+- every completed `section_packets/section_NN/draft.md`;
+- heading fingerprints and checksums from section ledgers.
 
-Revise the whole manuscript to:
+Do not read coded summaries or full ledgers.
 
-- create cumulative argument and accurate transitions;
-- remove unnecessary repetition without erasing meaningful differences;
-- harmonize terminology, citation style, evidentiary language, and voice;
-- ensure each substantive heading opens with synthesis;
-- combine adjacent source-led sentences into topical claims supported by
-  multiple sources;
-- remove paragraph structures that merely reproduce the order of studies;
-- preserve null findings, outliers, context differences, and limitations;
-- connect findings to library practice without overstating evidence;
-- support, qualify, or label baseline propositions;
-- keep audits and ledgers synchronized with textual revisions;
-- account for word-target deviations.
+Validate that every baseline H1 block has exactly one matching section draft.
+Assemble them in manifest order. Remove only accidental duplicate boundary
+text. Save `stage_1_initial_assembly_draft.md`.
 
-Save the integrated manuscript as
-`PROJECT_ROOT/3_article_outputs/stage_2_whole_manuscript_integration_draft.md`.
+Write a compact stage-1 entry to `phase_ledgers/phase_02.md`, verify heading
+parity, and set `INTEGRATE_STAGE_2` as the next job.
 
-## Verification
+## Job 2: `INTEGRATE_STAGE_2`
 
-Reparse the baseline after integration and compare every H1-H6 heading for
-wording, level, count, and order. Calculate word counts and checksums for both
-drafts. If the drafts are identical, document why no integration change was
-warranted; otherwise summarize the material changes in the review record.
+Read:
+
+- `stage_1_initial_assembly_draft.md`;
+- `structure_manifest.md`;
+- compact unresolved-issue lists from section ledgers;
+- `explicit_values.md`.
+
+Do not read the coded corpus.
+
+Revise the manuscript as one argument:
+
+- improve transitions and cumulative logic;
+- remove repetition;
+- harmonize terminology, evidence language, citations, and voice;
+- retain meaningful context differences, null findings, and limitations;
+- keep paragraphs topic-led;
+- preserve exact headings.
+
+Save `stage_2_whole_manuscript_integration_draft.md`. Record material changes,
+word counts, checksums, and unresolved issues. Update `run_status.md` to phase
+3 and stop.

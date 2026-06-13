@@ -1,88 +1,89 @@
-# Runtime Section Writer
+# Bounded Runtime Section Writer
 
-This prompt can be invoked in a fresh task with no conversation history. Read
-`00_shared_section_contract.md`, resolve `PROJECT_ROOT`, validate the complete
-runtime packet, and reread the identified H1 block from the live baseline.
+Run this prompt in a fresh context. Read
+`00_shared_section_contract.md`, then `3_article_outputs/run_state/run_status.md`.
 
-Do not read existing files in `3_article_outputs` as source material.
+This phase has three job modes. Execute exactly one mode per invocation.
 
-## Narrative Or Front-Matter Mode
+## Mode A: `BUILD_PACKET section_NN`
 
-When `RUNTIME_SECTION_ROLE` is `narrative` or `front matter`:
+Read:
 
-1. Validate the supplied block against its ordinal position and source lines.
-2. Extract its H1, every nested H2-H6, annotations, and prose passages.
-3. Infer its intellectual purpose from the live block and neighboring heading
-   metadata, not from its position alone.
-4. Search the complete eligible coded-summary corpus for relevant evidence,
-   counterevidence, null findings, context differences, and evidence limits.
-5. Cluster relevant findings by claim, pattern, tension, outcome, context, or
-   design principle before drafting. Do not draft in source-discovery order.
-6. Develop baseline prose into thematic, cross-source synthesis whose
-   paragraph subjects are topics rather than authors or articles.
-7. Preserve exact heading wording, level, and order after removing only
-   trailing drafting annotations.
-8. Begin every substantive narrative heading with an orienting paragraph that
-   defines its scope and previews the topics and distinctions that follow.
-9. Introduce specialized terms, organizations, frameworks, and acronyms at
-   first use before relying on them.
-10. Give practical GBLS implications where appropriate to the section's role.
-11. Create narrative movement toward the next section without prewriting it.
-12. Meet or explicitly account for the runtime word target.
-13. Run the author-centric prose check below, revise, and return the completed
-   section and structured working ledger.
+- `structure_manifest.md`;
+- the section's exact baseline line span;
+- `source_index.tsv`;
+- the previous section's final paragraph if already drafted;
+- the next section's headings from the manifest.
 
-The opening paragraph should frame the section's collective question and
-principal patterns. Paragraphs should be organized around ideas, not papers.
-Where the evidence base is mainly descriptive, say so.
+Create `section_packets/section_NN/packet.md`.
 
-## Author-Centric Prose Check
+Route candidate sources using suggested-contribution text first. Add metadata
+matches only when necessary. Rank candidates by relevance and evidence
+strength, then divide them into batches of no more than 12 summaries or 45,000
+tokens. Write filenames only in the batch manifest.
 
-For every paragraph:
+Do not read full summaries and do not draft prose in this mode.
 
-1. identify its topic sentence and collective message;
-2. flag sentences that begin with an author name, study name, or citation;
-3. flag sequences that summarize one source per sentence;
-4. flag paragraphs supported by only one source but written as general claims;
-5. rewrite flagged prose around a topical claim, grouped evidence,
-   comparison, and interpretation.
+Update `run_status.md` to the first `READ_EVIDENCE_BATCH` job and stop.
 
-Retain author-led sentences only for a necessary attribution, direct
-disagreement, methodological contrast, distinctive concept, historical
-intervention, or outlier. The final paragraph should remain coherent if
-author names are removed and only the substantive claims remain.
+## Mode B: `READ_EVIDENCE_BATCH section_NN batch_MM`
 
-## Reference Mode
+Read:
 
-When `RUNTIME_SECTION_ROLE` is `reference`:
+- the section `packet.md`;
+- existing `evidence_notes.md`, if any;
+- only the complete coded summaries named in `batch_MM`.
 
-1. Read every completed citation-bearing section and ledger from active context
-   or the disposable run-state directory.
-2. Extract every in-text citation, including citations inherited from baseline
-   prose.
-3. Match each citation to coded-summary bibliographic headings or explicitly
-   approved records.
-4. Resolve same-author/same-year suffixes consistently.
-5. Deduplicate and alphabetize matched entries.
-6. Include only works cited in the manuscript.
-7. Preserve the runtime H1 and all baseline-defined nested headings.
-8. If unmatched citations remain, place them in a verification subsection only
-   when that exact subsection already exists in the baseline. Otherwise list
-   them only in `citation_audit.md`; never add a manuscript heading.
-9. Check references back against the manuscript and remove uncited entries.
-10. Return the completed reference section and update data for the citation
-    audit.
+Append compact notes to `evidence_notes.md`. For every source record:
 
-Never invent bibliographic data. Account for prose found in a reference-role
-block under the baseline-prose rules.
+- bibliographic heading and citation form;
+- exact destination heading;
+- one to three supported claims;
+- method, setting, and evidence weight;
+- useful comparison, disagreement, null finding, or implementation detail;
+- limitation;
+- provisional `use`, `consult`, `defer`, or `exclude`.
 
-## Completion Check
+Use no more than 120 words per source. Preserve discriminating evidence and
+remove generic article-summary language. If cumulative notes would exceed the
+shared packet ceiling, mark lower-priority candidates `defer`; phase 6 will
+reconsider them.
 
-Before returning:
+Do not draft the section. Do not reread earlier source batches. Existing
+`evidence_notes.md` is the handoff.
 
-- compare the complete H1-H6 sequence with the live block;
-- verify every baseline passage has a ledger disposition;
-- verify every citation has a source match or unresolved status;
-- calculate actual section word count and target deviation;
-- confirm no output section or ledger directory was created;
-- return a clear success or blocking-error status.
+Update `run_status.md` to the next evidence batch or `DRAFT_SECTION` and stop.
+
+## Mode C: `DRAFT_SECTION section_NN`
+
+Read only:
+
+- the shared contract;
+- the section `packet.md`;
+- the completed `evidence_notes.md`;
+- `explicit_values.md`;
+- the relevant terminology entries from
+  `metadata-schema-and-lexicon.md`, not necessarily the whole file.
+
+Write:
+
+- `draft.md`;
+- `ledger.md`.
+
+Requirements:
+
+- preserve the exact heading sequence;
+- account for every baseline passage;
+- begin each substantive heading with field-level framing;
+- synthesize by topic rather than source order;
+- define specialized terms at first use;
+- calibrate claims to evidence type;
+- move toward the following section without drafting it;
+- meet or explain deviation from the target.
+
+For a reference-role section, use completed section ledgers to build a
+deduplicated, alphabetized reference list. Do not reread all summaries.
+
+Verify heading parity, citation resolution, baseline dispositions, word count,
+and checksum. Mark the section complete and set the next exact job in
+`run_status.md`, then stop.
