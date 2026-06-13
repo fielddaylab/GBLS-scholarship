@@ -11,7 +11,7 @@ it. Starting from that folder, locate the project root. It is the nearest
 ancestor, or a nearby directory, containing these markers:
 
 - `0_human_sources`
-- `1_coded_journal_article_archive`
+- `1_coded_reference_corpus_articles`
 - `2_calculated_metrics`
 - `tools/metrics_explorer`
 
@@ -32,9 +32,9 @@ It is not the curated GBLS corpus. Keep its outputs separate from
 
 Discover and use:
 
-- Coded articles: `<project root>/1_coded_journal_article_archive`
+- Coded articles: `<project root>/1_coded_reference_corpus_articles`
 - Preferred input:
-  `<project root>/1_coded_journal_article_archive/_manifest.jsonl`
+  `<project root>/1_coded_reference_corpus_articles/_manifest.jsonl`
 - Live metadata schema: the document inside `<project root>/0_human_sources`
   whose contents define the metadata schema and controlled lexicon
 - Existing builder, when present:

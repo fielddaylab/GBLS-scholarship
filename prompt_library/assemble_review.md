@@ -18,7 +18,7 @@ Required paths:
 - `0_human_sources/explicit_values.md`
 - `0_human_sources/publishability_rubric.md`
 - `0_human_sources/corpus_source_texts/`
-- `1_coded_summaries/*.md`, excluding `template.md` and hidden files
+- `1_coded_gbls_corpus_articles/*.md`, excluding `template.md` and hidden files
 - `prompt_library/assemble_review_phases/00_shared_section_contract.md`
 - `prompt_library/assemble_review_phases/01_runtime_section_writer.md`
 - `prompt_library/assemble_review_phases/02_assemble_and_transition.md`
@@ -80,7 +80,7 @@ After approval:
 7. Record the temporary run-state path in the runtime manifest and delete it
    after successful installation and verification.
 
-Never modify `0_human_sources` or `1_coded_summaries`.
+Never modify `0_human_sources` or `1_coded_gbls_corpus_articles`.
 
 ## Runtime Structure Discovery
 

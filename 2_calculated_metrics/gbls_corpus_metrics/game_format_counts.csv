@@ -7,6 +7,6 @@ game_format,virtual_or_augmented_reality,14,200,7.0,5
 game_format,gamification,13,200,6.5,6
 game_format,escape_room_or_breakout_box,8,200,4.0,7
 game_format,unspecified_game_format,7,200,3.5,8
-game_format,game_creation,3,200,1.5,9
 game_format,toy_or_open_play,3,200,1.5,9
+game_format,game_creation,3,200,1.5,9
 game_format,pervasive_game,1,200,0.5,10

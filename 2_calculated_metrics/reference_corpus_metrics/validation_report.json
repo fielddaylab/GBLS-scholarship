@@ -1,0 +1,13 @@
+{
+  "manifest_line_count": 7201,
+  "parsed_article_count": 7201,
+  "unique_article_id_count": 7201,
+  "duplicate_article_id_count": 0,
+  "missing_year_count": 1,
+  "article_feature_assignment_count": 76861,
+  "feature_counts_sum": 76861,
+  "matrix_row_count": 7201,
+  "binary_feature_column_count": 67,
+  "issues": [],
+  "generated_at": "2026-06-13T05:43:55.910568+00:00"
+}

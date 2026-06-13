@@ -1,0 +1,15 @@
+{
+  "source_markdown_count": 200,
+  "parsed_article_count": 200,
+  "unique_article_id_count": 200,
+  "duplicate_article_id_count": 0,
+  "missing_year_count": 1,
+  "article_feature_assignment_count": 2277,
+  "feature_counts_sum": 2277,
+  "matrix_row_count": 200,
+  "binary_feature_column_count": 87,
+  "parse_warnings": [
+    "statistaunknown(XEC7KLHI).md: Unparseable year: 'unknown'"
+  ],
+  "generated_at": "2026-06-13T05:43:50.324814+00:00"
+}

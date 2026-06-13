@@ -5,7 +5,7 @@ const DEFAULT_ROOT =
   "/Users/djgagnon/Library/CloudStorage/GoogleDrive-djgagnon@wisc.edu/.shortcut-targets-by-id/1P-yeNAX497qAu3txZnKjZZ1ztx8V2nSJ/Phase I - Research, Needs Assessment, and Lit Review Resources/GBLS Lit Review Working Docs";
 const root = process.argv[2] || process.env.GBLS_CORPUS_ROOT || DEFAULT_ROOT;
 const sourcesDir = path.join(root, "0_human_sources", "corpus_source_texts");
-const summariesDir = path.join(root, "1_coded_summaries");
+const summariesDir = path.join(root, "1_coded_gbls_corpus_articles");
 const lexiconPath = path.join(root, "0_human_sources", "metadata_schema_and_lexicon.md");
 const outDir = path.resolve("public/data");
 const articleDir = path.join(outDir, "articles");

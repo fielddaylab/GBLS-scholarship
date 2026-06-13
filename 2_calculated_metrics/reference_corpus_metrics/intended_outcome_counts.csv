@@ -1,0 +1,11 @@
+feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
+intended_outcome,not_applicable,3350,7201,46.5,1
+intended_outcome,learning_and_literacy,1496,7201,20.8,2
+intended_outcome,cultural_stewardship_and_preservation,930,7201,12.9,3
+intended_outcome,creativity_and_production,713,7201,9.9,4
+intended_outcome,institutional_capacity,709,7201,9.8,5
+intended_outcome,engagement_and_participation,607,7201,8.4,6
+intended_outcome,discovery_and_advisory,459,7201,6.4,7
+intended_outcome,belonging_and_community,349,7201,4.8,8
+intended_outcome,equitable_access,347,7201,4.8,9
+intended_outcome,wellness_and_resilience,87,7201,1.2,10

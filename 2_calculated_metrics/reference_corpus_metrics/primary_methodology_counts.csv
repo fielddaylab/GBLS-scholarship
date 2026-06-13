@@ -1,0 +1,13 @@
+feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
+primary_methodology,unspecified,5081,7201,70.6,1
+primary_methodology,survey,636,7201,8.8,2
+primary_methodology,qualitative_study,401,7201,5.6,3
+primary_methodology,case_or_design_study,270,7201,3.7,4
+primary_methodology,theoretical_or_conceptual,241,7201,3.3,5
+primary_methodology,evidence_synthesis,196,7201,2.7,6
+primary_methodology,experimental_study,174,7201,2.4,7
+primary_methodology,content_analysis,118,7201,1.6,8
+primary_methodology,mixed_methods,57,7201,0.8,9
+primary_methodology,action_research,16,7201,0.2,10
+primary_methodology,participatory_design,6,7201,0.1,11
+primary_methodology,historical_analysis,5,7201,0.1,12

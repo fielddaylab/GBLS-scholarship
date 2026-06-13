@@ -1,0 +1,8 @@
+feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
+library_context,unspecified_library_context,4839,7201,67.2,1
+library_context,academic_library,1639,7201,22.8,2
+library_context,school_library,395,7201,5.5,3
+library_context,cultural_heritage_institution,182,7201,2.5,4
+library_context,multiple_library_types,67,7201,0.9,5
+library_context,public_library,47,7201,0.7,6
+library_context,library_school,32,7201,0.4,7

@@ -7,9 +7,9 @@ project context that can be discovered from the filesystem.
 
 Rebuild and validate both datasets used by the GBLS Metrics Explorer:
 
-1. The curated GBLS corpus in `1_coded_summaries`
+1. The curated GBLS corpus in `1_coded_gbls_corpus_articles`
 2. The broad abstract-coded journal reference corpus in
-   `1_coded_journal_article_archive`
+   `1_coded_reference_corpus_articles`
 
 Then verify that the Metrics Explorer displays the GBLS corpus as the primary
 blue layer and the journal reference corpus as the gray comparison layer.
@@ -20,8 +20,8 @@ The supplied folder may be the project root or any folder inside it. Locate
 the nearest project root containing:
 
 - `0_human_sources`
-- `1_coded_summaries`
-- `1_coded_journal_article_archive`
+- `1_coded_gbls_corpus_articles`
+- `1_coded_reference_corpus_articles`
 - `2_calculated_metrics`
 - `prompt_library`
 - `tools/metrics_explorer`

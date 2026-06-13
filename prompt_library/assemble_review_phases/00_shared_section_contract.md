@@ -1,7 +1,7 @@
 # Shared Contract for Runtime GBLS Section Writing
 
 This contract is self-contained. Resolve `PROJECT_ROOT` as the project
-directory containing `0_human_sources`, `1_coded_summaries`, and
+directory containing `0_human_sources`, `1_coded_gbls_corpus_articles`, and
 `prompt_library`. If it cannot be resolved unambiguously, stop and report the
 candidate paths.
 
@@ -65,7 +65,7 @@ recommendations, or proposed frameworks.
 ## Evidence And Synthesis
 
 Use all eligible Markdown summaries in
-`PROJECT_ROOT/1_coded_summaries`, excluding `template.md` and hidden files.
+`PROJECT_ROOT/1_coded_gbls_corpus_articles`, excluding `template.md` and hidden files.
 Search the complete corpus for each section.
 
 Give greatest weight to empirical studies, systematic reviews, meta-analyses,

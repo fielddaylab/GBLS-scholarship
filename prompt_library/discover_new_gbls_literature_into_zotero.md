@@ -93,7 +93,7 @@ Before searching:
    priorities.
 4. Treat those live files as the authority. Do not rely on scope language
    remembered from this prompt.
-5. Inspect `${PROJECT_ROOT}/1_coded_summaries` only for duplicate detection
+5. Inspect `${PROJECT_ROOT}/1_coded_gbls_corpus_articles` only for duplicate detection
    and coverage awareness. Do not edit existing summaries.
 
 At minimum, interpret GBLS as library or library-connected work involving
@@ -121,7 +121,7 @@ The live project documents override this shorthand.
    - journal or container title;
    - Zotero parent key.
 5. Also index identifiers and normalized citations from every Markdown file
-   in `${PROJECT_ROOT}/1_coded_summaries`.
+   in `${PROJECT_ROOT}/1_coded_gbls_corpus_articles`.
 6. Resolve `${DESTINATION_COLLECTION}` by exact collection name in the group
    library. If it does not exist, create exactly one top-level collection
    named `Incoming` through a supported Zotero write route, then refetch and

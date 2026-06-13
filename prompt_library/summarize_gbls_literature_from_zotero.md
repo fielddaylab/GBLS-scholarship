@@ -25,7 +25,7 @@ COLLECTION_EXCLUDE: "Explicitly Excluded Literature"
 COLLECTION_EXCLUDE_KEY: 4YRAP7AJ
 
 PROJECT_ROOT: /Users/djgagnon/Library/CloudStorage/GoogleDrive-djgagnon@wisc.edu/.shortcut-targets-by-id/1P-yeNAX497qAu3txZnKjZZ1ztx8V2nSJ/Phase I - Research, Needs Assessment, and Lit Review Resources/GBLS Lit Review Working Docs
-SUMMARY_FOLDER: ${PROJECT_ROOT}/1_coded_summaries
+SUMMARY_FOLDER: ${PROJECT_ROOT}/1_coded_gbls_corpus_articles
 HUMAN_SOURCES_FOLDER: ${PROJECT_ROOT}/0_human_sources
 METADATA_SCHEMA_FILE: ${PROJECT_ROOT}/0_human_sources/metadata_schema_and_lexicon.md
 BASELINE_FILE: ${PROJECT_ROOT}/0_human_sources/baseline_structure_and_prose.md
