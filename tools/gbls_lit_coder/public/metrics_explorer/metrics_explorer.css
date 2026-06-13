@@ -204,6 +204,7 @@ td:first-child { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .tag { padding: 0.18rem 0.4rem; border-radius: 5px; color: #315062; background: #edf3f6; font-size: 0.72rem; }
 
 footer { padding: 1.5rem; color: var(--muted); text-align: center; font-size: 0.78rem; }
+.build-info { margin: 0.6rem 0 0; font-size: 0.72rem; opacity: 0.7; font-variant-numeric: tabular-nums; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
 
 @media (max-width: 900px) {

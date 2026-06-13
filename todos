@@ -1,14 +1,7 @@
 todos
 
+add a versioning system so each generation has an incrementing number. It's currently at 102. 
 
-develop a process to regulalry search google scholor using an inteligent keyword search
-- begin search using search_keywords in 0-human-resources
-- find full citaiton
-- disregard any matches with existing sources in GBLS Zotero Library 
-- login to library.wisc.edu and down full text
-- add to 'incoming' folder in zotero
-- pre-review the paper using a prereview rubric
-- if score > X add to 'pre-review-complete', else 'pre-review-failed'
+convert as many prompts as possible to pythin scripts that dont need an llm
 
 develop a full RAG
-

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T05:43:56.516326+00:00",
+  "generated_at": "2026-06-13T06:15:11.320396+00:00",
   "schema_reference": "0_human_sources/metadata-schema-and-lexicon.md",
   "manifest_source": "1_coded_reference_corpus_articles/_manifest.jsonl",
   "total_articles": 7201,
@@ -32,12 +32,11 @@
     "primary_methodology_matrix.csv": 1304922,
     "publication_year_counts.csv": 866,
     "readme.md": 568,
-    "reference_corpus_overview.xlsx": 21203,
+    "reference_corpus_overview.xlsx": 21202,
     "service_area_counts.csv": 619,
     "service_area_matrix.csv": 1276041,
     "source_type_counts.csv": 147,
     "source_type_matrix.csv": 1146081,
-    "validation_report.json": 373,
-    "reference_corpus_data.js": 4750697
+    "validation_report.json": 373
   }
 }

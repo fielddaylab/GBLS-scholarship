@@ -10,7 +10,7 @@
     <div id="dataError" class="data-error-message" role="alert" hidden>
       <strong>Metrics data could not be loaded.</strong>
       Rebuild <code>2_calculated_metrics/gbls_corpus_metrics</code> using
-      <code>prompt_library/calculate_summary_metrics.md</code>, then reload this page.
+      <code>tools/calculate_metrics.py</code>, then reload this page.
     </div>
     <header class="hero">
       <div>
@@ -124,10 +124,10 @@
       Counts represent coded article presence, not frequency of terms in article prose. The gray
       reference layer is based on titles and abstracts and should be interpreted as a broad literature
       snapshot, not full-text coding.
+      <p id="dataBuildInfo" class="build-info"></p>
     </footer>
 
-    <script src="../../2_calculated_metrics/metrics_explorer_synthesized_data.js?v=20260608b"></script>
-    <script src="reference_corpus_data.js?v=20260609a"></script>
+    <script src="metrics_explorer_data.js?v=20260613b"></script>
     <script>
       window.GBLS_CODING_TOOL_URL = "http://localhost:8787/";
     </script>

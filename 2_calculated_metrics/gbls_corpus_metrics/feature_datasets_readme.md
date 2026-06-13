@@ -1,6 +1,6 @@
 # GBLS Feature Datasets
 
-Generated: 2026-06-13 00:43
+Generated: 2026-06-13 01:15
 Articles: 200 | Feature assignments: 2277
 
 ## Quick start (Python / Colab)
@@ -27,10 +27,8 @@ matrix   = pd.read_csv(f"{metrics_dir}/article_feature_matrix.csv")
 
 ## Counting conventions
 
-- **Counts represent coded article presence**, not prose term frequency.
-  One article contributes at most 1 count per feature value.
-- **Multi-label fields** (Audience, Evidence_Type, Intended_Outcome, Service_Area)
-  may contribute multiple assignments per article — one per coded value.
+- Counts represent coded article presence, not prose term frequency.
+- Multi-label fields (Audience, Evidence_Type, Intended_Outcome, Service_Area) may contribute multiple assignments per article.
 - `article_pct` = article_count / total_articles × 100
 - `article_pct_in_year` uses same-year article count as denominator.
 

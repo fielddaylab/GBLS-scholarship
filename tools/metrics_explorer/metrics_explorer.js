@@ -379,7 +379,18 @@
     renderArticles();
   }
 
+  function renderMeta() {
+    const meta = window.GBLS_META;
+    const el = document.getElementById("dataBuildInfo");
+    if (!el || !meta) return;
+    const date = new Date(meta.generated_at);
+    const dateStr = date.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+    const timeStr = date.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
+    el.textContent = `Data built ${dateStr} at ${timeStr} · commit ${meta.git_commit}`;
+  }
+
   renderSummary();
+  renderMeta();
   setupControls();
   renderAll();
 })();

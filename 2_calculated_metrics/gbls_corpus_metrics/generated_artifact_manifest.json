@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T05:43:50.805425+00:00",
+  "generated_at": "2026-06-13T06:15:06.728376+00:00",
   "schema_reference": "0_human_sources/metadata-schema-and-lexicon.md",
   "total_articles": 200,
   "files_generated": {
@@ -19,11 +19,11 @@
     "evidence_type_matrix.csv": 49123,
     "feature_cooccurrence.csv": 94725,
     "feature_counts.csv": 4144,
-    "feature_datasets_readme.md": 1808,
+    "feature_datasets_readme.md": 1713,
     "feature_year_counts.csv": 40101,
     "game_format_counts.csv": 576,
     "game_format_matrix.csv": 50806,
-    "gbls_feature_overview.xlsx": 22533,
+    "gbls_feature_overview.xlsx": 22532,
     "intended_outcome_counts.csv": 630,
     "intended_outcome_matrix.csv": 50469,
     "library_context_counts.csv": 486,
@@ -37,7 +37,6 @@
     "service_area_matrix.csv": 50433,
     "source_type_counts.csv": 592,
     "source_type_matrix.csv": 50825,
-    "validation_report.json": 444,
-    "metrics_explorer_synthesized_data.js": 262313
+    "validation_report.json": 444
   }
 }

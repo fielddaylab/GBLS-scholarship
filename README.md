@@ -76,7 +76,7 @@ define the authors' structure, values, terminology, and evaluation criteria.
 │   ├── master_process_sources_into_review.md
 │   ├── discover-gbls-literature.md
 │   ├── summarize-from-zotero
-│   ├── calculate_summary_metrics.md
+│   ├── calculate_metrics.md
 │   └── section-prompts/
 │       ├── 00_shared_section_contract.md
 │       ├── 01_runtime_section_writer.md
@@ -231,12 +231,12 @@ configured group library and collections, and valid local filesystem paths.
 Review its `RUN CONFIGURATION` before using it on another computer or Zotero
 library.
 
-#### `calculate_summary_metrics.md`
+#### `calculate_metrics.md`
 
-Parses the coded summaries and creates article-level and aggregate data files
-under `2-outputs/metrics`. It preserves the controlled labels recorded in the
-summaries and produces data suitable for pandas, spreadsheets, and the local
-metrics explorer.
+Runs `tools/calculate_metrics.py` to build all corpus metrics for both the
+GBLS corpus (coded article summaries) and the reference corpus (journal
+article archive). Writes CSVs, Excel workbooks, and the JavaScript bundles
+consumed by the metrics explorer.
 
 ### `metrics-explorer`
 
@@ -300,8 +300,8 @@ develops. In particular:
 
 Run:
 
-```text
-prompt-library/calculate_summary_metrics.md
+```bash
+python3 tools/calculate_metrics.py
 ```
 
 Inspect the generated validation artifacts before interpreting aggregate
