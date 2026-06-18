@@ -2,6 +2,12 @@
   "$schema": "https://app.kilo.ai/config.json",
   "indexing": {
     "provider": "ollama",
-    "enabled": true
+    "enabled": true,
+    "ollama": {
+      "baseUrl": "http://thinkstation.local:11434"
+    },
+    "qdrant": {
+      "url": "http://thinkstation.local:6333"
+    }
   }
 }
