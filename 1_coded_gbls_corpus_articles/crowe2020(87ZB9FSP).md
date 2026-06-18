@@ -13,7 +13,9 @@ Game_Format: [tabletop_game, digital_game, escape_room_or_breakout_box, gamifica
 Service_Area: [collections_and_access, programming_and_facilitation, learning_and_literacy, outreach_and_partnerships, professional_capacity]
 Audience: [students, educators]
 Intended_Outcome: [equitable_access, learning_and_literacy, engagement_and_participation, institutional_capacity]
-Evidence_Confidence: high
+Evidence_Confidence: practitioner_knowledge
+Service_Conditions_Addressed: [access_infrastructure_required, skilled_facilitation_required, inclusive_design_or_accessibility, evaluation_or_reflection]
+Conceptual_Theme: [service_ecology, conditional_benefits]
 Coding_Confidence: high
 
 ## Summary

@@ -76,9 +76,12 @@ Using `${METADATA_SCHEMA_FILE}` as your only source of controlled values, assign
 - `Service_Area`: one or more controlled values describing the library service
 - `Audience`: controlled value if applicable
 - `Intended_Outcome`: controlled value if applicable
+- `Evidence_Confidence`: controlled value describing the strength and rigor of evidence claims (demonstrated_outcome, promising_evidence, practitioner_knowledge, descriptive_only, theoretical_or_conceptual, or not_applicable)
+- `Service_Conditions_Addressed`: one or more controlled values identifying prerequisites or design principles discussed (access_infrastructure_required, skilled_facilitation_required, community_assessment_needed, sustainable_operations, inclusive_design_or_accessibility, evaluation_or_reflection, other, or not_applicable)
+- `Conceptual_Theme`: one or more controlled values capturing theoretical or philosophical grounding (games_as_cultural_media, participatory_culture_and_production, game_literacy, service_ecology, conditional_benefits, information_behavior_and_practice, educational_psychology, social_equity_and_access, multiple_themes, or not_identified)
 - `Coding_Confidence`: high, medium, or low (your assessment of classification certainty)
 
-**Important**: Use ONLY values present in `${METADATA_SCHEMA_FILE}`. Do not invent new values. If no perfect match exists, select the closest defensible value and note the mismatch in the summary.
+**Important**: Use ONLY values present in `${METADATA_SCHEMA_FILE}`. Do not invent new values. If no perfect match exists, select the closest defensible value and note the mismatch in the summary. If a source addresses a Service_Condition not covered by existing categories, assign "other" and document the condition in the "Productive Incongruences" section.
 
 ### Step 5: Write Summary File
 Create filename: `${SOURCE_AUTHOR_LASTNAME}${SOURCE_YEAR}(${SOURCE_ZOTERO_ITEM_KEY}).md`
@@ -107,13 +110,16 @@ Game_Format: [value or list]
 Service_Area: [value or list]
 Audience: [value]
 Intended_Outcome: [value]
+Evidence_Confidence: [value]
+Service_Conditions_Addressed: [value or list]
+Conceptual_Theme: [value or list]
 Coding_Confidence: [confidence]
 
 ## Summary
 [Prose summary in the article's own language, covering purpose, arguments, evidence, and relevance.]
 
 ## Productive Incongruences and Challenges
-[Description of any mismatch with metadata schema, baseline structure, or review scope. Or state: "No substantial incongruence identified."]
+[Description of any mismatch with metadata schema, baseline structure, or review scope. Include here any Service_Condition assigned "other" value. Or state: "No substantial incongruence identified."]
 
 ## Suggested Review Contributions
 [List contributions by Target_Section matching exact headings from ${BASELINE_FILE}. Include Contribution_Text with concise, review-ready prose. Or state: "No review contribution warranted."]
