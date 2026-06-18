@@ -25,7 +25,6 @@ PROTECTED_DIRECTORIES: ${HUMAN_SOURCES_FOLDER} (read-only; no modifications)
 4. Read the article carefully and classify it using `${METADATA_SCHEMA_FILE}` controlled vocabulary.
 5. Write a single standalone summary markdown file in `${SUMMARY_FOLDER}` following the naming convention.
 6. File the article in Zotero under "Summary Complete" collection and any section-specific collections that match its contributions.
-7. Commit all changes with a single git commit at the end of the run.
 
 ## FILENAME CONVENTION
 
@@ -132,14 +131,6 @@ After the summary file is written and verified:
 2. For each suggested review contribution, identify the corresponding collection in Zotero that matches the baseline structure section. Add the article to all applicable collections.
 3. Preserve all existing collection memberships.
 
-### Step 7: Commit
-Stage only the new summary file. Commit with message:
-```
-Add ${SOURCE_AUTHOR_LASTNAME}${SOURCE_YEAR} GBLS summary
-```
-
-Do not commit multiple articles in one commit. Do not modify or commit any files in `${HUMAN_SOURCES_FOLDER}`.
-
 ## READING AND CLASSIFICATION GUIDANCE
 
 **Do not invent or distort.** Read the article's own claims, methods, and evidence. Classify based on what the article actually does, not what you wish it did. Use `medium` or `low` confidence for uncertain classifications.
@@ -166,16 +157,14 @@ If no incongruence exists, state: "No substantial incongruence identified."
 
 **Do not modify `${HUMAN_SOURCES_FOLDER}`.** This directory contains the authoritative metadata schema, baseline structure, and values framework. Read these files to inform your work; do not edit them.
 
-## QUALITY VERIFICATION BEFORE COMMIT
+## QUALITY VERIFICATION
 
-Before committing:
+Before completing the workflow:
 - The summary file exists in `${SUMMARY_FOLDER}` with the correct naming pattern.
 - The metadata uses only controlled values from `${METADATA_SCHEMA_FILE}`.
 - The APA citation is complete and accurate (verify against the PDF title page if uncertain).
 - No existing summary file for this article appears elsewhere in `${SUMMARY_FOLDER}`.
 - Zotero collections have been updated to include "Summary Complete" and any section-specific collections.
-- Git status shows only the new summary file staged.
-- The commit message follows the format: "Add [AUTHOR][YEAR] GBLS summary"
 
 ## FINAL REPORT
 
@@ -183,7 +172,6 @@ Report:
 - Article processed (author, year, Zotero key)
 - Summary file created with full path
 - Collections assigned in Zotero
-- Commit hash
 - Remaining unfiled count (from the original tool output)
 
 If the workflow encounters a blocking issue (e.g., PDF cannot be extracted, Zotero is locked, collection name cannot be found), stop, document the specific blocker, and report it without making partial changes.
