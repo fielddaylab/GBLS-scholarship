@@ -9,9 +9,14 @@
 <body>
   <div class="app-container">
     <!-- Header -->
-    <header class="app-header">
-      <h1>GBLS Literature Reviewer</h1>
-      <p class="subtitle">Unified review interface for metrics exploration and article classification</p>
+     <header class="app-header">
+      <div class="header-content">
+        <div>
+          <h1>GBLS Literature Reviewer</h1>
+          <p class="subtitle">Unified review interface for metrics exploration and article classification</p>
+        </div>
+        <div id="user-menu" class="user-menu"></div>
+      </div>
     </header>
 
     <!-- Navigation Tabs -->
@@ -129,11 +134,10 @@
           <h2>Review Article Summaries</h2>
           <p>Review and provide feedback on existing article summaries from the corpus.</p>
           
-          <div class="login-section" id="summaries-login" style="display: none;">
-            <label for="summaries-usercode">Your Code:</label>
-            <input type="text" id="summaries-usercode" placeholder="Enter your reviewer code">
-            <button class="btn-primary" onclick="startSummaryReview()">Start Review</button>
-          </div>
+           <div class="login-section" id="summaries-login" style="display: none;">
+             <p>You are logged in as: <strong id="summaries-user-display"></strong></p>
+             <button class="btn-primary" onclick="startSummaryReview()">Start Review</button>
+           </div>
 
           <div class="summaries-review" id="summaries-review" style="display: none;">
             <div class="article-selector">
@@ -191,12 +195,10 @@
           <h2>Review Article Classifications</h2>
           <p>Code articles with quality ratings and metadata classifications.</p>
           
-          <div class="login-section" id="classify-login">
-            <label for="classify-usercode">Your Code:</label>
-            <input type="text" id="classify-usercode" placeholder="Enter your coder code">
-            <button class="btn-primary" onclick="startClassification()">Start Coding</button>
-            <div id="known-coders" class="known-coders" style="margin-top: 1rem;"></div>
-          </div>
+           <div class="login-section" id="classify-login">
+             <p>You are logged in as: <strong id="classify-user-display"></strong></p>
+             <button class="btn-primary" onclick="startClassification()">Start Coding</button>
+           </div>
 
           <div class="classify-review" id="classify-review" style="display: none;">
             <div class="article-selector">

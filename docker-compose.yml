@@ -16,6 +16,7 @@ services:
       CORPUS_DIR: ../1_coded_gbls_corpus_articles
       METRICS_DIR: ../2_calculated_metrics
       NODE_ENV: production
+      DEBUG_MODE: "true"
     volumes:
       - gbls-submissions:/app/submissions
     restart: unless-stopped

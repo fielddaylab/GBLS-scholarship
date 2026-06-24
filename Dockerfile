@@ -23,7 +23,8 @@ ENV NODE_ENV=production \
     PORT=8787 \
     SUBMISSIONS_DIR=/app/submissions \
     CORPUS_DIR=../1_coded_gbls_corpus_articles \
-    METRICS_DIR=../2_calculated_metrics
+    METRICS_DIR=../2_calculated_metrics \
+    DEBUG_MODE=true
 
 # Expose port
 EXPOSE 8787

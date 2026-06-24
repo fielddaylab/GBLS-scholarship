@@ -3,6 +3,7 @@
 
 // Global State
 const state = {
+  user: null,
   metrics: null,
   articles: [],
   codings: [],
@@ -22,13 +23,11 @@ const state = {
 
   // Summaries state
   summariesState: {
-    usercode: localStorage.getItem('summaries_usercode') || '',
     currentArticle: null
   },
 
   // Classification state
   classifyState: {
-    usercode: localStorage.getItem('classify_usercode') || '',
     currentArticle: null,
     rubricDefinition: null,
     lexicon: null
@@ -37,10 +36,62 @@ const state = {
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', async () => {
+  // Check authentication first
+  await checkAndLoadUser();
+  
+  if (!state.user) {
+    // Not authenticated, redirect to login
+    window.location.href = '/login.html';
+    return;
+  }
+
   setupTabs();
+  setupUserMenu();
   await loadInitialData();
   renderMetricsTab();
 });
+
+async function checkAndLoadUser() {
+  try {
+    const response = await fetch('/api/user');
+    if (response.ok) {
+      state.user = await response.json();
+      displayUserInfo();
+      return true;
+    }
+  } catch (error) {
+    console.error('Error loading user:', error);
+  }
+  return false;
+}
+
+function displayUserInfo() {
+  const userMenu = document.getElementById('user-menu');
+  if (userMenu && state.user) {
+    userMenu.innerHTML = `
+      <div class="user-info">
+        <span class="user-name">${state.user.fullName}</span>
+        <span class="user-initials">${state.user.initials}</span>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+      </div>
+    `;
+    
+    document.getElementById('logoutBtn').addEventListener('click', logout);
+  }
+}
+
+function setupUserMenu() {
+  // Menu setup handled in displayUserInfo
+}
+
+async function logout() {
+  try {
+    await fetch('/api/logout', { method: 'POST' });
+    window.location.href = '/login.html';
+  } catch (error) {
+    console.error('Logout error:', error);
+  }
+}
 
 // Tab Management
 function setupTabs() {
@@ -373,7 +424,10 @@ function initializeSummariesTab() {
   const loginSection = document.getElementById('summaries-login');
   const reviewSection = document.getElementById('summaries-review');
 
-  if (state.summariesState.usercode) {
+  if (state.user) {
+    // Show user initials
+    document.getElementById('summaries-user-display').textContent = 
+      `${state.user.fullName} (${state.user.initials})`;
     loginSection.style.display = 'none';
     reviewSection.style.display = 'block';
     populateSummariesArticleSelect();
@@ -384,14 +438,11 @@ function initializeSummariesTab() {
 }
 
 async function startSummaryReview() {
-  const usercode = document.getElementById('summaries-usercode').value.trim();
-  if (!usercode) {
-    alert('Please enter a reviewer code');
+  if (!state.user) {
+    alert('Please log in to submit reviews');
+    window.location.href = '/login.html';
     return;
   }
-  
-  state.summariesState.usercode = usercode;
-  localStorage.setItem('summaries_usercode', usercode);
   
   document.getElementById('summaries-login').style.display = 'none';
   document.getElementById('summaries-review').style.display = 'block';
@@ -451,16 +502,24 @@ async function submitSummaryReview(event) {
     return;
   }
 
-  const submission = {
-    articleId: state.summariesState.currentArticle.id,
-    usercode: state.summariesState.usercode,
-    summary: state.summariesState.currentArticle.summary,
+  if (!state.user) {
+    alert('You must be logged in to submit');
+    return;
+  }
+
+  const ratings = {
     quality: document.getElementById('summaries-quality').value,
     notes: document.getElementById('summaries-notes').value
   };
 
+  const submission = {
+    articleId: state.summariesState.currentArticle.id,
+    ratings,
+    userInitials: state.user.initials
+  };
+
   try {
-    const response = await fetch('/api/summary', {
+    const response = await fetch('/api/summaries', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(submission)
@@ -488,7 +547,10 @@ function initializeClassifyTab() {
   const loginSection = document.getElementById('classify-login');
   const reviewSection = document.getElementById('classify-review');
 
-  if (state.classifyState.usercode) {
+  if (state.user) {
+    // Show user initials
+    document.getElementById('classify-user-display').textContent = 
+      `${state.user.fullName} (${state.user.initials})`;
     loginSection.style.display = 'none';
     reviewSection.style.display = 'block';
     populateClassifyArticleSelect();
@@ -496,43 +558,15 @@ function initializeClassifyTab() {
   } else {
     loginSection.style.display = 'block';
     reviewSection.style.display = 'none';
-    loadAvailableCoders();
-  }
-}
-
-async function loadAvailableCoders() {
-  try {
-    const response = await fetch('/api/usercodes');
-    if (response.ok) {
-      const coders = await response.json();
-      if (coders.length > 0) {
-        const container = document.getElementById('known-coders');
-        container.innerHTML = '<p style="margin-top: 0;">Known coders:</p>';
-        coders.forEach(coder => {
-          const btn = document.createElement('button');
-          btn.className = 'btn-secondary known-coder-btn';
-          btn.textContent = coder;
-          btn.onclick = () => {
-            document.getElementById('classify-usercode').value = coder;
-          };
-          container.appendChild(btn);
-        });
-      }
-    }
-  } catch (error) {
-    console.error('Error loading coders:', error);
   }
 }
 
 async function startClassification() {
-  const usercode = document.getElementById('classify-usercode').value.trim();
-  if (!usercode) {
-    alert('Please enter a coder code');
+  if (!state.user) {
+    alert('You must be logged in to submit classifications');
+    window.location.href = '/login.html';
     return;
   }
-
-  state.classifyState.usercode = usercode;
-  localStorage.setItem('classify_usercode', usercode);
 
   document.getElementById('classify-login').style.display = 'none';
   document.getElementById('classify-review').style.display = 'block';
@@ -673,6 +707,11 @@ async function submitClassification(event) {
     return;
   }
 
+  if (!state.user) {
+    alert('You must be logged in to submit classifications');
+    return;
+  }
+
   if (!state.classifyState.rubricDefinition) {
     alert('Rubric not loaded');
     return;
@@ -687,31 +726,27 @@ async function submitClassification(event) {
     }
   });
 
-  // Collect metadata selections
-  const lexicon = {};
+  // Collect metadata selections (codes)
+  const codes = {};
   if (state.classifyState.lexicon && Array.isArray(state.classifyState.lexicon)) {
     state.classifyState.lexicon.forEach(group => {
       const selected = Array.from(
         document.querySelectorAll(`input[name="meta-${group.id}"]:checked`)
       ).map(cb => cb.value);
       if (selected.length > 0) {
-        lexicon[group.id] = selected;
+        codes[group.id] = selected;
       }
     });
   }
 
   const submission = {
     articleId: state.classifyState.currentArticle.id,
-    usercode: state.classifyState.usercode,
-    rubric,
-    rubricId: state.classifyState.rubricDefinition.id,
-    rubricVersion: state.classifyState.rubricDefinition.version,
-    lexicon,
-    recordType: 'human_coding'
+    codes: { ...rubric, ...codes },
+    userInitials: state.user.initials
   };
 
   try {
-    const response = await fetch('/api/coding', {
+    const response = await fetch('/api/codings', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(submission)

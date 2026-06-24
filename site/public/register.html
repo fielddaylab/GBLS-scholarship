@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - GBLS Literature Reviewer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .auth-container {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      padding: 40px;
+    }
+
+    .auth-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .auth-header h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .auth-header p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    label .required {
+      color: #e74c3c;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .initials-hint {
+      font-size: 12px;
+      color: #999;
+      margin-top: 4px;
+    }
+
+    .initials-status {
+      font-size: 12px;
+      margin-top: 4px;
+      display: none;
+    }
+
+    .initials-status.available {
+      color: #27ae60;
+      display: block;
+    }
+
+    .initials-status.taken {
+      color: #e74c3c;
+      display: block;
+    }
+
+    .oauth-section {
+      margin: 25px 0;
+      padding: 20px 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    .oauth-title {
+      text-align: center;
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .oauth-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .oauth-btn {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: white;
+      color: #333;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .oauth-btn:hover {
+      border-color: #667eea;
+      background: #f8f9ff;
+    }
+
+    .oauth-btn.github {
+      border-color: #24292e;
+    }
+
+    .oauth-btn.github:hover {
+      background: #f6f8fa;
+    }
+
+    .oauth-btn.google {
+      border-color: #dadce0;
+    }
+
+    .oauth-btn.google:hover {
+      background: #f8f9fa;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 12px;
+      color: #999;
+      position: relative;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background: #eee;
+    }
+
+    .divider::before {
+      left: 0;
+    }
+
+    .divider::after {
+      right: 0;
+    }
+
+    .recaptcha-section {
+      margin: 20px 0;
+      padding: 10px;
+      background: #f8f9fa;
+      border-radius: 4px;
+    }
+
+    #g_id_onload {
+      display: flex;
+      justify-content: center;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 10px;
+    }
+
+    button[type="submit"]:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    button[type="submit"]:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .login-link a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    .error-message {
+      color: #e74c3c;
+      font-size: 13px;
+      margin-top: 5px;
+      display: none;
+    }
+
+    .error-message.show {
+      display: block;
+    }
+
+    .success-message {
+      color: #27ae60;
+      font-size: 13px;
+      margin-top: 5px;
+      display: none;
+    }
+
+    .success-message.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-header">
+      <h1>GBLS Literature Reviewer</h1>
+      <p>Create your account to get started</p>
+    </div>
+
+    <form id="registerForm">
+      <div class="form-group">
+        <label>Full Name <span class="required">*</span></label>
+        <input type="text" name="fullName" id="fullName" required placeholder="Jane Smith">
+      </div>
+
+      <div class="form-group">
+        <label>Email (used as username) <span class="required">*</span></label>
+        <input type="email" name="email" id="email" required placeholder="jane@example.com">
+        <div class="error-message" id="emailError"></div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>3-Letter Initials <span class="required">*</span></label>
+          <input type="text" name="initials" id="initials" required maxlength="3" placeholder="JMS" style="text-transform: uppercase;">
+          <div class="initials-hint">Must be 3 unique letters (contribution code)</div>
+          <div class="initials-status" id="initialsStatus"></div>
+        </div>
+
+        <div class="form-group">
+          <label>Organization</label>
+          <input type="text" name="organization" id="organization" placeholder="Optional">
+        </div>
+      </div>
+
+      <!-- OAuth Section -->
+      <div class="oauth-section">
+        <div class="oauth-title">Sign up with</div>
+        <div class="oauth-buttons">
+          <a href="/auth/github" class="oauth-btn github">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="/auth/google" class="oauth-btn google">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M15.5 8.2c0-.5-.1-1-.2-1.5H8v2.8h4.4c-.2 1-.8 1.9-1.6 2.5v2h2.6c1.5-1.4 2.4-3.4 2.4-5.8z" fill="#4285F4"/>
+              <path d="M8 16c2.1 0 3.9-.7 5.2-1.9l-2.6-2c-.7.5-1.6.8-2.6.8-2 0-3.7-1.3-4.3-3.2H1v2.6C2.3 15 5 16 8 16z" fill="#34A853"/>
+              <path d="M3.7 9.7c-.3-.5-.4-1-.4-1.7s.1-1.2.4-1.7V3.7H1C.3 5.1 0 6.5 0 8s.3 2.9 1 4.3l2.7-2.6z" fill="#FBBC04"/>
+              <path d="M8 3.1c1.1 0 2.1.4 2.9 1.2l2.2-2.2C11.8.6 10.1 0 8 0 5 0 2.3 1 1 3.7l2.7 2.6c.6-1.9 2.3-3.2 4.3-3.2z" fill="#EA4335"/>
+            </svg>
+            Google
+          </a>
+        </div>
+      </div>
+
+      <div class="divider">or register with email</div>
+
+      <!-- reCAPTCHA -->
+      <div class="recaptcha-section">
+        <div class="g_id_signin" data-type="standard"></div>
+      </div>
+
+      <button type="submit" id="submitBtn" disabled>Create Account</button>
+      <div class="error-message" id="formError"></div>
+    </form>
+
+    <div class="login-link">
+      Already have an account? <a href="/login">Sign in</a>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('registerForm');
+    const fullNameInput = document.getElementById('fullName');
+    const emailInput = document.getElementById('email');
+    const initialsInput = document.getElementById('initials');
+    const organizationInput = document.getElementById('organization');
+    const submitBtn = document.getElementById('submitBtn');
+    const formError = document.getElementById('formError');
+    const emailError = document.getElementById('emailError');
+    const initialsStatus = document.getElementById('initialsStatus');
+
+    let captchaVerified = false;
+
+    // Handle Google Sign-In callback
+    window.handleGoogleSignIn = function(response) {
+      console.log('Google Sign-In successful');
+      captchaVerified = true;
+      updateSubmitButton();
+    };
+
+    // Convert input to uppercase for initials
+    initialsInput.addEventListener('input', (e) => {
+      e.target.value = e.target.value.toUpperCase();
+      checkInitials();
+    });
+
+    async function checkInitials() {
+      const initials = initialsInput.value.trim();
+      
+      if (initials.length !== 3) {
+        initialsStatus.textContent = '';
+        initialsStatus.classList.remove('available', 'taken');
+        return;
+      }
+
+      if (!/^[A-Z]{3}$/.test(initials)) {
+        initialsStatus.textContent = 'Must be 3 letters';
+        initialsStatus.classList.add('taken');
+        initialsStatus.classList.remove('available');
+        return;
+      }
+
+      try {
+        const response = await fetch(`/api/check-initials?initials=${encodeURIComponent(initials)}`);
+        const data = await response.json();
+        
+        if (data.available) {
+          initialsStatus.textContent = '✓ Available';
+          initialsStatus.classList.add('available');
+          initialsStatus.classList.remove('taken');
+        } else {
+          initialsStatus.textContent = '✗ Already taken';
+          initialsStatus.classList.add('taken');
+          initialsStatus.classList.remove('available');
+        }
+      } catch (error) {
+        console.error('Error checking initials:', error);
+      }
+    }
+
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+
+    function updateSubmitButton() {
+      const isFormValid = 
+        fullNameInput.value.trim() &&
+        validateEmail(emailInput.value) &&
+        initialsInput.value.length === 3 &&
+        /^[A-Z]{3}$/.test(initialsInput.value) &&
+        captchaVerified;
+      
+      submitBtn.disabled = !isFormValid;
+    }
+
+    fullNameInput.addEventListener('input', updateSubmitButton);
+    emailInput.addEventListener('input', () => {
+      emailError.textContent = '';
+      updateSubmitButton();
+    });
+    initialsInput.addEventListener('input', updateSubmitButton);
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      formError.textContent = '';
+      formError.classList.remove('show');
+      submitBtn.disabled = true;
+
+      const fullName = fullNameInput.value.trim();
+      const email = emailInput.value.trim();
+      const initials = initialsInput.value.trim();
+      const organization = organizationInput.value.trim();
+
+      try {
+        const response = await fetch('/api/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            fullName,
+            email,
+            initials,
+            organizationalAffiliation: organization
+          })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Registration failed');
+        }
+
+        // Redirect to dashboard on success
+        window.location.href = '/';
+      } catch (error) {
+        formError.textContent = error.message;
+        formError.classList.add('show');
+        submitBtn.disabled = false;
+      }
+    });
+
+    // Initial button state
+    updateSubmitButton();
+  </script>
+
+  <!-- Google Sign-In Integration -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script>
+    window.onload = function () {
+      google.accounts.id.initialize({
+        client_id: '{{ GOOGLE_CLIENT_ID }}', // Replace with actual Google Client ID
+        callback: handleGoogleSignIn
+      });
+      google.accounts.id.renderButton(
+        document.querySelector('.g_id_signin'),
+        { theme: 'outline', size: 'large' }
+      );
+    };
+  </script>
+</body>
+</html>

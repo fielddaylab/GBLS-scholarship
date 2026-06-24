@@ -1,0 +1,27 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - heading "GBLS Literature Reviewer" [level=1] [ref=e4]
+    - paragraph [ref=e5]: Sign in to your account
+  - generic [ref=e6]:
+    - strong [ref=e7]: "Debug Mode Enabled:"
+    - text: Simply enter any email to login. User will be created automatically.
+    - text: (This will be disabled once configuration is complete.)
+  - generic [ref=e8]:
+    - link "GitHub" [ref=e9] [cursor=pointer]:
+      - /url: /auth/github
+      - img [ref=e10]
+      - text: GitHub
+    - link "Google" [ref=e12] [cursor=pointer]:
+      - /url: /auth/google
+      - img [ref=e13]
+      - text: Google
+  - generic [ref=e18]: or sign in with email
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]: Email Address
+      - textbox "jane@example.com" [ref=e22]
+    - button "Sign In" [ref=e23] [cursor=pointer]
+  - generic [ref=e24]:
+    - text: Don't have an account?
+    - link "Create one now" [ref=e25] [cursor=pointer]:
+      - /url: /register

@@ -2,6 +2,26 @@ import express from 'express';
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import cookieParser from 'cookie-parser';
+import axios from 'axios';
+import {
+  initializeDatabase,
+  getUserByEmail,
+  getUserById,
+  getUserByInitials,
+  isInitialsTaken
+} from './db.mjs';
+import {
+  createToken,
+  verifyToken,
+  registerUser,
+  handleGithubAuth,
+  handleGoogleAuth,
+  loginWithEmail,
+  setSessionCookie,
+  clearSessionCookie,
+  verifyRecaptcha
+} from './auth.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -9,11 +29,28 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 8787;
 
-// Data directories - use environment or fallback to project root paths
+// Determine environment and URLs
+const isProduction = process.env.NODE_ENV === 'production';
+const isRender = process.env.RENDER === 'true' || process.env.RENDER_EXTERNAL_URL;
+const appUrl = process.env.APP_URL || 
+  process.env.RENDER_EXTERNAL_URL || 
+  (process.env.NODE_ENV === 'production' ? 'https://gamebasedlibraryservicesliterature.onrender.com' : 'http://localhost:8787');
+
+// Data directories
 const SUBMISSIONS_DIR = process.env.SUBMISSIONS_DIR || 
-  (process.env.NODE_ENV === 'production' ? '/app/submissions' : path.resolve(__dirname, '../0_human_sources'));
+  (isRender ? '/tmp/submissions' : isProduction ? '/app/submissions' : path.resolve(__dirname, '../0_human_sources'));
 const CORPUS_DIR = process.env.CORPUS_DIR || '../1_coded_gbls_corpus_articles';
 const METRICS_DIR = process.env.METRICS_DIR || '../2_calculated_metrics';
+
+// Allowed origins for CORS
+const allowedOrigins = [
+  'http://localhost:8787',
+  'http://localhost:3000',
+  'https://gamebasedlibraryservicesliterature.onrender.com'
+];
+
+// Initialize database
+initializeDatabase();
 
 // Ensure submissions directory exists
 try {
@@ -25,23 +62,85 @@ try {
 
 // Middleware
 app.use(express.json());
+app.use(cookieParser());
 
-// CORS headers
+// CORS headers - allow localhost and Render domains
 app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  
+  // Allow if origin matches allowed list or if no origin (same-domain requests)
+  if (!origin || allowedOrigins.includes(origin)) {
+    res.set('Access-Control-Allow-Origin', origin || '*');
+  }
+  
   res.set('Cache-Control', 'no-store');
-  res.set('Access-Control-Allow-Origin', '*');
   res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.set('Access-Control-Allow-Headers', 'Content-Type');
+  res.set('Access-Control-Allow-Credentials', 'true');
+  
   if (req.method === 'OPTIONS') {
     return res.sendStatus(200);
   }
   next();
 });
 
+// Auth middleware to extract user from token
+app.use((req, res, next) => {
+  const token = req.cookies.auth_token;
+  if (token) {
+    const decoded = verifyToken(token);
+    if (decoded) {
+      req.user = getUserById(decoded.userId);
+      if (!req.user) {
+        // User doesn't exist, clear cookie
+        clearSessionCookie(res);
+      }
+    } else {
+      // Invalid token
+      clearSessionCookie(res);
+    }
+  }
+  next();
+});
+
+// Protected route middleware
+function requireAuth(req, res, next) {
+  if (!req.user) {
+    return res.status(401).json({ error: 'Authentication required' });
+  }
+  next();
+}
+
+// Public auth routes (no authentication required)
+const authRoutes = ['/auth/', '/api/register', '/api/login', '/api/check-initials', '/health'];
+
+// Middleware to redirect unauthenticated users
+app.use((req, res, next) => {
+  // Allow auth routes, health check, and static files
+  if (authRoutes.some(route => req.path.startsWith(route)) || 
+      req.path === '/register.html' || 
+      req.path === '/login.html' ||
+      req.path.endsWith('.css') || 
+      req.path.endsWith('.js')) {
+    return next();
+  }
+
+  // Redirect to login if not authenticated and trying to access app
+  if (!req.user && (req.path === '/' || req.path.startsWith('/api/'))) {
+    if (req.path.startsWith('/api/')) {
+      return res.status(401).json({ error: 'Please log in to access this resource' });
+    }
+    return res.redirect('/login.html');
+  }
+
+  next();
+});
+
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Utility functions
+// ==================== UTILITY FUNCTIONS ====================
+
 function cleanUsercode(value) {
   return String(value || '').trim().replace(/\s+/g, ' ');
 }
@@ -98,52 +197,154 @@ async function listFilesWithPrefix(dir, prefix) {
   }
 }
 
-function validCoding(body, rubricDefinition) {
-  if (!body || typeof body !== 'object') return 'Missing coding data.';
-  if (!/^[A-Za-z0-9][A-Za-z0-9 _.-]{0,39}$/.test(cleanUsercode(body.usercode))) {
-    return 'Usercode must be 1-40 characters and use letters, numbers, spaces, dots, dashes, or underscores.';
-  }
-  if (!/^[A-Z0-9]{8}$/.test(String(body.articleId || ''))) {
-    return 'Invalid article identifier.';
-  }
-  const metadataOnly = ['prior_prompt_metadata', 'human_metadata_only'].includes(body.recordType);
-  const codingFunction = body.codingFunction || (metadataOnly ? 'metadata' : 'combined');
-  if (!['summary', 'metadata', 'combined'].includes(codingFunction)) {
-    return 'Coding function must be summary or metadata.';
-  }
-  const rubricKeys = rubricDefinition.dimensions.map((dimension) => dimension.id);
-  const validScores = new Set(
-    Array.from(
-      { length: rubricDefinition.scoreMaximum - rubricDefinition.scoreMinimum + 1 },
-      (_, index) => rubricDefinition.scoreMinimum + index,
-    ),
-  );
-  if (codingFunction !== 'metadata' && !metadataOnly && (
-    body.rubricId !== rubricDefinition.id
-    || body.rubricVersion !== rubricDefinition.version
-  )) {
-    return `Rubric version changed. Reload and use ${rubricDefinition.id} v${rubricDefinition.version}.`;
-  }
-  if (codingFunction !== 'metadata' && !metadataOnly
-    && (!body.rubric || rubricKeys.some((key) => !validScores.has(body.rubric[key])))) {
-    return 'Every summary rubric dimension must be scored.';
-  }
-  if (codingFunction !== 'summary' && (!body.lexicon || typeof body.lexicon !== 'object')) {
-    return 'Lexicon selections are required.';
-  }
-  return null;
-}
+// ==================== AUTHENTICATION ROUTES ====================
 
-// API Routes
-
-app.get('/api/health', (req, res) => {
+// Health check (public)
+app.get('/health', (req, res) => {
   res.json({ ok: true });
 });
 
-// Metrics endpoints
-app.get('/api/metrics', async (req, res) => {
+// Register endpoint
+app.post('/api/register', async (req, res) => {
   try {
-    // Load dataset summary
+    const { fullName, email, initials, organizationalAffiliation, recaptchaToken } = req.body;
+
+    // Validate input
+    if (!fullName || !email || !initials) {
+      return res.status(400).json({ error: 'Missing required fields' });
+    }
+
+    // Optional: Verify reCAPTCHA if token provided
+    if (recaptchaToken && process.env.RECAPTCHA_SECRET_KEY) {
+      const isValidCaptcha = await verifyRecaptcha(recaptchaToken);
+      if (!isValidCaptcha) {
+        return res.status(400).json({ error: 'CAPTCHA verification failed' });
+      }
+    }
+
+    // Register user
+    const { user, token } = await registerUser(email, fullName, initials, organizationalAffiliation);
+
+    // Set cookie and return user
+    setSessionCookie(res, token);
+    res.json({
+      success: true,
+      user: {
+        id: user.id,
+        email: user.email,
+        fullName: user.full_name,
+        initials: user.initials,
+        organizationalAffiliation: user.organizational_affiliation
+      }
+    });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
+
+// Check if initials are available
+app.get('/api/check-initials', async (req, res) => {
+  try {
+    const { initials } = req.query;
+
+    if (!initials || initials.length !== 3) {
+      return res.status(400).json({ error: 'Invalid initials' });
+    }
+
+    const isTaken = isInitialsTaken(initials);
+    res.json({ available: !isTaken });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Login endpoint
+app.post('/api/login', async (req, res) => {
+  try {
+    const { email } = req.body;
+
+    if (!email) {
+      return res.status(400).json({ error: 'Email is required' });
+    }
+
+    // In debug mode, allow login with just email (auto-creates user if needed)
+    const debugMode = process.env.DEBUG_MODE === 'true';
+    const { user, token } = await loginWithEmail(email, debugMode);
+
+    setSessionCookie(res, token);
+    res.json({
+      success: true,
+      user: {
+        id: user.id,
+        email: user.email,
+        fullName: user.full_name,
+        initials: user.initials,
+        organizationalAffiliation: user.organizational_affiliation
+      },
+      debug: debugMode ? 'Debug mode enabled - user auto-created' : undefined
+    });
+  } catch (error) {
+    res.status(401).json({ error: error.message });
+  }
+});
+
+// Logout endpoint
+app.post('/api/logout', (req, res) => {
+  clearSessionCookie(res);
+  res.json({ success: true });
+});
+
+// Get current user
+app.get('/api/user', (req, res) => {
+  if (!req.user) {
+    return res.status(401).json({ error: 'Not authenticated' });
+  }
+
+  res.json({
+    id: req.user.id,
+    email: req.user.email,
+    fullName: req.user.full_name,
+    initials: req.user.initials,
+    organizationalAffiliation: req.user.organizational_affiliation
+  });
+});
+
+// GitHub OAuth callback (simplified - would need OAuth setup)
+app.get('/auth/github/callback', async (req, res) => {
+  try {
+    const { code } = req.query;
+    if (!code) {
+      return res.redirect('/login.html?error=No code provided');
+    }
+
+    // In a real implementation, exchange code for GitHub access token
+    // and fetch user profile. For now, return error.
+    res.redirect('/login.html?error=GitHub authentication not yet configured');
+  } catch (error) {
+    res.redirect('/login.html?error=Authentication failed');
+  }
+});
+
+// Google OAuth callback (simplified - would need OAuth setup)
+app.get('/auth/google/callback', async (req, res) => {
+  try {
+    const { code } = req.query;
+    if (!code) {
+      return res.redirect('/login.html?error=No code provided');
+    }
+
+    // In a real implementation, exchange code for Google access token
+    // and fetch user profile. For now, return error.
+    res.redirect('/login.html?error=Google authentication not yet configured');
+  } catch (error) {
+    res.redirect('/login.html?error=Authentication failed');
+  }
+});
+
+// ==================== METRICS ENDPOINTS ====================
+
+app.get('/api/metrics', requireAuth, async (req, res) => {
+  try {
     const metricsPath = path.resolve(__dirname, METRICS_DIR, 'gbls_corpus_metrics');
     const datasetPath = path.join(metricsPath, 'dataset_summary.json');
     
@@ -152,11 +353,10 @@ app.get('/api/metrics', async (req, res) => {
       const content = await fs.readFile(datasetPath, 'utf-8');
       summary = JSON.parse(content);
     } catch (error) {
-      console.error('Error loading dataset summary:', error.message, 'Path:', datasetPath);
+      console.error('Error loading dataset summary:', error.message);
       return res.status(500).json({ error: 'Metrics data not found' });
     }
     
-    // Load articles from CSV
     const articlesPath = path.join(metricsPath, 'articles_core.csv');
     let articles = [];
     
@@ -177,7 +377,6 @@ app.get('/api/metrics', async (req, res) => {
       console.warn('Could not load articles from CSV:', error.message);
     }
     
-    // Build feature groups from summary data dictionary
     const featureGroups = [
       { key: 'source_type', label: 'Source Type' },
       { key: 'peer_review', label: 'Peer Review' },
@@ -203,7 +402,7 @@ app.get('/api/metrics', async (req, res) => {
   }
 });
 
-app.get('/api/reference-metrics', async (req, res) => {
+app.get('/api/reference-metrics', requireAuth, async (req, res) => {
   try {
     const metricsPath = path.resolve(__dirname, METRICS_DIR, 'reference_corpus_metrics');
     const datasetPath = path.join(metricsPath, 'dataset_summary.json');
@@ -214,12 +413,12 @@ app.get('/api/reference-metrics', async (req, res) => {
   }
 });
 
-// Articles endpoints
-app.get('/api/articles', async (req, res) => {
+// ==================== ARTICLES ENDPOINTS ====================
+
+app.get('/api/articles', requireAuth, async (req, res) => {
   try {
     const articles = [];
     
-    // Try to load from public/data/articles first (preprocessed JSON)
     const publicDataPath = path.join(__dirname, 'public', 'data', 'articles');
     try {
       const files = await fs.readdir(publicDataPath);
@@ -239,7 +438,6 @@ app.get('/api/articles', async (req, res) => {
         }
       }
     } catch (error) {
-      // Fallback to corpus directory if public/data/articles doesn't exist
       const corpusPath = path.resolve(__dirname, CORPUS_DIR);
       try {
         const files = await fs.readdir(corpusPath);
@@ -269,183 +467,136 @@ app.get('/api/articles', async (req, res) => {
   }
 });
 
-app.get('/api/article/:id', async (req, res) => {
+app.get('/api/article/:id', requireAuth, async (req, res) => {
   try {
-    // Try public/data/articles first
     let data = null;
     const publicFilePath = path.join(__dirname, 'public', 'data', 'articles', `${req.params.id}.json`);
     data = await readJSONFile(publicFilePath);
     
-    // Fallback to corpus directory
     if (!data) {
       const corpusPath = path.resolve(__dirname, CORPUS_DIR);
       const corpusFilePath = path.join(corpusPath, `${req.params.id}.json`);
       data = await readJSONFile(corpusFilePath);
     }
-    
+
     if (!data) {
       return res.status(404).json({ error: 'Article not found' });
     }
-    
+
     res.json(data);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
 
-// Coding submissions endpoints
-app.get('/api/usercodes', async (req, res) => {
-  try {
-    const submissions = await listFilesWithPrefix(SUBMISSIONS_DIR, 'user:');
-    const usercodes = submissions.map((record) => record.usercode).sort();
-    res.json(usercodes);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
+// ==================== CODINGS ENDPOINTS ====================
 
-app.get('/api/codings', async (req, res) => {
+app.get('/api/codings', requireAuth, async (req, res) => {
   try {
-    const articleId = req.query.articleId;
-    const prefix = articleId ? `coding:${articleId}:` : 'coding:';
-    const codings = await listFilesWithPrefix(SUBMISSIONS_DIR, prefix);
+    const codingsDir = path.join(SUBMISSIONS_DIR, 'article_codings');
+    const codings = await listFilesWithPrefix(codingsDir, 'coding_');
     res.json(codings);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
 
-app.post('/api/coding', async (req, res) => {
+app.post('/api/codings', requireAuth, async (req, res) => {
   try {
-    const body = req.body;
-    let rubricDefinition;
-    try {
-      rubricDefinition = await loadRubric();
-    } catch (error) {
-      return res.status(500).json({ error: error.message });
+    const { articleId, codes, userInitials } = req.body;
+    if (!articleId || !codes) {
+      return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    const error = validCoding(body, rubricDefinition);
-    if (error) return res.status(400).json({ error });
-
-    const usercode = cleanUsercode(body.usercode);
-    const codingFunction = body.codingFunction
-      || (['prior_prompt_metadata', 'human_metadata_only'].includes(body.recordType) ? 'metadata' : 'combined');
-    
-    // Save to 0_human_sources/submitted_article_coding.json
-    const submissionsFile = path.resolve(__dirname, '../0_human_sources/submitted_article_coding.json');
-    let allSubmissions = await readJSONFile(submissionsFile) || [];
-    
-    const submission = {
-      articleId: body.articleId,
-      usercode,
-      rubric: codingFunction === 'metadata' ? null : body.rubric || null,
-      rubricId: codingFunction === 'metadata' ? null : body.rubricId || null,
-      rubricVersion: codingFunction === 'metadata' ? null : body.rubricVersion || null,
-      lexicon: codingFunction === 'summary' ? null : body.lexicon,
-      summarySavedAt: codingFunction === 'metadata' ? null : new Date().toISOString(),
-      metadataSavedAt: codingFunction === 'summary' ? null : new Date().toISOString(),
-      savedAt: new Date().toISOString(),
-      recordType: body.recordType || 'human_coding',
-      source: body.source ?? null,
-      version: 2,
+    const codingData = {
+      id: `coding_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      articleId,
+      userInitials: userInitials || req.user.initials,
+      codes,
+      timestamp: new Date().toISOString(),
+      userId: req.user.id
     };
-    
-    // Update or add submission
-    const existingIndex = allSubmissions.findIndex(
-      s => s.articleId === body.articleId && s.usercode === usercode
-    );
-    
-    if (existingIndex >= 0) {
-      allSubmissions[existingIndex] = { ...allSubmissions[existingIndex], ...submission };
-    } else {
-      allSubmissions.push(submission);
-    }
-    
-    await writeJSONFile(submissionsFile, allSubmissions);
-    
-    // Also save per-user file for compatibility
-    const userFile = path.resolve(__dirname, `../0_human_sources/user_${safeKeyPart(usercode)}.json`);
-    await writeJSONFile(userFile, {
-      usercode,
-      lastSeenAt: new Date().toISOString(),
-    });
 
-    res.status(201).json(submission);
+    const filename = `${codingData.id}.json`;
+    const filePath = path.join(SUBMISSIONS_DIR, 'article_codings', filename);
+    await writeJSONFile(filePath, codingData);
+
+    res.json({ success: true, id: codingData.id });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
 
-// Summary review endpoints
-app.get('/api/summaries', async (req, res) => {
+// ==================== SUMMARIES ENDPOINTS ====================
+
+app.get('/api/summaries', requireAuth, async (req, res) => {
   try {
-    const summariesFile = path.resolve(__dirname, '../0_human_sources/submitted_summary_reviews.json');
-    const summaries = await readJSONFile(summariesFile) || [];
+    const summariesDir = path.join(SUBMISSIONS_DIR, 'summary_reviews');
+    const summaries = await listFilesWithPrefix(summariesDir, 'review_');
     res.json(summaries);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
 
-app.post('/api/summary', async (req, res) => {
+app.post('/api/summaries', requireAuth, async (req, res) => {
   try {
-    const body = req.body;
+    const rubric = await loadRubric();
+    const { articleId, ratings, userInitials } = req.body;
     
-    if (!body || typeof body !== 'object') {
-      return res.status(400).json({ error: 'Missing summary data.' });
-    }
-    if (!/^[A-Za-z0-9][A-Za-z0-9 _.-]{0,39}$/.test(cleanUsercode(body.usercode))) {
-      return res.status(400).json({ error: 'Invalid usercode.' });
-    }
-    if (!/^[A-Z0-9]{8}$/.test(String(body.articleId || ''))) {
-      return res.status(400).json({ error: 'Invalid article identifier.' });
+    if (!articleId || !ratings) {
+      return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    const summariesFile = path.resolve(__dirname, '../0_human_sources/submitted_summary_reviews.json');
-    let allSummaries = await readJSONFile(summariesFile) || [];
-    
-    const submission = {
-      articleId: body.articleId,
-      usercode: cleanUsercode(body.usercode),
-      summary: body.summary || '',
-      quality: body.quality || null,
-      notes: body.notes || '',
-      savedAt: new Date().toISOString(),
+    const summaryData = {
+      id: `review_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      articleId,
+      userInitials: userInitials || req.user.initials,
+      ratings,
+      timestamp: new Date().toISOString(),
+      userId: req.user.id,
+      rubricId: rubric.id,
+      rubricVersion: rubric.version
     };
-    
-    // Update or add submission
-    const existingIndex = allSummaries.findIndex(
-      s => s.articleId === body.articleId && s.usercode === submission.usercode
-    );
-    
-    if (existingIndex >= 0) {
-      allSummaries[existingIndex] = submission;
-    } else {
-      allSummaries.push(submission);
-    }
-    
-    await writeJSONFile(summariesFile, allSummaries);
 
-    res.status(201).json(submission);
+    const filename = `${summaryData.id}.json`;
+    const filePath = path.join(SUBMISSIONS_DIR, 'summary_reviews', filename);
+    await writeJSONFile(filePath, summaryData);
+
+    res.json({ success: true, id: summaryData.id });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
 
-app.get('/api/*', (req, res) => {
-  res.status(404).json({ error: 'Not found.' });
+// ==================== ERROR HANDLING ====================
+
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not found' });
 });
 
-// Health check endpoint
-app.get('/health', (req, res) => {
-  res.json({ ok: true, timestamp: new Date().toISOString() });
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).json({ error: 'Internal server error' });
 });
 
-// Start server
+// ==================== START SERVER ====================
+
 app.listen(PORT, () => {
-  console.log(`GBLS Literature Reviewer API server running on http://localhost:${PORT}`);
-  console.log(`Submissions directory: ${SUBMISSIONS_DIR}`);
-  console.log(`Corpus directory: ${path.resolve(__dirname, CORPUS_DIR)}`);
-  console.log(`Metrics directory: ${path.resolve(__dirname, METRICS_DIR)}`);
+  console.log('\n' + '='.repeat(70));
+  console.log('GBLS Literature Reviewer API Server');
+  console.log('='.repeat(70));
+  console.log(`🚀 Environment: ${isRender ? 'Render.com' : isProduction ? 'Docker' : 'Development'}`);
+  console.log(`🌐 URL: ${appUrl}`);
+  console.log(`🔌 Port: ${PORT}`);
+  console.log(`🔓 Debug Mode: ${process.env.DEBUG_MODE === 'true' ? 'ENABLED' : 'disabled'}`);
+  console.log(`📁 Submissions: ${SUBMISSIONS_DIR}`);
+  console.log(`📚 Corpus: ${path.resolve(__dirname, CORPUS_DIR)}`);
+  console.log(`📊 Metrics: ${path.resolve(__dirname, METRICS_DIR)}`);
+  console.log('='.repeat(70) + '\n');
+  
+  if (process.env.DEBUG_MODE === 'true') {
+    console.log('⚠️  DEBUG MODE ENABLED - Users can login with any email');
+    console.log('   To disable, set DEBUG_MODE=false and restart\n');
+  }
 });
