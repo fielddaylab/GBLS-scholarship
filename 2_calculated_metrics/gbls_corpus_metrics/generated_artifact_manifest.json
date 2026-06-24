@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T18:58:46.657674+00:00",
+  "generated_at": "2026-06-24T01:09:30.834231+00:00",
   "schema_reference": "0_human_sources/metadata-schema-and-lexicon.md",
   "total_articles": 224,
   "files_generated": {
@@ -27,7 +27,7 @@
     "feature_year_counts.csv": 43868,
     "game_format_counts.csv": 674,
     "game_format_matrix.csv": 53680,
-    "gbls_feature_overview.xlsx": 26974,
+    "gbls_feature_overview.xlsx": 26973,
     "intended_outcome_counts.csv": 836,
     "intended_outcome_matrix.csv": 53835,
     "library_context_counts.csv": 484,

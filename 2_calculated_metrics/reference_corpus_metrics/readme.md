@@ -1,6 +1,6 @@
 # GBLS Reference Corpus Metrics
 
-Generated: 2026-06-23 13:58
+Generated: 2026-06-23 20:09
 Articles: 7201 | Journals: 6 | Feature assignments: 76861
 Coding basis: abstract-only
 

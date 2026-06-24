@@ -13,8 +13,8 @@ services:
     environment:
       PORT: 8787
       SUBMISSIONS_DIR: /app/submissions
-      CORPUS_DIR: ../../../1_coded_gbls_corpus_articles
-      METRICS_DIR: ../../../2_calculated_metrics
+      CORPUS_DIR: ../1_coded_gbls_corpus_articles
+      METRICS_DIR: ../2_calculated_metrics
       NODE_ENV: production
     volumes:
       - gbls-submissions:/app/submissions

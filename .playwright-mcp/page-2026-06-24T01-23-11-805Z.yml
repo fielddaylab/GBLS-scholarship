@@ -1,0 +1,61 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - heading "GBLS Literature Reviewer" [level=1] [ref=e4]
+    - paragraph [ref=e5]: Unified review interface for metrics exploration and article classification
+  - navigation [ref=e6]:
+    - button "GBLS Lit Explorer" [ref=e7] [cursor=pointer]
+    - button "Review Summaries" [ref=e8] [cursor=pointer]
+    - button "Review Classifications" [ref=e9] [cursor=pointer]
+    - button "View Classifications" [ref=e10] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - heading "GBLS Corpus Explorer" [level=2] [ref=e15]
+        - button "Reset Filters" [ref=e16] [cursor=pointer]
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: Total Articles
+          - generic [ref=e20]: —
+        - generic [ref=e21]:
+          - generic [ref=e22]: Year Range
+          - generic [ref=e23]: —
+        - generic [ref=e24]:
+          - generic [ref=e25]: Unique Features
+          - generic [ref=e26]: —
+        - generic [ref=e27]:
+          - generic [ref=e28]: Avg Features/Article
+          - generic [ref=e29]: —
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]: "Feature Family:"
+          - combobox "Feature Family:" [ref=e33]:
+            - option "Service Area" [selected]
+        - generic [ref=e34]:
+          - generic [ref=e35]: "Show Top:"
+          - combobox "Show Top:" [ref=e36]:
+            - option "10"
+            - option "15" [selected]
+            - option "25"
+            - option "All"
+        - generic [ref=e37]:
+          - generic [ref=e38]: "Year From:"
+          - spinbutton "Year From:" [ref=e39]: "1950"
+        - generic [ref=e40]:
+          - generic [ref=e41]: "Year To:"
+          - spinbutton "Year To:" [ref=e42]: "2025"
+      - generic [ref=e43]:
+        - heading "Top Features (Ranking)" [level=3] [ref=e45]
+        - heading "Publications Over Time" [level=3] [ref=e47]
+      - generic [ref=e48]:
+        - heading "Article Explorer" [level=3] [ref=e49]
+        - textbox "Search articles by citation..." [ref=e51]
+        - table [ref=e53]:
+          - rowgroup [ref=e54]:
+            - row "Year Citation Service Areas Action" [ref=e55]:
+              - columnheader "Year" [ref=e56]
+              - columnheader "Citation" [ref=e57]
+              - columnheader "Service Areas" [ref=e58]
+              - columnheader "Action" [ref=e59]
+          - rowgroup [ref=e60]:
+            - row "Loading articles..." [ref=e61]:
+              - cell "Loading articles..." [ref=e62]

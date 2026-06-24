@@ -143,11 +143,61 @@ app.get('/api/health', (req, res) => {
 // Metrics endpoints
 app.get('/api/metrics', async (req, res) => {
   try {
-    // Load metrics from 2_calculated_metrics
+    // Load dataset summary
     const metricsPath = path.resolve(__dirname, METRICS_DIR, 'gbls_corpus_metrics');
     const datasetPath = path.join(metricsPath, 'dataset_summary.json');
-    const data = await readJSONFile(datasetPath);
-    res.json(data || { error: 'Metrics data not found' });
+    
+    let summary;
+    try {
+      const content = await fs.readFile(datasetPath, 'utf-8');
+      summary = JSON.parse(content);
+    } catch (error) {
+      console.error('Error loading dataset summary:', error.message, 'Path:', datasetPath);
+      return res.status(500).json({ error: 'Metrics data not found' });
+    }
+    
+    // Load articles from CSV
+    const articlesPath = path.join(metricsPath, 'articles_core.csv');
+    let articles = [];
+    
+    try {
+      const csv = await fs.readFile(articlesPath, 'utf-8');
+      const lines = csv.trim().split('\n');
+      const headers = lines[0].split(',').map(h => h.trim());
+      
+      for (let i = 1; i < lines.length; i++) {
+        const values = lines[i].split(',');
+        const article = {};
+        headers.forEach((header, idx) => {
+          article[header.toLowerCase()] = values[idx]?.trim() || null;
+        });
+        if (article.article_id) articles.push(article);
+      }
+    } catch (error) {
+      console.warn('Could not load articles from CSV:', error.message);
+    }
+    
+    // Build feature groups from summary data dictionary
+    const featureGroups = [
+      { key: 'source_type', label: 'Source Type' },
+      { key: 'peer_review', label: 'Peer Review' },
+      { key: 'evidence_type', label: 'Evidence Type' },
+      { key: 'primary_methodology', label: 'Primary Methodology' },
+      { key: 'library_context', label: 'Library Context' },
+      { key: 'game_format', label: 'Game Format' },
+      { key: 'service_area', label: 'Service Area' },
+      { key: 'audience', label: 'Audience' },
+      { key: 'intended_outcome', label: 'Intended Outcome' },
+      { key: 'evidence_confidence', label: 'Evidence Confidence' },
+      { key: 'coding_confidence', label: 'Coding Confidence' },
+      { key: 'conceptual_theme', label: 'Conceptual Theme' }
+    ];
+    
+    res.json({
+      summary,
+      featureGroups,
+      articles
+    });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
