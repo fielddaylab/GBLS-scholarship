@@ -35,13 +35,11 @@ import {
 import {
   createToken,
   verifyToken,
-  registerUser,
   handleGithubAuth,
   handleGoogleAuth,
-  loginWithEmail,
+  debugLogin,
   setSessionCookie,
-  clearSessionCookie,
-  verifyRecaptcha
+  clearSessionCookie
 } from './auth.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -150,7 +148,7 @@ function requireAuth(req, res, next) {
 }
 
 // Public auth routes (no authentication required)
-const authRoutes = ['/auth/', '/api/register', '/api/login', '/api/check-initials', '/health'];
+const authRoutes = ['/auth/', '/api/debug-login', '/health'];
 
 // Middleware to redirect unauthenticated users
 app.use((req, res, next) => {
@@ -219,72 +217,14 @@ app.get('/health', (req, res) => {
   res.json({ ok: true });
 });
 
-// Register endpoint
-app.post('/api/register', async (req, res) => {
+// Debug login endpoint (debug mode only)
+app.post('/api/debug-login', async (req, res) => {
   try {
-    const { fullName, email, initials, organizationalAffiliation, recaptchaToken } = req.body;
-
-    // Validate input
-    if (!fullName || !email || !initials) {
-      return res.status(400).json({ error: 'Missing required fields' });
+    if (!DEBUG_MODE) {
+      return res.status(403).json({ error: 'Debug login is not available in production' });
     }
 
-    // Optional: Verify reCAPTCHA if token provided
-    if (recaptchaToken && getEnv("RECAPTCHA_SECRET_KEY")) {
-      const isValidCaptcha = await verifyRecaptcha(recaptchaToken);
-      if (!isValidCaptcha) {
-        return res.status(400).json({ error: 'CAPTCHA verification failed' });
-      }
-    }
-
-    // Register user
-    const { user, token } = await registerUser(email, fullName, initials, organizationalAffiliation);
-
-    // Set cookie and return user
-    setSessionCookie(res, token);
-    res.json({
-      success: true,
-      user: {
-        id: user.id,
-        email: user.email,
-        fullName: user.full_name,
-        initials: user.initials,
-        organizationalAffiliation: user.organizational_affiliation
-      }
-    });
-  } catch (error) {
-    res.status(400).json({ error: error.message });
-  }
-});
-
-// Check if initials are available
-app.get('/api/check-initials', async (req, res) => {
-  try {
-    const { initials } = req.query;
-
-    if (!initials || initials.length !== 3) {
-      return res.status(400).json({ error: 'Invalid initials' });
-    }
-
-    const isTaken = isInitialsTaken(initials);
-    res.json({ available: !isTaken });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
-
-// Login endpoint
-app.post('/api/login', async (req, res) => {
-  try {
-    const { email } = req.body;
-
-    if (!email) {
-      return res.status(400).json({ error: 'Email is required' });
-    }
-
-    // In debug mode, allow login with just email (auto-creates user if needed)
-    const debugMode = DEBUG_MODE;
-    const { user, token } = await loginWithEmail(email, debugMode);
+    const { user, token } = await debugLogin();
 
     setSessionCookie(res, token);
     res.json({
@@ -296,10 +236,10 @@ app.post('/api/login', async (req, res) => {
         initials: user.initials,
         organizationalAffiliation: user.organizational_affiliation
       },
-      debug: debugMode ? 'Debug mode enabled - user auto-created' : undefined
+      debug: 'Debug mode enabled - test user created/loaded'
     });
   } catch (error) {
-    res.status(401).json({ error: error.message });
+    res.status(400).json({ error: error.message });
   }
 });
 

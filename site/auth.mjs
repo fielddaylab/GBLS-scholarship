@@ -32,33 +32,6 @@ export function verifyToken(token) {
   }
 }
 
-export async function registerUser(email, fullName, initials, organizationalAffiliation = null) {
-  // Validate input
-  if (!email || !fullName || !initials) {
-    throw new Error('Missing required fields');
-  }
-
-  if (!/^[A-Z]{3}$/.test(initials)) {
-    throw new Error('Initials must be exactly 3 uppercase letters');
-  }
-
-  if (isInitialsTaken(initials)) {
-    throw new Error('Those initials are already taken');
-  }
-
-  // Check if email exists
-  const existingUser = getUserByEmail(email);
-  if (existingUser) {
-    throw new Error('Email already registered');
-  }
-
-  // Create user
-  const user = createUser(email, fullName, initials, organizationalAffiliation);
-  const token = createToken(user.id);
-
-  return { user, token };
-}
-
 export async function handleGithubAuth(githubProfile) {
   const { id: githubId, emails, name } = githubProfile;
   const email = emails?.[0]?.value;
@@ -121,46 +94,24 @@ export async function handleGoogleAuth(googleProfile) {
   return { user, token };
 }
 
-export async function loginWithEmail(email, debugMode = false) {
-  let user = getUserByEmail(email);
+export async function debugLogin(testEmail = 'debug@localhost') {
+  if (!DEBUG_MODE) {
+    throw new Error('Debug login only available in debug mode');
+  }
+
+  let user = getUserByEmail(testEmail);
 
   if (!user) {
-    if (debugMode && DEBUG_MODE) {
-      // Debug mode: auto-create user
-      const namePart = email.split('@')[0];
-      const fullName = namePart.replace(/[._-]/g, ' ');
-      const initials = generateDebugInitials(email);
-      
-      user = createUser(email, fullName, initials);
-    } else {
-      throw new Error('User not found');
-    }
+    // Auto-create debug test user
+    const fullName = 'Debug Tester';
+    const initials = 'DBG';
+    user = createUser(testEmail, fullName, initials, 'Debug');
   }
 
   updateUserLastLogin(user.id);
   const token = createToken(user.id);
 
   return { user, token };
-}
-
-function generateDebugInitials(email) {
-  // Generate 3-letter initials from email
-  const parts = email.split('@')[0].split(/[._-]/);
-  
-  if (parts.length >= 3) {
-    return parts.slice(0, 3).map(p => p[0]).toUpperCase().join('');
-  }
-  
-  if (parts.length === 2) {
-    return (parts[0][0] + parts[0][1] + parts[1][0]).toUpperCase();
-  }
-  
-  if (parts[0].length >= 3) {
-    return parts[0].substring(0, 3).toUpperCase();
-  }
-  
-  // Fallback
-  return (email.substring(0, 3)).toUpperCase();
 }
 
 function generateInitialsFromName(name) {
@@ -181,26 +132,6 @@ function generateInitialsFromName(name) {
 
   // Three or more names: first letter of each
   return parts.slice(0, 3).map(p => p[0]).join('').toUpperCase();
-}
-
-export async function verifyRecaptcha(token) {
-  try {
-    const response = await axios.post(
-      `https://www.google.com/recaptcha/api/siteverify`,
-      null,
-      {
-        params: {
-          secret: getEnv("RECAPTCHA_SECRET_KEY"),
-          response: token
-        }
-      }
-    );
-
-    return response.data.success && response.data.score > 0.5;
-  } catch (error) {
-    console.error('reCAPTCHA verification error:', error.message);
-    return false;
-  }
 }
 
 export function setSessionCookie(res, token) {
