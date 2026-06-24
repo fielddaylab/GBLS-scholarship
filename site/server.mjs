@@ -342,8 +342,9 @@ app.get(
       if (!req.user) {
         return res.redirect('/login.html?error=Authentication failed: no user');
       }
-      // Successful authentication — set session and redirect to dashboard
-      setSessionCookie(res, req.user.id);
+      // Successful authentication — create JWT token and set it as a cookie
+      const token = createToken({ userId: req.user.id });
+      setSessionCookie(res, token);
       res.redirect('/');
     } catch (error) {
       console.error('GitHub callback error:', error);
@@ -364,8 +365,9 @@ app.get(
       if (!req.user) {
         return res.redirect('/login.html?error=Authentication failed: no user');
       }
-      // Successful authentication — set session and redirect to dashboard
-      setSessionCookie(res, req.user.id);
+      // Successful authentication — create JWT token and set it as a cookie
+      const token = createToken({ userId: req.user.id });
+      setSessionCookie(res, token);
       res.redirect('/');
     } catch (error) {
       console.error('Google callback error:', error);
