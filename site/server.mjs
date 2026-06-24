@@ -105,19 +105,32 @@ app.use((req, res, next) => {
   next();
 });
 
-// Auth middleware to extract user from token
+// Auth middleware to extract user from token or Passport session.
+// Passport.session() already set req.user if the session is valid,
+// so only check the JWT cookie if Passport didn't authenticate.
 app.use((req, res, next) => {
+  if (req.user) {
+    // Passport session already authenticated this user
+    return next();
+  }
+
+  // No Passport session — try JWT cookie
   const token = req.cookies.auth_token;
-  if (token) {
+  if (token && typeof token === 'string') {
     const decoded = verifyToken(token);
-    if (decoded) {
-      req.user = getUserById(decoded.userId);
-      if (!req.user) {
-        // User doesn't exist, clear cookie
+    if (decoded && decoded.userId) {
+      try {
+        req.user = getUserById(decoded.userId);
+        if (!req.user) {
+          // User doesn't exist, clear the cookie
+          clearSessionCookie(res);
+        }
+      } catch (error) {
+        console.error('Error loading user from JWT:', error.message);
         clearSessionCookie(res);
       }
     } else {
-      // Invalid token
+      // Invalid or malformed token
       clearSessionCookie(res);
     }
   }
@@ -337,19 +350,10 @@ app.get('/auth/github', passport.authenticate('github', { scope: ['user:email'] 
 app.get(
   '/auth/github/callback',
   passport.authenticate('github', { failureRedirect: '/login.html?error=GitHub login failed' }),
-  (req, res, next) => {
-    try {
-      if (!req.user) {
-        return res.redirect('/login.html?error=Authentication failed: no user');
-      }
-      // Successful authentication — create JWT token and set it as a cookie
-      const token = createToken(req.user.id);
-      setSessionCookie(res, token);
-      res.redirect('/');
-    } catch (error) {
-      console.error('GitHub callback error:', error);
-      res.redirect(`/login.html?error=${encodeURIComponent(error.message)}`);
-    }
+  (req, res) => {
+    // Passport session is automatically established by authenticate middleware.
+    // Just redirect to dashboard.
+    res.redirect('/');
   }
 );
 
@@ -360,19 +364,10 @@ app.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'em
 app.get(
   '/auth/google/callback',
   passport.authenticate('google', { failureRedirect: '/login.html?error=Google login failed' }),
-  (req, res, next) => {
-    try {
-      if (!req.user) {
-        return res.redirect('/login.html?error=Authentication failed: no user');
-      }
-      // Successful authentication — create JWT token and set it as a cookie
-      const token = createToken(req.user.id);
-      setSessionCookie(res, token);
-      res.redirect('/');
-    } catch (error) {
-      console.error('Google callback error:', error);
-      res.redirect(`/login.html?error=${encodeURIComponent(error.message)}`);
-    }
+  (req, res) => {
+    // Passport session is automatically established by authenticate middleware.
+    // Just redirect to dashboard.
+    res.redirect('/');
   }
 );
 
