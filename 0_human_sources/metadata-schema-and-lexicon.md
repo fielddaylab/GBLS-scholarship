@@ -1,4 +1,9 @@
-Controlled Lexicon
+# Metadata Schema and Lexicon
+
+A structured framework for coding metadata about sources in the Games-Based Library Services literature review.
+
+Metadata ID: `gbls_subjective_metadata`  
+Version: `2.0.0`
 
 # Source_Type
 
@@ -18,6 +23,7 @@ Controlled Lexicon
 - unpublished_document: Internal report, white paper, working paper, proposal, memorandum, or other unpublished material.
 
 # Evidence_Type
+
 - empirical_study: Research based on the collection and analysis of original data. Includes surveys, interviews, focus groups, observations, experiments, analytics, ethnographies, and mixed-methods studies.
 - implementation_case: Research describing, analyzing, or evaluating a specific program, service, collection, partnership, intervention, or design effort in practice.
 - content_or_artifact_analysis: Research that analyzes documents, media, games, collections, archives, policies, metadata, discourse, or other artifacts rather than collecting data directly from participants. Includes content analysis, archival analysis, discourse analysis, and document studies.
@@ -42,7 +48,23 @@ Controlled Lexicon
 - none: No identifiable research method was used because the source is descriptive, opinion-based, informational, or otherwise non-research oriented.
 - unspecified: The source appears to involve research or analysis, but the primary method cannot be determined from the available information.
 
+# Conceptual_Theme
+
+Conceptual themes capture the theoretical, philosophical, or disciplinary grounding of a source. These themes help identify which broader intellectual traditions inform a source's approach to games and library services, connecting practice to the literature's conceptual foundations.
+
+- games_as_cultural_media: Treats games as legitimate cultural media comparable to books, film, or music; emphasizes games as art, artistic expression, or vehicles for exploring social values.
+- participatory_culture_and_production: Emphasizes user creation, remix, fan production, community knowledge-making, or the shift from consumers to producers in participatory media systems.
+- game_literacy: Focus on critical reading of game systems including mechanics, design, rules, incentives, representations, and how players interpret and construct meaning from games.
+- service_ecology: Emphasizes interconnections among collections, programs, spaces, expertise, partnerships, and policies; argues that outcomes depend on fit among multiple elements rather than isolated initiatives.
+- conditional_benefits: Explicitly discusses context-dependent effects; distinguishes between universal claims and conditional findings; emphasizes that benefits depend on facilitation, community fit, or other factors.
+- information_behavior_and_practice: Grounds analysis in how people seek, evaluate, use, or create information; treats games as sites for practicing information work or literacy.
+- educational_psychology: Applies learning science frameworks such as situated learning, transfer, motivation, cognitive load, or zone of proximal development to understand game-based learning.
+- social_equity_and_access: Centers equity, inclusion, and access as service purposes; examines barriers, benefits for underrepresented populations, and whether services reinforce or interrupt privilege.
+- multiple_themes: Source integrates multiple conceptual traditions.
+- not_identified: Source does not foreground explicit theoretical or conceptual grounding.
+
 # Library_Context
+
 - academic_library: A college, university, or other postsecondary library serving students, faculty, researchers, and academic programs.
 - cultural_heritage_institution: A museum, archive, historical society, special collection, preservation organization, memory institution, or related cultural heritage setting where games are discussed as objects of collection, exhibition, preservation, interpretation, or access.
 - library_school: A library and information science (LIS) program, school, department, or professional training context focused on preparing current or future library workers.
@@ -53,6 +75,7 @@ Controlled Lexicon
 - unspecified_library_context: The source discusses libraries in general, does not clearly identify a library type, or lacks enough information to determine the setting.
 
 # Game_Format
+
 
 - tabletop_game: Board games, card games, dice games, miniature games, and other rule-based games played primarily on a table or shared physical surface.
 - tabletop_roleplaying_game: A roleplaying game in which participants use rules, characters, narration, dice, and shared imagination to create a collaborative story.
@@ -65,7 +88,6 @@ Controlled Lexicon
 - pervasive_game: A game that extends beyond a dedicated play space and blends gameplay with everyday environments, social interactions, or real-world activities.
 - megagame: A large-scale game involving many participants, often combining roleplaying, simulation, strategy, negotiation, and facilitation.
 - toy_or_open_play: A play object or activity designed for open-ended exploration, construction, imagination, or manipulation rather than formal gameplay.
-- multiple_game_formats: The source discusses, compares, or incorporates more than one game format without focusing primarily on a single type.
 - unspecified_game_format: The source discusses games or play without identifying a specific game format.
 
 # Service_Area
@@ -80,7 +102,7 @@ Controlled Lexicon
 - cultural_heritage_and_research: Preserving, documenting, exhibiting, studying, and providing research access to games as cultural and historical artifacts.
 - space_and_infrastructure: Designing, maintaining, and managing the physical, digital, and technological environments that support game-based services.
 
-# Audience
+# Service_Audience
 - children: Primarily intended for elementary-aged children.
 - teens: Primarily intended for adolescents and secondary-school-aged youth.
 - young_adults: Primarily intended for emerging adults, college-aged participants, or young adult audiences.
@@ -103,6 +125,7 @@ Controlled Lexicon
 - wellness_and_resilience: The service supports well-being, respite, confidence, mental-health awareness, resilience, or emotionally supportive participation.
 - cultural_stewardship_and_preservation: The service supports collecting, cataloging, describing, preserving, exhibiting, or providing research access to games as cultural objects.
 - institutional_capacity: The service improves staff confidence, training, facilitation, infrastructure, implementation capacity, assessment, or sustainable operations.
+- other: The service does not easily fit into any of these catagories and should be reviewed further.
 - not_applicable: The source does not describe or assess a specific program, service, collection, or intervention outcome.
 
 # Evidence_Confidence
@@ -126,24 +149,3 @@ Service conditions are prerequisites, design principles, and ecological factors 
 - evaluation_or_reflection: Source includes or recommends assessment of whether intended outcomes actually occurred rather than assuming engagement proves benefit.
 - other: Source addresses a service condition or prerequisite not covered by the categories above. Summary should describe the condition in the "Productive Incongruences" section to document what the schema did not capture.
 - not_applicable: The source does not discuss or address implementation conditions.
-
-# Conceptual_Theme
-Conceptual themes capture the theoretical, philosophical, or disciplinary grounding of a source. These themes help identify which broader intellectual traditions inform a source's approach to games and library services, connecting practice to the literature's conceptual foundations.
-
-- games_as_cultural_media: Treats games as legitimate cultural media comparable to books, film, or music; emphasizes games as art, artistic expression, or vehicles for exploring social values.
-- participatory_culture_and_production: Emphasizes user creation, remix, fan production, community knowledge-making, or the shift from consumers to producers in participatory media systems.
-- game_literacy: Focus on critical reading of game systems including mechanics, design, rules, incentives, representations, and how players interpret and construct meaning from games.
-- service_ecology: Emphasizes interconnections among collections, programs, spaces, expertise, partnerships, and policies; argues that outcomes depend on fit among multiple elements rather than isolated initiatives.
-- conditional_benefits: Explicitly discusses context-dependent effects; distinguishes between universal claims and conditional findings; emphasizes that benefits depend on facilitation, community fit, or other factors.
-- information_behavior_and_practice: Grounds analysis in how people seek, evaluate, use, or create information; treats games as sites for practicing information work or literacy.
-- educational_psychology: Applies learning science frameworks such as situated learning, transfer, motivation, cognitive load, or zone of proximal development to understand game-based learning.
-- social_equity_and_access: Centers equity, inclusion, and access as service purposes; examines barriers, benefits for underrepresented populations, and whether services reinforce or interrupt privilege.
-- multiple_themes: Source integrates multiple conceptual traditions.
-- not_identified: Source does not foreground explicit theoretical or conceptual grounding.
-
-# Coding_Confidence
-Coding confidence describes the coder's confidence in assigning the metadata values for a given article. High confidence indicates that the evidence is explicit and unambiguous; low confidence indicates that the coder made inferences from limited information.
-
-- high
-- low
-- medium
