@@ -148,7 +148,7 @@ function requireAuth(req, res, next) {
 }
 
 // Public auth routes (no authentication required)
-const authRoutes = ['/auth/', '/api/debug-login', '/health'];
+const authRoutes = ['/auth/', '/api/debug-status', '/api/debug-login', '/health'];
 
 // Middleware to redirect unauthenticated users
 app.use((req, res, next) => {
@@ -218,6 +218,11 @@ app.get('/health', (req, res) => {
 });
 
 // Debug login endpoint (debug mode only)
+// Check if debug mode is available
+app.get('/api/debug-status', (req, res) => {
+  res.json({ debugMode: DEBUG_MODE });
+});
+
 app.post('/api/debug-login', async (req, res) => {
   try {
     if (!DEBUG_MODE) {

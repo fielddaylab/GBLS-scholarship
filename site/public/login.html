@@ -236,78 +236,62 @@
        <div style="text-align: center; font-size: 12px; color: #999; margin-bottom: 10px;">
          🔧 Debug Mode Enabled
        </div>
-       <button id="debugLoginBtn" type="button" style="width: 100%; padding: 12px; background: #f39c12; color: white; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; transition: all 0.3s;">
+       <button id="debugLoginBtn" type="button" onclick="debugLogin()" style="width: 100%; padding: 12px; background: #f39c12; color: white; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; transition: all 0.3s;">
          Debug Login
        </button>
      </div>
    </div>
 
    <script>
-     // Check if debug mode is enabled
-     async function checkDebugMode() {
+     // Debug login function
+     async function debugLogin() {
+       const btn = document.getElementById('debugLoginBtn');
+       btn.disabled = true;
+       btn.textContent = 'Loading...';
+       
        try {
-         const response = await fetch('/health');
+         console.log('[DEBUG] Starting debug login...');
+         
+         const response = await fetch('/api/debug-login', {
+           method: 'POST',
+           headers: { 'Content-Type': 'application/json' },
+           credentials: 'same-origin'
+         });
+         
          const data = await response.json();
+         console.log('[DEBUG] Response:', response.status, data);
          
-         // If we can fetch debug-login, show debug section
-         const debugSection = document.getElementById('debugSection');
-         const debugBtn = document.getElementById('debugLoginBtn');
-         
-         if (debugBtn) {
-           debugBtn.addEventListener('click', async () => {
-             try {
-               debugBtn.disabled = true;
-               debugBtn.textContent = 'Loading...';
-               
-               const loginResponse = await fetch('/api/debug-login', {
-                 method: 'POST',
-                 headers: {
-                   'Content-Type': 'application/json'
-                 }
-               });
-               
-               const loginData = await loginResponse.json();
-               
-               if (!loginResponse.ok) {
-                 throw new Error(loginData.error || 'Debug login failed');
-               }
-               
-               // Redirect to dashboard on success
-               window.location.href = '/';
-             } catch (error) {
-               alert('Debug login failed: ' + error.message);
-               debugBtn.disabled = false;
-               debugBtn.textContent = 'Debug Login';
-             }
-           });
-           
-           // Try to access debug-login to see if it's available
-           try {
-             const testResponse = await fetch('/api/debug-login', {
-               method: 'POST',
-               headers: { 'Content-Type': 'application/json' }
-             });
-             
-             // Only show debug section if we got a 200, 400, or 403
-             // 403 means production, 400 might be bad request, 200 is success
-             if (testResponse.status === 403) {
-               // Production mode - don't show debug section
-               if (debugSection) debugSection.style.display = 'none';
-             } else {
-               // Debug mode available
-               if (debugSection) debugSection.style.display = 'block';
-             }
-           } catch (error) {
-             // Network error, hide debug section
-             if (debugSection) debugSection.style.display = 'none';
-           }
+         if (response.ok) {
+           console.log('[DEBUG] Login successful, waiting for cookie...');
+           // Small delay to ensure cookie is persisted
+           await new Promise(r => setTimeout(r, 200));
+           window.location.href = '/';
+         } else {
+           throw new Error(data.error || 'Login failed');
          }
        } catch (error) {
-         console.error('Error checking debug mode:', error);
+         console.error('[DEBUG] Error:', error);
+         alert('Debug login failed: ' + error.message);
+         btn.disabled = false;
+         btn.textContent = 'Debug Login';
        }
      }
      
-     // Check debug mode on page load
+     // Show debug section if debug mode is enabled
+     async function checkDebugMode() {
+       try {
+         const response = await fetch('/api/debug-status');
+         const data = await response.json();
+         const debugSection = document.getElementById('debugSection');
+         if (data.debugMode && debugSection) {
+           debugSection.style.display = 'block';
+         }
+       } catch (error) {
+         console.error('[DEBUG] Error checking debug mode:', error);
+       }
+     }
+     
+     // Initialize on load
      document.addEventListener('DOMContentLoaded', checkDebugMode);
    </script>
 </body>

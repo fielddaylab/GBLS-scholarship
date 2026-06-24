@@ -448,6 +448,7 @@ async function startSummaryReview() {
   document.getElementById('summaries-review').style.display = 'block';
   
   populateSummariesArticleSelect();
+  await loadRubricAndLexicon();
 }
 
 function populateSummariesArticleSelect() {
