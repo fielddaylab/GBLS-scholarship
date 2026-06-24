@@ -8,6 +8,7 @@ import { getEnv, APP_URL } from './config.mjs';
 import {
   createUser,
   getUserByEmail,
+  getUserById,
   getUserByGithubId,
   getUserByGoogleId,
   updateUserLastLogin,
