@@ -155,6 +155,9 @@ async function loadInitialData() {
     if (summariesRes.ok) {
       state.summaries = await summariesRes.json();
     }
+
+    // Load rubric and lexicon for classification forms
+    await loadRubricAndLexicon();
   } catch (error) {
     console.error('Error loading initial data:', error);
   }
@@ -448,7 +451,6 @@ async function startSummaryReview() {
   document.getElementById('summaries-review').style.display = 'block';
   
   populateSummariesArticleSelect();
-  await loadRubricAndLexicon();
 }
 
 function populateSummariesArticleSelect() {
@@ -590,15 +592,23 @@ async function loadRubricAndLexicon() {
       const match = text.match(/```json rubric\s*([\s\S]*?)```/);
       if (match) {
         state.classifyState.rubricDefinition = JSON.parse(match[1]);
+        console.log('[RUBRIC] Loaded rubric:', state.classifyState.rubricDefinition);
+      } else {
+        console.warn('[RUBRIC] Failed to extract JSON from markdown');
       }
+    } else {
+      console.warn('[RUBRIC] Failed to fetch rubric file:', rubricRes.status);
     }
 
     const lexiconRes = await fetch('lexicon.json');
     if (lexiconRes.ok) {
       state.classifyState.lexicon = await lexiconRes.json();
+      console.log('[LEXICON] Loaded lexicon with', state.classifyState.lexicon.length, 'groups');
+    } else {
+      console.warn('[LEXICON] Failed to fetch lexicon file:', lexiconRes.status);
     }
   } catch (error) {
-    console.error('Error loading rubric/lexicon:', error);
+    console.error('[RUBRIC/LEXICON] Error loading:', error);
   }
 }
 
