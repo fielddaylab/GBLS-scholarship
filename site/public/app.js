@@ -420,6 +420,26 @@ function renderArticlesTable() {
 }
 
 // ============================================================================
+// SUBMISSION SUCCESS HANDLER
+// ============================================================================
+
+function showSubmissionSuccess(statusElementId) {
+  const statusElement = document.getElementById(statusElementId);
+  const submitButton = document.querySelector(`#${statusElementId.replace('-status', '')} button[type="submit"]`);
+  
+  if (!statusElement) return;
+  
+  // Show success message
+  statusElement.innerHTML = '<p style="color: var(--success-color); font-weight: 500; margin: 0;">✓ Submitted! Thank you.</p>';
+  statusElement.style.display = 'block';
+  
+  // Update button
+  if (submitButton) {
+    submitButton.textContent = 'Resubmit';
+  }
+}
+
+// ============================================================================
 // TAB 2: REVIEW SUMMARIES
 // ============================================================================
 
@@ -485,11 +505,20 @@ async function loadSummaryArticle() {
   document.getElementById('summaries-provided-summary').textContent = article.summary || 'No summary available';
 
   // Reset summary review form
-  document.getElementById('summaries-quality').value = '';
   document.getElementById('summaries-notes').value = '';
+  // Hide success message
+  const statusElement = document.getElementById('summary-form-status');
+  if (statusElement) {
+    statusElement.style.display = 'none';
+  }
+  const submitBtn = document.querySelector('#summary-form button[type="submit"]');
+  if (submitBtn) {
+    submitBtn.textContent = 'Submit Summary Review';
+  }
 
-  // Load classification rubric and metadata forms
+  // Load classification rubric, overall quality, and metadata forms
   renderRubricForm();
+  renderOverallQualityForm();
   renderMetadataForm();
 
   document.getElementById('summaries-article-display').style.display = 'block';
@@ -515,34 +544,56 @@ async function submitSummaryReview(event) {
     return;
   }
 
+  // Collect rubric scores from the Summary Quality Rubric
+  const rubricScores = {};
+  if (state.classifyState.rubricDefinition) {
+    state.classifyState.rubricDefinition.dimensions.forEach(dimension => {
+      const selected = document.querySelector(`input[name="rubric-${dimension.id}"]:checked`);
+      if (selected) {
+        rubricScores[dimension.id] = parseInt(selected.value);
+      }
+    });
+  }
+
+  // Get overall quality rating from radio buttons
+  const overallQualitySelected = document.querySelector('input[name="overall-quality"]:checked');
+  const overallQuality = overallQualitySelected ? overallQualitySelected.value : '';
+
+  const notes = document.getElementById('summaries-notes').value;
+
   const ratings = {
-    quality: document.getElementById('summaries-quality').value,
-    notes: document.getElementById('summaries-notes').value
+    rubricScores: rubricScores,
+    overallQuality: overallQuality,
+    notes: notes
   };
 
   const submission = {
     articleId: state.summariesState.currentArticle.id,
     ratings,
-    userInitials: state.user.initials
+    qualityRating: overallQuality,
+    notes: notes
   };
 
   try {
     const response = await fetch('/api/summaries', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
       body: JSON.stringify(submission)
     });
 
     if (response.ok) {
-      alert('Summary review submitted successfully!');
-      document.getElementById('summaries-notes').value = '';
-      document.getElementById('summaries-quality').value = '';
-      pickRandomSummaryArticle();
+      showSubmissionSuccess('summary-form-status');
+      // Load next article after a delay
+      setTimeout(() => {
+        pickRandomSummaryArticle();
+      }, 2000);
     } else {
       const error = await response.json();
       alert(`Error: ${error.error}`);
     }
   } catch (error) {
+    console.error('Summary submission error:', error);
     alert(`Error submitting review: ${error.message}`);
   }
 }
@@ -641,6 +692,19 @@ async function loadClassifyArticle() {
   document.getElementById('classify-citation').textContent = article.citation;
   document.getElementById('classify-source-text').textContent = article.sourceText || 'No source text';
 
+  // Reset classification form fields
+  document.getElementById('classification-notes').value = '';
+  document.querySelector('input[name="classification-issues"][value="no"]').checked = true;
+  // Hide success message
+  const statusElement = document.getElementById('classification-form-status');
+  if (statusElement) {
+    statusElement.style.display = 'none';
+  }
+  const submitBtn = document.querySelector('#classification-form button[type="submit"]');
+  if (submitBtn) {
+    submitBtn.textContent = 'Submit Classification';
+  }
+
   renderRubricForm();
   renderMetadataForm();
 
@@ -656,26 +720,89 @@ function renderRubricForm() {
 
   const rubric = state.classifyState.rubricDefinition;
   const html = rubric.dimensions.map(dimension => {
-    const scores = Array.from(
-      { length: rubric.scoreMaximum - rubric.scoreMinimum + 1 },
-      (_, i) => rubric.scoreMinimum + i
-    );
+    // Check if levels have the new structure with score, label, definition
+    const hasNewStructure = dimension.levels && dimension.levels.length > 0 && typeof dimension.levels[0] === 'object' && 'score' in dimension.levels[0];
+
+    let scoresHtml;
+    if (hasNewStructure) {
+      // New 5-point structure with labels and tooltips
+      scoresHtml = dimension.levels.map(level => `
+        <div class="rubric-score" title="${level.definition}">
+          <input type="radio" id="rubric-${dimension.id}-${level.score}" name="rubric-${dimension.id}" value="${level.score}">
+          <label for="rubric-${dimension.id}-${level.score}">
+            <strong>${level.score}</strong> – ${level.label}
+          </label>
+        </div>
+      `).join('');
+    } else {
+      // Fallback to old structure for backwards compatibility
+      const scores = Array.from(
+        { length: rubric.scoreMaximum - rubric.scoreMinimum + 1 },
+        (_, i) => rubric.scoreMinimum + i
+      );
+      scoresHtml = scores.map(score => `
+        <div class="rubric-score">
+          <input type="radio" id="rubric-${dimension.id}-${score}" name="rubric-${dimension.id}" value="${score}">
+          <label for="rubric-${dimension.id}-${score}">${score}</label>
+        </div>
+      `).join('');
+    }
 
     return `
       <div class="rubric-item">
         <h5>${dimension.label}</h5>
         <p style="margin: 0 0 0.75rem 0; color: var(--text-light); font-size: 0.875rem;">${dimension.description}</p>
         <div class="rubric-scores">
-          ${scores.map(score => `
-            <div class="rubric-score">
-              <input type="radio" id="rubric-${dimension.id}-${score}" name="rubric-${dimension.id}" value="${score}">
-              <label for="rubric-${dimension.id}-${score}">${score}</label>
-            </div>
-          `).join('')}
+          ${scoresHtml}
         </div>
       </div>
     `;
   }).join('');
+
+  container.innerHTML = html;
+}
+
+function renderOverallQualityForm() {
+  const container = document.getElementById('overall-quality-form');
+  if (!container) return;
+
+  // Overall Quality scale options
+  const overallQualityLevels = [
+    {
+      score: 1,
+      label: "Unusable",
+      definition: "The summary substantially misrepresents the article, contains major inaccuracies or omissions, and should not be used as a basis for understanding the source."
+    },
+    {
+      score: 2,
+      label: "Poor",
+      definition: "The summary captures some aspects of the article but contains significant errors, distortions, or missing information that limit its reliability."
+    },
+    {
+      score: 3,
+      label: "Adequate",
+      definition: "The summary provides a generally accurate overview of the article's main points but omits important details, nuance, or context. It can support initial understanding but is not a substitute for the original."
+    },
+    {
+      score: 4,
+      label: "Good",
+      definition: "The summary accurately captures the article's major arguments, methods, findings, and implications with only minor omissions or simplifications. Most readers could rely on it for a solid understanding of the source."
+    },
+    {
+      score: 5,
+      label: "Excellent",
+      definition: "The summary is highly accurate, comprehensive, and clear. It preserves the article's essential content, context, and conclusions and serves as an effective stand-in for reading the full article for most purposes."
+    }
+  ];
+
+  const html = overallQualityLevels.map(level => `
+    <div class="rubric-score" title="${level.definition}">
+      <input type="radio" id="overall-quality-${level.score}" name="overall-quality" value="${level.score}">
+      <label for="overall-quality-${level.score}">
+        <strong>${level.score}</strong> – ${level.label}
+      </label>
+    </div>
+  `).join('');
 
   container.innerHTML = html;
 }
@@ -688,7 +815,8 @@ function renderMetadataForm() {
   }
 
   const html = state.classifyState.lexicon.map(group => {
-    if (!group.items || group.items.length === 0) return '';
+    // Skip Coding_Confidence as we're replacing it with a Yes/No prompt
+    if (group.id === 'Coding_Confidence' || !group.items || group.items.length === 0) return '';
 
     return `
       <div class="metadata-group">
@@ -697,7 +825,7 @@ function renderMetadataForm() {
           ${group.items.map(item => `
             <div class="metadata-item">
               <input type="checkbox" id="meta-${group.id}-${item.id}" value="${item.id}" name="meta-${group.id}">
-              <label for="meta-${group.id}-${item.id}">${item.label}</label>
+              <label for="meta-${group.id}-${item.id}" class="metadata-label" title="${item.description || item.label}">${item.label}</label>
             </div>
           `).join('')}
         </div>
@@ -755,28 +883,41 @@ async function submitClassification(event) {
     });
   }
 
+  // Collect classification issues flag
+  const issuesSelected = document.querySelector('input[name="classification-issues"]:checked');
+  const hadIssues = issuesSelected ? issuesSelected.value === 'yes' : false;
+
+  // Collect classification comments
+  const classificationComments = document.getElementById('classification-notes').value;
+
   const submission = {
     articleId: state.classifyState.currentArticle.id,
     codes: { ...rubric, ...codes },
-    userInitials: state.user.initials
+    userInitials: state.user.initials,
+    hadClassificationIssues: hadIssues,
+    classificationNotes: classificationComments
   };
 
   try {
     const response = await fetch('/api/codings', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
       body: JSON.stringify(submission)
     });
 
     if (response.ok) {
-      alert('Classification submitted successfully!');
-      // Reset form and load next article
-      pickRandomClassifyArticle();
+      showSubmissionSuccess('classification-form-status');
+      // Load next article after a delay
+      setTimeout(() => {
+        pickRandomClassifyArticle();
+      }, 2000);
     } else {
       const error = await response.json();
       alert(`Error: ${error.error}`);
     }
   } catch (error) {
+    console.error('Classification submission error:', error);
     alert(`Error submitting classification: ${error.message}`);
   }
 }

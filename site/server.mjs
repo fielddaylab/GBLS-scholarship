@@ -70,6 +70,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // Session management for OAuth
+// Session middleware: only use secure cookies on Render (which has HTTPS)
+const hasRenderEnv = !!process.env.RENDER || !!process.env.RENDER_EXTERNAL_URL;
 app.use(
   session({
     secret: getEnv('JWT_SECRET', 'dev-secret'),
@@ -77,7 +79,8 @@ app.use(
     saveUninitialized: false,
     cookie: {
       httpOnly: true,
-      secure: isProduction,
+      secure: hasRenderEnv,
+      sameSite: 'lax',
       maxAge: 24 * 60 * 60 * 1000, // 24 hours
     },
   })
@@ -231,7 +234,15 @@ app.post('/api/debug-login', async (req, res) => {
 
     const { user, token } = await debugLogin();
 
+    console.log('[DEBUG-LOGIN] Setting session cookie');
+    console.log('[DEBUG-LOGIN] Token:', token.substring(0, 20) + '...');
+    console.log('[DEBUG-LOGIN] isProduction:', isProduction);
+    console.log('[DEBUG-LOGIN] process.env.NODE_ENV:', process.env.NODE_ENV);
+    
     setSessionCookie(res, token);
+    
+    console.log('[DEBUG-LOGIN] Response headers:', res.getHeaders());
+    
     res.json({
       success: true,
       user: {
@@ -244,6 +255,7 @@ app.post('/api/debug-login', async (req, res) => {
       debug: 'Debug mode enabled - test user created/loaded'
     });
   } catch (error) {
+    console.error('[DEBUG-LOGIN] Error:', error);
     res.status(400).json({ error: error.message });
   }
 });
@@ -468,7 +480,7 @@ app.get('/api/codings', requireAuth, async (req, res) => {
 
 app.post('/api/codings', requireAuth, async (req, res) => {
   try {
-    const { articleId, codes, rubricId, rubricVersion } = req.body;
+    const { articleId, codes, rubricId, rubricVersion, hadClassificationIssues, classificationNotes } = req.body;
     if (!articleId || !codes) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
@@ -480,7 +492,9 @@ app.post('/api/codings', requireAuth, async (req, res) => {
       req.user.id,
       codes,
       rubricId,
-      rubricVersion
+      rubricVersion,
+      hadClassificationIssues || false,
+      classificationNotes || null
     );
 
     res.json({ success: true, id: codingId });

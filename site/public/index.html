@@ -163,42 +163,69 @@
                   <div id="summaries-provided-summary" class="provided-summary"></div>
                 </div>
 
-                <form class="review-form" onsubmit="submitSummaryReview(event)">
-                  <h4>Summary Review</h4>
-                  <div class="form-group">
-                    <label for="summaries-quality">Summary Quality:</label>
-                    <select id="summaries-quality">
-                      <option value="">Select quality rating...</option>
-                      <option value="excellent">Excellent</option>
-                      <option value="good">Good</option>
-                      <option value="adequate">Adequate</option>
-                      <option value="poor">Poor</option>
-                    </select>
-                  </div>
+                  <form id="summary-form" class="review-form" onsubmit="submitSummaryReview(event)">
+                    <h4>Summary Review</h4>
+                    
+                    <!-- Summary Quality Rubric Section -->
+                    <div class="form-section">
+                      <h5>Summary Quality Rubric</h5>
+                      <div id="classify-rubric-form"></div>
+                    </div>
 
-                  <div class="form-group">
-                    <label for="summaries-notes">Your Notes:</label>
-                    <textarea id="summaries-notes" placeholder="Add your review notes..." rows="3"></textarea>
-                  </div>
+                    <!-- Overall Summary Quality -->
+                    <div class="form-section">
+                      <h5>Overall Summary Quality</h5>
+                      <p style="margin: 0 0 0.75rem 0; color: var(--text-light); font-size: 0.875rem;">Considering accuracy, completeness, and usefulness together, how well does the summary function as a substitute for reading the original article?</p>
+                      <div id="overall-quality-form" class="rubric-scores"></div>
+                    </div>
 
-                  <button type="submit" class="btn-primary">Submit Summary Review</button>
-                </form>
+                    <!-- Comments -->
+                    <div class="form-section">
+                      <h5>Comments</h5>
+                      <textarea id="summaries-notes" placeholder="Add your comments..." rows="4"></textarea>
+                    </div>
 
-                <hr style="margin: 20px 0;">
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                      <button type="submit" class="btn-primary">Submit Summary Review</button>
+                      <div id="summary-form-status" style="display: none;"></div>
+                    </div>
+                  </form>
 
-                <form class="coding-form" onsubmit="submitClassification(event)">
-                  <div class="form-section">
-                    <h4>Summary Quality Rubric</h4>
-                    <div id="classify-rubric-form"></div>
-                  </div>
+                 <hr style="margin: 20px 0;">
 
-                  <div class="form-section">
-                    <h4>Article Classifications (Metadata)</h4>
-                    <div id="classify-metadata-form"></div>
-                  </div>
+                   <form id="classification-form" class="coding-form" onsubmit="submitClassification(event)">
+                    <div class="form-section">
+                      <h4>Article Classifications (Metadata)</h4>
+                      <div id="classify-metadata-form"></div>
+                    </div>
 
-                  <button type="submit" class="btn-primary">Submit Classification</button>
-                </form>
+                    <!-- Classification Issues -->
+                    <div class="form-section">
+                      <h5>Classification Issues</h5>
+                      <p style="margin: 0 0 0.75rem 0; color: var(--text-light); font-size: 0.875rem;">I had issues completing this classification</p>
+                      <div class="issue-selection">
+                        <label class="radio-option">
+                          <input type="radio" name="classification-issues" value="no" checked>
+                          <span>No</span>
+                        </label>
+                        <label class="radio-option">
+                          <input type="radio" name="classification-issues" value="yes">
+                          <span>Yes</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <!-- Classification Comments -->
+                    <div class="form-section">
+                      <h5>Comments</h5>
+                      <textarea id="classification-notes" placeholder="Add any comments about this classification..." rows="4"></textarea>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                      <button type="submit" class="btn-primary">Submit Classification</button>
+                      <div id="classification-form-status" style="display: none;"></div>
+                    </div>
+                  </form>
               </div>
             </div>
           </div>

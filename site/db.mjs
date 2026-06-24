@@ -59,6 +59,8 @@ export function initializeDatabase() {
       codes TEXT NOT NULL,
       rubric_id TEXT,
       rubric_version TEXT,
+      had_issues INTEGER DEFAULT 0,
+      notes TEXT,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
       FOREIGN KEY (user_id) REFERENCES users(id)
     );
@@ -77,7 +79,30 @@ export function initializeDatabase() {
     );
   `);
 
+  // Run migrations
+  runMigrations(db);
+
   return db;
+}
+
+function runMigrations(database) {
+  // Migration: Add had_issues and notes columns to article_codings if they don't exist
+  try {
+    const columns = database.prepare("PRAGMA table_info(article_codings)").all();
+    const columnNames = columns.map(col => col.name);
+    
+    if (!columnNames.includes('had_issues')) {
+      console.log('[MIGRATION] Adding had_issues column to article_codings');
+      database.exec('ALTER TABLE article_codings ADD COLUMN had_issues INTEGER DEFAULT 0');
+    }
+    
+    if (!columnNames.includes('notes')) {
+      console.log('[MIGRATION] Adding notes column to article_codings');
+      database.exec('ALTER TABLE article_codings ADD COLUMN notes TEXT');
+    }
+  } catch (error) {
+    console.error('[MIGRATION] Error running migrations:', error.message);
+  }
 }
 
 export function getDatabase() {
@@ -173,13 +198,13 @@ export function cleanupExpiredSessions() {
 }
 
 // Submission functions - Article Codings
-export function createArticleCoding(codingId, articleId, userId, codes, rubricId = null, rubricVersion = null) {
+export function createArticleCoding(codingId, articleId, userId, codes, rubricId = null, rubricVersion = null, hadIssues = false, notes = null) {
   const db = getDatabase();
   const stmt = db.prepare(`
-    INSERT INTO article_codings (id, article_id, user_id, codes, rubric_id, rubric_version)
-    VALUES (?, ?, ?, ?, ?, ?)
+    INSERT INTO article_codings (id, article_id, user_id, codes, rubric_id, rubric_version, had_issues, notes)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
   `);
-  stmt.run(codingId, articleId, userId, JSON.stringify(codes), rubricId, rubricVersion);
+  stmt.run(codingId, articleId, userId, JSON.stringify(codes), rubricId, rubricVersion, hadIssues ? 1 : 0, notes);
   return { id: codingId, article_id: articleId, user_id: userId };
 }
 

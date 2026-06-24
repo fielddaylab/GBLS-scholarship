@@ -135,13 +135,25 @@ function generateInitialsFromName(name) {
 }
 
 export function setSessionCookie(res, token) {
-  res.cookie('auth_token', token, {
+  // Only use Secure flag on actual Render production (which has HTTPS)
+  // localhost always uses HTTP, even if NODE_ENV=production in Docker
+  const hasRenderEnv = !!process.env.RENDER || !!process.env.RENDER_EXTERNAL_URL;
+  const isSecure = hasRenderEnv;
+  
+  const cookieOptions = {
     httpOnly: true,
-    secure: isProduction,
+    secure: isSecure,
     sameSite: 'lax',
     maxAge: SESSION_DURATION,
     path: '/'
-  });
+  };
+  
+  console.log('[SET-COOKIE] Setting auth_token cookie');
+  console.log('[SET-COOKIE] hasRenderEnv:', hasRenderEnv);
+  console.log('[SET-COOKIE] isSecure:', isSecure);
+  console.log('[SET-COOKIE] Cookie options:', cookieOptions);
+  
+  res.cookie('auth_token', token, cookieOptions);
 }
 
 export function clearSessionCookie(res) {

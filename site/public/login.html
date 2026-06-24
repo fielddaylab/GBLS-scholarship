@@ -249,26 +249,34 @@
        btn.disabled = true;
        btn.textContent = 'Loading...';
        
-       try {
-         console.log('[DEBUG] Starting debug login...');
-         
-         const response = await fetch('/api/debug-login', {
-           method: 'POST',
-           headers: { 'Content-Type': 'application/json' },
-           credentials: 'same-origin'
-         });
-         
-         const data = await response.json();
-         console.log('[DEBUG] Response:', response.status, data);
-         
-         if (response.ok) {
-           console.log('[DEBUG] Login successful, waiting for cookie...');
-           // Small delay to ensure cookie is persisted
-           await new Promise(r => setTimeout(r, 200));
-           window.location.href = '/';
-         } else {
-           throw new Error(data.error || 'Login failed');
-         }
+        try {
+          console.log('[DEBUG] Starting debug login...');
+          console.log('[DEBUG] Browser:', navigator.userAgent);
+          
+          const response = await fetch('/api/debug-login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'same-origin'
+          });
+          
+          const data = await response.json();
+          console.log('[DEBUG] Response status:', response.status);
+          console.log('[DEBUG] Response headers:', {
+            'set-cookie': response.headers.get('set-cookie'),
+            'content-type': response.headers.get('content-type')
+          });
+          console.log('[DEBUG] Response data:', data);
+          console.log('[DEBUG] Cookies after response:', document.cookie);
+          
+          if (response.ok) {
+            console.log('[DEBUG] Login successful, waiting for cookie...');
+            // Small delay to ensure cookie is persisted
+            await new Promise(r => setTimeout(r, 500));
+            console.log('[DEBUG] Cookies before redirect:', document.cookie);
+            window.location.href = '/';
+          } else {
+            throw new Error(data.error || 'Login failed');
+          }
        } catch (error) {
          console.error('[DEBUG] Error:', error);
          alert('Debug login failed: ' + error.message);
