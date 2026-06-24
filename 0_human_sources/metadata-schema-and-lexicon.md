@@ -17,12 +17,6 @@ Controlled Lexicon
 - multimedia_resource: Video, podcast, recorded webinar, livestream, or other audiovisual source.
 - unpublished_document: Internal report, white paper, working paper, proposal, memorandum, or other unpublished material.
 
-# Peer_Review:
-- peer_reviewed
-- editorial_reviewed
-- unknown
-- not_applicable
-
 # Evidence_Type
 - empirical_study: Research based on the collection and analysis of original data. Includes surveys, interviews, focus groups, observations, experiments, analytics, ethnographies, and mixed-methods studies.
 - implementation_case: Research describing, analyzing, or evaluating a specific program, service, collection, partnership, intervention, or design effort in practice.

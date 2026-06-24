@@ -361,7 +361,6 @@ app.get('/api/metrics', requireAuth, async (req, res) => {
     
     const featureGroups = [
       { key: 'source_type', label: 'Source Type' },
-      { key: 'peer_review', label: 'Peer Review' },
       { key: 'evidence_type', label: 'Evidence Type' },
       { key: 'primary_methodology', label: 'Primary Methodology' },
       { key: 'library_context', label: 'Library Context' },

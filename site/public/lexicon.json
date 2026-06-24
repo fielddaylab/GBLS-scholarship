@@ -76,32 +76,6 @@
     ]
   },
   {
-    "id": "Peer_Review",
-    "label": "Peer Review",
-    "items": [
-      {
-        "id": "peer_reviewed",
-        "label": "peer reviewed",
-        "description": "The source was evaluated by independent subject experts before scholarly publication."
-      },
-      {
-        "id": "editorial_reviewed",
-        "label": "editorial reviewed",
-        "description": "The source was reviewed by an editor or professional publication staff but did not undergo formal scholarly peer review."
-      },
-      {
-        "id": "unknown",
-        "label": "unknown",
-        "description": "Available information does not establish whether the source underwent peer or editorial review."
-      },
-      {
-        "id": "not_applicable",
-        "label": "not applicable",
-        "description": "Review status is not meaningful for this source type, such as a dataset, archive, or unpublished internal document."
-      }
-    ]
-  },
-  {
     "id": "Evidence_Type",
     "label": "Evidence Type",
     "items": [
