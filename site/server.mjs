@@ -351,13 +351,13 @@ app.get(
   '/auth/github/callback',
   passport.authenticate('github', { failureRedirect: '/login.html?error=GitHub login failed' }),
   (req, res) => {
-    // Passport session is automatically established by authenticate middleware.
-    console.log('GitHub callback: req.user =', req.user ? `${req.user.email} (id: ${req.user.id})` : 'undefined');
+    // Passport authenticated the user and set req.user.
+    // Create a JWT token and set it as a cookie for persistence.
     if (!req.user) {
-      console.error('GitHub callback: Passport did not set req.user!');
-      return res.redirect('/login.html?error=Session establishment failed');
+      return res.redirect('/login.html?error=Authentication failed');
     }
-    // Just redirect to dashboard.
+    const token = createToken(req.user.id);
+    setSessionCookie(res, token);
     res.redirect('/');
   }
 );
@@ -370,13 +370,13 @@ app.get(
   '/auth/google/callback',
   passport.authenticate('google', { failureRedirect: '/login.html?error=Google login failed' }),
   (req, res) => {
-    // Passport session is automatically established by authenticate middleware.
-    console.log('Google callback: req.user =', req.user ? `${req.user.email} (id: ${req.user.id})` : 'undefined');
+    // Passport authenticated the user and set req.user.
+    // Create a JWT token and set it as a cookie for persistence.
     if (!req.user) {
-      console.error('Google callback: Passport did not set req.user!');
-      return res.redirect('/login.html?error=Session establishment failed');
+      return res.redirect('/login.html?error=Authentication failed');
     }
-    // Just redirect to dashboard.
+    const token = createToken(req.user.id);
+    setSessionCookie(res, token);
     res.redirect('/');
   }
 );
