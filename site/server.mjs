@@ -343,7 +343,7 @@ app.get(
         return res.redirect('/login.html?error=Authentication failed: no user');
       }
       // Successful authentication — create JWT token and set it as a cookie
-      const token = createToken({ userId: req.user.id });
+      const token = createToken(req.user.id);
       setSessionCookie(res, token);
       res.redirect('/');
     } catch (error) {
@@ -366,7 +366,7 @@ app.get(
         return res.redirect('/login.html?error=Authentication failed: no user');
       }
       // Successful authentication — create JWT token and set it as a cookie
-      const token = createToken({ userId: req.user.id });
+      const token = createToken(req.user.id);
       setSessionCookie(res, token);
       res.redirect('/');
     } catch (error) {
