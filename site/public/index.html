@@ -22,8 +22,7 @@
     <!-- Navigation Tabs -->
     <nav class="tab-navigation">
       <button class="tab-btn active" data-tab="metrics">GBLS Lit Explorer</button>
-      <button class="tab-btn" data-tab="summaries">Review Summaries</button>
-      <button class="tab-btn" data-tab="classify">Review Classifications</button>
+      <button class="tab-btn" data-tab="summaries">Review & Classify</button>
       <button class="tab-btn" data-tab="view">View Classifications</button>
     </nav>
 
@@ -129,10 +128,10 @@
       </div>
 
       <!-- Tab 2: Review Summaries -->
-      <div class="tab-pane" id="summaries">
-        <div class="summaries-container">
-          <h2>Review Article Summaries</h2>
-          <p>Review and provide feedback on existing article summaries from the corpus.</p>
+       <div class="tab-pane" id="summaries">
+         <div class="summaries-container">
+           <h2>Review & Classify Articles</h2>
+           <p>Review article summaries and classify articles with quality ratings and metadata.</p>
           
            <div class="login-section" id="summaries-login" style="display: none;">
              <p>You are logged in as: <strong id="summaries-user-display"></strong></p>
@@ -154,7 +153,7 @@
               </div>
               
               <div class="article-content">
-                <div class="section">
+                <div class="section" style="display: none;">
                   <h4>Original Source Text</h4>
                   <div id="summaries-source-text" class="source-text"></div>
                 </div>
@@ -165,6 +164,7 @@
                 </div>
 
                 <form class="review-form" onsubmit="submitSummaryReview(event)">
+                  <h4>Summary Review</h4>
                   <div class="form-group">
                     <label for="summaries-quality">Summary Quality:</label>
                     <select id="summaries-quality">
@@ -178,19 +178,35 @@
 
                   <div class="form-group">
                     <label for="summaries-notes">Your Notes:</label>
-                    <textarea id="summaries-notes" placeholder="Add your review notes..." rows="5"></textarea>
+                    <textarea id="summaries-notes" placeholder="Add your review notes..." rows="3"></textarea>
                   </div>
 
-                  <button type="submit" class="btn-primary">Submit Review</button>
+                  <button type="submit" class="btn-primary">Submit Summary Review</button>
+                </form>
+
+                <hr style="margin: 20px 0;">
+
+                <form class="coding-form" onsubmit="submitClassification(event)">
+                  <div class="form-section">
+                    <h4>Summary Quality Rubric</h4>
+                    <div id="classify-rubric-form"></div>
+                  </div>
+
+                  <div class="form-section">
+                    <h4>Article Classifications (Metadata)</h4>
+                    <div id="classify-metadata-form"></div>
+                  </div>
+
+                  <button type="submit" class="btn-primary">Submit Classification</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
+       </div>
 
-      <!-- Tab 3: Review Classifications -->
-      <div class="tab-pane" id="classify">
+       <!-- Tab 3: Review Classifications (merged into summaries) -->
+       <div class="tab-pane" id="classify" style="display: none;">
         <div class="classify-container">
           <h2>Review Article Classifications</h2>
           <p>Code articles with quality ratings and metadata classifications.</p>

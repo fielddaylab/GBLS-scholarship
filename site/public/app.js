@@ -475,14 +475,19 @@ async function loadSummaryArticle() {
   if (!article) return;
 
   state.summariesState.currentArticle = article;
+  state.classifyState.currentArticle = article;
 
   document.getElementById('summaries-citation').textContent = article.citation;
   document.getElementById('summaries-source-text').textContent = article.sourceText || 'No source text available';
   document.getElementById('summaries-provided-summary').textContent = article.summary || 'No summary available';
 
-  // Reset form
+  // Reset summary review form
   document.getElementById('summaries-quality').value = '';
   document.getElementById('summaries-notes').value = '';
+
+  // Load classification rubric and metadata forms
+  renderRubricForm();
+  renderMetadataForm();
 
   document.getElementById('summaries-article-display').style.display = 'block';
 }
