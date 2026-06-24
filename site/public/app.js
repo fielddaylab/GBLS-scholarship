@@ -182,6 +182,15 @@ function renderMetricsSummary() {
   document.getElementById('year-range').textContent = `${summary.earliest_year || '?'} - ${summary.latest_year || '?'}`;
   document.getElementById('unique-features').textContent = summary.unique_feature_labels || '—';
   document.getElementById('avg-features').textContent = summary.mean_features_per_article?.toFixed(1) || '—';
+  
+  // Populate baseline metrics in combined cards if available
+  if (state.metrics.baselineSummary) {
+    const baseline = state.metrics.baselineSummary;
+    document.getElementById('baseline-total-articles-inline').textContent = baseline.total_articles || '—';
+    document.getElementById('baseline-year-range-inline').textContent = `${baseline.earliest_year || '?'} - ${baseline.latest_year || '?'}`;
+    document.getElementById('baseline-unique-features-inline').textContent = baseline.unique_feature_labels || '—';
+    document.getElementById('baseline-avg-features-inline').textContent = baseline.mean_features_per_article?.toFixed(1) || '—';
+  }
 }
 
 function populateFeatureSelect() {
@@ -274,13 +283,38 @@ function renderRankingChart(data) {
   }
 
   const maxValue = Math.max(...data.map(d => d[1]));
+  // Also consider baseline values for scaling if available
+  let maxBaselineValue = 0;
+  if (state.metrics.baseline && state.metrics.baseline[state.metricsState.group]) {
+    maxBaselineValue = Math.max(...Object.values(state.metrics.baseline[state.metricsState.group]).map(d => d.count || 0));
+  }
+  const globalMax = Math.max(maxValue, maxBaselineValue);
+  
   const html = data.map(([label, count], i) => {
-    const percent = (count / maxValue) * 100;
+    const percent = (count / globalMax) * 100;
+    
+    // Get baseline percentage if available
+    let baselinePercent = 0;
+    let baselineCount = 0;
+    if (state.metrics.baseline && state.metrics.baseline[state.metricsState.group]) {
+      const baselineData = state.metrics.baseline[state.metricsState.group][label];
+      if (baselineData) {
+        baselineCount = baselineData.count || 0;
+        baselinePercent = (baselineCount / globalMax) * 100;
+      }
+    }
+    
     return `
       <div class="rank-item" onclick="selectMetricsFeature('${label}')">
         <div class="rank-label">${label}</div>
-        <div class="rank-bar" style="width: ${percent}%"></div>
-        <div class="rank-value">${count}</div>
+        <div class="rank-bars">
+          ${baselinePercent > 0 ? `<div class="rank-bar baseline" style="width: ${baselinePercent}%; opacity: 0.5;"></div>` : ''}
+          <div class="rank-bar" style="width: ${percent}%"></div>
+        </div>
+        <div class="rank-values">
+          <div class="rank-value-main">${count}</div>
+          ${baselineCount > 0 ? `<div class="rank-value-baseline">${baselineCount}</div>` : ''}
+        </div>
       </div>
     `;
   }).join('');
@@ -294,7 +328,7 @@ function renderRankingChart(data) {
     style.textContent = `
       .rank-item {
         display: grid;
-        grid-template-columns: 150px 1fr 50px;
+        grid-template-columns: 150px 1fr 80px;
         gap: 1rem;
         align-items: center;
         margin-bottom: 1rem;
@@ -312,15 +346,35 @@ function renderRankingChart(data) {
         overflow: hidden;
         text-overflow: ellipsis;
       }
-      .rank-bar {
-        background: linear-gradient(90deg, var(--primary-color), #60a5fa);
+      .rank-bars {
+        position: relative;
         height: 24px;
-        border-radius: 0.25rem;
+        background: transparent;
       }
-      .rank-value {
+      .rank-bar {
+        position: absolute;
+        height: 100%;
+        border-radius: 0.25rem;
+        left: 0;
+      }
+      .rank-bar:last-of-type {
+        background: linear-gradient(90deg, var(--primary-color), #60a5fa);
+        z-index: 2;
+      }
+      .rank-bar.baseline {
+        background: #d0d0d0;
+        z-index: 1;
+      }
+      .rank-values {
         text-align: right;
         font-weight: 600;
         color: var(--text-dark);
+        font-size: 0.875rem;
+      }
+      .rank-value-baseline {
+        color: var(--text-light);
+        font-size: 0.75rem;
+        font-weight: 400;
       }
     `;
     document.head.appendChild(style);

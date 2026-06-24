@@ -328,6 +328,7 @@ app.get(
 app.get('/api/metrics', requireAuth, async (req, res) => {
   try {
     const metricsPath = path.join(METRICS_DIR, 'gbls_corpus_metrics');
+    const baselineMetricsPath = path.join(METRICS_DIR, 'reference_corpus_metrics');
     const datasetPath = path.join(metricsPath, 'dataset_summary.json');
     
     let summary;
@@ -337,6 +338,15 @@ app.get('/api/metrics', requireAuth, async (req, res) => {
     } catch (error) {
       console.error('Error loading dataset summary:', error.message);
       return res.status(500).json({ error: 'Metrics data not found' });
+    }
+    
+    // Load baseline summary
+    let baselineSummary = null;
+    try {
+      const content = await fs.readFile(path.join(baselineMetricsPath, 'dataset_summary.json'), 'utf-8');
+      baselineSummary = JSON.parse(content);
+    } catch (error) {
+      console.warn('Could not load baseline dataset summary:', error.message);
     }
     
     const articlesPath = path.join(metricsPath, 'articles_core.csv');
@@ -373,10 +383,31 @@ app.get('/api/metrics', requireAuth, async (req, res) => {
       { key: 'conceptual_theme', label: 'Conceptual Theme' }
     ];
     
+    // Load feature counts for both datasets
+    const baselineFeatures = {};
+    try {
+      const csv = await fs.readFile(path.join(baselineMetricsPath, 'feature_counts.csv'), 'utf-8');
+      const lines = csv.trim().split('\n');
+      for (let i = 1; i < lines.length; i++) {
+        const parts = lines[i].split(',');
+        const group = parts[0].trim();
+        const feature = parts[1].trim();
+        const count = parseInt(parts[2]) || 0;
+        const pct = parseFloat(parts[4]) || 0;
+        
+        if (!baselineFeatures[group]) baselineFeatures[group] = {};
+        baselineFeatures[group][feature] = { count, pct };
+      }
+    } catch (error) {
+      console.warn('Could not load baseline feature counts:', error.message);
+    }
+    
     res.json({
       summary,
+      baselineSummary,
       featureGroups,
-      articles
+      articles,
+      baseline: baselineFeatures
     });
   } catch (error) {
     res.status(500).json({ error: error.message });

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GBLS Literature Reviewer</title>
+  <title>Games Based Library Services Literature</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,8 +12,8 @@
      <header class="app-header">
       <div class="header-content">
         <div>
-          <h1>GBLS Literature Reviewer</h1>
-          <p class="subtitle">Unified review interface for metrics exploration and article classification</p>
+          <h1>Games Based Library Services Literature</h1>
+          <p class="subtitle">Corpus exploration, analysis, and literature review</p>
         </div>
         <div id="user-menu" class="user-menu"></div>
       </div>
@@ -37,23 +37,27 @@
             <button id="metrics-reset" class="btn-secondary">Reset Filters</button>
           </div>
 
-          <!-- Summary Stats -->
-          <div class="summary-cards">
+          <!-- Combined Metrics: GBLS vs Baseline -->
+          <div class="summary-cards" style="margin-bottom: 2rem;">
             <div class="card">
               <div class="card-label">Total Articles</div>
               <div class="card-value" id="total-articles">—</div>
+              <div class="card-baseline" id="baseline-total-articles-inline">—</div>
             </div>
             <div class="card">
               <div class="card-label">Year Range</div>
               <div class="card-value" id="year-range">—</div>
+              <div class="card-baseline" id="baseline-year-range-inline">—</div>
             </div>
             <div class="card">
               <div class="card-label">Unique Features</div>
               <div class="card-value" id="unique-features">—</div>
+              <div class="card-baseline" id="baseline-unique-features-inline">—</div>
             </div>
             <div class="card">
               <div class="card-label">Avg Features/Article</div>
               <div class="card-value" id="avg-features">—</div>
+              <div class="card-baseline" id="baseline-avg-features-inline">—</div>
             </div>
           </div>
 

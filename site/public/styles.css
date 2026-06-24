@@ -293,6 +293,20 @@ textarea {
   color: var(--primary-color);
 }
 
+.card-baseline {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-top: 0.5rem;
+  font-weight: 500;
+  opacity: 0.75;
+}
+
+.card-baseline::before {
+  content: "Baseline: ";
+  font-weight: 600;
+  color: #999;
+}
+
 /* Controls Panel */
 .controls-panel {
   display: grid;
