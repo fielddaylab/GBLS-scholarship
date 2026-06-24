@@ -352,6 +352,11 @@ app.get(
   passport.authenticate('github', { failureRedirect: '/login.html?error=GitHub login failed' }),
   (req, res) => {
     // Passport session is automatically established by authenticate middleware.
+    console.log('GitHub callback: req.user =', req.user ? `${req.user.email} (id: ${req.user.id})` : 'undefined');
+    if (!req.user) {
+      console.error('GitHub callback: Passport did not set req.user!');
+      return res.redirect('/login.html?error=Session establishment failed');
+    }
     // Just redirect to dashboard.
     res.redirect('/');
   }
@@ -366,6 +371,11 @@ app.get(
   passport.authenticate('google', { failureRedirect: '/login.html?error=Google login failed' }),
   (req, res) => {
     // Passport session is automatically established by authenticate middleware.
+    console.log('Google callback: req.user =', req.user ? `${req.user.email} (id: ${req.user.id})` : 'undefined');
+    if (!req.user) {
+      console.error('Google callback: Passport did not set req.user!');
+      return res.redirect('/login.html?error=Session establishment failed');
+    }
     // Just redirect to dashboard.
     res.redirect('/');
   }
