@@ -18,7 +18,9 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import cookieParser from 'cookie-parser';
+import session from 'express-session';
 import axios from 'axios';
+import passport from './passport.mjs';
 import {
   initializeDatabase,
   getUserByEmail,
@@ -62,7 +64,26 @@ SUBMISSIONS_DIR = await ensureDataDir(SUBMISSIONS_DIR, { label: 'submissions' })
 
 // Middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+
+// Session management for OAuth
+app.use(
+  session({
+    secret: getEnv('JWT_SECRET', 'dev-secret'),
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,
+      secure: isProduction,
+      maxAge: 24 * 60 * 60 * 1000, // 24 hours
+    },
+  })
+);
+
+// Passport initialization
+app.use(passport.initialize());
+app.use(passport.session());
 
 // CORS headers - allow localhost and Render domains
 app.use((req, res, next) => {
@@ -309,37 +330,33 @@ app.get('/api/user', (req, res) => {
   });
 });
 
-// GitHub OAuth callback (simplified - would need OAuth setup)
-app.get('/auth/github/callback', async (req, res) => {
-  try {
-    const { code } = req.query;
-    if (!code) {
-      return res.redirect('/login.html?error=No code provided');
-    }
+// GitHub OAuth login initiation
+app.get('/auth/github', passport.authenticate('github', { scope: ['user:email'] }));
 
-    // In a real implementation, exchange code for GitHub access token
-    // and fetch user profile. For now, return error.
-    res.redirect('/login.html?error=GitHub authentication not yet configured');
-  } catch (error) {
-    res.redirect('/login.html?error=Authentication failed');
+// GitHub OAuth callback
+app.get(
+  '/auth/github/callback',
+  passport.authenticate('github', { failureRedirect: '/login.html?error=GitHub login failed' }),
+  (req, res) => {
+    // Successful authentication — set session and redirect to dashboard
+    setSessionCookie(res, req.user.id);
+    res.redirect('/');
   }
-});
+);
 
-// Google OAuth callback (simplified - would need OAuth setup)
-app.get('/auth/google/callback', async (req, res) => {
-  try {
-    const { code } = req.query;
-    if (!code) {
-      return res.redirect('/login.html?error=No code provided');
-    }
+// Google OAuth login initiation
+app.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 
-    // In a real implementation, exchange code for Google access token
-    // and fetch user profile. For now, return error.
-    res.redirect('/login.html?error=Google authentication not yet configured');
-  } catch (error) {
-    res.redirect('/login.html?error=Authentication failed');
+// Google OAuth callback
+app.get(
+  '/auth/google/callback',
+  passport.authenticate('google', { failureRedirect: '/login.html?error=Google login failed' }),
+  (req, res) => {
+    // Successful authentication — set session and redirect to dashboard
+    setSessionCookie(res, req.user.id);
+    res.redirect('/');
   }
-});
+);
 
 // ==================== METRICS ENDPOINTS ====================
 
