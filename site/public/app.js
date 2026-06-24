@@ -520,8 +520,112 @@ async function loadSummaryArticle() {
   renderRubricForm();
   renderOverallQualityForm();
   renderMetadataForm();
+  
+  // Reset classification form fields
+  document.getElementById('classification-notes').value = '';
+  document.querySelector('input[name="classification-issues"][value="no"]').checked = true;
+  // Hide success message
+  const classificationStatusElement = document.getElementById('classification-form-status');
+  if (classificationStatusElement) {
+    classificationStatusElement.style.display = 'none';
+  }
+  const classificationSubmitBtn = document.querySelector('#classification-form button[type="submit"]');
+  if (classificationSubmitBtn) {
+    classificationSubmitBtn.textContent = 'Submit Classification';
+  }
 
-  document.getElementById('summaries-article-display').style.display = 'block';
+  // Try to load existing review for this article
+  try {
+    const response = await fetch(`/api/summaries/${articleId}`, {
+      credentials: 'same-origin'
+    });
+    
+    if (response.ok) {
+      const review = await response.json();
+      
+      // Populate form with existing data
+      if (review.qualityRating) {
+        // Uncheck all overall quality options first
+        document.querySelectorAll('input[name="overall-quality"]').forEach(input => {
+          input.checked = false;
+        });
+        // Check the one that matches
+        const selected = document.querySelector(`input[name="overall-quality"][value="${review.qualityRating}"]`);
+        if (selected) selected.checked = true;
+      }
+      
+      if (review.notes) {
+        document.getElementById('summaries-notes').value = review.notes;
+      }
+      
+      // Populate rubric scores
+      if (review.ratings && review.ratings.rubricScores) {
+        Object.entries(review.ratings.rubricScores).forEach(([dimensionId, score]) => {
+          const input = document.querySelector(`input[name="rubric-${dimensionId}"][value="${score}"]`);
+          if (input) input.checked = true;
+        });
+      }
+      
+       // Show that this is a previous submission
+       submitBtn.textContent = 'Update Summary Review';
+     }
+   } catch (error) {
+     console.log('[Load Summary] No previous review found or error:', error.message);
+   }
+   
+   // Try to load existing classification for this article
+   try {
+     const codingResponse = await fetch(`/api/codings/${articleId}`, {
+       credentials: 'same-origin'
+     });
+     
+     if (codingResponse.ok) {
+       const coding = await codingResponse.json();
+       console.log('[Load Summary] Retrieved coding:', coding);
+       
+       // Populate form with existing data
+       if (coding.notes) {
+         console.log('[Load Summary] Setting classification notes:', coding.notes);
+         document.getElementById('classification-notes').value = coding.notes;
+       }
+       
+       if (coding.hadIssues !== undefined) {
+         const issueOption = coding.hadIssues ? 'yes' : 'no';
+         console.log('[Load Summary] Setting classification issues to:', issueOption);
+         document.querySelector(`input[name="classification-issues"][value="${issueOption}"]`).checked = true;
+       }
+       
+       // Populate metadata codes (classifications don't have rubric scores)
+       if (coding.codes) {
+         console.log('[Load Summary] Setting classification codes:', coding.codes);
+         Object.entries(coding.codes).forEach(([key, value]) => {
+           // All codes in classifications are metadata (arrays)
+           if (Array.isArray(value)) {
+             value.forEach(itemId => {
+               const selector = `input[name="meta-${key}"][value="${itemId}"]`;
+               const input = document.querySelector(selector);
+               console.log(`[Load Summary] Looking for ${selector}: ${input ? 'FOUND' : 'NOT FOUND'}`);
+               if (input) {
+                 input.checked = true;
+                 console.log(`[Load Summary] Checked: meta-${key}[${itemId}]`);
+               }
+             });
+           }
+         });
+       }
+       
+       // Show that this is a previous submission
+       if (classificationSubmitBtn) {
+         classificationSubmitBtn.textContent = 'Update Classification';
+       }
+     } else {
+       console.log('[Load Summary] No previous classification found (404)');
+     }
+   } catch (error) {
+     console.log('[Load Summary] No previous classification found or error:', error.message);
+   }
+
+   document.getElementById('summaries-article-display').style.display = 'block';
 }
 
 function pickRandomSummaryArticle() {
@@ -584,10 +688,6 @@ async function submitSummaryReview(event) {
 
     if (response.ok) {
       showSubmissionSuccess('summary-form-status');
-      // Load next article after a delay
-      setTimeout(() => {
-        pickRandomSummaryArticle();
-      }, 2000);
     } else {
       const error = await response.json();
       alert(`Error: ${error.error}`);
@@ -613,6 +713,7 @@ function initializeClassifyTab() {
     loginSection.style.display = 'none';
     reviewSection.style.display = 'block';
     populateClassifyArticleSelect();
+    setupClassificationControls();
     loadRubricAndLexicon();
   } else {
     loginSection.style.display = 'block';
@@ -631,6 +732,7 @@ async function startClassification() {
   document.getElementById('classify-review').style.display = 'block';
 
   populateClassifyArticleSelect();
+  setupClassificationControls();
   await loadRubricAndLexicon();
 }
 
@@ -680,6 +782,13 @@ function populateClassifyArticleSelect() {
   });
 }
 
+function setupClassificationControls() {
+  const articleSelect = document.getElementById('classify-article-select');
+  if (articleSelect) {
+    articleSelect.addEventListener('change', loadClassifyArticle);
+  }
+}
+
 async function loadClassifyArticle() {
   const articleId = document.getElementById('classify-article-select').value;
   if (!articleId) return;
@@ -705,8 +814,69 @@ async function loadClassifyArticle() {
     submitBtn.textContent = 'Submit Classification';
   }
 
-  renderRubricForm();
+  // Classifications don't have rubric scores, only metadata
   renderMetadataForm();
+  
+  // Log what form elements exist after rendering
+  console.log('[Load Coding] After rendering - checking form elements:');
+  const metaInputs = document.querySelectorAll('input[name^="meta-"]');
+  console.log('[Load Coding] Metadata inputs found:', metaInputs.length);
+  console.log('[Load Coding] Sample metadata names:', Array.from(metaInputs).slice(0,5).map(el => ({ name: el.name, value: el.value })));
+
+  // Try to load existing coding for this article
+  try {
+    const response = await fetch(`/api/codings/${articleId}`, {
+      credentials: 'same-origin'
+    });
+    
+    console.log('[Load Coding] Fetch response status:', response.status);
+    
+    if (response.ok) {
+      const coding = await response.json();
+      console.log('[Load Coding] Retrieved coding:', coding);
+      
+      // Populate form with existing data
+      if (coding.notes) {
+        console.log('[Load Coding] Setting notes:', coding.notes);
+        document.getElementById('classification-notes').value = coding.notes;
+      }
+      
+      if (coding.hadIssues !== undefined) {
+        const issueOption = coding.hadIssues ? 'yes' : 'no';
+        console.log('[Load Coding] Setting issues to:', issueOption);
+        document.querySelector(`input[name="classification-issues"][value="${issueOption}"]`).checked = true;
+      }
+      
+      // Populate metadata codes (classifications don't have rubric scores)
+      if (coding.codes) {
+        console.log('[Load Coding] Setting codes:', coding.codes);
+        console.log('[Load Coding] Code keys:', Object.keys(coding.codes));
+        
+        Object.entries(coding.codes).forEach(([key, value]) => {
+          console.log(`[Load Coding] Processing code group: ${key} with values:`, value);
+          // All codes in classifications are metadata (arrays)
+          if (Array.isArray(value)) {
+            value.forEach(itemId => {
+              const selector = `input[name="meta-${key}"][value="${itemId}"]`;
+              const input = document.querySelector(selector);
+              console.log(`[Load Coding] Selector: "${selector}" => ${input ? 'FOUND' : 'NOT FOUND'}`);
+              if (input) {
+                input.checked = true;
+                console.log(`[Load Coding] Checked: meta-${key}[${itemId}]`);
+              }
+            });
+          }
+        });
+      }
+      
+      // Show that this is a previous submission
+      submitBtn.textContent = 'Update Classification';
+    } else {
+      console.log('[Load Coding] No previous coding found (404)');
+    }
+  } catch (error) {
+    console.log('[Load Coding] Error:', error.message);
+  }
 
   document.getElementById('classify-article-display').style.display = 'block';
 }
@@ -856,32 +1026,32 @@ async function submitClassification(event) {
     return;
   }
 
-  if (!state.classifyState.rubricDefinition) {
-    alert('Rubric not loaded');
-    return;
-  }
-
-  // Collect rubric scores
-  const rubric = {};
-  state.classifyState.rubricDefinition.dimensions.forEach(dimension => {
-    const selected = document.querySelector(`input[name="rubric-${dimension.id}"]:checked`);
-    if (selected) {
-      rubric[dimension.id] = parseInt(selected.value);
-    }
-  });
-
-  // Collect metadata selections (codes)
+  // Collect metadata selections (codes) - NO rubric scores in classifications
   const codes = {};
+  console.log('[Submit Classification] Starting code collection');
+  console.log('[Submit Classification] Lexicon exists:', !!state.classifyState.lexicon);
+  console.log('[Submit Classification] Lexicon is array:', Array.isArray(state.classifyState.lexicon));
+  console.log('[Submit Classification] Lexicon length:', state.classifyState.lexicon?.length);
+  
   if (state.classifyState.lexicon && Array.isArray(state.classifyState.lexicon)) {
     state.classifyState.lexicon.forEach(group => {
-      const selected = Array.from(
-        document.querySelectorAll(`input[name="meta-${group.id}"]:checked`)
-      ).map(cb => cb.value);
+      console.log(`[Submit Classification] Processing group: ${group.id}`);
+      const selector = `input[name="meta-${group.id}"]:checked`;
+      const allInputs = document.querySelectorAll(`input[name="meta-${group.id}"]`);
+      const checkedInputs = document.querySelectorAll(selector);
+      
+      console.log(`[Submit Classification]   Selector: "${selector}"`);
+      console.log(`[Submit Classification]   Total inputs for this group: ${allInputs.length}`);
+      console.log(`[Submit Classification]   Checked inputs: ${checkedInputs.length}`);
+      
+      const selected = Array.from(checkedInputs).map(cb => cb.value);
       if (selected.length > 0) {
         codes[group.id] = selected;
+        console.log(`[Submit Classification]   Selected values: ${selected.join(', ')}`);
       }
     });
   }
+  console.log('[Submit Classification] Final codes object:', codes);
 
   // Collect classification issues flag
   const issuesSelected = document.querySelector('input[name="classification-issues"]:checked');
@@ -892,11 +1062,13 @@ async function submitClassification(event) {
 
   const submission = {
     articleId: state.classifyState.currentArticle.id,
-    codes: { ...rubric, ...codes },
+    codes: codes,
     userInitials: state.user.initials,
     hadClassificationIssues: hadIssues,
     classificationNotes: classificationComments
   };
+
+  console.log('[Submit Classification] Submitting:', submission);
 
   try {
     const response = await fetch('/api/codings', {
@@ -906,18 +1078,19 @@ async function submitClassification(event) {
       body: JSON.stringify(submission)
     });
 
+    console.log('[Submit Classification] Response status:', response.status);
+    
     if (response.ok) {
+      const result = await response.json();
+      console.log('[Submit Classification] Success:', result);
       showSubmissionSuccess('classification-form-status');
-      // Load next article after a delay
-      setTimeout(() => {
-        pickRandomClassifyArticle();
-      }, 2000);
     } else {
       const error = await response.json();
+      console.error('[Submit Classification] Error response:', error);
       alert(`Error: ${error.error}`);
     }
   } catch (error) {
-    console.error('Classification submission error:', error);
+    console.error('[Submit Classification] Error:', error);
     alert(`Error submitting classification: ${error.message}`);
   }
 }

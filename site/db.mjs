@@ -198,6 +198,41 @@ export function cleanupExpiredSessions() {
 }
 
 // Submission functions - Article Codings
+export function createOrUpdateArticleCoding(codingId, articleId, userId, codes, rubricId = null, rubricVersion = null, hadIssues = false, notes = null) {
+  const db = getDatabase();
+  
+  console.log('[createOrUpdateArticleCoding] Called with:', { codingId, articleId, userId, codes, hadIssues, notes });
+  
+  // Check if user already has a coding for this article
+  const existing = db.prepare(`
+    SELECT id FROM article_codings WHERE user_id = ? AND article_id = ?
+  `).get(userId, articleId);
+  
+  console.log('[createOrUpdateArticleCoding] Existing record:', existing);
+  
+  if (existing) {
+    // Update existing coding
+    console.log('[createOrUpdateArticleCoding] Updating existing record');
+    const stmt = db.prepare(`
+      UPDATE article_codings 
+      SET codes = ?, rubric_id = ?, rubric_version = ?, had_issues = ?, notes = ?
+      WHERE user_id = ? AND article_id = ?
+    `);
+    stmt.run(JSON.stringify(codes), rubricId, rubricVersion, hadIssues ? 1 : 0, notes, userId, articleId);
+    return { id: existing.id, article_id: articleId, user_id: userId, updated: true };
+  } else {
+    // Create new coding
+    console.log('[createOrUpdateArticleCoding] Creating new record with values:', { codingId, articleId, userId, codes: JSON.stringify(codes), rubricId, rubricVersion, hadIssues: hadIssues ? 1 : 0, notes });
+    const stmt = db.prepare(`
+      INSERT INTO article_codings (id, article_id, user_id, codes, rubric_id, rubric_version, had_issues, notes)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+    stmt.run(codingId, articleId, userId, JSON.stringify(codes), rubricId, rubricVersion, hadIssues ? 1 : 0, notes);
+    console.log('[createOrUpdateArticleCoding] Insert completed');
+    return { id: codingId, article_id: articleId, user_id: userId, updated: false };
+  }
+}
+
 export function createArticleCoding(codingId, articleId, userId, codes, rubricId = null, rubricVersion = null, hadIssues = false, notes = null) {
   const db = getDatabase();
   const stmt = db.prepare(`
@@ -250,6 +285,34 @@ export function getArticleCodingsByArticle(articleId) {
 }
 
 // Submission functions - Summary Reviews
+export function createOrUpdateSummaryReview(reviewId, articleId, userId, ratings, qualityRating = null, notes = null, rubricId = null, rubricVersion = null) {
+  const db = getDatabase();
+  
+  // Check if user already has a review for this article
+  const existing = db.prepare(`
+    SELECT id FROM summary_reviews WHERE user_id = ? AND article_id = ?
+  `).get(userId, articleId);
+  
+  if (existing) {
+    // Update existing review
+    const stmt = db.prepare(`
+      UPDATE summary_reviews 
+      SET ratings = ?, quality_rating = ?, notes = ?, rubric_id = ?, rubric_version = ?
+      WHERE user_id = ? AND article_id = ?
+    `);
+    stmt.run(JSON.stringify(ratings), qualityRating, notes, rubricId, rubricVersion, userId, articleId);
+    return { id: existing.id, article_id: articleId, user_id: userId, updated: true };
+  } else {
+    // Create new review
+    const stmt = db.prepare(`
+      INSERT INTO summary_reviews (id, article_id, user_id, ratings, quality_rating, notes, rubric_id, rubric_version)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+    stmt.run(reviewId, articleId, userId, JSON.stringify(ratings), qualityRating, notes, rubricId, rubricVersion);
+    return { id: reviewId, article_id: articleId, user_id: userId, updated: false };
+  }
+}
+
 export function createSummaryReview(reviewId, articleId, userId, ratings, qualityRating = null, notes = null, rubricId = null, rubricVersion = null) {
   const db = getDatabase();
   const stmt = db.prepare(`
@@ -303,4 +366,58 @@ export function getSummaryReviewsByArticle(articleId) {
     rubricVersion: row.rubric_version,
     timestamp: row.created_at
   }));
+}
+
+export function getUserSummaryReview(userId, articleId) {
+  const db = getDatabase();
+  const row = db.prepare(`
+    SELECT sr.*, u.initials
+    FROM summary_reviews sr
+    LEFT JOIN users u ON sr.user_id = u.id
+    WHERE sr.user_id = ? AND sr.article_id = ?
+    ORDER BY sr.created_at DESC
+    LIMIT 1
+  `).get(userId, articleId);
+  
+  if (!row) return null;
+  
+  return {
+    id: row.id,
+    articleId: row.article_id,
+    userId: row.user_id,
+    userInitials: row.initials,
+    ratings: JSON.parse(row.ratings),
+    qualityRating: row.quality_rating,
+    notes: row.notes,
+    rubricId: row.rubric_id,
+    rubricVersion: row.rubric_version,
+    timestamp: row.created_at
+  };
+}
+
+export function getUserArticleCoding(userId, articleId) {
+  const db = getDatabase();
+  const row = db.prepare(`
+    SELECT ac.*, u.initials
+    FROM article_codings ac
+    LEFT JOIN users u ON ac.user_id = u.id
+    WHERE ac.user_id = ? AND ac.article_id = ?
+    ORDER BY ac.created_at DESC
+    LIMIT 1
+  `).get(userId, articleId);
+  
+  if (!row) return null;
+  
+  return {
+    id: row.id,
+    articleId: row.article_id,
+    userId: row.user_id,
+    userInitials: row.initials,
+    codes: JSON.parse(row.codes),
+    hadIssues: row.had_issues === 1,
+    notes: row.notes,
+    rubricId: row.rubric_id,
+    rubricVersion: row.rubric_version,
+    timestamp: row.created_at
+  };
 }

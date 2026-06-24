@@ -28,9 +28,13 @@ import {
   getUserByInitials,
   isInitialsTaken,
   createArticleCoding,
+  createOrUpdateArticleCoding,
   getArticleCodings,
   createSummaryReview,
-  getSummaryReviews
+  createOrUpdateSummaryReview,
+  getSummaryReviews,
+  getUserSummaryReview,
+  getUserArticleCoding
 } from './db.mjs';
 import {
   createToken,
@@ -478,15 +482,36 @@ app.get('/api/codings', requireAuth, async (req, res) => {
   }
 });
 
+// Get user's existing coding for an article
+app.get('/api/codings/:articleId', requireAuth, async (req, res) => {
+  try {
+    const { articleId } = req.params;
+    const coding = getUserArticleCoding(req.user.id, articleId);
+    
+    if (!coding) {
+      return res.status(404).json({ error: 'No coding found' });
+    }
+    
+    res.json(coding);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 app.post('/api/codings', requireAuth, async (req, res) => {
   try {
     const { articleId, codes, rubricId, rubricVersion, hadClassificationIssues, classificationNotes } = req.body;
+    console.log('[POST /api/codings] Received:', { articleId, codes, hadClassificationIssues, classificationNotes });
+    
     if (!articleId || !codes) {
+      console.log('[POST /api/codings] Missing required fields');
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
     const codingId = `coding_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    createArticleCoding(
+    console.log('[POST /api/codings] Creating/updating with codingId:', codingId, 'userId:', req.user.id);
+    
+    const result = createOrUpdateArticleCoding(
       codingId,
       articleId,
       req.user.id,
@@ -497,8 +522,10 @@ app.post('/api/codings', requireAuth, async (req, res) => {
       classificationNotes || null
     );
 
-    res.json({ success: true, id: codingId });
+    console.log('[POST /api/codings] Result:', result);
+    res.json({ success: true, id: result.id, updated: result.updated });
   } catch (error) {
+    console.error('[POST /api/codings] Error:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -514,6 +541,22 @@ app.get('/api/summaries', requireAuth, async (req, res) => {
   }
 });
 
+// Get user's existing review for an article
+app.get('/api/summaries/:articleId', requireAuth, async (req, res) => {
+  try {
+    const { articleId } = req.params;
+    const review = getUserSummaryReview(req.user.id, articleId);
+    
+    if (!review) {
+      return res.status(404).json({ error: 'No review found' });
+    }
+    
+    res.json(review);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 app.post('/api/summaries', requireAuth, async (req, res) => {
   try {
     const rubric = await loadRubric();
@@ -524,7 +567,7 @@ app.post('/api/summaries', requireAuth, async (req, res) => {
     }
 
     const reviewId = `review_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    createSummaryReview(
+    const result = createOrUpdateSummaryReview(
       reviewId,
       articleId,
       req.user.id,
@@ -535,7 +578,7 @@ app.post('/api/summaries', requireAuth, async (req, res) => {
       rubric.version
     );
 
-    res.json({ success: true, id: reviewId });
+    res.json({ success: true, id: result.id, updated: result.updated });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
