@@ -19,7 +19,7 @@ services:
       NODE_ENV: production
       DEBUG_MODE: "true"
     volumes:
-      - gbls-data:/mnt/persistent
+      - ./data:/mnt/persistent
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:8787/health"]
@@ -27,7 +27,3 @@ services:
       timeout: 5s
       retries: 3
       start_period: 10s
-
-volumes:
-  gbls-data:
-    driver: local

@@ -51,6 +51,30 @@ export function initializeDatabase() {
       expires_at DATETIME NOT NULL,
       FOREIGN KEY (user_id) REFERENCES users(id)
     );
+
+    CREATE TABLE IF NOT EXISTS article_codings (
+      id TEXT PRIMARY KEY,
+      article_id TEXT NOT NULL,
+      user_id INTEGER NOT NULL,
+      codes TEXT NOT NULL,
+      rubric_id TEXT,
+      rubric_version TEXT,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (user_id) REFERENCES users(id)
+    );
+
+    CREATE TABLE IF NOT EXISTS summary_reviews (
+      id TEXT PRIMARY KEY,
+      article_id TEXT NOT NULL,
+      user_id INTEGER NOT NULL,
+      ratings TEXT NOT NULL,
+      quality_rating TEXT,
+      notes TEXT,
+      rubric_id TEXT,
+      rubric_version TEXT,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (user_id) REFERENCES users(id)
+    );
   `);
 
   return db;
@@ -146,4 +170,112 @@ export function deleteSession(sessionId) {
 export function cleanupExpiredSessions() {
   const db = getDatabase();
   db.prepare('DELETE FROM sessions WHERE expires_at <= CURRENT_TIMESTAMP').run();
+}
+
+// Submission functions - Article Codings
+export function createArticleCoding(codingId, articleId, userId, codes, rubricId = null, rubricVersion = null) {
+  const db = getDatabase();
+  const stmt = db.prepare(`
+    INSERT INTO article_codings (id, article_id, user_id, codes, rubric_id, rubric_version)
+    VALUES (?, ?, ?, ?, ?, ?)
+  `);
+  stmt.run(codingId, articleId, userId, JSON.stringify(codes), rubricId, rubricVersion);
+  return { id: codingId, article_id: articleId, user_id: userId };
+}
+
+export function getArticleCodings() {
+  const db = getDatabase();
+  const rows = db.prepare(`
+    SELECT ac.*, u.initials
+    FROM article_codings ac
+    LEFT JOIN users u ON ac.user_id = u.id
+    ORDER BY ac.created_at DESC
+  `).all();
+  return rows.map(row => ({
+    id: row.id,
+    articleId: row.article_id,
+    userId: row.user_id,
+    usercode: row.initials,
+    codes: JSON.parse(row.codes),
+    rubricId: row.rubric_id,
+    rubricVersion: row.rubric_version,
+    timestamp: row.created_at
+  }));
+}
+
+export function getArticleCodingsByArticle(articleId) {
+  const db = getDatabase();
+  const rows = db.prepare(`
+    SELECT ac.*, u.initials
+    FROM article_codings ac
+    LEFT JOIN users u ON ac.user_id = u.id
+    WHERE ac.article_id = ?
+    ORDER BY ac.created_at DESC
+  `).all(articleId);
+  return rows.map(row => ({
+    id: row.id,
+    articleId: row.article_id,
+    userId: row.user_id,
+    usercode: row.initials,
+    codes: JSON.parse(row.codes),
+    rubricId: row.rubric_id,
+    rubricVersion: row.rubric_version,
+    timestamp: row.created_at
+  }));
+}
+
+// Submission functions - Summary Reviews
+export function createSummaryReview(reviewId, articleId, userId, ratings, qualityRating = null, notes = null, rubricId = null, rubricVersion = null) {
+  const db = getDatabase();
+  const stmt = db.prepare(`
+    INSERT INTO summary_reviews (id, article_id, user_id, ratings, quality_rating, notes, rubric_id, rubric_version)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  stmt.run(reviewId, articleId, userId, JSON.stringify(ratings), qualityRating, notes, rubricId, rubricVersion);
+  return { id: reviewId, article_id: articleId, user_id: userId };
+}
+
+export function getSummaryReviews() {
+  const db = getDatabase();
+  const rows = db.prepare(`
+    SELECT sr.*, u.initials
+    FROM summary_reviews sr
+    LEFT JOIN users u ON sr.user_id = u.id
+    ORDER BY sr.created_at DESC
+  `).all();
+  return rows.map(row => ({
+    id: row.id,
+    articleId: row.article_id,
+    userId: row.user_id,
+    userInitials: row.initials,
+    ratings: JSON.parse(row.ratings),
+    qualityRating: row.quality_rating,
+    notes: row.notes,
+    rubricId: row.rubric_id,
+    rubricVersion: row.rubric_version,
+    timestamp: row.created_at
+  }));
+}
+
+export function getSummaryReviewsByArticle(articleId) {
+  const db = getDatabase();
+  const rows = db.prepare(`
+    SELECT sr.*, u.initials
+    FROM summary_reviews sr
+    LEFT JOIN users u ON sr.user_id = u.id
+    WHERE sr.article_id = ?
+    ORDER BY sr.created_at DESC
+  `).all(articleId);
+  return rows.map(row => ({
+    id: row.id,
+    articleId: row.article_id,
+    userId: row.user_id,
+    userInitials: row.initials,
+    ratings: JSON.parse(row.ratings),
+    qualityRating: row.quality_rating,
+    notes: row.notes,
+    rubricId: row.rubric_id,
+    rubricVersion: row.rubric_version,
+    timestamp: row.created_at
+  }));
 }

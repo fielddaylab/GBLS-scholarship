@@ -26,7 +26,11 @@ import {
   getUserByEmail,
   getUserById,
   getUserByInitials,
-  isInitialsTaken
+  isInitialsTaken,
+  createArticleCoding,
+  getArticleCodings,
+  createSummaryReview,
+  getSummaryReviews
 } from './db.mjs';
 import {
   createToken,
@@ -205,29 +209,6 @@ async function readJSONFile(filePath) {
     return JSON.parse(content);
   } catch (error) {
     return null;
-  }
-}
-
-async function writeJSONFile(filePath, data) {
-  const dir = path.dirname(filePath);
-  await fs.mkdir(dir, { recursive: true });
-  await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
-}
-
-async function listFilesWithPrefix(dir, prefix) {
-  try {
-    const files = await fs.readdir(dir);
-    const results = [];
-    for (const file of files) {
-      if (file.startsWith(prefix) && file.endsWith('.json')) {
-        const filePath = path.join(dir, file);
-        const data = await readJSONFile(filePath);
-        if (data) results.push(data);
-      }
-    }
-    return results;
-  } catch (error) {
-    return [];
   }
 }
 
@@ -533,8 +514,7 @@ app.get('/api/article/:id', requireAuth, async (req, res) => {
 
 app.get('/api/codings', requireAuth, async (req, res) => {
   try {
-    const codingsDir = path.join(SUBMISSIONS_DIR, 'article_codings');
-    const codings = await listFilesWithPrefix(codingsDir, 'coding_');
+    const codings = getArticleCodings();
     res.json(codings);
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -543,25 +523,22 @@ app.get('/api/codings', requireAuth, async (req, res) => {
 
 app.post('/api/codings', requireAuth, async (req, res) => {
   try {
-    const { articleId, codes, userInitials } = req.body;
+    const { articleId, codes, rubricId, rubricVersion } = req.body;
     if (!articleId || !codes) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    const codingData = {
-      id: `coding_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+    const codingId = `coding_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    createArticleCoding(
+      codingId,
       articleId,
-      userInitials: userInitials || req.user.initials,
+      req.user.id,
       codes,
-      timestamp: new Date().toISOString(),
-      userId: req.user.id
-    };
+      rubricId,
+      rubricVersion
+    );
 
-    const filename = `${codingData.id}.json`;
-    const filePath = path.join(SUBMISSIONS_DIR, 'article_codings', filename);
-    await writeJSONFile(filePath, codingData);
-
-    res.json({ success: true, id: codingData.id });
+    res.json({ success: true, id: codingId });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -571,8 +548,7 @@ app.post('/api/codings', requireAuth, async (req, res) => {
 
 app.get('/api/summaries', requireAuth, async (req, res) => {
   try {
-    const summariesDir = path.join(SUBMISSIONS_DIR, 'summary_reviews');
-    const summaries = await listFilesWithPrefix(summariesDir, 'review_');
+    const summaries = getSummaryReviews();
     res.json(summaries);
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -582,28 +558,25 @@ app.get('/api/summaries', requireAuth, async (req, res) => {
 app.post('/api/summaries', requireAuth, async (req, res) => {
   try {
     const rubric = await loadRubric();
-    const { articleId, ratings, userInitials } = req.body;
+    const { articleId, ratings, qualityRating, notes } = req.body;
     
     if (!articleId || !ratings) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    const summaryData = {
-      id: `review_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+    const reviewId = `review_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    createSummaryReview(
+      reviewId,
       articleId,
-      userInitials: userInitials || req.user.initials,
+      req.user.id,
       ratings,
-      timestamp: new Date().toISOString(),
-      userId: req.user.id,
-      rubricId: rubric.id,
-      rubricVersion: rubric.version
-    };
+      qualityRating,
+      notes,
+      rubric.id,
+      rubric.version
+    );
 
-    const filename = `${summaryData.id}.json`;
-    const filePath = path.join(SUBMISSIONS_DIR, 'summary_reviews', filename);
-    await writeJSONFile(filePath, summaryData);
-
-    res.json({ success: true, id: summaryData.id });
+    res.json({ success: true, id: reviewId });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

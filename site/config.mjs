@@ -92,7 +92,7 @@ const defaultDataDir = isRender ? '/mnt/persistent' : path.join(REPO_ROOT, 'data
 export const DATA_DIR = path.resolve(getEnv('DATA_DIR', defaultDataDir));
 
 /** Absolute path to the SQLite database file. */
-export const DB_PATH = path.resolve(getEnv('DB_PATH', path.join(DATA_DIR, 'users.db')));
+export const DB_PATH = path.resolve(getEnv('DB_PATH', path.join(DATA_DIR, 'database.sqlite')));
 
 /** Absolute path to the submissions directory. */
 export const SUBMISSIONS_DIR = path.resolve(
