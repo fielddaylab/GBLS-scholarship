@@ -1,13 +1,30 @@
 import Database from 'better-sqlite3';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { mkdirSync } from 'fs';
+import { DB_PATH, isProduction } from './config.mjs';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const dbPath = path.join(__dirname, '../0_human_sources/users.db');
+const dbPath = DB_PATH;
 
 let db;
 
 export function initializeDatabase() {
+  // Ensure the directory holding the database exists (e.g. the data root on
+  // a fresh persistent disk) before opening the connection. In production we
+  // refuse to fall back to ephemeral storage so a misconfigured/unmounted
+  // persistent disk fails loudly instead of silently losing user data.
+  const dbDir = path.dirname(dbPath);
+  try {
+    mkdirSync(dbDir, { recursive: true });
+  } catch (error) {
+    if ((error.code === 'EACCES' || error.code === 'ENOENT') && isProduction) {
+      throw new Error(
+        `FATAL: database directory "${dbDir}" is not usable (${error.code}). ` +
+        `Refusing to use ephemeral storage in production. ` +
+        `Verify the persistent disk is mounted and DATA_DIR points at it.`
+      );
+    }
+    throw error;
+  }
   db = new Database(dbPath);
   db.pragma('journal_mode = WAL');
 

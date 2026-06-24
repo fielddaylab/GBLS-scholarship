@@ -1,3 +1,10 @@
 .DS_Store
-project-config.json
 .env
+
+# SQLite databases (user data — never commit)
+*.db
+*.db-shm
+*.db-wal
+
+# Local persistent data root (database + submissions)
+data/

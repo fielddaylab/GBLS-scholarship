@@ -1,3 +1,4 @@
+import { JWT_SECRET, DEBUG_MODE, isProduction, getEnv } from './config.mjs';
 import jwt from 'jsonwebtoken';
 import axios from 'axios';
 import {
@@ -12,7 +13,7 @@ import {
   isInitialsTaken
 } from './db.mjs';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
+// JWT_SECRET, DEBUG_MODE, isProduction imported from config.mjs
 const SESSION_DURATION = 24 * 60 * 60 * 1000; // 24 hours
 
 export function createToken(userId) {
@@ -124,7 +125,7 @@ export async function loginWithEmail(email, debugMode = false) {
   let user = getUserByEmail(email);
 
   if (!user) {
-    if (debugMode && process.env.DEBUG_MODE === 'true') {
+    if (debugMode && DEBUG_MODE) {
       // Debug mode: auto-create user
       const namePart = email.split('@')[0];
       const fullName = namePart.replace(/[._-]/g, ' ');
@@ -189,7 +190,7 @@ export async function verifyRecaptcha(token) {
       null,
       {
         params: {
-          secret: process.env.RECAPTCHA_SECRET_KEY,
+          secret: getEnv("RECAPTCHA_SECRET_KEY"),
           response: token
         }
       }
@@ -205,7 +206,7 @@ export async function verifyRecaptcha(token) {
 export function setSessionCookie(res, token) {
   res.cookie('auth_token', token, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
+    secure: isProduction,
     sameSite: 'lax',
     maxAge: SESSION_DURATION,
     path: '/'

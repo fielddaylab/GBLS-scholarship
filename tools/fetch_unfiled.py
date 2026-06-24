@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Fetch unfiled articles from a Zotero group library.
-Reads credentials from project-config.json in the project root.
+Reads credentials from the project-root .env file or the process environment.
 Temporary JSON files are written to /tmp and cleaned up automatically.
 """
 
@@ -11,6 +11,12 @@ import json
 import requests
 import tempfile
 import atexit
+import importlib.util, pathlib
+
+# Load shared env helper from the same tools/ directory.
+_env_path = pathlib.Path(__file__).parent / "_env.py"
+_spec = importlib.util.spec_from_file_location("_env", _env_path)
+_env = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(_env)
 
 def has_pdf_children(item: dict) -> bool:
     """
@@ -34,24 +40,11 @@ def fetch_unfiled_articles(group_id: int) -> list:
     Fetch all items from a Zotero group and return only unfiled items with PDF attachments.
     Unfiled items are those where the 'collections' array is empty and have a PDF attachment.
     """
-    # Load config from project-config.json
-    config_path = os.path.join(os.path.dirname(__file__), '..', 'project-config.json')
-    
     try:
-        with open(config_path, 'r') as f:
-            config = json.load(f)
-    except FileNotFoundError:
-        print(json.dumps({"error": f"Config file not found at {config_path}"}), file=sys.stderr)
-        sys.exit(1)
-    except json.JSONDecodeError:
-        print(json.dumps({"error": "Invalid JSON in project-config.json"}), file=sys.stderr)
-        sys.exit(1)
-    
-    user_id = config.get('ZOTERO_USER_ID')
-    api_key = config.get('ZOTERO_API_KEY')
-    
-    if not user_id or not api_key:
-        print(json.dumps({"error": "Missing ZOTERO_USER_ID or ZOTERO_API_KEY in project-config.json"}), file=sys.stderr)
+        user_id = _env.require('ZOTERO_USER_ID')
+        api_key  = _env.require('ZOTERO_API_KEY')
+    except RuntimeError as exc:
+        print(json.dumps({"error": str(exc)}), file=sys.stderr)
         sys.exit(1)
     
     headers = {

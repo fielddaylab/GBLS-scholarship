@@ -4,27 +4,37 @@ services:
     runtime: node
     buildCommand: cd site && npm install
     startCommand: cd site && node server.mjs
-    plan: free
+    # Starter (or higher) is required for a persistent disk.
+    plan: starter
+    # Persistent disk — all app-created data (users.db + submissions) lives here.
+    disk:
+      name: gbls-data
+      mountPath: /mnt/persistent
+      sizeGB: 1
     envVars:
+      # Non-secret runtime config. Everything else (paths, port, URLs) is
+      # resolved automatically in site/config.mjs — no need to set it here.
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 8080
-      - key: DEBUG_MODE
-        scope: runtime
-        value: "true"
-      - key: APP_URL
-        fromService:
-          type: web
-          name: gbls-literature-reviewer
-          envVarKey: RENDER_EXTERNAL_URL
-      - key: SUBMISSIONS_DIR
-        value: /tmp/submissions
-      - key: CORPUS_DIR
-        value: ./1_coded_gbls_corpus_articles
-      - key: METRICS_DIR
-        value: ./2_calculated_metrics
+      - key: DATA_DIR
+        value: /mnt/persistent
+
+      # Secrets — set values in the Render dashboard; never commit them here.
       - key: JWT_SECRET
         sync: false
-
-# Note: DATABASE_URL and other sensitive values should be set in Render dashboard
+      - key: GITHUB_CLIENT_ID
+        sync: false
+      - key: GITHUB_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: ZOTERO_USER_ID
+        sync: false
+      - key: ZOTERO_API_KEY
+        sync: false
+      # - key: RECAPTCHA_SITE_KEY
+      #   sync: false
+      # - key: RECAPTCHA_SECRET_KEY
+      #   sync: false

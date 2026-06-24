@@ -11,8 +11,8 @@ COPY . .
 # Install dependencies for unified reviewer
 RUN cd site && npm ci --only=production
 
-# Create submissions directory for persistent storage
-RUN mkdir -p /app/submissions
+# Create the persistent data root (database + submissions live here).
+RUN mkdir -p /mnt/persistent
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
@@ -21,7 +21,7 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 # Environment variables
 ENV NODE_ENV=production \
     PORT=8787 \
-    SUBMISSIONS_DIR=/app/submissions \
+    DATA_DIR=/mnt/persistent \
     CORPUS_DIR=../1_coded_gbls_corpus_articles \
     METRICS_DIR=../2_calculated_metrics \
     DEBUG_MODE=true

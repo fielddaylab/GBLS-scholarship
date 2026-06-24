@@ -14,11 +14,14 @@ import tempfile
 import subprocess
 import os
 import sys
+import importlib.util
 from pathlib import Path
 
-# Configuration
-config = json.load(open("project-config.json"))
-ZOTERO_API_KEY = config["ZOTERO_API_KEY"]
+# Load shared env helper
+_spec = importlib.util.spec_from_file_location("_env", Path(__file__).parent / "_env.py")
+_env = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(_env)
+
+ZOTERO_API_KEY = _env.require('ZOTERO_API_KEY')
 ZOTERO_GROUP_ID = 5899078
 MAIN_BOOK_KEY = "87ZB9FSP"  # Games and Gamification in Academic Libraries
 

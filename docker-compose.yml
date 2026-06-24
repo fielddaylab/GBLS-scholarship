@@ -12,13 +12,14 @@ services:
       - "8787:8787"
     environment:
       PORT: 8787
-      SUBMISSIONS_DIR: /app/submissions
+      # Single persistent data root (mirrors the Render disk at /mnt/persistent).
+      DATA_DIR: /mnt/persistent
       CORPUS_DIR: ../1_coded_gbls_corpus_articles
       METRICS_DIR: ../2_calculated_metrics
       NODE_ENV: production
       DEBUG_MODE: "true"
     volumes:
-      - gbls-submissions:/app/submissions
+      - gbls-data:/mnt/persistent
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:8787/health"]
@@ -28,5 +29,5 @@ services:
       start_period: 10s
 
 volumes:
-  gbls-submissions:
+  gbls-data:
     driver: local

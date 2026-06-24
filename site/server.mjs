@@ -1,3 +1,18 @@
+// All configuration comes from config.mjs — no process.env reads for
+// structural values (paths, URLs, ports) anywhere in this file.
+import {
+  DATA_DIR,
+  SUBMISSIONS_DIR as CONFIG_SUBMISSIONS_DIR,
+  CORPUS_DIR,
+  METRICS_DIR,
+  PORT,
+  APP_URL as appUrl,
+  DEBUG_MODE,
+  isProduction,
+  isRender,
+  ensureDataDir,
+  getEnv,
+} from './config.mjs';
 import express from 'express';
 import fs from 'fs/promises';
 import path from 'path';
@@ -27,20 +42,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 8787;
 
-// Determine environment and URLs
-const isProduction = process.env.NODE_ENV === 'production';
-const isRender = process.env.RENDER === 'true' || process.env.RENDER_EXTERNAL_URL;
-const appUrl = process.env.APP_URL || 
-  process.env.RENDER_EXTERNAL_URL || 
-  (process.env.NODE_ENV === 'production' ? 'https://gamebasedlibraryservicesliterature.onrender.com' : 'http://localhost:8787');
-
-// Data directories
-const SUBMISSIONS_DIR = process.env.SUBMISSIONS_DIR || 
-  (isRender ? '/tmp/submissions' : isProduction ? '/app/submissions' : path.resolve(__dirname, '../0_human_sources'));
-const CORPUS_DIR = process.env.CORPUS_DIR || '../1_coded_gbls_corpus_articles';
-const METRICS_DIR = process.env.METRICS_DIR || '../2_calculated_metrics';
+let SUBMISSIONS_DIR = CONFIG_SUBMISSIONS_DIR;
 
 // Allowed origins for CORS
 const allowedOrigins = [
@@ -52,13 +55,10 @@ const allowedOrigins = [
 // Initialize database
 initializeDatabase();
 
-// Ensure submissions directory exists
-try {
-  await fs.mkdir(SUBMISSIONS_DIR, { recursive: true });
-} catch (error) {
-  if (error.code !== 'EACCES') throw error;
-  console.warn(`Cannot create ${SUBMISSIONS_DIR}, using fallback directory`);
-}
+// Ensure submissions directory exists. In production this throws if the
+// configured directory (e.g. a persistent disk) is unavailable rather than
+// silently writing to ephemeral storage; in development it falls back locally.
+SUBMISSIONS_DIR = await ensureDataDir(SUBMISSIONS_DIR, { label: 'submissions' });
 
 // Middleware
 app.use(express.json());
@@ -215,7 +215,7 @@ app.post('/api/register', async (req, res) => {
     }
 
     // Optional: Verify reCAPTCHA if token provided
-    if (recaptchaToken && process.env.RECAPTCHA_SECRET_KEY) {
+    if (recaptchaToken && getEnv("RECAPTCHA_SECRET_KEY")) {
       const isValidCaptcha = await verifyRecaptcha(recaptchaToken);
       if (!isValidCaptcha) {
         return res.status(400).json({ error: 'CAPTCHA verification failed' });
@@ -268,7 +268,7 @@ app.post('/api/login', async (req, res) => {
     }
 
     // In debug mode, allow login with just email (auto-creates user if needed)
-    const debugMode = process.env.DEBUG_MODE === 'true';
+    const debugMode = DEBUG_MODE;
     const { user, token } = await loginWithEmail(email, debugMode);
 
     setSessionCookie(res, token);
@@ -345,7 +345,7 @@ app.get('/auth/google/callback', async (req, res) => {
 
 app.get('/api/metrics', requireAuth, async (req, res) => {
   try {
-    const metricsPath = path.resolve(__dirname, METRICS_DIR, 'gbls_corpus_metrics');
+    const metricsPath = path.join(METRICS_DIR, 'gbls_corpus_metrics');
     const datasetPath = path.join(metricsPath, 'dataset_summary.json');
     
     let summary;
@@ -404,7 +404,7 @@ app.get('/api/metrics', requireAuth, async (req, res) => {
 
 app.get('/api/reference-metrics', requireAuth, async (req, res) => {
   try {
-    const metricsPath = path.resolve(__dirname, METRICS_DIR, 'reference_corpus_metrics');
+    const metricsPath = path.join(METRICS_DIR, 'reference_corpus_metrics');
     const datasetPath = path.join(metricsPath, 'dataset_summary.json');
     const data = await readJSONFile(datasetPath);
     res.json(data || { error: 'Reference metrics data not found' });
@@ -438,7 +438,7 @@ app.get('/api/articles', requireAuth, async (req, res) => {
         }
       }
     } catch (error) {
-      const corpusPath = path.resolve(__dirname, CORPUS_DIR);
+      const corpusPath = CORPUS_DIR;
       try {
         const files = await fs.readdir(corpusPath);
         for (const file of files) {
@@ -474,7 +474,7 @@ app.get('/api/article/:id', requireAuth, async (req, res) => {
     data = await readJSONFile(publicFilePath);
     
     if (!data) {
-      const corpusPath = path.resolve(__dirname, CORPUS_DIR);
+      const corpusPath = CORPUS_DIR;
       const corpusFilePath = path.join(corpusPath, `${req.params.id}.json`);
       data = await readJSONFile(corpusFilePath);
     }
@@ -589,14 +589,15 @@ app.listen(PORT, () => {
   console.log(`🚀 Environment: ${isRender ? 'Render.com' : isProduction ? 'Docker' : 'Development'}`);
   console.log(`🌐 URL: ${appUrl}`);
   console.log(`🔌 Port: ${PORT}`);
-  console.log(`🔓 Debug Mode: ${process.env.DEBUG_MODE === 'true' ? 'ENABLED' : 'disabled'}`);
+  console.log(`🔓 Debug Mode: ${DEBUG_MODE ? 'ENABLED' : 'disabled'}`);
+  console.log(`💾 Data dir: ${DATA_DIR}`);
   console.log(`📁 Submissions: ${SUBMISSIONS_DIR}`);
-  console.log(`📚 Corpus: ${path.resolve(__dirname, CORPUS_DIR)}`);
-  console.log(`📊 Metrics: ${path.resolve(__dirname, METRICS_DIR)}`);
+  console.log(`📚 Corpus: ${CORPUS_DIR}`);
+  console.log(`📊 Metrics: ${METRICS_DIR}`);
   console.log('='.repeat(70) + '\n');
-  
-  if (process.env.DEBUG_MODE === 'true') {
+
+  if (DEBUG_MODE) {
     console.log('⚠️  DEBUG MODE ENABLED - Users can login with any email');
-    console.log('   To disable, set DEBUG_MODE=false and restart\n');
+    console.log('   To disable, remove DEBUG_MODE from .env and restart\n');
   }
 });
