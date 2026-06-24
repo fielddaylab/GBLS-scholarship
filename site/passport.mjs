@@ -69,12 +69,7 @@ if (GITHUB_CLIENT_ID && GITHUB_CLIENT_SECRET) {
               initials = 'GH';
             }
 
-            user = createUser({
-              email,
-              full_name: fullName,
-              initials,
-              github_id: profile.id,
-            });
+            user = createUser(email, fullName, initials, null, profile.id, null);
           }
 
           if (!user) {
@@ -139,12 +134,7 @@ if (GOOGLE_CLIENT_ID && GOOGLE_CLIENT_SECRET) {
               initials = 'GG';
             }
 
-            user = createUser({
-              email,
-              full_name: fullName,
-              initials,
-              google_id: profile.id,
-            });
+            user = createUser(email, fullName, initials, null, null, profile.id);
           }
 
           if (!user) {
