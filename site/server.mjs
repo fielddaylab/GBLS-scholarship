@@ -337,10 +337,18 @@ app.get('/auth/github', passport.authenticate('github', { scope: ['user:email'] 
 app.get(
   '/auth/github/callback',
   passport.authenticate('github', { failureRedirect: '/login.html?error=GitHub login failed' }),
-  (req, res) => {
-    // Successful authentication — set session and redirect to dashboard
-    setSessionCookie(res, req.user.id);
-    res.redirect('/');
+  (req, res, next) => {
+    try {
+      if (!req.user) {
+        return res.redirect('/login.html?error=Authentication failed: no user');
+      }
+      // Successful authentication — set session and redirect to dashboard
+      setSessionCookie(res, req.user.id);
+      res.redirect('/');
+    } catch (error) {
+      console.error('GitHub callback error:', error);
+      res.redirect(`/login.html?error=${encodeURIComponent(error.message)}`);
+    }
   }
 );
 
@@ -351,10 +359,18 @@ app.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'em
 app.get(
   '/auth/google/callback',
   passport.authenticate('google', { failureRedirect: '/login.html?error=Google login failed' }),
-  (req, res) => {
-    // Successful authentication — set session and redirect to dashboard
-    setSessionCookie(res, req.user.id);
-    res.redirect('/');
+  (req, res, next) => {
+    try {
+      if (!req.user) {
+        return res.redirect('/login.html?error=Authentication failed: no user');
+      }
+      // Successful authentication — set session and redirect to dashboard
+      setSessionCookie(res, req.user.id);
+      res.redirect('/');
+    } catch (error) {
+      console.error('Google callback error:', error);
+      res.redirect(`/login.html?error=${encodeURIComponent(error.message)}`);
+    }
   }
 );
 

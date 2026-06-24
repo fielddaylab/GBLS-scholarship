@@ -45,24 +45,29 @@ if (GITHUB_CLIENT_ID && GITHUB_CLIENT_SECRET) {
             const email = profile.emails?.[0]?.value;
             if (email) {
               user = getUserByEmail(email);
-              // If user exists by email, update their GitHub ID
-              if (user) {
-                // Note: you'd need to add an UPDATE query to db.mjs to update github_id
-                // For now, we'll create a new user or link them
-              }
             }
           }
 
-          if (!user && profile.emails?.[0]?.value) {
+          if (!user) {
             // Create new user from GitHub profile
-            const email = profile.emails[0].value;
+            const email = profile.emails?.[0]?.value;
+            if (!email) {
+              return done(new Error('GitHub profile does not have an email address. Make sure your GitHub account has a public email.'));
+            }
+
             const fullName = profile.displayName || profile.username || 'GitHub User';
-            const initials = fullName
+            let initials = fullName
               .split(' ')
+              .filter(n => n.length > 0)
               .map((n) => n[0])
               .join('')
               .toUpperCase()
               .slice(0, 2);
+            
+            // Fallback if initials couldn't be calculated
+            if (!initials) {
+              initials = 'GH';
+            }
 
             user = createUser({
               email,
@@ -73,7 +78,7 @@ if (GITHUB_CLIENT_ID && GITHUB_CLIENT_SECRET) {
           }
 
           if (!user) {
-            return done(new Error('Unable to create or find user'));
+            return done(new Error('Unable to create user from GitHub profile'));
           }
 
           updateUserLastLogin(user.id);
@@ -113,16 +118,26 @@ if (GOOGLE_CLIENT_ID && GOOGLE_CLIENT_SECRET) {
             }
           }
 
-          if (!user && profile.emails?.[0]?.value) {
+          if (!user) {
             // Create new user from Google profile
-            const email = profile.emails[0].value;
+            const email = profile.emails?.[0]?.value;
+            if (!email) {
+              return done(new Error('Google profile does not have an email address.'));
+            }
+
             const fullName = profile.displayName || 'Google User';
-            const initials = fullName
+            let initials = fullName
               .split(' ')
+              .filter(n => n.length > 0)
               .map((n) => n[0])
               .join('')
               .toUpperCase()
               .slice(0, 2);
+            
+            // Fallback if initials couldn't be calculated
+            if (!initials) {
+              initials = 'GG';
+            }
 
             user = createUser({
               email,
@@ -133,7 +148,7 @@ if (GOOGLE_CLIENT_ID && GOOGLE_CLIENT_SECRET) {
           }
 
           if (!user) {
-            return done(new Error('Unable to create or find user'));
+            return done(new Error('Unable to create user from Google profile'));
           }
 
           updateUserLastLogin(user.id);
