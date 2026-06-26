@@ -1,13 +1,14 @@
 {
   "$schema": "https://app.kilo.ai/config.json",
   "indexing": {
-    "provider": "ollama",
+    "provider": "kilo",
     "enabled": true,
     "ollama": {
-      "baseUrl": "http://thinkstation.local:11434"
+      "baseUrl": "http://100.94.191.86:8000"
     },
     "qdrant": {
       "url": "http://thinkstation.local:6333"
-    }
+    },
+    "model": "mistralai/mistral-embed-2312"
   }
 }

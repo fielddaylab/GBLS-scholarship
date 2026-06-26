@@ -40,6 +40,7 @@ TEMPLATE:      1_coded_gbls_corpus_articles/template.md
 SCHEMA:        0_human_sources/metadata-schema-and-lexicon.md
 RUBRIC:        0_human_sources/summary_review_rubric.md
 MANUSCRIPT:    0_human_sources/current_manuscript.md
+AUDITS:        audits/                               # run reports: {YYYY-MM-DD-HHMM}-report.md
 ```
 
 `{STEM}` is `{author}{year}({ZOTERO_KEY})`, e.g. `baker2024(R55LL85J)`. The
@@ -150,7 +151,13 @@ Mark malformed files incomplete; do not silently accept them.
 
 ## Step 7 — Aggregate report
 
-Report:
+Write the aggregate report as a Markdown file in the `AUDITS` folder
+(`audits/`); create the folder if it does not exist. Name the file
+`{YYYY-MM-DD-HHMM}-report.md` using the run's start time. Do not overwrite an
+existing report; each run gets its own timestamped file. Also echo a short
+summary of the report back to the user.
+
+The report contains:
 
 - run parameters (selection, stages, tiers, sample rate, coder username);
 - counts: candidates, selected, Stage 1 completed, audited, quality-sampled,
