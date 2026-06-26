@@ -681,6 +681,8 @@ function initializeSummariesTab() {
      if (!articleFromUrl && state.articles && state.articles.length > 0) {
        pickRandomSummaryArticle();
      }
+     // Update button states
+     updatePanelButtonStates();
    } else {
      loginSection.style.display = 'block';
      reviewSection.style.display = 'none';
@@ -1034,6 +1036,19 @@ function closeAllPanels() {
    }, 3000);
  }
 
+ function updatePanelButtonStates() {
+   const hasArticle = !!state.summariesState.currentArticle;
+   const ratingBtn = document.getElementById('btn-open-rating-panel');
+   const classificationBtn = document.getElementById('btn-open-classification-panel');
+   
+   if (ratingBtn) {
+     ratingBtn.disabled = !hasArticle;
+   }
+   if (classificationBtn) {
+     classificationBtn.disabled = !hasArticle;
+   }
+ }
+
  function pickRandomSummaryArticle() {
      if (!state.articles || state.articles.length === 0) return;
      const random = state.articles[Math.floor(Math.random() * state.articles.length)];
@@ -1046,11 +1061,14 @@ function closeAllPanels() {
      // Mark step 1 as complete
      markStepComplete(1);
      
-     // Directly load without relying on select element
-     state.summariesState.currentArticle = random;
-     state.classifyState.currentArticle = random;
-     
-     // Update URL with current article
+      // Directly load without relying on select element
+      state.summariesState.currentArticle = random;
+      state.classifyState.currentArticle = random;
+      
+      // Enable panel buttons now that article is loaded
+      updatePanelButtonStates();
+      
+      // Update URL with current article
     const urlParams = new URLSearchParams(window.location.search);
     urlParams.set('article', random.id);
     window.history.replaceState({}, '', `?${urlParams.toString()}`);
