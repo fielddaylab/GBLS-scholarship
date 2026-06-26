@@ -217,6 +217,62 @@ async function readJSONFile(filePath) {
   }
 }
 
+// ---- Corpus .md helpers -----------------------------------------------------
+// Map each Zotero key (the part in parentheses of the stem) to its .md path,
+// so the web tool can pull live "Structured Extraction" + "Summary" content.
+let _corpusIndex = null;
+let _corpusIndexAt = 0;
+async function getCorpusIndex() {
+  // refresh at most once a minute so edits to the .md files show up
+  if (_corpusIndex && (Date.now() - _corpusIndexAt) < 60_000) return _corpusIndex;
+  const index = {};
+  try {
+    const files = await fs.readdir(CORPUS_DIR);
+    for (const f of files) {
+      if (!f.endsWith('.md') || f === 'template.md' || f.startsWith('.')) continue;
+      const m = f.match(/\(([A-Z0-9]+)\)\.md$/);
+      if (m) index[m[1]] = path.join(CORPUS_DIR, f);
+    }
+  } catch {
+    // corpus dir unavailable; leave index empty
+  }
+  _corpusIndex = index;
+  _corpusIndexAt = Date.now();
+  return index;
+}
+
+// Return the text of a top-level "# heading" section, up to the next "# " heading.
+function extractMdSection(text, heading) {
+  const re = new RegExp(`^#\\s+${heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*$`, 'm');
+  const m = re.exec(text);
+  if (!m) return '';
+  const start = m.index + m[0].length;
+  const after = text.slice(start);
+  const nxt = /^#\s+\S/m.exec(after);
+  const body = nxt ? after.slice(0, nxt.index) : after;
+  return body.trim();
+}
+
+// Build the "Provided Summary" shown in the web tool: the article's
+// "# Structured Extraction" followed by its "# Summary", read live from the .md.
+async function buildProvidedSummary(articleId, fallback = '') {
+  try {
+    const index = await getCorpusIndex();
+    const mdPath = index[articleId];
+    if (!mdPath) return fallback;
+    const text = await fs.readFile(mdPath, 'utf-8');
+    const extraction = extractMdSection(text, 'Structured Extraction');
+    const summary = extractMdSection(text, 'Summary');
+    const parts = [];
+    if (extraction) parts.push('# Structured Extraction\n\n' + extraction);
+    if (summary) parts.push('# Summary\n\n' + summary);
+    const combined = parts.join('\n\n');
+    return combined || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
 // Minimal RFC-4180 CSV parser: handles quoted fields containing commas,
 // embedded newlines, and escaped double-quotes. Returns array of row arrays.
 function parseCSV(text) {
@@ -482,7 +538,9 @@ app.get('/api/articles', requireAuth, async (req, res) => {
             articles.push({
               id: data.id,
               citation: data.citation || file,
-              summary: data.summary || '',
+              // Provided Summary = live "# Structured Extraction" + "# Summary"
+              // from the .md, falling back to the JSON summary.
+              summary: await buildProvidedSummary(data.id, data.summary || ''),
               sourceText: data.sourceText || '',
               evidence: data.evidence || {}
             });
@@ -501,7 +559,7 @@ app.get('/api/articles', requireAuth, async (req, res) => {
               articles.push({
                 id: data.id,
                 citation: data.citation || file,
-                summary: data.summary || '',
+                summary: await buildProvidedSummary(data.id, data.summary || ''),
                 sourceText: data.sourceText || '',
                 evidence: data.evidence || {}
               });
@@ -534,6 +592,9 @@ app.get('/api/article/:id', requireAuth, async (req, res) => {
     if (!data) {
       return res.status(404).json({ error: 'Article not found' });
     }
+
+    // Provided Summary = live "# Structured Extraction" + "# Summary" from the .md
+    data.summary = await buildProvidedSummary(data.id || req.params.id, data.summary || '');
 
     res.json(data);
   } catch (error) {
