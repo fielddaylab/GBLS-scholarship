@@ -63,13 +63,6 @@ Evidence: "Computer Games Journal, 7, 97–114 https://doi.org/10.1007/s40869-01
 Reason_For: The article is published in a scholarly journal and includes a DOI, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Computer Games Journal, 7, 97–114 https://doi.org/10.1007/s40869-018-0057-8"
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI, confirming it has undergone formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - content_or_artifact_analysis

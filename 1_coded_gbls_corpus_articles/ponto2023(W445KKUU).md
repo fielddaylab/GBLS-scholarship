@@ -59,13 +59,6 @@ Evidence: "In 29th ACM Symposium on Virtual Reality Software and Technology (VRS
 Reason_For: The article is presented at a conference and includes a formal citation with a DOI, indicating it is a conference paper.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "ACM Reference Format: Kevin Ponto, Ross Tredinnick, Monae Verbeke, Kaldan Kopp, Luke Swanson, and David Gagnon. 2023. Waddle: using virtual penguin embodiment as a vehicle for empathy and informal learning. In 29th ACM Symposium on Virtual Reality Software and Technology (VRST 2023), October 09–11, 2023, Christchurch, New Zealand. ACM, New York, NY, USA, 2 pages. https://doi.org/10.1145/3611659.3617211"
-Reason_For: The paper is published in a conference with a formal reference format and a DOI, indicating peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

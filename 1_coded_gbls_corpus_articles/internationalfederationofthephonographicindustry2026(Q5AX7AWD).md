@@ -59,13 +59,6 @@ Evidence: "The report aims to present the state of the global recorded music ind
 Reason_For: The source is a report published by the International Federation of the Phonographic Industry (IFPI), which is a global organization representing the recorded music industry.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "The report is an industry-wide analytical report and policy statement produced by the IFPI."
-Reason_For: The source is a report produced by an industry organization, not a peer-reviewed journal or conference.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

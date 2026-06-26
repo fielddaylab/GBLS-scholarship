@@ -63,13 +63,6 @@ Evidence: "In *The Video Game Theory Reader 2* (pp. 23–31). Routledge."
 Reason_For: The source is a chapter from a published book.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The source is a chapter from a published book, which is typically peer-reviewed.
-Reason_For: The book is published by a reputable academic publisher, and the chapter is part of a scholarly collection.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

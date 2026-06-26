@@ -59,13 +59,6 @@ Evidence: "This list is a crowd-sourced document of favorite media recommended b
 Reason_For: The document is a publication by the American Library Association (ALA) Round Tables, which are professional organizations within the library field. It is not peer-reviewed but serves as a professional resource for librarians.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The document is a resource list and event schedule, not a scholarly article or research paper.
-Reason_For: The source is a professional publication, not a peer-reviewed article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

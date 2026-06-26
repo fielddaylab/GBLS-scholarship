@@ -63,13 +63,6 @@ Evidence: "Educational Psychology Review (2024) 36:25 https://doi.org/10.1007/s1
 Reason_For: The source is published in a scholarly journal and includes a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Educational Psychology Review (2024) 36:25 https://doi.org/10.1007/s10648-024-09868-z"
-Reason_For: The source is published in a peer-reviewed journal and includes a DOI, which is a strong indicator of peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

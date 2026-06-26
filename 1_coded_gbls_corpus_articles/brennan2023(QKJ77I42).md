@@ -61,13 +61,6 @@ Evidence: "published in *School Librarian*"
 Reason_For: The article is published in a professional journal for librarians, which is a type of professional publication.
 Reason_Against: none
 
-## Peer_Review
-Value: unclear
-Confidence: low
-Evidence: The article is described as a "feature" rather than an empirical study or peer-reviewed article.
-Reason_For: The article is not explicitly described as peer-reviewed.
-Reason_Against: The lack of explicit mention of peer review makes it unclear.
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

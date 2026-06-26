@@ -59,13 +59,6 @@ Evidence: "JLIS.it vol. 16, no. 1 (January 2025) ISSN: 2038-1026 online Open acc
 Reason_For: The article is published in a scholarly journal (JLIS.it) and includes peer review information in the metadata.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Received: 24 June 2024; Accepted: 05 July 2024; First Published: 15 January 2025"
-Reason_For: The article includes a formal peer review process with dates for submission, acceptance, and publication.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - content_or_artifact_analysis

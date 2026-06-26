@@ -63,13 +63,6 @@ Evidence: The text is a promotional and informational description of a tabletop 
 Reason_For: The content is presented as a web-based article promoting a game, with no indication of formal peer review or scholarly publication.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a promotional description of a game, not a scholarly article or research paper.
-Reason_For: The content is not presented as a formal research study or peer-reviewed article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

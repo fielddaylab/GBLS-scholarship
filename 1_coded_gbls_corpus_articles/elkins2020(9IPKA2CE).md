@@ -59,13 +59,6 @@ Evidence: "Journal of Education for Library and Information Science, 61(2), 230â
 Reason_For: The article is published in a scholarly journal and is cited with a volume, issue, and page range, which is typical of peer-reviewed publications.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Education for Library and Information Science, 61(2), 230â€“252."
-Reason_For: The article is published in a peer-reviewed journal, which is a clear indicator of peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

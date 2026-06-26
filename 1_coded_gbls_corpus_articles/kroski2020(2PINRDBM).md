@@ -62,13 +62,6 @@ Evidence: "Library Technology Reports (ISSN 0024-2586) is published eight times 
 Reason_For: The article is published in *Library Technology Reports*, a peer-reviewed journal by the American Library Association.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Library Technology Reports (ISSN 0024-2586) is published eight times a year (January, March, April, June, July, September, October, and December) by American Library Association, 50 E. Huron St., Chicago, IL 60611."
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

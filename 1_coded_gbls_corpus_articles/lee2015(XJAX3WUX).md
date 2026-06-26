@@ -59,13 +59,6 @@ Evidence: "Proceedings of the 15th ACM/IEEE Joint Conference on Digital Librarie
 Reason_For: The article is published in the proceedings of a peer-reviewed conference.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Proceedings of the 15th ACM/IEEE Joint Conference on Digital Libraries (JCDL '15)"
-Reason_For: The article is published in a conference proceedings that is peer-reviewed.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

@@ -59,13 +59,6 @@ Evidence: "Published in IFLA Journal, a peer-reviewed academic journal."
 Reason_For: The article is published in a peer-reviewed journal and includes references to other scholarly works.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Published in IFLA Journal, a peer-reviewed academic journal."
-Reason_For: The article is published in a peer-reviewed journal and includes references to other scholarly works.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

@@ -59,13 +59,6 @@ Evidence: The text is a presentation outline and resource list for a professiona
 Reason_For: The source is a structured outline and resource compilation for a professional development session, which aligns with the definition of a professional publication.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a presentation outline and resource list, not a peer-reviewed article.
-Reason_For: The source is not published in a scholarly journal and is not subject to formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

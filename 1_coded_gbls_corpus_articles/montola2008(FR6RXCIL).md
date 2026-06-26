@@ -59,13 +59,6 @@ Evidence: "Playground Worlds: Creating and Evaluating Experiences of Role-Playin
 Reason_For: The source is a chapter from a published book with a formal structure, including an introduction, sections, and a bibliography.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: low
-Evidence: The source is a book chapter published in a collection, not a peer-reviewed journal article or a conference paper.
-Reason_For: The source is a book chapter, which is not subject to formal peer review in the same way as journal articles or conference papers.
-Reason_Against: The source may have undergone editorial review by the book's editors, but it is not a peer-reviewed article.
-
 ## Evidence_Type
 Value:
 - content_or_artifact_analysis

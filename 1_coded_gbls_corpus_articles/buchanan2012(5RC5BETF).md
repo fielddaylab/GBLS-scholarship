@@ -61,13 +61,6 @@ Evidence: "Education Libraries, Volume 35, Number 1-2, Summer-Winter 2012"
 Reason_For: The article is published in a scholarly journal, "Education Libraries," and includes peer-reviewed content with citations and academic discussion.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed journal and includes references to academic sources and citations.
-Reason_For: The source is published in a peer-reviewed journal and includes academic citations.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

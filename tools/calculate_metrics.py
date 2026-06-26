@@ -70,7 +70,6 @@ MANIFEST_FIELD_MAP = {
 
 FIXED_FIELDS = {
     "Source_Type": "peer_reviewed_journal_article",
-    "Peer_Review": "peer_reviewed",
 }
 
 
@@ -150,19 +149,25 @@ def _collect_list_items(lines: list[str], start: int) -> tuple[list[str], int]:
 
 
 def _parse_contributions(contrib_text: str) -> list[dict]:
-    contributions = []
-    raw_blocks = re.split(r"\n(?=\s*-\s+Target_Section\s*:)", contrib_text)
-    for block in raw_blocks:
-        if not block.strip():
-            continue
-        block = re.sub(r"^\s*-\s+", "", block, count=1)
+    """Parse the new-format '# Potential Contributions to Review' section.
 
-        ts_m = re.search(r"^Target_Section\s*:\s*(.+)$", block, re.MULTILINE)
-        target_section = ts_m.group(1).strip().strip('"') if ts_m else ""
+    Each fitting section is a '## <exact manuscript heading>' block followed by
+    a 'Contribution_Text: ...' line. The non-contribution '## Productive
+    Incongruences' and '## Out of Scope' blocks are skipped.
+    """
+    contributions = []
+    blocks = re.split(r"\n##\s+", "\n" + contrib_text)
+    for block in blocks:
+        block = block.strip()
+        if not block:
+            continue
+        heading, _, rest = block.partition("\n")
+        target_section = heading.strip().strip('"')
+        if target_section in ("Productive Incongruences", "Out of Scope"):
+            continue
 
         ct_m = re.search(
-            r"Contribution_Text\s*:\s*>?\s*\n((?:[ \t]+.+\n?)*)",
-            block,
+            r"Contribution_Text\s*:\s*>?\s*\n((?:[ \t]+.+\n?)*)", block
         )
         if ct_m:
             contrib_text_val = re.sub(r"\n\s*", " ", ct_m.group(1)).strip()
@@ -170,6 +175,8 @@ def _parse_contributions(contrib_text: str) -> list[dict]:
             ct_inline = re.search(r"Contribution_Text\s*:\s*(.+)", block)
             contrib_text_val = ct_inline.group(1).strip() if ct_inline else ""
 
+        if not target_section:
+            continue
         if contrib_text_val.lower() in (
             "no_direct_addition_recommended",
             "no direct addition recommended",
@@ -185,7 +192,82 @@ def _parse_contributions(contrib_text: str) -> list[dict]:
     return contributions
 
 
+# Coded files may label a field differently from the schema section name.
+# (The schema section is "# Service_Audience"; the coded "## Audience" block.)
+SCHEMA_FIELD_ALIASES = {
+    "Service_Audience": ["Audience", "Service_Audience"],
+}
+
+
+def _section_span(text: str, heading: str) -> tuple[int, int] | None:
+    """Return (content_start, content_end) for a top-level '# heading' section.
+
+    content_end is the start of the next top-level '# ' heading (or EOF).
+    """
+    m = re.search(rf"^#\s+{re.escape(heading)}\s*$", text, re.MULTILINE)
+    if not m:
+        return None
+    start = m.end()
+    nxt = re.search(r"^#\s+\S", text[start:], re.MULTILINE)
+    end = start + nxt.start() if nxt else len(text)
+    return start, end
+
+
+def _parse_subjective_fields(block: str) -> dict[str, list[str] | None]:
+    """Parse '## Field' blocks under # Subjective Metadata into {field: values}.
+
+    Each block has a 'Value:' line that is either inline (single value) or
+    followed by '- ' bullets (multi-value).
+    """
+    out: dict[str, list[str] | None] = {}
+    for chunk in re.split(r"\n##\s+", "\n" + block):
+        chunk = chunk.strip()
+        if not chunk:
+            continue
+        name, _, rest = chunk.partition("\n")
+        name = name.strip()
+        if name in ("", "Coding_Confidence"):
+            # Coding_Confidence is captured separately as a single value below.
+            if name == "Coding_Confidence":
+                mv = re.search(r"Value:\s*([^\n]*)", chunk)
+                v = mv.group(1).strip() if mv else ""
+                out["Coding_Confidence"] = [v] if v else None
+            continue
+        values: list[str] = []
+        mv = re.search(r"^Value:[ \t]*([^\n]*)", chunk, re.MULTILINE)
+        inline = mv.group(1).strip() if mv else ""
+        if inline:
+            values.append(inline)
+        else:
+            # bulleted list following the Value: line
+            after = chunk[mv.end():] if mv else chunk
+            for b in re.findall(r"^[ \t]*-[ \t]+(.+)$", after, re.MULTILINE):
+                b = b.strip()
+                # stop if we wander into the next labeled line
+                if re.match(r"^(Confidence|Evidence|Reason_For|Reason_Against)\s*:", b):
+                    continue
+                values.append(b)
+        # clean values: drop trailing punctuation / parentheticals
+        cleaned = []
+        for v in values:
+            v = v.split("(")[0].strip().strip(".").strip()
+            if v and v not in cleaned:
+                cleaned.append(v)
+        out[name] = cleaned if cleaned else None
+    return out
+
+
 def parse_summary_file(path: Path, schema_fields: list[str]) -> dict:
+    """Parse a coded article in the staged format:
+
+        # <citation>
+        # Objective Metadata        (Citation_Key, Year, Zotero_Item_Key, ...)
+        # Structured Extraction
+        # Summary
+        # Subjective Metadata        (## Field blocks with Value/Confidence/...)
+        # Potential Contributions to Review
+        # Audit Provenance
+    """
     try:
         text = path.read_text(encoding="utf-8", errors="replace")
     except Exception as exc:
@@ -193,56 +275,46 @@ def parse_summary_file(path: Path, schema_fields: list[str]) -> dict:
 
     warnings: list[str] = []
 
-    meta_m = re.search(r"^#{1,4}\s+Metadata\s*$", text, re.MULTILINE | re.IGNORECASE)
-    summ_m = re.search(r"^#{1,4}\s+Summary\s*$", text, re.MULTILINE | re.IGNORECASE)
-
-    if not meta_m:
-        warnings.append("No Metadata heading found")
-
-    if meta_m:
-        citation_raw = text[: meta_m.start()].strip()
-        meta_end = summ_m.start() if summ_m else len(text)
-        meta_section = text[meta_m.end() : meta_end]
-        summary_text = text[summ_m.end() :].strip() if summ_m else ""
-    else:
+    # --- citation: the title line above '# Objective Metadata' ---
+    obj_m = re.search(r"^#\s+Objective Metadata\s*$", text, re.MULTILINE)
+    if not obj_m:
+        warnings.append("No '# Objective Metadata' heading found")
         citation_raw = ""
-        contrib_m = re.search(r"^Contributions\s*:", text, re.MULTILINE | re.IGNORECASE)
-        meta_section = text[: contrib_m.start()] if contrib_m else text
-        summary_text = ""
-
-    citation = re.sub(r"^#+\s*", "", citation_raw)
+    else:
+        citation_raw = text[: obj_m.start()].strip()
+    citation = re.sub(r"^#+\s*", "", citation_raw.splitlines()[0]) if citation_raw else ""
     citation = re.sub(r"^\d+\.\s*", "", citation).strip()
 
-    contrib_start_m = re.search(
-        r"^Contributions\s*:", meta_section, re.MULTILINE | re.IGNORECASE
-    )
-    if contrib_start_m:
-        raw_meta = meta_section[: contrib_start_m.start()]
-        raw_contrib = meta_section[contrib_start_m.end() :]
-    else:
-        raw_meta = meta_section
-        raw_contrib = ""
-
+    # --- objective metadata key:value fields ---
     raw_fields: dict[str, str | list[str] | None] = {}
-    lines = raw_meta.split("\n")
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        kv_m = re.match(r"^([A-Za-z_][A-Za-z0-9_]*)\s*:\s*(.*)", line)
-        if kv_m:
-            key = kv_m.group(1)
-            value = kv_m.group(2).strip()
-            if value:
-                raw_fields[key] = value
-                i += 1
-            else:
-                items, next_i = _collect_list_items(lines, i + 1)
-                raw_fields[key] = items if items else None
-                i = next_i
-        else:
-            i += 1
+    span = _section_span(text, "Objective Metadata")
+    if span:
+        for line in text[span[0]:span[1]].split("\n"):
+            kv = re.match(r"^([A-Za-z_][A-Za-z0-9_]*)\s*:\s*(.*)$", line)
+            if kv and kv.group(2).strip():
+                raw_fields[kv.group(1)] = kv.group(2).strip()
 
-    contributions = _parse_contributions(raw_contrib) if raw_contrib.strip() else []
+    # --- summary ---
+    summary_text = ""
+    sspan = _section_span(text, "Summary")
+    if sspan:
+        summary_text = text[sspan[0]:sspan[1]].strip()
+    else:
+        warnings.append("No '# Summary' heading found")
+
+    # --- subjective metadata (controlled vocabulary) ---
+    subj_fields: dict[str, list[str] | None] = {}
+    subspan = _section_span(text, "Subjective Metadata")
+    if subspan:
+        subj_fields = _parse_subjective_fields(text[subspan[0]:subspan[1]])
+    else:
+        warnings.append("No '# Subjective Metadata' heading found")
+
+    # --- contributions ---
+    contributions = []
+    cspan = _section_span(text, "Potential Contributions to Review")
+    if cspan:
+        contributions = _parse_contributions(text[cspan[0]:cspan[1]])
 
     zotero_key = str(raw_fields.get("Zotero_Item_Key") or "").strip()
     filename_stem = path.stem
@@ -270,12 +342,20 @@ def parse_summary_file(path: Path, schema_fields: list[str]) -> dict:
 
     controlled: dict[str, str | list[str] | None] = {}
     for field in schema_fields:
-        val = raw_fields.get(field)
+        # Look up the field under its schema name or any coded alias.
+        val = None
+        for alias in SCHEMA_FIELD_ALIASES.get(field, [field]):
+            if subj_fields.get(alias):
+                val = subj_fields[alias]
+                break
         if isinstance(val, list):
             seen: set[str] = set()
             clean: list[str] = []
             for v in val:
                 v = v.strip()
+                # drop unfilled template placeholders, if any slipped through
+                if v.startswith("[") and v.endswith("]"):
+                    continue
                 if v and v not in seen:
                     seen.add(v)
                     clean.append(v)

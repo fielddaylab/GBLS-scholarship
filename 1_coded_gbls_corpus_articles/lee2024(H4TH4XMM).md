@@ -61,13 +61,6 @@ Evidence: "The Library Quarterly: Information, Community, Policy 94(2): 134–15
 Reason_For: The article is published in a scholarly journal and includes peer review information.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "The Library Quarterly: Information, Community, Policy 94(2): 134–158. April 2024."
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

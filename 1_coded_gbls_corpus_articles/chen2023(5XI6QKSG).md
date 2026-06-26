@@ -61,13 +61,6 @@ Evidence: "Educational Technology Research and Development, 71, 1785–1798 http
 Reason_For: The article is published in a scholarly journal and includes a DOI, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Educational Technology Research and Development, 71, 1785–1798 https://doi.org/10.1007/s11423-023-10244-x"
-Reason_For: The article is published in a peer-reviewed journal with a DOI, confirming it has undergone formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

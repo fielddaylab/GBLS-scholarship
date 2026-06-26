@@ -67,13 +67,6 @@ Evidence: "This report is based on research funded by the Bill & Melinda Gates F
 Reason_For: The article is published by SRI International and includes peer review citations and mentions of funding from the Bill & Melinda Gates Foundation, indicating it is a peer-reviewed journal article.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "This report is based on research funded by the Bill & Melinda Gates Foundation. The findings and conclusions contained within are those of the authors and do not necessarily reflect positions or policies of the Bill & Melinda Gates Foundation."
-Reason_For: The article is published by SRI International and includes peer review citations and mentions of funding from the Bill & Melinda Gates Foundation, indicating it is a peer-reviewed journal article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

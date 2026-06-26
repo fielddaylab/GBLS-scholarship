@@ -217,6 +217,42 @@ async function readJSONFile(filePath) {
   }
 }
 
+// Minimal RFC-4180 CSV parser: handles quoted fields containing commas,
+// embedded newlines, and escaped double-quotes. Returns array of row arrays.
+function parseCSV(text) {
+  const rows = [];
+  let row = [];
+  let field = '';
+  let inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (text[i + 1] === '"') { field += '"'; i++; }
+        else inQuotes = false;
+      } else {
+        field += c;
+      }
+    } else if (c === '"') {
+      inQuotes = true;
+    } else if (c === ',') {
+      row.push(field); field = '';
+    } else if (c === '\n') {
+      row.push(field); field = '';
+      rows.push(row); row = [];
+    } else if (c === '\r') {
+      // ignore (handles CRLF)
+    } else {
+      field += c;
+    }
+  }
+  if (field.length > 0 || row.length > 0) {
+    row.push(field);
+    rows.push(row);
+  }
+  return rows.filter(r => r.length > 1 || (r.length === 1 && r[0].trim() !== ''));
+}
+
 // ==================== AUTHENTICATION ROUTES ====================
 
 // Health check (public)
@@ -354,14 +390,15 @@ app.get('/api/metrics', requireAuth, async (req, res) => {
     
     try {
       const csv = await fs.readFile(articlesPath, 'utf-8');
-      const lines = csv.trim().split('\n');
-      const headers = lines[0].split(',').map(h => h.trim());
+      const rows = parseCSV(csv);
+      const headers = rows[0].map(h => h.trim().toLowerCase());
       
-      for (let i = 1; i < lines.length; i++) {
-        const values = lines[i].split(',');
+      for (let i = 1; i < rows.length; i++) {
+        const values = rows[i];
         const article = {};
         headers.forEach((header, idx) => {
-          article[header.toLowerCase()] = values[idx]?.trim() || null;
+          const v = values[idx] != null ? String(values[idx]).trim() : '';
+          article[header] = v || null;
         });
         if (article.article_id) articles.push(article);
       }
@@ -369,6 +406,8 @@ app.get('/api/metrics', requireAuth, async (req, res) => {
       console.warn('Could not load articles from CSV:', error.message);
     }
     
+    // Keys MUST match the (lowercased) controlled-vocabulary columns in
+    // articles_core.csv, which use the schema field names.
     const featureGroups = [
       { key: 'source_type', label: 'Source Type' },
       { key: 'evidence_type', label: 'Evidence Type' },
@@ -376,10 +415,10 @@ app.get('/api/metrics', requireAuth, async (req, res) => {
       { key: 'library_context', label: 'Library Context' },
       { key: 'game_format', label: 'Game Format' },
       { key: 'service_area', label: 'Service Area' },
-      { key: 'audience', label: 'Audience' },
+      { key: 'service_audience', label: 'Audience' },
       { key: 'intended_outcome', label: 'Intended Outcome' },
       { key: 'evidence_confidence', label: 'Evidence Confidence' },
-      { key: 'coding_confidence', label: 'Coding Confidence' },
+      { key: 'service_conditions_addressed', label: 'Service Conditions Addressed' },
       { key: 'conceptual_theme', label: 'Conceptual Theme' }
     ];
     
@@ -387,11 +426,12 @@ app.get('/api/metrics', requireAuth, async (req, res) => {
     const baselineFeatures = {};
     try {
       const csv = await fs.readFile(path.join(baselineMetricsPath, 'feature_counts.csv'), 'utf-8');
-      const lines = csv.trim().split('\n');
-      for (let i = 1; i < lines.length; i++) {
-        const parts = lines[i].split(',');
-        const group = parts[0].trim();
-        const feature = parts[1].trim();
+      const rows = parseCSV(csv);
+      for (let i = 1; i < rows.length; i++) {
+        const parts = rows[i];
+        if (!parts || parts.length < 3) continue;
+        const group = (parts[0] || '').trim();
+        const feature = (parts[1] || '').trim();
         const count = parseInt(parts[2]) || 0;
         const pct = parseFloat(parts[4]) || 0;
         

@@ -57,13 +57,6 @@ Evidence: "This manuscript is under consideration for the MacArthur series on Di
 Reason_For: The article is submitted for consideration in a scholarly series and is cited with formal editorial oversight.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "This manuscript is under consideration for the MacArthur series on Digital Learning, Katie Salen, Editor. Please do not cite without permission."
-Reason_For: The article is submitted for consideration in a scholarly series, indicating peer review is in progress.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

@@ -60,13 +60,6 @@ Evidence: "International Journal of Interactive Mobile Technologies (iJIM), 18(7
 Reason_For: The article is published in a peer-reviewed journal and includes a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "International Journal of Interactive Mobile Technologies (iJIM), 18(7), pp. 188–212. https://doi.org/10.3991/ijim.v18i07.45335"
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI, indicating formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

@@ -72,13 +72,6 @@ Evidence: "International Journal of Social and Education (INJOSEDU)" (Title)
 Reason_For: The article is published in a scholarly journal and includes a structured abstract, methodology, and references.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "International Journal of Social and Education (INJOSEDU)" (Title)
-Reason_For: The article is published in a peer-reviewed journal with a formal citation and structured academic format.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

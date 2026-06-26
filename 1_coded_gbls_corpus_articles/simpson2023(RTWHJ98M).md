@@ -62,13 +62,6 @@ Evidence: "British Journal of Nursing, 2023, Vol 32, No 8"
 Reason_For: The article is published in a peer-reviewed journal, as indicated by the journal name and volume/issue details.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "British Journal of Nursing, 2023, Vol 32, No 8"
-Reason_For: The article is published in a peer-reviewed journal, which implies it has undergone formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

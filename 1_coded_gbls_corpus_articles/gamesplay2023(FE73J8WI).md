@@ -61,13 +61,6 @@ Evidence: The text is a curated list of resources categorized by format and topi
 Reason_For: The content is organized as a resource guide for librarians, with categories like "Articles," "Books," and "Lists & Libguides."
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a resource list without any indication of peer review or scholarly publication.
-Reason_For: The content is not presented as a research article or scholarly work but as a curated bibliography.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

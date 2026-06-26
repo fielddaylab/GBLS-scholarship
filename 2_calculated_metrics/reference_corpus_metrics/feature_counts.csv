@@ -1,17 +1,4 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
-audience,not_applicable,5051,7201,70.1,1
-audience,educators,1472,7201,20.4,2
-audience,students,1048,7201,14.6,3
-audience,general_public,183,7201,2.5,4
-audience,children,112,7201,1.6,5
-audience,teens,105,7201,1.5,6
-audience,underserved_or_special_population,52,7201,0.7,7
-audience,adults,47,7201,0.7,8
-audience,older_adults,40,7201,0.6,9
-audience,families,21,7201,0.3,10
-audience,young_adults,16,7201,0.2,11
-coding_confidence,low,5322,7201,73.9,1
-coding_confidence,medium,1879,7201,26.1,2
 evidence_type,theoretical_or_conceptual,3729,7201,51.8,1
 evidence_type,empirical_study,2630,7201,36.5,2
 evidence_type,implementation_case,292,7201,4.1,3
@@ -42,7 +29,6 @@ library_context,cultural_heritage_institution,182,7201,2.5,4
 library_context,multiple_library_types,67,7201,0.9,5
 library_context,public_library,47,7201,0.7,6
 library_context,library_school,32,7201,0.4,7
-peer_review,peer_reviewed,7201,7201,100.0,1
 primary_methodology,unspecified,5081,7201,70.6,1
 primary_methodology,survey,636,7201,8.8,2
 primary_methodology,qualitative_study,401,7201,5.6,3

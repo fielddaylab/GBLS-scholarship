@@ -65,13 +65,6 @@ Evidence: "Cataloging & Classification Quarterly, 53:2, 135-156, DOI: 10.1080/01
 Reason_For: The article is published in a scholarly journal and subject to formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Cataloging & Classification Quarterly, 53:2, 135-156, DOI: 10.1080/01639374.2014.954297"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

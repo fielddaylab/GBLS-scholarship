@@ -59,13 +59,6 @@ Evidence: "Public Library Quarterly, ISSN: 0161-6846 (Print) 1541-1540 (Online) 
 Reason_For: The article is published in a scholarly journal with an ISSN and a journal homepage, indicating it is a peer-reviewed journal article.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Public Library Quarterly, ISSN: 0161-6846 (Print) 1541-1540 (Online) Journal homepage: www.tandfonline.com/journals/wplq20"
-Reason_For: The article is published in a scholarly journal with an ISSN and a journal homepage, indicating it is a peer-reviewed journal article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

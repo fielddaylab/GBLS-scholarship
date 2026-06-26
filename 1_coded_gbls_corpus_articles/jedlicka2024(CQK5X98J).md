@@ -57,13 +57,6 @@ Evidence: "CUNY Academic Works" and the citation details indicate it is a peer-r
 Reason_For: The source is published in a scholarly repository and includes citations and references typical of peer-reviewed work.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in CUNY Academic Works, a repository associated with peer-reviewed academic work.
-Reason_For: The source is published in a scholarly repository and includes citations and references typical of peer-reviewed work.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

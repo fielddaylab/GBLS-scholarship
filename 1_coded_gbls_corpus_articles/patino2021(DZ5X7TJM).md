@@ -59,13 +59,6 @@ Evidence: The article is published by the University of Washington Information S
 Reason_For: The article is published by an academic institution and includes detailed research components, suggesting it may be peer-reviewed.
 Reason_Against: The article does not explicitly state that it has undergone formal peer review, which is a common requirement for peer-reviewed journal articles.
 
-## Peer_Review
-Value: unclear
-Confidence: low
-Evidence: The article is published by the University of Washington Information School Digital Youth Lab and includes a detailed methodology and findings section, but it does not explicitly state that it has undergone formal peer review.
-Reason_For: The article is published by an academic institution and includes detailed research components, suggesting it may be peer-reviewed.
-Reason_Against: The article does not explicitly state that it has undergone formal peer review, which is a common requirement for peer-reviewed journal articles.
-
 ## Evidence_Type
 Value:
 - implementation_case

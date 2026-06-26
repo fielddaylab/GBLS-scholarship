@@ -57,13 +57,6 @@ Evidence: "International Journal of Computer Games Technology, 2024, Article ID 
 Reason_For: The article is published in a peer-reviewed journal and includes a structured abstract, methodology, results, and discussion sections typical of scholarly research.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "International Journal of Computer Games Technology, 2024, Article ID 8084687."
-Reason_For: The article is published in a peer-reviewed journal and includes a structured abstract, methodology, results, and discussion sections typical of scholarly research.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

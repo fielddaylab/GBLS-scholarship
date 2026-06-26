@@ -59,13 +59,6 @@ Evidence: "International Journal of Knowledge Content Development & Technology, 
 Reason_For: The article is published in a scholarly journal and includes peer review information.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "International Journal of Knowledge Content Development & Technology, 14(4), 113-133 (December, 2024)"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

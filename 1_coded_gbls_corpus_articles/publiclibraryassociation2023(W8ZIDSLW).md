@@ -63,13 +63,6 @@ Evidence: "Public Library Association. Public Library Services for Strong Commun
 Reason_For: The source is a report published by the Public Library Association, which is a professional organization, and it is not peer-reviewed.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "Public Library Association. Public Library Services for Strong Communities Report: Results from the 2022 PLA Annual Survey. Chicago: Public Library Association, 2023."
-Reason_For: The source is a professional publication by the Public Library Association, which is not peer-reviewed.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

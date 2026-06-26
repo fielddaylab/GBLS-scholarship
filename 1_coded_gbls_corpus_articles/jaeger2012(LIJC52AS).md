@@ -59,13 +59,6 @@ Evidence: "Public Library Quarterly, 31:1–20, 2012 Copyright © Taylor & Franc
 Reason_For: The article is published in a scholarly journal and includes a DOI, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Public Library Quarterly, 31:1–20, 2012 Copyright © Taylor & Francis Group, LLC ISSN: 0161-6846 print/1541-1540 online DOI: 10.1080/01616846.2012.654728"
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI, which is a standard indicator of peer-reviewed publication.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

@@ -75,13 +75,6 @@ Evidence: The text is a promotional and informational resource associated with t
 Reason_For: The text is not a peer-reviewed article, nor is it a book or conference paper. It is a promotional resource published in a professional context, likely intended for library patrons and gaming enthusiasts.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a promotional and informational document, not a peer-reviewed article or research study.
-Reason_For: The text does not present itself as a scholarly or peer-reviewed work.
-Reason_Against: none
-
 ## Evidence_Type
 Value: practitioner_reflection
 Confidence: medium

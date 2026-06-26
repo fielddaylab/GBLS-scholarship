@@ -61,13 +61,6 @@ Evidence: "The Game To the Bitter End! By Takuma Okada [Stream Transcript/Summar
 Reason_For: The source is a structured summary and resource list for a live-streamed playtest session, published in a web-based format.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The source is a blog-style summary of a live-streamed playtest session, not a peer-reviewed article.
-Reason_For: The source is a transcript or summary of a live-streamed event, not a formal academic publication.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

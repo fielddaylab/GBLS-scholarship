@@ -59,13 +59,6 @@ Evidence: "Mind, Culture, and Activity, 13(1), 38–52 Copyright © 2006, Regent
 Reason_For: The source is published in a scholarly journal and is subject to formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Mind, Culture, and Activity, 13(1), 38–52 Copyright © 2006, Regents of the University of California on behalf of the Laboratory of Comparative Human Cognition"
-Reason_For: The source is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

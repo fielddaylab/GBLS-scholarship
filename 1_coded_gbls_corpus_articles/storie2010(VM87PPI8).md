@@ -66,13 +66,6 @@ Evidence: "Journal of the Canadian Health Libraries Association / Journal de l'A
 Reason_For: The source is published in a scholarly journal and is a formal book review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of the Canadian Health Libraries Association / Journal de l'Association des bibliothécaires spécialisés du Canada, 31, 123."
-Reason_For: The source is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value: practitioner_reflection
 Confidence: medium

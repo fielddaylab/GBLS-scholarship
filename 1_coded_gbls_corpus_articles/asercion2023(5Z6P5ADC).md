@@ -65,13 +65,6 @@ Evidence: The text is a descriptive resource and promotional overview for two ta
 Reason_For: The text is not peer-reviewed, nor is it a formal research article, but it is a professionally oriented publication intended for library patrons or gaming communities associated with GameRT.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a descriptive resource and promotional overview for two tabletop role-playing games (TTRPGs) designed by Caro Asercion.
-Reason_For: The text does not present itself as a peer-reviewed article or research study.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

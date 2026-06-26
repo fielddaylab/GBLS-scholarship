@@ -59,13 +59,6 @@ Evidence: "Library Quarterly, vol. 82, no. 4, pp. 477–510] 2012 by The Univers
 Reason_For: The source is published in a scholarly journal, "Library Quarterly," and is cited with volume, issue, and page numbers, which are typical of peer-reviewed journal articles.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Library Quarterly, vol. 82, no. 4, pp. 477–510] 2012 by The University of Chicago. All rights reserved."
-Reason_For: The source is published in a peer-reviewed journal, "Library Quarterly," which is a scholarly publication.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

@@ -61,13 +61,6 @@ Evidence: "Round Table Topic: Zine Month! [Roundtable discussion notes]. America
 Reason_For: The source is a roundtable discussion notes from a conference, which aligns with the definition of a conference presentation.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "Round Table Topic: Zine Month! [Roundtable discussion notes]. American Library Association Games and Gaming Roundtable."
-Reason_For: The source is a roundtable discussion notes, not a peer-reviewed article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

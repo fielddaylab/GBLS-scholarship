@@ -64,13 +64,6 @@ Evidence: "New Review of Academic Librarianship, 21:129–145, 2015 Published wi
 Reason_For: The article is published in a scholarly journal and is subject to formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "New Review of Academic Librarianship, 21:129–145, 2015 Published with license by Taylor & Francis"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

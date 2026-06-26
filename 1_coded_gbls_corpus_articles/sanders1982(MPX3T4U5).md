@@ -63,13 +63,6 @@ Evidence: "Indiana Libraries, 54(3), 93-98."
 Reason_For: The source is published in a scholarly journal with volume, issue, and page numbers, indicating peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Indiana Libraries, 54(3), 93-98."
-Reason_For: The source is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

@@ -59,13 +59,6 @@ Evidence: "Journal of Librarianship and Information Science, 57(2), 524–538 ©
 Reason_For: The article is published in a scholarly journal and includes peer review information.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Librarianship and Information Science, 57(2), 524–538 © The Author(s) 2023"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

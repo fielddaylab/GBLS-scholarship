@@ -65,13 +65,6 @@ Evidence: "Journal of the Medical Library Association"
 Reason_For: The article is published in a scholarly journal and includes peer review information.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "DOI: dx.doi.org/10.5195/jmla.2022.1463"
-Reason_For: The article includes a DOI and is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

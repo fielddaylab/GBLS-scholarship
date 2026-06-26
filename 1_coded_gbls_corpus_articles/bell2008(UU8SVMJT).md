@@ -68,13 +68,6 @@ Evidence: "Virtual Worlds, Real Libraries: Librarians and Educators in Second Li
 Reason_For: The source is a published book with a clear editorial structure and ISBN.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The source is a book published by a professional publisher, not a peer-reviewed journal article.
-Reason_For: The source is a book, not a peer-reviewed article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

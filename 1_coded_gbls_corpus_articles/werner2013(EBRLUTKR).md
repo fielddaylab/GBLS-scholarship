@@ -59,13 +59,6 @@ Evidence: "Library Trends" is a scholarly journal, and the article is published 
 Reason_For: The article is published in a peer-reviewed journal, which aligns with the definition of "peer_reviewed_journal_article."
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in "Library Trends," a peer-reviewed journal, and includes a formal citation and abstract.
-Reason_For: The journal is known for peer-reviewed content, and the article includes a structured abstract and formal citation.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

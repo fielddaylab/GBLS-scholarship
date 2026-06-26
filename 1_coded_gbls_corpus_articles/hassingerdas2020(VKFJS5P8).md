@@ -57,13 +57,6 @@ Evidence: "Library and Information Science Research, 42(3), 101002." (Section 1,
 Reason_For: The article is published in a scholarly journal and includes peer review information in the header.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "https://doi.org/10.1016/j.lisr.2020.101002" (Section 1, Abstract)
-Reason_For: The article includes a DOI and is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

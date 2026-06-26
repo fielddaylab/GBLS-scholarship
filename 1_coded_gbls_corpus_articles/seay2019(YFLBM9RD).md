@@ -59,13 +59,6 @@ Evidence: Published in *Against the Grain*, a scholarly journal.
 Reason_For: The article is published in a peer-reviewed journal.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: Published in *Against the Grain*, a peer-reviewed journal.
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

@@ -64,13 +64,6 @@ Evidence: "Watch the VOD of this session here: https://www.twitch.tv/collections
 Reason_For: The text is a descriptive resource and session summary posted online, likely intended for public consumption and not peer-reviewed.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a blog-style summary of a live-streamed event, not a peer-reviewed article.
-Reason_For: The source is a descriptive summary of a game and its associated event, not a scholarly article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

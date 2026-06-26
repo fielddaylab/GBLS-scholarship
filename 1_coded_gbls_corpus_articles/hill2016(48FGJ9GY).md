@@ -66,13 +66,6 @@ Evidence: "The Christian Librarian is the official publication of the Associatio
 Reason_For: The article is published in *The Christian Librarian*, a professional publication not subject to scholarly peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "The Christian Librarian is the official publication of the Association of Christian Librarians (ACL)."
-Reason_For: The article is published in a professional publication not subject to scholarly peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

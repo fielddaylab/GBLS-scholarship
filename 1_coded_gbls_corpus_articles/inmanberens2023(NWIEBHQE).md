@@ -68,13 +68,6 @@ Evidence: "American Library Association" (Page 19)
 Reason_For: The source is a report published by the American Library Association, which is a professional organization.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "This report is organized into five parts:" (Page 3)
-Reason_For: The source is a professional publication, not a peer-reviewed journal article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

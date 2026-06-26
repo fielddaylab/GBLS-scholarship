@@ -68,13 +68,6 @@ Evidence: "Türk Kütüphaneciliği, 39, 3(2025), 365-373" (Title page)
 Reason_For: The article is published in a scholarly journal with a formal citation and DOI.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Türk Kütüphaneciliği, 39, 3(2025), 365-373" (Title page)
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

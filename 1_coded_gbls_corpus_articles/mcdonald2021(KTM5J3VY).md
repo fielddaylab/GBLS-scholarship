@@ -59,13 +59,6 @@ Evidence: "J Assoc Inf Sci Technol. 2021;72:540–553."
 Reason_For: The article is published in a scholarly journal and includes a DOI, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "J Assoc Inf Sci Technol. 2021;72:540–553."
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

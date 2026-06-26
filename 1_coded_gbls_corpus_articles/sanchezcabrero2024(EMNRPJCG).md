@@ -57,13 +57,6 @@ Evidence: "CITATION 1 1 author: Roberto Sanchez Cabrero Autonomous University of
 Reason_For: The article is published in a peer-reviewed journal, "Educación y Humanismo," and includes citations and a formal structure typical of scholarly articles.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed journal and includes a formal citation and references section.
-Reason_For: The article is published in a peer-reviewed journal and includes a formal citation and references section.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

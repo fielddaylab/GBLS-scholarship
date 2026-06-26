@@ -62,13 +62,6 @@ Evidence: "In S. Kurbanoğlu et al. (Eds.), *Information Literacy: Moving Toward
 Reason_For: The article is a chapter within a published book edited by multiple authors.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "The Third European Conference on Information Literacy (ECIL) was co-organized by the Department of Information Management of Hacettepe University, Turkey, Department of Information and Communication Sciences of Zagreb University, Croatia, and the Institute of Information Studies of Tallinn University, Estonia."
-Reason_For: The article is part of a conference proceedings that was peer-reviewed.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

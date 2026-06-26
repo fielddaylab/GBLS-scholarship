@@ -57,13 +57,6 @@ Evidence: "Master’s thesis, Virginia Commonwealth University"
 Reason_For: The source is explicitly identified as a Master’s thesis from Virginia Commonwealth University.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The source is a Master’s thesis, which is not subject to formal peer review in the same way as journal articles or conference papers.
-Reason_For: Master’s theses are typically evaluated by a committee, not through formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

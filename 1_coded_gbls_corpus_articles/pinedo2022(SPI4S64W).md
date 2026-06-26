@@ -61,13 +61,6 @@ Evidence: "Current Psychology (2022) 41:1603–1617 https://doi.org/10.1007/s121
 Reason_For: The source is a published article in a scholarly journal with a DOI, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Current Psychology (2022) 41:1603–1617 https://doi.org/10.1007/s12144-021-01744-1"
-Reason_For: The source is a published article in a scholarly journal with a DOI, indicating it has undergone formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

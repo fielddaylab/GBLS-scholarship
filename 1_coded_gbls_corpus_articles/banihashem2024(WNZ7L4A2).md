@@ -63,13 +63,6 @@ Evidence: "Published in Behaviour & Information Technology, a peer-reviewed jour
 Reason_For: The article is published in a peer-reviewed journal and includes a formal citation with DOI.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Published in Behaviour & Information Technology, a peer-reviewed journal."
-Reason_For: The article is published in a peer-reviewed journal and includes a formal citation with DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

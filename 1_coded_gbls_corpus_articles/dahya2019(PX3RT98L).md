@@ -59,13 +59,6 @@ Evidence: "This research was generously funded by Washington State Libraries, Of
 Reason_For: The source is a formal research study published by the University of Washington Information School and funded by recognized institutions.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "This research was generously funded by Washington State Libraries, Office of the Secretary of State, and Oculus."
-Reason_For: The source is a formal research study published by the University of Washington Information School and funded by recognized institutions.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

@@ -66,13 +66,6 @@ Evidence: "The text serves as a promotional and informational resource for the t
 Reason_For: The text is a promotional and informational resource published online, which aligns with the definition of a blog or web article.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "The text does not describe a research methodology, empirical study, or systematic data collection process."
-Reason_For: The source is a promotional and informational document, not a peer-reviewed article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

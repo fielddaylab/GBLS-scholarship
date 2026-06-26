@@ -63,13 +63,6 @@ Evidence: "Communications in Information Literacy" is a scholarly journal, and t
 Reason_For: The article is published in a peer-reviewed journal and includes formal academic elements.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article includes a DOI and is published in a peer-reviewed journal.
-Reason_For: The article is published in a peer-reviewed journal and includes formal academic elements.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

@@ -73,13 +73,6 @@ Evidence: "The document serves as a comprehensive statistical report aggregating
 Reason_For: The source is a statistical report published by Statista, which is a professional publication focused on market data and industry trends.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "The document serves as a comprehensive statistical report aggregating global data on the video gaming industry."
-Reason_For: The source is a statistical report from Statista, which is not peer-reviewed but compiles data from various sources.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

@@ -63,13 +63,6 @@ Evidence: "Round Table: Addressing Censorship... authored by Julia Lanter, Shawn
 Reason_For: The article is a publication by professional library associations (GNCRT and GameRT) and serves as a resource guide for librarians, fitting the definition of a professional publication.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "The document does not present original empirical research but rather serves as a comprehensive bibliography and advisory guide..."
-Reason_For: The source is a curated resource guide and not a peer-reviewed article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

@@ -57,13 +57,6 @@ Evidence: "Confronting the Challenges of Participatory Culture: Media Education 
 Reason_For: The source is a published book by the MIT Press, as indicated in the text.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a published book, not a peer-reviewed journal article or conference paper.
-Reason_For: The source is a book published by the MIT Press, which is not subject to formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

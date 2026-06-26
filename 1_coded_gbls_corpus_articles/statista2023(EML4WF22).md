@@ -85,13 +85,6 @@ Evidence: "Statista. (2023). Board games and card games. Statista."
 Reason_For: The source is a report published by Statista, a well-known market research firm, and is intended for professional use, providing statistical data for industry analysis.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "Statista. (2023). Board games and card games. Statista."
-Reason_For: The source is a market research report, not a peer-reviewed journal article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

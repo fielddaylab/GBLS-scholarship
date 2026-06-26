@@ -61,13 +61,6 @@ Evidence: "Children & Libraries" is a journal published by the American Library 
 Reason_For: The source is a journal article published in a professional publication aimed at library workers.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed journal, "Children & Libraries," which is a publication of the American Library Association.
-Reason_For: The source is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

@@ -66,13 +66,6 @@ Evidence: The text is a curated resource list and informational hub for *Stardew
 Reason_For: The source is a practical guide and resource list, not a scholarly article or research paper.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a static list of links and policy statements; no indication of peer review is present.
-Reason_For: The source is a professional publication intended for practical use, not a peer-reviewed article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

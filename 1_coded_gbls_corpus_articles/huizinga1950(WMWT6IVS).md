@@ -57,13 +57,6 @@ Evidence: "Homo Ludens: A Study of the Play-Element in Culture" is a published m
 Reason_For: The source is a full-length scholarly book published by a press.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text does not indicate that it has undergone formal peer review.
-Reason_For: The source is a book, not a journal article or conference paper, and no peer review process is mentioned.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

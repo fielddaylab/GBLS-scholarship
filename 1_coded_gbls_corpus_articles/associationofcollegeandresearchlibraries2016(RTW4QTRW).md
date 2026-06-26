@@ -65,13 +65,6 @@ Evidence: "Association of College and Research Libraries (ACRL) 2016. Framework 
 Reason_For: The source is a formal publication by the Association of College and Research Libraries (ACRL), a scholarly organization, and is cited with a formal citation format.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Association of College and Research Libraries (ACRL) 2016. Framework for Information Literacy for Higher Education."
-Reason_For: The source is a formal publication by the ACRL, which is a scholarly organization, and the document was developed by a Task Force appointed by the ACRL Board.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

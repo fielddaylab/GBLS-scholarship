@@ -59,13 +59,6 @@ Evidence: "Journal of Information Science, 42(6) 2016"
 Reason_For: The article is published in a scholarly journal and includes peer review elements such as structured abstract, detailed methodology, and references.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Information Science, 42(6) 2016"
-Reason_For: The article is published in a peer-reviewed journal and includes a structured abstract, detailed methodology, and references.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

@@ -69,13 +69,6 @@ Evidence: "Reference & User Services Quarterly" is a scholarly journal published
 Reason_For: The article is published in a peer-reviewed journal and includes formal citations and references.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed journal, "Reference & User Services Quarterly," and includes formal citations and references.
-Reason_For: The article is published in a peer-reviewed journal and includes formal citations and references.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

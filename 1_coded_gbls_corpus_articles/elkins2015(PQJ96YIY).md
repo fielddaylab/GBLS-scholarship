@@ -57,13 +57,6 @@ Evidence: "Knowledge Quest" is a journal published by the American Library Assoc
 Reason_For: The source is a journal article published by a professional organization, which aligns with the definition of a professional_publication.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: low
-Evidence: The article is presented as an opinion piece and professional guide rather than an empirical study.
-Reason_For: The article does not describe a formal peer review process.
-Reason_Against: The article is published in a professional journal, which may imply some level of editorial review, but not formal peer review.
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

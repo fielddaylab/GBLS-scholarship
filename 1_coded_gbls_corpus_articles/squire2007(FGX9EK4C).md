@@ -64,13 +64,6 @@ Evidence: "Educational Technology, 47(3), 56-59."
 Reason_For: The source is published in a scholarly journal with a specific volume, issue, and page range, indicating peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Educational Technology, 47(3), 56-59."
-Reason_For: The source is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

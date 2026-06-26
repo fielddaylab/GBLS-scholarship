@@ -59,13 +59,6 @@ Evidence: "Early Childhood Education Journal (2023) 51:717–732 https://doi.org
 Reason_For: The source is published in a scholarly journal and includes a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Early Childhood Education Journal (2023) 51:717–732 https://doi.org/10.1007/s10643-022-01332-3"
-Reason_For: The source is published in a peer-reviewed journal and includes a DOI, confirming formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

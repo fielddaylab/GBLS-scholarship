@@ -66,13 +66,6 @@ Evidence: "Published in *Access*, a professional publication focused on library 
 Reason_For: The article is published in *Access*, a professional publication aimed at library practitioners, and does not appear to be peer-reviewed.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The article is published in a professional publication, not a peer-reviewed journal.
-Reason_For: The source is a feature article in a professional publication, not a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

@@ -59,13 +59,6 @@ Evidence: "This adaptable program provides a framework for public libraries to r
 Reason_For: The article is a practical guide for librarians, published in a format that suggests it is intended for professional use rather than scholarly peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The article is presented as a program framework without indication of formal peer review.
-Reason_For: The article is structured as a practical guide rather than a research article, and no peer review process is mentioned.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

@@ -67,13 +67,6 @@ Evidence: "College & Research Libraries, 78(5), 675–701."
 Reason_For: The article is published in a scholarly journal and is cited with a volume, issue, and page range.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "peer_reviewed_journal_article"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

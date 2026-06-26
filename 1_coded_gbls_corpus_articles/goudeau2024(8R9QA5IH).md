@@ -59,13 +59,6 @@ Evidence: "Magikarp Makover by librarian Jennifer Goudeau! Watch the VOD of this
 Reason_For: The text is a promotional and informational resource posted online, likely on a blog or website, and includes a link to a Twitch VOD.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a promotional resource and does not appear to be published in a peer-reviewed journal or conference proceedings.
-Reason_For: The source is a blog or web article, not a peer-reviewed publication.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

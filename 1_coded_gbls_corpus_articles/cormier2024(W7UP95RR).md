@@ -59,13 +59,6 @@ Evidence: "Resources for libraries to help spread the word about Design Your Des
 Reason_For: The text is a promotional and informational resource aimed at librarians and educators, not a peer-reviewed article or academic monograph.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a promotional resource for a commercial product, not a peer-reviewed article.
-Reason_For: The source is not a scholarly or academic publication.
-Reason_Against: none
-
 ## Evidence_Type
 Value: practitioner_reflection
 Confidence: medium

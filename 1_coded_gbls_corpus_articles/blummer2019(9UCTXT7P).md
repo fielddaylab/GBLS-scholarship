@@ -68,13 +68,6 @@ Evidence: "A review of one hundred seventy-four papers on academic library outre
 Reason_For: The article is a peer-reviewed journal article published in Public Services Quarterly.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed journal.
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

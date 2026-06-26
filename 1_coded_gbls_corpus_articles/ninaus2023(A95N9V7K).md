@@ -61,13 +61,6 @@ Evidence: "Education Tech Research Dev https://doi.org/10.1007/s11423-023-10263-
 Reason_For: The source is published in a peer-reviewed journal and includes a DOI, which is a clear indicator of formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Education Tech Research Dev https://doi.org/10.1007/s11423-023-10263-8"
-Reason_For: The source is published in a peer-reviewed journal and includes a DOI, which is a clear indicator of formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

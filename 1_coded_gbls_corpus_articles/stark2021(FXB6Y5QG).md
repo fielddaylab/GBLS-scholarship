@@ -61,13 +61,6 @@ Evidence: "The Journal of Academic Librarianship 47 (2021) 102345 Contents lists
 Reason_For: The source is published in a scholarly journal and is cited with a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "The Journal of Academic Librarianship 47 (2021) 102345 Contents lists available at ScienceDirect"
-Reason_For: The source is published in a peer-reviewed journal with a DOI and is cited in the reference list.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

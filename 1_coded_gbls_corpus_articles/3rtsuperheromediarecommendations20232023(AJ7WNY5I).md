@@ -63,13 +63,6 @@ Evidence: "This list is a crowd-sourced document of favorite media recommended b
 Reason_For: The document is a promotional and informational guide for a virtual event hosted by professional library associations, which aligns with the definition of a professional publication.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The document is a promotional flyer and event schedule, not a research article.
-Reason_For: The source is not a peer-reviewed article but a professional publication intended for community engagement and promotion.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

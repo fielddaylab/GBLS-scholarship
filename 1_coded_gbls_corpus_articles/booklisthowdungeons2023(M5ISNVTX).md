@@ -62,13 +62,6 @@ Evidence: "Booklist" is a professional publication, and the article is published
 Reason_For: The article is published in a professional publication, "Booklist," which is intended for librarians and educators.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The article is not described as peer-reviewed and is published in a professional publication, not a scholarly journal.
-Reason_For: The article is published in a professional publication, not a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

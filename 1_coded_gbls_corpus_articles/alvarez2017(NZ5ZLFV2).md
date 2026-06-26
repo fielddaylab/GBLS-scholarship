@@ -59,13 +59,6 @@ Evidence: "Knowledge Quest" is a professional publication, and the article is pu
 Reason_For: The source is a journal article published by the American Library Association, which is a professional organization.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed journal, "Knowledge Quest."
-Reason_For: The source is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

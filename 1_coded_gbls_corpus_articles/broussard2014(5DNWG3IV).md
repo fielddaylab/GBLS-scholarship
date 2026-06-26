@@ -59,13 +59,6 @@ Evidence: "The Journal of Academic Librarianship 40 (2014) 35–42"
 Reason_For: The source is published in a scholarly journal and is cited with a volume, issue, and page range, indicating peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "The Journal of Academic Librarianship 40 (2014) 35–42"
-Reason_For: The source is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

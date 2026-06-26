@@ -65,13 +65,6 @@ Evidence: "Educational Researcher, Vol. 35, No. 8, pp. 19–29"
 Reason_For: The article is published in a scholarly journal, "Educational Researcher," and includes peer review information in the manuscript metadata.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Educational Researcher, Vol. 35, No. 8, pp. 19–29"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

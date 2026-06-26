@@ -61,13 +61,6 @@ Evidence: "PROFESSIONAL READING... VERDICT Recommended."
 Reason_For: The source is a professional review published in *School Library Journal*, a professional publication not subject to scholarly peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "PROFESSIONAL READING... VERDICT Recommended."
-Reason_For: The source is a professional review, not a peer-reviewed article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

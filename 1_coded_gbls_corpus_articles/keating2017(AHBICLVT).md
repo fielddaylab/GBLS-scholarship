@@ -59,13 +59,6 @@ Evidence: "Proceedings of the 50th Hawaii International Conference on System Sci
 Reason_For: The source is published in the proceedings of a peer-reviewed conference.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Proceedings of the 50th Hawaii International Conference on System Sciences | 2017"
-Reason_For: The source is published in the proceedings of a peer-reviewed conference.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

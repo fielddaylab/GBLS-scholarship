@@ -59,13 +59,6 @@ Evidence: "Personnel Psychology, 2011, 64, 489–528"
 Reason_For: The article is published in a scholarly journal and subject to formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Personnel Psychology, 2011, 64, 489–528"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

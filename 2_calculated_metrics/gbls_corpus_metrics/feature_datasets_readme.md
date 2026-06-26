@@ -1,7 +1,7 @@
 # GBLS Feature Datasets
 
-Generated: 2026-06-23 20:09
-Articles: 224 | Feature assignments: 2377
+Generated: 2026-06-26 01:48
+Articles: 227 | Feature assignments: 3640
 
 ## Quick start (Python / Colab)
 
@@ -28,26 +28,24 @@ matrix   = pd.read_csv(f"{metrics_dir}/article_feature_matrix.csv")
 ## Counting conventions
 
 - Counts represent coded article presence, not prose term frequency.
-- Multi-label fields (Audience, Evidence_Type, Intended_Outcome, Service_Area) may contribute multiple assignments per article.
+- Multi-label fields (Conceptual_Theme, Evidence_Confidence, Evidence_Type, Game_Format, Intended_Outcome, Library_Context, Primary_Methodology, Service_Area, Service_Audience, Service_Conditions_Addressed, Source_Type) may contribute multiple assignments per article.
 - `article_pct` = article_count / total_articles × 100
 - `article_pct_in_year` uses same-year article count as denominator.
 
 ## Schema fields
 
-- **Source_Type**
-- **Peer_Review**
+- **Source_Type** (multi-label)
 - **Evidence_Type** (multi-label)
-- **Primary_Methodology**
-- **Library_Context**
-- **Game_Format**
+- **Primary_Methodology** (multi-label)
+- **Conceptual_Theme** (multi-label)
+- **Library_Context** (multi-label)
+- **Game_Format** (multi-label)
 - **Service_Area** (multi-label)
-- **Audience** (multi-label)
+- **Service_Audience** (multi-label)
 - **Intended_Outcome** (multi-label)
-- **Evidence_Confidence**
-- **Service_Conditions_Addressed**
-- **Conceptual_Theme**
-- **Coding_Confidence**
+- **Evidence_Confidence** (multi-label)
+- **Service_Conditions_Addressed** (multi-label)
 
 ## Undated records
 
-17 article(s) have no year and are labelled `n.d.` in year summaries.
+1 article(s) have no year and are labelled `n.d.` in year summaries.

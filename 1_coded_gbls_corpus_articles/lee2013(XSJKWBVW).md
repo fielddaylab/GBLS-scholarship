@@ -62,13 +62,6 @@ Evidence: "Jin Ha Lee, Hyerim Cho, Violet Fox... JCDL’13, July 22–26, 2013, 
 Reason_For: The article is published in the Proceedings of the 13th ACM/IEEE Joint Conference on Digital Libraries (JCDL '13), which is a peer-reviewed conference.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "JCDL’13, July 22–26, 2013, Indianapolis, Indiana, USA."
-Reason_For: The article is published in a peer-reviewed conference.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

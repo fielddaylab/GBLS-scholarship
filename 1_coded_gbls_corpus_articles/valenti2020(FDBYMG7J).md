@@ -59,13 +59,6 @@ Evidence: "Information Technology and Libraries, 39(2), 11937. https://doi.org/1
 Reason_For: The source is published in a scholarly journal and includes a DOI, indicating peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Information Technology and Libraries, 39(2), 11937. https://doi.org/10.6017/ital.v39i2.11937"
-Reason_For: The source is published in a peer-reviewed journal with a DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

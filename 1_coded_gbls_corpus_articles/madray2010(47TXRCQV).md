@@ -68,13 +68,6 @@ Evidence: "Education Libraries, Volume 33, Number 2, Winter 2010"
 Reason_For: The article is published in "Education Libraries," a professional journal for librarians, and is not peer-reviewed.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The article is published in a professional publication, not a peer-reviewed journal.
-Reason_For: The source is a professional publication, not a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

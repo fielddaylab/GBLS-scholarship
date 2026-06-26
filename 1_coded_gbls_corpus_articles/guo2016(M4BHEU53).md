@@ -63,13 +63,6 @@ Evidence: "The Library Quarterly: Information, Community, Policy, vol. 86, no. 3
 Reason_For: The source is published in a scholarly journal and is subject to formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "The Library Quarterly: Information, Community, Policy, vol. 86, no. 3, pp. 330–355. © 2016 by The University of Chicago. All rights reserved."
-Reason_For: The source is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

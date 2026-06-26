@@ -59,13 +59,6 @@ Evidence: "This is an accepted manuscript of an article published by Elsevier in
 Reason_For: The article was published in a scholarly journal and is subject to formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "This is an accepted manuscript of an article published by Elsevier in The Journal of Academic Librarianship on January 15, 2015."
-Reason_For: The article was published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

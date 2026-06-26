@@ -57,13 +57,6 @@ Evidence: "Public Library Quarterly, ISSN: 0161-6846 (Print) 1541-1540 (Online) 
 Reason_For: The article is published in a peer-reviewed journal, Public Library Quarterly, which is indexed and has a formal peer review process.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Public Library Quarterly, ISSN: 0161-6846 (Print) 1541-1540 (Online) Journal homepage: www.tandfonline.com/journals/wplq20"
-Reason_For: The article is published in a peer-reviewed journal, which indicates that it has undergone formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

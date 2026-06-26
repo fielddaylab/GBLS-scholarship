@@ -61,13 +61,6 @@ Evidence: "Journal of Information Systems Education, 33(4), 306-323, Fall 2022"
 Reason_For: The article is published in a scholarly journal and includes peer review information.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "All papers published in the Journal of Information Systems Education have undergone rigorous peer review."
-Reason_For: The source explicitly states that the journal employs a rigorous peer review process.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

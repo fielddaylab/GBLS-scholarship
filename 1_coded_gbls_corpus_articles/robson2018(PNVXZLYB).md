@@ -63,13 +63,6 @@ Evidence: "The authors presented on this topic at the American Library Associati
 Reason_For: The article was published in a scholarly journal (*Library Resources & Technical Services*) and presented at a professional conference.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "The authors presented on this topic at the American Library Association’s 2016 Annual Conference for the Association for Library Collections and Technical Services."
-Reason_For: The article was published in a peer-reviewed journal and presented at a conference.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

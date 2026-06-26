@@ -63,13 +63,6 @@ Evidence: "This poster explores relationships among video games in an attempt to
 Reason_For: The article is presented as a poster at the Joint Conference on Digital Libraries, which aligns with the definition of a conference paper.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in the Joint Conference on Digital Libraries, which is a peer-reviewed venue.
-Reason_For: The conference is a well-known, peer-reviewed event in the field of digital libraries.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

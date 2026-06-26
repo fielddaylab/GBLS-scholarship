@@ -59,13 +59,6 @@ Evidence: "Article published in a scholarly journal and subject to formal peer r
 Reason_For: The article is published in the "Review of Educational Research," a peer-reviewed journal, and includes peer review information in the manuscript.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Eligible studies had to be articles published in peer-reviewed journals or conference proceedings." (Method, p. 24)
-Reason_For: The study explicitly states that eligible studies must be published in peer-reviewed journals.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

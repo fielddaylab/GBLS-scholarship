@@ -57,13 +57,6 @@ Evidence: "International Journal of Teaching and Learning in Higher Education 20
 Reason_For: The article is published in a scholarly journal and includes a formal citation with volume, issue, and page numbers.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "International Journal of Teaching and Learning in Higher Education 2008, Volume 20, Number 1, 59-69 http://www.isetl.org/ijtlhe/ ISSN 1812-9129"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

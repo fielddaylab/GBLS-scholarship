@@ -61,13 +61,6 @@ Evidence: "Round Table: International Games Month... Learn More About GameRT Blo
 Reason_For: The text is a promotional and informational document published by the American Library Association (ALA) and serves as a resource guide for librarians, fitting the definition of a professional publication.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text consists of a list of links, policies, and contact details without any study design or empirical approach.
-Reason_For: The source is not an academic or scholarly article and does not undergo peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

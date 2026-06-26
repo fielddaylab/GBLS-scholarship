@@ -65,13 +65,6 @@ Evidence: "The report is published by the Entertainment Software Association (ES
 Reason_For: The source is a report published by a professional organization (ESA) and is intended for a broad professional and public audience.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "The report is produced by the Entertainment Software Association and is not described as undergoing formal peer review."
-Reason_For: The source is a professional publication and not described as undergoing formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

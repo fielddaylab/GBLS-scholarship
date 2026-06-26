@@ -1,13 +1,12 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
-intended_outcome,not_applicable,95,224,42.4,1
-intended_outcome,learning_and_literacy,64,224,28.6,2
-intended_outcome,discovery_and_advisory,25,224,11.2,3
-intended_outcome,belonging_and_community,20,224,8.9,4
-intended_outcome,creativity_and_production,17,224,7.6,5
-intended_outcome,institutional_capacity,14,224,6.2,6
-intended_outcome,equitable_access,14,224,6.2,6
-intended_outcome,engagement_and_participation,12,224,5.4,7
-intended_outcome,cultural_stewardship_and_preservation,6,224,2.7,8
-intended_outcome,wellness_and_resilience,3,224,1.3,9
-intended_outcome,"learning_and_literacy, belonging_and_community",1,224,0.4,10
-intended_outcome,"[equitable_access, learning_and_literacy, engagement_and_participation, institutional_capacity]",1,224,0.4,10
+intended_outcome,learning_and_literacy,102,227,44.9,1
+intended_outcome,engagement_and_participation,53,227,23.3,2
+intended_outcome,equitable_access,17,227,7.5,3
+intended_outcome,other,14,227,6.2,4
+intended_outcome,discovery_and_advisory,10,227,4.4,5
+intended_outcome,cultural_stewardship_and_preservation,9,227,4.0,6
+intended_outcome,not_applicable,6,227,2.6,7
+intended_outcome,belonging_and_community,5,227,2.2,8
+intended_outcome,institutional_capacity,4,227,1.8,9
+intended_outcome,wellness_and_resilience,4,227,1.8,9
+intended_outcome,creativity_and_production,3,227,1.3,10

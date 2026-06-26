@@ -59,13 +59,6 @@ Evidence: "Information Technology and Libraries, 39(4), 1–4. https://doi.org/1
 Reason_For: The source is published in a scholarly journal and includes a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Information Technology and Libraries, 39(4), 1–4. https://doi.org/10.6017/ital.v39i4.12847"
-Reason_For: The source is published in a peer-reviewed journal with a DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

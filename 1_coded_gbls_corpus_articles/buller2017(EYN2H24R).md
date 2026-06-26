@@ -57,13 +57,6 @@ Evidence: "portal: Libraries and the Academy, 17(2), 337-346. https://doi.org/10
 Reason_For: The article is published in a scholarly journal and includes a formal peer review process.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "portal: Libraries and the Academy, 17(2), 337-346. https://doi.org/10.1353/pla.2017.0020"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

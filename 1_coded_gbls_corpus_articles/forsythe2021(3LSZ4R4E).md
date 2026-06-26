@@ -61,13 +61,6 @@ Evidence: "Emerging Library & Information Perspectives, 4, 143-156."
 Reason_For: The article is published in a peer-reviewed journal titled "Emerging Library & Information Perspectives."
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Emerging Library & Information Perspectives, 4, 143-156."
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

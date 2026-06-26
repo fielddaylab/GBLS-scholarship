@@ -74,13 +74,6 @@ Evidence: "Newzoo. (2025). Global Games Market Report 2025."
 Reason_For: The source is a market intelligence report published by Newzoo, a professional organization, and is intended for an engaged, professional audience.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The report is a market intelligence report published by Newzoo, not a peer-reviewed journal article.
-Reason_For: The source is a market intelligence report published by Newzoo, not a peer-reviewed journal article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

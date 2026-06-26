@@ -65,13 +65,6 @@ Evidence: "Utopia on the Tabletop. Brighton, UK: Ping Press, 2024. ISBN: 978-1-9
 Reason_For: The source is a published book with a publisher, ISBN, and a formal title.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The source is a book published by a small press, not a peer-reviewed journal or conference proceedings.
-Reason_For: The source is a book published by a small press, not a peer-reviewed journal or conference proceedings.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

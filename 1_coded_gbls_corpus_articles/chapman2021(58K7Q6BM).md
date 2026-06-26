@@ -70,13 +70,6 @@ Evidence: "Journal of Library Metadata, 21(3-4), 63–103. DOI: 10.1080/19386389
 Reason_For: The article is published in a scholarly journal and includes a DOI, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Library Metadata, 21(3-4), 63–103. DOI: 10.1080/19386389.2021.2007729"
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

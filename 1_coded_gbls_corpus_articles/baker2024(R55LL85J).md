@@ -63,13 +63,6 @@ Evidence: "Unpublished manuscript. University of Wisconsin-Milwaukee."
 Reason_For: The source is explicitly identified as an unpublished manuscript.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "Unpublished manuscript. University of Wisconsin-Milwaukee."
-Reason_For: The source is identified as an unpublished manuscript, which is not subject to peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

@@ -63,13 +63,6 @@ Evidence: "This list is a crowd-sourced document of favorite media recommended b
 Reason_For: The document is a publication by the American Library Association Round Tables, intended for library professionals and enthusiasts, and is not peer-reviewed.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "This list is a crowd-sourced document of favorite media recommended by members of the FMRT... GameRT... and the GNCRT... of the ALA (American Library Association)."
-Reason_For: The document is an informational bulletin and event guide, not a peer-reviewed scholarly article.
-Reason_Against: none
-
 ## Evidence_Type
 Value: practitioner_reflection
 Confidence: high

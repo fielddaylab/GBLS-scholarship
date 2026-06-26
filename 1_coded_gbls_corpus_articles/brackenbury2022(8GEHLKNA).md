@@ -64,13 +64,6 @@ Evidence: "Schrader, C. (2023). Serious Games and Game-Based Learning. In O. Zaw
 Reason_For: The article is published in a scholarly journal and is part of a peer-reviewed handbook.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Schrader, C. (2023). Serious Games and Game-Based Learning. In O. Zawacki-Richter & I. Jung (Eds.), Handbook of Open, Distance and Digital Education (pp. 1255–1268). Springer."
-Reason_For: The article is published in a peer-reviewed handbook.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

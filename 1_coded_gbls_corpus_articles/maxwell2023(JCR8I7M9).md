@@ -64,13 +64,6 @@ Evidence: "Lucas Maxwell’s 2023 guide, *Let’s Roll*, serves as a practical m
 Reason_For: The source is a published book by Lucas Maxwell, titled *Let’s Roll*, which is a guide for librarians and educators.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "The text is a non-fiction instructional guide and professional development resource. It does not employ empirical research methods such as controlled trials or statistical analysis." (Objective Metadata)
-Reason_For: The source is a professional publication, not a peer-reviewed journal article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

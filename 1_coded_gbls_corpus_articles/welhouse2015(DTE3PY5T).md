@@ -63,13 +63,6 @@ Evidence: "Cataloging & Classification Quarterly, 53:157–189, 2015 Published w
 Reason_For: The article is published in a scholarly journal and includes a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Cataloging & Classification Quarterly, 53:157–189, 2015 Published with license by Taylor & Francis ISSN: 0163-9374 print / 1544-4554 online DOI: 10.1080/01639374.2014.963776"
-Reason_For: The article is published in a peer-reviewed journal with a DOI, indicating formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

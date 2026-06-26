@@ -57,13 +57,6 @@ Evidence: "Published in Space and Culture, a peer-reviewed journal."
 Reason_For: The article is published in a peer-reviewed journal and includes a structured abstract, methodology, and references.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed journal and includes a structured abstract, methodology, and references.
-Reason_For: The article is published in a peer-reviewed journal and includes a structured abstract, methodology, and references.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

@@ -59,13 +59,6 @@ Evidence: "This peer-reviewed work was submitted 27 June 2023, accepted for publ
 Reason_For: The article is published in a scholarly journal (*Information Technology and Libraries*) and explicitly states it underwent peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "This peer-reviewed work was submitted 27 June 2023, accepted for publication 2 October 2023, and published 18 March 2024."
-Reason_For: The article explicitly states it underwent peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

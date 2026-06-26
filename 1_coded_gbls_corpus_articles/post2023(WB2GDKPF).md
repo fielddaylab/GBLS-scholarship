@@ -61,13 +61,6 @@ Evidence: "This paper presents an action research project cataloging 18 independ
 Reason_For: The article is published in *Cataloging & Classification Quarterly*, a peer-reviewed journal.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "This paper presents an action research project cataloging 18 independently-made digital games from a small publisher, Choice of Games, considering how descriptive cataloging, subject cataloging, and name authority control for these works compares to mainstream video games."
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

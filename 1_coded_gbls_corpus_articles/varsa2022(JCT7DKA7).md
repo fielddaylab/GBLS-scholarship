@@ -59,13 +59,6 @@ Evidence: "Published by DigitalCommons@Kennesaw State University, 2022"
 Reason_For: The article is published in a scholarly journal, Georgia Library Quarterly, and is hosted on a university repository, indicating peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Published by DigitalCommons@Kennesaw State University, 2022"
-Reason_For: The article is published in a peer-reviewed journal and hosted on a university repository, which is a common indicator of peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

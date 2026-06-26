@@ -73,13 +73,6 @@ Evidence: "Journal of Educational Technology & Society"
 Reason_For: The article is published in a scholarly journal and is identified as a guest editorial, which is typically subject to peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Educational Technology & Society"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

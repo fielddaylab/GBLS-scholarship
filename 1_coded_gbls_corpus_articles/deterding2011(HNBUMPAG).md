@@ -67,13 +67,6 @@ Evidence: "MindTrek '11: Proceedings of the 15th International Academic MindTrek
 Reason_For: The source is a paper published in the proceedings of an academic conference.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "MindTrek '11: Proceedings of the 15th International Academic MindTrek Conference: Envisioning Future Media Environments (September 2011) hps://doi.org/10.1145/2181037.2181040 ISBN: 9781450308168"
-Reason_For: The paper is published in a conference proceedings, which typically involves peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

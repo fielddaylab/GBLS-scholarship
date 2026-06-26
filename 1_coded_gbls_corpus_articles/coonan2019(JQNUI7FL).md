@@ -64,13 +64,6 @@ Evidence: "Journal of Information Literacy", "peer-reviewed research"
 Reason_For: The article is published in a scholarly journal and explicitly mentions peer-reviewed research.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "peer-reviewed research", "peer-reviewed papers section"
-Reason_For: The source is explicitly described as containing peer-reviewed research and is published in a scholarly journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

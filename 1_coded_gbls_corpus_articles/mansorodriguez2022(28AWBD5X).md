@@ -59,13 +59,6 @@ Evidence: "Bibliotecas. Anales de Investigacion;18(3), 1-15"
 Reason_For: The article is published in a peer-reviewed journal with a formal citation format and includes a structured abstract, methodology, results, and references.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Bibliotecas. Anales de Investigacion;18(3), 1-15"
-Reason_For: The article is published in a peer-reviewed journal and includes a formal citation format with a structured abstract, methodology, results, and references.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

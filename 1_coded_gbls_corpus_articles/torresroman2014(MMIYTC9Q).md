@@ -61,13 +61,6 @@ Evidence: "This book is intended as an aid to librarians interested in providing
 Reason_For: The source is a published book with a formal title, author, and publisher.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The source is a professional guide published by Libraries Unlimited, not a peer-reviewed journal article.
-Reason_For: The source is a professional publication intended for practitioners, not a peer-reviewed academic work.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

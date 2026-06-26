@@ -65,13 +65,6 @@ Evidence: "https://doi.org/10.6017/ital.v38i4.11847"
 Reason_For: The source is published in *Information Technology and Libraries*, a peer-reviewed journal, and includes a DOI.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "https://doi.org/10.6017/ital.v38i4.11847"
-Reason_For: The source is published in a peer-reviewed journal and includes a DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

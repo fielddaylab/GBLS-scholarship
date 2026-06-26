@@ -87,13 +87,6 @@ Evidence: [quote or reference]
 Reason_For: [why this label fits]
 Reason_Against: [strongest reason it might not fit, or "none"]
 
-## Peer_Review
-Value: [one schema value]
-Confidence: [high | medium | low]
-Evidence:
-Reason_For:
-Reason_Against:
-
 ## Evidence_Type
 Value:
 - [schema value]

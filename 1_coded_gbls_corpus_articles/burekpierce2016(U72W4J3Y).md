@@ -63,13 +63,6 @@ Evidence: "Information & Culture, Vol. 51, No. 3, 2016 ©2016 by the University 
 Reason_For: The article is published in a scholarly journal and includes a DOI, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Information & Culture, Vol. 51, No. 3, 2016 ©2016 by the University of Texas Press DOI: 10.7560/IC51304"
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI, which is a clear indicator of peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - historical_analysis

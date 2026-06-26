@@ -63,13 +63,6 @@ Evidence: "Journal of Gaming & Virtual Worlds, 13:1, pp. 21–39, https://doi.or
 Reason_For: The article is published in a scholarly journal and includes a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Gaming & Virtual Worlds, 13:1, pp. 21–39, https://doi.org/10.1386/jgvw_00026_1"
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

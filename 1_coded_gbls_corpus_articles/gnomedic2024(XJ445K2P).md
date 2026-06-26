@@ -59,13 +59,6 @@ Evidence: "What are we Playing? Summer Break! by @gnomedic"
 Reason_For: The text is a structured summary of a live-streamed gaming session, hosted on Twitch, and includes promotional and informational content typical of a blog or web article.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a summary of a live-streamed event and does not present itself as a scholarly or peer-reviewed article.
-Reason_For: The source is a blog-style summary of a live-streamed session, not a formal academic or peer-reviewed publication.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

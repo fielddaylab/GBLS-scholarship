@@ -63,13 +63,6 @@ Evidence: "Knowledge Quest" is a professional publication aimed at school librar
 Reason_For: The source is published in *Knowledge Quest*, a professional journal for school librarians, and discusses practical strategies for librarians.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The article is a professional publication, not a peer-reviewed journal article.
-Reason_For: The source is published in a professional journal, not a peer-reviewed academic journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

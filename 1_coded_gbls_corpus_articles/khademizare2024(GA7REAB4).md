@@ -75,13 +75,6 @@ Evidence: "LIBRI 2024; 74(2): 171–184" (Title page)
 Reason_For: The article is published in a scholarly journal (LIBRI) and includes peer review information.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Received November 22, 2023; accepted April 21, 2024; published online June 17, 2024" (Title page)
-Reason_For: The article includes a formal peer review process with dates for submission, acceptance, and publication.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

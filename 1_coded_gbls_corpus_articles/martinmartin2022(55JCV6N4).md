@@ -59,13 +59,6 @@ Evidence: "Profesional de la información, v. 31, n. 4, e310402. https://doi.org
 Reason_For: The article is published in a peer-reviewed journal, "Profesional de la información," with a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "https://doi.org/10.3145/epi.2022.jul.02"
-Reason_For: The article has a DOI and is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

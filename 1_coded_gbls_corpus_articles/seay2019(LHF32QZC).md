@@ -57,13 +57,6 @@ Evidence: "Against the Grain" is a professional publication, and the article is 
 Reason_For: The source is published in a professional journal for librarians and information professionals.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The article is structured as a reflective opinion piece rather than an empirical study or peer-reviewed research article.
-Reason_For: The text is presented as a personal reflection and does not follow the structure of a peer-reviewed article with a formal methodology or data analysis.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

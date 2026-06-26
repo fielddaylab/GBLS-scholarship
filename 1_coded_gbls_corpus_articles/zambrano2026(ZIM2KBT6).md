@@ -57,13 +57,6 @@ Evidence: "Journal of Educational Data Mining, Volume 18, No 1, 2026"
 Reason_For: The article is published in a scholarly journal and includes peer review elements such as structured methodology, empirical findings, and detailed analysis.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Educational Data Mining, Volume 18, No 1, 2026"
-Reason_For: The article is published in a peer-reviewed journal, indicating it has undergone formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

@@ -57,13 +57,6 @@ Evidence: "Journal of Play in Adulthood Available open access at: www.journalofp
 Reason_For: The article is published in a scholarly journal and is available open access, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Play in Adulthood Available open access at: www.journalofplayinadulthood.org.uk"
-Reason_For: The article is published in a scholarly journal and is available open access, indicating it has undergone formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

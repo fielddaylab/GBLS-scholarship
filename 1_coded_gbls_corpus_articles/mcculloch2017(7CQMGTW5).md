@@ -65,13 +65,6 @@ Evidence: "This article is based on a post on my blog Cataloguing the Universe..
 Reason_For: The article is published as a blog post and is intended for professional library practitioners, not for scholarly peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "This article is based on a post on my blog Cataloguing the Universe..."
-Reason_For: The source is a blog post and not a peer-reviewed article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

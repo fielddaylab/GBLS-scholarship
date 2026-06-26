@@ -59,13 +59,6 @@ Evidence: "Proceedings of the Association for Information Science and Technology
 Reason_For: The article is published in a scholarly journal and is part of the proceedings of a conference, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Proceedings of the Association for Information Science and Technology"
-Reason_For: The article is published in a peer-reviewed conference proceedings.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

@@ -64,13 +64,6 @@ Evidence: "International Journal of Play, 11(4), 382–404. https://doi.org/10.1
 Reason_For: The article is published in a scholarly journal and includes a DOI, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "International Journal of Play, 11(4), 382–404. https://doi.org/10.1080/21594937.2022.2136637"
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI, which is a strong indicator of peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

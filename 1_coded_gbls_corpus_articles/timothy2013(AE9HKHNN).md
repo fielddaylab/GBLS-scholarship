@@ -59,13 +59,6 @@ Evidence: The article is published as a blog post with a date and author, and is
 Reason_For: The source is a blog post with a date and author, and is not associated with a formal academic or professional publication.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The article is published as a blog post and does not indicate peer review.
-Reason_For: The source is a blog post and does not indicate peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

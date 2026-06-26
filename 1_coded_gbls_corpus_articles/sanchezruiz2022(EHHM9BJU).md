@@ -62,13 +62,6 @@ Evidence: "Information 2022, 13, 478. https://doi.org/10.3390/ info13100478"
 Reason_For: The article is published in a peer-reviewed journal (Information) and includes a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "https://doi.org/10.3390/ info13100478"
-Reason_For: The article has a DOI and is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

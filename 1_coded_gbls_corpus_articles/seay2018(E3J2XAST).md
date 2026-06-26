@@ -59,13 +59,6 @@ Evidence: "Against the Grain" is a professional publication, and the article is 
 Reason_For: The source is published in a professional journal, *Against the Grain*, which is not subject to scholarly peer review but is a professional publication.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The article is identified as a column in *Against the Grain* and does not indicate peer review.
-Reason_For: The source is a column in a professional publication, not a peer-reviewed journal article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

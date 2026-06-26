@@ -59,13 +59,6 @@ Evidence: "In 2014 IEEE International Conference on Multimedia and Expo Workshop
 Reason_For: The article is published in the proceedings of a conference, specifically the 2014 IEEE International Conference on Multimedia and Expo Workshops.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "In 2014 IEEE International Conference on Multimedia and Expo Workshops (ICMEW) (pp. 1-6). IEEE."
-Reason_For: IEEE conferences typically involve peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

@@ -62,13 +62,6 @@ Evidence: "This is an accepted manuscript published by Taylor and Francis Group 
 Reason_For: The article is published in a scholarly journal and includes a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "This is an accepted manuscript published by Taylor and Francis Group in the Cataloging and Classification Quarterly published February 9, 2024 available at: https://doi.org/10.1080/01639374.2024.2308117"
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI, confirming its peer-reviewed status.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

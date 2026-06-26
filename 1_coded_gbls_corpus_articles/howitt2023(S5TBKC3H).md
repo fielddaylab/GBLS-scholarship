@@ -61,13 +61,6 @@ Evidence: The text is a promotional and informational document hosted on a websi
 Reason_For: The source is a web-based article promoting a game, with no formal peer review or scholarly publication context.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a promotional and informational document, not a peer-reviewed article.
-Reason_For: The source is a blog or web article, not a peer-reviewed scholarly work.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

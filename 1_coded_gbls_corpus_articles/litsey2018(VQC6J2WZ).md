@@ -59,13 +59,6 @@ Evidence: "Journal of Access Services , VOL. , NO. , 
 Reason_For: The source is published in a scholarly journal and includes a DOI, indicating peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Access Services , VOL. , NO. , – https://doi.org/./.."
-Reason_For: The source is published in a peer-reviewed journal with a DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

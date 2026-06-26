@@ -61,13 +61,6 @@ Evidence: "2023 14th IIAI International Congress on Advanced Applied Informatics
 Reason_For: The source is a paper published in the proceedings of a conference, which aligns with the definition of a conference paper.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "2023 14th IIAI International Congress on Advanced Applied Informatics (IIAI-AAI) | 979-8-3503-2422-8/23/$31.00 ©2023 IEEE | DOI: 10.1109/IIAI-AAI59060.2023.00052"
-Reason_For: The source includes a DOI and is published by IEEE, which indicates it has undergone peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

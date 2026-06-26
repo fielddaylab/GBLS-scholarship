@@ -68,13 +68,6 @@ Evidence: "Library Trends, Vol. 61, No. 4, 2013 ("The Impact of Gaming on Librar
 Reason_For: The article is published in a scholarly journal, Library Trends, and includes peer review information.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Library Trends, Vol. 61, No. 4, 2013 ("The Impact of Gaming on Libraries," edited by Scott Nicholson), pp. 802-813. © 2013 The Board of Trustees, University of Illinois"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

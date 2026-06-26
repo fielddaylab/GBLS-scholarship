@@ -66,13 +66,6 @@ Evidence: "This work is licensed under a Creative Commons Attribution 4.0 Intern
 Reason_For: The article is published in a scholarly journal (Liber Quarterly) and includes a DOI, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "This work is licensed under a Creative Commons Attribution 4.0 International License Uopen Journals | http://liberquarterly.eu/ | DOI: 10.18352/lq.10161"
-Reason_For: The article includes a DOI and is published in a scholarly journal, indicating it has undergone formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

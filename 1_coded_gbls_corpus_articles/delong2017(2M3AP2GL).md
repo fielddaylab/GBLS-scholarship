@@ -64,13 +64,6 @@ Evidence: "portal: Libraries and the Academy" is a scholarly journal, and the ar
 Reason_For: The source is a scholarly article published in a peer-reviewed journal.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed journal.
-Reason_For: The source is a scholarly article published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

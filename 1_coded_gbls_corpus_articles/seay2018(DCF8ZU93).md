@@ -59,13 +59,6 @@ Evidence: "Against the Grain" is a professional publication, and the article is 
 Reason_For: The source is published in a professional journal and written by a library professional.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in "Against the Grain," a peer-reviewed journal.
-Reason_For: The journal is peer-reviewed, and the article is published in it.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

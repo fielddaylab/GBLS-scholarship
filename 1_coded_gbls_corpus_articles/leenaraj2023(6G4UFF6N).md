@@ -64,13 +64,6 @@ Evidence: "Journal of Librarianship and Information Science, 55(1), 137–150"
 Reason_For: The article is published in a scholarly journal and includes peer review elements such as citations, structured methodology, and a detailed discussion of findings.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed journal, "Journal of Librarianship and Information Science," and includes a structured methodology, detailed findings, and a discussion section.
-Reason_For: The article is published in a peer-reviewed journal and includes all elements of a peer-reviewed article, including structured methodology, detailed findings, and a discussion section.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

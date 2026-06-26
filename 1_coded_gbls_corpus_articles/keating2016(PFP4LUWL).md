@@ -63,13 +63,6 @@ Evidence: "iConference 2016"
 Reason_For: The article was presented at iConference 2016, a scholarly conference, and is cited as a conference paper.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is cited as a conference paper and includes references to peer-reviewed works.
-Reason_For: The paper is presented at a scholarly conference and references peer-reviewed literature.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - content_or_artifact_analysis

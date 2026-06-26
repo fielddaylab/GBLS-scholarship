@@ -57,13 +57,6 @@ Evidence: "Published in *Knowledge Quest*, a professional publication focused on
 Reason_For: The article is published in a professional journal aimed at library practitioners, not in a scholarly peer-reviewed journal.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: "The article is a professional feature/essay providing practical guidance and personal anecdotal evidence from the author’s practice."
-Reason_For: The article is not described as undergoing formal peer review and is presented as a practitioner-oriented guide.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

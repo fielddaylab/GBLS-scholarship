@@ -57,13 +57,6 @@ Evidence: "This article builds on this research on ancient games and indigenous 
 Reason_For: The article is published in a scholarly journal and subject to formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed journal, "DesignIssues: Volume 40, Number 4 Autumn 2024."
-Reason_For: The source is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - content_or_artifact_analysis

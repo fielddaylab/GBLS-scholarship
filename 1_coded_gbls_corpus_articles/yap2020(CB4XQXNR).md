@@ -61,13 +61,6 @@ Evidence: "Journal of Information Literacy, 14(1), pp. 66–82. http://dx.doi.or
 Reason_For: The source is published in a scholarly journal and includes a DOI, indicating it has undergone formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Information Literacy, 14(1), pp. 66–82. http://dx.doi.org/10.11645/14.1.2708"
-Reason_For: The source is published in a peer-reviewed journal and includes a DOI, confirming it has undergone formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

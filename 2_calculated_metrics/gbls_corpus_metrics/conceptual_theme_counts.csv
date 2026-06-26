@@ -1,7 +1,14 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
-conceptual_theme,not_identified,3,224,1.3,1
-conceptual_theme,service_ecology,1,224,0.4,2
-conceptual_theme,"information_behavior_and_practice, service_ecology",1,224,0.4,2
-conceptual_theme,"information_behavior_and_practice, educational_psychology, games_as_cultural_media",1,224,0.4,2
-conceptual_theme,"service_ecology, information_behavior_and_practice",1,224,0.4,2
-conceptual_theme,"[service_ecology, conditional_benefits]",1,224,0.4,2
+conceptual_theme,games_as_cultural_media,136,227,59.9,1
+conceptual_theme,information_behavior_and_practice,114,227,50.2,2
+conceptual_theme,service_ecology,77,227,33.9,3
+conceptual_theme,game_literacy,66,227,29.1,4
+conceptual_theme,educational_psychology,61,227,26.9,5
+conceptual_theme,participatory_culture_and_production,43,227,18.9,6
+conceptual_theme,social_equity_and_access,43,227,18.9,6
+conceptual_theme,multiple_themes,9,227,4.0,7
+conceptual_theme,conditional_benefits,8,227,3.5,8
+conceptual_theme,games_as_participatory_culture_and_production,2,227,0.9,9
+conceptual_theme,community_and_inclusion,2,227,0.9,9
+conceptual_theme,games_as_participatory_and_expressive_media,2,227,0.9,9
+conceptual_theme,not_identified,1,227,0.4,10

@@ -61,13 +61,6 @@ Evidence: "Watch the VOD of this session here: https://www.twitch.tv/collections
 Reason_For: The text is a resource guide and summary for a GameRT (Games Round Table) presentation, which is a conference session.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a resource guide and summary for a conference presentation, not a peer-reviewed article.
-Reason_For: The source is a conference presentation, not a peer-reviewed article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

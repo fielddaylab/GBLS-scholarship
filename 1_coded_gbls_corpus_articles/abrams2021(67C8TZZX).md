@@ -61,13 +61,6 @@ Evidence: "Journal of Adolescent & Adult Literacy, NOVEMBER/DECEMBER 2021, Vol. 
 Reason_For: The article is published in a scholarly journal and subject to formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Journal of Adolescent & Adult Literacy, NOVEMBER/DECEMBER 2021, Vol. 65, No. 3 (NOVEMBER/DECEMBER 2021), pp. 227-236 Published by: International Literacy Association and Wiley"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

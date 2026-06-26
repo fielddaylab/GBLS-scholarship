@@ -3,9 +3,9 @@
   "earliest_year": 1950,
   "latest_year": 2026,
   "unique_journals": 6,
-  "unique_feature_labels": 62,
-  "total_article_feature_assignments": 76861,
-  "mean_features_per_article": 10.674,
+  "unique_feature_labels": 49,
+  "total_article_feature_assignments": 54312,
+  "mean_features_per_article": 7.542,
   "not_dated_articles": 1,
   "coding_basis": "abstract_only"
 }

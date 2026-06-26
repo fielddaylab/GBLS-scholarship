@@ -57,13 +57,6 @@ Evidence: "Education Tech Research Dev (2023) 71:1547–1565 https://doi.org/10.
 Reason_For: The source is a published article in a scholarly journal with a DOI and structured academic format.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Education Tech Research Dev (2023) 71:1547–1565 https://doi.org/10.1007/s11423-023-10247-8"
-Reason_For: The source has a DOI and is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

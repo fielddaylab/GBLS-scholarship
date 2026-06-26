@@ -64,13 +64,6 @@ Evidence: "Against the Grain" is a professional publication, and the article is 
 Reason_For: The article is published in a professional journal and addresses library professionals.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The article is identified as a "column" in *Against the Grain* and includes a disclaimer that it is written for "gamification newbies," indicating an opinion/essay format rather than empirical research.
-Reason_For: The article is not peer-reviewed but is a professional opinion piece.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

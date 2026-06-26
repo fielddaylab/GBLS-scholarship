@@ -59,13 +59,6 @@ Evidence: "Interactive Learning Environments, ISSN: 1049-4820 (Print) 1744-5191 
 Reason_For: The article is published in a scholarly journal and is cited with a DOI, indicating formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Interactive Learning Environments, ISSN: 1049-4820 (Print) 1744-5191 (Online) Journal homepage: www.tandfonline.com/journals/nile20"
-Reason_For: The article is published in a peer-reviewed journal and includes a DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

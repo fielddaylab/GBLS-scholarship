@@ -63,13 +63,6 @@ Evidence: "In *The video game theory reader* (pp. 42-56). Routledge."
 Reason_For: The article is published in a scholarly book, *The video game theory reader*, which is a peer-reviewed collection of essays.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a peer-reviewed book.
-Reason_For: The source is part of a peer-reviewed academic collection.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

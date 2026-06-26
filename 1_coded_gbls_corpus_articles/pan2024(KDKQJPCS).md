@@ -59,13 +59,6 @@ Evidence: "Education Tech Research Dev (2024) 72:3391–3419 https://doi.org/10.
 Reason_For: The source is published in a scholarly journal with a DOI and is cited with a formal citation format.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Education Tech Research Dev (2024) 72:3391–3419 https://doi.org/10.1007/s11423-024-10400-x"
-Reason_For: The source is published in a peer-reviewed journal with a formal citation and DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

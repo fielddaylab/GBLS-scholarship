@@ -59,13 +59,6 @@ Evidence: "Vjesnik bibliotekara Hrvatske" is a journal published by the Croatian
 Reason_For: The source is a journal article published by a professional association, which aligns with the definition of a professional_publication.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in a scholarly journal, "Vjesnik bibliotekara Hrvatske," which is peer-reviewed.
-Reason_For: The source is a peer-reviewed journal article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

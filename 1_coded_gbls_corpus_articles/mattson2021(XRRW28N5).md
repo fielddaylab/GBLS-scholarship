@@ -63,13 +63,6 @@ Evidence: "Communications in Information Literacy" is a scholarly journal, and t
 Reason_For: The source is a formal review published in a peer-reviewed journal.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: The article is published in "Communications in Information Literacy," a peer-reviewed journal.
-Reason_For: The journal is known for peer-reviewed content.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

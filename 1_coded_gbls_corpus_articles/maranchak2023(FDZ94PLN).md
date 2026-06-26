@@ -59,13 +59,6 @@ Evidence: "Ukrainian Journal on Library and Information Science. Issue 11 (2023)
 Reason_For: The article is published in a scholarly journal and includes a structured abstract, methodology, findings, and references.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Ukrainian Journal on Library and Information Science. Issue 11 (2023)"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

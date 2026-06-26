@@ -61,13 +61,6 @@ Evidence: "The Reference Librarian, 58(3), 202–205 http://dx.doi.org/10.1080/0
 Reason_For: The source is published in a scholarly journal with a formal DOI and is cited with standard academic formatting.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "The Reference Librarian, 58(3), 202–205 http://dx.doi.org/10.1080/02763877.2017.1320699"
-Reason_For: The source is published in a peer-reviewed journal with a formal DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

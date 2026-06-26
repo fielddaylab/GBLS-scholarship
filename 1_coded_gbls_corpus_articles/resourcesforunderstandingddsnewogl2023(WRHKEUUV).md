@@ -59,13 +59,6 @@ Evidence: "A resource doc compiling a variety of resources to understand what’
 Reason_For: The text is a curated blog-style resource document posted online, compiling links and references for understanding the OGL changes.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The text is a blog-style resource document without any indication of formal peer review.
-Reason_For: The source is a compilation of external resources and lacks formal academic structure or peer-reviewed status.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

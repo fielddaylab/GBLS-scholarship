@@ -59,13 +59,6 @@ Evidence: "Pathfinder: A Canadian Journal for Information Science Students and E
 Reason_For: The article is published in a peer-reviewed journal with a formal citation and DOI.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "https://doi.org/10.29173/pathfinder57"
-Reason_For: The article has a formal DOI and is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - theoretical_or_conceptual

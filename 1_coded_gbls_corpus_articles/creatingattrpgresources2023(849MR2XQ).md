@@ -65,13 +65,6 @@ Evidence: The document is a curated resource list and reflective guide, likely i
 Reason_For: The text is a practical guide for creating TTRPGs, not a formal research article, and is connected to a professional library organization (GameRT/ALA).
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The document is a resource list and reflective guide, not a peer-reviewed article.
-Reason_For: The text is a practical guide, not a formal research article, and lacks the structure of a peer-reviewed journal article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - practitioner_reflection

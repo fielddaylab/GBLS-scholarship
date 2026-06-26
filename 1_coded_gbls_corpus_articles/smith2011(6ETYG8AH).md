@@ -57,13 +57,6 @@ Evidence: "Reference Services Review, 39(4), 628-642."
 Reason_For: The article is published in a scholarly journal and is cited with a volume, issue, and page range.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Reference Services Review, 39(4), 628-642."
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - implementation_case

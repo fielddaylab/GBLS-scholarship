@@ -1,11 +1,11 @@
 {
-  "total_articles": 224,
+  "total_articles": 227,
   "earliest_year": 1950,
-  "latest_year": 2025,
-  "unique_feature_labels": 103,
-  "total_article_feature_assignments": 2377,
-  "mean_features_per_article": 10.612,
-  "median_summary_word_count": 604.0,
-  "articles_with_contributions": 0,
-  "not_dated_articles": 17
+  "latest_year": 2026,
+  "unique_feature_labels": 109,
+  "total_article_feature_assignments": 3640,
+  "mean_features_per_article": 16.035,
+  "median_summary_word_count": 488.0,
+  "articles_with_contributions": 225,
+  "not_dated_articles": 1
 }

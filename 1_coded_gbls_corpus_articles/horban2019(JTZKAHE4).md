@@ -65,13 +65,6 @@ Evidence: "ISSN 1029-7200 Áiáëiîòå÷íèé âiñíèê. 2019. ¹ 5 (253)" 
 Reason_For: The article is published in a scholarly journal with an ISSN and is cited with a DOI.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "ISSN 1029-7200 Áiáëiîòå÷íèé âiñíèê. 2019. ¹ 5 (253)" (p. 26)
-Reason_For: The article is published in a peer-reviewed journal with an ISSN and a DOI.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

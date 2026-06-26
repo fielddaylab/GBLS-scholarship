@@ -64,13 +64,6 @@ Evidence: "International Journal of Cognitive Research in Science, Engineering a
 Reason_For: The article is published in a scholarly journal and is subject to formal peer review.
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "International Journal of Cognitive Research in Science, Engineering and Education (IJCRSEE)"
-Reason_For: The article is published in a peer-reviewed journal.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study

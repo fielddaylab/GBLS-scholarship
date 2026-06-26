@@ -67,13 +67,6 @@ Evidence: "Publishing Research Quarterly (2021) 37:227–240"
 Reason_For: The article is published in a peer-reviewed journal, "Publishing Research Quarterly."
 Reason_Against: none
 
-## Peer_Review
-Value: yes
-Confidence: high
-Evidence: "Published online: 4 May 2021 © Springer Science+Business Media, LLC, part of Springer Nature 2021"
-Reason_For: The article is published in a peer-reviewed journal and includes a copyright notice from Springer Nature, indicating formal peer review.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - evidence_synthesis

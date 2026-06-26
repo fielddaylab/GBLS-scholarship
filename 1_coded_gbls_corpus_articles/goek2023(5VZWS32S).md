@@ -61,13 +61,6 @@ Evidence: "The 2023 Public Library Technology Survey: Summary Report" is publish
 Reason_For: The source is a report published by a professional library association, which aligns with the definition of a professional publication.
 Reason_Against: none
 
-## Peer_Review
-Value: no
-Confidence: high
-Evidence: The report is a summary of a survey conducted by the Public Library Association, not a peer-reviewed scholarly article.
-Reason_For: The source is a professional publication, not a peer-reviewed journal article.
-Reason_Against: none
-
 ## Evidence_Type
 Value:
 - empirical_study
