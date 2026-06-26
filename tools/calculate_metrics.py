@@ -39,7 +39,6 @@ GBLS_IDENTITY_COLS = ["article_id", "year", "decade", "citation", "summary_word_
 
 # ── Reference corpus paths ────────────────────────────────────────────────────
 ARCHIVE_DIR = PROJECT_ROOT / "1_coded_reference_corpus_articles"
-MANIFEST_PATH = ARCHIVE_DIR / "_manifest.jsonl"
 REF_METRICS_DIR = PROJECT_ROOT / "2_calculated_metrics" / "reference_corpus_metrics"
 
 # ── Combined JS output (both corpora in one file) ────────────────────────────
@@ -372,6 +371,10 @@ def parse_summary_file(path: Path, schema_fields: list[str]) -> dict:
         dict.fromkeys(c["target_section"] for c in contributions if c.get("target_section"))
     )
 
+    title = str(raw_fields.get("Title") or "").strip()
+    journal = str(raw_fields.get("Journal") or "").strip()
+    doi = str(raw_fields.get("DOI") or "").strip()
+
     return {
         "article_id": article_id,
         "filename": path.name,
@@ -379,6 +382,10 @@ def parse_summary_file(path: Path, schema_fields: list[str]) -> dict:
         "year": year,
         "year_status": year_status,
         "decade": decade,
+        "title": title,
+        "journal": journal,
+        "doi": doi,
+        "coding_basis": "citation_and_abstract_only",
         "citation_key": str(raw_fields.get("Citation_Key") or ""),
         "zotero_item_key": zotero_key,
         "better_bibtex_citation_key": str(raw_fields.get("Better_BibTeX_Citation_Key") or ""),
@@ -396,70 +403,26 @@ def parse_summary_file(path: Path, schema_fields: list[str]) -> dict:
 
 
 # ═════════════════════════════════════════════════════════════════════════════
-# REFERENCE CORPUS: manifest loading
+# REFERENCE CORPUS: coded abstract loading
 # ═════════════════════════════════════════════════════════════════════════════
 
-def load_ref_records(manifest_path: Path, schema_fields: list[str]) -> list[dict]:
+def load_ref_records(archive_dir: Path, schema_fields: list[str]) -> list[dict]:
     records = []
     seen_ids: set[str] = set()
 
-    for line in manifest_path.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line:
+    for path in sorted(archive_dir.glob("*.md")):
+        rec = parse_summary_file(path, schema_fields)
+        if rec.get("_error"):
             continue
-        row = json.loads(line)
-
-        filename = str(row.get("filename") or "")
-        stem = Path(filename).stem
-        key_m = re.search(r"\(([A-F0-9]{8,12})\)$", stem, re.IGNORECASE)
-        article_id = key_m.group(1).upper() if key_m else stem
-
+        article_id = str(rec["article_id"])
         base_id = article_id
         suffix = 1
         while article_id in seen_ids:
             article_id = f"{base_id}_{suffix}"
             suffix += 1
         seen_ids.add(article_id)
-
-        year_raw = str(row.get("year") or "").strip()
-        if year_raw.isdigit():
-            year = int(year_raw)
-            decade = f"{(year // 10) * 10}s"
-        else:
-            year = None
-            decade = "n.d."
-
-        controlled: dict[str, str | list[str] | None] = {}
-        for field, val in FIXED_FIELDS.items():
-            if field in schema_fields:
-                controlled[field] = val
-
-        for manifest_key, field_name in MANIFEST_FIELD_MAP.items():
-            if field_name not in schema_fields:
-                continue
-            raw = row.get(manifest_key)
-            if isinstance(raw, list):
-                clean = [str(v).strip() for v in raw if str(v).strip()]
-                controlled[field_name] = clean if clean else None
-            elif raw is not None:
-                v = str(raw).strip()
-                controlled[field_name] = v if v else None
-            else:
-                controlled[field_name] = None
-
-        records.append(
-            {
-                "article_id": article_id,
-                "filename": filename,
-                "year": year,
-                "decade": decade,
-                "journal": str(row.get("journal") or "").strip(),
-                "title": str(row.get("title") or "").strip(),
-                "doi": str(row.get("doi") or "").strip(),
-                "coding_basis": "abstract_only",
-                "controlled": controlled,
-            }
-        )
+        rec["article_id"] = article_id
+        records.append(rec)
 
     return records
 
@@ -1287,22 +1250,27 @@ def ref_build_js_payload(
 
 
 def ref_validate(
-    manifest_path: Path,
+    archive_dir: Path,
     records: list[dict],
     articles_df: pd.DataFrame,
     features_long: pd.DataFrame,
     feature_counts: pd.DataFrame,
 ) -> dict:
-    manifest_lines = sum(
-        1 for line in manifest_path.read_text(encoding="utf-8").splitlines() if line.strip()
+    source_markdown_count = len(
+        [
+            path for path in archive_dir.glob("*.md")
+            if not path.name.startswith(".") and path.name.lower() != "template.md"
+        ]
     )
     total_parsed = len(records)
     article_ids = [r["article_id"] for r in records]
     unique_ids = len(set(article_ids))
     issues = []
 
-    if total_parsed != manifest_lines:
-        issues.append(f"Manifest lines ({manifest_lines}) != parsed records ({total_parsed})")
+    if total_parsed != source_markdown_count:
+        issues.append(
+            f"Source markdown files ({source_markdown_count}) != parsed records ({total_parsed})"
+        )
 
     blank_ids = [i for i in article_ids if not i]
     if blank_ids:
@@ -1328,7 +1296,7 @@ def ref_validate(
             issues.append(f"{f.name}: {exc}")
 
     return {
-        "manifest_line_count": manifest_lines,
+        "source_markdown_count": source_markdown_count,
         "parsed_article_count": total_parsed,
         "unique_article_id_count": unique_ids,
         "duplicate_article_id_count": total_parsed - unique_ids,
@@ -1652,12 +1620,9 @@ def build_reference_corpus() -> None:
     print(f"  Schema file : {schema_file.name}")
     print(f"  Fields      : {', '.join(schema_fields)}")
 
-    print("\n[2/8] Loading manifest...")
-    if not MANIFEST_PATH.exists():
-        print(f"  ERROR: manifest not found at {MANIFEST_PATH}", file=sys.stderr)
-        sys.exit(1)
-    records = load_ref_records(MANIFEST_PATH, schema_fields)
-    print(f"  Loaded {len(records)} records from {MANIFEST_PATH.name}")
+    print("\n[2/8] Loading coded reference abstracts...")
+    records = load_ref_records(ARCHIVE_DIR, schema_fields)
+    print(f"  Loaded {len(records)} records from {ARCHIVE_DIR.relative_to(PROJECT_ROOT)}")
     multi_label_fields = detect_multi_label_fields(records, schema_fields)
     print(f"  Multi-label fields: {', '.join(sorted(multi_label_fields)) or '(none)'}")
 
@@ -1764,7 +1729,7 @@ It is not a substitute for full-text review.
     generated_files.append(readme_path)
 
     print("\n[6/8] Validating...")
-    report = ref_validate(MANIFEST_PATH, records, articles_df, features_long, feature_counts_df)
+    report = ref_validate(ARCHIVE_DIR, records, articles_df, features_long, feature_counts_df)
     vr_path = REF_METRICS_DIR / "validation_report.json"
     vr_path.write_text(json.dumps(report, indent=2, default=str), encoding="utf-8")
     generated_files.append(vr_path)
@@ -1802,7 +1767,7 @@ It is not a substitute for full-text review.
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "schema_reference": schema_ref,
-        "manifest_source": str(MANIFEST_PATH.relative_to(PROJECT_ROOT)),
+        "source_directory": str(ARCHIVE_DIR.relative_to(PROJECT_ROOT)),
         "total_articles": len(records),
         "files_generated": {
             f.name: f.stat().st_size for f in sorted(generated_files) if f.exists()

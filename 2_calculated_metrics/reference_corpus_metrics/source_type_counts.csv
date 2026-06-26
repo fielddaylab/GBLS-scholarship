@@ -1,2 +1,4 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
-source_type,peer_reviewed_journal_article,7201,7201,100.0,1
+source_type,peer_reviewed_journal_article,2253,2305,97.7,1
+source_type,book,50,2305,2.2,2
+source_type,book_chapter,2,2305,0.1,3

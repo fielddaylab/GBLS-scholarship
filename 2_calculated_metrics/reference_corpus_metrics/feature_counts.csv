@@ -1,54 +1,270 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
-evidence_type,theoretical_or_conceptual,3729,7201,51.8,1
-evidence_type,empirical_study,2630,7201,36.5,2
-evidence_type,implementation_case,292,7201,4.1,3
-evidence_type,instrument_or_framework_development,253,7201,3.5,4
-evidence_type,evidence_synthesis,196,7201,2.7,5
-evidence_type,content_or_artifact_analysis,123,7201,1.7,6
-game_format,unspecified_game_format,7160,7201,99.4,1
-game_format,digital_game,20,7201,0.3,2
-game_format,virtual_or_augmented_reality,16,7201,0.2,3
-game_format,gamification,2,7201,0.0,4
-game_format,tabletop_roleplaying_game,1,7201,0.0,5
-game_format,game_creation,1,7201,0.0,5
-game_format,escape_room_or_breakout_box,1,7201,0.0,5
-intended_outcome,not_applicable,3350,7201,46.5,1
-intended_outcome,learning_and_literacy,1496,7201,20.8,2
-intended_outcome,cultural_stewardship_and_preservation,930,7201,12.9,3
-intended_outcome,creativity_and_production,713,7201,9.9,4
-intended_outcome,institutional_capacity,709,7201,9.8,5
-intended_outcome,engagement_and_participation,607,7201,8.4,6
-intended_outcome,discovery_and_advisory,459,7201,6.4,7
-intended_outcome,belonging_and_community,349,7201,4.8,8
-intended_outcome,equitable_access,347,7201,4.8,9
-intended_outcome,wellness_and_resilience,87,7201,1.2,10
-library_context,unspecified_library_context,4839,7201,67.2,1
-library_context,academic_library,1639,7201,22.8,2
-library_context,school_library,395,7201,5.5,3
-library_context,cultural_heritage_institution,182,7201,2.5,4
-library_context,multiple_library_types,67,7201,0.9,5
-library_context,public_library,47,7201,0.7,6
-library_context,library_school,32,7201,0.4,7
-primary_methodology,unspecified,5081,7201,70.6,1
-primary_methodology,survey,636,7201,8.8,2
-primary_methodology,qualitative_study,401,7201,5.6,3
-primary_methodology,case_or_design_study,270,7201,3.7,4
-primary_methodology,theoretical_or_conceptual,241,7201,3.3,5
-primary_methodology,evidence_synthesis,196,7201,2.7,6
-primary_methodology,experimental_study,174,7201,2.4,7
-primary_methodology,content_analysis,118,7201,1.6,8
-primary_methodology,mixed_methods,57,7201,0.8,9
-primary_methodology,action_research,16,7201,0.2,10
-primary_methodology,participatory_design,6,7201,0.1,11
-primary_methodology,historical_analysis,5,7201,0.1,12
-service_area,collections_and_access,2725,7201,37.8,1
-service_area,discovery_and_advisory,2056,7201,28.6,2
-service_area,learning_and_literacy,1477,7201,20.5,3
-service_area,professional_capacity,862,7201,12.0,4
-service_area,community_and_inclusion,676,7201,9.4,5
-service_area,programming_and_facilitation,411,7201,5.7,6
-service_area,creation_and_making,357,7201,5.0,7
-service_area,outreach_and_partnerships,357,7201,5.0,7
-service_area,cultural_heritage_and_research,173,7201,2.4,8
-service_area,space_and_infrastructure,144,7201,2.0,9
-source_type,peer_reviewed_journal_article,7201,7201,100.0,1
+conceptual_theme,not_identified,1855,2305,80.5,1
+conceptual_theme,information_behavior_and_practice,178,2305,7.7,2
+conceptual_theme,social_equity_and_access,98,2305,4.3,3
+conceptual_theme,theoretical_or_conceptual,82,2305,3.6,4
+conceptual_theme,educational_psychology,21,2305,0.9,5
+conceptual_theme,service_ecology,20,2305,0.9,6
+conceptual_theme,cultural_heritage_and_research,14,2305,0.6,7
+conceptual_theme,participatory_culture_and_production,8,2305,0.3,8
+conceptual_theme,not_applicable,5,2305,0.2,9
+conceptual_theme,multiple_themes,5,2305,0.2,9
+conceptual_theme,"information_behavior_and_practice, social_equity_and_access",3,2305,0.1,10
+conceptual_theme,games_as_cultural_media,3,2305,0.1,10
+conceptual_theme,"social_equity_and_access, service_ecology",2,2305,0.1,11
+conceptual_theme,"information_behavior_and_practice, theoretical_or_conceptual",2,2305,0.1,11
+conceptual_theme,cultural_stewardship_and_preservation,2,2305,0.1,11
+conceptual_theme,"social_equity_and_access, information_behavior_and_practice",2,2305,0.1,11
+conceptual_theme,"theoretical_or_conceptual, information_behavior_and_practice",1,2305,0.0,12
+conceptual_theme,"game_literacy, educational_psychology",1,2305,0.0,12
+conceptual_theme,"social_equity_and_access, cultural_heritage_and_research",1,2305,0.0,12
+conceptual_theme,"participatory_culture_and_production, information_behavior_and_practice",1,2305,0.0,12
+conceptual_theme,"educational_psychology, information_behavior_and_practice",1,2305,0.0,12
+conceptual_theme,"service_ecology, social_equity_and_access, participatory_culture_and_production",1,2305,0.0,12
+conceptual_theme,"social_equity_and_access, participatory_culture_and_production",1,2305,0.0,12
+conceptual_theme,"information_behavior_and_practice, participatory_culture_and_production",1,2305,0.0,12
+conceptual_theme,"information_behavior_and_practice, educational_psychology",1,2305,0.0,12
+conceptual_theme,game_literacy,1,2305,0.0,12
+conceptual_theme,evidence_synthesis,1,2305,0.0,12
+conceptual_theme,"social_equity_and_access, service_ecology, multiple_themes",1,2305,0.0,12
+conceptual_theme,"games_as_cultural_media, participatory_culture_and_production",1,2305,0.0,12
+conceptual_theme,"educational_psychology, social_equity_and_access",1,2305,0.0,12
+conceptual_theme,"games_as_cultural_media, educational_psychology",1,2305,0.0,12
+conceptual_theme,"social_equity_and_access, multiple_themes",1,2305,0.0,12
+conceptual_theme,historical_analysis,1,2305,0.0,12
+conceptual_theme,"educational_psychology, theoretical_or_conceptual",1,2305,0.0,12
+evidence_confidence,theoretical_or_conceptual,743,2305,32.2,1
+evidence_confidence,descriptive_only,725,2305,31.5,2
+evidence_confidence,promising_evidence,270,2305,11.7,3
+evidence_confidence,practitioner_knowledge,191,2305,8.3,4
+evidence_confidence,medium,151,2305,6.6,5
+evidence_confidence,demonstrated_outcome,122,2305,5.3,6
+evidence_confidence,not_applicable,83,2305,3.6,7
+evidence_confidence,low,12,2305,0.5,8
+evidence_confidence,evidence_synthesis,8,2305,0.3,9
+evidence_type,empirical_study,745,2305,32.3,1
+evidence_type,evidence_synthesis,518,2305,22.5,2
+evidence_type,theoretical_or_conceptual,314,2305,13.6,3
+evidence_type,practitioner_reflection,235,2305,10.2,4
+evidence_type,implementation_case,220,2305,9.5,5
+evidence_type,content_or_artifact_analysis,129,2305,5.6,6
+evidence_type,instrument_or_framework_development,72,2305,3.1,7
+evidence_type,historical_analysis,46,2305,2.0,8
+evidence_type,qualitative_study,7,2305,0.3,9
+evidence_type,none,6,2305,0.3,10
+evidence_type,not_applicable,5,2305,0.2,11
+evidence_type,toolkit_or_guidance_document,2,2305,0.1,12
+evidence_type,"content_or_artifact_analysis, evidence_synthesis",1,2305,0.0,13
+evidence_type,unspecified,1,2305,0.0,13
+evidence_type,descriptive_only,1,2305,0.0,13
+evidence_type,book,1,2305,0.0,13
+evidence_type,"evidence_synthesis, content_or_artifact_analysis",1,2305,0.0,13
+evidence_type,"evidence_synthesis, practitioner_reflection",1,2305,0.0,13
+evidence_type,"evidence_synthesis, empirical_study",1,2305,0.0,13
+game_format,unspecified_game_format,2271,2305,98.5,1
+game_format,virtual_or_augmented_reality,15,2305,0.7,2
+game_format,digital_game,11,2305,0.5,3
+game_format,tabletop_game,5,2305,0.2,4
+game_format,tabletop_roleplaying_game,2,2305,0.1,5
+game_format,toy_or_open_play,1,2305,0.0,6
+game_format,live_action_roleplaying_game,1,2305,0.0,6
+game_format,gamification,1,2305,0.0,6
+game_format,"digital_game, virtual_or_augmented_reality",1,2305,0.0,6
+game_format,"digital_game, tabletop_game",1,2305,0.0,6
+intended_outcome,not_applicable,1674,2305,72.6,1
+intended_outcome,institutional_capacity,171,2305,7.4,2
+intended_outcome,learning_and_literacy,141,2305,6.1,3
+intended_outcome,equitable_access,102,2305,4.4,4
+intended_outcome,discovery_and_advisory,64,2305,2.8,5
+intended_outcome,cultural_stewardship_and_preservation,45,2305,2.0,6
+intended_outcome,engagement_and_participation,34,2305,1.5,7
+intended_outcome,other,25,2305,1.1,8
+intended_outcome,"equitable_access, discovery_and_advisory",10,2305,0.4,9
+intended_outcome,"equitable_access, institutional_capacity",10,2305,0.4,9
+intended_outcome,"equitable_access, cultural_stewardship_and_preservation",7,2305,0.3,10
+intended_outcome,"equitable_access, learning_and_literacy",7,2305,0.3,10
+intended_outcome,belonging_and_community,6,2305,0.3,11
+intended_outcome,"learning_and_literacy, institutional_capacity",4,2305,0.2,12
+intended_outcome,"engagement_and_participation, discovery_and_advisory",4,2305,0.2,12
+intended_outcome,"learning_and_literacy, engagement_and_participation",4,2305,0.2,12
+intended_outcome,professional_capacity,4,2305,0.2,12
+intended_outcome,"equitable_access, community_and_inclusion",3,2305,0.1,13
+intended_outcome,"equitable_access, belonging_and_community",2,2305,0.1,14
+intended_outcome,"engagement_and_participation, equitable_access",2,2305,0.1,14
+intended_outcome,wellness_and_resilience,2,2305,0.1,14
+intended_outcome,collections_and_access,2,2305,0.1,14
+intended_outcome,"cultural_stewardship_and_preservation, belonging_and_community",1,2305,0.0,15
+intended_outcome,"learning_and_literacy, discovery_and_advisory",1,2305,0.0,15
+intended_outcome,theoretical_or_conceptual,1,2305,0.0,15
+intended_outcome,"institutional_capacity, belonging_and_community",1,2305,0.0,15
+intended_outcome,"discovery_and_advisory, equitable_access",1,2305,0.0,15
+intended_outcome,"discovery_and_advisory, institutional_capacity",1,2305,0.0,15
+intended_outcome,"cultural_stewardship_and_preservation, discovery_and_advisory",1,2305,0.0,15
+intended_outcome,"engagement_and_participation, equitable_access, learning_and_literacy",1,2305,0.0,15
+intended_outcome,"belonging_and_community, learning_and_literacy",1,2305,0.0,15
+intended_outcome,equitable_access; discovery_and_advisory,1,2305,0.0,15
+intended_outcome,"belonging_and_community, wellness_and_resilience",1,2305,0.0,15
+intended_outcome,"institutional_capacity, social_equity_and_access",1,2305,0.0,15
+intended_outcome,"learning_and_literacy, belonging_and_community",1,2305,0.0,15
+intended_outcome,sustainable_operations,1,2305,0.0,15
+intended_outcome,"learning_and_literacy, equitable_access",1,2305,0.0,15
+intended_outcome,"equitable_access, engagement_and_participation",1,2305,0.0,15
+intended_outcome,"belonging_and_community, engagement_and_participation",1,2305,0.0,15
+intended_outcome,"engagement_and_participation, institutional_capacity",1,2305,0.0,15
+intended_outcome,space_and_infrastructure,1,2305,0.0,15
+library_context,academic_library,1377,2305,59.7,1
+library_context,unspecified_library_context,470,2305,20.4,2
+library_context,public_library,136,2305,5.9,3
+library_context,cultural_heritage_institution,103,2305,4.5,4
+library_context,non_library_context,100,2305,4.3,5
+library_context,multiple_library_types,30,2305,1.3,6
+library_context,not_applicable,21,2305,0.9,7
+library_context,library_school,19,2305,0.8,8
+library_context,school_library,16,2305,0.7,9
+library_context,"academic_library, cultural_heritage_institution",14,2305,0.6,10
+library_context,"academic_library, public_library, multiple_library_types",6,2305,0.3,11
+library_context,"academic_library, public_library",3,2305,0.1,12
+library_context,"academic_library, cultural_heritage_institution, multiple_library_types",3,2305,0.1,12
+library_context,"academic_library, school_library",2,2305,0.1,13
+library_context,"school_library, library_school",1,2305,0.0,14
+library_context,"public_library, academic_library",1,2305,0.0,14
+library_context,"academic_library, library_school, multiple_library_types",1,2305,0.0,14
+library_context,"library_school, unspecified_library_context",1,2305,0.0,14
+library_context,"academic_library, non_library_context",1,2305,0.0,14
+library_context,"public_library, academic_library, multiple_library_types",1,2305,0.0,14
+primary_methodology,none,588,2305,25.5,1
+primary_methodology,theoretical_or_conceptual,295,2305,12.8,2
+primary_methodology,content_analysis,279,2305,12.1,3
+primary_methodology,survey,256,2305,11.1,4
+primary_methodology,unspecified,216,2305,9.4,5
+primary_methodology,evidence_synthesis,183,2305,7.9,6
+primary_methodology,qualitative_study,144,2305,6.2,7
+primary_methodology,case_or_design_study,140,2305,6.1,8
+primary_methodology,mixed_methods,71,2305,3.1,9
+primary_methodology,historical_analysis,60,2305,2.6,10
+primary_methodology,experimental_study,35,2305,1.5,11
+primary_methodology,empirical_study,11,2305,0.5,12
+primary_methodology,instrument_or_framework_development,8,2305,0.3,13
+primary_methodology,practitioner_reflection,5,2305,0.2,14
+primary_methodology,action_research,3,2305,0.1,15
+primary_methodology,"survey, mixed_methods",3,2305,0.1,15
+primary_methodology,quantitative_study,2,2305,0.1,16
+primary_methodology,"historical_analysis, theoretical_or_conceptual",2,2305,0.1,16
+primary_methodology,"content_analysis, case_or_design_study",1,2305,0.0,17
+primary_methodology,"qualitative_study, survey",1,2305,0.0,17
+primary_methodology,"survey, qualitative_study",1,2305,0.0,17
+primary_methodology,statistical_analysis,1,2305,0.0,17
+primary_methodology,"survey, statistical_analysis",1,2305,0.0,17
+primary_methodology,"survey, content_analysis",1,2305,0.0,17
+primary_methodology,"survey, case_or_design_study",1,2305,0.0,17
+primary_methodology,correlation_analysis,1,2305,0.0,17
+primary_methodology,descriptive_only,1,2305,0.0,17
+primary_methodology,"content_analysis, evidence_synthesis",1,2305,0.0,17
+primary_methodology,"evidence_synthesis, case_or_design_study",1,2305,0.0,17
+service_area,not_applicable,1482,2305,64.3,1
+service_area,collections_and_access,384,2305,16.7,2
+service_area,learning_and_literacy,142,2305,6.2,3
+service_area,discovery_and_advisory,104,2305,4.5,4
+service_area,professional_capacity,95,2305,4.1,5
+service_area,cultural_heritage_and_research,47,2305,2.0,6
+service_area,space_and_infrastructure,19,2305,0.8,7
+service_area,programming_and_facilitation,18,2305,0.8,8
+service_area,outreach_and_partnerships,17,2305,0.7,9
+service_area,community_and_inclusion,5,2305,0.2,10
+service_area,"collections_and_access, discovery_and_advisory",4,2305,0.2,11
+service_area,social_equity_and_access,2,2305,0.1,12
+service_area,creation_and_making,2,2305,0.1,12
+service_area,"community_and_inclusion, professional_capacity",2,2305,0.1,12
+service_area,"outreach_and_partnerships, professional_capacity",2,2305,0.1,12
+service_area,"outreach_and_partnerships, programming_and_facilitation",2,2305,0.1,12
+service_area,"collections_and_access, cultural_heritage_and_research",2,2305,0.1,12
+service_area,"learning_and_literacy, discovery_and_advisory",2,2305,0.1,12
+service_area,"learning_and_literacy, professional_capacity",1,2305,0.0,13
+service_area,service_ecology,1,2305,0.0,13
+service_area,"collections_and_access, discovery_and_advisory, professional_capacity",1,2305,0.0,13
+service_area,"professional_capacity, community_and_inclusion",1,2305,0.0,13
+service_area,"professional_capacity, outreach_and_partnerships",1,2305,0.0,13
+service_area,"professional_capacity, cultural_heritage_and_research",1,2305,0.0,13
+service_area,"discovery_and_advisory, professional_capacity",1,2305,0.0,13
+service_area,"outreach_and_partnerships, programming_and_facilitation, learning_and_literacy",1,2305,0.0,13
+service_area,"programming_and_facilitation, community_and_inclusion",1,2305,0.0,13
+service_area,"collections_and_access, professional_capacity",1,2305,0.0,13
+service_area,information_behavior_and_practice,1,2305,0.0,13
+service_audience,not_applicable,1639,2305,71.1,1
+service_audience,students,244,2305,10.6,2
+service_audience,general_public,137,2305,5.9,3
+service_audience,educators,109,2305,4.7,4
+service_audience,underserved_or_special_population,62,2305,2.7,5
+service_audience,adults,34,2305,1.5,6
+service_audience,"students, educators",27,2305,1.2,7
+service_audience,children,20,2305,0.9,8
+service_audience,teens,11,2305,0.5,9
+service_audience,"educators, students",6,2305,0.3,10
+service_audience,older_adults,4,2305,0.2,11
+service_audience,"general_public, underserved_or_special_population",4,2305,0.2,11
+service_audience,"students, underserved_or_special_population",3,2305,0.1,12
+service_audience,"students, adults",3,2305,0.1,12
+service_audience,"children, teens",2,2305,0.1,13
+service_audience,"educators, general_public",2,2305,0.1,13
+service_audience,"teens, students",2,2305,0.1,13
+service_audience,"underserved_or_special_population, general_public",1,2305,0.0,14
+service_audience,"students, educators, general_public",1,2305,0.0,14
+service_audience,"teens, children",1,2305,0.0,14
+service_audience,"older_adults, underserved_or_special_population",1,2305,0.0,14
+service_audience,families,1,2305,0.0,14
+service_audience,"educators, not_applicable",1,2305,0.0,14
+service_audience,"general_public, educators, students",1,2305,0.0,14
+service_audience,"general_public, students, educators",1,2305,0.0,14
+service_audience,young_adults,1,2305,0.0,14
+service_audience,students; educators,1,2305,0.0,14
+service_audience,"general_public, educators",1,2305,0.0,14
+service_audience,undergraduate students,1,2305,0.0,14
+service_audience,graduate students,1,2305,0.0,14
+service_audience,faculty,1,2305,0.0,14
+service_audience,community members,1,2305,0.0,14
+service_audience,"students, general_public",1,2305,0.0,14
+service_audience,"adults, general_public",1,2305,0.0,14
+service_audience,"children, families",1,2305,0.0,14
+service_audience,"general_public, older_adults",1,2305,0.0,14
+service_conditions_addressed,not_applicable,1852,2305,80.3,1
+service_conditions_addressed,access_infrastructure_required,204,2305,8.9,2
+service_conditions_addressed,sustainable_operations,89,2305,3.9,3
+service_conditions_addressed,skilled_facilitation_required,89,2305,3.9,3
+service_conditions_addressed,community_assessment_needed,59,2305,2.6,4
+service_conditions_addressed,other,49,2305,2.1,5
+service_conditions_addressed,evaluation_or_reflection,47,2305,2.0,6
+service_conditions_addressed,inclusive_design_or_accessibility,42,2305,1.8,7
+service_conditions_addressed,"access_infrastructure_required, community_assessment_needed",11,2305,0.5,8
+service_conditions_addressed,"access_infrastructure_required, skilled_facilitation_required",11,2305,0.5,8
+service_conditions_addressed,"access_infrastructure_required, sustainable_operations",9,2305,0.4,9
+service_conditions_addressed,"access_infrastructure_required, inclusive_design_or_accessibility",8,2305,0.3,10
+service_conditions_addressed,"skilled_facilitation_required, sustainable_operations",3,2305,0.1,11
+service_conditions_addressed,"access_infrastructure_required, evaluation_or_reflection",3,2305,0.1,11
+service_conditions_addressed,"skilled_facilitation_required, community_assessment_needed",3,2305,0.1,11
+service_conditions_addressed,"access_infrastructure_required, skilled_facilitation_required, inclusive_design_or_accessibility",3,2305,0.1,11
+service_conditions_addressed,access_infrastructure_required; sustainable_operations,3,2305,0.1,11
+service_conditions_addressed,"access_infrastructure_required, other",2,2305,0.1,12
+service_conditions_addressed,"inclusive_design_or_accessibility, evaluation_or_reflection",2,2305,0.1,12
+service_conditions_addressed,"community_assessment_needed, sustainable_operations",2,2305,0.1,12
+service_conditions_addressed,"sustainable_operations, access_infrastructure_required",1,2305,0.0,13
+service_conditions_addressed,"sustainable_operations, skilled_facilitation_required",1,2305,0.0,13
+service_conditions_addressed,"skilled_facilitation_required, access_infrastructure_required",1,2305,0.0,13
+service_conditions_addressed,"inclusive_design_or_accessibility, community_assessment_needed",1,2305,0.0,13
+service_conditions_addressed,"community_assessment_needed, inclusive_design_or_accessibility",1,2305,0.0,13
+service_conditions_addressed,professional_capacity,1,2305,0.0,13
+service_conditions_addressed,"""maximum concurrent usage"" metric implies assessing local needs",1,2305,0.0,13
+service_conditions_addressed,Emphasizes long-term fleet size decisions,1,2305,0.0,13
+service_conditions_addressed,"""Subject liaisons can add value to OPAC records""",1,2305,0.0,13
+service_conditions_addressed,"""Community Tag and Community Review features""",1,2305,0.0,13
+service_conditions_addressed,"inclusive_design_or_accessibility, sustainable_operations, evaluation_or_reflection",1,2305,0.0,13
+service_conditions_addressed,"community_assessment_needed, skilled_facilitation_required, sustainable_operations",1,2305,0.0,13
+service_conditions_addressed,sustainable_operations; community_assessment_needed,1,2305,0.0,13
+service_conditions_addressed,"""Additional funding... was not wholly successful""",1,2305,0.0,13
+service_conditions_addressed,"""Institution-specific collection assessment reports""",1,2305,0.0,13
+service_conditions_addressed,"skilled_facilitation_required, evaluation_or_reflection",1,2305,0.0,13
+service_conditions_addressed,"""shared calendar system"" implies infrastructure needs",1,2305,0.0,13
+service_conditions_addressed,Collaboration with multiple organizations suggests facilitation requirements,1,2305,0.0,13
+service_conditions_addressed,skilled_facilitation_required; sustainable_operations,1,2305,0.0,13
+source_type,peer_reviewed_journal_article,2253,2305,97.7,1
+source_type,book,50,2305,2.2,2
+source_type,book_chapter,2,2305,0.1,3

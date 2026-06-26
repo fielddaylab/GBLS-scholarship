@@ -1,8 +1,11 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
-game_format,unspecified_game_format,7160,7201,99.4,1
-game_format,digital_game,20,7201,0.3,2
-game_format,virtual_or_augmented_reality,16,7201,0.2,3
-game_format,gamification,2,7201,0.0,4
-game_format,tabletop_roleplaying_game,1,7201,0.0,5
-game_format,game_creation,1,7201,0.0,5
-game_format,escape_room_or_breakout_box,1,7201,0.0,5
+game_format,unspecified_game_format,2271,2305,98.5,1
+game_format,virtual_or_augmented_reality,15,2305,0.7,2
+game_format,digital_game,11,2305,0.5,3
+game_format,tabletop_game,5,2305,0.2,4
+game_format,tabletop_roleplaying_game,2,2305,0.1,5
+game_format,toy_or_open_play,1,2305,0.0,6
+game_format,live_action_roleplaying_game,1,2305,0.0,6
+game_format,gamification,1,2305,0.0,6
+game_format,"digital_game, virtual_or_augmented_reality",1,2305,0.0,6
+game_format,"digital_game, tabletop_game",1,2305,0.0,6

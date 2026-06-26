@@ -1,1 +1,35 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
+conceptual_theme,not_identified,1855,2305,80.5,1
+conceptual_theme,information_behavior_and_practice,178,2305,7.7,2
+conceptual_theme,social_equity_and_access,98,2305,4.3,3
+conceptual_theme,theoretical_or_conceptual,82,2305,3.6,4
+conceptual_theme,educational_psychology,21,2305,0.9,5
+conceptual_theme,service_ecology,20,2305,0.9,6
+conceptual_theme,cultural_heritage_and_research,14,2305,0.6,7
+conceptual_theme,participatory_culture_and_production,8,2305,0.3,8
+conceptual_theme,not_applicable,5,2305,0.2,9
+conceptual_theme,multiple_themes,5,2305,0.2,9
+conceptual_theme,"information_behavior_and_practice, social_equity_and_access",3,2305,0.1,10
+conceptual_theme,games_as_cultural_media,3,2305,0.1,10
+conceptual_theme,"social_equity_and_access, service_ecology",2,2305,0.1,11
+conceptual_theme,"information_behavior_and_practice, theoretical_or_conceptual",2,2305,0.1,11
+conceptual_theme,cultural_stewardship_and_preservation,2,2305,0.1,11
+conceptual_theme,"social_equity_and_access, information_behavior_and_practice",2,2305,0.1,11
+conceptual_theme,"theoretical_or_conceptual, information_behavior_and_practice",1,2305,0.0,12
+conceptual_theme,"game_literacy, educational_psychology",1,2305,0.0,12
+conceptual_theme,"social_equity_and_access, cultural_heritage_and_research",1,2305,0.0,12
+conceptual_theme,"participatory_culture_and_production, information_behavior_and_practice",1,2305,0.0,12
+conceptual_theme,"educational_psychology, information_behavior_and_practice",1,2305,0.0,12
+conceptual_theme,"service_ecology, social_equity_and_access, participatory_culture_and_production",1,2305,0.0,12
+conceptual_theme,"social_equity_and_access, participatory_culture_and_production",1,2305,0.0,12
+conceptual_theme,"information_behavior_and_practice, participatory_culture_and_production",1,2305,0.0,12
+conceptual_theme,"information_behavior_and_practice, educational_psychology",1,2305,0.0,12
+conceptual_theme,game_literacy,1,2305,0.0,12
+conceptual_theme,evidence_synthesis,1,2305,0.0,12
+conceptual_theme,"social_equity_and_access, service_ecology, multiple_themes",1,2305,0.0,12
+conceptual_theme,"games_as_cultural_media, participatory_culture_and_production",1,2305,0.0,12
+conceptual_theme,"educational_psychology, social_equity_and_access",1,2305,0.0,12
+conceptual_theme,"games_as_cultural_media, educational_psychology",1,2305,0.0,12
+conceptual_theme,"social_equity_and_access, multiple_themes",1,2305,0.0,12
+conceptual_theme,historical_analysis,1,2305,0.0,12
+conceptual_theme,"educational_psychology, theoretical_or_conceptual",1,2305,0.0,12

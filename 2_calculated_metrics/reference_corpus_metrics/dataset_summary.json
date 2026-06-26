@@ -1,11 +1,11 @@
 {
-  "total_articles": 7201,
-  "earliest_year": 1950,
+  "total_articles": 2305,
+  "earliest_year": 1968,
   "latest_year": 2026,
-  "unique_journals": 6,
-  "unique_feature_labels": 49,
-  "total_article_feature_assignments": 54312,
-  "mean_features_per_article": 7.542,
-  "not_dated_articles": 1,
+  "unique_journals": 3,
+  "unique_feature_labels": 230,
+  "total_article_feature_assignments": 25683,
+  "mean_features_per_article": 11.142,
+  "not_dated_articles": 0,
   "coding_basis": "abstract_only"
 }

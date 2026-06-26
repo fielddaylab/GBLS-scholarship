@@ -1,7 +1,20 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
-evidence_type,theoretical_or_conceptual,3729,7201,51.8,1
-evidence_type,empirical_study,2630,7201,36.5,2
-evidence_type,implementation_case,292,7201,4.1,3
-evidence_type,instrument_or_framework_development,253,7201,3.5,4
-evidence_type,evidence_synthesis,196,7201,2.7,5
-evidence_type,content_or_artifact_analysis,123,7201,1.7,6
+evidence_type,empirical_study,745,2305,32.3,1
+evidence_type,evidence_synthesis,518,2305,22.5,2
+evidence_type,theoretical_or_conceptual,314,2305,13.6,3
+evidence_type,practitioner_reflection,235,2305,10.2,4
+evidence_type,implementation_case,220,2305,9.5,5
+evidence_type,content_or_artifact_analysis,129,2305,5.6,6
+evidence_type,instrument_or_framework_development,72,2305,3.1,7
+evidence_type,historical_analysis,46,2305,2.0,8
+evidence_type,qualitative_study,7,2305,0.3,9
+evidence_type,none,6,2305,0.3,10
+evidence_type,not_applicable,5,2305,0.2,11
+evidence_type,toolkit_or_guidance_document,2,2305,0.1,12
+evidence_type,"content_or_artifact_analysis, evidence_synthesis",1,2305,0.0,13
+evidence_type,unspecified,1,2305,0.0,13
+evidence_type,descriptive_only,1,2305,0.0,13
+evidence_type,book,1,2305,0.0,13
+evidence_type,"evidence_synthesis, content_or_artifact_analysis",1,2305,0.0,13
+evidence_type,"evidence_synthesis, practitioner_reflection",1,2305,0.0,13
+evidence_type,"evidence_synthesis, empirical_study",1,2305,0.0,13

@@ -1,11 +1,30 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
-service_area,collections_and_access,2725,7201,37.8,1
-service_area,discovery_and_advisory,2056,7201,28.6,2
-service_area,learning_and_literacy,1477,7201,20.5,3
-service_area,professional_capacity,862,7201,12.0,4
-service_area,community_and_inclusion,676,7201,9.4,5
-service_area,programming_and_facilitation,411,7201,5.7,6
-service_area,creation_and_making,357,7201,5.0,7
-service_area,outreach_and_partnerships,357,7201,5.0,7
-service_area,cultural_heritage_and_research,173,7201,2.4,8
-service_area,space_and_infrastructure,144,7201,2.0,9
+service_area,not_applicable,1482,2305,64.3,1
+service_area,collections_and_access,384,2305,16.7,2
+service_area,learning_and_literacy,142,2305,6.2,3
+service_area,discovery_and_advisory,104,2305,4.5,4
+service_area,professional_capacity,95,2305,4.1,5
+service_area,cultural_heritage_and_research,47,2305,2.0,6
+service_area,space_and_infrastructure,19,2305,0.8,7
+service_area,programming_and_facilitation,18,2305,0.8,8
+service_area,outreach_and_partnerships,17,2305,0.7,9
+service_area,community_and_inclusion,5,2305,0.2,10
+service_area,"collections_and_access, discovery_and_advisory",4,2305,0.2,11
+service_area,social_equity_and_access,2,2305,0.1,12
+service_area,creation_and_making,2,2305,0.1,12
+service_area,"community_and_inclusion, professional_capacity",2,2305,0.1,12
+service_area,"outreach_and_partnerships, professional_capacity",2,2305,0.1,12
+service_area,"outreach_and_partnerships, programming_and_facilitation",2,2305,0.1,12
+service_area,"collections_and_access, cultural_heritage_and_research",2,2305,0.1,12
+service_area,"learning_and_literacy, discovery_and_advisory",2,2305,0.1,12
+service_area,"learning_and_literacy, professional_capacity",1,2305,0.0,13
+service_area,service_ecology,1,2305,0.0,13
+service_area,"collections_and_access, discovery_and_advisory, professional_capacity",1,2305,0.0,13
+service_area,"professional_capacity, community_and_inclusion",1,2305,0.0,13
+service_area,"professional_capacity, outreach_and_partnerships",1,2305,0.0,13
+service_area,"professional_capacity, cultural_heritage_and_research",1,2305,0.0,13
+service_area,"discovery_and_advisory, professional_capacity",1,2305,0.0,13
+service_area,"outreach_and_partnerships, programming_and_facilitation, learning_and_literacy",1,2305,0.0,13
+service_area,"programming_and_facilitation, community_and_inclusion",1,2305,0.0,13
+service_area,"collections_and_access, professional_capacity",1,2305,0.0,13
+service_area,information_behavior_and_practice,1,2305,0.0,13

@@ -1,13 +1,13 @@
 {
-  "manifest_line_count": 7201,
-  "parsed_article_count": 7201,
-  "unique_article_id_count": 7201,
+  "source_markdown_count": 2305,
+  "parsed_article_count": 2305,
+  "unique_article_id_count": 2305,
   "duplicate_article_id_count": 0,
-  "missing_year_count": 1,
-  "article_feature_assignment_count": 54312,
-  "feature_counts_sum": 54312,
-  "matrix_row_count": 7201,
-  "binary_feature_column_count": 53,
+  "missing_year_count": 0,
+  "article_feature_assignment_count": 25683,
+  "feature_counts_sum": 25683,
+  "matrix_row_count": 2305,
+  "binary_feature_column_count": 265,
   "issues": [],
-  "generated_at": "2026-06-26T06:48:34.838582+00:00"
+  "generated_at": "2026-06-26T18:28:58.389364+00:00"
 }

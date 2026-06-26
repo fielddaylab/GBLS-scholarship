@@ -1,1 +1,37 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
+service_audience,not_applicable,1639,2305,71.1,1
+service_audience,students,244,2305,10.6,2
+service_audience,general_public,137,2305,5.9,3
+service_audience,educators,109,2305,4.7,4
+service_audience,underserved_or_special_population,62,2305,2.7,5
+service_audience,adults,34,2305,1.5,6
+service_audience,"students, educators",27,2305,1.2,7
+service_audience,children,20,2305,0.9,8
+service_audience,teens,11,2305,0.5,9
+service_audience,"educators, students",6,2305,0.3,10
+service_audience,older_adults,4,2305,0.2,11
+service_audience,"general_public, underserved_or_special_population",4,2305,0.2,11
+service_audience,"students, underserved_or_special_population",3,2305,0.1,12
+service_audience,"students, adults",3,2305,0.1,12
+service_audience,"children, teens",2,2305,0.1,13
+service_audience,"educators, general_public",2,2305,0.1,13
+service_audience,"teens, students",2,2305,0.1,13
+service_audience,"underserved_or_special_population, general_public",1,2305,0.0,14
+service_audience,"students, educators, general_public",1,2305,0.0,14
+service_audience,"teens, children",1,2305,0.0,14
+service_audience,"older_adults, underserved_or_special_population",1,2305,0.0,14
+service_audience,families,1,2305,0.0,14
+service_audience,"educators, not_applicable",1,2305,0.0,14
+service_audience,"general_public, educators, students",1,2305,0.0,14
+service_audience,"general_public, students, educators",1,2305,0.0,14
+service_audience,young_adults,1,2305,0.0,14
+service_audience,students; educators,1,2305,0.0,14
+service_audience,"general_public, educators",1,2305,0.0,14
+service_audience,undergraduate students,1,2305,0.0,14
+service_audience,graduate students,1,2305,0.0,14
+service_audience,faculty,1,2305,0.0,14
+service_audience,community members,1,2305,0.0,14
+service_audience,"students, general_public",1,2305,0.0,14
+service_audience,"adults, general_public",1,2305,0.0,14
+service_audience,"children, families",1,2305,0.0,14
+service_audience,"general_public, older_adults",1,2305,0.0,14

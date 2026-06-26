@@ -1,1 +1,40 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
+service_conditions_addressed,not_applicable,1852,2305,80.3,1
+service_conditions_addressed,access_infrastructure_required,204,2305,8.9,2
+service_conditions_addressed,sustainable_operations,89,2305,3.9,3
+service_conditions_addressed,skilled_facilitation_required,89,2305,3.9,3
+service_conditions_addressed,community_assessment_needed,59,2305,2.6,4
+service_conditions_addressed,other,49,2305,2.1,5
+service_conditions_addressed,evaluation_or_reflection,47,2305,2.0,6
+service_conditions_addressed,inclusive_design_or_accessibility,42,2305,1.8,7
+service_conditions_addressed,"access_infrastructure_required, community_assessment_needed",11,2305,0.5,8
+service_conditions_addressed,"access_infrastructure_required, skilled_facilitation_required",11,2305,0.5,8
+service_conditions_addressed,"access_infrastructure_required, sustainable_operations",9,2305,0.4,9
+service_conditions_addressed,"access_infrastructure_required, inclusive_design_or_accessibility",8,2305,0.3,10
+service_conditions_addressed,"skilled_facilitation_required, sustainable_operations",3,2305,0.1,11
+service_conditions_addressed,"access_infrastructure_required, evaluation_or_reflection",3,2305,0.1,11
+service_conditions_addressed,"skilled_facilitation_required, community_assessment_needed",3,2305,0.1,11
+service_conditions_addressed,"access_infrastructure_required, skilled_facilitation_required, inclusive_design_or_accessibility",3,2305,0.1,11
+service_conditions_addressed,access_infrastructure_required; sustainable_operations,3,2305,0.1,11
+service_conditions_addressed,"access_infrastructure_required, other",2,2305,0.1,12
+service_conditions_addressed,"inclusive_design_or_accessibility, evaluation_or_reflection",2,2305,0.1,12
+service_conditions_addressed,"community_assessment_needed, sustainable_operations",2,2305,0.1,12
+service_conditions_addressed,"sustainable_operations, access_infrastructure_required",1,2305,0.0,13
+service_conditions_addressed,"sustainable_operations, skilled_facilitation_required",1,2305,0.0,13
+service_conditions_addressed,"skilled_facilitation_required, access_infrastructure_required",1,2305,0.0,13
+service_conditions_addressed,"inclusive_design_or_accessibility, community_assessment_needed",1,2305,0.0,13
+service_conditions_addressed,"community_assessment_needed, inclusive_design_or_accessibility",1,2305,0.0,13
+service_conditions_addressed,professional_capacity,1,2305,0.0,13
+service_conditions_addressed,"""maximum concurrent usage"" metric implies assessing local needs",1,2305,0.0,13
+service_conditions_addressed,Emphasizes long-term fleet size decisions,1,2305,0.0,13
+service_conditions_addressed,"""Subject liaisons can add value to OPAC records""",1,2305,0.0,13
+service_conditions_addressed,"""Community Tag and Community Review features""",1,2305,0.0,13
+service_conditions_addressed,"inclusive_design_or_accessibility, sustainable_operations, evaluation_or_reflection",1,2305,0.0,13
+service_conditions_addressed,"community_assessment_needed, skilled_facilitation_required, sustainable_operations",1,2305,0.0,13
+service_conditions_addressed,sustainable_operations; community_assessment_needed,1,2305,0.0,13
+service_conditions_addressed,"""Additional funding... was not wholly successful""",1,2305,0.0,13
+service_conditions_addressed,"""Institution-specific collection assessment reports""",1,2305,0.0,13
+service_conditions_addressed,"skilled_facilitation_required, evaluation_or_reflection",1,2305,0.0,13
+service_conditions_addressed,"""shared calendar system"" implies infrastructure needs",1,2305,0.0,13
+service_conditions_addressed,Collaboration with multiple organizations suggests facilitation requirements,1,2305,0.0,13
+service_conditions_addressed,skilled_facilitation_required; sustainable_operations,1,2305,0.0,13

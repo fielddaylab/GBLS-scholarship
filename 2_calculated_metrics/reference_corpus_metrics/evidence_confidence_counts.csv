@@ -1,1 +1,10 @@
 feature_group,feature_value,article_count,total_articles,article_pct,rank_within_group
+evidence_confidence,theoretical_or_conceptual,743,2305,32.2,1
+evidence_confidence,descriptive_only,725,2305,31.5,2
+evidence_confidence,promising_evidence,270,2305,11.7,3
+evidence_confidence,practitioner_knowledge,191,2305,8.3,4
+evidence_confidence,medium,151,2305,6.6,5
+evidence_confidence,demonstrated_outcome,122,2305,5.3,6
+evidence_confidence,not_applicable,83,2305,3.6,7
+evidence_confidence,low,12,2305,0.5,8
+evidence_confidence,evidence_synthesis,8,2305,0.3,9

@@ -34,6 +34,51 @@ const state = {
   }
 };
 
+function loadScriptOnce(src) {
+  return new Promise((resolve, reject) => {
+    if (document.querySelector(`script[src="${src}"]`)) {
+      resolve();
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = resolve;
+    script.onerror = () => reject(new Error(`Failed to load ${src}`));
+    document.head.appendChild(script);
+  });
+}
+
+function buildBaselineCounts(referenceCorpus) {
+  const baseline = {};
+  if (!referenceCorpus?.featureCounts) return baseline;
+
+  referenceCorpus.featureCounts.forEach(row => {
+    if (!baseline[row.feature_group]) baseline[row.feature_group] = {};
+    baseline[row.feature_group][row.feature_value] = {
+      count: row.article_count,
+      pct: row.article_pct
+    };
+  });
+  return baseline;
+}
+
+function combineMetricsWithReference(gblsMetrics, referenceCorpus) {
+  if (!gblsMetrics) return null;
+  if (!referenceCorpus) return gblsMetrics;
+
+  return {
+    ...gblsMetrics,
+    baselineSummary: referenceCorpus.summary,
+    baseline: buildBaselineCounts(referenceCorpus),
+    referenceCorpus
+  };
+}
+
+async function loadStaticMetricsBundle() {
+  await loadScriptOnce('/data/metrics_explorer_data.js');
+  return combineMetricsWithReference(window.GBLS_METRICS, window.GBLS_REFERENCE_CORPUS);
+}
+
 // Initialize app
 document.addEventListener('DOMContentLoaded', async () => {
   // Check authentication first
@@ -136,6 +181,10 @@ async function loadInitialData() {
     const metricsRes = await fetch('/api/metrics');
     if (metricsRes.ok) {
       state.metrics = await metricsRes.json();
+    }
+    if (!state.metrics?.baselineSummary || !state.metrics?.baseline) {
+      const staticMetrics = await loadStaticMetricsBundle();
+      if (staticMetrics) state.metrics = staticMetrics;
     }
 
     // Load articles

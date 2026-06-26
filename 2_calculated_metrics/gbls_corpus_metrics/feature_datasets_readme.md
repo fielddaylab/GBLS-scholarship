@@ -1,6 +1,6 @@
 # GBLS Feature Datasets
 
-Generated: 2026-06-26 01:48
+Generated: 2026-06-26 13:28
 Articles: 227 | Feature assignments: 3640
 
 ## Quick start (Python / Colab)
