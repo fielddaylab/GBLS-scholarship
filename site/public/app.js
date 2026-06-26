@@ -1551,17 +1551,18 @@ function validateClassification() {
      return { valid: false, message: 'Classification data not loaded properly' };
    }
    
-   // Check each category to ensure at least one item is selected
-   // Skip "coding_confidence" as it's not displayed
-   state.classifyState.lexicon.forEach(group => {
-     if (group.id === 'coding_confidence') {
-       return; // Skip this category
-     }
-     const checkedInputs = document.querySelectorAll(`input[name="meta-${group.id}"]:checked`);
-     if (checkedInputs.length === 0) {
-       missingCategories.push(group.label || group.id);
-     }
-   });
+    // Check each category to ensure at least one item is selected
+    // Skip "coding_confidence" as it's not displayed
+    state.classifyState.lexicon.forEach(group => {
+      // Skip coding confidence in any case variation
+      if (group.id && (group.id.toLowerCase().includes('confidence') || group.id === 'coding_confidence')) {
+        return; // Skip this category
+      }
+      const checkedInputs = document.querySelectorAll(`input[name="meta-${group.id}"]:checked`);
+      if (checkedInputs.length === 0) {
+        missingCategories.push(group.label || group.id);
+      }
+    });
    
    if (missingCategories.length > 0) {
      const categoryList = missingCategories.map(cat => `• ${cat}`).join('\n');
