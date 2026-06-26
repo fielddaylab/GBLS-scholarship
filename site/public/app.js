@@ -1015,6 +1015,25 @@ function closeAllPanels() {
    }
  }
 
+ function showLeaderboardBadge() {
+   const badge = document.getElementById('leaderboard-badge');
+   if (!badge) return;
+   
+   // Show the badge
+   badge.style.display = 'inline-block';
+   
+   // Remove any existing animation classes and re-add to trigger animation
+   badge.style.animation = 'none';
+   setTimeout(() => {
+     badge.style.animation = 'badgePop 3s ease-out forwards';
+   }, 10);
+   
+   // Hide after animation completes
+   setTimeout(() => {
+     badge.style.display = 'none';
+   }, 3000);
+ }
+
  function pickRandomSummaryArticle() {
      if (!state.articles || state.articles.length === 0) return;
      const random = state.articles[Math.floor(Math.random() * state.articles.length)];
@@ -1181,6 +1200,7 @@ async function submitSummaryReview(event) {
 
      if (response.ok) {
        markStepComplete(2);
+       showLeaderboardBadge();
        showSubmissionSuccess('summary-form-status');
      } else {
       const error = await response.json();
@@ -1617,6 +1637,7 @@ async function submitClassification(event) {
        const result = await response.json();
        console.log('[Submit Classification] Success:', result);
        markStepComplete(3);
+       showLeaderboardBadge();
        showSubmissionSuccess('classification-form-status');
      } else {
       const error = await response.json();
