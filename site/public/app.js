@@ -1107,21 +1107,21 @@ function closeAllPanels() {
 function validateSummaryReview() {
    const missingItems = [];
    
-   // Check if at least one rubric score is selected
+   // Check if all three required rubric categories are selected
+   const requiredCategories = ['factual_accuracy', 'coverage_completeness', 'clarity_usefulness'];
+   const categoryLabels = {
+     'factual_accuracy': 'Factual Accuracy',
+     'coverage_completeness': 'Coverage & Completeness',
+     'clarity_usefulness': 'Clarity & Usefulness'
+   };
+   
    if (state.classifyState.rubricDefinition && state.classifyState.rubricDefinition.dimensions) {
-     const rubricDimensions = state.classifyState.rubricDefinition.dimensions;
-     let rubricScoresCount = 0;
-     
-     rubricDimensions.forEach(dimension => {
-       const selected = document.querySelector(`input[name="rubric-${dimension.id}"]:checked`);
-       if (selected) {
-         rubricScoresCount++;
+     requiredCategories.forEach(categoryId => {
+       const selected = document.querySelector(`input[name="rubric-${categoryId}"]:checked`);
+       if (!selected) {
+         missingItems.push(`• ${categoryLabels[categoryId]}`);
        }
      });
-     
-     if (rubricScoresCount === 0) {
-       missingItems.push('• At least one Summary Quality Rubric score');
-     }
    }
    
    // Check if overall quality is selected
