@@ -91,6 +91,7 @@ define the authors' structure, values, terminology, and evaluation criteria.
 │   ├── current_manuscript.md
 │   ├── explicit_values.md
 │   ├── metadata-schema-and-lexicon.md
+│   ├── reference_abstracts/
 │   └── publishability_rubric.md
 ├── 1-coded-summaries/
 │   ├── template.md
@@ -136,6 +137,22 @@ Authoritative, human-maintained inputs:
   controlled vocabulary used across the corpus.
 - **`publishability_rubric.md`** provides internal editorial criteria and
   journal-alignment checks for manuscript review.
+- **`reference_abstracts/`** contains harvested citation-and-abstract records
+  from library and information science journals. These records provide a
+  semi-random comparison sample of library scholarship for comparing the GBLS
+  corpus against broader library scholarship using the project metadata schema.
+
+Journal counts in `reference_abstracts/`:
+
+| Journal | Count |
+| --- | ---: |
+| College & Research Libraries | 1,027 |
+| Information Technology and Libraries | 711 |
+| Library Trends | 567 |
+| Total | 2,305 |
+
+The Library Quarterly was investigated but not included in this abstract-based
+sample because accessible metadata sources did not provide source abstracts.
 
 These files should be changed deliberately and reviewed by the research team.
 The synthesis workflow does not modify them.
