@@ -1125,19 +1125,12 @@ function closeAllPanels() {
 function validateSummaryReview() {
    const missingItems = [];
    
-   // Check if all three required rubric categories are selected
-   const requiredCategories = ['factual_accuracy', 'coverage_completeness', 'clarity_usefulness'];
-   const categoryLabels = {
-     'factual_accuracy': 'Factual Accuracy',
-     'coverage_completeness': 'Coverage & Completeness',
-     'clarity_usefulness': 'Clarity & Usefulness'
-   };
-   
+   // Check if all rubric dimensions have a selection
    if (state.classifyState.rubricDefinition && state.classifyState.rubricDefinition.dimensions) {
-     requiredCategories.forEach(categoryId => {
-       const selected = document.querySelector(`input[name="rubric-${categoryId}"]:checked`);
+     state.classifyState.rubricDefinition.dimensions.forEach(dimension => {
+       const selected = document.querySelector(`input[name="rubric-${dimension.id}"]:checked`);
        if (!selected) {
-         missingItems.push(`• ${categoryLabels[categoryId]}`);
+         missingItems.push(`• ${dimension.label}`);
        }
      });
    }
