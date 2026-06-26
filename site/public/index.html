@@ -21,7 +21,7 @@
 
     <!-- Navigation Tabs -->
     <nav class="tab-navigation">
-      <button class="tab-btn active" data-tab="metrics">GBLS Lit Explorer</button>
+      <button class="tab-btn active" data-tab="metrics">GBLS Corpus Explorer</button>
       <button class="tab-btn" data-tab="summaries">Review & Classify</button>
       <button class="tab-btn" data-tab="view">View Classifications</button>
     </nav>
@@ -32,10 +32,7 @@
       <!-- Tab 1: GBLS Lit Explorer (Metrics) -->
       <div class="tab-pane active" id="metrics">
         <div class="metrics-container">
-          <div class="hero-section">
-            <h2>GBLS Corpus Explorer</h2>
-            <button id="metrics-reset" class="btn-secondary">Reset Filters</button>
-          </div>
+
 
           <!-- Combined Metrics: GBLS vs Baseline -->
           <div class="summary-cards" style="margin-bottom: 2rem;">
@@ -61,21 +58,18 @@
             </div>
           </div>
 
+          <!-- Publications Over Time (Full Width) -->
+          <div class="chart-container chart-full-width">
+            <h3>Publications Over Time</h3>
+            <div id="year-chart"></div>
+          </div>
+
           <!-- Controls Panel -->
           <div class="controls-panel">
             <div class="control-group">
               <label for="feature-select">Feature Family:</label>
               <select id="feature-select">
                 <option value="service_area">Service Area</option>
-              </select>
-            </div>
-            <div class="control-group">
-              <label for="limit-select">Show Top:</label>
-              <select id="limit-select">
-                <option value="10">10</option>
-                <option value="15" selected>15</option>
-                <option value="25">25</option>
-                <option value="all">All</option>
               </select>
             </div>
             <div class="control-group">
@@ -88,22 +82,21 @@
             </div>
           </div>
 
-          <!-- Charts Section -->
-          <div class="charts-section">
-            <div class="chart-container">
-              <h3>Top Features (Ranking)</h3>
-              <div id="ranking-chart"></div>
-            </div>
-            <div class="chart-container">
-              <h3>Publications Over Time</h3>
-              <div id="year-chart"></div>
-            </div>
+          <!-- Top Features (Ranking) -->
+          <div class="chart-container">
+            <h3>Top Features (Ranking)</h3>
+            <div id="ranking-chart"></div>
           </div>
 
           <!-- Trend Section -->
           <div class="trend-section" id="trend-section" style="display: none;">
             <h3>Trend: <span id="trend-title">—</span></h3>
             <div id="trend-chart"></div>
+          </div>
+
+          <div class="selected-articles-section" id="selected-articles-section" style="display: none;">
+            <h3>Articles Matching <span id="selected-label-title">—</span></h3>
+            <div id="selected-articles-table"></div>
           </div>
 
          </div>

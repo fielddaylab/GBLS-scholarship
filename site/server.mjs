@@ -217,6 +217,36 @@ async function readJSONFile(filePath) {
   }
 }
 
+function toSchemaKey(heading) {
+  return String(heading || '').trim().toLowerCase();
+}
+
+function parseMetadataLexicon(markdown) {
+  const descriptions = {};
+  let currentGroup = null;
+
+  markdown.split(/\r?\n/).forEach(line => {
+    const heading = line.match(/^#\s+(.+?)\s*$/);
+    if (heading) {
+      currentGroup = toSchemaKey(heading[1]);
+      descriptions[currentGroup] = descriptions[currentGroup] || {};
+      return;
+    }
+
+    const item = line.match(/^\s*-\s+([^:]+):\s+(.+?)\s*$/);
+    if (!currentGroup || !item) return;
+    descriptions[currentGroup][item[1].trim()] = item[2].trim();
+  });
+
+  return descriptions;
+}
+
+async function loadMetadataLexicon() {
+  const lexiconPath = path.join(__dirname, '..', '0_human_sources', 'metadata-schema-and-lexicon.md');
+  const content = await fs.readFile(lexiconPath, 'utf-8');
+  return parseMetadataLexicon(content);
+}
+
 // ---- Corpus .md helpers -----------------------------------------------------
 // Map each Zotero key (the part in parentheses of the stem) to its .md path,
 // so the web tool can pull live "Structured Extraction" + "Summary" content.
@@ -480,6 +510,7 @@ app.get('/api/metrics', requireAuth, async (req, res) => {
     
     // Load feature counts for both datasets
     const baselineFeatures = {};
+    const baselineYearCounts = {};
     try {
       const csv = await fs.readFile(path.join(baselineMetricsPath, 'feature_counts.csv'), 'utf-8');
       const rows = parseCSV(csv);
@@ -497,13 +528,28 @@ app.get('/api/metrics', requireAuth, async (req, res) => {
     } catch (error) {
       console.warn('Could not load baseline feature counts:', error.message);
     }
+
+    try {
+      const csv = await fs.readFile(path.join(baselineMetricsPath, 'publication_year_counts.csv'), 'utf-8');
+      const rows = parseCSV(csv);
+      for (let i = 1; i < rows.length; i++) {
+        const parts = rows[i];
+        if (!parts || parts.length < 2) continue;
+        const year = parseInt(parts[0]);
+        const count = parseInt(parts[1]) || 0;
+        if (year) baselineYearCounts[year] = count;
+      }
+    } catch (error) {
+      console.warn('Could not load baseline publication year counts:', error.message);
+    }
     
     res.json({
       summary,
       baselineSummary,
       featureGroups,
       articles,
-      baseline: baselineFeatures
+      baseline: baselineFeatures,
+      baselineYearCounts
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -516,6 +562,14 @@ app.get('/api/reference-metrics', requireAuth, async (req, res) => {
     const datasetPath = path.join(metricsPath, 'dataset_summary.json');
     const data = await readJSONFile(datasetPath);
     res.json(data || { error: 'Reference metrics data not found' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/metadata-lexicon', requireAuth, async (req, res) => {
+  try {
+    res.json(await loadMetadataLexicon());
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

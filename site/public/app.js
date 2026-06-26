@@ -5,6 +5,7 @@
 const state = {
   user: null,
   metrics: null,
+  metadataLexicon: {},
   articles: [],
   codings: [],
   summaries: [],
@@ -14,7 +15,6 @@ const state = {
   // Metrics state
   metricsState: {
     group: 'service_area',
-    limit: 15,
     yearStart: 1950,
     yearEnd: 2025,
     selectedFeature: null,
@@ -199,6 +199,11 @@ async function loadInitialData() {
       state.codings = await codingsRes.json();
     }
 
+    const lexiconRes = await fetch('/api/metadata-lexicon');
+    if (lexiconRes.ok) {
+      state.metadataLexicon = await lexiconRes.json();
+    }
+
     // Load summaries
     const summariesRes = await fetch('/api/summaries');
     if (summariesRes.ok) {
@@ -262,11 +267,6 @@ function setupMetricsControls() {
     renderMetricsCharts();
   });
 
-  document.getElementById('limit-select').addEventListener('change', (e) => {
-    state.metricsState.limit = e.target.value === 'all' ? 999 : parseInt(e.target.value);
-    renderMetricsCharts();
-  });
-
   document.getElementById('year-from').addEventListener('change', (e) => {
     state.metricsState.yearStart = parseInt(e.target.value) || 1950;
     renderMetricsCharts();
@@ -274,22 +274,6 @@ function setupMetricsControls() {
 
   document.getElementById('year-to').addEventListener('change', (e) => {
     state.metricsState.yearEnd = parseInt(e.target.value) || 2025;
-    renderMetricsCharts();
-  });
-
-  document.getElementById('metrics-reset').addEventListener('click', () => {
-    state.metricsState = {
-      group: 'service_area',
-      limit: 15,
-      yearStart: 1950,
-      yearEnd: 2025,
-      selectedFeature: null,
-      search: ''
-    };
-    document.getElementById('feature-select').value = 'service_area';
-    document.getElementById('limit-select').value = '15';
-    document.getElementById('year-from').value = '1950';
-    document.getElementById('year-to').value = '2025';
     renderMetricsCharts();
   });
 }
@@ -302,26 +286,48 @@ function renderMetricsCharts() {
     a.year >= state.metricsState.yearStart && a.year <= state.metricsState.yearEnd
   );
 
-  // Get feature counts
+  // Get article prevalence counts. Multi-label fields count once per article per label,
+  // so percentages can sum to more than 100% across labels.
   const featureCounts = {};
   filtered.forEach(article => {
-    const featureValue = article[state.metricsState.group];
-    if (featureValue) {
-      const features = Array.isArray(featureValue) ? featureValue : featureValue.split('|');
-      features.forEach(f => {
-        f = f.trim();
-        featureCounts[f] = (featureCounts[f] || 0) + 1;
-      });
-    }
+    getArticleFeatures(article, state.metricsState.group).forEach(f => {
+      featureCounts[f] = (featureCounts[f] || 0) + 1;
+    });
   });
 
-  // Sort and limit
+  const baselineGroup = state.metrics.baseline?.[state.metricsState.group] || {};
+  const baselineArticleTotal = state.metrics.baselineSummary?.total_articles || 0;
+  const gblsArticleTotal = filtered.length;
   const sorted = Object.entries(featureCounts)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, state.metricsState.limit);
+    .map(([label, count]) => ({
+      label,
+      count,
+      pct: gblsArticleTotal ? (count / gblsArticleTotal) * 100 : 0,
+      baselineCount: baselineGroup[label]?.count || 0,
+      baselinePct: baselineArticleTotal ? ((baselineGroup[label]?.count || 0) / baselineArticleTotal) * 100 : 0
+    }));
+
+  Object.entries(baselineGroup).forEach(([label, row]) => {
+    if (featureCounts[label]) return;
+    if (!isKnownMetadataLabel(state.metricsState.group, label)) return;
+    sorted.push({
+      label,
+      count: 0,
+      pct: 0,
+      baselineCount: row.count || 0,
+      baselinePct: baselineArticleTotal ? ((row.count || 0) / baselineArticleTotal) * 100 : 0
+    });
+  });
+
+  sorted.sort((a, b) => (b.pct - a.pct) || (b.baselinePct - a.baselinePct) || a.label.localeCompare(b.label));
 
   renderRankingChart(sorted);
   renderYearChart(filtered);
+  if (state.metricsState.selectedFeature && featureCounts[state.metricsState.selectedFeature]) {
+    renderSelectedArticlesTable(state.metricsState.selectedFeature, filtered);
+  } else {
+    hideSelectedArticlesTable();
+  }
 }
 
 function renderRankingChart(data) {
@@ -331,38 +337,27 @@ function renderRankingChart(data) {
     return;
   }
 
-  const maxValue = Math.max(...data.map(d => d[1]));
-  // Also consider baseline values for scaling if available
-  let maxBaselineValue = 0;
-  if (state.metrics.baseline && state.metrics.baseline[state.metricsState.group]) {
-    maxBaselineValue = Math.max(...Object.values(state.metrics.baseline[state.metricsState.group]).map(d => d.count || 0));
-  }
-  const globalMax = Math.max(maxValue, maxBaselineValue);
-  
-  const html = data.map(([label, count], i) => {
-    const percent = (count / globalMax) * 100;
-    
-    // Get baseline percentage if available
-    let baselinePercent = 0;
-    let baselineCount = 0;
-    if (state.metrics.baseline && state.metrics.baseline[state.metricsState.group]) {
-      const baselineData = state.metrics.baseline[state.metricsState.group][label];
-      if (baselineData) {
-        baselineCount = baselineData.count || 0;
-        baselinePercent = (baselineCount / globalMax) * 100;
-      }
-    }
-    
+  const maxPct = Math.max(1, ...data.flatMap(row => [row.pct, row.baselinePct]));
+  const html = data.map(({ label, count, pct, baselineCount, baselinePct }) => {
+    const safeLabel = escapeHTML(label);
+    const description = getMetadataDescription(state.metricsState.group, label);
+    const safeDescription = escapeHTML(description || 'No description available.');
+    const jsLabel = JSON.stringify(label).replace(/</g, '\\u003c');
+    const gblsWidth = (pct / maxPct) * 100;
+    const refWidth = (baselinePct / maxPct) * 100;
     return `
-      <div class="rank-item" onclick="selectMetricsFeature('${label}')">
-        <div class="rank-label">${label}</div>
-        <div class="rank-bars">
-          ${baselinePercent > 0 ? `<div class="rank-bar baseline" style="width: ${baselinePercent}%; opacity: 0.5;"></div>` : ''}
-          <div class="rank-bar" style="width: ${percent}%"></div>
+      <div class="rank-item" onclick='selectMetricsFeature(${jsLabel})'>
+        <div class="rank-label metadata-tooltip-anchor" tabindex="0" aria-label="${safeLabel}: ${safeDescription}">
+          <span>${safeLabel}</span>
+          <span class="metadata-tooltip">${safeDescription}</span>
+        </div>
+        <div class="rank-bar-pair" aria-hidden="true">
+          <div class="rank-bar-track"><div class="rank-bar-gbls" style="width: ${gblsWidth}%"></div></div>
+          <div class="rank-bar-track"><div class="rank-bar-ref" style="width: ${refWidth}%"></div></div>
         </div>
         <div class="rank-values">
-          <div class="rank-value-main">${count}</div>
-          ${baselineCount > 0 ? `<div class="rank-value-baseline">${baselineCount}</div>` : ''}
+          <div class="rank-value-main">${count} (${pct.toFixed(1)}%)</div>
+          <div class="rank-value-baseline">${baselineCount} (${baselinePct.toFixed(1)}%)</div>
         </div>
       </div>
     `;
@@ -377,52 +372,59 @@ function renderRankingChart(data) {
     style.textContent = `
       .rank-item {
         display: grid;
-        grid-template-columns: 150px 1fr 80px;
-        gap: 1rem;
+        grid-template-columns: minmax(240px, 30%) minmax(160px, 1fr) 128px;
+        gap: 0.55rem;
         align-items: center;
-        margin-bottom: 1rem;
+        position: relative;
+        margin-bottom: 0.32rem;
         cursor: pointer;
-        padding: 0.5rem;
+        padding: 0.18rem 0.25rem;
         border-radius: 0.25rem;
         transition: background-color 0.2s;
       }
       .rank-item:hover {
         background-color: var(--light-bg);
+        z-index: 20;
       }
       .rank-label {
-        font-size: 0.875rem;
+        font-size: 0.95rem;
         font-weight: 500;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        overflow: visible;
+        white-space: normal;
+        overflow-wrap: anywhere;
       }
-      .rank-bars {
-        position: relative;
-        height: 24px;
+      .rank-bar-pair {
+        display: grid;
+        gap: 0.18rem;
+      }
+      .rank-bar-track {
+        height: 0.8rem;
         background: transparent;
+        border-radius: 999px;
+        overflow: hidden;
       }
-      .rank-bar {
-        position: absolute;
+      .rank-bar-gbls,
+      .rank-bar-ref {
         height: 100%;
-        border-radius: 0.25rem;
-        left: 0;
+        min-width: 2px;
+        border-radius: 999px;
       }
-      .rank-bar:last-of-type {
+      .rank-bar-gbls {
         background: linear-gradient(90deg, var(--primary-color), #60a5fa);
-        z-index: 2;
       }
-      .rank-bar.baseline {
-        background: #d0d0d0;
-        z-index: 1;
+      .rank-bar-ref {
+        background: #c7cdd4;
       }
       .rank-values {
         text-align: right;
         font-weight: 600;
         color: var(--text-dark);
-        font-size: 0.875rem;
+        font-size: 0.9rem;
+        line-height: 1.1;
       }
       .rank-value-baseline {
         color: var(--text-light);
-        font-size: 0.75rem;
+        font-size: 0.78rem;
         font-weight: 400;
       }
     `;
@@ -430,30 +432,58 @@ function renderRankingChart(data) {
   }
 }
 
+function getMetadataDescription(group, label) {
+  if (label === 'not_applicable') return 'Not applicable — the article does not describe a service in this category.';
+  return state.metadataLexicon?.[group]?.[label] || '';
+}
+
+function isKnownMetadataLabel(group, label) {
+  if (label === 'not_applicable') return true;
+  const groupLexicon = state.metadataLexicon?.[group];
+  return !groupLexicon || Boolean(groupLexicon[label]);
+}
+
 function renderYearChart(articles) {
   const container = document.getElementById('year-chart');
-  const yearCounts = {};
+  const gblsYearCounts = {};
   
   articles.forEach(a => {
-    yearCounts[a.year] = (yearCounts[a.year] || 0) + 1;
+    gblsYearCounts[a.year] = (gblsYearCounts[a.year] || 0) + 1;
   });
 
-  const sorted = Object.entries(yearCounts)
-    .map(([year, count]) => [parseInt(year), count])
-    .sort((a, b) => a[0] - b[0]);
+  const referenceYearCounts = state.metrics.baselineYearCounts || {};
+  const years = new Set([
+    ...Object.keys(gblsYearCounts),
+    ...Object.keys(referenceYearCounts)
+  ]);
+
+  const sorted = [...years]
+    .map(year => parseInt(year))
+    .filter(year => year >= state.metricsState.yearStart && year <= state.metricsState.yearEnd)
+    .sort((a, b) => a - b);
 
   if (sorted.length === 0) {
     container.innerHTML = '<p style="text-align: center;">No data</p>';
     return;
   }
 
-  const maxCount = Math.max(...sorted.map(d => d[1]));
-  const width = Math.min(Math.max(sorted.length * 30, 400), 800);
-  const html = sorted.map(([year, count]) => {
-    const height = (count / maxCount) * 150;
-    return `<div style="display: inline-block; width: ${width / sorted.length}px; text-align: center; margin: 0 2px;">
-      <div style="height: ${height}px; background: linear-gradient(180deg, #60a5fa, var(--primary-color)); border-radius: 0.25rem 0.25rem 0 0;"></div>
-      <small style="font-size: 0.75rem; color: var(--text-light);">${year}</small>
+  const maxCount = Math.max(...sorted.flatMap(year => [gblsYearCounts[year] || 0, referenceYearCounts[year] || 0]));
+  const containerWidth = Math.max(800, window.innerWidth - 40);
+  const barWidth = Math.max(32, containerWidth / sorted.length);
+  const labelEvery = Math.max(1, Math.ceil(sorted.length / 12));
+  const html = sorted.map((year, index) => {
+    const gblsCount = gblsYearCounts[year] || 0;
+    const refCount = referenceYearCounts[year] || 0;
+    const gblsHeight = maxCount ? (gblsCount / maxCount) * 140 : 0;
+    const refHeight = maxCount ? (refCount / maxCount) * 140 : 0;
+    const showLabel = index % labelEvery === 0 || index === sorted.length - 1;
+    return `<div class="year-bar-item" tabindex="0" aria-label="${year}: GBLS ${gblsCount}, reference ${refCount}" style="display: inline-block; width: ${barWidth}px; text-align: center; margin: 0 1px; vertical-align: bottom; position: relative;">
+      <div class="year-bar-tooltip"><strong>${year}</strong><br>GBLS ${gblsCount}<br>Reference ${refCount}</div>
+      <div class="year-bar-pair" style="height: 140px;">
+        <div class="year-bar-gbls" style="height: ${gblsHeight}px;"></div>
+        <div class="year-bar-ref" style="height: ${refHeight}px;"></div>
+      </div>
+      <small style="display: block; height: 2rem; padding-top: 0.3rem; font-size: 0.78rem; color: var(--text-light); white-space: nowrap;">${showLabel ? year : ''}</small>
     </div>`;
   }).join('');
 
@@ -462,10 +492,79 @@ function renderYearChart(articles) {
 
 function selectMetricsFeature(feature) {
   state.metricsState.selectedFeature = feature;
-  const trendSection = document.getElementById('trend-section');
-  document.getElementById('trend-title').textContent = feature;
-  trendSection.style.display = 'block';
-  // TODO: Render trend chart for selected feature
+  const filtered = state.metrics.articles.filter(a => 
+    a.year >= state.metricsState.yearStart && a.year <= state.metricsState.yearEnd
+  );
+  renderSelectedArticlesTable(feature, filtered);
+}
+
+function articleHasFeature(article, feature) {
+  return getArticleFeatures(article, state.metricsState.group).includes(feature);
+}
+
+function getArticleFeatures(article, group) {
+  const featureValue = article[group];
+  if (!featureValue) return [];
+  const values = Array.isArray(featureValue) ? featureValue : String(featureValue).split(/[|,]/);
+  return [...new Set(values.map(f => f.trim()).filter(Boolean))];
+}
+
+function getArticleCitation(articleId) {
+  const article = state.articles.find(a => a.id === articleId || a.id === String(articleId));
+  return article?.citation || articleId;
+}
+
+function escapeHTML(value) {
+  return String(value || '').replace(/[&<>'"]/g, char => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    "'": '&#39;',
+    '"': '&quot;'
+  }[char]));
+}
+
+function renderSelectedArticlesTable(feature, filteredArticles) {
+  const section = document.getElementById('selected-articles-section');
+  const title = document.getElementById('selected-label-title');
+  const tableContainer = document.getElementById('selected-articles-table');
+  if (!section || !title || !tableContainer) return;
+
+  const matches = filteredArticles
+    .filter(article => articleHasFeature(article, feature))
+    .sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
+
+  title.textContent = feature;
+  section.style.display = 'block';
+
+  if (matches.length === 0) {
+    tableContainer.innerHTML = '<p class="empty-selection">No GBLS articles match this label in the selected year range.</p>';
+    return;
+  }
+
+  const rows = matches.map(article => `
+    <tr>
+      <td>${escapeHTML(article.year || '—')}</td>
+      <td>${escapeHTML(getArticleCitation(article.article_id))}</td>
+    </tr>
+  `).join('');
+
+  tableContainer.innerHTML = `
+    <table class="selected-articles-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Full citation</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+  `;
+}
+
+function hideSelectedArticlesTable() {
+  const section = document.getElementById('selected-articles-section');
+  if (section) section.style.display = 'none';
 }
 
 // ============================================================================
