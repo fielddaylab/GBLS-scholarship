@@ -27,12 +27,19 @@ const state = {
   },
 
   // Classification state
-  classifyState: {
-    currentArticle: null,
-    rubricDefinition: null,
-    lexicon: null
-  }
-};
+   classifyState: {
+     currentArticle: null,
+     rubricDefinition: null,
+     lexicon: null
+   },
+   
+   // Step completion tracking
+   stepsCompleted: {
+     1: false,
+     2: false,
+     3: false
+   }
+ };
 
 function loadScriptOnce(src) {
   return new Promise((resolve, reject) => {
@@ -81,20 +88,41 @@ async function loadStaticMetricsBundle() {
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', async () => {
-  // Check authentication first
-  await checkAndLoadUser();
-  
-  if (!state.user) {
-    // Not authenticated, redirect to login
-    window.location.href = '/login.html';
-    return;
-  }
+   // Check authentication first
+   await checkAndLoadUser();
+   
+   if (!state.user) {
+     // Not authenticated, redirect to login
+     window.location.href = '/login.html';
+     return;
+   }
 
-  setupTabs();
-  setupUserMenu();
-  await loadInitialData();
-  renderMetricsTab();
-});
+   setupTabs();
+   setupUserMenu();
+   await loadInitialData();
+   
+   // Handle View Classifications tab visibility
+   const viewTab = document.querySelector('[data-tab="view"]');
+   const isDebug = new URLSearchParams(window.location.search).has('debug');
+   const isAllowedUser = state.user?.github === 'mrdavidgagnon';
+   if (viewTab && !isDebug && !isAllowedUser) {
+     viewTab.style.display = 'none';
+   }
+   
+    // Load tab from URL or default to summaries
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabFromUrl = urlParams.get('tab') || 'summaries';
+    const articleFromUrl = urlParams.get('article');
+    
+    switchTab(tabFromUrl);
+    
+     // If article is in URL, load it after tab initialization
+     if (articleFromUrl && tabFromUrl === 'summaries') {
+       setTimeout(() => {
+         loadSummaryArticleById(articleFromUrl);
+       }, 100);
+     }
+ });
 
 async function checkAndLoadUser() {
   try {
@@ -150,29 +178,36 @@ function setupTabs() {
 }
 
 function switchTab(tabName) {
-  // Update button states
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.tab === tabName);
-  });
+   // Update button states
+   document.querySelectorAll('.tab-btn').forEach(btn => {
+     btn.classList.toggle('active', btn.dataset.tab === tabName);
+   });
 
-  // Update pane visibility
-  document.querySelectorAll('.tab-pane').forEach(pane => {
-    pane.classList.toggle('active', pane.id === tabName);
-  });
+   // Update pane visibility
+   document.querySelectorAll('.tab-pane').forEach(pane => {
+     pane.classList.toggle('active', pane.id === tabName);
+   });
 
-  state.currentTab = tabName;
+   state.currentTab = tabName;
+   
+   // Update URL with current tab
+   const urlParams = new URLSearchParams(window.location.search);
+   urlParams.set('tab', tabName);
+   window.history.replaceState({}, '', `?${urlParams.toString()}`);
 
-  // Initialize tab content
-  if (tabName === 'metrics') {
-    renderMetricsTab();
-  } else if (tabName === 'summaries') {
-    initializeSummariesTab();
-  } else if (tabName === 'classify') {
-    initializeClassifyTab();
-  } else if (tabName === 'view') {
-    loadAllClassifications();
-  }
-}
+    // Initialize tab content
+    if (tabName === 'metrics') {
+      renderMetricsTab();
+    } else if (tabName === 'summaries') {
+      initializeSummariesTab();
+    } else if (tabName === 'classify') {
+      initializeClassifyTab();
+    } else if (tabName === 'view') {
+      loadAllClassifications();
+    } else if (tabName === 'leaderboard') {
+      loadLeaderboard();
+    }
+ }
 
 // Data Loading
 async function loadInitialData() {
@@ -640,8 +675,10 @@ function initializeSummariesTab() {
      loginSection.style.display = 'none';
      reviewSection.style.display = 'block';
      populateSummariesArticleSelect();
-     // Auto-load a random article
-     if (state.articles && state.articles.length > 0) {
+     // Auto-load a random article only if no article in URL
+     const urlParams = new URLSearchParams(window.location.search);
+     const articleFromUrl = urlParams.get('article');
+     if (!articleFromUrl && state.articles && state.articles.length > 0) {
        pickRandomSummaryArticle();
      }
    } else {
@@ -680,17 +717,46 @@ function populateSummariesArticleSelect() {
   });
 }
 
+async function loadSummaryArticleById(articleId) {
+   const article = state.articles.find(a => a.id === articleId);
+   if (!article) return;
+   
+   // Update select element if it exists
+   const selectElement = document.getElementById('summaries-article-select');
+   if (selectElement) {
+     selectElement.value = articleId;
+   }
+   
+   return performLoadSummaryArticle(article);
+}
+
 async function loadSummaryArticle() {
-  const articleId = document.getElementById('summaries-article-select').value;
-  if (!articleId) return;
+   const articleId = document.getElementById('summaries-article-select').value;
+   if (!articleId) return;
 
-  const article = state.articles.find(a => a.id === articleId);
-  if (!article) return;
+   const article = state.articles.find(a => a.id === articleId);
+   if (!article) return;
+   
+   return performLoadSummaryArticle(article);
+}
 
-  state.summariesState.currentArticle = article;
-  state.classifyState.currentArticle = article;
+async function performLoadSummaryArticle(article) {
+   if (!article) return;
 
-   document.getElementById('summaries-citation').textContent = article.citation;
+   const articleId = article.id;
+   state.summariesState.currentArticle = article;
+   state.classifyState.currentArticle = article;
+   
+   // Update URL with current article
+   const urlParams = new URLSearchParams(window.location.search);
+   urlParams.set('article', articleId);
+   window.history.replaceState({}, '', `?${urlParams.toString()}`);
+
+    document.getElementById('summaries-citation').textContent = article.citation;
+    const classificationCitationElement = document.getElementById('classification-citation');
+    if (classificationCitationElement) {
+      classificationCitationElement.textContent = article.citation;
+    }
    
    // Load PDF viewer
    const pdfContainer = document.getElementById('summaries-pdf-container');
@@ -830,32 +896,153 @@ async function loadSummaryArticle() {
    document.getElementById('summaries-article-display').style.display = 'block';
 }
 
-function openSummaryPanel() {
-  const workspace = document.getElementById('summaries-article-display');
-  if (!workspace) return;
-  workspace.classList.add('panel-open');
-}
+// Track which panel is currently open
+let openPanel = null;
 
-function closeSummaryPanel() {
-  const workspace = document.getElementById('summaries-article-display');
-  if (!workspace) return;
-  workspace.classList.remove('panel-open');
-}
-
-function pickRandomSummaryArticle() {
-   if (!state.articles || state.articles.length === 0) return;
-   const random = state.articles[Math.floor(Math.random() * state.articles.length)];
-   const selectElement = document.getElementById('summaries-article-select');
-   if (selectElement) {
-     selectElement.value = random.id;
+function closeAllPanels() {
+   if (openPanel === 'summary') {
+     closeSummaryRatingPanel();
+   } else if (openPanel === 'classification') {
+     closeClassificationPanel();
    }
-   // Directly load without relying on select element
-   state.summariesState.currentArticle = random;
-   state.classifyState.currentArticle = random;
+   openPanel = null;
+ }
+
+ function openSummaryRatingPanel() {
+   // Close any other open panel first
+   if (openPanel && openPanel !== 'summary') {
+     closeAllPanels();
+   }
    
-   document.getElementById('summaries-citation').textContent = random.citation;
+   const panel = document.getElementById('summary-rating-panel');
+   if (!panel) return;
+   panel.style.right = '0';
    
-   // Load PDF viewer
+   const overlay = document.getElementById('summary-panel-overlay');
+   if (overlay) {
+     overlay.style.opacity = '1';
+     overlay.style.pointerEvents = 'auto';
+   }
+   
+   openPanel = 'summary';
+ }
+
+ function closeSummaryRatingPanel() {
+   const panel = document.getElementById('summary-rating-panel');
+   if (!panel) return;
+   panel.style.right = '-100%';
+   
+   const overlay = document.getElementById('summary-panel-overlay');
+   if (overlay) {
+     overlay.style.opacity = '0';
+     overlay.style.pointerEvents = 'none';
+   }
+ }
+
+ function openClassificationPanel() {
+   // Close any other open panel first
+   if (openPanel && openPanel !== 'classification') {
+     closeAllPanels();
+   }
+   
+   const panel = document.getElementById('classification-panel');
+   if (!panel) return;
+   panel.style.right = '0';
+   
+   const overlay = document.getElementById('summary-panel-overlay');
+   if (overlay) {
+     overlay.style.opacity = '1';
+     overlay.style.pointerEvents = 'auto';
+   }
+   
+   openPanel = 'classification';
+ }
+
+ function closeClassificationPanel() {
+   const panel = document.getElementById('classification-panel');
+   if (!panel) return;
+   panel.style.right = '-100%';
+   
+   const overlay = document.getElementById('summary-panel-overlay');
+   if (overlay) {
+     overlay.style.opacity = '0';
+     overlay.style.pointerEvents = 'none';
+   }
+ }
+
+ // Keep old function name for backward compatibility
+ function openSummaryPanel() {
+   openSummaryRatingPanel();
+ }
+
+ function closeSummaryPanel() {
+   closeSummaryRatingPanel();
+ }
+
+ function markStepComplete(stepNumber) {
+   state.stepsCompleted[stepNumber] = true;
+   const badge = document.getElementById(`step-badge-${stepNumber}`);
+   const numberSpan = document.getElementById(`step-${stepNumber}-number`);
+   const checkmarkSpan = document.getElementById(`step-${stepNumber}-checkmark`);
+   
+   if (badge) {
+     badge.classList.add('completed');
+   }
+   if (numberSpan) {
+     numberSpan.style.display = 'none';
+   }
+   if (checkmarkSpan) {
+     checkmarkSpan.style.display = 'inline';
+   }
+ }
+
+ function resetSteps() {
+   state.stepsCompleted = { 1: false, 2: false, 3: false };
+   for (let i = 1; i <= 3; i++) {
+     const badge = document.getElementById(`step-badge-${i}`);
+     const numberSpan = document.getElementById(`step-${i}-number`);
+     const checkmarkSpan = document.getElementById(`step-${i}-checkmark`);
+     
+     if (badge) {
+       badge.classList.remove('completed');
+     }
+     if (numberSpan) {
+       numberSpan.style.display = 'inline';
+     }
+     if (checkmarkSpan) {
+       checkmarkSpan.style.display = 'none';
+     }
+   }
+ }
+
+ function pickRandomSummaryArticle() {
+     if (!state.articles || state.articles.length === 0) return;
+     const random = state.articles[Math.floor(Math.random() * state.articles.length)];
+     const selectElement = document.getElementById('summaries-article-select');
+     if (selectElement) {
+       selectElement.value = random.id;
+     }
+     // Reset steps for new article
+     resetSteps();
+     // Mark step 1 as complete
+     markStepComplete(1);
+     
+     // Directly load without relying on select element
+     state.summariesState.currentArticle = random;
+     state.classifyState.currentArticle = random;
+     
+     // Update URL with current article
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.set('article', random.id);
+    window.history.replaceState({}, '', `?${urlParams.toString()}`);
+    
+     document.getElementById('summaries-citation').textContent = random.citation;
+     const classificationCitationElement = document.getElementById('classification-citation');
+     if (classificationCitationElement) {
+       classificationCitationElement.textContent = random.citation;
+     }
+    
+    // Load PDF viewer
    const pdfContainer = document.getElementById('summaries-pdf-container');
    const emptyState = document.getElementById('summaries-empty-state');
    const pdfPath = `/data/articles/${random.id}.pdf`;
@@ -949,9 +1136,10 @@ async function submitSummaryReview(event) {
       body: JSON.stringify(submission)
     });
 
-    if (response.ok) {
-      showSubmissionSuccess('summary-form-status');
-    } else {
+     if (response.ok) {
+       markStepComplete(2);
+       showSubmissionSuccess('summary-form-status');
+     } else {
       const error = await response.json();
       alert(`Error: ${error.error}`);
     }
@@ -1349,11 +1537,12 @@ async function submitClassification(event) {
 
     console.log('[Submit Classification] Response status:', response.status);
     
-    if (response.ok) {
-      const result = await response.json();
-      console.log('[Submit Classification] Success:', result);
-      showSubmissionSuccess('classification-form-status');
-    } else {
+     if (response.ok) {
+       const result = await response.json();
+       console.log('[Submit Classification] Success:', result);
+       markStepComplete(3);
+       showSubmissionSuccess('classification-form-status');
+     } else {
       const error = await response.json();
       console.error('[Submit Classification] Error response:', error);
       alert(`Error: ${error.error}`);
@@ -1489,6 +1678,60 @@ function showClassificationDetail(index) {
 
 function closeClassificationDetail() {
   document.getElementById('classification-detail').style.display = 'none';
+}
+
+// ============================================================================
+// LEADERBOARD
+// ============================================================================
+
+async function loadLeaderboard() {
+  try {
+    const response = await fetch('/api/leaderboard', {
+      credentials: 'same-origin'
+    });
+    
+    if (response.ok) {
+      const leaderboardData = await response.json();
+      renderLeaderboard(leaderboardData);
+    } else {
+      document.getElementById('leaderboard-list').innerHTML = 
+        '<tr><td colspan="5" style="text-align: center;">Failed to load leaderboard</td></tr>';
+    }
+  } catch (error) {
+    console.error('Leaderboard error:', error);
+    document.getElementById('leaderboard-list').innerHTML = 
+      '<tr><td colspan="5" style="text-align: center;">Error loading leaderboard</td></tr>';
+  }
+}
+
+function renderLeaderboard(leaderboardData) {
+  if (!leaderboardData || leaderboardData.length === 0) {
+    document.getElementById('leaderboard-list').innerHTML = 
+      '<tr><td colspan="5" style="text-align: center;">No reviewers yet</td></tr>';
+    return;
+  }
+
+  let html = '';
+  leaderboardData.forEach((entry, index) => {
+    const rank = index + 1;
+    const totalScore = (entry.summaryReviews || 0) + (entry.categorizations || 0);
+    let rankClass = '';
+    if (rank === 1) rankClass = 'top-1';
+    else if (rank === 2) rankClass = 'top-2';
+    else if (rank === 3) rankClass = 'top-3';
+    
+    html += `
+      <tr>
+        <td><span class="leaderboard-rank ${rankClass}">${rank}</span></td>
+        <td><span class="leaderboard-initials">${entry.initials || '—'}</span></td>
+        <td>${entry.summaryReviews || 0}</td>
+        <td>${entry.categorizations || 0}</td>
+        <td><strong>${totalScore}</strong></td>
+      </tr>
+    `;
+  });
+  
+  document.getElementById('leaderboard-list').innerHTML = html;
 }
 
 // Filters event listeners

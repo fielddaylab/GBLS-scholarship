@@ -567,10 +567,11 @@ textarea {
     min-height: auto;
   }
 
-  .reader-stage {
-    min-height: auto;
-    height: auto;
-  }
+   .reader-stage {
+     min-height: auto;
+     height: auto;
+     overflow: hidden;
+   }
 
   .reader-toolbar,
   .article-source-panel,
@@ -692,6 +693,24 @@ textarea {
    font-size: 1.25rem;
    font-weight: 700;
    flex-shrink: 0;
+   position: relative;
+ }
+
+ .step-badge.completed {
+   background: #22c55e;
+ }
+
+ .step-badge.completed #step-1-number,
+ .step-badge.completed #step-2-number,
+ .step-badge.completed #step-3-number {
+   display: none;
+ }
+
+ .step-badge.completed #step-1-checkmark,
+ .step-badge.completed #step-2-checkmark,
+ .step-badge.completed #step-3-checkmark {
+   display: inline;
+   font-size: 1.5rem;
  }
 
  .step-content {
@@ -714,12 +733,13 @@ textarea {
  }
 
  .reader-stage {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+   position: relative;
+   min-height: 70vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   overflow: hidden;
+ }
 
 .reader-toolbar {
   width: min(980px, calc(100vw - 3rem));
@@ -801,14 +821,7 @@ textarea {
    z-index: 50;
  }
 
-.reader-workspace.panel-open .summary-panel-overlay {
-  opacity: 1;
-  pointer-events: auto;
-}
 
-.reader-workspace.panel-open .summary-drawer {
-   right: 0;
-}
 
 .summary-drawer-header {
    display: flex;
@@ -1093,11 +1106,68 @@ textarea {
 }
 
 .classifications-table button {
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-}
+   padding: 0.5rem 1rem;
+   font-size: 0.875rem;
+ }
 
-/* Classification Detail */
+ /* Leaderboard Table */
+ .leaderboard-container {
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 2rem 1rem;
+ }
+
+ .leaderboard-table-wrapper {
+   background: white;
+   border-radius: 0.55rem;
+   box-shadow: var(--shadow);
+   overflow: hidden;
+ }
+
+ .leaderboard-table {
+   width: 100%;
+   border-collapse: collapse;
+   background: white;
+ }
+
+ .leaderboard-table thead {
+   background: var(--light-bg);
+   font-weight: 600;
+ }
+
+ .leaderboard-table th, .leaderboard-table td {
+   padding: 1rem;
+   text-align: left;
+   border-bottom: 1px solid var(--border-color);
+ }
+
+ .leaderboard-table tbody tr:hover {
+   background: var(--light-bg);
+ }
+
+ .leaderboard-rank {
+   font-weight: 700;
+   font-size: 1.1rem;
+ }
+
+ .leaderboard-rank.top-1 {
+   color: #fbbf24;
+ }
+
+ .leaderboard-rank.top-2 {
+   color: #a8a29e;
+ }
+
+ .leaderboard-rank.top-3 {
+   color: #d97706;
+ }
+
+ .leaderboard-initials {
+   font-weight: 600;
+   font-size: 1rem;
+ }
+
+ /* Classification Detail */
 .classification-detail {
   background: white;
   padding: 2rem;

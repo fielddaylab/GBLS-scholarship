@@ -22,20 +22,21 @@ import session from 'express-session';
 import axios from 'axios';
 import passport from './passport.mjs';
 import {
-  initializeDatabase,
-  getUserByEmail,
-  getUserById,
-  getUserByInitials,
-  isInitialsTaken,
-  createArticleCoding,
-  createOrUpdateArticleCoding,
-  getArticleCodings,
-  createSummaryReview,
-  createOrUpdateSummaryReview,
-  getSummaryReviews,
-  getUserSummaryReview,
-  getUserArticleCoding
-} from './db.mjs';
+   initializeDatabase,
+   getDatabase,
+   getUserByEmail,
+   getUserById,
+   getUserByInitials,
+   isInitialsTaken,
+   createArticleCoding,
+   createOrUpdateArticleCoding,
+   getArticleCodings,
+   createSummaryReview,
+   createOrUpdateSummaryReview,
+   getSummaryReviews,
+   getUserSummaryReview,
+   getUserArticleCoding
+ } from './db.mjs';
 import {
   createToken,
   verifyToken,
@@ -764,13 +765,85 @@ app.post('/api/summaries', requireAuth, async (req, res) => {
       rubric.version
     );
 
-    res.json({ success: true, id: result.id, updated: result.updated });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
+   res.json({ success: true, id: result.id, updated: result.updated });
+   } catch (error) {
+     res.status(500).json({ error: error.message });
+   }
+ });
 
-// ==================== ERROR HANDLING ====================
+ // ==================== LEADERBOARD ====================
+
+  app.get('/api/leaderboard', requireAuth, (req, res) => {
+    try {
+      const db = getDatabase();
+      console.log('[Leaderboard] Database connected');
+      
+      // Query summary reviews count per user
+      const summaryStats = db.prepare(`
+        SELECT 
+          sr.user_id,
+          u.initials,
+          COUNT(*) as summary_count
+        FROM summary_reviews sr
+        JOIN users u ON sr.user_id = u.id
+        GROUP BY sr.user_id
+      `).all();
+      console.log('[Leaderboard] Summary stats:', summaryStats?.length || 0, 'users');
+      
+      // Query article codings count per user
+      const codingStats = db.prepare(`
+        SELECT 
+          ac.user_id,
+          u.initials,
+          COUNT(*) as coding_count
+        FROM article_codings ac
+        JOIN users u ON ac.user_id = u.id
+        GROUP BY ac.user_id
+      `).all();
+      console.log('[Leaderboard] Coding stats:', codingStats?.length || 0, 'users');
+      
+      // Combine the data
+      const scores = {};
+      
+      if (summaryStats && Array.isArray(summaryStats)) {
+        summaryStats.forEach(row => {
+          if (!scores[row.user_id]) {
+            scores[row.user_id] = { id: row.user_id, initials: row.initials, summaryReviews: 0, categorizations: 0 };
+          }
+          scores[row.user_id].summaryReviews = parseInt(row.summary_count) || 0;
+        });
+      }
+      
+      if (codingStats && Array.isArray(codingStats)) {
+        codingStats.forEach(row => {
+          if (!scores[row.user_id]) {
+            scores[row.user_id] = { id: row.user_id, initials: row.initials, summaryReviews: 0, categorizations: 0 };
+          }
+          scores[row.user_id].categorizations = parseInt(row.coding_count) || 0;
+        });
+      }
+      
+      // Convert to array and sort by total score
+      const leaderboard = Object.values(scores)
+        .map(entry => ({
+          id: entry.id,
+          initials: entry.initials || '—',
+          summaryReviews: entry.summaryReviews,
+          categorizations: entry.categorizations,
+          totalScore: entry.summaryReviews + entry.categorizations
+        }))
+        .sort((a, b) => b.totalScore - a.totalScore);
+      
+      console.log('[Leaderboard] Final leaderboard:', leaderboard.length, 'entries');
+      res.json(leaderboard);
+    } catch (error) {
+      console.error('[Leaderboard] Error:', error.message);
+      console.error('[Leaderboard] Stack:', error.stack);
+      res.status(500).json({ error: error.message, leaderboard: [] });
+    }
+  });
+
+ // ==================== ERROR HANDLING ====================
 
 app.use((req, res) => {
   res.status(404).json({ error: 'Not found' });
