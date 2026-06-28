@@ -85,64 +85,47 @@ export function initializeDatabase() {
   return db;
 }
 
-function runMigrations(database) {
-  // Migration: Add columns if they don't exist
+/**
+ * Add a column to a table if it does not already exist.
+ *
+ * Each call is independently guarded so that one failing migration can never
+ * prevent later migrations from running (previously a single throw in the
+ * shared try/catch silently skipped every subsequent column, e.g. is_archived).
+ *
+ * NOTE: SQLite's ALTER TABLE ADD COLUMN only accepts a *constant* default.
+ * Non-constant defaults like CURRENT_TIMESTAMP are rejected with
+ * "Cannot add a column with non-constant default" — add such columns nullable.
+ *
+ * @param {import('better-sqlite3').Database} database
+ * @param {string} table
+ * @param {string} column
+ * @param {string} definition  Column type + constant default, e.g. "INTEGER DEFAULT 0".
+ */
+function addColumnIfMissing(database, table, column, definition) {
   try {
-    const userColumns = database.prepare("PRAGMA table_info(users)").all();
-    const userColumnNames = userColumns.map(col => col.name);
-    
-    if (!userColumnNames.includes('github_username')) {
-      console.log('[MIGRATION] Adding github_username column to users');
-      database.exec('ALTER TABLE users ADD COLUMN github_username TEXT');
-    }
+    const cols = database.prepare(`PRAGMA table_info(${table})`).all();
+    if (cols.some((c) => c.name === column)) return;
 
-    if (!userColumnNames.includes('is_admin')) {
-      console.log('[MIGRATION] Adding is_admin column to users');
-      database.exec('ALTER TABLE users ADD COLUMN is_admin INTEGER DEFAULT 0');
-    }
-
-    const codingColumns = database.prepare("PRAGMA table_info(article_codings)").all();
-    const codingColumnNames = codingColumns.map(col => col.name);
-    
-    if (!codingColumnNames.includes('saved_at')) {
-      console.log('[MIGRATION] Adding saved_at column to article_codings');
-      database.exec('ALTER TABLE article_codings ADD COLUMN saved_at DATETIME DEFAULT CURRENT_TIMESTAMP');
-    }
-    
-    if (!codingColumnNames.includes('had_issues')) {
-      console.log('[MIGRATION] Adding had_issues column to article_codings');
-      database.exec('ALTER TABLE article_codings ADD COLUMN had_issues INTEGER DEFAULT 0');
-    }
-    
-    if (!codingColumnNames.includes('notes')) {
-      console.log('[MIGRATION] Adding notes column to article_codings');
-      database.exec('ALTER TABLE article_codings ADD COLUMN notes TEXT');
-    }
-
-    const summaryColumns = database.prepare("PRAGMA table_info(summary_reviews)").all();
-    const summaryColumnNames = summaryColumns.map(col => col.name);
-    
-    if (!summaryColumnNames.includes('saved_at')) {
-      console.log('[MIGRATION] Adding saved_at column to summary_reviews');
-      database.exec('ALTER TABLE summary_reviews ADD COLUMN saved_at DATETIME DEFAULT CURRENT_TIMESTAMP');
-    }
-
-    if (!summaryColumnNames.includes('is_archived')) {
-      console.log('[MIGRATION] Adding is_archived column to summary_reviews');
-      database.exec('ALTER TABLE summary_reviews ADD COLUMN is_archived INTEGER DEFAULT 0');
-    }
-
-    // Re-check coding columns for is_archived
-    const codingColumnsAfter = database.prepare("PRAGMA table_info(article_codings)").all();
-    const codingColumnNamesAfter = codingColumnsAfter.map(col => col.name);
-    
-    if (!codingColumnNamesAfter.includes('is_archived')) {
-      console.log('[MIGRATION] Adding is_archived column to article_codings');
-      database.exec('ALTER TABLE article_codings ADD COLUMN is_archived INTEGER DEFAULT 0');
-    }
+    console.log(`[MIGRATION] Adding ${column} column to ${table}`);
+    database.exec(`ALTER TABLE ${table} ADD COLUMN ${column} ${definition}`);
   } catch (error) {
-    console.error('[MIGRATION] Error running migrations:', error.message);
+    console.error(`[MIGRATION] Failed adding ${table}.${column}:`, error.message);
   }
+}
+
+function runMigrations(database) {
+  // Each migration is isolated: a failure in one does not block the others.
+  addColumnIfMissing(database, 'users', 'github_username', 'TEXT');
+  addColumnIfMissing(database, 'users', 'is_admin', 'INTEGER DEFAULT 0');
+
+  // saved_at is nullable because CURRENT_TIMESTAMP is not a valid ADD COLUMN default.
+  addColumnIfMissing(database, 'article_codings', 'saved_at', 'DATETIME');
+  addColumnIfMissing(database, 'article_codings', 'had_issues', 'INTEGER DEFAULT 0');
+  addColumnIfMissing(database, 'article_codings', 'notes', 'TEXT');
+  addColumnIfMissing(database, 'article_codings', 'is_archived', 'INTEGER DEFAULT 0');
+
+  addColumnIfMissing(database, 'summary_reviews', 'saved_at', 'DATETIME');
+  addColumnIfMissing(database, 'summary_reviews', 'is_archived', 'INTEGER DEFAULT 0');
 }
 
 export function getDatabase() {
