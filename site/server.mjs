@@ -1118,8 +1118,8 @@ app.post('/api/ai/bulk-submissions', (req, res) => {
           const codingId = `${articleId}-${aiUser.id}-${Date.now()}`;
           
           db.prepare(`
-            INSERT INTO article_codings (id, article_id, user_id, codes, had_issues, notes, created_at, saved_at)
-            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+            INSERT INTO article_codings (id, article_id, user_id, codes, had_issues, notes, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
           `).run(codingId, articleId, aiUser.id, JSON.stringify(codes), hadIssues ? 1 : 0, notes || '');
           
           results.successful++;
@@ -1128,8 +1128,8 @@ app.post('/api/ai/bulk-submissions', (req, res) => {
           const reviewId = `${articleId}-${aiUser.id}-${Date.now()}`;
           
           db.prepare(`
-            INSERT INTO summary_reviews (id, article_id, user_id, ratings, quality_rating, notes, created_at, saved_at)
-            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+            INSERT INTO summary_reviews (id, article_id, user_id, ratings, quality_rating, notes, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
           `).run(reviewId, articleId, aiUser.id, JSON.stringify(ratings), qualityRating, notes || '');
           
           results.successful++;
