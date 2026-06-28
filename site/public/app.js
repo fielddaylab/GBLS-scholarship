@@ -1,6 +1,23 @@
 // GBLS Literature Reviewer - Unified Frontend Application
 // Combines metrics explorer and lit_coder functionality
 
+// GA Event Tracking Utility
+function trackEvent(eventName, eventParams = {}) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', eventName, eventParams);
+  }
+}
+
+// Track page views with tab name
+function trackPageView(tabName) {
+  if (typeof gtag !== 'undefined') {
+    gtag('config', 'G-YMVX0EZ5RD', {
+      'page_title': `GBLS - ${tabName}`,
+      'page_path': `/?tab=${tabName}`
+    });
+  }
+}
+
 // Global State
 const state = {
   user: null,
@@ -82,8 +99,52 @@ function combineMetricsWithReference(gblsMetrics, referenceCorpus) {
 }
 
 async function loadStaticMetricsBundle() {
-  await loadScriptOnce('/data/metrics_explorer_data.js');
-  return combineMetricsWithReference(window.GBLS_METRICS, window.GBLS_REFERENCE_CORPUS);
+   await loadScriptOnce('/data/metrics_explorer_data.js');
+   return combineMetricsWithReference(window.GBLS_METRICS, window.GBLS_REFERENCE_CORPUS);
+ }
+
+// PDF Scroll Tracking
+const scrollTracking = {
+  currentArticleId: null,
+  scrollCheckpoints: new Set(),
+  maxScroll: 0,
+  startTime: null
+};
+
+function initializePDFScrollTracking() {
+  const readerStage = document.getElementById('reader-stage');
+  if (!readerStage) return;
+  
+  readerStage.addEventListener('scroll', throttleScrollTracking, { passive: true });
+}
+
+function throttleScrollTracking() {
+  const readerStage = document.getElementById('reader-stage');
+  if (!readerStage) return;
+  
+  const scrollHeight = readerStage.scrollHeight - readerStage.clientHeight;
+  const scrollTop = readerStage.scrollTop;
+  
+  if (scrollHeight > 0) {
+    const scrollPercent = Math.floor((scrollTop / scrollHeight) * 100);
+    const checkpoint = Math.floor(scrollPercent / 10) * 10; // Track in 10% increments
+    
+    if (!scrollTracking.scrollCheckpoints.has(checkpoint)) {
+      scrollTracking.scrollCheckpoints.add(checkpoint);
+      scrollTracking.maxScroll = Math.max(scrollTracking.maxScroll, scrollPercent);
+    }
+  }
+}
+
+function trackPDFScrolling(articleId) {
+  scrollTracking.currentArticleId = articleId;
+  scrollTracking.scrollCheckpoints.clear();
+  scrollTracking.maxScroll = 0;
+  scrollTracking.startTime = Date.now();
+}
+
+function getPDFScrollPercentage() {
+  return scrollTracking.maxScroll || 0;
 }
 
 // Initialize app
@@ -97,24 +158,29 @@ document.addEventListener('DOMContentLoaded', async () => {
      return;
    }
 
-   setupTabs();
-   setupUserMenu();
-   await loadInitialData();
-   
-   // Handle View Classifications tab visibility
-   const viewTab = document.querySelector('[data-tab="view"]');
-   const isDebug = new URLSearchParams(window.location.search).has('debug');
-   const isAllowedUser = state.user?.github === 'mrdavidgagnon';
-   if (viewTab && !isDebug && !isAllowedUser) {
-     viewTab.style.display = 'none';
-   }
-   
-    // Load tab from URL or default to summaries
-    const urlParams = new URLSearchParams(window.location.search);
-    const tabFromUrl = urlParams.get('tab') || 'summaries';
-    const articleFromUrl = urlParams.get('article');
+    setupTabs();
+    setupUserMenu();
+    await loadInitialData();
+    initializePDFScrollTracking();
     
-    switchTab(tabFromUrl);
+    // Track initial page view
+    trackPageView('summaries');
+    trackEvent('page_view');
+    
+    // Handle View Classifications tab visibility
+    const viewTab = document.querySelector('[data-tab="view"]');
+    const isDebug = new URLSearchParams(window.location.search).has('debug');
+    const isAllowedUser = state.user?.github === 'mrdavidgagnon';
+    if (viewTab && !isDebug && !isAllowedUser) {
+      viewTab.style.display = 'none';
+    }
+    
+     // Load tab from URL or default to summaries
+     const urlParams = new URLSearchParams(window.location.search);
+     const tabFromUrl = urlParams.get('tab') || 'summaries';
+     const articleFromUrl = urlParams.get('article');
+     
+     switchTab(tabFromUrl);
     
      // If article is in URL, load it after tab initialization
      if (articleFromUrl && tabFromUrl === 'summaries') {
@@ -189,6 +255,10 @@ function switchTab(tabName) {
    });
 
    state.currentTab = tabName;
+   
+   // Track tab view in GA
+   trackPageView(tabName);
+   trackEvent('tab_view', {tab_name: tabName});
    
    // Update URL with current tab
    const urlParams = new URLSearchParams(window.location.search);
@@ -749,26 +819,35 @@ async function performLoadSummaryArticle(article) {
    state.summariesState.currentArticle = article;
    state.classifyState.currentArticle = article;
    
-   // Update URL with current article
-   const urlParams = new URLSearchParams(window.location.search);
-   urlParams.set('article', articleId);
-   window.history.replaceState({}, '', `?${urlParams.toString()}`);
+    // Track article load in GA
+    trackEvent('article_load', {
+      article_id: articleId,
+      tab: state.currentTab
+    });
+    
+    // Initialize PDF scroll tracking for this article
+    trackPDFScrolling(articleId);
+    
+    // Update URL with current article
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.set('article', articleId);
+    window.history.replaceState({}, '', `?${urlParams.toString()}`);
 
-    document.getElementById('summaries-citation').textContent = article.citation;
-    const classificationCitationElement = document.getElementById('classification-citation');
-    if (classificationCitationElement) {
-      classificationCitationElement.textContent = article.citation;
-    }
-   
-   // Load PDF viewer
-   const pdfContainer = document.getElementById('summaries-pdf-container');
-   const emptyState = document.getElementById('summaries-empty-state');
-   const pdfPath = `/data/articles/${article.id}.pdf`;
-   pdfContainer.style.display = 'flex';
-   if (emptyState) emptyState.style.display = 'none';
-   pdfContainer.innerHTML = `<object data="${pdfPath}" type="application/pdf" style="width: 100%; height: 100%; border-radius: 0.4rem;">
-     <p>PDF cannot be displayed. <a href="${pdfPath}" target="_blank">Download PDF</a></p>
-   </object>`;
+     document.getElementById('summaries-citation').textContent = article.citation;
+     const classificationCitationElement = document.getElementById('classification-citation');
+     if (classificationCitationElement) {
+       classificationCitationElement.textContent = article.citation;
+     }
+    
+    // Load PDF viewer
+    const pdfContainer = document.getElementById('summaries-pdf-container');
+    const emptyState = document.getElementById('summaries-empty-state');
+    const pdfPath = `/data/articles/${article.id}.pdf`;
+    pdfContainer.style.display = 'flex';
+    if (emptyState) emptyState.style.display = 'none';
+    pdfContainer.innerHTML = `<object data="${pdfPath}" type="application/pdf" style="width: 100%; height: 100%; border-radius: 0.4rem;">
+      <p>PDF cannot be displayed. <a href="${pdfPath}" target="_blank">Download PDF</a></p>
+    </object>`;
 
    openSummaryPanel();
    
@@ -1049,29 +1128,37 @@ function closeAllPanels() {
    }
  }
 
- function pickRandomSummaryArticle() {
-     if (!state.articles || state.articles.length === 0) return;
-     const random = state.articles[Math.floor(Math.random() * state.articles.length)];
-     const selectElement = document.getElementById('summaries-article-select');
-     if (selectElement) {
-       selectElement.value = random.id;
-     }
-     // Reset steps for new article
-     resetSteps();
-     // Mark step 1 as complete
-     markStepComplete(1);
-     
-      // Directly load without relying on select element
-      state.summariesState.currentArticle = random;
-      state.classifyState.currentArticle = random;
+  function pickRandomSummaryArticle() {
+      if (!state.articles || state.articles.length === 0) return;
+      const random = state.articles[Math.floor(Math.random() * state.articles.length)];
+      const selectElement = document.getElementById('summaries-article-select');
+      if (selectElement) {
+        selectElement.value = random.id;
+      }
+      // Reset steps for new article
+      resetSteps();
+      // Mark step 1 as complete
+      markStepComplete(1);
       
-      // Enable panel buttons now that article is loaded
-      updatePanelButtonStates();
+      // Track random article pick
+      trackEvent('random_article_picked', {
+        article_id: random.id
+      });
       
-      // Update URL with current article
-    const urlParams = new URLSearchParams(window.location.search);
-    urlParams.set('article', random.id);
-    window.history.replaceState({}, '', `?${urlParams.toString()}`);
+      // Initialize PDF scroll tracking for this article
+      trackPDFScrolling(random.id);
+      
+       // Directly load without relying on select element
+       state.summariesState.currentArticle = random;
+       state.classifyState.currentArticle = random;
+       
+       // Enable panel buttons now that article is loaded
+       updatePanelButtonStates();
+       
+       // Update URL with current article
+     const urlParams = new URLSearchParams(window.location.search);
+     urlParams.set('article', random.id);
+     window.history.replaceState({}, '', `?${urlParams.toString()}`);
     
      document.getElementById('summaries-citation').textContent = random.citation;
      const classificationCitationElement = document.getElementById('classification-citation');
@@ -1201,27 +1288,44 @@ async function submitSummaryReview(event) {
     notes: notes
   };
 
-  try {
-    const response = await fetch('/api/summaries', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      credentials: 'same-origin',
-      body: JSON.stringify(submission)
-    });
+   try {
+     const submissionTime = new Date().toISOString();
+     const response = await fetch('/api/summaries', {
+       method: 'POST',
+       headers: { 'Content-Type': 'application/json' },
+       credentials: 'same-origin',
+       body: JSON.stringify(submission)
+     });
 
-     if (response.ok) {
-       markStepComplete(2);
-       showLeaderboardBadge();
-       showSubmissionSuccess('summary-form-status');
-     } else {
-      const error = await response.json();
-      alert(`Error: ${error.error}`);
-    }
-  } catch (error) {
-    console.error('Summary submission error:', error);
-    alert(`Error submitting review: ${error.message}`);
-  }
-}
+       if (response.ok) {
+         // Track summary review submission
+         trackEvent('summary_review_submitted', {
+           article_id: state.summariesState.currentArticle.id,
+           submission_time: submissionTime,
+           overall_quality: overallQuality,
+           pdf_scroll_percentage: getPDFScrollPercentage()
+         });
+        
+        markStepComplete(2);
+        showLeaderboardBadge();
+        showSubmissionSuccess('summary-form-status');
+      } else {
+       const error = await response.json();
+       alert(`Error: ${error.error}`);
+       trackEvent('summary_review_error', {
+         article_id: state.summariesState.currentArticle.id,
+         error: error.error
+       });
+     }
+   } catch (error) {
+     console.error('Summary submission error:', error);
+     alert(`Error submitting review: ${error.message}`);
+     trackEvent('summary_review_error', {
+       article_id: state.summariesState.currentArticle.id,
+       error: error.message
+     });
+   }
+ }
 
 // ============================================================================
 // TAB 3: REVIEW CLASSIFICATIONS
@@ -1639,32 +1743,53 @@ async function submitClassification(event) {
 
   console.log('[Submit Classification] Submitting:', submission);
 
-  try {
-    const response = await fetch('/api/codings', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      credentials: 'same-origin',
-      body: JSON.stringify(submission)
-    });
+   try {
+     const submissionTime = new Date().toISOString();
+     const numCodesSelected = Object.values(codes).reduce((sum, arr) => sum + (Array.isArray(arr) ? arr.length : 0), 0);
+     
+     const response = await fetch('/api/codings', {
+       method: 'POST',
+       headers: { 'Content-Type': 'application/json' },
+       credentials: 'same-origin',
+       body: JSON.stringify(submission)
+     });
 
-    console.log('[Submit Classification] Response status:', response.status);
-    
-     if (response.ok) {
-       const result = await response.json();
-       console.log('[Submit Classification] Success:', result);
-       markStepComplete(3);
-       showLeaderboardBadge();
-       showSubmissionSuccess('classification-form-status');
-     } else {
-      const error = await response.json();
-      console.error('[Submit Classification] Error response:', error);
-      alert(`Error: ${error.error}`);
-    }
-  } catch (error) {
-    console.error('[Submit Classification] Error:', error);
-    alert(`Error submitting classification: ${error.message}`);
-  }
-}
+     console.log('[Submit Classification] Response status:', response.status);
+     
+      if (response.ok) {
+        const result = await response.json();
+        console.log('[Submit Classification] Success:', result);
+        
+         // Track classification submission
+         trackEvent('classification_submitted', {
+           article_id: state.classifyState.currentArticle.id,
+           submission_time: submissionTime,
+           num_codes_selected: numCodesSelected,
+           had_issues: hadIssues,
+           pdf_scroll_percentage: getPDFScrollPercentage()
+         });
+        
+        markStepComplete(3);
+        showLeaderboardBadge();
+        showSubmissionSuccess('classification-form-status');
+      } else {
+       const error = await response.json();
+       console.error('[Submit Classification] Error response:', error);
+       alert(`Error: ${error.error}`);
+       trackEvent('classification_error', {
+         article_id: state.classifyState.currentArticle.id,
+         error: error.error
+       });
+     }
+   } catch (error) {
+     console.error('[Submit Classification] Error:', error);
+     alert(`Error submitting classification: ${error.message}`);
+     trackEvent('classification_error', {
+       article_id: state.classifyState.currentArticle.id,
+       error: error.message
+     });
+   }
+ }
 
 function switchToClassifyArticle(articleId) {
   switchTab('classify');

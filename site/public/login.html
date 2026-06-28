@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign In - Games Based Library Services Literature</title>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMVX0EZ5RD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YMVX0EZ5RD');
+  </script>
+  
   <style>
     * {
       margin: 0;
@@ -213,23 +224,23 @@
       <p>Sign in to your account</p>
     </div>
 
-     <div class="oauth-buttons" style="grid-template-columns: 1fr;">
-       <a href="/auth/github" class="oauth-btn github" style="margin-bottom: 10px;">
-         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-         </svg>
-         Sign in with GitHub
-       </a>
-       <a href="/auth/google" class="oauth-btn google">
-         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-           <path d="M15.5 8.2c0-.5-.1-1-.2-1.5H8v2.8h4.4c-.2 1-.8 1.9-1.6 2.5v2h2.6c1.5-1.4 2.4-3.4 2.4-5.8z" fill="#4285F4"/>
-           <path d="M8 16c2.1 0 3.9-.7 5.2-1.9l-2.6-2c-.7.5-1.6.8-2.6.8-2 0-3.7-1.3-4.3-3.2H1v2.6C2.3 15 5 16 8 16z" fill="#34A853"/>
-           <path d="M3.7 9.7c-.3-.5-.4-1-.4-1.7s.1-1.2.4-1.7V3.7H1C.3 5.1 0 6.5 0 8s.3 2.9 1 4.3l2.7-2.6z" fill="#FBBC04"/>
-           <path d="M8 3.1c1.1 0 2.1.4 2.9 1.2l2.2-2.2C11.8.6 10.1 0 8 0 5 0 2.3 1 1 3.7l2.7 2.6c.6-1.9 2.3-3.2 4.3-3.2z" fill="#EA4335"/>
-         </svg>
-         Sign in with Google
-       </a>
-     </div>
+      <div class="oauth-buttons" style="grid-template-columns: 1fr;">
+        <a href="/auth/github" class="oauth-btn github" style="margin-bottom: 10px;" onclick="gtag('event', 'login_attempt', {method: 'github'});">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          Sign in with GitHub
+        </a>
+        <a href="/auth/google" class="oauth-btn google" onclick="gtag('event', 'login_attempt', {method: 'google'});">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M15.5 8.2c0-.5-.1-1-.2-1.5H8v2.8h4.4c-.2 1-.8 1.9-1.6 2.5v2h2.6c1.5-1.4 2.4-3.4 2.4-5.8z" fill="#4285F4"/>
+            <path d="M8 16c2.1 0 3.9-.7 5.2-1.9l-2.6-2c-.7.5-1.6.8-2.6.8-2 0-3.7-1.3-4.3-3.2H1v2.6C2.3 15 5 16 8 16z" fill="#34A853"/>
+            <path d="M3.7 9.7c-.3-.5-.4-1-.4-1.7s.1-1.2.4-1.7V3.7H1C.3 5.1 0 6.5 0 8s.3 2.9 1 4.3l2.7-2.6z" fill="#FBBC04"/>
+            <path d="M8 3.1c1.1 0 2.1.4 2.9 1.2l2.2-2.2C11.8.6 10.1 0 8 0 5 0 2.3 1 1 3.7l2.7 2.6c.6-1.9 2.3-3.2 4.3-3.2z" fill="#EA4335"/>
+          </svg>
+          Sign in with Google
+        </a>
+      </div>
 
      <!-- Debug login (development only) -->
      <div id="debugSection" style="display: none; margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee;">
@@ -242,48 +253,50 @@
      </div>
    </div>
 
-   <script>
-     // Debug login function
-     async function debugLogin() {
-       const btn = document.getElementById('debugLoginBtn');
-       btn.disabled = true;
-       btn.textContent = 'Loading...';
-       
-        try {
-          console.log('[DEBUG] Starting debug login...');
-          console.log('[DEBUG] Browser:', navigator.userAgent);
-          
-          const response = await fetch('/api/debug-login', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            credentials: 'same-origin'
-          });
-          
-          const data = await response.json();
-          console.log('[DEBUG] Response status:', response.status);
-          console.log('[DEBUG] Response headers:', {
-            'set-cookie': response.headers.get('set-cookie'),
-            'content-type': response.headers.get('content-type')
-          });
-          console.log('[DEBUG] Response data:', data);
-          console.log('[DEBUG] Cookies after response:', document.cookie);
-          
-          if (response.ok) {
-            console.log('[DEBUG] Login successful, waiting for cookie...');
-            // Small delay to ensure cookie is persisted
-            await new Promise(r => setTimeout(r, 500));
-            console.log('[DEBUG] Cookies before redirect:', document.cookie);
-            window.location.href = '/';
-          } else {
-            throw new Error(data.error || 'Login failed');
-          }
-       } catch (error) {
-         console.error('[DEBUG] Error:', error);
-         alert('Debug login failed: ' + error.message);
-         btn.disabled = false;
-         btn.textContent = 'Debug Login';
-       }
-     }
+    <script>
+      // Debug login function
+      async function debugLogin() {
+        const btn = document.getElementById('debugLoginBtn');
+        btn.disabled = true;
+        btn.textContent = 'Loading...';
+        
+        gtag('event', 'login_attempt', {method: 'debug'});
+        
+         try {
+           console.log('[DEBUG] Starting debug login...');
+           console.log('[DEBUG] Browser:', navigator.userAgent);
+           
+           const response = await fetch('/api/debug-login', {
+             method: 'POST',
+             headers: { 'Content-Type': 'application/json' },
+             credentials: 'same-origin'
+           });
+           
+           const data = await response.json();
+           console.log('[DEBUG] Response status:', response.status);
+           console.log('[DEBUG] Response headers:', {
+             'set-cookie': response.headers.get('set-cookie'),
+             'content-type': response.headers.get('content-type')
+           });
+           console.log('[DEBUG] Response data:', data);
+           console.log('[DEBUG] Cookies after response:', document.cookie);
+           
+           if (response.ok) {
+             console.log('[DEBUG] Login successful, waiting for cookie...');
+             // Small delay to ensure cookie is persisted
+             await new Promise(r => setTimeout(r, 500));
+             console.log('[DEBUG] Cookies before redirect:', document.cookie);
+             window.location.href = '/';
+           } else {
+             throw new Error(data.error || 'Login failed');
+           }
+        } catch (error) {
+          console.error('[DEBUG] Error:', error);
+          alert('Debug login failed: ' + error.message);
+          btn.disabled = false;
+          btn.textContent = 'Debug Login';
+        }
+      }
      
      // Show debug section if debug mode is enabled
      async function checkDebugMode() {
