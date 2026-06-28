@@ -887,10 +887,15 @@ app.post('/api/admin/users/:userId/toggle-admin', requireAuth, (req, res) => {
     const userId = parseInt(req.params.userId);
     const db = getDatabase();
     
-    // Get current admin status
-    const user = db.prepare('SELECT is_admin FROM users WHERE id = ?').get(userId);
+    // Get user data
+    const user = db.prepare('SELECT id, email, is_admin FROM users WHERE id = ?').get(userId);
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
+    }
+
+    // Prevent removing super admin status
+    if (user.email === 'mrdavidgagnon@gmail.com') {
+      return res.status(403).json({ error: 'Cannot modify super admin access' });
     }
 
     // Toggle admin status

@@ -1880,21 +1880,32 @@ function renderAdminUsersList(users) {
     return;
   }
 
-  container.innerHTML = users.map(user => `
-    <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.75rem; background: var(--light-bg); border-radius: 0.375rem; gap: 1rem;">
-      <div style="flex: 1; min-width: 0;">
-        <div style="font-weight: 500;">${user.full_name} (${user.initials})</div>
-        <div style="font-size: 0.85rem; color: var(--text-light);">${user.email}</div>
+  container.innerHTML = users.map(user => {
+    const isSuperAdmin = user.email === 'mrdavidgagnon@gmail.com';
+    const isDisabled = isSuperAdmin;
+    const buttonText = isSuperAdmin ? '★ Super Admin' : (user.is_admin ? '✓ Admin' : 'Make Admin');
+    const buttonStyle = isSuperAdmin 
+      ? 'background: #FFD700; color: #333; font-weight: bold; cursor: not-allowed; opacity: 0.8;'
+      : (user.is_admin ? 'background: var(--primary-color); color: white;' : '');
+    
+    return `
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.75rem; background: var(--light-bg); border-radius: 0.375rem; gap: 1rem;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="font-weight: 500;">${user.full_name} (${user.initials})${isSuperAdmin ? ' ⭐' : ''}</div>
+          <div style="font-size: 0.85rem; color: var(--text-light);">${user.email}</div>
+        </div>
+        <button 
+          class="btn-secondary" 
+          onclick="${isDisabled ? 'return false;' : `toggleUserAdmin(${user.id})`}"
+          ${isDisabled ? 'disabled' : ''}
+          style="white-space: nowrap; ${buttonStyle}${isDisabled ? 'cursor: not-allowed;' : ''}"
+          title="${isSuperAdmin ? 'Super admin cannot be modified' : ''}"
+        >
+          ${buttonText}
+        </button>
       </div>
-      <button 
-        class="btn-secondary" 
-        onclick="toggleUserAdmin(${user.id})" 
-        style="white-space: nowrap; ${user.is_admin ? 'background: var(--primary-color); color: white;' : ''}"
-      >
-        ${user.is_admin ? '✓ Admin' : 'Make Admin'}
-      </button>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 async function toggleUserAdmin(userId) {
@@ -1911,7 +1922,8 @@ async function toggleUserAdmin(userId) {
       // Reload the users list
       await loadAdminUsers();
     } else {
-      alert('Failed to toggle admin access');
+      const errorData = await response.json();
+      alert('Failed to toggle admin access: ' + (errorData.error || 'Unknown error'));
     }
   } catch (error) {
     console.error('Error toggling admin access:', error);
