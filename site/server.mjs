@@ -781,28 +781,30 @@ app.post('/api/summaries', requireAuth, async (req, res) => {
       const db = getDatabase();
       console.log('[Leaderboard] Database connected');
       
-      // Query summary reviews count per user
-      const summaryStats = db.prepare(`
-        SELECT 
-          sr.user_id,
-          u.initials,
-          COUNT(*) as summary_count
-        FROM summary_reviews sr
-        JOIN users u ON sr.user_id = u.id
-        GROUP BY sr.user_id
-      `).all();
-      console.log('[Leaderboard] Summary stats:', summaryStats?.length || 0, 'users');
-      
-      // Query article codings count per user
-      const codingStats = db.prepare(`
-        SELECT 
-          ac.user_id,
-          u.initials,
-          COUNT(*) as coding_count
-        FROM article_codings ac
-        JOIN users u ON ac.user_id = u.id
-        GROUP BY ac.user_id
-      `).all();
+       // Query summary reviews count per user (excluding AI users)
+       const summaryStats = db.prepare(`
+         SELECT 
+           sr.user_id,
+           u.initials,
+           COUNT(*) as summary_count
+         FROM summary_reviews sr
+         JOIN users u ON sr.user_id = u.id
+         WHERE u.email NOT LIKE 'ai-%@gbls.local'
+         GROUP BY sr.user_id
+       `).all();
+       console.log('[Leaderboard] Summary stats:', summaryStats?.length || 0, 'users');
+       
+       // Query article codings count per user (excluding AI users)
+       const codingStats = db.prepare(`
+         SELECT 
+           ac.user_id,
+           u.initials,
+           COUNT(*) as coding_count
+         FROM article_codings ac
+         JOIN users u ON ac.user_id = u.id
+         WHERE u.email NOT LIKE 'ai-%@gbls.local'
+         GROUP BY ac.user_id
+       `).all();
       console.log('[Leaderboard] Coding stats:', codingStats?.length || 0, 'users');
       
       // Combine the data
