@@ -2012,19 +2012,40 @@ function renderClassificationsTable() {
 
   const html = filtered.map((coding, i) => {
     const article = state.articles.find(a => a.id === coding.articleId);
-    const submitDate = coding.savedAt ? new Date(coding.savedAt).toLocaleDateString() : '—';
-    const rubricKeys = Object.keys(coding.rubric || {});
-    const qualityScore = rubricKeys.length > 0 ? 
-      (Object.values(coding.rubric).reduce((a, b) => a + b, 0) / rubricKeys.length).toFixed(1) : '—';
+    
+    // Parse timestamp safely
+    let submitDate = '—';
+    try {
+      if (coding.savedAt) {
+        const date = new Date(coding.savedAt);
+        if (!isNaN(date.getTime())) {
+          submitDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit', hour: '2-digit', minute: '2-digit' });
+        }
+      }
+    } catch (e) {
+      submitDate = '—';
+    }
+    
+    // Get codes summary
+    let codesStr = '—';
+    if (coding.codes && typeof coding.codes === 'object') {
+      const codeList = Object.entries(coding.codes)
+        .map(([key, values]) => `${key}: ${Array.isArray(values) ? values.join(', ') : values}`)
+        .join(' | ');
+      codesStr = codeList.substring(0, 100) + (codeList.length > 100 ? '...' : '');
+    }
+    
+    const hadIssues = coding.hadIssues ? 'Yes' : 'No';
 
     return `
-      <tr>
+      <tr style="font-size: 0.85rem;">
         <td>${coding.articleId}</td>
         <td>${coding.usercode}</td>
-        <td>${qualityScore}</td>
+        <td>${hadIssues}</td>
         <td>${submitDate}</td>
+        <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${codesStr}">${codesStr}</td>
         <td>
-          <button class="btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;" 
+          <button class="btn-secondary" style="padding: 0.5rem 0.75rem; font-size: 0.75rem; white-space: nowrap;" 
                   onclick="showClassificationDetail(${i})">
             View
           </button>
@@ -2040,23 +2061,33 @@ function showClassificationDetail(index) {
   const coding = state.codings[index];
   const article = state.articles.find(a => a.id === coding.articleId);
 
+  // Parse date safely
+  let submittedDate = '—';
+  try {
+    if (coding.savedAt) {
+      const date = new Date(coding.savedAt);
+      if (!isNaN(date.getTime())) {
+        submittedDate = date.toLocaleString();
+      }
+    }
+  } catch (e) {
+    submittedDate = '—';
+  }
+
   let html = `
     <p><strong>Article:</strong> ${coding.articleId} - ${article?.citation || 'Unknown'}</p>
     <p><strong>Coder:</strong> ${coding.usercode}</p>
-    <p><strong>Submitted:</strong> ${new Date(coding.savedAt).toLocaleString()}</p>
+    <p><strong>Submitted:</strong> ${submittedDate}</p>
+    <p><strong>Had Issues:</strong> ${coding.hadIssues ? 'Yes' : 'No'}</p>
   `;
 
-  if (coding.rubric && Object.keys(coding.rubric).length > 0) {
-    html += '<h4>Quality Scores</h4><ul>';
-    Object.entries(coding.rubric).forEach(([key, value]) => {
-      html += `<li><strong>${key}:</strong> ${value}</li>`;
-    });
-    html += '</ul>';
+  if (coding.notes) {
+    html += `<p><strong>Notes:</strong> ${coding.notes}</p>`;
   }
 
-  if (coding.lexicon && Object.keys(coding.lexicon).length > 0) {
+  if (coding.codes && Object.keys(coding.codes).length > 0) {
     html += '<h4>Classifications</h4><ul>';
-    Object.entries(coding.lexicon).forEach(([key, values]) => {
+    Object.entries(coding.codes).forEach(([key, values]) => {
       const valueStr = Array.isArray(values) ? values.join(', ') : values;
       html += `<li><strong>${key}:</strong> ${valueStr}</li>`;
     });

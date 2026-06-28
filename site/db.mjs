@@ -272,7 +272,10 @@ export function getArticleCodings() {
     codes: JSON.parse(row.codes),
     rubricId: row.rubric_id,
     rubricVersion: row.rubric_version,
-    timestamp: row.created_at
+    hadIssues: row.had_issues,
+    notes: row.notes,
+    timestamp: row.created_at,
+    savedAt: row.created_at
   }));
 }
 
