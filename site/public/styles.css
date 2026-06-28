@@ -141,6 +141,12 @@ html, body {
   border-bottom-color: var(--primary-color);
 }
 
+.tab-btn[style*="display: none"],
+.tab-btn.hidden {
+  display: none !important;
+  pointer-events: none !important;
+}
+
 /* Tab Content */
 .tab-content {
   padding: 1rem;

@@ -171,8 +171,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     const viewTab = document.querySelector('[data-tab="view"]');
     const isDebug = new URLSearchParams(window.location.search).has('debug');
     const isAllowedUser = state.user?.github === 'mrdavidgagnon';
-    if (viewTab && !isDebug && !isAllowedUser) {
-      viewTab.style.display = 'none';
+    console.log('[Tab Visibility] User:', state.user?.github, 'Debug:', isDebug, 'Allowed:', isAllowedUser);
+    if (viewTab) {
+      if (!isDebug && !isAllowedUser) {
+        viewTab.style.display = 'none';
+        viewTab.disabled = true;
+        console.log('[Tab Visibility] View tab hidden and disabled');
+      } else {
+        viewTab.style.display = 'block';
+        viewTab.disabled = false;
+        console.log('[Tab Visibility] View tab shown and enabled');
+      }
     }
     
      // Load tab from URL or default to summaries
@@ -244,6 +253,19 @@ function setupTabs() {
 }
 
 function switchTab(tabName) {
+   // Check if user is allowed to access restricted tabs
+   if (tabName === 'view') {
+     const isDebug = new URLSearchParams(window.location.search).has('debug');
+     const isAllowedUser = state.user?.github === 'mrdavidgagnon';
+     console.warn(`[switchTab] Attempting to access 'view' tab. User: ${state.user?.github}, Debug: ${isDebug}, Allowed: ${isAllowedUser}`);
+     if (!isDebug && !isAllowedUser) {
+       console.warn(`Access denied to tab 'view'. Redirecting to summaries.`);
+       // Redirect to summaries tab
+       switchTab('summaries');
+       return;
+     }
+   }
+   
    // Update button states
    document.querySelectorAll('.tab-btn').forEach(btn => {
      btn.classList.toggle('active', btn.dataset.tab === tabName);
