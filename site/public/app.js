@@ -26,6 +26,7 @@ const state = {
   articles: [],
   codings: [],
   summaries: [],
+  summaryRatings: [],
   currentTab: 'metrics',
   currentArticle: null,
   
@@ -303,11 +304,12 @@ function switchTab(tabName) {
       initializeSummariesTab();
     } else if (tabName === 'classify') {
       initializeClassifyTab();
-    } else if (tabName === 'view') {
-      loadAdminStats();
-      loadAdminUsers();
-      loadAllClassifications();
-    } else if (tabName === 'leaderboard') {
+     } else if (tabName === 'view') {
+       loadAdminStats();
+       loadAdminUsers();
+       loadAllSummaryRatings();
+       loadAllClassifications();
+     } else if (tabName === 'leaderboard') {
       loadLeaderboard();
     }
  }
@@ -2115,6 +2117,148 @@ function closeClassificationDetail() {
 }
 
 // ============================================================================
+// SUMMARY RATINGS ADMIN VIEW
+// ============================================================================
+
+async function loadAllSummaryRatings() {
+  try {
+    const response = await fetch('/api/admin/summaries');
+    if (response.ok) {
+      state.summaryRatings = await response.json();
+      renderSummaryRatingsTable();
+      populateSummaryReviewerFilter();
+    } else {
+      console.error('Failed to load summary ratings:', response.status);
+    }
+  } catch (error) {
+    console.error('Error loading summary ratings:', error);
+  }
+}
+
+function populateSummaryReviewerFilter() {
+  const select = document.getElementById('view-summary-filter');
+  const reviewers = new Set(state.summaryRatings.map(r => r.userInitials).filter(Boolean));
+  
+  Array.from(select.options).slice(1).forEach(opt => opt.remove());
+
+  reviewers.forEach(reviewer => {
+    const option = document.createElement('option');
+    option.value = reviewer;
+    option.textContent = reviewer;
+    select.appendChild(option);
+  });
+}
+
+function renderSummaryRatingsTable() {
+  const container = document.getElementById('summaries-list');
+  const articleFilter = document.getElementById('view-summary-article-filter').value.toLowerCase();
+  const reviewerFilter = document.getElementById('view-summary-filter').value;
+
+  let filtered = state.summaryRatings || [];
+  if (articleFilter) {
+    filtered = filtered.filter(r => 
+      (state.articles.find(a => a.id === r.articleId)?.citation || '').toLowerCase().includes(articleFilter)
+    );
+  }
+  if (reviewerFilter) {
+    filtered = filtered.filter(r => r.userInitials === reviewerFilter);
+  }
+
+  if (filtered.length === 0) {
+    container.innerHTML = '<tr><td colspan="6" style="text-align: center;">No summary ratings found</td></tr>';
+    return;
+  }
+
+  const html = filtered.map((rating, i) => {
+    const article = state.articles.find(a => a.id === rating.articleId);
+    
+    // Parse timestamp safely
+    let submitDate = '—';
+    try {
+      if (rating.savedAt) {
+        const date = new Date(rating.savedAt);
+        if (!isNaN(date.getTime())) {
+          submitDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit', hour: '2-digit', minute: '2-digit' });
+        }
+      }
+    } catch (e) {
+      submitDate = '—';
+    }
+    
+    // Get rubric ratings summary
+    let ratingsStr = '—';
+    if (rating.ratings && typeof rating.ratings === 'object') {
+      const ratingsList = Object.entries(rating.ratings)
+        .map(([key, value]) => `${key}: ${value}`)
+        .join(' | ');
+      ratingsStr = ratingsList.substring(0, 100) + (ratingsList.length > 100 ? '...' : '');
+    }
+
+    return `
+      <tr style="font-size: 0.85rem;">
+        <td>${rating.articleId}</td>
+        <td>${rating.userInitials || '—'}</td>
+        <td>${rating.qualityRating || '—'}/5</td>
+        <td>${submitDate}</td>
+        <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${ratingsStr}">${ratingsStr}</td>
+        <td>
+          <button class="btn-secondary" style="padding: 0.5rem 0.75rem; font-size: 0.75rem; white-space: nowrap;" 
+                  onclick="showSummaryDetail(${i})">
+            View
+          </button>
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  container.innerHTML = html;
+}
+
+function showSummaryDetail(index) {
+  const rating = state.summaryRatings[index];
+  const article = state.articles.find(a => a.id === rating.articleId);
+
+  // Parse date safely
+  let submittedDate = '—';
+  try {
+    if (rating.savedAt) {
+      const date = new Date(rating.savedAt);
+      if (!isNaN(date.getTime())) {
+        submittedDate = date.toLocaleString();
+      }
+    }
+  } catch (e) {
+    submittedDate = '—';
+  }
+
+  let html = `
+    <p><strong>Article:</strong> ${rating.articleId} - ${article?.citation || 'Unknown'}</p>
+    <p><strong>Reviewer:</strong> ${rating.userInitials || rating.userEmail || 'Unknown'}</p>
+    <p><strong>Submitted:</strong> ${submittedDate}</p>
+    <p><strong>Overall Quality Rating:</strong> ${rating.qualityRating || '—'}/5</p>
+  `;
+
+  if (rating.notes) {
+    html += `<p><strong>Notes:</strong> ${rating.notes}</p>`;
+  }
+
+  if (rating.ratings && Object.keys(rating.ratings).length > 0) {
+    html += '<h4>Rubric Ratings</h4><ul>';
+    Object.entries(rating.ratings).forEach(([key, value]) => {
+      html += `<li><strong>${key}:</strong> ${value}/5</li>`;
+    });
+    html += '</ul>';
+  }
+
+  document.getElementById('summary-detail-content').innerHTML = html;
+  document.getElementById('summary-detail').style.display = 'block';
+}
+
+function closeSummaryDetail() {
+  document.getElementById('summary-detail').style.display = 'none';
+}
+
+// ============================================================================
 // LEADERBOARD
 // ============================================================================
 
@@ -2170,6 +2314,13 @@ function renderLeaderboard(leaderboardData) {
 
 // Filters event listeners
 document.addEventListener('DOMContentLoaded', () => {
+  // Summary ratings filters
+  if (document.getElementById('view-summary-article-filter')) {
+    document.getElementById('view-summary-article-filter').addEventListener('input', renderSummaryRatingsTable);
+    document.getElementById('view-summary-filter').addEventListener('change', renderSummaryRatingsTable);
+  }
+  
+  // Classifications filters
   if (document.getElementById('view-article-filter')) {
     document.getElementById('view-article-filter').addEventListener('input', renderClassificationsTable);
     document.getElementById('view-usercode-filter').addEventListener('change', renderClassificationsTable);

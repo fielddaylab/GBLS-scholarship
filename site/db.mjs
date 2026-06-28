@@ -126,6 +126,16 @@ function runMigrations(database) {
       console.log('[MIGRATION] Adding saved_at column to summary_reviews');
       database.exec('ALTER TABLE summary_reviews ADD COLUMN saved_at DATETIME DEFAULT CURRENT_TIMESTAMP');
     }
+
+    if (!summaryColumnNames.includes('is_archived')) {
+      console.log('[MIGRATION] Adding is_archived column to summary_reviews');
+      database.exec('ALTER TABLE summary_reviews ADD COLUMN is_archived INTEGER DEFAULT 0');
+    }
+
+    if (!codingColumnNames.includes('is_archived')) {
+      console.log('[MIGRATION] Adding is_archived column to article_codings');
+      database.exec('ALTER TABLE article_codings ADD COLUMN is_archived INTEGER DEFAULT 0');
+    }
   } catch (error) {
     console.error('[MIGRATION] Error running migrations:', error.message);
   }
@@ -275,6 +285,7 @@ export function getArticleCodings() {
     SELECT ac.*, u.initials
     FROM article_codings ac
     LEFT JOIN users u ON ac.user_id = u.id
+    WHERE COALESCE(ac.is_archived, 0) = 0
     ORDER BY ac.created_at DESC
   `).all();
   return rows.map(row => ({
@@ -298,7 +309,7 @@ export function getArticleCodingsByArticle(articleId) {
     SELECT ac.*, u.initials
     FROM article_codings ac
     LEFT JOIN users u ON ac.user_id = u.id
-    WHERE ac.article_id = ?
+    WHERE ac.article_id = ? AND COALESCE(ac.is_archived, 0) = 0
     ORDER BY ac.created_at DESC
   `).all(articleId);
   return rows.map(row => ({
@@ -358,6 +369,7 @@ export function getSummaryReviews() {
     SELECT sr.*, u.initials
     FROM summary_reviews sr
     LEFT JOIN users u ON sr.user_id = u.id
+    WHERE COALESCE(sr.is_archived, 0) = 0
     ORDER BY sr.created_at DESC
   `).all();
   return rows.map(row => ({
@@ -380,7 +392,7 @@ export function getSummaryReviewsByArticle(articleId) {
     SELECT sr.*, u.initials
     FROM summary_reviews sr
     LEFT JOIN users u ON sr.user_id = u.id
-    WHERE sr.article_id = ?
+    WHERE sr.article_id = ? AND COALESCE(sr.is_archived, 0) = 0
     ORDER BY sr.created_at DESC
   `).all(articleId);
   return rows.map(row => ({
@@ -403,7 +415,7 @@ export function getUserSummaryReview(userId, articleId) {
     SELECT sr.*, u.initials
     FROM summary_reviews sr
     LEFT JOIN users u ON sr.user_id = u.id
-    WHERE sr.user_id = ? AND sr.article_id = ?
+    WHERE sr.user_id = ? AND sr.article_id = ? AND COALESCE(sr.is_archived, 0) = 0
     ORDER BY sr.created_at DESC
     LIMIT 1
   `).get(userId, articleId);
@@ -430,7 +442,7 @@ export function getUserArticleCoding(userId, articleId) {
     SELECT ac.*, u.initials
     FROM article_codings ac
     LEFT JOIN users u ON ac.user_id = u.id
-    WHERE ac.user_id = ? AND ac.article_id = ?
+    WHERE ac.user_id = ? AND ac.article_id = ? AND COALESCE(ac.is_archived, 0) = 0
     ORDER BY ac.created_at DESC
     LIMIT 1
   `).get(userId, articleId);

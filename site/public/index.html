@@ -183,18 +183,19 @@
                      <form id="summary-form" class="review-form" onsubmit="submitSummaryReview(event)">
                        <h4>Summary Review</h4>
                        
-                       <!-- Summary Quality Rubric Section -->
-                       <div class="form-section">
-                         <h5>Summary Quality Rubric</h5>
-                         <div id="classify-rubric-form"></div>
-                       </div>
+                        <!-- Summary Quality Rubric Section -->
+                        <div class="form-section">
+                          <h5>Summary Quality Rubric</h5>
+                          <p style="margin: 0 0 0.75rem 0; color: var(--text-light); font-size: 0.875rem;"><strong>Compare the summary to the full article text on the left.</strong> Rate how well each rubric dimension describes the article accurately and completely.</p>
+                          <div id="classify-rubric-form"></div>
+                        </div>
 
-                       <!-- Overall Summary Quality -->
-                       <div class="form-section">
-                         <h5>Overall Summary Quality</h5>
-                         <p style="margin: 0 0 0.75rem 0; color: var(--text-light); font-size: 0.875rem;">Considering accuracy, completeness, and usefulness together, how well does the summary function as a substitute for reading the original article?</p>
-                         <div id="overall-quality-form" class="rubric-scores"></div>
-                       </div>
+                        <!-- Overall Summary Quality -->
+                        <div class="form-section">
+                          <h5>Overall Summary Quality</h5>
+                          <p style="margin: 0 0 0.75rem 0; color: var(--text-light); font-size: 0.875rem;"><strong>Compare the summary to the full article text.</strong> Considering accuracy, completeness, and usefulness together, how well does the summary function as a substitute for reading the original article?</p>
+                          <div id="overall-quality-form" class="rubric-scores"></div>
+                        </div>
 
                        <!-- Comments -->
                        <div class="form-section">
@@ -349,46 +350,89 @@
               </div>
             </div>
             
+            <h3>View Existing Summary Ratings</h3>
+            <p>Browse and review summary ratings submitted by all reviewers.</p>
+            
+            <div class="filters-section">
+              <div class="filter-group">
+                <label for="view-summary-article-filter">Filter by Article:</label>
+                <input type="text" id="view-summary-article-filter" placeholder="Search articles...">
+              </div>
+              <div class="filter-group">
+                <label for="view-summary-filter">Filter by Reviewer:</label>
+                <select id="view-summary-filter">
+                  <option value="">All reviewers</option>
+                </select>
+              </div>
+              <button class="btn-secondary" onclick="loadAllSummaryRatings()">Refresh</button>
+            </div>
+
+            <div class="summaries-table-wrapper">
+               <table class="summaries-table">
+                 <thead>
+                   <tr>
+                     <th>Article ID</th>
+                     <th>Reviewer</th>
+                     <th>Quality Rating</th>
+                     <th>Submitted</th>
+                     <th>Rubric Ratings</th>
+                     <th>Action</th>
+                   </tr>
+                 </thead>
+                <tbody id="summaries-list">
+                  <tr><td colspan="6" style="text-align: center;">Loading summary ratings...</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="summary-detail" id="summary-detail" style="display: none;">
+              <h3>Summary Rating Details</h3>
+              <div id="summary-detail-content"></div>
+              <button class="btn-secondary" onclick="closeSummaryDetail()">Close</button>
+            </div>
+
+            <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border-color);">
+
             <h3>View Existing Classifications</h3>
-           <p>Browse and review classifications submitted by all reviewers.</p>
-           
-           <div class="filters-section">
-             <div class="filter-group">
-               <label for="view-article-filter">Filter by Article:</label>
-               <input type="text" id="view-article-filter" placeholder="Search articles...">
-             </div>
-             <div class="filter-group">
-               <label for="view-usercode-filter">Filter by Coder:</label>
-               <select id="view-usercode-filter">
-                 <option value="">All coders</option>
-               </select>
-             </div>
-             <button class="btn-secondary" onclick="loadAllClassifications()">Refresh</button>
-           </div>
+            <p>Browse and review classifications submitted by all reviewers.</p>
+            
+            <div class="filters-section">
+              <div class="filter-group">
+                <label for="view-article-filter">Filter by Article:</label>
+                <input type="text" id="view-article-filter" placeholder="Search articles...">
+              </div>
+              <div class="filter-group">
+                <label for="view-usercode-filter">Filter by Coder:</label>
+                <select id="view-usercode-filter">
+                  <option value="">All coders</option>
+                </select>
+              </div>
+              <button class="btn-secondary" onclick="loadAllClassifications()">Refresh</button>
+            </div>
 
-           <div class="classifications-table-wrapper">
-              <table class="classifications-table">
-                <thead>
-                  <tr>
-                    <th>Article ID</th>
-                    <th>Coder</th>
-                    <th>Had Issues</th>
-                    <th>Submitted</th>
-                    <th>Codes Summary</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-               <tbody id="classifications-list">
-                 <tr><td colspan="5" style="text-align: center;">Loading classifications...</td></tr>
-               </tbody>
-             </table>
-           </div>
+            <div class="classifications-table-wrapper">
+               <table class="classifications-table">
+                 <thead>
+                   <tr>
+                     <th>Article ID</th>
+                     <th>Coder</th>
+                     <th>Had Issues</th>
+                     <th>Submitted</th>
+                     <th>Codes Summary</th>
+                     <th>Action</th>
+                   </tr>
+                 </thead>
+                <tbody id="classifications-list">
+                  <tr><td colspan="5" style="text-align: center;">Loading classifications...</td></tr>
+                </tbody>
+              </table>
+            </div>
 
-           <div class="classification-detail" id="classification-detail" style="display: none;">
-             <h3>Classification Details</h3>
-             <div id="classification-detail-content"></div>
-             <button class="btn-secondary" onclick="closeClassificationDetail()">Close</button>
-           </div>
+            <div class="classification-detail" id="classification-detail" style="display: none;">
+              <h3>Classification Details</h3>
+              <div id="classification-detail-content"></div>
+              <button class="btn-secondary" onclick="closeClassificationDetail()">Close</button>
+            </div>
          </div>
        </div>
 

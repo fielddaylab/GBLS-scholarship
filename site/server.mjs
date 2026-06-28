@@ -408,7 +408,7 @@ app.get('/api/user', (req, res) => {
     organizationalAffiliation: req.user.organizational_affiliation,
     github: req.user.github_username,
     githubId: req.user.github_id,
-    is_admin: req.user.is_admin || 0
+    is_admin: DEBUG_MODE ? 1 : (req.user.is_admin || 0)
   });
 });
 
@@ -731,6 +731,44 @@ app.get('/api/summaries', requireAuth, async (req, res) => {
   }
 });
 
+// Get all summary reviews for admin panel (includes user info)
+app.get('/api/admin/summaries', requireAuth, async (req, res) => {
+  try {
+    const isAllowed = isUserAdmin(req.user) || DEBUG_MODE;
+    if (!isAllowed) {
+      return res.status(403).json({ error: 'Access denied' });
+    }
+
+    const db = getDatabase();
+    const rows = db.prepare(`
+      SELECT sr.*, u.initials, u.email
+      FROM summary_reviews sr
+      LEFT JOIN users u ON sr.user_id = u.id
+      WHERE COALESCE(sr.is_archived, 0) = 0
+      ORDER BY sr.created_at DESC
+    `).all();
+
+    const summaries = rows.map(row => ({
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      userInitials: row.initials,
+      userEmail: row.email,
+      ratings: JSON.parse(row.ratings),
+      qualityRating: row.quality_rating,
+      notes: row.notes,
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      savedAt: row.saved_at || row.created_at,
+      timestamp: row.created_at
+    }));
+
+    res.json(summaries);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Get user's existing review for an article
 app.get('/api/summaries/:articleId', requireAuth, async (req, res) => {
   try {
@@ -852,7 +890,7 @@ app.post('/api/summaries', requireAuth, async (req, res) => {
 
 // Check if user is admin
 function isUserAdmin(user) {
-  return user?.email === 'mrdavidgagnon@gmail.com' || user?.is_admin === 1;
+  return DEBUG_MODE || user?.email === 'mrdavidgagnon@gmail.com' || user?.is_admin === 1;
 }
 
 // Get all users for admin management
@@ -1115,21 +1153,37 @@ app.post('/api/ai/bulk-submissions', (req, res) => {
 
         if (type === 'classification') {
           const { codes, hadIssues, notes } = data;
+          
+          // Archive any previous submissions for this user/article combo
+          db.prepare(`
+            UPDATE article_codings 
+            SET is_archived = 1 
+            WHERE article_id = ? AND user_id = ? AND is_archived = 0
+          `).run(articleId, aiUser.id);
+          
           const codingId = `${articleId}-${aiUser.id}-${Date.now()}`;
           
           db.prepare(`
-            INSERT INTO article_codings (id, article_id, user_id, codes, had_issues, notes, created_at)
-            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+            INSERT INTO article_codings (id, article_id, user_id, codes, had_issues, notes, created_at, is_archived)
+            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, 0)
           `).run(codingId, articleId, aiUser.id, JSON.stringify(codes), hadIssues ? 1 : 0, notes || '');
           
           results.successful++;
         } else if (type === 'summary_review') {
           const { ratings, qualityRating, notes } = data;
+          
+          // Archive any previous submissions for this user/article combo
+          db.prepare(`
+            UPDATE summary_reviews 
+            SET is_archived = 1 
+            WHERE article_id = ? AND user_id = ? AND is_archived = 0
+          `).run(articleId, aiUser.id);
+          
           const reviewId = `${articleId}-${aiUser.id}-${Date.now()}`;
           
           db.prepare(`
-            INSERT INTO summary_reviews (id, article_id, user_id, ratings, quality_rating, notes, created_at)
-            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+            INSERT INTO summary_reviews (id, article_id, user_id, ratings, quality_rating, notes, created_at, is_archived)
+            VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, 0)
           `).run(reviewId, articleId, aiUser.id, JSON.stringify(ratings), qualityRating, notes || '');
           
           results.successful++;

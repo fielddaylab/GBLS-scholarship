@@ -1128,11 +1128,45 @@ textarea {
 }
 
 .classifications-table button {
-   padding: 0.5rem 1rem;
-   font-size: 0.875rem;
- }
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
 
- /* Leaderboard Table */
+/* Summaries Table */
+.summaries-table-wrapper {
+  overflow-x: auto;
+  box-shadow: var(--shadow);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.summaries-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.summaries-table thead {
+  background: var(--light-bg);
+  font-weight: 600;
+}
+
+.summaries-table th, .summaries-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.summaries-table tbody tr:hover {
+  background: var(--light-bg);
+}
+
+.summaries-table button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+  /* Leaderboard Table */
  .leaderboard-container {
    max-width: 900px;
    margin: 0 auto;
