@@ -34,7 +34,7 @@
         <button class="tab-btn active" data-tab="summaries">Review & Classify</button>
         <button class="tab-btn" data-tab="leaderboard">Leaderboard <span id="leaderboard-badge" class="leaderboard-badge" style="display: none;">+1</span></button>
         <button class="tab-btn" data-tab="metrics">GBLS Corpus Explorer</button>
-        <button class="tab-btn" data-tab="view">Admin</button>
+        <button class="tab-btn" data-tab="view" style="display: none !important;">Admin</button>
       </nav>
 
     <!-- Tab Content -->
@@ -308,7 +308,7 @@
       </div>
 
       <!-- Tab 4: View Classifications -->
-       <div class="tab-pane" id="view">
+       <div class="tab-pane" id="view" style="display: none !important;">
          <div class="view-container">
            <h2>Admin Dashboard</h2>
            
@@ -335,9 +335,18 @@
                  📥 Export Submissions (CSV)
                </button>
              </div>
-           </div>
-           
-           <h3>View Existing Classifications</h3>
+            </div>
+
+            <!-- User Management Section -->
+            <div class="admin-users" style="background: white; border: 1px solid var(--border-color); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 2rem;">
+              <h3 style="margin-top: 0; margin-bottom: 1rem;">User Access Management</h3>
+              <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Select users who should have access to the Admin panel:</p>
+              <div id="admin-users-list" style="display: flex; flex-direction: column; gap: 0.75rem; max-height: 400px; overflow-y: auto;">
+                <div style="text-align: center; color: var(--text-light);">Loading users...</div>
+              </div>
+            </div>
+            
+            <h3>View Existing Classifications</h3>
            <p>Browse and review classifications submitted by all reviewers.</p>
            
            <div class="filters-section">

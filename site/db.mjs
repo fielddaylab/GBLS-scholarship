@@ -86,7 +86,7 @@ export function initializeDatabase() {
 }
 
 function runMigrations(database) {
-  // Migration: Add had_issues and notes columns to article_codings if they don't exist
+  // Migration: Add columns if they don't exist
   try {
     const userColumns = database.prepare("PRAGMA table_info(users)").all();
     const userColumnNames = userColumns.map(col => col.name);
@@ -94,6 +94,11 @@ function runMigrations(database) {
     if (!userColumnNames.includes('github_username')) {
       console.log('[MIGRATION] Adding github_username column to users');
       database.exec('ALTER TABLE users ADD COLUMN github_username TEXT');
+    }
+
+    if (!userColumnNames.includes('is_admin')) {
+      console.log('[MIGRATION] Adding is_admin column to users');
+      database.exec('ALTER TABLE users ADD COLUMN is_admin INTEGER DEFAULT 0');
     }
 
     const codingColumns = database.prepare("PRAGMA table_info(article_codings)").all();

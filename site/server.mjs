@@ -847,11 +847,67 @@ app.post('/api/summaries', requireAuth, async (req, res) => {
 
  // ==================== ERROR HANDLING ====================
 
+// Check if user is admin
+function isUserAdmin(user) {
+  return user?.email === 'mrdavidgagnon@gmail.com' || user?.is_admin === 1;
+}
+
+// Get all users for admin management
+app.get('/api/admin/users', requireAuth, (req, res) => {
+  try {
+    const isAllowed = isUserAdmin(req.user) || DEBUG_MODE;
+    if (!isAllowed) {
+      return res.status(403).json({ error: 'Access denied' });
+    }
+
+    const db = getDatabase();
+    const users = db.prepare(`
+      SELECT id, email, full_name, initials, is_admin
+      FROM users
+      WHERE is_active = 1
+      ORDER BY full_name
+    `).all();
+
+    res.json(users);
+  } catch (error) {
+    console.error('[Admin Users] Error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Toggle admin access for a user
+app.post('/api/admin/users/:userId/toggle-admin', requireAuth, (req, res) => {
+  try {
+    const isAllowed = isUserAdmin(req.user) || DEBUG_MODE;
+    if (!isAllowed) {
+      return res.status(403).json({ error: 'Access denied' });
+    }
+
+    const userId = parseInt(req.params.userId);
+    const db = getDatabase();
+    
+    // Get current admin status
+    const user = db.prepare('SELECT is_admin FROM users WHERE id = ?').get(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    // Toggle admin status
+    const newAdminStatus = user.is_admin ? 0 : 1;
+    db.prepare('UPDATE users SET is_admin = ? WHERE id = ?').run(newAdminStatus, userId);
+
+    res.json({ success: true, is_admin: newAdminStatus === 1 });
+  } catch (error) {
+    console.error('[Toggle Admin] Error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Admin stats endpoint
 app.get('/api/admin/stats', requireAuth, (req, res) => {
   try {
-    // Only allow mrdavidgagnon@gmail.com or debug mode
-    const isAllowed = req.user?.email === 'mrdavidgagnon@gmail.com' || DEBUG_MODE;
+    // Only allow admin users or debug mode
+    const isAllowed = isUserAdmin(req.user) || DEBUG_MODE;
     if (!isAllowed) {
       return res.status(403).json({ error: 'Access denied' });
     }
@@ -880,8 +936,8 @@ app.get('/api/admin/stats', requireAuth, (req, res) => {
 // Export users as CSV
 app.get('/api/admin/export/users', requireAuth, (req, res) => {
   try {
-    // Only allow mrdavidgagnon@gmail.com or debug mode
-    const isAllowed = req.user?.email === 'mrdavidgagnon@gmail.com' || DEBUG_MODE;
+    // Only allow admin users or debug mode
+    const isAllowed = isUserAdmin(req.user) || DEBUG_MODE;
     if (!isAllowed) {
       return res.status(403).json({ error: 'Access denied' });
     }
@@ -939,8 +995,8 @@ app.get('/api/admin/export/users', requireAuth, (req, res) => {
 // Export submissions as CSV
 app.get('/api/admin/export/submissions', requireAuth, (req, res) => {
   try {
-    // Only allow mrdavidgagnon@gmail.com or debug mode
-    const isAllowed = req.user?.email === 'mrdavidgagnon@gmail.com' || DEBUG_MODE;
+    // Only allow admin users or debug mode
+    const isAllowed = isUserAdmin(req.user) || DEBUG_MODE;
     if (!isAllowed) {
       return res.status(403).json({ error: 'Access denied' });
     }

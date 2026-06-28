@@ -169,16 +169,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // Handle Admin tab visibility
     const viewTab = document.querySelector('[data-tab="view"]');
+    const viewPane = document.getElementById('view');
     const isDebug = new URLSearchParams(window.location.search).has('debug');
-    const isAllowedUser = state.user?.email === 'mrdavidgagnon@gmail.com';
-    console.log('[Tab Visibility] User:', state.user?.email, 'Debug:', isDebug, 'Allowed:', isAllowedUser);
+    const isMainAdmin = state.user?.email === 'mrdavidgagnon@gmail.com';
+    const isAllowedUser = isMainAdmin || state.user?.is_admin === 1;
+    console.log('[Tab Visibility] User:', state.user?.email, 'is_admin:', state.user?.is_admin, 'Debug:', isDebug, 'Allowed:', isAllowedUser);
     if (viewTab) {
       if (!isDebug && !isAllowedUser) {
-        viewTab.style.display = 'none';
+        viewTab.style.display = 'none !important';
         viewTab.disabled = true;
+        if (viewPane) viewPane.style.display = 'none !important';
         console.log('[Tab Visibility] Admin tab hidden and disabled');
       } else {
-        viewTab.style.display = 'block';
+        viewTab.style.removeProperty('display');
         viewTab.disabled = false;
         console.log('[Tab Visibility] Admin tab shown and enabled');
       }
@@ -256,8 +259,9 @@ function switchTab(tabName) {
    // Check if user is allowed to access restricted tabs
    if (tabName === 'view') {
      const isDebug = new URLSearchParams(window.location.search).has('debug');
-     const isAllowedUser = state.user?.email === 'mrdavidgagnon@gmail.com';
-     console.warn(`[switchTab] Attempting to access 'view' tab. User: ${state.user?.email}, Debug: ${isDebug}, Allowed: ${isAllowedUser}`);
+     const isMainAdmin = state.user?.email === 'mrdavidgagnon@gmail.com';
+     const isAllowedUser = isMainAdmin || state.user?.is_admin === 1;
+     console.warn(`[switchTab] Attempting to access 'view' tab. User: ${state.user?.email}, is_admin: ${state.user?.is_admin}, Debug: ${isDebug}, Allowed: ${isAllowedUser}`);
      if (!isDebug && !isAllowedUser) {
        console.warn(`Access denied to Admin tab. Redirecting to summaries.`);
        // Redirect to summaries tab
@@ -296,6 +300,7 @@ function switchTab(tabName) {
       initializeClassifyTab();
     } else if (tabName === 'view') {
       loadAdminStats();
+      loadAdminUsers();
       loadAllClassifications();
     } else if (tabName === 'leaderboard') {
       loadLeaderboard();
@@ -1846,6 +1851,66 @@ async function loadAdminStats() {
     }
   } catch (error) {
     console.error('Error loading admin stats:', error);
+  }
+}
+
+async function loadAdminUsers() {
+  try {
+    const response = await fetch('/api/admin/users');
+    if (response.ok) {
+      const users = await response.json();
+      renderAdminUsersList(users);
+    } else {
+      console.error('Failed to load admin users');
+    }
+  } catch (error) {
+    console.error('Error loading admin users:', error);
+  }
+}
+
+function renderAdminUsersList(users) {
+  const container = document.getElementById('admin-users-list');
+  if (!users || users.length === 0) {
+    container.innerHTML = '<div style="text-align: center; color: var(--text-light);">No users found</div>';
+    return;
+  }
+
+  container.innerHTML = users.map(user => `
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.75rem; background: var(--light-bg); border-radius: 0.375rem; gap: 1rem;">
+      <div style="flex: 1; min-width: 0;">
+        <div style="font-weight: 500;">${user.full_name} (${user.initials})</div>
+        <div style="font-size: 0.85rem; color: var(--text-light);">${user.email}</div>
+      </div>
+      <button 
+        class="btn-secondary" 
+        onclick="toggleUserAdmin(${user.id})" 
+        style="white-space: nowrap; ${user.is_admin ? 'background: var(--primary-color); color: white;' : ''}"
+      >
+        ${user.is_admin ? '✓ Admin' : 'Make Admin'}
+      </button>
+    </div>
+  `).join('');
+}
+
+async function toggleUserAdmin(userId) {
+  try {
+    const response = await fetch(`/api/admin/users/${userId}/toggle-admin`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin'
+    });
+
+    if (response.ok) {
+      const result = await response.json();
+      console.log('Admin status toggled:', result);
+      // Reload the users list
+      await loadAdminUsers();
+    } else {
+      alert('Failed to toggle admin access');
+    }
+  } catch (error) {
+    console.error('Error toggling admin access:', error);
+    alert('Error: ' + error.message);
   }
 }
 
