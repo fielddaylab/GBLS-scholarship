@@ -847,6 +847,172 @@ app.post('/api/summaries', requireAuth, async (req, res) => {
 
  // ==================== ERROR HANDLING ====================
 
+// Admin stats endpoint
+app.get('/api/admin/stats', requireAuth, (req, res) => {
+  try {
+    // Only allow mrdavidgagnon or debug mode
+    const isAllowed = req.user?.github_username === 'mrdavidgagnon' || DEBUG_MODE;
+    if (!isAllowed) {
+      return res.status(403).json({ error: 'Access denied' });
+    }
+
+    const db = getDatabase();
+    
+    // Count registered users
+    const userCount = db.prepare('SELECT COUNT(*) as count FROM users WHERE is_active = 1').get();
+    
+    // Count total submissions (summary reviews + article codings)
+    const summaryCount = db.prepare('SELECT COUNT(*) as count FROM summary_reviews').get();
+    const codingCount = db.prepare('SELECT COUNT(*) as count FROM article_codings').get();
+    
+    res.json({
+      registeredUsers: userCount.count || 0,
+      totalSubmissions: (summaryCount.count || 0) + (codingCount.count || 0),
+      summaryReviews: summaryCount.count || 0,
+      articleCodings: codingCount.count || 0
+    });
+  } catch (error) {
+    console.error('[Admin Stats] Error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Export users as CSV
+app.get('/api/admin/export/users', requireAuth, (req, res) => {
+  try {
+    // Only allow mrdavidgagnon or debug mode
+    const isAllowed = req.user?.github_username === 'mrdavidgagnon' || DEBUG_MODE;
+    if (!isAllowed) {
+      return res.status(403).json({ error: 'Access denied' });
+    }
+
+    const db = getDatabase();
+    const users = db.prepare(`
+      SELECT 
+        id,
+        email,
+        full_name,
+        initials,
+        github_username,
+        organizational_affiliation,
+        created_at,
+        last_login,
+        is_active
+      FROM users
+      ORDER BY created_at DESC
+    `).all();
+
+    // Convert to CSV
+    const headers = ['ID', 'Email', 'Full Name', 'Initials', 'GitHub Username', 'Organization', 'Created', 'Last Login', 'Active'];
+    const rows = users.map(u => [
+      u.id,
+      u.email,
+      u.full_name,
+      u.initials,
+      u.github_username || '',
+      u.organizational_affiliation || '',
+      u.created_at,
+      u.last_login || '',
+      u.is_active ? 'Yes' : 'No'
+    ]);
+
+    const csv = [headers, ...rows]
+      .map(row => row.map(cell => {
+        // Escape quotes and wrap in quotes if contains comma, quotes, or newlines
+        const str = String(cell || '');
+        if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+          return `"${str.replace(/"/g, '""')}"`;
+        }
+        return str;
+      }).join(','))
+      .join('\n');
+
+    res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+    res.setHeader('Content-Disposition', `attachment; filename="gbls-users-${new Date().toISOString().split('T')[0]}.csv"`);
+    res.send(csv);
+  } catch (error) {
+    console.error('[Export Users] Error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Export submissions as CSV
+app.get('/api/admin/export/submissions', requireAuth, (req, res) => {
+  try {
+    // Only allow mrdavidgagnon or debug mode
+    const isAllowed = req.user?.github_username === 'mrdavidgagnon' || DEBUG_MODE;
+    if (!isAllowed) {
+      return res.status(403).json({ error: 'Access denied' });
+    }
+
+    const db = getDatabase();
+    
+    // Get summary reviews
+    const summaryReviews = db.prepare(`
+      SELECT 
+        sr.id,
+        'summary_review' as type,
+        sr.article_id,
+        u.initials as user,
+        sr.quality_rating,
+        sr.saved_at as submitted_at,
+        sr.notes
+      FROM summary_reviews sr
+      JOIN users u ON sr.user_id = u.id
+      ORDER BY sr.saved_at DESC
+    `).all();
+
+    // Get article codings
+    const codings = db.prepare(`
+      SELECT 
+        ac.id,
+        'classification' as type,
+        ac.article_id,
+        u.initials as user,
+        ac.had_issues,
+        ac.saved_at as submitted_at,
+        ac.notes
+      FROM article_codings ac
+      JOIN users u ON ac.user_id = u.id
+      ORDER BY ac.saved_at DESC
+    `).all();
+
+    // Combine and sort
+    const allSubmissions = [...summaryReviews, ...codings]
+      .sort((a, b) => new Date(b.submitted_at) - new Date(a.submitted_at));
+
+    // Convert to CSV
+    const headers = ['ID', 'Type', 'Article ID', 'User', 'Rating/Issues', 'Submitted', 'Notes'];
+    const rows = allSubmissions.map(s => [
+      s.id,
+      s.type,
+      s.article_id,
+      s.user,
+      s.type === 'summary_review' ? (s.quality_rating || '') : (s.had_issues ? 'Yes' : 'No'),
+      s.submitted_at || '',
+      s.notes || ''
+    ]);
+
+    const csv = [headers, ...rows]
+      .map(row => row.map(cell => {
+        // Escape quotes and wrap in quotes if contains comma, quotes, or newlines
+        const str = String(cell || '');
+        if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+          return `"${str.replace(/"/g, '""')}"`;
+        }
+        return str;
+      }).join(','))
+      .join('\n');
+
+    res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+    res.setHeader('Content-Disposition', `attachment; filename="gbls-submissions-${new Date().toISOString().split('T')[0]}.csv"`);
+    res.send(csv);
+  } catch (error) {
+    console.error('[Export Submissions] Error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 app.use((req, res) => {
   res.status(404).json({ error: 'Not found' });
 });

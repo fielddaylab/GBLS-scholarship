@@ -295,6 +295,7 @@ function switchTab(tabName) {
     } else if (tabName === 'classify') {
       initializeClassifyTab();
     } else if (tabName === 'view') {
+      loadAdminStats();
       loadAllClassifications();
     } else if (tabName === 'leaderboard') {
       loadLeaderboard();
@@ -1831,6 +1832,66 @@ function switchToClassifyArticle(articleId) {
 // ============================================================================
 // TAB 4: VIEW CLASSIFICATIONS
 // ============================================================================
+
+// Admin functions
+async function loadAdminStats() {
+  try {
+    const response = await fetch('/api/admin/stats');
+    if (response.ok) {
+      const stats = await response.json();
+      document.getElementById('user-count').textContent = stats.registeredUsers.toLocaleString();
+      document.getElementById('submission-count').textContent = stats.totalSubmissions.toLocaleString();
+    } else {
+      console.error('Failed to load admin stats');
+    }
+  } catch (error) {
+    console.error('Error loading admin stats:', error);
+  }
+}
+
+async function exportUsersCSV() {
+  try {
+    const response = await fetch('/api/admin/export/users');
+    if (response.ok) {
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `gbls-users-${new Date().toISOString().split('T')[0]}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } else {
+      alert('Failed to export users');
+    }
+  } catch (error) {
+    console.error('Error exporting users:', error);
+    alert('Error exporting users: ' + error.message);
+  }
+}
+
+async function exportSubmissionsCSV() {
+  try {
+    const response = await fetch('/api/admin/export/submissions');
+    if (response.ok) {
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `gbls-submissions-${new Date().toISOString().split('T')[0]}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } else {
+      alert('Failed to export submissions');
+    }
+  } catch (error) {
+    console.error('Error exporting submissions:', error);
+    alert('Error exporting submissions: ' + error.message);
+  }
+}
 
 async function loadAllClassifications() {
   try {

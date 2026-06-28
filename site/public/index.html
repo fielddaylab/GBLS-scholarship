@@ -29,13 +29,13 @@
       </div>
     </header>
 
-     <!-- Navigation Tabs -->
-     <nav class="tab-navigation">
-       <button class="tab-btn active" data-tab="summaries">Review & Classify</button>
-       <button class="tab-btn" data-tab="leaderboard">Leaderboard <span id="leaderboard-badge" class="leaderboard-badge" style="display: none;">+1</span></button>
-       <button class="tab-btn" data-tab="metrics">GBLS Corpus Explorer</button>
-       <button class="tab-btn" data-tab="view">View Classifications</button>
-     </nav>
+      <!-- Navigation Tabs -->
+      <nav class="tab-navigation">
+        <button class="tab-btn active" data-tab="summaries">Review & Classify</button>
+        <button class="tab-btn" data-tab="leaderboard">Leaderboard <span id="leaderboard-badge" class="leaderboard-badge" style="display: none;">+1</span></button>
+        <button class="tab-btn" data-tab="metrics">GBLS Corpus Explorer</button>
+        <button class="tab-btn" data-tab="view">Admin</button>
+      </nav>
 
     <!-- Tab Content -->
     <main class="tab-content">
@@ -308,49 +308,76 @@
       </div>
 
       <!-- Tab 4: View Classifications -->
-      <div class="tab-pane" id="view">
-        <div class="view-container">
-          <h2>View Existing Classifications</h2>
-          <p>Browse and review classifications submitted by all reviewers.</p>
-          
-          <div class="filters-section">
-            <div class="filter-group">
-              <label for="view-article-filter">Filter by Article:</label>
-              <input type="text" id="view-article-filter" placeholder="Search articles...">
-            </div>
-            <div class="filter-group">
-              <label for="view-usercode-filter">Filter by Coder:</label>
-              <select id="view-usercode-filter">
-                <option value="">All coders</option>
-              </select>
-            </div>
-            <button class="btn-secondary" onclick="loadAllClassifications()">Refresh</button>
-          </div>
+       <div class="tab-pane" id="view">
+         <div class="view-container">
+           <h2>Admin Dashboard</h2>
+           
+           <!-- Admin Stats Section -->
+           <div class="admin-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+             <div class="stat-card" style="background: white; border: 1px solid var(--border-color); border-radius: 0.5rem; padding: 1.5rem; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+               <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;" id="user-count">—</div>
+               <div style="color: var(--text-light); font-size: 0.9rem;">Registered Users</div>
+             </div>
+             <div class="stat-card" style="background: white; border: 1px solid var(--border-color); border-radius: 0.5rem; padding: 1.5rem; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+               <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.5rem;" id="submission-count">—</div>
+               <div style="color: var(--text-light); font-size: 0.9rem;">Total Submissions</div>
+             </div>
+           </div>
 
-          <div class="classifications-table-wrapper">
-            <table class="classifications-table">
-              <thead>
-                <tr>
-                  <th>Article ID</th>
-                  <th>Coder</th>
-                  <th>Summary Quality</th>
-                  <th>Submitted</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody id="classifications-list">
-                <tr><td colspan="5" style="text-align: center;">Loading classifications...</td></tr>
-              </tbody>
-            </table>
-          </div>
+           <!-- Export Section -->
+           <div class="admin-exports" style="background: white; border: 1px solid var(--border-color); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 2rem;">
+             <h3 style="margin-top: 0; margin-bottom: 1rem;">Data Export</h3>
+             <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+               <button class="btn-secondary" onclick="exportUsersCSV()" style="flex: 1; min-width: 200px;">
+                 📥 Export Users (CSV)
+               </button>
+               <button class="btn-secondary" onclick="exportSubmissionsCSV()" style="flex: 1; min-width: 200px;">
+                 📥 Export Submissions (CSV)
+               </button>
+             </div>
+           </div>
+           
+           <h3>View Existing Classifications</h3>
+           <p>Browse and review classifications submitted by all reviewers.</p>
+           
+           <div class="filters-section">
+             <div class="filter-group">
+               <label for="view-article-filter">Filter by Article:</label>
+               <input type="text" id="view-article-filter" placeholder="Search articles...">
+             </div>
+             <div class="filter-group">
+               <label for="view-usercode-filter">Filter by Coder:</label>
+               <select id="view-usercode-filter">
+                 <option value="">All coders</option>
+               </select>
+             </div>
+             <button class="btn-secondary" onclick="loadAllClassifications()">Refresh</button>
+           </div>
 
-          <div class="classification-detail" id="classification-detail" style="display: none;">
-            <h3>Classification Details</h3>
-            <div id="classification-detail-content"></div>
-            <button class="btn-secondary" onclick="closeClassificationDetail()">Close</button>
-          </div>
-        </div>
-      </div>
+           <div class="classifications-table-wrapper">
+             <table class="classifications-table">
+               <thead>
+                 <tr>
+                   <th>Article ID</th>
+                   <th>Coder</th>
+                   <th>Summary Quality</th>
+                   <th>Submitted</th>
+                   <th>Action</th>
+                 </tr>
+               </thead>
+               <tbody id="classifications-list">
+                 <tr><td colspan="5" style="text-align: center;">Loading classifications...</td></tr>
+               </tbody>
+             </table>
+           </div>
+
+           <div class="classification-detail" id="classification-detail" style="display: none;">
+             <h3>Classification Details</h3>
+             <div id="classification-detail-content"></div>
+             <button class="btn-secondary" onclick="closeClassificationDetail()">Close</button>
+           </div>
+         </div>
+       </div>
 
       <!-- Leaderboard Tab -->
       <div class="tab-pane" id="leaderboard">
