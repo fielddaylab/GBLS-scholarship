@@ -132,7 +132,11 @@ function runMigrations(database) {
       database.exec('ALTER TABLE summary_reviews ADD COLUMN is_archived INTEGER DEFAULT 0');
     }
 
-    if (!codingColumnNames.includes('is_archived')) {
+    // Re-check coding columns for is_archived
+    const codingColumnsAfter = database.prepare("PRAGMA table_info(article_codings)").all();
+    const codingColumnNamesAfter = codingColumnsAfter.map(col => col.name);
+    
+    if (!codingColumnNamesAfter.includes('is_archived')) {
       console.log('[MIGRATION] Adding is_archived column to article_codings');
       database.exec('ALTER TABLE article_codings ADD COLUMN is_archived INTEGER DEFAULT 0');
     }
