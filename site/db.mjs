@@ -268,47 +268,91 @@ export function createArticleCoding(codingId, articleId, userId, codes, rubricId
 
 export function getArticleCodings() {
   const db = getDatabase();
-  const rows = db.prepare(`
-    SELECT ac.*, u.initials
-    FROM article_codings ac
-    LEFT JOIN users u ON ac.user_id = u.id
-    WHERE COALESCE(ac.is_archived, 0) = 0
-    ORDER BY ac.created_at DESC
-  `).all();
-  return rows.map(row => ({
-    id: row.id,
-    articleId: row.article_id,
-    userId: row.user_id,
-    usercode: row.initials,
-    codes: JSON.parse(row.codes),
-    rubricId: row.rubric_id,
-    rubricVersion: row.rubric_version,
-    hadIssues: row.had_issues,
-    notes: row.notes,
-    timestamp: row.created_at,
-    savedAt: row.created_at
-  }));
+  try {
+    const rows = db.prepare(`
+      SELECT ac.*, u.initials
+      FROM article_codings ac
+      LEFT JOIN users u ON ac.user_id = u.id
+      WHERE COALESCE(ac.is_archived, 0) = 0
+      ORDER BY ac.created_at DESC
+    `).all();
+    return rows.map(row => ({
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      usercode: row.initials,
+      codes: JSON.parse(row.codes),
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      hadIssues: row.had_issues,
+      notes: row.notes,
+      timestamp: row.created_at,
+      savedAt: row.created_at
+    }));
+  } catch (e) {
+    // Fall back if is_archived column doesn't exist
+    const rows = db.prepare(`
+      SELECT ac.*, u.initials
+      FROM article_codings ac
+      LEFT JOIN users u ON ac.user_id = u.id
+      ORDER BY ac.created_at DESC
+    `).all();
+    return rows.map(row => ({
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      usercode: row.initials,
+      codes: JSON.parse(row.codes),
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      hadIssues: row.had_issues,
+      notes: row.notes,
+      timestamp: row.created_at,
+      savedAt: row.created_at
+    }));
+  }
 }
 
 export function getArticleCodingsByArticle(articleId) {
   const db = getDatabase();
-  const rows = db.prepare(`
-    SELECT ac.*, u.initials
-    FROM article_codings ac
-    LEFT JOIN users u ON ac.user_id = u.id
-    WHERE ac.article_id = ? AND COALESCE(ac.is_archived, 0) = 0
-    ORDER BY ac.created_at DESC
-  `).all(articleId);
-  return rows.map(row => ({
-    id: row.id,
-    articleId: row.article_id,
-    userId: row.user_id,
-    usercode: row.initials,
-    codes: JSON.parse(row.codes),
-    rubricId: row.rubric_id,
-    rubricVersion: row.rubric_version,
-    timestamp: row.created_at
-  }));
+  try {
+    const rows = db.prepare(`
+      SELECT ac.*, u.initials
+      FROM article_codings ac
+      LEFT JOIN users u ON ac.user_id = u.id
+      WHERE ac.article_id = ? AND COALESCE(ac.is_archived, 0) = 0
+      ORDER BY ac.created_at DESC
+    `).all(articleId);
+    return rows.map(row => ({
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      usercode: row.initials,
+      codes: JSON.parse(row.codes),
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      timestamp: row.created_at
+    }));
+  } catch (e) {
+    // Fall back if is_archived column doesn't exist
+    const rows = db.prepare(`
+      SELECT ac.*, u.initials
+      FROM article_codings ac
+      LEFT JOIN users u ON ac.user_id = u.id
+      WHERE ac.article_id = ?
+      ORDER BY ac.created_at DESC
+    `).all(articleId);
+    return rows.map(row => ({
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      usercode: row.initials,
+      codes: JSON.parse(row.codes),
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      timestamp: row.created_at
+    }));
+  }
 }
 
 // Submission functions - Summary Reviews
@@ -352,60 +396,129 @@ export function createSummaryReview(reviewId, articleId, userId, ratings, qualit
 
 export function getSummaryReviews() {
   const db = getDatabase();
-  const rows = db.prepare(`
-    SELECT sr.*, u.initials
-    FROM summary_reviews sr
-    LEFT JOIN users u ON sr.user_id = u.id
-    WHERE COALESCE(sr.is_archived, 0) = 0
-    ORDER BY sr.created_at DESC
-  `).all();
-  return rows.map(row => ({
-    id: row.id,
-    articleId: row.article_id,
-    userId: row.user_id,
-    userInitials: row.initials,
-    ratings: JSON.parse(row.ratings),
-    qualityRating: row.quality_rating,
-    notes: row.notes,
-    rubricId: row.rubric_id,
-    rubricVersion: row.rubric_version,
-    timestamp: row.created_at
-  }));
+  try {
+    const rows = db.prepare(`
+      SELECT sr.*, u.initials
+      FROM summary_reviews sr
+      LEFT JOIN users u ON sr.user_id = u.id
+      WHERE COALESCE(sr.is_archived, 0) = 0
+      ORDER BY sr.created_at DESC
+    `).all();
+    return rows.map(row => ({
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      userInitials: row.initials,
+      ratings: JSON.parse(row.ratings),
+      qualityRating: row.quality_rating,
+      notes: row.notes,
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      timestamp: row.created_at
+    }));
+  } catch (e) {
+    // Fall back if is_archived column doesn't exist
+    const rows = db.prepare(`
+      SELECT sr.*, u.initials
+      FROM summary_reviews sr
+      LEFT JOIN users u ON sr.user_id = u.id
+      ORDER BY sr.created_at DESC
+    `).all();
+    return rows.map(row => ({
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      userInitials: row.initials,
+      ratings: JSON.parse(row.ratings),
+      qualityRating: row.quality_rating,
+      notes: row.notes,
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      timestamp: row.created_at
+    }));
+  }
 }
 
 export function getSummaryReviewsByArticle(articleId) {
   const db = getDatabase();
-  const rows = db.prepare(`
-    SELECT sr.*, u.initials
-    FROM summary_reviews sr
-    LEFT JOIN users u ON sr.user_id = u.id
-    WHERE sr.article_id = ? AND COALESCE(sr.is_archived, 0) = 0
-    ORDER BY sr.created_at DESC
-  `).all(articleId);
-  return rows.map(row => ({
-    id: row.id,
-    articleId: row.article_id,
-    userId: row.user_id,
-    userInitials: row.initials,
-    ratings: JSON.parse(row.ratings),
-    qualityRating: row.quality_rating,
-    notes: row.notes,
-    rubricId: row.rubric_id,
-    rubricVersion: row.rubric_version,
-    timestamp: row.created_at
-  }));
+  try {
+    const rows = db.prepare(`
+      SELECT sr.*, u.initials
+      FROM summary_reviews sr
+      LEFT JOIN users u ON sr.user_id = u.id
+      WHERE sr.article_id = ? AND COALESCE(sr.is_archived, 0) = 0
+      ORDER BY sr.created_at DESC
+    `).all(articleId);
+    return rows.map(row => ({
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      userInitials: row.initials,
+      ratings: JSON.parse(row.ratings),
+      qualityRating: row.quality_rating,
+      notes: row.notes,
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      timestamp: row.created_at
+    }));
+  } catch (e) {
+    // Fall back if is_archived column doesn't exist
+    const rows = db.prepare(`
+      SELECT sr.*, u.initials
+      FROM summary_reviews sr
+      LEFT JOIN users u ON sr.user_id = u.id
+      WHERE sr.article_id = ?
+      ORDER BY sr.created_at DESC
+    `).all(articleId);
+    return rows.map(row => ({
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      userInitials: row.initials,
+      ratings: JSON.parse(row.ratings),
+      qualityRating: row.quality_rating,
+      notes: row.notes,
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      timestamp: row.created_at
+    }));
+  }
 }
 
 export function getUserSummaryReview(userId, articleId) {
   const db = getDatabase();
-  const row = db.prepare(`
-    SELECT sr.*, u.initials
-    FROM summary_reviews sr
-    LEFT JOIN users u ON sr.user_id = u.id
-    WHERE sr.user_id = ? AND sr.article_id = ? AND COALESCE(sr.is_archived, 0) = 0
-    ORDER BY sr.created_at DESC
-    LIMIT 1
-  `).get(userId, articleId);
+  try {
+    const row = db.prepare(`
+      SELECT sr.*, u.initials
+      FROM summary_reviews sr
+      LEFT JOIN users u ON sr.user_id = u.id
+      WHERE sr.user_id = ? AND sr.article_id = ? AND COALESCE(sr.is_archived, 0) = 0
+      ORDER BY sr.created_at DESC
+      LIMIT 1
+    `).get(userId, articleId);
+    if (!row) return null;
+    return {
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      userInitials: row.initials,
+      ratings: JSON.parse(row.ratings),
+      qualityRating: row.quality_rating,
+      notes: row.notes,
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      timestamp: row.created_at
+    };
+  } catch (e) {
+    // Fall back if is_archived column doesn't exist
+    const row = db.prepare(`
+      SELECT sr.*, u.initials
+      FROM summary_reviews sr
+      LEFT JOIN users u ON sr.user_id = u.id
+      WHERE sr.user_id = ? AND sr.article_id = ?
+      ORDER BY sr.created_at DESC
+      LIMIT 1
+    `).get(userId, articleId);
   
   if (!row) return null;
   
@@ -425,27 +538,54 @@ export function getUserSummaryReview(userId, articleId) {
 
 export function getUserArticleCoding(userId, articleId) {
   const db = getDatabase();
-  const row = db.prepare(`
-    SELECT ac.*, u.initials
-    FROM article_codings ac
-    LEFT JOIN users u ON ac.user_id = u.id
-    WHERE ac.user_id = ? AND ac.article_id = ? AND COALESCE(ac.is_archived, 0) = 0
-    ORDER BY ac.created_at DESC
-    LIMIT 1
-  `).get(userId, articleId);
-  
-  if (!row) return null;
-  
-  return {
-    id: row.id,
-    articleId: row.article_id,
-    userId: row.user_id,
-    userInitials: row.initials,
-    codes: JSON.parse(row.codes),
-    hadIssues: row.had_issues === 1,
-    notes: row.notes,
-    rubricId: row.rubric_id,
-    rubricVersion: row.rubric_version,
-    timestamp: row.created_at
-  };
+  try {
+    const row = db.prepare(`
+      SELECT ac.*, u.initials
+      FROM article_codings ac
+      LEFT JOIN users u ON ac.user_id = u.id
+      WHERE ac.user_id = ? AND ac.article_id = ? AND COALESCE(ac.is_archived, 0) = 0
+      ORDER BY ac.created_at DESC
+      LIMIT 1
+    `).get(userId, articleId);
+    
+    if (!row) return null;
+    
+    return {
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      userInitials: row.initials,
+      codes: JSON.parse(row.codes),
+      hadIssues: row.had_issues === 1,
+      notes: row.notes,
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      timestamp: row.created_at
+    };
+  } catch (e) {
+    // Fall back if is_archived column doesn't exist
+    const row = db.prepare(`
+      SELECT ac.*, u.initials
+      FROM article_codings ac
+      LEFT JOIN users u ON ac.user_id = u.id
+      WHERE ac.user_id = ? AND ac.article_id = ?
+      ORDER BY ac.created_at DESC
+      LIMIT 1
+    `).get(userId, articleId);
+    
+    if (!row) return null;
+    
+    return {
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      userInitials: row.initials,
+      codes: JSON.parse(row.codes),
+      hadIssues: row.had_issues === 1,
+      notes: row.notes,
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      timestamp: row.created_at
+    };
+  }
 }

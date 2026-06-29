@@ -740,13 +740,27 @@ app.get('/api/admin/summaries', requireAuth, async (req, res) => {
     }
 
     const db = getDatabase();
-    const rows = db.prepare(`
-      SELECT sr.*, u.initials, u.email
-      FROM summary_reviews sr
-      LEFT JOIN users u ON sr.user_id = u.id
-      WHERE COALESCE(sr.is_archived, 0) = 0
-      ORDER BY sr.created_at DESC
-    `).all();
+    
+    // Try query with is_archived column first, fall back if it doesn't exist
+    let rows;
+    try {
+      rows = db.prepare(`
+        SELECT sr.*, u.initials, u.email
+        FROM summary_reviews sr
+        LEFT JOIN users u ON sr.user_id = u.id
+        WHERE COALESCE(sr.is_archived, 0) = 0
+        ORDER BY sr.created_at DESC
+      `).all();
+    } catch (e) {
+      // Fall back to query without is_archived if column doesn't exist
+      console.log('[Admin Summaries] is_archived column not found, using fallback query');
+      rows = db.prepare(`
+        SELECT sr.*, u.initials, u.email
+        FROM summary_reviews sr
+        LEFT JOIN users u ON sr.user_id = u.id
+        ORDER BY sr.created_at DESC
+      `).all();
+    }
 
     const summaries = rows.map(row => ({
       id: row.id,
@@ -765,6 +779,7 @@ app.get('/api/admin/summaries', requireAuth, async (req, res) => {
 
     res.json(summaries);
   } catch (error) {
+    console.error('[Admin Summaries] Error:', error.message);
     res.status(500).json({ error: error.message });
   }
 });
