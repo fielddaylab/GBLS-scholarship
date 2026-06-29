@@ -519,21 +519,22 @@ export function getUserSummaryReview(userId, articleId) {
       ORDER BY sr.created_at DESC
       LIMIT 1
     `).get(userId, articleId);
-  
-  if (!row) return null;
-  
-  return {
-    id: row.id,
-    articleId: row.article_id,
-    userId: row.user_id,
-    userInitials: row.initials,
-    ratings: JSON.parse(row.ratings),
-    qualityRating: row.quality_rating,
-    notes: row.notes,
-    rubricId: row.rubric_id,
-    rubricVersion: row.rubric_version,
-    timestamp: row.created_at
-  };
+    
+    if (!row) return null;
+    
+    return {
+      id: row.id,
+      articleId: row.article_id,
+      userId: row.user_id,
+      userInitials: row.initials,
+      ratings: JSON.parse(row.ratings),
+      qualityRating: row.quality_rating,
+      notes: row.notes,
+      rubricId: row.rubric_id,
+      rubricVersion: row.rubric_version,
+      timestamp: row.created_at
+    };
+  }
 }
 
 export function getUserArticleCoding(userId, articleId) {
