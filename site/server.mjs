@@ -662,6 +662,33 @@ app.get('/api/article/:id', requireAuth, async (req, res) => {
 });
 
 
+// ==================== TOOL FEEDBACK ====================
+app.post('/api/feedback', requireAuth, (req, res) => {
+  try {
+    const message = String(req.body?.message || '').trim().slice(0, 5000);
+    let rating = parseInt(req.body?.rating, 10);
+    if (!(rating >= 1 && rating <= 5)) rating = null;
+    if (!message) return res.status(400).json({ error: 'Please write some feedback.' });
+    getDatabase().prepare('INSERT INTO tool_feedback (user_id, rating, message) VALUES (?, ?, ?)').run(req.user.id, rating, message);
+    res.json({ success: true });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/admin/feedback', requireAuth, (req, res) => {
+  try {
+    if (!(isUserAdmin(req.user) || DEBUG_MODE)) return res.status(403).json({ error: 'Admin only' });
+    const rows = getDatabase().prepare(`
+      SELECT f.id, f.rating, f.message, f.created_at, u.full_name, u.initials, u.email
+      FROM tool_feedback f LEFT JOIN users u ON f.user_id = u.id ORDER BY f.created_at DESC
+    `).all();
+    res.json(rows);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // ==================== REVIEW QUEUE ENDPOINTS ====================
 const QUEUE_INITIAL = 20;
 const QUEUE_STEP = 5;

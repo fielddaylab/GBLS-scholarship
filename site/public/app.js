@@ -2397,3 +2397,38 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('view-usercode-filter').addEventListener('change', renderClassificationsTable);
   }
 });
+
+
+// ============================================================================
+// GENERAL TOOL FEEDBACK
+// ============================================================================
+function openFeedbackForm() {
+  document.getElementById('feedback-status').textContent = '';
+  document.getElementById('feedback-modal').style.display = 'flex';
+  document.getElementById('feedback-message').focus();
+}
+function closeFeedbackForm() {
+  document.getElementById('feedback-modal').style.display = 'none';
+}
+async function submitFeedback(event) {
+  event.preventDefault();
+  const status = document.getElementById('feedback-status');
+  const message = document.getElementById('feedback-message').value;
+  const rating = document.getElementById('feedback-rating').value;
+  try {
+    const res = await fetch('/api/feedback', {
+      method: 'POST', credentials: 'same-origin',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message, rating })
+    });
+    if (!res.ok) throw new Error((await res.json()).error || res.statusText);
+    document.getElementById('feedback-message').value = '';
+    document.getElementById('feedback-rating').value = '';
+    status.style.color = 'var(--success-color)';
+    status.textContent = '✓ Thank you!';
+    setTimeout(closeFeedbackForm, 1200);
+  } catch (e) {
+    status.style.color = 'var(--error-color)';
+    status.textContent = e.message;
+  }
+}

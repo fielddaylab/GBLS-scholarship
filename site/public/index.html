@@ -131,6 +131,7 @@
                     <div class="queue-header">
                       <h3>Your Articles</h3>
                       <span id="queue-progress" class="queue-progress"></span>
+                      <button class="btn-secondary" type="button" onclick="openFeedbackForm()">Send feedback</button>
                       <button id="queue-more-btn" class="btn-primary" type="button" onclick="requestMoreArticles()" disabled>Get 5 more articles</button>
                     </div>
                     <p id="queue-more-hint" class="queue-hint"></p>
@@ -458,6 +459,22 @@
     </footer>
   </div>
 
+  
+  <div id="feedback-modal" class="feedback-modal" style="display:none;" onclick="if(event.target===this)closeFeedbackForm()">
+    <form class="feedback-dialog" onsubmit="submitFeedback(event)">
+      <div class="summary-drawer-header"><h3 class="summary-drawer-title">Feedback on this tool</h3>
+        <button class="btn-secondary" type="button" onclick="closeFeedbackForm()">Close</button></div>
+      <p style="margin:0 0 .75rem;color:var(--text-light);font-size:.9rem;">Anything about the tool: what's confusing, what's broken, what would help.</p>
+      <label for="feedback-rating"><strong>Overall experience</strong> (optional)</label>
+      <select id="feedback-rating"><option value="">— choose —</option><option value="5">5 – Great</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1 – Poor</option></select>
+      <label for="feedback-message" style="margin-top:.75rem;display:block;"><strong>Your feedback</strong></label>
+      <textarea id="feedback-message" rows="6" required maxlength="5000" style="width:100%;"></textarea>
+      <div style="display:flex;gap:1rem;align-items:center;margin-top:.75rem;">
+        <button type="submit" class="btn-primary">Send feedback</button>
+        <span id="feedback-status"></span>
+      </div>
+    </form>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
