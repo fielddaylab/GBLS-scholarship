@@ -1472,3 +1472,6 @@ textarea {
 .instructions-content { max-width: 800px; margin: 0 auto; padding: 1rem 0 2rem; line-height: 1.55; }
 .instructions-content h3 { margin-top: 1.5rem; }
 .instructions-dates li { margin-bottom: 0.6rem; }
+
+.header-feedback-btn { background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.6); border-radius: 0.4rem; padding: 0.4rem 0.9rem; font-size: 0.9rem; cursor: pointer; }
+.header-feedback-btn:hover { background: rgba(255,255,255,0.3); }

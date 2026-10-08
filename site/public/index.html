@@ -28,7 +28,10 @@
               <p class="subtitle">Literature exploration, analysis &amp; review</p>
            </div>
          </div>
-         <div id="user-menu" class="user-menu"></div>
+         <div style="display:flex;align-items:center;gap:1rem;">
+           <button type="button" class="header-feedback-btn" onclick="openFeedbackForm()">Feedback</button>
+           <div id="user-menu" class="user-menu"></div>
+         </div>
        </div>
      </header>
 
@@ -158,7 +161,6 @@
                     <div class="queue-header">
                       <h3>Your Articles</h3>
                       <span id="queue-progress" class="queue-progress"></span>
-                      <button class="btn-secondary" type="button" onclick="openFeedbackForm()">Send feedback</button>
                       <button id="queue-more-btn" class="btn-primary" type="button" onclick="requestMoreArticles()" disabled>Get 5 more articles</button>
                     </div>
                     <p id="queue-more-hint" class="queue-hint"></p>
