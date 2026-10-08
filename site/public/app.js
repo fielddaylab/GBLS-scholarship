@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     
      // Load tab from URL or default to summaries
      const urlParams = new URLSearchParams(window.location.search);
-     const tabFromUrl = urlParams.get('tab') || 'summaries';
+     const tabFromUrl = urlParams.get('tab') || 'instructions';
      const articleFromUrl = urlParams.get('article');
      
      switchTab(tabFromUrl);
