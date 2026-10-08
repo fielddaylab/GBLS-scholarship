@@ -863,7 +863,6 @@ function initializeSummariesTab() {
        `${state.user.fullName} (${state.user.initials})`;
      loginSection.style.display = 'none';
      reviewSection.style.display = 'block';
-     populateSummariesArticleSelect();
      loadQueue();
      // Update button states
      updatePanelButtonStates();
@@ -883,11 +882,11 @@ async function startSummaryReview() {
   document.getElementById('summaries-login').style.display = 'none';
   document.getElementById('summaries-review').style.display = 'block';
   
-  populateSummariesArticleSelect();
 }
 
 function populateSummariesArticleSelect() {
   const select = document.getElementById('summaries-article-select');
+  if (!select) return;
   select.innerHTML = '<option value="">Choose an article...</option>';
 
   if (!state.articles || state.articles.length === 0) {
