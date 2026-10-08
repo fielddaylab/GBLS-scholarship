@@ -1438,7 +1438,7 @@ textarea {
 .queue-header h3 { margin: 0; }
 .queue-progress { color: var(--text-light); font-size: 0.9rem; flex: 1; }
 .queue-hint { margin: 0.4rem 0; color: var(--text-light); font-size: 0.85rem; }
-#queue-table-container { max-height: 360px; overflow-y: auto; border: 1px solid var(--border-color); border-radius: 0.4rem; }
+#queue-table-container { max-height: none; overflow: visible; }
 .queue-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
 .queue-table th, .queue-table td { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border-color); text-align: left; vertical-align: middle; }
 .queue-table th { background: var(--light-bg); position: sticky; top: 0; }
@@ -1460,3 +1460,7 @@ textarea {
   transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s; z-index: 1001;
 }
 .article-forms-panel.summary-drawer.open { opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) scale(1); }
+
+.queue-table th { position: static; }
+.reader-workspace { min-height: 0 !important; }
+.reader-topbar, .reader-stage { overflow: visible; }
