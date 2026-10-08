@@ -952,15 +952,6 @@ async function performLoadSummaryArticle(article) {
        classificationCitationElement.textContent = article.citation;
      }
     
-    // Load PDF viewer
-    const pdfContainer = document.getElementById('summaries-pdf-container');
-    const emptyState = document.getElementById('summaries-empty-state');
-    const pdfPath = `/data/articles/${article.id}.pdf`;
-    pdfContainer.style.display = 'flex';
-    if (emptyState) emptyState.style.display = 'none';
-    pdfContainer.innerHTML = `<object data="${pdfPath}" type="application/pdf" style="width: 100%; height: 100%; border-radius: 0.4rem;">
-      <p>PDF cannot be displayed. <a href="${pdfPath}" target="_blank">Download PDF</a></p>
-    </object>`;
 
    openSummaryPanel();
    
@@ -1110,7 +1101,7 @@ function closeAllPanels() {
    
    const panel = document.getElementById('summary-rating-panel');
    if (!panel) return;
-   panel.style.right = '0';
+   panel.classList.add('open');
    
    const overlay = document.getElementById('summary-panel-overlay');
    if (overlay) {
@@ -1124,7 +1115,7 @@ function closeAllPanels() {
  function closeSummaryRatingPanel() {
    const panel = document.getElementById('summary-rating-panel');
    if (!panel) return;
-   panel.style.right = '-100%';
+   panel.classList.remove('open');
    
    const overlay = document.getElementById('summary-panel-overlay');
    if (overlay) {
@@ -1141,7 +1132,7 @@ function closeAllPanels() {
    
    const panel = document.getElementById('classification-panel');
    if (!panel) return;
-   panel.style.right = '0';
+   panel.classList.add('open');
    
    const overlay = document.getElementById('summary-panel-overlay');
    if (overlay) {
@@ -1155,7 +1146,7 @@ function closeAllPanels() {
  function closeClassificationPanel() {
    const panel = document.getElementById('classification-panel');
    if (!panel) return;
-   panel.style.right = '-100%';
+   panel.classList.remove('open');
    
    const overlay = document.getElementById('summary-panel-overlay');
    if (overlay) {
