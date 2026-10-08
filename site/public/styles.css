@@ -1431,3 +1431,19 @@ textarea {
     min-width: 100%;
   }
 }
+
+/* Review queue table */
+.queue-section { width: 100%; padding: 0.5rem 0; }
+.queue-header { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.queue-header h3 { margin: 0; }
+.queue-progress { color: var(--text-light); font-size: 0.9rem; flex: 1; }
+.queue-hint { margin: 0.4rem 0; color: var(--text-light); font-size: 0.85rem; }
+#queue-table-container { max-height: 360px; overflow-y: auto; border: 1px solid var(--border-color); border-radius: 0.4rem; }
+.queue-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.queue-table th, .queue-table td { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border-color); text-align: left; vertical-align: middle; }
+.queue-table th { background: var(--light-bg); position: sticky; top: 0; }
+.queue-row-active { background: #eff6ff; }
+.queue-actions { white-space: nowrap; display: flex; gap: 0.4rem; }
+.queue-actions a.btn-secondary { text-decoration: none; display: inline-block; padding: 0.4rem 0.7rem; }
+.queue-status.done { color: var(--success-color); font-weight: 600; }
+.queue-status.todo { color: var(--warning-color); font-weight: 600; }

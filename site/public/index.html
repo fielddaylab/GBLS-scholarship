@@ -127,43 +127,20 @@
              <div class="summaries-review" id="summaries-review" style="display: none;">
               <div class="reader-workspace" id="summaries-article-display">
                <div class="reader-topbar">
-                   <div class="instruction-steps">
-                     <div class="instruction-step">
-                       <div class="step-badge" id="step-badge-1">
-                         <span id="step-1-number">1</span>
-                         <span id="step-1-checkmark" style="display: none;">✓</span>
-                       </div>
-                       <div class="step-content">
-                         <p class="step-label">Select A Random Article</p>
-                         <button class="btn-primary" onclick="pickRandomSummaryArticle()">Pick Random Article</button>
-                       </div>
-                     </div>
-                     <div class="instruction-step">
-                        <div class="step-badge" id="step-badge-2">
-                          <span id="step-2-number">2</span>
-                          <span id="step-2-checkmark" style="display: none;">✓</span>
-                        </div>
-                        <div class="step-content">
-                          <p class="step-label">Rate the Summary</p>
-                          <button id="btn-open-rating-panel" class="btn-primary" onclick="openSummaryRatingPanel()" disabled>Open Rating Panel</button>
-                        </div>
-                     </div>
-                     <div class="instruction-step">
-                        <div class="step-badge" id="step-badge-3">
-                          <span id="step-3-number">3</span>
-                          <span id="step-3-checkmark" style="display: none;">✓</span>
-                        </div>
-                         <div class="step-content">
-                           <p class="step-label">Categorize the Article</p>
-                           <button id="btn-open-classification-panel" class="btn-primary" onclick="openClassificationPanel()" disabled>Open Categorization</button>
-                         </div>
-                     </div>
-                   </div>
-               </div>
+                  <div class="queue-section" id="queue-section">
+                    <div class="queue-header">
+                      <h3>Your Articles</h3>
+                      <span id="queue-progress" class="queue-progress"></span>
+                      <button id="queue-more-btn" class="btn-primary" type="button" onclick="requestMoreArticles()" disabled>Get 5 more articles</button>
+                    </div>
+                    <p id="queue-more-hint" class="queue-hint"></p>
+                    <div id="queue-table-container"></div>
+                  </div>
+                </div>
 
                  <div class="reader-stage">
                    <div class="article-source-panel" id="summaries-pdf-container" style="display: none;"></div>
-                   <div class="reader-empty-state" id="summaries-empty-state">Pick a random article above to get started.</div>
+                   <div class="reader-empty-state" id="summaries-empty-state">Use the Summary or Categorize button in the table above to open an article.</div>
                    <div id="summary-panel-overlay" class="summary-panel-overlay" onclick="closeAllPanels()"></div>
 
                    <!-- Panel 1: Rate Summary -->

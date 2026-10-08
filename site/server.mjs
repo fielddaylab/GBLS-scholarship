@@ -661,6 +661,89 @@ app.get('/api/article/:id', requireAuth, async (req, res) => {
   }
 });
 
+
+// ==================== REVIEW QUEUE ENDPOINTS ====================
+const QUEUE_INITIAL = 20;
+const QUEUE_STEP = 5;
+
+async function listQueueableArticles() {
+  const dir = path.join(__dirname, 'public', 'data', 'articles');
+  const files = await fs.readdir(dir);
+  const set = new Set(files);
+  return files
+    .filter(f => f.endsWith('.json') && !f.startsWith('.') && set.has(f.replace(/\.json$/, '.pdf')))
+    .map(f => f.replace(/\.json$/, ''));
+}
+
+function shuffled(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function buildQueueView(userId) {
+  const db = getDatabase();
+  const rows = db.prepare('SELECT article_id FROM user_article_queue WHERE user_id = ? ORDER BY position').all(userId);
+  const rated = new Set(db.prepare('SELECT DISTINCT article_id FROM summary_reviews WHERE user_id = ? AND COALESCE(is_archived,0)=0').all(userId).map(r => r.article_id));
+  const coded = new Set(db.prepare('SELECT DISTINCT article_id FROM article_codings WHERE user_id = ? AND COALESCE(is_archived,0)=0').all(userId).map(r => r.article_id));
+  const items = rows.map(r => ({ id: r.article_id, summaryDone: rated.has(r.article_id), categorizeDone: coded.has(r.article_id) }));
+  const allDone = items.length > 0 && items.every(i => i.summaryDone && i.categorizeDone);
+  return { items, canGetMore: allDone, step: QUEUE_STEP };
+}
+
+function addToQueue(userId, ids) {
+  const db = getDatabase();
+  const maxPos = db.prepare('SELECT COALESCE(MAX(position), -1) AS m FROM user_article_queue WHERE user_id = ?').get(userId).m;
+  const ins = db.prepare('INSERT OR IGNORE INTO user_article_queue (user_id, article_id, position) VALUES (?, ?, ?)');
+  db.transaction(() => ids.forEach((id, i) => ins.run(userId, id, maxPos + 1 + i)))();
+}
+
+async function pickUnseen(userId, n) {
+  const all = await listQueueableArticles();
+  const have = new Set(getDatabase().prepare('SELECT article_id FROM user_article_queue WHERE user_id = ?').all(userId).map(r => r.article_id));
+  return shuffled(all.filter(id => !have.has(id))).slice(0, n);
+}
+
+app.get('/api/queue', requireAuth, async (req, res) => {
+  try {
+    const db = getDatabase();
+    const uid = req.user.id;
+    const existing = db.prepare('SELECT COUNT(*) AS c FROM user_article_queue WHERE user_id = ?').get(uid).c;
+    // Seed with articles this user already rated/categorized (oldest work first), then keep them in the queue.
+    const queueable = new Set(await listQueueableArticles());
+    const inQueue = new Set(db.prepare('SELECT article_id FROM user_article_queue WHERE user_id = ?').all(uid).map(r => r.article_id));
+    const past = db.prepare(`
+      SELECT article_id, MIN(created_at) AS first FROM (
+        SELECT article_id, created_at FROM summary_reviews WHERE user_id = ? AND COALESCE(is_archived,0)=0
+        UNION ALL
+        SELECT article_id, created_at FROM article_codings WHERE user_id = ? AND COALESCE(is_archived,0)=0
+      ) GROUP BY article_id ORDER BY first
+    `).all(uid, uid).map(r => r.article_id).filter(id => queueable.has(id) && !inQueue.has(id));
+    if (past.length) addToQueue(uid, past);
+    if (existing === 0) {
+      const have = existing + past.length;
+      if (have < QUEUE_INITIAL) addToQueue(uid, await pickUnseen(uid, QUEUE_INITIAL - have));
+    }
+    res.json(buildQueueView(req.user.id));
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/api/queue/more', requireAuth, async (req, res) => {
+  try {
+    const view = buildQueueView(req.user.id);
+    if (!view.canGetMore) return res.status(409).json({ error: 'Finish all current articles first.' });
+    addToQueue(req.user.id, await pickUnseen(req.user.id, QUEUE_STEP));
+    res.json(buildQueueView(req.user.id));
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // ==================== CODINGS ENDPOINTS ====================
 
 app.get('/api/codings', requireAuth, async (req, res) => {

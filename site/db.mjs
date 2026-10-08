@@ -77,6 +77,15 @@ export function initializeDatabase() {
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
       FOREIGN KEY (user_id) REFERENCES users(id)
     );
+
+    CREATE TABLE IF NOT EXISTS user_article_queue (
+      user_id INTEGER NOT NULL,
+      article_id TEXT NOT NULL,
+      position INTEGER NOT NULL,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      PRIMARY KEY (user_id, article_id),
+      FOREIGN KEY (user_id) REFERENCES users(id)
+    );
   `);
 
   // Run migrations

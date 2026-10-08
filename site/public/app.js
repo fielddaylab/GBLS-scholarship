@@ -769,6 +769,90 @@ function showSubmissionSuccess(statusElementId) {
 // TAB 2: REVIEW SUMMARIES
 // ============================================================================
 
+
+// ============================================================================
+// REVIEW QUEUE (table of assigned articles)
+// ============================================================================
+
+state.queue = { items: [], canGetMore: false, step: 5 };
+
+async function loadQueue() {
+  try {
+    const res = await fetch('/api/queue', { credentials: 'same-origin' });
+    if (!res.ok) throw new Error((await res.json()).error || res.statusText);
+    state.queue = await res.json();
+    renderQueue();
+  } catch (e) {
+    const c = document.getElementById('queue-table-container');
+    if (c) c.innerHTML = `<p class="empty-selection">Could not load your articles: ${escapeHTML(e.message)}</p>`;
+  }
+}
+
+async function requestMoreArticles() {
+  const btn = document.getElementById('queue-more-btn');
+  if (btn) btn.disabled = true;
+  try {
+    const res = await fetch('/api/queue/more', { method: 'POST', credentials: 'same-origin' });
+    if (!res.ok) throw new Error((await res.json()).error || res.statusText);
+    state.queue = await res.json();
+  } catch (e) {
+    alert(e.message);
+  }
+  renderQueue();
+}
+
+function queueCitation(id) {
+  const a = (state.articles || []).find(x => x.id === id);
+  return a ? a.citation : id;
+}
+
+function renderQueue() {
+  const container = document.getElementById('queue-table-container');
+  if (!container) return;
+  const items = state.queue.items;
+  const done = items.filter(i => i.summaryDone && i.categorizeDone).length;
+  const progress = document.getElementById('queue-progress');
+  if (progress) progress.textContent = `${done} of ${items.length} complete`;
+  const moreBtn = document.getElementById('queue-more-btn');
+  if (moreBtn) moreBtn.disabled = !state.queue.canGetMore;
+  const hint = document.getElementById('queue-more-hint');
+  if (hint) hint.textContent = state.queue.canGetMore ? '' : `Finish the rating and categorization for every article below to unlock ${state.queue.step} more.`;
+
+  const badge = (ok) => ok
+    ? '<span class="queue-status done">✓ Done</span>'
+    : '<span class="queue-status todo">To do</span>';
+  const current = state.summariesState.currentArticle && state.summariesState.currentArticle.id;
+  const rows = items.map((it, idx) => {
+    const id = escapeHTML(it.id);
+    return `<tr class="${it.id === current ? 'queue-row-active' : ''}">
+      <td>${idx + 1}</td>
+      <td>${escapeHTML(queueCitation(it.id))}</td>
+      <td>${badge(it.summaryDone)}</td>
+      <td>${badge(it.categorizeDone)}</td>
+      <td class="queue-actions">
+        <a class="btn-secondary" href="/data/articles/${encodeURIComponent(it.id)}.pdf" download>Download PDF</a>
+        <button type="button" class="btn-primary" data-queue-action="summary" data-id="${id}">${it.summaryDone ? 'Edit' : 'Rate'} Summary</button>
+        <button type="button" class="btn-primary" data-queue-action="classify" data-id="${id}">${it.categorizeDone ? 'Edit' : 'Add'} Categories</button>
+      </td>
+    </tr>`;
+  }).join('');
+  container.innerHTML = `<table class="queue-table">
+    <thead><tr><th>#</th><th>Article</th><th>Summary</th><th>Categories</th><th>Actions</th></tr></thead>
+    <tbody>${rows}</tbody></table>`;
+  container.querySelectorAll('button[data-queue-action]').forEach(btn => {
+    btn.addEventListener('click', () => openQueueArticle(btn.dataset.id, btn.dataset.queueAction));
+  });
+}
+
+async function openQueueArticle(articleId, which) {
+  const article = (state.articles || []).find(a => a.id === articleId);
+  if (!article) { alert('Article data not loaded yet; try again in a moment.'); return; }
+  await performLoadSummaryArticle(article);
+  updatePanelButtonStates();
+  if (which === 'classify') openClassificationPanel(); else openSummaryRatingPanel();
+  renderQueue();
+}
+
 function initializeSummariesTab() {
    const loginSection = document.getElementById('summaries-login');
    const reviewSection = document.getElementById('summaries-review');
@@ -780,12 +864,7 @@ function initializeSummariesTab() {
      loginSection.style.display = 'none';
      reviewSection.style.display = 'block';
      populateSummariesArticleSelect();
-     // Auto-load a random article only if no article in URL
-     const urlParams = new URLSearchParams(window.location.search);
-     const articleFromUrl = urlParams.get('article');
-     if (!articleFromUrl && state.articles && state.articles.length > 0) {
-       pickRandomSummaryArticle();
-     }
+     loadQueue();
      // Update button states
      updatePanelButtonStates();
    } else {
@@ -1342,6 +1421,7 @@ async function submitSummaryReview(event) {
          });
         
         markStepComplete(2);
+        loadQueue();
         showLeaderboardBadge();
         showSubmissionSuccess('summary-form-status');
       } else {
@@ -1805,6 +1885,7 @@ async function submitClassification(event) {
          });
         
         markStepComplete(3);
+        loadQueue();
         showLeaderboardBadge();
         showSubmissionSuccess('classification-form-status');
       } else {
