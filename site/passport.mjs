@@ -35,6 +35,8 @@ if (GITHUB_CLIENT_ID && GITHUB_CLIENT_SECRET) {
         clientID: GITHUB_CLIENT_ID,
         clientSecret: GITHUB_CLIENT_SECRET,
         callbackURL: GITHUB_CALLBACK_URL,
+        // Required: passport-github2 only fetches /user/emails (private emails) if scope is set here
+        scope: ['user:email'],
       },
       async (accessToken, refreshToken, profile, done) => {
         try {
@@ -53,7 +55,8 @@ if (GITHUB_CLIENT_ID && GITHUB_CLIENT_SECRET) {
             // Create new user from GitHub profile
             const email = profile.emails?.[0]?.value;
             if (!email) {
-              return done(new Error('GitHub profile does not have an email address. Make sure your GitHub account has a public email.'));
+              console.error('GitHub login: no email for', profile.username);
+              return done(new Error('GitHub profile does not have an email address.'));
             }
 
             const fullName = profile.displayName || profile.username || 'GitHub User';
