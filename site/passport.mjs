@@ -12,6 +12,7 @@ import {
   getUserByGithubId,
   getUserByGoogleId,
   updateUserLastLogin,
+  uniqueInitials,
 } from './db.mjs';
 
 // Extract OAuth credentials from environment
@@ -73,7 +74,7 @@ if (GITHUB_CLIENT_ID && GITHUB_CLIENT_SECRET) {
               initials = 'GH';
             }
 
-            user = createUser(email, fullName, initials, null, profile.id, null, profile.username);
+            user = createUser(email, fullName, uniqueInitials(initials), null, profile.id, null, profile.username);
           }
 
           if (!user) {
@@ -138,7 +139,7 @@ if (GOOGLE_CLIENT_ID && GOOGLE_CLIENT_SECRET) {
               initials = 'GG';
             }
 
-            user = createUser(email, fullName, initials, null, null, profile.id);
+            user = createUser(email, fullName, uniqueInitials(initials), null, null, profile.id);
           }
 
           if (!user) {

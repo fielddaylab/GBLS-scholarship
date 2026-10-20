@@ -152,6 +152,15 @@ export function getDatabase() {
 }
 
 // User functions
+// Return initials not already used by any user (active or not); appends digits on collision.
+export function uniqueInitials(base) {
+  const db = getDatabase();
+  const taken = (v) => !!db.prepare('SELECT 1 FROM users WHERE initials = ?').get(v);
+  let cand = base || 'XX';
+  for (let i = 2; taken(cand); i++) cand = `${base || 'XX'}${i}`;
+  return cand;
+}
+
 export function createUser(email, fullName, initials, organizationalAffiliation = null, githubId = null, googleId = null, githubUsername = null) {
   const db = getDatabase();
   try {
@@ -163,6 +172,7 @@ export function createUser(email, fullName, initials, organizationalAffiliation 
     return getUserById(result.lastInsertRowid);
   } catch (error) {
     if (error.message.includes('UNIQUE constraint failed')) {
+      console.error('createUser UNIQUE failure:', error.message, 'email:', email);
       throw new Error('Email or initials already registered');
     }
     throw error;
